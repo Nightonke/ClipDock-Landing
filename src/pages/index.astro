@@ -1,0 +1,10 @@
+---
+import LandingPage from "@layouts/LandingPage.astro";
+import { landingContent } from "@/i18n/content";
+import { defaultLocale, getLanguageLinks } from "@/i18n/locales";
+
+const content = landingContent[defaultLocale];
+const languageLinks = getLanguageLinks(defaultLocale);
+---
+
+<LandingPage content={content} languageLinks={languageLinks} />

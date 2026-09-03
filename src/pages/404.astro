@@ -1,0 +1,23 @@
+---
+import { siteConfig } from "@config/site";
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout
+	title={`404 - Page Not Found | ${siteConfig.name}`}
+	description="This page does not exist. Return to ClipDock to explore video extraction, downloads, organization, and processing tools."
+	noindex
+>
+	<main id="main-content" class="detail-main">
+		<div class="site-shell" style="min-height: 68vh; display: grid; place-items: center;">
+			<div style="max-width: 760px; text-align: center;">
+				<p class="eyebrow" style="margin-inline: auto;">Error / 404</p>
+				<h1 class="display-title">This angle is missing.</h1>
+				<p class="section-lede" style="margin-inline: auto;">
+					The page may have moved, but the rest of the multi-view workspace is still here.
+				</p>
+				<a class="button button-dark" href="/" style="margin-top: 2rem;">Return home</a>
+			</div>
+		</div>
+	</main>
+</Layout>

@@ -1,0 +1,18 @@
+/* TEAM */
+
+Maintainer: Nightonke
+Site: clipdock.video
+Repository: github.com/Nightonke/ClipDock-Landing
+
+/* THANKS */
+
+Astro: astro.build
+Tailwind CSS: tailwindcss.com
+React: reactjs.org
+
+/* SITE */
+
+Last update: 2026/09/03
+Language: English
+Doctype: HTML5
+Technologies: Astro, React, TypeScript, Tailwind CSS

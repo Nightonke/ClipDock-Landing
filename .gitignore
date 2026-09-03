@@ -1,0 +1,22 @@
+# Build output directory
+dist/
+
+# Astro cache directory
+.astro/
+
+# Dependencies
+node_modules/
+
+# Log files
+*.log*
+
+# macOS system files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.idea/
+.vscode/
+
+# Local-only App Store source material (not published to GitHub)
+references/

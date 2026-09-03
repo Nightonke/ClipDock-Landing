@@ -1,0 +1,25 @@
+{
+  "name": "ClipDock: Web Video Downloader",
+  "short_name": "ClipDock",
+  "description": "Extract, download, save, organize, and process videos from supported shared links.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f1e9",
+  "theme_color": "#69aaff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["entertainment", "utilities", "productivity"],
+  "icons": [
+    {
+      "src": "/assets/clipdock-app-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/clipdock-app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

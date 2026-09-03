@@ -1,0 +1,30 @@
+---
+import { landingContent } from "@/i18n/content";
+import { defaultLocale, getLanguageLinks, localizedPath } from "@/i18n/locales";
+import Layout from "@layouts/Layout.astro";
+import MarkdownContent from "@layouts/MarkdownContent.astro";
+
+const content = landingContent[defaultLocale];
+const languageLinks = getLanguageLinks(defaultLocale, "privacy");
+---
+
+<Layout
+	title={`${content.legal.privacyTitle} - ${content.shortName}`}
+	description={content.legal.privacyDescription}
+	lang={content.htmlLang}
+	keywords={content.keywords}
+	alternates={languageLinks}
+	appData={content}
+	homeHref={localizedPath(defaultLocale)}
+	privacyHref={localizedPath(defaultLocale, "privacy")}
+	termsHref={localizedPath(defaultLocale, "terms")}
+	labels={content.labels}
+>
+	<MarkdownContent
+		breadcrumbLabel={content.legal.privacyTitle}
+		content={content.legal.privacy}
+		homeHref={localizedPath(defaultLocale)}
+		languageLinks={languageLinks}
+		languageLabel={content.labels.languageLabel}
+	/>
+</Layout>

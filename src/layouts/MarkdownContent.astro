@@ -1,0 +1,39 @@
+---
+import type { MarkdownContentProps } from "@/types/layout";
+import { parseMarkdown } from "@/utils/parseMarkdown";
+
+interface Props extends MarkdownContentProps {}
+
+const {
+	breadcrumbLabel,
+	content,
+	homeHref = "/",
+	languageLinks = [],
+} = Astro.props;
+const htmlContent = await parseMarkdown(content);
+---
+
+<main id="main-content" class="legal-shell">
+	<div class="legal-toolbar">
+		<nav class="detail-breadcrumb" aria-label="Breadcrumb" style="margin: 0">
+			<a href={homeHref}>Home</a>
+			<span aria-current="page">{breadcrumbLabel}</span>
+		</nav>
+		{languageLinks.length > 0 && (
+			<nav class="legal-languages" aria-label="Language">
+				{languageLinks.map((link) => (
+					<a
+						href={link.href}
+						hreflang={link.hrefLang}
+						aria-current={link.isActive ? "page" : undefined}
+					>
+						{link.label}
+					</a>
+				))}
+			</nav>
+		)}
+	</div>
+	<article class="prose">
+		<Fragment set:html={htmlContent} />
+	</article>
+</main>
