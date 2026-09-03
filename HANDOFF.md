@@ -90,20 +90,18 @@
 
 ## 7. GitHub Pages 与域名配置
 
-项目准备使用 GitHub Actions 构建 `dist/` 并部署到 GitHub Pages。
+基础配置已于 2026-09-03 完成：
 
-正式仓库创建后：
-
-1. 将本地 `main` 推送到 `https://github.com/Nightonke/ClipDock-Landing.git`。
-2. 在 GitHub 仓库 Settings → Pages 中将 Source 设为 GitHub Actions。
-3. 将 Custom domain 设为 `clipdock.video`。
-4. 腾讯云 DNS 为根域名添加四条 A 记录：
-   - `@` → `185.199.108.153`
-   - `@` → `185.199.109.153`
-   - `@` → `185.199.110.153`
-   - `@` → `185.199.111.153`
-5. 建议添加 `www` CNAME：`www` → `Nightonke.github.io`。
-6. DNS 生效且证书签发后开启 Enforce HTTPS。
+- 已创建公开仓库并推送 `main`：https://github.com/Nightonke/ClipDock-Landing
+- GitHub Pages Source 已设为 GitHub Actions。
+- GitHub Pages Custom domain 已设为 `clipdock.video`。
+- 腾讯云 DNS 已添加并验证公开可查：
+  - `@` → `185.199.108.153`（A）
+  - `@` → `185.199.109.153`（A）
+  - `www` → `Nightonke.github.io`（CNAME）
+- GitHub 官方还列出 `185.199.110.153` 和 `185.199.111.153`。当前 DNSPod 免费版对相同主机、相同线路的 A 记录负载均衡上限为 2 条，因此这两条无法继续添加；不要为此擅自购买套餐。若以后升级 DNS 套餐，可再补齐。
+- GitHub 当前仍显示 `DNS Check in Progress`；DNS 与 HTTPS 证书状态需要等待平台刷新。待证书可用后再确认 Enforce HTTPS 已开启。
+- 当前 workflow 只支持手动触发且没有执行，因此旧模板内容没有被发布。
 
 GitHub 官方说明：https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
 

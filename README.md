@@ -22,6 +22,8 @@ npm run preview
 
 ## Reference material
 
+The following source material is available in the original local handoff folder and is intentionally excluded from this public repository:
+
 - `references/app-store-metadata/`: localized App Store metadata supplied by the app owner
 - `references/app-store-lookup.json`: public App Store lookup snapshot
 - `references/app-store-screenshots/`: current public iPhone and iPad screenshots
@@ -29,4 +31,3 @@ npm run preview
 ## Deployment safety
 
 The GitHub Pages workflow is manual-only while the project remains a scaffold. Restore its `push` trigger only after all inherited Split Screen Player copy and assets have been replaced and verified.
-
