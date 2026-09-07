@@ -1,0 +1,47 @@
+---
+import { screenshotBriefs } from "@/content/tutorials";
+interface Props { id: string }
+const { id } = Astro.props;
+const shot = screenshotBriefs[id];
+---
+<figure class:list={["tutorial-shot", { "tutorial-shot-framed": shot.framed }]}>
+	{shot.video ? (
+		<div class="tutorial-video-card">
+			<video class="tutorial-shot-video" src={shot.video} poster={shot.poster} autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-label={shot.title}></video>
+			<progress class="tutorial-video-progress" value="0" max="100" aria-label="视频播放进度"></progress>
+		</div>
+	) : shot.src ? (
+		<a class="tutorial-shot-full" href={shot.src} target="_blank" rel="noopener noreferrer" aria-label={`${shot.title}，打开大图`}>
+			<img src={shot.src} alt={shot.title} loading="lazy" decoding="async" width={shot.width ?? 750} height={shot.height ?? 1624} />
+		</a>
+	) : (
+		<div class="tutorial-shot-placeholder" role="img" aria-label={`${shot.title}，截图待补充`}>
+			<span class="shot-id">截图 · {id}</span>
+			<strong>{shot.title}</strong>
+			<p>{shot.brief}</p>
+			<small>真实操作截图待补充</small>
+		</div>
+	)}
+	<figcaption>{shot.title}</figcaption>
+</figure>
+
+<style>
+	.tutorial-video-card { width: min(100%, 240px); margin-inline: auto; padding: 16px 16px calc(var(--radius-lg) - 3px); border: 2px solid var(--ink); border-radius: var(--radius-lg); background: var(--blue-soft); box-shadow: 10px 10px 0 var(--ink); }
+	.tutorial-shot-video { display: block; width: 100%; aspect-ratio: 6 / 13; border: 2px solid var(--ink); border-radius: calc(var(--radius-lg) - 18px); background: #111; object-fit: cover; }
+	.tutorial-video-progress { display: block; appearance: none; width: 100%; height: 2px; margin: 16px 0 0; border: 0; border-radius: 999px; overflow: hidden; background: rgba(23,25,22,.18); color: var(--ink); pointer-events: none; }
+	.tutorial-video-progress::-webkit-progress-bar { background: rgba(23,25,22,.18); border-radius: 999px; }
+	.tutorial-video-progress::-webkit-progress-value { background: var(--ink); border-radius: 999px; }
+	.tutorial-video-progress::-moz-progress-bar { background: var(--ink); border-radius: 999px; }
+</style>
+
+<script>
+	document.querySelectorAll<HTMLElement>(".tutorial-video-card").forEach((card) => {
+		const video = card.querySelector<HTMLVideoElement>("video")!;
+		const progress = card.querySelector<HTMLProgressElement>("progress")!;
+		const update = () => {
+			progress.value = Number.isFinite(video.duration) && video.duration > 0
+				? Math.min(100, Math.max(0, video.currentTime / video.duration * 100)) : 0;
+		};
+		["timeupdate", "loadedmetadata", "emptied"].forEach((event) => video.addEventListener(event, update));
+	});
+</script>

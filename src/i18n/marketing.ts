@@ -496,7 +496,7 @@ const en: MarketingContent = {
 };
 
 const zhHans: MarketingContent = {
-	nav: { features: "功能", useCases: "使用场景", faq: "常见问题", getApp: "下载 App", menu: "菜单" },
+	nav: { features: "核心功能", useCases: "视频工具", faq: "常见问题", getApp: "下载 App", menu: "菜单" },
 	hero: {
 		eyebrow: "多视频工作台 · iPhone + iPad",
 		title: "一屏看多片\n体验爽翻天",
@@ -586,7 +586,7 @@ const zhHans: MarketingContent = {
 		eyebrow: "你的多画面工作台从这里开始", title: "看见完整的瞬间。",
 		description: "免费下载，打开两个视频，完成第一次同步对比。", cta: "下载分屏播放器",
 	},
-	footerTagline: "一个屏幕，容纳每个角度、来源和瞬间。",
+	footerTagline: "从支持的链接提取、下载、整理和处理视频。",
 	detailLabels: { home: "首页", keyBenefits: "你会得到什么", howItWorks: "工作流如何运行", exploreMore: "继续探索", backHome: "返回完整产品介绍" },
 	details: {
 		features: {

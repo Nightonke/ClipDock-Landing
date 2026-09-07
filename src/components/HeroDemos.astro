@@ -1,0 +1,104 @@
+---
+const demos = [
+	{ title: "分享链接下载", description: "复制分享链接，提取并下载视频或图片。", src: "/assets/demos/share-link.mp4", poster: "/assets/demos/share-link.jpg" },
+	{ title: "复制即后台下载", description: "不必切换 App，复制链接即可后台下载。", src: "/assets/demos/copy-background.mp4", poster: "/assets/demos/copy-background.jpg" },
+	{ title: "长按网页下载", description: "在内置浏览器播放视频，长按即可下载。", src: "/assets/demos/web-long-press.mp4", poster: "/assets/demos/web-long-press.jpg" },
+	{ title: "播放列表批量下载", description: "解析播放列表，一次下载多个视频。", src: "/assets/demos/batch-playlist.mp4", poster: "/assets/demos/batch-playlist.jpg" },
+];
+---
+
+<section class="hero-demos" aria-label="ClipDock影随存 功能演示">
+	<div class="demo-card">
+	<div id="hero-demo-screen" class="demo-screen">
+		<video autoplay playsinline muted preload="auto" disablepictureinpicture src={demos[0].src} poster={demos[0].poster} aria-label={demos[0].title}></video>
+		<div class="demo-empty" hidden><strong>演示视频即将补充</strong><span>先了解下方的功能介绍</span></div>
+	</div>
+	<div class="demo-footer">
+		<progress class="demo-progress" value="0" max="100" aria-label="视频播放进度"></progress>
+		<p class="demo-description" aria-live="polite">{demos[0].description}</p>
+		<p class="demo-error" hidden role="status">视频暂时无法加载，请切换后重试。</p>
+	</div>
+	</div>
+		<div class="demo-buttons" role="group" aria-label="选择演示视频">
+			{demos.map((demo, index) => <button type="button" aria-pressed={index === 0 ? "true" : "false"} aria-controls="hero-demo-screen" data-title={demo.title} data-description={demo.description} data-src={demo.src} data-poster={demo.poster}>{demo.title}</button>)}
+		</div>
+</section>
+
+<script>
+	document.querySelectorAll<HTMLElement>(".hero-demos").forEach((root) => {
+		const video = root.querySelector<HTMLVideoElement>("video")!;
+		const description = root.querySelector<HTMLElement>(".demo-description")!;
+		const empty = root.querySelector<HTMLElement>(".demo-empty")!;
+		const error = root.querySelector<HTMLElement>(".demo-error")!;
+		const progress = root.querySelector<HTMLProgressElement>(".demo-progress")!;
+		const updateProgress = () => {
+			progress.value = !video.hidden && Number.isFinite(video.duration) && video.duration > 0
+				? Math.min(100, Math.max(0, video.currentTime / video.duration * 100)) : 0;
+		};
+		["timeupdate", "loadedmetadata", "durationchange", "emptied"].forEach((event) => video.addEventListener(event, updateProgress));
+		const buttons = root.querySelectorAll<HTMLButtonElement>(".demo-buttons button");
+		video.addEventListener("error", () => { if (video.hasAttribute("src")) error.hidden = false; });
+		const play = () => {
+			video.muted = true;
+			video.play().catch(() => { /* Some device policies require a user gesture. */ });
+		};
+		const select = (button: HTMLButtonElement) => {
+			video.pause();
+			progress.value = 0;
+			error.hidden = true;
+			description.textContent = button.dataset.description!;
+			buttons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+			const src = button.dataset.src;
+			video.hidden = !src;
+			progress.style.visibility = src ? "visible" : "hidden";
+			empty.hidden = Boolean(src);
+			if (src) {
+				video.src = src;
+				video.poster = button.dataset.poster!;
+				video.setAttribute("aria-label", button.dataset.title!);
+				video.load();
+				play();
+			} else {
+				video.removeAttribute("src");
+				video.removeAttribute("poster");
+				video.load();
+			}
+		};
+		buttons.forEach((button) => button.addEventListener("click", () => {
+			if (button.getAttribute("aria-pressed") === "true" && button.dataset.src) { play(); return; }
+			select(button);
+		}));
+		video.addEventListener("ended", () => {
+			const available = Array.from(buttons).filter((button) => button.dataset.src);
+			if (!available.length) return;
+			const current = available.findIndex((button) => button.getAttribute("aria-pressed") === "true");
+			select(available[(current + 1) % available.length]);
+		});
+		play();
+	});
+</script>
+
+<style>
+	.hero-demos { --demo-inset: 16px; display: grid; grid-template-columns: minmax(0, 300px) minmax(100px, 1fr); align-items: center; gap: 26px; width: min(100%, 452px); justify-self: center; min-width: 0; }
+	.demo-card { position: relative; min-width: 0; border: 2px solid var(--ink); border-radius: var(--radius-lg); background: var(--blue); box-shadow: 10px 10px 0 var(--ink); padding: var(--demo-inset); }
+	.demo-screen { aspect-ratio: 886 / 1920; overflow: hidden; border: 2px solid var(--ink); border-radius: calc(var(--radius-lg) - var(--demo-inset) - 2px) calc(var(--radius-lg) - var(--demo-inset) - 2px) 24px 24px; background: #111; }
+	video { display: block; width: 100%; height: 100%; object-fit: cover; }
+	.demo-empty { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 12px; padding: 24px; text-align: center; color: var(--ink); background: var(--paper-strong, #fffdf7); }
+	.demo-empty strong { font-size: 1.35rem; }
+	.demo-empty span { font-size: .9rem; }
+	[hidden] { display: none !important; }
+	.demo-footer { padding-top: 16px; }
+	.demo-progress { display: block; appearance: none; width: 100%; height: 2px; margin: 0 0 12px; border: 0; border-radius: 999px; overflow: hidden; background: rgba(23,25,22,.18); color: var(--ink); pointer-events: none; }
+	.demo-progress::-webkit-progress-bar { background: rgba(23,25,22,.18); border-radius: 999px; }
+	.demo-progress::-webkit-progress-value { background: var(--ink); border-radius: 999px; }
+	.demo-progress::-moz-progress-bar { background: var(--ink); border-radius: 999px; }
+	.demo-description { min-height: 3.2em; margin: 0; font-size: .875rem; line-height: 1.6; }
+	.demo-buttons { display: grid; grid-template-columns: 1fr; gap: 7px; align-self: end; }
+	.demo-buttons button { border: 1.5px solid var(--ink); border-radius: 12px; background: transparent; color: var(--ink); padding: 10px 4px; min-height: 48px; font: inherit; font-size: .875rem; line-height: 1.4; font-weight: 750; cursor: pointer; }
+	.demo-buttons button[aria-pressed="true"] { background: var(--ink); color: var(--paper-strong, #fffdf7); }
+	.demo-buttons button:hover { background: var(--lime); color: var(--ink); }
+	.demo-buttons button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+	.demo-error { margin: 12px 0 0; font-size: .875rem; }
+	@media (max-width: 1020px) { .hero-demos { margin-inline: auto; } }
+	@media (max-width: 680px) { .hero-demos { --demo-inset: 14px; width: min(100%, 290px); grid-template-columns: minmax(0, 1fr); gap: 24px; } .demo-card { width: min(100%, 254px); justify-self: center; box-shadow: 8px 8px 0 var(--ink); } .demo-buttons { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: 0; } .demo-buttons button { padding: 8px 6px; } }
+</style>

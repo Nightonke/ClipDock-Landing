@@ -1,0 +1,30 @@
+---
+import TutorialLayout from "@layouts/TutorialLayout.astro";
+import { tutorials, categories, articleHref } from "@/content/tutorials";
+---
+<TutorialLayout title="视频下载与处理教程｜iPhone / iPad｜ClipDock影随存" description="在 iPhone 和 iPad 上下载视频、使用复制即下载、批量保存主页与播放列表，以及提取音频、制作实况照片和拼接视频。">
+	<main id="main-content" class="tutorial-index site-shell">
+		<header class="tutorial-index-hero">
+			<p class="eyebrow">ClipDock影随存 · 使用教程</p>
+			<h1>从第一条链接，<br />到你的保存方式。</h1>
+			<p class="tutorial-lead">在 iPhone 和 iPad 上下载视频、批量保存作品，再把素材处理成你需要的样子。</p>
+			<p class="tutorial-draft">教程初稿 · 12 篇文章的截图与实际操作步骤待核对。</p>
+		</header>
+		<nav class="tutorial-categories" aria-label="教程分类">
+			{categories.map(category => <a href={`#${category.id}`}>{category.name}<span>{tutorials.filter(article => article.category === category.id).length}</span></a>)}
+		</nav>
+		{categories.map(category => (
+			<section id={category.id} class="tutorial-category">
+				<div class="tutorial-category-heading"><h2>{category.name}</h2><p>{category.description}</p></div>
+				<div class="tutorial-card-grid">
+					{tutorials.filter(article => article.category === category.id).map(article => (
+						<a class="tutorial-card" href={articleHref(article.slug)}>
+							<span class="tutorial-tag">{category.name} · iPhone / iPad</span>
+							<h3>{article.title}</h3><p>{article.description}</p><span class="tutorial-read">阅读教程 <span aria-hidden="true">↗</span></span>
+						</a>
+					))}
+				</div>
+			</section>
+		))}
+	</main>
+</TutorialLayout>

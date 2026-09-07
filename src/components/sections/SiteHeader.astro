@@ -34,6 +34,7 @@ const homeAnchor = (anchor: string) =>
 			<a href={homeAnchor("#features")}>{nav.features}</a>
 			<a href={homeAnchor("#use-cases")}>{nav.useCases}</a>
 			<a href={homeAnchor("#faq")}>{nav.faq}</a>
+			{homeHref === "/zh-Hans/" && <a href="/zh-Hans/articles/">使用教程</a>}
 		</nav>
 
 		<div class="header-actions">
@@ -68,6 +69,7 @@ const homeAnchor = (anchor: string) =>
 					<a href={homeAnchor("#features")}>{nav.features}</a>
 					<a href={homeAnchor("#use-cases")}>{nav.useCases}</a>
 					<a href={homeAnchor("#faq")}>{nav.faq}</a>
+					{homeHref === "/zh-Hans/" && <a href="/zh-Hans/articles/">使用教程</a>}
 					<a href={storeHref} target="_blank" rel="noopener noreferrer">{nav.getApp}</a>
 					{languageLinks.map((link) => (
 						<a

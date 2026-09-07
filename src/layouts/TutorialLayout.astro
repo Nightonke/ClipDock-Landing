@@ -1,0 +1,48 @@
+---
+import SiteHeader from "@/sections/SiteHeader.astro";
+import SiteFooter from "@/sections/SiteFooter.astro";
+import { landingContent } from "@/i18n/content";
+import { marketingContent } from "@/i18n/marketing";
+import "@/styles/brand.css";
+import "@/styles/tutorials.css";
+
+interface Props {
+	title: string;
+	description: string;
+	structuredData?: Record<string, unknown>[];
+}
+const { title, description, structuredData } = Astro.props;
+const content = landingContent["zh-Hans"];
+const canonical = new URL(Astro.url.pathname, Astro.site ?? "https://clipdock.video").href;
+const languageLinks = [{ locale: "zh-Hans", label: "简体中文", href: Astro.url.pathname, hrefLang: "zh-Hans", isActive: true }];
+---
+<!doctype html>
+<html lang="zh-Hans">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<!-- Screenshot and workflow review must finish before enabling indexing. -->
+		<meta name="robots" content="noindex, follow" />
+		<link rel="canonical" href={canonical} />
+		<meta property="og:type" content={Astro.url.pathname === "/zh-Hans/articles/" ? "website" : "article"} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:locale" content="zh_CN" />
+		<meta property="og:site_name" content="ClipDock影随存" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="theme-color" content="#f4f1e9" />
+		<link rel="icon" type="image/png" href={content.logo} />
+		{structuredData && <script type="application/ld+json" set:html={JSON.stringify(structuredData).replace(/</g, "\\u003c")} />}
+	</head>
+	<body>
+		<a class="skip-link" href="#main-content">跳到正文</a>
+		<SiteHeader name="ClipDock影随存" logo={content.logo} homeHref="/zh-Hans/" storeHref={content.storeLinks.apple} languageLinks={languageLinks} nav={marketingContent["zh-Hans"].nav} />
+		<slot />
+		<SiteFooter name="ClipDock影随存" logo={content.logo} tagline="从链接保存视频，让处理更轻松。" homeHref="/zh-Hans/" privacyHref="/zh-Hans/privacy/" termsHref="/zh-Hans/terms/" storeHref={content.storeLinks.apple} privacyLabel="隐私政策" termsLabel="用户协议" getAppLabel="下载 App" languageLinks={languageLinks} />
+	</body>
+</html>

@@ -129,7 +129,7 @@ const jsonLd = structuredData
 		<script is:inline>document.documentElement.classList.add("js");</script>
 		<script is:inline define:vars={{ activeLocale, defaultLocale }}>
 			(() => {
-				const storageKey = "split-screen-player-locale";
+				const storageKey = "clipdock-locale";
 				const supportedLocales = ["en-US", "zh-Hans", "zh-Hant"];
 				const localizedPathPattern = /^\/(?:zh-Hans|zh-Hant)(?:\/|$)/;
 				const pathname = window.location.pathname;
@@ -221,7 +221,7 @@ const jsonLd = structuredData
 		/>
 
 		<script is:inline>
-			const localeStorageKey = "split-screen-player-locale";
+			const localeStorageKey = "clipdock-locale";
 			document.querySelectorAll("[data-locale-choice]").forEach((link) => {
 				link.addEventListener("click", () => {
 					try {
