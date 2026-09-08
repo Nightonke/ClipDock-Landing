@@ -2,6 +2,7 @@
 import { mediaUrl } from "@config/media";
 import { responsiveImageHtml } from "@/lib/responsive-image";
 import { screenshotBriefs } from "@/content/tutorials";
+import OrangePhoneFrame from "./OrangePhoneFrame.astro";
 interface Props { id: string }
 const { id } = Astro.props;
 const shot = screenshotBriefs[id];
@@ -18,7 +19,13 @@ const arrowPath = mark && (mark.x > 800
 		</div>
 	) : shot.src ? (
 		<a class="tutorial-shot-full" href={mediaUrl(shot.src)} target="_blank" rel="noopener noreferrer" aria-label={`${shot.title}，打开大图`}>
-			<img {...responsiveImageHtml(shot.src, "240px")} alt={shot.title} loading="lazy" decoding="async" width={shot.width ?? 750} height={shot.height ?? 1624} />
+			{shot.framed ? (
+				<img {...responsiveImageHtml(shot.src, "240px")} alt={shot.title} loading="lazy" decoding="async" width={shot.width ?? 750} height={shot.height ?? 1624} />
+			) : (
+				<OrangePhoneFrame>
+					<img {...responsiveImageHtml(shot.src, "240px")} alt={shot.title} loading="lazy" decoding="async" width={shot.width ?? 750} height={shot.height ?? 1624} />
+				</OrangePhoneFrame>
+			)}
 			{shot.highlight && <svg class="tutorial-shot-annotation" viewBox={`0 0 ${shot.width} ${shot.height}`} aria-hidden="true">
 				<rect x={shot.highlight.x} y={shot.highlight.y} width={shot.highlight.width} height={shot.highlight.height} rx="38" fill="none" stroke="#ff942e" stroke-width="12" />
 				<path d={arrowPath} fill="none" stroke="#ff942e" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
