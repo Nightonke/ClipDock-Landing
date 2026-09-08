@@ -1,22 +1,28 @@
 ---
 import { siteConfig } from "@config/site";
 import Layout from "@layouts/Layout.astro";
+import { landingContent } from "@/i18n/content";
+import { getLanguageLinks } from "@/i18n/locales";
 ---
 
 <Layout
 	title={`404 - Page Not Found | ${siteConfig.name}`}
 	description="This page does not exist. Return to ClipDock to explore video extraction, downloads, organization, and processing tools."
 	noindex
+	lang="zh-Hans"
+	appData={landingContent["zh-Hans"]}
+	alternates={getLanguageLinks("zh-Hans")}
+	homeHref="/zh-Hans/"
 >
 	<main id="main-content" class="detail-main">
 		<div class="site-shell" style="min-height: 68vh; display: grid; place-items: center;">
 			<div style="max-width: 760px; text-align: center;">
 				<p class="eyebrow" style="margin-inline: auto;">Error / 404</p>
-				<h1 class="display-title">This angle is missing.</h1>
+				<h1 class="display-title">找不到这个页面</h1>
 				<p class="section-lede" style="margin-inline: auto;">
-					The page may have moved, but the rest of the multi-view workspace is still here.
+					页面可能已移动。你可以返回首页，了解视频下载、字幕提取和视频处理功能。
 				</p>
-				<a class="button button-dark" href="/" style="margin-top: 2rem;">Return home</a>
+				<a class="button button-dark" href="/" style="margin-top: 2rem;">返回首页</a>
 			</div>
 		</div>
 	</main>

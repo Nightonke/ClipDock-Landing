@@ -2,7 +2,8 @@
 name: 部署到 GitHub Pages
 
 on:
-  # 基础模板阶段仅允许手动触发；正式内容完成后再恢复 main 分支自动部署。
+  push:
+    branches: [main]
   workflow_dispatch:
 
 # 设置权限
@@ -27,14 +28,14 @@ jobs:
       - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '22'
           cache: 'npm'
       
       - name: 安装依赖
         run: npm ci
       
-      - name: 构建 Astro 网站
-        run: npm run build
+      - name: 验证素材同步并构建正式网站
+        run: npm run build:production
       
       - name: 上传构建结果
         uses: actions/upload-pages-artifact@v3

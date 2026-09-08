@@ -35,7 +35,9 @@
 		"images:optimize": "node scripts/optimize-images.mjs",
 		"predev": "npm run images:optimize",
 		"prestart": "npm run images:optimize",
-		"prebuild": "npm run images:optimize"
+		"prebuild": "npm run images:optimize",
+		"media:prepare": "npm run images:optimize && node scripts/prepare-media.mjs",
+		"build:production": "node scripts/build-production.mjs"
 	},
 	"dependencies": {
 		"@astrojs/react": "^4.4.2",

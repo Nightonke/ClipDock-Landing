@@ -1,3 +1,5 @@
+> 历史交接记录：当前发布架构与范围以 `docs/deployment.md` 和 `README.md` 为准。以下内容保留作为模板初始化记录。
+
 # ClipDock Landing 交接文档
 
 更新日期：2026-09-03

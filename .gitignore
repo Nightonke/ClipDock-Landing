@@ -25,3 +25,12 @@ references/
 public/assets/optimized/
 src/generated/image-variants.json
 src/generated/gallery-variants.json
+
+# Deployment staging and local authentication/configuration
+.deploy/
+.vercel/
+.env*
+!.env.example
+infrastructure/media-cdn/public/
+infrastructure/media-cdn/node_modules/
+infrastructure/media-cdn/.vercel/

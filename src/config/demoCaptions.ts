@@ -37,5 +37,9 @@ export const demoCaptions: Record<string, DemoCaption[]> = {
 };
 
 export function captionAt(src: string, time: number, fallback: string): string {
-	return demoCaptions[src]?.find((cue) => time >= cue.start && time < cue.end)?.text ?? fallback;
+	// CDN releases keep the original /assets/ suffix, including after redirects.
+	const pathname = new URL(src, "https://clipdock.video").pathname;
+	const assetIndex = pathname.indexOf("/assets/");
+	const key = assetIndex >= 0 ? pathname.slice(assetIndex) : pathname;
+	return demoCaptions[key]?.find((cue) => time >= cue.start && time < cue.end)?.text ?? fallback;
 }

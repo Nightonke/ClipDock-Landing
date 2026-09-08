@@ -1,4 +1,5 @@
 import manifest from '../generated/image-variants.json';
+import { mediaUrl } from '../config/media';
 
 type Variant = { src: string; width: number };
 const variants = manifest as Record<string, Variant[]>;
@@ -6,10 +7,10 @@ const variants = manifest as Record<string, Variant[]>;
 /** Keep the source URL for full-size links; use these props only on inline images. */
 export function responsiveImage(src: string, sizes: string) {
   const entries = variants[src];
-  if (!entries?.length) return { src };
+  if (!entries?.length) return { src: mediaUrl(src) };
   return {
-    src: entries[0].src,
-    srcSet: entries.map(image => `${image.src} ${image.width}w`).join(', '),
+    src: mediaUrl(entries[0].src),
+    srcSet: entries.map(image => `${mediaUrl(image.src)} ${image.width}w`).join(', '),
     sizes,
   };
 }

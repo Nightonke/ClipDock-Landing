@@ -2,10 +2,10 @@
 import LandingPage from "@layouts/LandingPage.astro";
 import ClipDockZhLanding from "@layouts/ClipDockZhLanding.astro";
 import { landingContent } from "@/i18n/content";
-import { defaultLocale, getLanguageLinks, locales, type Locale } from "@/i18n/locales";
+import { defaultLocale, getLanguageLinks, publishedLocales, type Locale } from "@/i18n/locales";
 
 export function getStaticPaths() {
-	return locales
+	return publishedLocales
 		.filter((locale) => locale !== defaultLocale)
 		.map((locale) => ({ params: { locale } }));
 }

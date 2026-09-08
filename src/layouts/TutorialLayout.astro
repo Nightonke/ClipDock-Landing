@@ -10,8 +10,9 @@ interface Props {
 	title: string;
 	description: string;
 	structuredData?: Record<string, unknown>[];
+	noindex?: boolean;
 }
-const { title, description, structuredData } = Astro.props;
+const { title, description, structuredData, noindex = false } = Astro.props;
 const content = landingContent["zh-Hans"];
 const canonical = new URL(Astro.url.pathname, Astro.site ?? "https://clipdock.video").href;
 const languageLinks = [{ locale: "zh-Hans", label: "简体中文", href: Astro.url.pathname, hrefLang: "zh-Hans", isActive: true }];
@@ -23,8 +24,7 @@ const languageLinks = [{ locale: "zh-Hans", label: "简体中文", href: Astro.u
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{title}</title>
 		<meta name="description" content={description} />
-		<!-- Screenshot and workflow review must finish before enabling indexing. -->
-		<meta name="robots" content="noindex, follow" />
+		<meta name="robots" content={noindex ? "noindex, follow" : "index, follow, max-image-preview:large"} />
 		<link rel="canonical" href={canonical} />
 		<meta property="og:type" content={Astro.url.pathname === "/zh-Hans/articles/" ? "website" : "article"} />
 		<meta property="og:title" content={title} />

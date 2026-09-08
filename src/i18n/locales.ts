@@ -4,6 +4,9 @@ export const locales = ["en-US", "zh-Hans", "zh-Hant"] as const;
 
 export type Locale = (typeof locales)[number];
 
+// Only reviewed ClipDock translations are published.
+export const publishedLocales: readonly Locale[] = ["zh-Hans"];
+
 export const localeMeta: Record<
 	Locale,
 	{ label: string; hrefLang: string; htmlLang: string }
@@ -32,7 +35,7 @@ export const localizedPath = (locale: Locale, page = "") => {
 };
 
 export const getLanguageLinks = (activeLocale: Locale, page = "") =>
-	locales.map((locale) => ({
+	publishedLocales.map((locale) => ({
 		locale,
 		label: localeMeta[locale].label,
 		href: localizedPath(locale, page),

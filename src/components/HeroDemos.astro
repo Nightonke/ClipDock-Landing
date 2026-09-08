@@ -1,4 +1,5 @@
 ---
+import { mediaUrl } from "@config/media";
 import { captionAt } from "@config/demoCaptions";
 
 const demos = [
@@ -12,7 +13,7 @@ const demos = [
 <section class="hero-demos" aria-label="ClipDock影随存 功能演示">
 	<div class="demo-card">
 	<div id="hero-demo-screen" class="demo-screen">
-		<video autoplay playsinline muted preload="auto" disablepictureinpicture src={demos[0].src} poster={demos[0].poster} aria-label={demos[0].title}></video>
+		<video autoplay playsinline muted preload="auto" disablepictureinpicture src={mediaUrl(demos[0].src)} poster={mediaUrl(demos[0].poster)} aria-label={demos[0].title}></video>
 		<div class="demo-empty" hidden><strong>演示视频即将补充</strong><span>先了解下方的功能介绍</span></div>
 	</div>
 	<div class="demo-footer">
@@ -22,7 +23,7 @@ const demos = [
 	</div>
 	</div>
 		<div class="demo-buttons" role="group" aria-label="选择演示视频">
-			{demos.map((demo, index) => <button type="button" aria-pressed={index === 0 ? "true" : "false"} aria-controls="hero-demo-screen" data-title={demo.title} data-description={demo.description} data-src={demo.src} data-poster={demo.poster}>{demo.title}</button>)}
+			{demos.map((demo, index) => <button type="button" aria-pressed={index === 0 ? "true" : "false"} aria-controls="hero-demo-screen" data-title={demo.title} data-description={demo.description} data-src={mediaUrl(demo.src)} data-poster={mediaUrl(demo.poster)}>{demo.title}</button>)}
 		</div>
 </section>
 

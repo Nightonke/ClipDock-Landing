@@ -1,4 +1,5 @@
 ---
+import { mediaUrl } from "@config/media";
 import { responsiveImageHtml } from "@/lib/responsive-image";
 import type { LanguageLink } from "@/types/content";
 import type { landingContent } from "@/i18n/content";
@@ -155,8 +156,8 @@ const structuredData = [
 					>
 						<div class="film-window">
 							<video
-								src={content.appPreview.videoSrc}
-								poster={content.appPreview.posterSrc}
+								src={mediaUrl(content.appPreview.videoSrc)}
+								poster={mediaUrl(content.appPreview.posterSrc)}
 								aria-label={content.appPreview.ariaLabel}
 								autoplay
 								muted

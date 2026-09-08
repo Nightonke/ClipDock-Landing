@@ -1,3 +1,4 @@
+import { mediaUrl } from "@config/media";
 import { galleryImage } from "@/lib/gallery-image";
 import { memo, useState } from "react";
 import type { ScreenshotsGallery } from "@/types/components";
@@ -22,8 +23,8 @@ const Screenshots = ({ images, appPreview, labels }: ScreenshotsGallery) => {
 						{activeDevice === "iphone" && appPreview && (
 							<div className="relative flex-shrink-0 overflow-hidden rounded-xl">
 								<video
-									src={appPreview.videoSrc}
-									poster={appPreview.posterSrc}
+									src={mediaUrl(appPreview.videoSrc)}
+									poster={mediaUrl(appPreview.posterSrc)}
 									aria-label={appPreview.ariaLabel}
 									className="aspect-[9/19.5] w-[260px] rounded-xl border border-gray-300 bg-black object-cover shadow-lg dark:border-white/10"
 									autoPlay

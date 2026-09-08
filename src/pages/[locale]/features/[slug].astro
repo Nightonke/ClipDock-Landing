@@ -12,13 +12,8 @@ import {
 } from "@/i18n/locales";
 import MarketingDetail from "@layouts/MarketingDetail.astro";
 
-export function getStaticPaths() {
-	return locales
-		.filter((locale) => locale !== defaultLocale)
-		.flatMap((locale) =>
-			featureSlugs.map((slug) => ({ params: { locale, slug } })),
-		);
-}
+// Legacy Split Screen templates are not part of the ClipDock launch.
+export function getStaticPaths() { return []; }
 
 const { locale, slug } = Astro.params as {
 	locale: Locale;

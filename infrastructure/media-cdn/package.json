@@ -1,0 +1,16 @@
+{
+  "name": "clipdock-media-cdn",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/verify-assets.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@vercel/functions": "3.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1"
+  }
+}

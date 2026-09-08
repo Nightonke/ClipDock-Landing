@@ -8,9 +8,8 @@ import {
 import { defaultLocale, getLanguageLinks } from "@/i18n/locales";
 import MarketingDetail from "@layouts/MarketingDetail.astro";
 
-export function getStaticPaths() {
-	return featureSlugs.map((slug) => ({ params: { slug } }));
-}
+// Legacy Split Screen templates are not part of the ClipDock launch.
+export function getStaticPaths() { return []; }
 
 const { slug } = Astro.params as { slug: FeatureSlug };
 const page = marketingContent[defaultLocale].details.features[slug];

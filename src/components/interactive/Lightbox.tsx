@@ -1,3 +1,4 @@
+import { mediaUrl } from "@config/media";
 import { AnimatePresence, motion } from "framer-motion";
 import { memo, useCallback, useEffect, useState } from "react";
 import { FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
@@ -112,7 +113,7 @@ const Lightbox = ({ images, labels }: LightboxProps) => {
 						animate={{ opacity: 1, scale: 1 }}
 						exit={{ opacity: 0, scale: 0.9 }}
 						transition={{ duration: 0.2 }}
-						src={currentImages[currentIndex].src}
+						src={mediaUrl(currentImages[currentIndex].src)}
 						alt={currentImages[currentIndex].alt || `Screenshot ${currentIndex + 1}`}
 						className="max-h-[95vh] max-w-[95vw] md:max-h-[90vh] md:max-w-[85vw] object-contain rounded-xl shadow-2xl"
 						onClick={(e) => e.stopPropagation()}

@@ -22,7 +22,7 @@ const structuredData = [
 	] },
 ];
 ---
-<TutorialLayout title={`${article.title}｜ClipDock影随存`} description={article.description} structuredData={structuredData}>
+<TutorialLayout title={`${article.title}｜ClipDock影随存`} description={article.description} structuredData={structuredData} noindex={!article.screenshotsReady}>
 	<main id="main-content" class="tutorial-page site-shell">
 		<nav class="tutorial-breadcrumb" aria-label="面包屑"><a href="/zh-Hans/">首页</a><span aria-hidden="true">/</span><a href="/zh-Hans/articles/">使用教程</a><span aria-hidden="true">/</span><a href={`/zh-Hans/articles/#${category.id}`}>{category.name}</a></nav>
 		<header class="tutorial-hero">
