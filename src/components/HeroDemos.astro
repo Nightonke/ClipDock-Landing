@@ -1,4 +1,6 @@
 ---
+import { captionAt } from "@config/demoCaptions";
+
 const demos = [
 	{ title: "分享链接下载", description: "复制分享链接，提取并下载视频或图片。", src: "/assets/demos/share-link.mp4", poster: "/assets/demos/share-link.jpg" },
 	{ title: "复制即后台下载", description: "不必切换 App，复制链接即可后台下载。", src: "/assets/demos/copy-background.mp4", poster: "/assets/demos/copy-background.jpg" },
@@ -15,7 +17,7 @@ const demos = [
 	</div>
 	<div class="demo-footer">
 		<progress class="demo-progress" value="0" max="100" aria-label="视频播放进度"></progress>
-		<p class="demo-description" aria-live="polite">{demos[0].description}</p>
+		<p class="demo-description" aria-live="polite" aria-atomic="true">{captionAt(demos[0].src, 0, demos[0].description)}</p>
 		<p class="demo-error" hidden role="status">视频暂时无法加载，请切换后重试。</p>
 	</div>
 	</div>
@@ -25,18 +27,26 @@ const demos = [
 </section>
 
 <script>
+	import { captionAt } from "@config/demoCaptions";
+
 	document.querySelectorAll<HTMLElement>(".hero-demos").forEach((root) => {
 		const video = root.querySelector<HTMLVideoElement>("video")!;
 		const description = root.querySelector<HTMLElement>(".demo-description")!;
 		const empty = root.querySelector<HTMLElement>(".demo-empty")!;
 		const error = root.querySelector<HTMLElement>(".demo-error")!;
 		const progress = root.querySelector<HTMLProgressElement>(".demo-progress")!;
+		const buttons = root.querySelectorAll<HTMLButtonElement>(".demo-buttons button");
+		let activeButton = buttons[0];
+		const updateCaption = () => {
+			const text = captionAt(activeButton.dataset.src ?? "", video.currentTime, activeButton.dataset.description!);
+			if (description.textContent !== text) description.textContent = text;
+		};
 		const updateProgress = () => {
 			progress.value = !video.hidden && Number.isFinite(video.duration) && video.duration > 0
 				? Math.min(100, Math.max(0, video.currentTime / video.duration * 100)) : 0;
+			updateCaption();
 		};
-		["timeupdate", "loadedmetadata", "durationchange", "emptied"].forEach((event) => video.addEventListener(event, updateProgress));
-		const buttons = root.querySelectorAll<HTMLButtonElement>(".demo-buttons button");
+		["timeupdate", "loadedmetadata", "durationchange", "emptied", "seeking", "seeked"].forEach((event) => video.addEventListener(event, updateProgress));
 		video.addEventListener("error", () => { if (video.hasAttribute("src")) error.hidden = false; });
 		const play = () => {
 			video.muted = true;
@@ -46,7 +56,8 @@ const demos = [
 			video.pause();
 			progress.value = 0;
 			error.hidden = true;
-			description.textContent = button.dataset.description!;
+			activeButton = button;
+			description.textContent = captionAt(button.dataset.src ?? "", 0, button.dataset.description!);
 			buttons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
 			const src = button.dataset.src;
 			video.hidden = !src;
