@@ -1,6 +1,12 @@
-<div class="video-recovery" hidden>
+---
+import { siteUI } from "@/i18n/site-ui";
+import type { Locale } from "@/i18n/locales";
+interface Props { locale?: Locale }
+const ui = siteUI(Astro.props.locale ?? "zh-Hans");
+---
+<div class="video-recovery" data-failed={ui.failed} hidden>
   <span role="status" aria-live="polite"></span>
-  <button type="button">重试播放</button>
+  <button type="button">{ui.retry}</button>
 </div>
 <style>
   .video-recovery { position: absolute; z-index: 2; inset-inline: 24px; top: 50%; transform: translateY(-50%); display: grid; justify-items: center; padding: 16px; border: 1.5px solid var(--ink, #171916); border-radius: 14px; background: var(--paper-strong, #fffdf7); color: var(--ink, #171916); text-align: center; font-size: .875rem; line-height: 1.5; }

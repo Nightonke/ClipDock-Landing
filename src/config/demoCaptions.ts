@@ -36,10 +36,19 @@ export const demoCaptions: Record<string, DemoCaption[]> = {
 	],
 };
 
-export function captionAt(src: string, time: number, fallback: string): string {
+const englishCaptions: Record<string, string[]> = {
+ "/assets/demos/share-link.mp4": ["Open the share menu and tap Copy link.", "Return to ClipDock to fill in the copied link.", "Tap Extract to find the video.", "The download starts. Check its progress in Manager."],
+ "/assets/demos/copy-background.mp4": ["Enable auto-download, background detection, and notifications.", "Return to your video app with background detection running.", "Find a video, open Share, and copy its link.", "Keep browsing and copy another link without switching apps.", "A notification confirms that a background download has started.", "Keep copying links to create more download tasks."],
+ "/assets/demos/web-long-press.mp4": ["Open a webpage in the browser and play the video.", "View detected videos and choose the one you want.", "ClipDock checks the resource and creates a download task.", "Open Manager to check download progress.", "When it finishes, preview the video or save it to Photos."],
+ "/assets/demos/batch-playlist.mp4": ["Paste a playlist link in the Batch tab.", "Tap Load list to find the videos.", "Select videos and add them to the queue together.", "Open Manager to see your downloads."],
+};
+
+export function captionAt(src: string, time: number, fallback: string, locale: string = "zh-Hans"): string {
 	// CDN releases keep the original /assets/ suffix, including after redirects.
 	const pathname = new URL(src, "https://clipdock.video").pathname;
 	const assetIndex = pathname.indexOf("/assets/");
 	const key = assetIndex >= 0 ? pathname.slice(assetIndex) : pathname;
-	return demoCaptions[key]?.find((cue) => time >= cue.start && time < cue.end)?.text ?? fallback;
+	const index = demoCaptions[key]?.findIndex((cue) => time >= cue.start && time < cue.end) ?? -1;
+ if (index < 0) return fallback;
+ return locale === "en-US" || locale === "en" ? englishCaptions[key]?.[index] ?? fallback : demoCaptions[key][index].text;
 }

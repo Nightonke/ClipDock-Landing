@@ -1,65 +1,8 @@
 ---
-import TutorialLayout from "@layouts/TutorialLayout.astro";
-import TutorialScreenshot from "@/components/TutorialScreenshot.astro";
-import { tutorials, categories, articleHref, type Tutorial } from "@/content/tutorials";
-import { landingContent } from "@/i18n/content";
+import TutorialArticle from "@layouts/TutorialArticle.astro";
+import { getTutorials } from "@/content/localized-tutorials";
 export function getStaticPaths() {
-	return tutorials.map(article => ({ params: { slug: article.slug }, props: { article } }));
+ return getTutorials("zh-Hans").map(article => ({ params: { slug: article.slug }, props: { article } }));
 }
-interface Props { article: Tutorial }
-const { article } = Astro.props;
-const category = categories.find(category => category.id === article.category)!;
-const site = Astro.site ?? new URL("https://clipdock.video");
-const canonical = new URL(articleHref(article.slug), site).href;
-const related = article.related.map(slug => tutorials.find(item => item.slug === slug)!);
-const storeURL = landingContent["zh-Hans"].storeLinks.apple;
-const structuredData = [
-	{ "@context": "https://schema.org", "@type": "Article", headline: article.title, description: article.description, inLanguage: "zh-Hans", mainEntityOfPage: canonical, author: { "@type": "Organization", name: "ClipDock影随存", url: site.href } },
-	{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
-		{ "@type": "ListItem", position: 1, name: "首页", item: new URL("/zh-Hans/", site).href },
-		{ "@type": "ListItem", position: 2, name: "使用教程", item: new URL("/zh-Hans/articles/", site).href },
-		{ "@type": "ListItem", position: 3, name: article.title, item: canonical },
-	] },
-];
 ---
-<TutorialLayout title={`${article.title}｜ClipDock影随存`} description={article.description} structuredData={structuredData} noindex={!article.screenshotsReady}>
-	<main id="main-content" class="tutorial-page site-shell">
-		<nav class="tutorial-breadcrumb" aria-label="面包屑"><a href="/zh-Hans/">首页</a><span aria-hidden="true">/</span><a href="/zh-Hans/articles/">使用教程</a><span aria-hidden="true">/</span><a href={`/zh-Hans/articles/#${category.id}`}>{category.name}</a></nav>
-		<header class="tutorial-hero">
-			<p class="eyebrow">{category.name}</p><h1>{article.title}</h1>
-			<p class="tutorial-lead">{article.intro}</p>
-			{!article.screenshotsReady && <p class="tutorial-draft">教程初稿 · 截图与操作细节待核对，尚未标记为实测教程。</p>}
-			{article.verificationNote && <p class="tutorial-draft">{article.verificationNote}</p>}
-		</header>
-		<div class="tutorial-body-grid">
-			<aside class="tutorial-toc"><nav aria-label="文章目录"><strong>本篇内容</strong>{article.steps.map((step, index) => <a href={`#step-${index + 1}`}>{String(index + 1).padStart(2, "0")} · {step.title}</a>)}<a href="#troubleshooting">遇到问题时</a><a href="#questions">常见问题</a></nav></aside>
-			<article class="tutorial-body">
-				{article.steps.map((step, index) => (
-					<section id={`step-${index + 1}`} class:list={["tutorial-step", { "tutorial-step-illustrated": step.image, "tutorial-step-reverse": index % 2 === 1 }]}>
-						<div class="tutorial-step-copy">
-							<p class="tutorial-step-index"><strong>{String(index + 1).padStart(2, "0")}</strong><span>操作步骤</span></p><h2>{step.title}</h2><p>{step.text}</p>
-							{step.sections?.map(section => <div class="tutorial-step-detail"><h3>{section.title}</h3><p>{section.text}</p></div>)}
-						</div>
-						{step.image && <TutorialScreenshot id={step.image} />}
-					</section>
-				))}
-				<section id="troubleshooting" class="tutorial-troubleshooting"><h2>遇到问题时</h2>{article.tips.map(tip => <div><h3>{tip.title}</h3><p>{tip.text}</p></div>)}</section>
-				<section id="questions" class="tutorial-questions"><h2>常见问题</h2>{article.faq.map(item => <details><summary>{item.question}</summary><p>{item.answer}</p></details>)}</section>
-				{article.category === "platform" && (
-					<section class="tutorial-platforms" aria-labelledby="supported-platforms">
-						<h2 id="supported-platforms">支持平台</h2>
-						<p>YouTube、Sora(OpenAI)、Instagram(包含快拍)、Twitter、TK、Threads、Facebook、Vimeo、afreecatv、Tumblr、Triller、Likee、Twitch、Pinterest、Snapchat、Reddit、VK、Dailymotion、SoundCloud、Lemon8、Suno音乐、AcFun、B、天猫、闲鱼、大众点评、UC视频、趣头条、皮皮虾、皮皮搞笑、微博、秒拍、绿洲、小咖秀、美图秀秀、美拍、云音乐、央视网(CCTV)、新华网、虎嗅、虎牙、斗鱼、糖豆、喜马拉雅、陌陌、映客、迅雷、WIDE短视频 、最右、开眼、酷燃、剪映、糗事百科、梨视频、**等上千个平台</p>
-					</section>
-				)}
-				{article.category === "batch" && (
-					<section class="tutorial-platforms" aria-labelledby="supported-platforms">
-						<h2 id="supported-platforms">支持平台</h2>
-						<p>支持YouTube(频道页、Shorts、Hashtag、播放列表)、Instagram(作者主页、Hashtag列表)、Twitter(X)、TK(作者主页、Hashtag列表)、D(主页、合集)、B(主页、合集)、微博、好看等主页批量提取</p>
-					</section>
-				)}
-				<div class="tutorial-cta"><h2>在你的设备上试一试</h2><p>ClipDock影随存可免费下载，包含 App 内购买。具体功能入口与可用选项以 App 当前版本为准。</p><a class="button button-dark" href={storeURL} target="_blank" rel="noopener noreferrer">在 App Store 下载</a></div>
-			</article>
-		</div>
-		<section class="tutorial-related"><h2>接下来，你可能需要</h2><div class="tutorial-card-grid">{related.map(item => <a class="tutorial-card" href={articleHref(item.slug)}><h3>{item.title}</h3><p>{item.description}</p><span class="tutorial-read">阅读教程 ↗</span></a>)}</div></section>
-	</main>
-</TutorialLayout>
+<TutorialArticle article={Astro.props.article} locale="zh-Hans" />

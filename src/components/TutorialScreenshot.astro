@@ -3,9 +3,17 @@ import { mediaUrl } from "@config/media";
 import { responsiveImageHtml } from "@/lib/responsive-image";
 import { screenshotBriefs } from "@/content/tutorials";
 import OrangePhoneFrame from "./OrangePhoneFrame.astro";
-interface Props { id: string }
-const { id } = Astro.props;
-const shot = screenshotBriefs[id];
+import { englishScreenshotTitles } from "@/content/en-US/tutorials";
+import { siteUI } from "@/i18n/site-ui";
+import type { Locale } from "@/i18n/locales";
+interface Props { id: string; locale?: Locale }
+const { id, locale = "zh-Hans" } = Astro.props;
+const ui = siteUI(locale);
+const source = screenshotBriefs[id];
+if (!source) throw new Error(`Unknown screenshot: ${id}`);
+const title = locale === "en-US" ? englishScreenshotTitles[id] : source.title;
+if (!title) throw new Error(`Missing ${locale} screenshot title: ${id}`);
+const shot = { ...source, title };
 const mark = shot.highlight;
 const arrowPath = mark && (mark.x > 800
 	? `M ${mark.x - 170} ${mark.y - 110} Q ${mark.x - 55} ${mark.y - 100} ${mark.x + 25} ${mark.y + 35} m -5 -65 l 5 65 l -61 -25`
@@ -15,10 +23,10 @@ const arrowPath = mark && (mark.x > 800
 	{shot.video ? (
 		<div class="tutorial-video-card">
 			<video crossorigin="anonymous" class="tutorial-shot-video" src={mediaUrl(shot.video)} poster={shot.poster && mediaUrl(shot.poster)} autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-label={shot.title}></video>
-			<progress class="tutorial-video-progress" value="0" max="100" aria-label="视频播放进度"></progress>
+			<progress class="tutorial-video-progress" value="0" max="100" aria-label={ui.progress}></progress>
 		</div>
 	) : shot.src ? (
-		<a class="tutorial-shot-full" href={mediaUrl(shot.src)} target="_blank" rel="noopener noreferrer" aria-label={`${shot.title}，打开大图`}>
+		<a class="tutorial-shot-full" href={mediaUrl(shot.src)} target="_blank" rel="noopener noreferrer" aria-label={`${shot.title}: ${ui.openImage}`}>
 			{shot.framed ? (
 				<img {...responsiveImageHtml(shot.src, "240px")} alt={shot.title} loading="lazy" decoding="async" width={shot.width ?? 750} height={shot.height ?? 1624} />
 			) : (
@@ -32,11 +40,11 @@ const arrowPath = mark && (mark.x > 800
 			</svg>}
 		</a>
 	) : (
-		<div class="tutorial-shot-placeholder" role="img" aria-label={`${shot.title}，截图待补充`}>
-			<span class="shot-id">截图 · {id}</span>
+		<div class="tutorial-shot-placeholder" role="img" aria-label={`${shot.title}: ${ui.missingScreenshot}`}>
+			<span class="shot-id">{ui.screenshot} · {id}</span>
 			<strong>{shot.title}</strong>
 			<p>{shot.brief}</p>
-			<small>真实操作截图待补充</small>
+			<small>{ui.missingScreenshot}</small>
 		</div>
 	)}
 	<figcaption>{shot.title}</figcaption>

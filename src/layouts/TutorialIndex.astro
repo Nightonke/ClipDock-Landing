@@ -1,0 +1,43 @@
+---
+import TutorialLayout from "@layouts/TutorialLayout.astro";
+import { getTutorials, getCategories } from "@/content/localized-tutorials";
+import { localizedPath, type Locale } from "@/i18n/locales";
+import { siteUI } from "@/i18n/site-ui";
+import { landingContent } from "@/i18n/content";
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const ui = siteUI(locale);
+const tutorials = getTutorials(locale);
+const categories = getCategories(locale).filter(category => tutorials.some(article => article.category === category.id));
+const articleHref = (slug: string) => localizedPath(locale, `articles/${slug}`);
+const toolCount = tutorials.filter(article => article.category === "tools").length;
+const draftCount = tutorials.filter(article => !article.screenshotsReady).length;
+---
+<TutorialLayout locale={locale} title={ui.indexTitle} description={ui.indexDescription}>
+	<main id="main-content" class="tutorial-index site-shell">
+		<header class="tutorial-index-hero">
+			<p class="eyebrow">{landingContent[locale].shortName} · {ui.tutorials}</p>
+			<h1>{ui.indexHeading.split("\n").map((line, index) => <>{index > 0 && <br />}{line}</>)}</h1>
+			<p class="tutorial-lead">{ui.indexIntro}</p>
+			{ui.toolCount && <p class="tutorial-lead">{ui.toolCount.replace("{count}", String(toolCount))}</p>}
+			{draftCount > 0 && <p class="tutorial-draft">{ui.draftCount.replace("{count}", String(draftCount))}</p>}
+		</header>
+		<nav class="tutorial-categories" aria-label={ui.categories}>
+			{categories.map(category => <a href={`#${category.id}`}>{category.name}<span>{tutorials.filter(article => article.category === category.id).length}</span></a>)}
+		</nav>
+		{categories.map(category => (
+			<section id={category.id} class="tutorial-category">
+				<div class="tutorial-category-heading"><h2>{category.name}</h2><p>{category.description}</p></div>
+				<div class="tutorial-card-grid">
+					{tutorials.filter(article => article.category === category.id).map(article => (
+						<a class="tutorial-card" href={articleHref(article.slug)}>
+							<span class="tutorial-tag">{category.name} · iPhone / iPad</span>
+							{article.verificationNote && <span class="tutorial-tag">{ui.unverified}</span>}
+							<h3>{article.title}</h3><p>{article.description}</p><span class="tutorial-read">{ui.read} <span aria-hidden="true">↗</span></span>
+						</a>
+					))}
+				</div>
+			</section>
+		))}
+	</main>
+</TutorialLayout>

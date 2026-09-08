@@ -3,7 +3,7 @@ import SiteFooter from "@/sections/SiteFooter.astro";
 import SiteHeader from "@/sections/SiteHeader.astro";
 import { siteConfig } from "@config/site";
 import { landingContent } from "@/i18n/content";
-import { marketingContent } from "@/i18n/marketing";
+import { siteUI } from "@/i18n/site-ui";
 import {
 	defaultLocale,
 	getLanguageLinks,
@@ -30,7 +30,7 @@ const {
 	privacyHref = localizedPath(defaultLocale, "privacy"),
 	termsHref = localizedPath(defaultLocale, "terms"),
 	labels = landingContent[defaultLocale].labels,
-	ogImage = "/og.png",
+	ogImage = "/assets/clipdock-app-icon.png",
 	ogImageAlt = "ClipDock — Web video downloader for iPhone and iPad.",
 	structuredData,
 	noindex = false,
@@ -39,7 +39,7 @@ const {
 const activeLocale =
 	(alternates.find((link) => link.isActive)?.locale as Locale | undefined) ??
 	defaultLocale;
-const marketing = marketingContent[activeLocale];
+const ui = siteUI(activeLocale);
 const navData = appData || {
 	name: siteConfig.name,
 	shortName: siteConfig.name,
@@ -85,7 +85,7 @@ const jsonLd = structuredData
 		{description && <meta name="description" content={description} />}
 
 		<link rel="canonical" href={canonicalURL} />
-		{alternates.map((alternate) => (
+		{!noindex && alternates.map((alternate) => (
 			<link
 				rel="alternate"
 				hreflang={alternate.hrefLang}
@@ -94,11 +94,11 @@ const jsonLd = structuredData
 					: alternate.href}
 			/>
 		))}
-		<link
+		{!noindex && <link
 			rel="alternate"
 			hreflang="x-default"
 			href={Astro.site ? new URL(xDefaultHref, Astro.site).href : xDefaultHref}
-		/>
+		/>}
 
 		<meta property="og:title" content={title} />
 		<meta property="og:url" content={canonicalURL} />
@@ -106,13 +106,13 @@ const jsonLd = structuredData
 		<meta property="og:site_name" content={navTitle} />
 		<meta property="og:locale" content={ogLocaleMap[activeLocale]} />
 		{Object.entries(ogLocaleMap)
-			.filter(([locale]) => locale !== activeLocale)
+			.filter(([locale]) => locale !== activeLocale && alternates.some(link => link.locale === locale))
 			.map(([, locale]) => <meta property="og:locale:alternate" content={locale} />)}
 		{description && <meta property="og:description" content={description} />}
 		<meta property="og:image" content={socialImageURL} />
 		<meta property="og:image:type" content="image/png" />
-		<meta property="og:image:width" content="1536" />
-		<meta property="og:image:height" content="1024" />
+		<meta property="og:image:width" content="512" />
+		<meta property="og:image:height" content="512" />
 		<meta property="og:image:alt" content={ogImageAlt} />
 
 		<meta name="twitter:card" content="summary_large_image" />
@@ -127,114 +127,38 @@ const jsonLd = structuredData
 
 		{jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
 		<script is:inline>document.documentElement.classList.add("js");</script>
-		<script is:inline define:vars={{ activeLocale, defaultLocale }}>
-			(() => {
-				const storageKey = "clipdock-locale";
-				const supportedLocales = ["en-US", "zh-Hans", "zh-Hant"];
-				const localizedPathPattern = /^\/(?:zh-Hans|zh-Hant)(?:\/|$)/;
-				const pathname = window.location.pathname;
 
-				if (
-					activeLocale !== defaultLocale ||
-					localizedPathPattern.test(pathname)
-				) {
-					return;
-				}
-
-				let preferredLocale = null;
-				try {
-					const savedLocale = window.localStorage.getItem(storageKey);
-					if (supportedLocales.includes(savedLocale)) {
-						preferredLocale = savedLocale;
-					}
-				} catch {
-					// Language detection still works when storage is unavailable.
-				}
-
-				if (!preferredLocale) {
-					const deviceLanguages =
-						navigator.languages?.length
-							? navigator.languages
-							: [navigator.language];
-
-					for (const language of deviceLanguages) {
-						const normalizedLanguage = language
-							.toLowerCase()
-							.replaceAll("_", "-");
-
-						if (normalizedLanguage.startsWith("zh")) {
-							preferredLocale =
-								/^zh-(?:hant|tw|hk|mo)(?:-|$)/.test(normalizedLanguage)
-									? "zh-Hant"
-									: "zh-Hans";
-							break;
-						}
-
-						if (normalizedLanguage.startsWith("en")) {
-							preferredLocale = "en-US";
-							break;
-						}
-					}
-				}
-
-				if (!preferredLocale || preferredLocale === defaultLocale) {
-					return;
-				}
-
-				const cleanPathname = pathname === "/index.html" ? "/" : pathname;
-				const localizedPath =
-					cleanPathname === "/"
-						? `/${preferredLocale}/`
-						: `/${preferredLocale}${cleanPathname}`;
-
-				window.location.replace(
-					`${localizedPath}${window.location.search}${window.location.hash}`,
-				);
-			})();
-		</script>
 	</head>
 	<body>
-		<a class="skip-link" href="#main-content">Skip to content</a>
+		<a class="skip-link" href="#main-content">{ui.skip}</a>
 		<SiteHeader
+			locale={activeLocale}
 			name={navTitle}
 			logo={navData.logo}
 			homeHref={homeHref}
 			storeHref={navData.storeLinks.apple}
 			languageLinks={alternates}
-			nav={marketing.nav}
+			nav={ui.nav}
 		/>
 
 		<slot />
 
 		<SiteFooter
+			locale={activeLocale}
 			name={navTitle}
 			logo={navData.logo}
-			tagline={marketing.footerTagline}
+			tagline={ui.tagline}
 			homeHref={homeHref}
 			privacyHref={privacyHref}
 			termsHref={termsHref}
 			storeHref={navData.storeLinks.apple}
 			privacyLabel={labels.privacy}
 			termsLabel={labels.terms}
-			getAppLabel={marketing.nav.getApp}
+			getAppLabel={ui.nav.getApp}
 			languageLinks={alternates}
 		/>
 
 		<script is:inline>
-			const localeStorageKey = "clipdock-locale";
-			document.querySelectorAll("[data-locale-choice]").forEach((link) => {
-				link.addEventListener("click", () => {
-					try {
-						window.localStorage.setItem(
-							localeStorageKey,
-							link.dataset.localeChoice,
-						);
-					} catch {
-						// The link still works when storage is unavailable.
-					}
-				});
-			});
-
 			const revealItems = document.querySelectorAll("[data-reveal]");
 			if ("IntersectionObserver" in window) {
 				const revealObserver = new IntersectionObserver(

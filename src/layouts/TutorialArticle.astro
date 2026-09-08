@@ -1,0 +1,65 @@
+---
+import TutorialLayout from "@layouts/TutorialLayout.astro";
+import TutorialScreenshot from "@/components/TutorialScreenshot.astro";
+import type { Tutorial } from "@/content/tutorials";
+import { getTutorials, getCategories, getPlatformNote } from "@/content/localized-tutorials";
+import { localizedPath, localeMeta, type Locale } from "@/i18n/locales";
+import { siteUI } from "@/i18n/site-ui";
+import { landingContent } from "@/i18n/content";
+interface Props { article: Tutorial; locale: Locale }
+const { article, locale } = Astro.props;
+const ui = siteUI(locale);
+const content = landingContent[locale];
+const tutorials = getTutorials(locale);
+const categories = getCategories(locale);
+const articleHref = (slug: string) => localizedPath(locale, `articles/${slug}`);
+const homeHref = localizedPath(locale);
+const indexHref = localizedPath(locale, "articles");
+const platformNote = getPlatformNote(locale, article.category);
+const category = categories.find(category => category.id === article.category)!;
+const site = Astro.site ?? new URL("https://clipdock.video");
+const canonical = new URL(articleHref(article.slug), site).href;
+const related = article.related.flatMap(slug => { const item = tutorials.find(item => item.slug === slug); return item ? [item] : []; });
+const storeURL = content.storeLinks.apple;
+const structuredData = [
+	{ "@context": "https://schema.org", "@type": "Article", headline: article.title, description: article.description, inLanguage: localeMeta[locale].htmlLang, mainEntityOfPage: canonical, author: { "@type": "Organization", name: content.shortName, url: site.href } },
+	{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+		{ "@type": "ListItem", position: 1, name: ui.home, item: new URL(homeHref, site).href },
+		{ "@type": "ListItem", position: 2, name: ui.tutorials, item: new URL(indexHref, site).href },
+		{ "@type": "ListItem", position: 3, name: article.title, item: canonical },
+	] },
+];
+---
+<TutorialLayout locale={locale} slug={article.slug} title={`${article.title} | ${content.shortName}`} description={article.description} structuredData={structuredData} noindex={!article.screenshotsReady}>
+	<main id="main-content" class="tutorial-page site-shell">
+		<nav class="tutorial-breadcrumb" aria-label={ui.breadcrumb}><a href={homeHref}>{ui.home}</a><span aria-hidden="true">/</span><a href={indexHref}>{ui.tutorials}</a><span aria-hidden="true">/</span><a href={`${indexHref}#${category.id}`}>{category.name}</a></nav>
+		<header class="tutorial-hero">
+			<p class="eyebrow">{category.name}</p><h1>{article.title}</h1>
+			<p class="tutorial-lead">{article.intro}</p>
+			{!article.screenshotsReady && <p class="tutorial-draft">{ui.draft}</p>}
+			{article.verificationNote && <p class="tutorial-draft">{article.verificationNote}</p>}
+		</header>
+		<div class="tutorial-body-grid">
+			<aside class="tutorial-toc"><nav aria-label={ui.contents}><strong>{ui.contents}</strong>{article.steps.map((step, index) => <a href={`#step-${index + 1}`}>{String(index + 1).padStart(2, "0")} · {step.title}</a>)}<a href="#troubleshooting">{ui.troubleshooting}</a><a href="#questions">{ui.questions}</a></nav></aside>
+			<article class="tutorial-body">
+				{article.steps.map((step, index) => (
+					<section id={`step-${index + 1}`} class:list={["tutorial-step", { "tutorial-step-illustrated": step.image, "tutorial-step-reverse": index % 2 === 1 }]}>
+						<div class="tutorial-step-copy">
+							<p class="tutorial-step-index"><strong>{String(index + 1).padStart(2, "0")}</strong><span>{ui.steps}</span></p><h2>{step.title}</h2><p>{step.text}</p>
+							{step.sections?.map(section => <div class="tutorial-step-detail"><h3>{section.title}</h3><p>{section.text}</p></div>)}
+						</div>
+						{step.image && <TutorialScreenshot id={step.image} locale={locale} />}
+					</section>
+				))}
+				<section id="troubleshooting" class="tutorial-troubleshooting"><h2>{ui.troubleshooting}</h2>{article.tips.map(tip => <div><h3>{tip.title}</h3><p>{tip.text}</p></div>)}</section>
+				<section id="questions" class="tutorial-questions"><h2>{ui.questions}</h2>{article.faq.map(item => <details><summary>{item.question}</summary><p>{item.answer}</p></details>)}</section>
+                {platformNote && <section class="tutorial-platforms" aria-labelledby="supported-platforms">
+                    <h2 id="supported-platforms">{ui.supportedPlatforms}</h2><p>{platformNote}</p>
+                </section>}
+
+				<div class="tutorial-cta"><h2>{ui.ctaTitle}</h2><p>{ui.ctaText}</p><a class="button button-dark" href={storeURL} target="_blank" rel="noopener noreferrer">{ui.ctaButton}</a></div>
+			</article>
+		</div>
+		{related.length > 0 && <section class="tutorial-related"><h2>{ui.related}</h2><div class="tutorial-card-grid">{related.map(item => <a class="tutorial-card" href={articleHref(item.slug)}><h3>{item.title}</h3><p>{item.description}</p><span class="tutorial-read">{ui.read}</span></a>)}</div></section>}
+	</main>
+</TutorialLayout>

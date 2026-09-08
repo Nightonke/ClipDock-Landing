@@ -1,5 +1,5 @@
 import { mediaUrl } from "@config/media";
-import { galleryImage } from "@/lib/gallery-image";
+import { responsiveImage } from "@/lib/responsive-image";
 import { memo, useState } from "react";
 import type { ScreenshotsGallery } from "@/types/components";
 import type { ScreenshotItem } from "@/types/content";

@@ -1,7 +1,7 @@
 ---
 import { publishedLocales } from "@/i18n/locales";
 export function getStaticPaths() {
-  return publishedLocales.map(locale => ({ params: { locale } }));
+  return publishedLocales.filter(locale => locale !== "en-US").map(locale => ({ params: { locale } }));
 }
 return Astro.redirect("https://daysinyear.github.io/ClipDock/privacy.html", 302);
 ---

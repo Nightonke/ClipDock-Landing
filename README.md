@@ -2,7 +2,7 @@
 
 ClipDock 官网，正式域名 https://clipdock.video。Astro 静态站点。
 
-首版发布简体中文首页和 35 篇教程。英文、繁体和继承的 Split Screen 功能/场景模板仍保留在源码，但不生成或出现在语言导航中。根路径立即跳转到 `/zh-Hans/`。
+当前提供英文首页 `/`、英文教程目录 `/articles/` 和完整的 35 篇英文教程；简体中文首页 `/zh-Hans/` 与 35 篇中文教程继续保留。中英文共用首页和教程模板，通过语言菜单切换，不根据设备语言自动跳转。繁体与继承的旧功能/场景模板不生成。
 
 ## 本地开发
 
@@ -25,8 +25,12 @@ npm run build:production
 
 ## 内容维护
 
-- 中文首页：`src/layouts/ClipDockZhLanding.astro`
-- 教程：`src/content/tutorials.ts`、`src/content/video-tools.ts`
+- 共用首页：`src/layouts/ClipDockLanding.astro`
+- 中英文首页文案：`src/i18n/home/`；公共界面文案：`src/i18n/site-ui.ts`
+- 中文教程：`src/content/tutorials.ts`、`src/content/video-tools.ts`
+- 英文教程：`src/content/en-US/tutorials.ts`
+- 多语言教程索引与可用性：`src/content/localized-tutorials.ts`
+- 扩展流程与验证：[多语言维护](docs/localization.md)
 - 已发布语言：`src/i18n/locales.ts` 中的 `publishedLocales`
 - 图片优化：[docs/image-optimization.md](docs/image-optimization.md)
 - App Store 登记的法律链接：`https://daysinyear.github.io/ClipDock/privacy.html` 和 `https://daysinyear.github.io/ClipDock/user.html`

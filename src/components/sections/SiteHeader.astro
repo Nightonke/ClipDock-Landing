@@ -1,7 +1,10 @@
 ---
+import { siteUI } from "@/i18n/site-ui";
+import { localizedPath, type Locale } from "@/i18n/locales";
 import type { LanguageLink } from "@/types/content";
 
 interface Props {
+ locale?: Locale;
 	name: string;
 	logo: string;
 	homeHref: string;
@@ -21,20 +24,23 @@ const currentLanguage =
 	languageLinks.find((link) => link.isActive)?.label ?? languageLinks[0]?.label;
 const homeAnchor = (anchor: string) =>
 	homeHref === "/" ? `/${anchor}` : `${homeHref}${anchor}`;
+const locale = Astro.props.locale ?? (homeHref === "/" ? "en-US" : "zh-Hans");
+const ui = siteUI(locale);
+
 ---
 
 <div class="site-header-wrap">
-	<header class="site-header site-shell" aria-label="Site header">
-		<a class="brand-link" href={homeHref} aria-label={`${name} home`}>
+	<header class="site-header site-shell" aria-label={ui.header}>
+		<a class="brand-link" href={homeHref} aria-label={`${name} ${ui.home}`}>
 			<img src={logo} width="43" height="43" alt="" />
 			<span>{name}</span>
 		</a>
 
-		<nav class="primary-nav" aria-label="Primary navigation">
+		<nav class="primary-nav" aria-label={ui.primaryNav}>
 			<a href={homeAnchor("#features")}>{nav.features}</a>
 			<a href={homeAnchor("#use-cases")}>{nav.useCases}</a>
 			<a href={homeAnchor("#faq")}>{nav.faq}</a>
-			{homeHref === "/zh-Hans/" && <a href="/zh-Hans/articles/">使用教程</a>}
+			<a href={localizedPath(locale, "articles")}>{ui.tutorials}</a>
 		</nav>
 
 		<div class="header-actions">
@@ -65,11 +71,11 @@ const homeAnchor = (anchor: string) =>
 
 			<details class="mobile-menu">
 				<summary>{nav.menu}</summary>
-				<nav class="mobile-popover" aria-label="Mobile navigation">
+				<nav class="mobile-popover" aria-label={ui.mobileNav}>
 					<a href={homeAnchor("#features")}>{nav.features}</a>
 					<a href={homeAnchor("#use-cases")}>{nav.useCases}</a>
 					<a href={homeAnchor("#faq")}>{nav.faq}</a>
-					{homeHref === "/zh-Hans/" && <a href="/zh-Hans/articles/">使用教程</a>}
+					<a href={localizedPath(locale, "articles")}>{ui.tutorials}</a>
 					<a href={storeHref} target="_blank" rel="noopener noreferrer">{nav.getApp}</a>
 					{languageLinks.map((link) => (
 						<a

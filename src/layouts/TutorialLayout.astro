@@ -2,23 +2,31 @@
 import SiteHeader from "@/sections/SiteHeader.astro";
 import SiteFooter from "@/sections/SiteFooter.astro";
 import { landingContent } from "@/i18n/content";
-import { marketingContent } from "@/i18n/marketing";
+import { siteUI } from "@/i18n/site-ui";
+import { localizedPath, localeMeta, defaultLocale, type Locale } from "@/i18n/locales";
+import { tutorialLanguageLinks } from "@/content/localized-tutorials";
 import "@/styles/brand.css";
 import "@/styles/tutorials.css";
 
 interface Props {
+ locale?: Locale;
+ slug?: string;
 	title: string;
 	description: string;
 	structuredData?: Record<string, unknown>[];
 	noindex?: boolean;
 }
 const { title, description, structuredData, noindex = false } = Astro.props;
-const content = landingContent["zh-Hans"];
+const locale = Astro.props.locale ?? "zh-Hans";
+const ui = siteUI(locale);
+const homeHref = localizedPath(locale);
+const content = landingContent[locale];
 const canonical = new URL(Astro.url.pathname, Astro.site ?? "https://clipdock.video").href;
-const languageLinks = [{ locale: "zh-Hans", label: "简体中文", href: Astro.url.pathname, hrefLang: "zh-Hans", isActive: true }];
+const languageLinks = tutorialLanguageLinks(locale, Astro.props.slug);
+const xDefault = languageLinks.find(link => link.locale === defaultLocale) ?? languageLinks[0];
 ---
 <!doctype html>
-<html lang="zh-Hans">
+<html lang={localeMeta[locale].htmlLang}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,12 +34,14 @@ const languageLinks = [{ locale: "zh-Hans", label: "简体中文", href: Astro.u
 		<meta name="description" content={description} />
 		<meta name="robots" content={noindex ? "noindex, follow" : "index, follow, max-image-preview:large"} />
 		<link rel="canonical" href={canonical} />
-		<meta property="og:type" content={Astro.url.pathname === "/zh-Hans/articles/" ? "website" : "article"} />
+        {languageLinks.map(link => <link rel="alternate" hreflang={link.hrefLang} href={new URL(link.href, Astro.site ?? "https://clipdock.video").href} />)}
+        <link rel="alternate" hreflang="x-default" href={new URL(xDefault.href, Astro.site ?? "https://clipdock.video").href} />
+		<meta property="og:type" content={!Astro.props.slug ? "website" : "article"} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:url" content={canonical} />
-		<meta property="og:locale" content="zh_CN" />
-		<meta property="og:site_name" content="ClipDock影随存" />
+		<meta property="og:locale" content={locale === "en-US" ? "en_US" : "zh_CN"} />
+		<meta property="og:site_name" content={content.shortName} />
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
@@ -40,9 +50,10 @@ const languageLinks = [{ locale: "zh-Hans", label: "简体中文", href: Astro.u
 		{structuredData && <script type="application/ld+json" set:html={JSON.stringify(structuredData).replace(/</g, "\\u003c")} />}
 	</head>
 	<body>
-		<a class="skip-link" href="#main-content">跳到正文</a>
-		<SiteHeader name="ClipDock影随存" logo={content.logo} homeHref="/zh-Hans/" storeHref={content.storeLinks.apple} languageLinks={languageLinks} nav={marketingContent["zh-Hans"].nav} />
-		<slot />
-		<SiteFooter name="ClipDock影随存" logo={content.logo} tagline="从链接保存视频，让处理更轻松。" homeHref="/zh-Hans/" privacyHref="/zh-Hans/privacy/" termsHref="/zh-Hans/terms/" storeHref={content.storeLinks.apple} privacyLabel="隐私政策" termsLabel="用户协议" getAppLabel="下载 App" languageLinks={languageLinks} />
+		<a class="skip-link" href="#main-content">{ui.skip}</a>
+        <SiteHeader locale={locale} name={content.shortName} logo={content.logo} homeHref={homeHref} storeHref={content.storeLinks.apple} languageLinks={languageLinks} nav={ui.nav} />
+        <slot />
+        <SiteFooter locale={locale} name={content.shortName} logo={content.logo} tagline={ui.tagline} homeHref={homeHref} privacyHref={localizedPath(locale, "privacy")} termsHref={localizedPath(locale, "terms")} storeHref={content.storeLinks.apple} privacyLabel={content.labels.privacy} termsLabel={content.labels.terms} getAppLabel={ui.nav.getApp} languageLinks={languageLinks} />
+
 	</body>
 </html>

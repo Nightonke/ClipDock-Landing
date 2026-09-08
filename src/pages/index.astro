@@ -1,3 +1,6 @@
 ---
-return Astro.redirect("/zh-Hans/", 301);
+import ClipDockLanding from "@layouts/ClipDockLanding.astro";
+import { landingContent } from "@/i18n/content";
+import { getLanguageLinks } from "@/i18n/locales";
 ---
+<ClipDockLanding content={landingContent["en-US"]} languageLinks={getLanguageLinks("en-US")} />

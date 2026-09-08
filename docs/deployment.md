@@ -2,7 +2,7 @@
 
 ## 架构与域名
 
-- `clipdock.video`：GitHub Pages；首页 `/zh-Hans/`，教程 `/zh-Hans/articles/`。
+- `clipdock.video`：GitHub Pages；英文首页 `/`、教程 `/articles/`；中文首页 `/zh-Hans/`、教程 `/zh-Hans/articles/`。
 - `www.clipdock.video`：Vercel 提供 HTTPS 308 跳转到主域名，保留路径与查询参数。
 - `assets.clipdock.video`：Vercel 项目 `clipdock-assets`。
 - `assets-cn.clipdock.video`：腾讯云香港 COS + 中国境外 CDN。已配置 Vercel 生产环境的 `TENCENT_CDN_ORIGIN`，中国大陆素材请求转到此域名，其他地区由 Vercel 提供。
@@ -31,8 +31,9 @@ Vercel middleware 仅匹配 `/releases/`。地区为 `CN` 且已配置 `TENCENT_
 ## 上线检查
 
 - `scripts/verify-site.py` 检查生成页面的本地链接、素材路径、canonical、教程索引、截图占位和 sitemap。
-- 教程仅在 `screenshotsReady` 为真时开放索引。当前 35 篇教程截图齐备；保留各篇的实测限制说明。
-- 首版只发布中文已完成内容；英文/繁体及旧功能/场景页需重写后再开放。
+- 教程仅在 `screenshotsReady` 为真时开放索引。当前中英文各 35 篇教程截图齐备；保留各篇的实测限制说明。
+- 已发布语言为英语和简体中文，教程逐篇对应；繁体及旧功能/场景模板仍不生成。
+- `scripts/verify-locales.py` 检查英文文案残留、35 篇双语覆盖、步骤/截图数量及双向 hreflang。
 - `/privacy/`、`/terms/` 及中文对应路径跳转到 App Store 登记的正式外链，不收录重复跳转页。
 - 上线后提交 `https://clipdock.video/sitemap-index.xml`，检查 Google 的抓取结果。提交不代表立即收录。
 
@@ -79,3 +80,11 @@ Vercel middleware 仅匹配 `/releases/`。地区为 `CN` 且已配置 `TENCENT_
 - 全站视频使用 `crossorigin="anonymous"`，两端素材服务已提供 `Access-Control-Allow-Origin: *`。生产构建检查每个 video 标签，避免遗漏。
 - 真实 Chrome 对照：`node tests/fixtures/video-range-server.mjs` 后访问 `http://localhost:4324/`。同一视频先返回前 2 MiB，再将后续 Range 跳到另一端口；旧配置复现相同错误，CORS 配置完整播放 34.5 秒、零错误。
 - 自动恢复不再展示反复出现的提示；最终失败操作采用绝对定位浮层，避免增减卡片高度。
+
+## 2026-09-09 英文版构建验收
+
+- 首页及教程已采用共用模板，英文与中文各有 35 篇教程，合计 74 个可索引页面；包含跳转与 404 的构建输出为 79 页。
+- 复用现有 132 处教程截图/演示说明，无素材文件变更，保持现有 CDN 版本。
+- 正式构建检查两端 CDN 清单，并验证全站链接、教程完整性、语言标记和双向 hreflang；TypeScript 与 4 项视频恢复测试通过。
+- 浏览器检查了英文目录、平台下载、复制即下载、批量下载、拼接及音视频工具；320/390 像素小屏与桌面显示正常。
+- 英文首页为根路径，中文仍保留 `/zh-Hans/`，通过菜单选择语言。主站按现有 `main` 推送流程发布。

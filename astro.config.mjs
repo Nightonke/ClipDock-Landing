@@ -4,7 +4,7 @@ import { defineConfig } from "astro/config";
 import { tutorials, articleHref } from "./src/content/tutorials";
 
 const draftPaths = new Set(tutorials.filter(article => !article.screenshotsReady).map(article => articleHref(article.slug)));
-const redirects = new Set(['/', '/privacy/', '/terms/', '/zh-Hans/privacy/', '/zh-Hans/terms/']);
+const redirects = new Set(['/privacy/', '/terms/', '/zh-Hans/privacy/', '/zh-Hans/terms/']);
 
 export default defineConfig({
   site: "https://clipdock.video",

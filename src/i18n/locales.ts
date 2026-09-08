@@ -5,7 +5,8 @@ export const locales = ["en-US", "zh-Hans", "zh-Hant"] as const;
 export type Locale = (typeof locales)[number];
 
 // Only reviewed ClipDock translations are published.
-export const publishedLocales: readonly Locale[] = ["zh-Hans"];
+export const publishedLocales = ["en-US", "zh-Hans"] as const satisfies readonly Locale[];
+export type PublishedLocale = (typeof publishedLocales)[number];
 
 export const localeMeta: Record<
 	Locale,
