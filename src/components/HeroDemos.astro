@@ -1,4 +1,5 @@
 ---
+import VideoRecovery from "./VideoRecovery.astro";
 import { mediaUrl } from "@config/media";
 import { captionAt } from "@config/demoCaptions";
 
@@ -19,7 +20,7 @@ const demos = [
 	<div class="demo-footer">
 		<progress class="demo-progress" value="0" max="100" aria-label="视频播放进度"></progress>
 		<p class="demo-description" aria-live="polite" aria-atomic="true">{captionAt(demos[0].src, 0, demos[0].description)}</p>
-		<p class="demo-error" hidden role="status">视频暂时无法加载，请切换后重试。</p>
+		<VideoRecovery />
 	</div>
 	</div>
 		<div class="demo-buttons" role="group" aria-label="选择演示视频">
@@ -28,13 +29,14 @@ const demos = [
 </section>
 
 <script>
+	import { setupVideoRecovery } from "@/lib/videoRecoveryUI";
 	import { captionAt } from "@config/demoCaptions";
 
 	document.querySelectorAll<HTMLElement>(".hero-demos").forEach((root) => {
 		const video = root.querySelector<HTMLVideoElement>("video")!;
 		const description = root.querySelector<HTMLElement>(".demo-description")!;
 		const empty = root.querySelector<HTMLElement>(".demo-empty")!;
-		const error = root.querySelector<HTMLElement>(".demo-error")!;
+		const recovery = setupVideoRecovery(root, video);
 		const progress = root.querySelector<HTMLProgressElement>(".demo-progress")!;
 		const buttons = root.querySelectorAll<HTMLButtonElement>(".demo-buttons button");
 		let activeButton = buttons[0];
@@ -48,7 +50,6 @@ const demos = [
 			updateCaption();
 		};
 		["timeupdate", "loadedmetadata", "durationchange", "emptied", "seeking", "seeked"].forEach((event) => video.addEventListener(event, updateProgress));
-		video.addEventListener("error", () => { if (video.hasAttribute("src")) error.hidden = false; });
 		const play = () => {
 			video.muted = true;
 			video.play().catch(() => { /* Some device policies require a user gesture. */ });
@@ -56,7 +57,7 @@ const demos = [
 		const select = (button: HTMLButtonElement) => {
 			video.pause();
 			progress.value = 0;
-			error.hidden = true;
+			recovery.reset();
 			activeButton = button;
 			description.textContent = captionAt(button.dataset.src ?? "", 0, button.dataset.description!);
 			buttons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
@@ -77,7 +78,7 @@ const demos = [
 			}
 		};
 		buttons.forEach((button) => button.addEventListener("click", () => {
-			if (button.getAttribute("aria-pressed") === "true" && button.dataset.src) { play(); return; }
+			if (button.getAttribute("aria-pressed") === "true" && button.dataset.src) { if (video.error) recovery.retry(); else play(); return; }
 			select(button);
 		}));
 		video.addEventListener("ended", () => {
@@ -110,7 +111,6 @@ const demos = [
 	.demo-buttons button[aria-pressed="true"] { background: var(--ink); color: var(--paper-strong, #fffdf7); }
 	.demo-buttons button:hover { background: var(--lime); color: var(--ink); }
 	.demo-buttons button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
-	.demo-error { margin: 12px 0 0; font-size: .875rem; }
 	@media (max-width: 1020px) { .hero-demos { margin-inline: auto; } }
 	@media (max-width: 680px) { .hero-demos { --demo-inset: 14px; width: min(100%, 290px); grid-template-columns: minmax(0, 1fr); gap: 24px; } .demo-card { width: min(100%, 254px); justify-self: center; box-shadow: 8px 8px 0 var(--ink); } .demo-buttons { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: 0; } .demo-buttons button { padding: 8px 6px; } }
 </style>

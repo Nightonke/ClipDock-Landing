@@ -34,6 +34,9 @@ jobs:
       - name: 安装依赖
         run: npm ci
       
+      - name: 验证视频故障恢复
+        run: node --test tests/videoRecovery.test.mjs
+
       - name: 验证素材同步并构建正式网站
         run: npm run build:production
       

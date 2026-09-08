@@ -4,6 +4,7 @@ import type { LanguageLink } from "@/types/content";
 import type { landingContent } from "@/i18n/content";
 import { localizedPath } from "@/i18n/locales";
 import Layout from "./Layout.astro";
+import VideoRecovery from "@/components/VideoRecovery.astro";
 import HeroDemos from "@/components/HeroDemos.astro";
 import SubtitleCarousel from "@/components/SubtitleCarousel.astro";
 import { captionAt } from "@config/demoCaptions";
@@ -254,6 +255,7 @@ const structuredData = [
 								<>
 								<video class="cd-feature-video" src={mediaUrl(`/assets/demos/${feature.video}.mp4`)} poster={mediaUrl(`/assets/demos/${feature.video}.jpg`)} autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-label={`${feature.kicker}操作演示`}></video>
 								<progress class="cd-feature-progress" value="0" max="100" aria-label="视频播放进度"></progress>
+								<VideoRecovery />
 								<p class="cd-feature-caption" data-fallback={feature.kicker} aria-live="off">{captionAt(`/assets/demos/${feature.video}.mp4`, 0, feature.kicker)}</p>
 								</>
 							) : feature.carousel ? (
@@ -344,10 +346,12 @@ const structuredData = [
 </Layout>
 
 <script>
+	import { setupVideoRecovery } from "@/lib/videoRecoveryUI";
 	import { captionAt } from "@config/demoCaptions";
 
 	document.querySelectorAll<HTMLElement>(".cd-feature-video-stage").forEach((stage) => {
 		const video = stage.querySelector<HTMLVideoElement>("video")!;
+		setupVideoRecovery(stage, video);
 		const progress = stage.querySelector<HTMLProgressElement>("progress")!;
 		const caption = stage.querySelector<HTMLElement>(".cd-feature-caption")!;
 		const src = video.getAttribute("src")!;
