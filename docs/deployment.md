@@ -43,3 +43,11 @@ Vercel middleware 仅匹配 `/releases/`。地区为 `CN` 且已配置 `TENCENT_
 ## 待确认事项
 
 腾讯云公有读存储桶的计费条款及按量使用预算待用户确认；确认前不创建该桶、不启用香港分流。App Store 当前法律外链含旧剪贴板工具描述，需要产品侧更新。
+
+## 2026-09-08 发布记录
+
+- 正式部署提交 `ad4bde5`，GitHub Actions 构建及发布成功。主域名 HTTPS 有效，已开启 HTTP 到 HTTPS 跳转。
+- Vercel `clipdock-assets` 已发布 448 个素材；`assets.clipdock.video` DNS 与 HTTPS 生效，视频 Range 请求返回 206。
+- Search Console 域名所有权已验证；`sitemap-index.xml` 显示 Success；首页实时测试显示可供 Google 访问、可以编入索引，已请求收录。尚不表示已经收录。
+- `www.clipdock.video` 的 DNS 健康检查通过，但 GitHub 当前证书仅覆盖裸域名。已按官方排障流程重新绑定域名触发证书处理，仍须复查 www 的 HTTPS。对外入口先使用 `https://clipdock.video/`。
+- 腾讯云香港镜像与分流尚未启用；中国大陆素材访问体验仍待完成该配置后实测。
