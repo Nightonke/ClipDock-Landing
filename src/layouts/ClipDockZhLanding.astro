@@ -102,7 +102,7 @@ const faqs = [
 	{
 		question: "ClipDock影随存 支持哪些链接？",
 		answer:
-			"ClipDock影随存 可以识别部分平台和网页中的公开视频资源。实际支持情况取决于页面结构、资源格式及平台限制；并不承诺支持所有网站。",
+			`ClipDock影随存 支持 ${supportedPlatforms}。`,
 	},
 	{
 		question: "为什么有些链接无法识别？",
@@ -442,7 +442,7 @@ const structuredData = [
 	.cd-faq-item { overflow: hidden; border: 1.5px solid var(--ink); border-radius: 18px; background: var(--paper-strong); }
 	.cd-faq-item summary { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; padding: 22px 24px; font-size: 1.04rem; font-weight: 850; list-style: none; cursor: pointer; }
 	.cd-faq-item summary::-webkit-details-marker { display: none; }
-	.cd-faq-item summary::after { display: grid; place-items: center; width: 34px; height: 34px; border: 1.5px solid var(--ink); border-radius: 50%; content: "+"; transition: transform 180ms ease; }
+	.cd-faq-item summary::after { width: 34px; height: 34px; border: 1.5px solid var(--ink); border-radius: 50%; background: linear-gradient(var(--ink), var(--ink)) center / 10px 2px no-repeat, linear-gradient(var(--ink), var(--ink)) center / 2px 10px no-repeat; content: ""; transition: transform 180ms ease; }
 	.cd-faq-item[open] summary::after { transform: rotate(45deg); }
 	.cd-faq-item > div { padding: 0 24px 24px; color: var(--ink-soft); line-height: 1.65; }
 	.cd-closing { padding-bottom: 50px; }
