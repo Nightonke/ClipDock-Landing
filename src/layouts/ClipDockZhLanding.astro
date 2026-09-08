@@ -4,6 +4,7 @@ import type { landingContent } from "@/i18n/content";
 import { localizedPath } from "@/i18n/locales";
 import Layout from "./Layout.astro";
 import HeroDemos from "@/components/HeroDemos.astro";
+import { articleHref } from "@/content/tutorials";
 
 type LandingContent = (typeof landingContent)[keyof typeof landingContent];
 
@@ -76,21 +77,24 @@ const featureSections = [
 ];
 
 const tools = [
-	{ mark: "CUT", title: "视频裁剪", description: "截取需要的视频片段，留下精彩部分。" },
-	{ mark: "CONV", title: "视频转码", description: "为不同使用场景转换视频格式。" },
-	{ mark: "JOIN", title: "视频拼接", description: "把多个片段按顺序合成为一个视频。" },
-	{ mark: "SIZE", title: "调整尺寸", description: "调整输出视频的画面尺寸。" },
-	{ mark: "ROTATE", title: "视频旋转", description: "旋转视频画面，调整到合适的方向。" },
-	{ mark: "MIRROR", title: "视频镜像", description: "翻转画面，制作镜像效果。" },
-	{ mark: "SPEED", title: "视频变速", description: "加快或放慢播放速度，调整视频节奏。" },
-	{ mark: "AUDIO", title: "提取音频", description: "将视频中的声音单独保存为音频。" },
-	{ mark: "MERGE", title: "合并音视频", description: "把音频与视频合并为一个文件。" },
-	{ mark: "REVERSE", title: "视频倒放", description: "让视频从结尾开始反向播放。" },
-	{ mark: "MARK", title: "添加水印", description: "为自己的视频添加文字或图像标记。" },
-	{ mark: "GIF", title: "视频转 GIF", description: "把视频片段转换为便于分享的动图。" },
-	{ mark: "LIVE", title: "视频转实况", description: "将视频转换为实况照片（Live Photo）。" },
-	{ mark: "FRAMES", title: "批量视频截图", description: "批量提取视频画面，保存为截图。" },
-	{ mark: "MD5", title: "修改 MD5", description: "修改视频文件的 MD5 值。" },
+	{ mark: "CUT", slug: "trim-video-iphone", title: "视频裁剪", description: "截取需要的视频片段，留下精彩部分。" },
+	{ mark: "CONV", slug: "transcode-video-iphone", title: "视频转码", description: "为不同使用场景转换视频格式。" },
+	{ mark: "JOIN", slug: "join-videos-iphone", title: "视频拼接", description: "把多个片段按顺序合成为一个视频。" },
+	{ mark: "MIX", slug: "interleave-videos-iphone", title: "交错拼接", description: "将多个视频分段，交替拼接不同素材。" },
+	{ mark: "GRID", slug: "segment-grid-video-iphone", title: "分段网格", description: "将一个视频的不同时间片段排成网格。" },
+	{ mark: "SIZE", slug: "resize-video-iphone", title: "调整尺寸", description: "调整输出视频的画面尺寸。" },
+	{ mark: "ROTATE", slug: "rotate-video-iphone", title: "视频旋转", description: "旋转视频画面，调整到合适的方向。" },
+	{ mark: "MIRROR", slug: "mirror-video-iphone", title: "视频镜像", description: "翻转画面，制作镜像效果。" },
+	{ mark: "SPEED", slug: "change-video-speed-iphone", title: "视频变速", description: "加快或放慢播放速度，调整视频节奏。" },
+	{ mark: "AUDIO", slug: "extract-audio-iphone", title: "提取音频", description: "将视频中的声音单独保存为音频。" },
+	{ mark: "SOUND", slug: "edit-video-audio-iphone", title: "音频编辑", description: "为视频静音或调整音量，处理画面中的声音。" },
+	{ mark: "MERGE", slug: "merge-audio-video-iphone", title: "合并音视频", description: "把音频与视频合并为一个文件。" },
+	{ mark: "REVERSE", slug: "reverse-video-iphone", title: "视频倒放", description: "让视频从结尾开始反向播放。" },
+	{ mark: "MARK", slug: "add-watermark-video-iphone", title: "添加水印", description: "为自己的视频添加文字或图像标记。" },
+	{ mark: "GIF", slug: "video-to-gif-iphone", title: "视频转 GIF", description: "把视频片段转换为便于分享的动图。" },
+	{ mark: "LIVE", slug: "video-to-live-photo-iphone", title: "视频转实况", description: "将视频转换为实况照片（Live Photo）。" },
+	{ mark: "FRAMES", slug: "capture-video-frames-iphone", title: "批量视频截图", description: "批量提取视频画面，保存为截图。" },
+	{ mark: "MD5", slug: "change-video-md5-iphone", title: "修改 MD5", description: "修改视频文件的 MD5 值。" },
 ];
 
 const faqs = [
@@ -183,15 +187,18 @@ const structuredData = [
 					</p>
 					<div class="cd-hero-actions">
 						<a class="button button-dark" href={storeURL} target="_blank" rel="noopener noreferrer">
-							在 App Store 免费下载
+							<svg width="20" height="20" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" /></svg>
+							免费下载
 						</a>
-						<a class="text-link" href="#features">了解核心功能</a>
+						<a class="hero-qr cd-hero-qr" href={storeURL} target="_blank" rel="noopener noreferrer" aria-label="使用 iPhone 扫码下载 ClipDock影随存">
+							<img src="/assets/clipdock-download-qr.png" width="62" height="62" alt="ClipDock影随存下载二维码" />
+							<span><strong>使用 iPhone 扫描</strong><small>获取 APP</small></span>
+						</a>
 					</div>
-					<div class="cd-proof" aria-label="产品信息">
-						<span><strong>4.7</strong> App Store 评分</span>
-						<span><strong>不收集</strong> App 数据</span>
-						<span><strong>iOS 15+</strong> 系统要求</span>
-					</div>
+					<p class="hero-proof" aria-label="产品信息">
+						<span>{content.rating.score} ★ · {content.rating.count} 个评分</span>
+						<span>不收集 App 数据</span>
+					</p>
 				</div>
 
 				<HeroDemos />
@@ -260,11 +267,11 @@ const structuredData = [
 				</div>
 				<div class="cd-tool-grid">
 					{tools.map((tool) => (
-						<article class="cd-tool-card" data-reveal>
+						<a class="cd-tool-card" href={articleHref(tool.slug)} aria-label={`${tool.title}：阅读教程`} data-reveal>
 							<span>{tool.mark}</span>
 							<h3>{tool.title}</h3>
 							<p>{tool.description}</p>
-						</article>
+						</a>
 					))}
 				</div>
 			</div>
@@ -338,10 +345,11 @@ const structuredData = [
 	.cd-hero-title { max-width: none; font-size: clamp(2.9rem, 5.1vw, 5.1rem); line-height: 1.16; }
 	.cd-hero-title span { display: block; white-space: nowrap; }
 	.cd-hero-description { max-width: 650px; margin: 1.7rem 0 0; color: var(--ink-soft); font-size: clamp(1.08rem, 1.8vw, 1.35rem); line-height: 1.65; }
-	.cd-hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 2rem; }
-	.cd-proof { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-top: 2rem; color: var(--ink-soft); font-family: var(--mono); font-size: .7rem; font-weight: 750; }
-	.cd-proof span { display: flex; align-items: baseline; gap: 5px; }
-	.cd-proof strong { color: var(--ink); font-size: .82rem; }
+	.cd-hero-actions { display: flex; flex-wrap: wrap; align-items: stretch; gap: 12px; margin-top: 2rem; }
+	.cd-hero-actions > a { flex: 0 1 220px; width: 220px; max-width: 100%; min-width: 0; min-height: 80px; }
+	.cd-hero-actions .button { font-size: 1rem; }
+	.cd-hero-qr { margin-top: 0; }
+	.cd-hero-qr img { flex-shrink: 0; }
 	.cd-hero-media { position: relative; min-height: 610px; border: 2px solid var(--ink); border-radius: var(--radius-lg); background: var(--blue); box-shadow: 14px 14px 0 var(--ink); padding: 20px; }
 	.cd-media-label { position: absolute; top: -19px; left: 28px; border: 1.5px solid var(--ink); border-radius: 999px; background: var(--lime); padding: .55rem .8rem; font-family: var(--mono); font-size: .68rem; font-weight: 900; letter-spacing: .08em; }
 	.cd-media-placeholder { display: grid; place-items: center; align-content: center; min-height: 515px; border: 2px dashed rgba(23,25,22,.48); border-radius: 24px; background: rgba(255,253,247,.82); text-align: center; }
@@ -403,7 +411,7 @@ const structuredData = [
 	.cd-tools .section-kicker, .cd-tools .section-lede { color: rgba(255,253,247,.68); }
 	.cd-tool-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 	.cd-tool-card { min-height: 182px; border: 1.5px solid rgba(255,255,255,.42); border-radius: var(--radius-md); background: #242724; padding: 18px 24px; transition: transform 180ms ease, border-color 180ms ease, background 180ms ease; }
-	.cd-tool-card:hover { transform: translateY(-5px); border-color: var(--blue); background: #292d29; }
+	.cd-tool-card:hover, .cd-tool-card:focus-visible { transform: translateY(-5px); border-color: var(--blue); background: #292d29; }
 	.cd-tool-card > span { display: inline-flex; border: 1px solid rgba(255,255,255,.55); border-radius: 999px; padding: .45rem .6rem; color: var(--blue); font-family: var(--mono); font-size: .62rem; font-weight: 900; letter-spacing: .06em; }
 	.cd-tool-card:nth-child(3n + 2) > span { color: var(--lime); }
 	.cd-tool-card:nth-child(3n) > span { color: #ffc9bd; }
