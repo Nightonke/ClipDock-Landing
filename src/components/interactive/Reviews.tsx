@@ -17,6 +17,7 @@ const Reviews = ({ items, title }: ReviewsList) => (
 							{review.avatar ? (
 								<img
 									src={review.avatar}
+                                    loading="lazy" decoding="async" width={48} height={48}
 									alt={`${review.author} avatar`}
 									className="h-12 w-12 rounded-full object-cover border border-gray-300 dark:border-white/10"
 								/>

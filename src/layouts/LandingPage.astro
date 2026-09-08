@@ -1,4 +1,5 @@
 ---
+import { responsiveImageHtml } from "@/lib/responsive-image";
 import type { LanguageLink } from "@/types/content";
 import type { landingContent } from "@/i18n/content";
 import { localizedPath } from "@/i18n/locales";
@@ -209,7 +210,7 @@ const structuredData = [
 						</div>
 						<div class="chapter-visual" data-reveal>
 							<img
-								src={localizedScreenshot(content.locale, "iphone", chapter.imageIndex)}
+								{...responsiveImageHtml(localizedScreenshot(content.locale, "iphone", chapter.imageIndex), "(max-width: 700px) 270px, 360px")} decoding="async"
 								alt={chapter.imageAlt}
 								loading="lazy"
 								width="1290"
@@ -240,7 +241,7 @@ const structuredData = [
 						>
 							<div class="use-case-image">
 								<img
-									src={localizedScreenshot(content.locale, "iphone", item.imageIndex)}
+									{...responsiveImageHtml(localizedScreenshot(content.locale, "iphone", item.imageIndex), "180px")} decoding="async"
 									alt=""
 									loading="lazy"
 									width="1290"

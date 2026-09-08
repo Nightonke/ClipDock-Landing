@@ -20,3 +20,8 @@ Thumbs.db
 
 # Local-only App Store source material (not published to GitHub)
 references/
+
+# Rebuilt by npm predev/prebuild from full-resolution sources
+public/assets/optimized/
+src/generated/image-variants.json
+src/generated/gallery-variants.json

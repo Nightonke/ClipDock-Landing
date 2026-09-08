@@ -1,3 +1,4 @@
+import { galleryImage } from "@/lib/gallery-image";
 import { memo, useState } from "react";
 import type { ScreenshotsGallery } from "@/types/components";
 import type { ScreenshotItem } from "@/types/content";
@@ -43,7 +44,8 @@ const Screenshots = ({ images, appPreview, labels }: ScreenshotsGallery) => {
 								aria-label={`${labels.goToImage} ${index + 1}`}
 							>
                 <img
-                  src={item.src}
+                  {...responsiveImage(item.src, activeDevice === "iphone" ? "260px" : "360px")}
+                  decoding="async"
                   alt={item.alt || `Screenshot ${index + 1}`}
                   className={`rounded-xl border border-gray-300 dark:border-white/10 object-cover shadow-lg ${activeDevice === "iphone"
                     ? "aspect-[9/19.5] w-[260px]"

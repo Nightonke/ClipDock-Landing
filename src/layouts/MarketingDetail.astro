@@ -1,4 +1,5 @@
 ---
+import { responsiveImageHtml } from "@/lib/responsive-image";
 import { landingContent } from "@/i18n/content";
 import {
 	featureSlugs,
@@ -125,7 +126,7 @@ const structuredData = [
 
 				<div class="detail-visual" data-reveal>
 					<img
-						src={localizedScreenshot(locale, "iphone", page.imageIndex)}
+						{...responsiveImageHtml(localizedScreenshot(locale, "iphone", page.imageIndex), "350px")} decoding="async"
 						alt={page.imageAlt}
 						width="1290"
 						height="2796"

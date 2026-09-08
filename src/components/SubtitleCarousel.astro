@@ -1,4 +1,5 @@
 ---
+import { responsiveImageHtml } from "@/lib/responsive-image";
 const slides = [
  { file: "paste-link", title: "粘贴 YouTube 视频链接" },
  { file: "extracting", title: "等待字幕提取完成" },
@@ -10,7 +11,7 @@ const slides = [
 <div class="subtitle-carousel" role="region" aria-roledescription="轮播" aria-label="YouTube 字幕提取操作步骤">
  <div class="subtitle-slides">
   {slides.map((slide, index) => (
-   <img src={`/assets/tutorials/youtube-subtitles/${slide.file}.webp`} alt={slide.title} width="1320" height="2868" loading="lazy" decoding="async" hidden={index !== 0} />
+   <img {...responsiveImageHtml(`/assets/tutorials/youtube-subtitles/${slide.file}.webp`, "(max-width: 700px) 240px, 320px")} alt={slide.title} width="1320" height="2868" loading="lazy" decoding="async" hidden={index !== 0} />
   ))}
  </div>
  <div class="subtitle-progress" role="group" aria-label="选择步骤">

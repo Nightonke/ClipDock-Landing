@@ -31,7 +31,11 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"toolbar:disable": "astro preferences disable devToolbar",
-		"toolbar:enable": "astro preferences enable devToolbar"
+		"toolbar:enable": "astro preferences enable devToolbar",
+		"images:optimize": "node scripts/optimize-images.mjs",
+		"predev": "npm run images:optimize",
+		"prestart": "npm run images:optimize",
+		"prebuild": "npm run images:optimize"
 	},
 	"dependencies": {
 		"@astrojs/react": "^4.4.2",
@@ -50,7 +54,8 @@
 	},
 	"devDependencies": {
 		"@types/react": "^19.2.7",
-		"@types/react-dom": "^19.2.3"
+		"@types/react-dom": "^19.2.3",
+		"sharp": "^0.34.5"
 	},
 	"overrides": {
 		"path-to-regexp": "8.3.0"
