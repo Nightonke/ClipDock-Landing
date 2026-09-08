@@ -4,6 +4,7 @@ import type { landingContent } from "@/i18n/content";
 import { localizedPath } from "@/i18n/locales";
 import Layout from "./Layout.astro";
 import HeroDemos from "@/components/HeroDemos.astro";
+import { captionAt } from "@config/demoCaptions";
 import { articleHref } from "@/content/tutorials";
 
 type LandingContent = (typeof landingContent)[keyof typeof landingContent];
@@ -239,6 +240,7 @@ const structuredData = [
 								<>
 								<video class="cd-feature-video" src={`/assets/demos/${feature.video}.mp4`} poster={`/assets/demos/${feature.video}.jpg`} autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-label={`${feature.kicker}操作演示`}></video>
 								<progress class="cd-feature-progress" value="0" max="100" aria-label="视频播放进度"></progress>
+								<p class="cd-feature-caption" data-fallback={feature.kicker} aria-live="off">{captionAt(`/assets/demos/${feature.video}.mp4`, 0, feature.kicker)}</p>
 								</>
 							) : (<>
 							<div class="cd-stage-label">SCREEN PLACEHOLDER / {feature.number}</div>
@@ -326,14 +328,21 @@ const structuredData = [
 </Layout>
 
 <script>
+	import { captionAt } from "@config/demoCaptions";
+
 	document.querySelectorAll<HTMLElement>(".cd-feature-video-stage").forEach((stage) => {
 		const video = stage.querySelector<HTMLVideoElement>("video")!;
 		const progress = stage.querySelector<HTMLProgressElement>("progress")!;
+		const caption = stage.querySelector<HTMLElement>(".cd-feature-caption")!;
+		const src = video.getAttribute("src")!;
 		const update = () => {
 			progress.value = Number.isFinite(video.duration) && video.duration > 0
 				? Math.min(100, Math.max(0, video.currentTime / video.duration * 100)) : 0;
+			const text = captionAt(src, video.currentTime, caption.dataset.fallback!);
+			if (caption.textContent !== text) caption.textContent = text;
 		};
-		["timeupdate", "loadedmetadata", "emptied"].forEach((event) => video.addEventListener(event, update));
+		["timeupdate", "loadedmetadata", "durationchange", "emptied", "seeking", "seeked"].forEach((event) => video.addEventListener(event, update));
+		update();
 	});
 </script>
 
@@ -398,6 +407,7 @@ const structuredData = [
 	.cd-screenshot-stage.cd-feature-video-stage { width: min(100%, 300px); min-height: 0; justify-self: center; place-items: center; padding: 16px 16px calc(var(--radius-lg) - 3px); box-shadow: 10px 10px 0 var(--ink); }
 	.cd-feature-video { display: block; width: 100%; aspect-ratio: 6 / 13; object-fit: cover; border: 2px solid var(--ink); border-radius: calc(var(--radius-lg) - 18px); background: #111; }
 	.cd-feature-progress { display: block; appearance: none; width: 100%; height: 2px; margin: 16px 0 0; border: 0; border-radius: 999px; overflow: hidden; background: rgba(23,25,22,.18); color: var(--ink); pointer-events: none; }
+	.cd-feature-caption { width: 100%; min-height: 3.2em; margin: 12px 0 0; color: var(--ink); font-size: .875rem; line-height: 1.6; text-align: left; }
 	.cd-feature-progress::-webkit-progress-bar { background: rgba(23,25,22,.18); border-radius: 999px; }
 	.cd-feature-progress::-webkit-progress-value { background: var(--ink); border-radius: 999px; }
 	.cd-feature-progress::-moz-progress-bar { background: var(--ink); border-radius: 999px; }
