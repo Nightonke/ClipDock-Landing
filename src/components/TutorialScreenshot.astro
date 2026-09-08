@@ -3,6 +3,10 @@ import { screenshotBriefs } from "@/content/tutorials";
 interface Props { id: string }
 const { id } = Astro.props;
 const shot = screenshotBriefs[id];
+const mark = shot.highlight;
+const arrowPath = mark && (mark.x > 800
+	? `M ${mark.x - 170} ${mark.y - 110} Q ${mark.x - 55} ${mark.y - 100} ${mark.x + 25} ${mark.y + 35} m -5 -65 l 5 65 l -61 -25`
+	: `M ${mark.x + mark.width + 170} ${mark.y - 110} Q ${mark.x + mark.width + 55} ${mark.y - 100} ${mark.x + mark.width - 25} ${mark.y + 35} m 5 -65 l -5 65 l 61 -25`);
 ---
 <figure class:list={["tutorial-shot", { "tutorial-shot-framed": shot.framed }]}>
 	{shot.video ? (
@@ -13,6 +17,10 @@ const shot = screenshotBriefs[id];
 	) : shot.src ? (
 		<a class="tutorial-shot-full" href={shot.src} target="_blank" rel="noopener noreferrer" aria-label={`${shot.title}，打开大图`}>
 			<img src={shot.src} alt={shot.title} loading="lazy" decoding="async" width={shot.width ?? 750} height={shot.height ?? 1624} />
+			{shot.highlight && <svg class="tutorial-shot-annotation" viewBox={`0 0 ${shot.width} ${shot.height}`} aria-hidden="true">
+				<rect x={shot.highlight.x} y={shot.highlight.y} width={shot.highlight.width} height={shot.highlight.height} rx="38" fill="none" stroke="#ff942e" stroke-width="12" />
+				<path d={arrowPath} fill="none" stroke="#ff942e" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>}
 		</a>
 	) : (
 		<div class="tutorial-shot-placeholder" role="img" aria-label={`${shot.title}，截图待补充`}>
@@ -26,6 +34,8 @@ const shot = screenshotBriefs[id];
 </figure>
 
 <style>
+	.tutorial-shot-full { position: relative; }
+	.tutorial-shot-annotation { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; filter: drop-shadow(0 2px 3px #000); }
 	.tutorial-video-card { width: min(100%, 240px); margin-inline: auto; padding: 16px 16px calc(var(--radius-lg) - 3px); border: 2px solid var(--ink); border-radius: var(--radius-lg); background: var(--blue-soft); box-shadow: 10px 10px 0 var(--ink); }
 	.tutorial-shot-video { display: block; width: 100%; aspect-ratio: 6 / 13; border: 2px solid var(--ink); border-radius: calc(var(--radius-lg) - 18px); background: #111; object-fit: cover; }
 	.tutorial-video-progress { display: block; appearance: none; width: 100%; height: 2px; margin: 16px 0 0; border: 0; border-radius: 999px; overflow: hidden; background: rgba(23,25,22,.18); color: var(--ink); pointer-events: none; }

@@ -29,6 +29,7 @@ const structuredData = [
 			<p class="eyebrow">{category.name}</p><h1>{article.title}</h1>
 			<p class="tutorial-lead">{article.intro}</p>
 			{!article.screenshotsReady && <p class="tutorial-draft">教程初稿 · 截图与操作细节待核对，尚未标记为实测教程。</p>}
+			{article.verificationNote && <p class="tutorial-draft">{article.verificationNote}</p>}
 		</header>
 		<div class="tutorial-body-grid">
 			<aside class="tutorial-toc"><nav aria-label="文章目录"><strong>本篇内容</strong>{article.steps.map((step, index) => <a href={`#step-${index + 1}`}>{String(index + 1).padStart(2, "0")} · {step.title}</a>)}<a href="#troubleshooting">遇到问题时</a><a href="#questions">常见问题</a></nav></aside>
@@ -37,6 +38,7 @@ const structuredData = [
 					<section id={`step-${index + 1}`} class:list={["tutorial-step", { "tutorial-step-illustrated": step.image, "tutorial-step-reverse": index % 2 === 1 }]}>
 						<div class="tutorial-step-copy">
 							<p class="tutorial-step-index"><strong>{String(index + 1).padStart(2, "0")}</strong><span>操作步骤</span></p><h2>{step.title}</h2><p>{step.text}</p>
+							{step.sections?.map(section => <div class="tutorial-step-detail"><h3>{section.title}</h3><p>{section.text}</p></div>)}
 						</div>
 						{step.image && <TutorialScreenshot id={step.image} />}
 					</section>

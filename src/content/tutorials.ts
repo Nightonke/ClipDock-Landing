@@ -1,12 +1,15 @@
+import { videoToolScreenshots, videoToolTutorials, videoToolOrder } from "./video-tools";
+
 export const categories = [
 	{ id: "platform", name: "按平台下载", description: "从分享链接开始，把需要的视频保存到设备。" },
 	{ id: "clipboard", name: "复制即下载", description: "减少切换 App，让复制链接接上下载任务。" },
 	{ id: "batch", name: "批量下载", description: "按频道、主页或播放列表集中保存视频。" },
-	{ id: "tools", name: "视频处理", description: "提取声音、制作实况照片、拼接视频片段。" },
+	{ id: "tools", name: "视频处理", description: "18 个视频处理功能：从裁剪、转码到声音、画布与组合效果。" },
 ] as const;
 
 // Set src only after the corresponding real screenshot has been supplied.
-export const screenshotBriefs: Record<string, { title: string; brief: string; src?: string; width?: number; height?: number; framed?: boolean; video?: string; poster?: string }> = {
+export const screenshotBriefs: Record<string, { title: string; brief: string; src?: string; width?: number; height?: number; framed?: boolean; video?: string; poster?: string; highlight?: { x: number; y: number; width: number; height: number } }> = {
+	...videoToolScreenshots,
 	"playlist-input-orange": { title: "在 Batch 分页填入 YouTube 播放列表链接", brief: "IMG_3435.PNG，橙色手机壳。", src: "/assets/tutorials/youtube-playlist/input-orange.webp", width: 1319, height: 2748, framed: true },
 	"playlist-loading-orange": { title: "点击 Load list，等待列表加载", brief: "IMG_3436.PNG，橙色手机壳。", src: "/assets/tutorials/youtube-playlist/loading-orange.webp", width: 1319, height: 2748, framed: true },
 	"playlist-select-orange": { title: "选择条目与批量画质，点击 Add to queue", brief: "IMG_3437.PNG，橙色手机壳。", src: "/assets/tutorials/youtube-playlist/select-orange.webp", width: 1319, height: 2748, framed: true },
@@ -53,15 +56,19 @@ export const screenshotBriefs: Record<string, { title: string; brief: string; sr
 	"instagram-batch": { title: "Instagram 主页批量解析结果", brief: "展示主页解析出的作品列表、视频识别和批量下载入口。" },
 	"tiktok-profile": { title: "TikTok 个人主页链接入口", brief: "展示自己的公开测试主页及复制主页链接入口，保留与单条视频分享的区别。" },
 	"tiktok-batch": { title: "TikTok 主页批量解析结果", brief: "展示主页解析出的多个视频，以及选择和批量下载操作。" },
-	"audio-settings": { title: "提取音频设置", brief: "展示真实音频提取工具、已选视频和实际支持的输出格式。" },
-	"audio-result": { title: "音频提取结果", brief: "展示导出的音频文件及试听或分享入口，文件名与输入视频对应。" },
-	"live-settings": { title: "视频转实况设置", brief: "展示视频转 Live Photo 工具的真实参数及开始转换入口。" },
-	"live-result": { title: "相册中的实况照片", brief: "展示生成结果在照片 App 中被识别为 Live Photo 的标记；最好附长按播放录屏。" },
-	"join-settings": { title: "视频拼接与片段顺序", brief: "展示至少两个视频的排列和真实导出设置，说明顺序是否可调整。" },
-	"join-result": { title: "拼接后的完整视频", brief: "展示输出文件和预览，最好附两个片段衔接处的短录屏。" },
+	"audio-process": { title: "在 Process 页面点击 Extract Audio（提取音频）", brief: "iPhone 17 Pro Max 模拟器真实截图，iOS 26.0。", src: "/assets/tutorials/extract-audio/process-orange.webp", width: 1319, height: 2748, framed: true, highlight: { x: 100, y: 1908, width: 346, height: 252 } },
+	"audio-source": { title: "点击 Choose from Photos，从相册选择视频", brief: "选择视频来源；下载列表为空时也可以从相册导入。", src: "/assets/tutorials/extract-audio/select-source-orange.webp", width: 1319, height: 2748, framed: true },
+	"audio-result": { title: "出现 Processing Complete，音频已生成为 M4A 文件", brief: "从相册视频实际提取的音频结果。", src: "/assets/tutorials/extract-audio/complete-orange.webp", width: 1319, height: 2748, framed: true },
+	"audio-share": { title: "点击 Share File 后，可在分享面板找到保存到“文件”", brief: "真实分享面板，显示 M4A 文件、大小和保存入口。", src: "/assets/tutorials/extract-audio/share-orange.webp", width: 1319, height: 2748, framed: true },
+	"join-process": { title: "点击底部 Process，再打开箭头所指的 Stitch Videos", brief: "真实工具总览，橙色外壳；箭头标注拼接入口。", src: "/assets/tutorials/extract-audio/process-orange.webp", width: 1319, height: 2748, framed: true, highlight: { x: 488, y: 722, width: 346, height: 252 } },
+	"join-settings": { title: "Stitch Videos 参数页：先预览作为开头的主视频", brief: "真实模拟器截图，使用 AppStoreScreenshotFramer 橙色外壳。", src: "/assets/tutorials/join-videos/settings-orange.webp", width: 1319, height: 2748, framed: true },
+	"join-source": { title: "Add Video 支持从下载列表、相册或文件添加片段", brief: "追加视频时的来源选择。", src: "/assets/tutorials/join-videos/add-source-orange.webp", width: 1319, height: 2748, framed: true },
+	"join-order": { title: "2 clips added：主视频之后追加两段，用箭头调整顺序", brief: "已实测交换追加片段的顺序。", src: "/assets/tutorials/join-videos/order-orange.webp", width: 1319, height: 2748, framed: true },
+	"join-progress": { title: "查看拼接进度，以及完成通知和取消选项", brief: "三段视频实际拼接过程。", src: "/assets/tutorials/join-videos/progress-orange.webp", width: 1319, height: 2748, framed: true },
+	"join-result": { title: "预览拼接结果，再点击 Save to Photos 保存到相册", brief: "结果时长 11:46，已验证播放和保存成功提示。", src: "/assets/tutorials/join-videos/result-orange.webp", width: 1319, height: 2748, framed: true },
 };
 
-type Step = { title: string; text: string; image?: string };
+type Step = { title: string; text: string; image?: string; sections?: { title: string; text: string }[] };
 export interface Tutorial {
 	slug: string;
 	category: (typeof categories)[number]["id"];
@@ -69,6 +76,7 @@ export interface Tutorial {
 	description: string;
 	intro: string;
 	screenshotsReady?: boolean;
+	verificationNote?: string;
 	steps: Step[];
 	tips: { title: string; text: string }[];
 	faq: { question: string; answer: string }[];
@@ -222,49 +230,64 @@ export const tutorials: Tutorial[] = [
 	},
 	{
 		slug: "extract-audio-iphone", category: "tools",
+		screenshotsReady: true,
 		title: "如何在 iPhone 和 iPad 上提取视频音频？",
-		description: "使用 ClipDock影随存从已有视频中提取声音，选择实际可用的输出格式，试听结果并分享音频文件。",
-		intro: "如果只需要一段视频中的声音，可以先保存视频，再用音频提取工具输出独立文件。这适用于自己的讲解、访谈或已获授权素材，不必一直保留视频播放界面。",
+		description: "使用 ClipDock影随存从 iPhone 相册视频中提取 M4A 音频，查看处理结果并打开文件分享入口，附四张真实操作截图。",
+		intro: "想单独保存视频里的声音？打开 ClipDock影随存的 Extract Audio（提取音频），从相册选中视频，即可生成独立的音频文件。下面用四张真实操作截图说明完整步骤。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0），App 使用英文界面，按钮附有中文对照；iPad 用户可对照相同功能入口操作。",
 		steps: [
-			{ title: "检查输入视频的音轨", text: "在资料库预览视频，确认声音正常。如果原文件没有音轨，提取工具无法凭空恢复声音。", image: "library" },
-			{ title: "打开音频提取工具", text: "进入视频处理工具中的音频提取功能，选择要处理的视频。查看实际提供的输出格式和其他选项；不要假定所有格式都受支持。", image: "audio-settings" },
-			{ title: "生成并试听音频", text: "启动处理，完成后试听输出文件，检查开头、结尾、时长和声音是否符合预期。若结果异常，先返回输入文件确认原音轨。", image: "audio-result" },
-			{ title: "分享或继续使用", text: "通过 App 实际提供的分享或导出入口保存音频。音频文件应使用合适的文件或音频 App 管理，不要只在照片相册里寻找它。" },
+			{ title: "打开提取音频工具", text: "打开 ClipDock影随存，点击底部 Process（处理）分页，在工具列表中找到 Extract Audio（提取音频）。截图中的入口位于最下排左侧。操作前，准备好一段有声音的视频，例如自己的讲解、访谈或已获授权的素材。", image: "audio-process" },
+			{ title: "从相册选择视频", text: "在 Select Video（选择视频）页面点击 Choose from Photos（从相册选择），再在系统照片选择器中点选要处理的视频。即使页面显示没有已下载视频，也不影响从相册导入。如果素材保存在“文件”App，可使用页面上的 Choose from Files（从文件选择）入口。", image: "audio-source" },
+			{ title: "等待音频提取完成", text: "选中视频后，App 会直接开始提取，无需再点击开始按钮。本次操作没有出现格式设置页，完成后弹出 Processing Complete（处理完成），生成的文件名以 .m4a 结尾。点击 Share File（分享文件）继续导出；Done（完成）用于关闭提示。", image: "audio-result" },
+			{ title: "打开分享与保存入口", text: "点击 Share File 后，分享面板会显示音频文件及其大小，截图中本次输出约为 2.4 MB。需要单独保存时，使用下方的保存到“文件”入口；需要交给其他 App 时，可查看“更多”中的可用选项。保存后建议打开音频试听，确认声音和时长符合预期。", image: "audio-share" },
 		],
-		tips: [{ title: "提取不等于改善音质", text: "输出格式变化不会自动补回原视频中缺失的音质。先保证输入声音清楚，再按目标使用场景选择工具实际提供的选项。" }],
-		faq: [{ question: "能直接从分享链接得到声音吗？", answer: "本文讲的是从已保存视频提取音频。分享链接是否直接返回音频资源，要看具体来源的识别结果。" }, { question: "为什么照片 App 里找不到输出？", answer: "提取后得到的是音频文件，不是视频或照片。请检查 App 的结果位置及文件分享入口。" }],
+		tips: [{ title: "提取后没有声音怎么办？", text: "先播放原视频，并确认播放器没有静音。原文件没有音轨时，提取工具无法恢复不存在的声音；提取也不会自动改善原始音质。" }, { title: "下载列表为空，仍然可以继续", text: "No downloaded videos available for processing 只表示 App 中没有可供处理的已下载视频。本文使用上方的 Choose from Photos，从系统相册直接选择素材。" }],
+		faq: [{ question: "可以选择 MP3 等其他格式吗？", answer: "本次实测中，选中视频后直接生成 M4A，没有出现格式选择界面。本文按这一实际流程演示，不包含 MP3 转换步骤。" }, { question: "为什么照片 App 里找不到输出？", answer: "提取结果是音频文件，不是视频或照片。请从 Share File 打开分享面板，使用保存到“文件”等入口管理音频。" }, { question: "能直接从视频分享链接提取声音吗？", answer: "本文演示的是处理相册里的已有视频。如果只有分享链接，可以先按对应平台教程保存视频，再进行音频提取。" }],
 		related: ["download-youtube-video-iphone", "join-videos-iphone", "video-to-live-photo-iphone"],
 	},
 	{
-		slug: "video-to-live-photo-iphone", category: "tools",
-		title: "如何在 iPhone 上把视频转换为实况照片（Live Photo）？",
-		description: "使用 ClipDock影随存将视频转换为 Live Photo，检查生成结果并保存到照片 App，了解实况照片与 GIF 的区别。",
-		intro: "想把一个短暂动作保存为实况照片，可以使用视频转 Live Photo 工具。先选好需要的内容，再转换和检查结果；生成实况照片与设置动态壁纸是不同的操作。",
-		steps: [
-			{ title: "选择适合的片段", text: "先预览视频，确认要保留的动作。过长视频可以先裁剪为需要的片段，便于检查转换后的实际内容。", image: "library" },
-			{ title: "进入视频转实况工具", text: "在 ClipDock影随存的视频处理工具中选择视频转实况功能，导入片段并查看当前版本实际提供的参数，然后开始转换。", image: "live-settings" },
-			{ title: "保存并检查实况效果", text: "完成后按结果页提供的方式保存到照片 App。检查它是否被识别为 Live Photo，并使用系统提供的实况播放方式查看动作。", image: "live-result" },
-			{ title: "分享前确认接收方式", text: "如果需要发给别人，确认接收 App 能保留实况格式。只发送静态封面或截图，不会同时保留实况内容。" },
-		],
-		tips: [{ title: "不要将转换成功等同于壁纸可用", text: "锁屏壁纸的兼容性与系统版本、设备和系统功能有关。本文只介绍生成与保存 Live Photo，不承诺所有生成结果都能作为动态壁纸。" }],
-		faq: [{ question: "Live Photo 和 GIF 一样吗？", answer: "不是同一种格式，使用和分享方式也不同。想发到主要支持动图的场景，可以另用视频转 GIF 工具。" }, { question: "转换后只有静态图片怎么办？", answer: "先检查是否导出了完整的实况结果，再检查照片 App 的识别状态和分享方式，避免只保存了封面图。" }],
-		related: ["download-tiktok-video-iphone", "download-instagram-reels-iphone", "join-videos-iphone"],
-	},
-	{
 		slug: "join-videos-iphone", category: "tools",
+		screenshotsReady: true,
 		title: "如何在 iPhone 和 iPad 上拼接多个视频？",
-		description: "使用 ClipDock影随存选择多个视频片段、确认排列顺序并拼接导出，检查画面比例、声音衔接和最终文件。",
-		intro: "拼接是把多个片段按时间顺序接成一个视频。它适合整理自己的旅行片段、操作演示或系列记录；不是让多个视频在同一屏幕并排播放。",
+		description: "使用 ClipDock影随存拼接相册视频，了解主视频、追加片段数量、上下箭头排序、处理进度和结果保存，附六张真实操作截图。",
+		intro: "把旅行片段、活动记录或分段拍摄的讲解按顺序接起来，可以使用 ClipDock影随存的 Stitch Videos（拼接视频）。本文用三个相册视频演示从导入、排序到保存的完整流程，并逐项解释设置页。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0），英文按钮附中文对照；iPad 用户可对照相同功能入口操作。",
 		steps: [
-			{ title: "选择视频拼接工具", text: "在 ClipDock影随存的视频处理工具中打开拼接功能，选择要合并的片段。确认选中的是最终需要的文件，避免混入重复版本。", image: "join-settings" },
-			{ title: "核对排列顺序与画面", text: "按当前界面支持的方式确认片段先后顺序。横屏与竖屏视频混合时，留意实际输出尺寸和画面处理选项，必要时先统一素材尺寸再拼接。", image: "join-settings" },
-			{ title: "执行拼接并检查衔接", text: "启动处理，完成后预览输出，重点检查片段连接处、声音变化以及开头结尾。确保顺序正确且没有遗漏素材。", image: "join-result" },
-			{ title: "保存成一个完整视频", text: "确认结果后保存到相册或分享。建议在检查完成前保留原片段，方便发现问题时重新调整顺序或替换素材。", image: "save-photos" },
+			{ title: "在 Process 页面打开拼接工具", text: "打开 ClipDock影随存，点击底部 Process（处理）分页。在工具总览中，找到第二排中间的 Stitch Videos（拼接视频），点击进入。截图中的橙色箭头和边框标出了这个入口。", image: "join-process" },
+			{ title: "选择主视频，读懂预览信息", text: "进入 Select Video（选择视频）后，通过 Choose from Photos（从相册选择）选中第一段视频。这段是主视频，会作为拼接结果的开头。进入截图中的设置页后，先核对素材。", image: "join-settings", sections: [
+				{ title: "预览、文件名与时间轴", text: "点击画面中央的播放按钮预览主视频。下方显示文件名、播放位置和主视频时长，便于确认选对了版本。本例主视频时长为 02:26；这里显示的还不是拼接后总时长。" },
+				{ title: "640×338 是什么？", text: "这是当前主视频的画面尺寸，单位为像素。它是素材信息，不是输出尺寸选择器。本次拼接设置页没有独立的分辨率、帧率或画质选项。" },
+				{ title: "为什么已经选了视频，却显示 0 clips added？", text: "这个数字只统计通过 Add Video 追加的片段，不包含上方主视频。0 表示还没有追加片段；要拼接多个视频，下一步至少再添加一段。" },
+			] },
+			{ title: "添加后续视频片段", text: "点击 Processing Options（处理选项）下的 Add Video（添加视频），在 Select Videos to Stitch 弹窗里选择素材来源。本例继续选择 Choose from Photos。", image: "join-source", sections: [
+				{ title: "三个来源如何选择", text: "Choose from Downloads 对应 App 中已下载的视频；Choose from Photos 对应系统相册；Choose from Files 用于从文件选择器导入。按素材所在位置选择即可，不需要为了拼接先重新下载相册视频。" },
+				{ title: "在相册中多选并确认", text: "点选要追加的视频后，缩略图上会出现选中编号，再点击右上角的蓝色勾号完成导入。需要更多片段时，可以再次点击 Add Video。返回后检查列表数量，避免把主视频重复添加一次。" },
+			] },
+			{ title: "核对数量，调整播放顺序", text: "截图中显示 2 clips added，表示在主视频后追加了两段，最终共三段。列表从 Clip 2 开始编号，按从上到下的顺序接在主视频之后。", image: "join-order", sections: [
+				{ title: "上下箭头：调整追加片段顺序", text: "点击向上或向下箭头移动对应片段。本次已实测把 05:11 的片段移到 04:10 的片段前面。最上面的追加片段不能继续上移，最下面的不能继续下移，因此边界处的箭头会变灰；只有一段追加视频时，两个方向都不可用。" },
+				{ title: "主视频与追加列表的区别", text: "上方主视频固定作为开头，不在追加片段的排序列表里。如果想换一个视频开场，返回重新选择主视频，再添加后续片段。" },
+				{ title: "缩略图、时长与移除按钮", text: "每行的缩略图、文件名和时长帮助你区分片段；红色垃圾桶是该追加片段的移除入口。开始前核对顺序、重复素材和总内容。本例顺序为主视频 02:26 → Clip 2 05:11 → Clip 3 04:10。" },
+			] },
+			{ title: "开始拼接，查看处理进度", text: "确认片段后点击 Start Processing（开始处理）。进度弹窗会显示 Processing video 和完成百分比，等待结果页出现后再检查成片。", image: "join-progress", sections: [
+				{ title: "完成通知与后台提示", text: "较长的处理过程中会出现 Notify me when complete（完成时通知我）开关。需要提醒时可以开启，并按系统提示处理通知权限。弹窗提示可以切到后台，App 会尽可能继续处理；这不代表系统一定允许任务一直在后台运行。" },
+				{ title: "Cancel 是取消处理", text: "弹窗底部 Cancel 用于取消当前任务，不是把进度窗口收起。仍然需要这次输出时，保持任务运行并等待完成。" },
+			] },
+			{ title: "预览成片并保存到相册", text: "完成后结果页会显示生成的视频、时间轴和缩略图。本次输出文件以 _concat.mp4 结尾，结果页显示 11:46，已验证能够播放。输入列表的时长按秒显示，核对总时长时应以实际输出为准。", image: "join-result", sections: [
+				{ title: "保存前检查哪些地方", text: "点击播放按钮预览，重点查看开头、结尾与两段连接附近，确认顺序、画面比例和声音衔接。对本例可重点检查约 02:26 和 07:37 附近；完整观看或试听后再决定是否保留成片。" },
+				{ title: "Save to Photos：保存到相册", text: "点击 Save to Photos（保存到相册）。首次使用可能需要允许 App 添加照片和视频；保存完成后会出现 Saved to Photos 提示。本次实测已收到这一成功提示，可以再到照片 App 查看成片。" },
+				{ title: "继续处理、分享与完成", text: "Keep Processing 是继续处理入口；Share File 打开文件分享；Done 关闭结果页。需要把成片留在相册时，应先点击 Save to Photos，不能把 Done 当作保存按钮。" },
+			] },
 		],
-		tips: [{ title: "画面尺寸不一致", text: "拼接之前先明确需要横屏还是竖屏输出。具体缩放、裁切或留边方式要看工具实际选项，不要默认所有画面都能无裁切地填满同一比例。" }],
-		faq: [{ question: "拼接是否会自动加入转场或背景音乐？", answer: "本文不假定有自动转场或配乐。以当前拼接工具实际提供的功能为准，需要其他声音处理时可查看相关音频工具。" }, { question: "为什么输出大小不是原文件简单相加？", answer: "输出大小还取决于处理方式和导出参数。应以最终生成文件为准。" }],
+		tips: [{ title: "横竖屏或尺寸不一致怎么办？", text: "本次拼接页没有单独的画布、裁切或留边设置。对画面比例有要求时，先用 Resize / Canvas（调整尺寸／画布）或相应工具准备素材，再进行拼接，并检查输出效果。" }, { title: "暂时不要离开当前设置页", text: "右上角魔棒会将当前主视频带入 Quick Edit（快速编辑）工具选择。本次实测从那里重新进入 Stitch Videos 后，追加数量重置为 0。如果已排好顺序，直接开始处理；切换工具后应重新核对追加列表。" }],
+		faq: [{ question: "为什么 2 clips added 却拼出了三段？", answer: "计数只包含追加视频，不包含开头的主视频。主视频一段加追加两段，共三段。" }, { question: "可以把追加片段移到主视频前面吗？", answer: "本次界面的上下箭头只调整追加列表内部顺序，第一段追加视频的向上箭头为灰色。需要更换开头时，应重新选择主视频。" }, { question: "这里能设置转场、背景音乐或输出画质吗？", answer: "本次拼接设置页没有这些选项。页面主要用于预览主视频、添加片段及调整追加顺序；需要其他效果时，使用对应处理工具。" }, { question: "点击 Done 后为什么相册里没有成片？", answer: "Done 只关闭结果页。需要另行点击 Save to Photos，并确认保存成功及相册权限。" }],
 		related: ["extract-audio-iphone", "video-to-live-photo-iphone", "download-youtube-playlist-iphone"],
 	},
+	...videoToolTutorials,
 ];
+
+// Keep tool cards in the same order as the app’s Process grid.
+const orderedTools = tutorials.filter(article => article.category === "tools").sort((a, b) => videoToolOrder.indexOf(a.slug) - videoToolOrder.indexOf(b.slug));
+let toolIndex = 0;
+for (let index = 0; index < tutorials.length; index++) {
+	if (tutorials[index].category === "tools") tutorials[index] = orderedTools[toolIndex++];
+}
 
 export const articleHref = (slug: string) => `/zh-Hans/articles/${slug}/`;
