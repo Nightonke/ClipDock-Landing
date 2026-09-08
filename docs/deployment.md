@@ -42,7 +42,7 @@ Vercel middleware 仅匹配 `/releases/`。地区为 `CN` 且已配置 `TENCENT_
 
 ## 待确认事项
 
-腾讯云公有读存储桶的计费条款及按量使用预算待用户确认；确认前不创建该桶、不启用香港分流。App Store 当前法律外链含旧剪贴板工具描述，需要产品侧更新。
+用户已确认 COS 计费条款。CDN HTTPS 服务另有独立的 HTTPS 请求计费协议，等待确认；确认后启用 HTTPS、下发证书与推荐配置，验证后再设置 Vercel 的 `TENCENT_CDN_ORIGIN` 和 `deployment.json`。App Store 当前法律外链含旧剪贴板工具描述，需要产品侧更新。
 
 ## 2026-09-08 发布记录
 
@@ -51,3 +51,13 @@ Vercel middleware 仅匹配 `/releases/`。地区为 `CN` 且已配置 `TENCENT_
 - Search Console 域名所有权已验证；`sitemap-index.xml` 显示 Success；首页实时测试显示可供 Google 访问、可以编入索引，已请求收录。尚不表示已经收录。
 - `www.clipdock.video` 的 DNS 健康检查通过，但 GitHub 当前证书仅覆盖裸域名。已按官方排障流程重新绑定域名触发证书处理，仍须复查 www 的 HTTPS。对外入口先使用 `https://clipdock.video/`。
 - 腾讯云香港镜像与分流尚未启用；中国大陆素材访问体验仍待完成该配置后实测。
+
+## 2026-09-08 香港镜像准备记录
+
+- COS：`clipdock-landing-1257446936`，地域 `ap-hongkong`，单 AZ、公有读私有写。
+- 已上传 `releases/5061412bf9a8eadd/`，含 448 个素材及 manifest.json。448 个素材远端大小全部匹配；全部 5 个 MP4 与三类图片样本的 SHA-256 匹配。
+- CDN：`assets-cn.clipdock.video`，域名 ID `cdn-5hlmqava`，境外加速、音视频点播、HTTPS 回源到该 COS。CNAME 已设置为 `assets-cn.clipdock.video.cdn.dnsv1.com`。
+- CDN 已配置并开启 `Access-Control-Allow-Origin: *`。推荐配置页面已准备保留大小写、分片回源、视频拖拽和 100 QPS 单 IP 限频；须与 HTTPS 确认后一起提交并复核。
+- 免费证书 `ae4Ym4bz` 已签发给 `assets-cn.clipdock.video`，到期时间 `2026-12-07 20:59:59`（控制台显示）。DNS 验证记录已添加。证书已在推荐配置页面选中，尚待 HTTPS 服务确认与下发。
+- 月度预算 `COS 与 CDN 月度预算（含 ClipDock）` 已保存：COS + CDN 产品合计 50 元，40/50 元阈值提醒；包含既有 Split Screen 用量，仅告警、不自动停服。
+- 尚未启用主站素材香港分流。确认 CDN HTTPS 独立计费条款后，继续完成 HTTPS、Range、CORS、缓存和分流验证。
