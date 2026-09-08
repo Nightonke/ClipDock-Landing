@@ -4,6 +4,7 @@ import type { landingContent } from "@/i18n/content";
 import { localizedPath } from "@/i18n/locales";
 import Layout from "./Layout.astro";
 import HeroDemos from "@/components/HeroDemos.astro";
+import SubtitleCarousel from "@/components/SubtitleCarousel.astro";
 import { captionAt } from "@config/demoCaptions";
 import { articleHref } from "@/content/tutorials";
 
@@ -24,7 +25,7 @@ const capabilities = [
 	"播放列表批量下载", "合集批量下载", "后台下载", "视频管理", "保存到相册",
 	"裁剪", "转码", "拼接", "调整尺寸", "旋转", "镜像", "变速", "提取音频",
 	"合并音视频", "倒放", "添加水印", "视频转GIF", "视频转实况（Live Photo）",
-	"批量视频截图", "修改MD5",
+	"批量视频截图", "修改MD5", "YouTube 字幕提取",
 ];
 
 const supportedPlatforms = "YouTube、Sora(OpenAI)、Instagram(包含快拍)、Twitter、TK、Threads、Facebook、Vimeo、afreecatv、Tumblr、Triller、Likee、Twitch、Pinterest、Snapchat、Reddit、VK、Dailymotion、SoundCloud、Lemon8、Suno音乐、AcFun、B、天猫、闲鱼、大众点评、UC视频、趣头条、皮皮虾、皮皮搞笑、微博、秒拍、绿洲、小咖秀、美图秀秀、美拍、云音乐、央视网(CCTV)、新华网、虎嗅、虎牙、斗鱼、糖豆、喜马拉雅、陌陌、映客、迅雷、WIDE短视频、最右、开眼、酷燃、剪映、糗事百科、梨视频、**等上千个平台";
@@ -74,6 +75,17 @@ const featureSections = [
 		platformDetails: "支持YouTube(频道页、Shorts、Hashtag、播放列表)、Instagram(作者主页、Hashtag列表)、Twitter(X)、TK(作者主页、Hashtag列表)、D(主页、合集)、B(主页、合集)、微博、好看等主页批量提取",
 		placeholder: "频道、主页与播放列表批量下载界面截图",
 		tone: "blue",
+	},
+
+	{
+		number: "05",
+		kicker: "YouTube 字幕提取",
+		title: "视频字幕\n单独保存",
+		description: "粘贴 YouTube 视频链接，提取已有字幕。选好需要的语言与文件格式，保存到文件或分享给其他 App，方便阅读、整理和后续使用。",
+		points: ["支持已有的自动生成字幕与多语言轨道", "可多选字幕，支持 SRT、VTT 等七种格式", "保存到“文件”，或直接分享"],
+		carousel: true,
+		tutorial: "extract-youtube-subtitles-iphone",
+		tone: "lime",
 	},
 ];
 
@@ -234,14 +246,17 @@ const structuredData = [
 									) : <span>{point}</span>}
 								</li>
 							))}</ul>
+							{feature.tutorial && <a class="text-link cd-subtitle-link" href={articleHref(feature.tutorial)}>查看字幕提取教程 <span aria-hidden="true">↗</span></a>}
 						</div>
-						<div class:list={["cd-screenshot-stage", `is-${feature.tone}`, { "cd-feature-video-stage": Boolean(feature.video) }]} data-reveal>
+						<div class:list={["cd-screenshot-stage", `is-${feature.tone}`, { "cd-feature-video-stage": Boolean(feature.video), "cd-feature-image-stage": Boolean(feature.carousel) }]} data-reveal>
 							{feature.video ? (
 								<>
 								<video class="cd-feature-video" src={`/assets/demos/${feature.video}.mp4`} poster={`/assets/demos/${feature.video}.jpg`} autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-label={`${feature.kicker}操作演示`}></video>
 								<progress class="cd-feature-progress" value="0" max="100" aria-label="视频播放进度"></progress>
 								<p class="cd-feature-caption" data-fallback={feature.kicker} aria-live="off">{captionAt(`/assets/demos/${feature.video}.mp4`, 0, feature.kicker)}</p>
 								</>
+							) : feature.carousel ? (
+								<SubtitleCarousel />
 							) : (<>
 							<div class="cd-stage-label">SCREEN PLACEHOLDER / {feature.number}</div>
 							<div class="cd-phone-placeholder">
@@ -405,6 +420,8 @@ const structuredData = [
 	.cd-screenshot-stage.is-lime { background: var(--lime); }
 	.cd-screenshot-stage.is-coral { background: #ffc9bd; }
 	.cd-screenshot-stage.cd-feature-video-stage { width: min(100%, 300px); min-height: 0; justify-self: center; place-items: center; padding: 16px 16px calc(var(--radius-lg) - 3px); box-shadow: 10px 10px 0 var(--ink); }
+	.cd-screenshot-stage.cd-feature-image-stage { width: min(100%, 300px); min-height: 0; justify-self: center; padding: 16px; place-items: center; }
+	.cd-subtitle-link { margin-top: 1.5rem; }
 	.cd-feature-video { display: block; width: 100%; aspect-ratio: 6 / 13; object-fit: cover; border: 2px solid var(--ink); border-radius: calc(var(--radius-lg) - 18px); background: #111; }
 	.cd-feature-progress { display: block; appearance: none; width: 100%; height: 2px; margin: 16px 0 0; border: 0; border-radius: 999px; overflow: hidden; background: rgba(23,25,22,.18); color: var(--ink); pointer-events: none; }
 	.cd-feature-caption { width: 100%; min-height: 3.2em; margin: 12px 0 0; color: var(--ink); font-size: .875rem; line-height: 1.6; text-align: left; }

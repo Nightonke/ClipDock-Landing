@@ -4,12 +4,12 @@ import { tutorials, categories, articleHref } from "@/content/tutorials";
 const toolCount = tutorials.filter(article => article.category === "tools").length;
 const draftCount = tutorials.filter(article => !article.screenshotsReady).length;
 ---
-<TutorialLayout title="视频下载与处理教程｜iPhone / iPad｜ClipDock影随存" description="在 iPhone 和 iPad 上下载视频、使用复制即下载、批量保存主页与播放列表，以及提取音频、制作实况照片和拼接视频。">
+<TutorialLayout title="视频下载、字幕提取与处理教程｜iPhone / iPad｜ClipDock影随存" description="在 iPhone 和 iPad 上下载视频、使用复制即下载、批量保存主页与播放列表，提取 YouTube 字幕，以及提取音频、制作实况照片和拼接视频。">
 	<main id="main-content" class="tutorial-index site-shell">
 		<header class="tutorial-index-hero">
 			<p class="eyebrow">ClipDock影随存 · 使用教程</p>
 			<h1>从第一条链接，<br />到你的保存方式。</h1>
-			<p class="tutorial-lead">在 iPhone 和 iPad 上下载视频、批量保存作品，再把素材处理成你需要的样子。</p>
+			<p class="tutorial-lead">在 iPhone 和 iPad 上下载视频、批量保存作品、提取 YouTube 字幕，再把素材处理成你需要的样子。</p>
 			<p class="tutorial-lead">{toolCount} 个视频处理功能均附入口标注与真实截图；各篇注明参数限制和实测情况。</p>
 			{draftCount > 0 && <p class="tutorial-draft">另有 {draftCount} 篇教程仍待补充截图与核对步骤。</p>}
 		</header>
