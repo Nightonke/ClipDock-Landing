@@ -1,6 +1,9 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "public",
+  "redirects": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "www.clipdock.video" }], "destination": "https://clipdock.video/:path*", "permanent": true }
+  ],
   "headers": [
     { "source": "/releases/:path*", "headers": [
       { "key": "Access-Control-Allow-Origin", "value": "*" },

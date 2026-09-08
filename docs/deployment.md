@@ -3,9 +3,9 @@
 ## 架构与域名
 
 - `clipdock.video`：GitHub Pages；首页 `/zh-Hans/`，教程 `/zh-Hans/articles/`。
-- `www.clipdock.video`：GitHub Pages 自定义域名别名。
+- `www.clipdock.video`：Vercel 提供 HTTPS 308 跳转到主域名，保留路径与查询参数。
 - `assets.clipdock.video`：Vercel 项目 `clipdock-assets`。
-- 计划中的 `assets-cn.clipdock.video`：腾讯云香港 COS + 中国境外 CDN。仅在该路径验证完成后设置 `TENCENT_CDN_ORIGIN`；未设置时所有素材请求由 Vercel 提供。
+- `assets-cn.clipdock.video`：腾讯云香港 COS + 中国境外 CDN。已配置 Vercel 生产环境的 `TENCENT_CDN_ORIGIN`，中国大陆素材请求转到此域名，其他地区由 Vercel 提供。
 - Search Console 使用 `sc-domain:clipdock.video`，保留 DNS 中的 Google TXT 验证记录。
 
 主站和素材是独立的发布目标。腾讯云只镜像官网公开素材，不能上传 `references/`、源码、环境变量或凭据。
@@ -40,9 +40,9 @@ Vercel middleware 仅匹配 `/releases/`。地区为 `CN` 且已配置 `TENCENT_
 
 页面可以重新部署上一个成功的 GitHub Actions 提交；不可变素材版本要保留。Vercel 可使用此前的成功部署回退。腾讯云出现异常时，取消 `TENCENT_CDN_ORIGIN` 并重新部署素材项目，所有地区暂时使用 Vercel。
 
-## 待确认事项
+## 维护事项
 
-用户已确认 COS 计费条款。CDN HTTPS 服务另有独立的 HTTPS 请求计费协议，等待确认；确认后启用 HTTPS、下发证书与推荐配置，验证后再设置 Vercel 的 `TENCENT_CDN_ORIGIN` 和 `deployment.json`。App Store 当前法律外链含旧剪贴板工具描述，需要产品侧更新。
+用户已确认 COS 及 CDN HTTPS 计费条款，HTTPS 与香港分流已开启。免费证书到期前需要重新申请并部署，不能仅申请而不下发。App Store 当前法律外链含旧剪贴板工具描述，需要产品侧更新。
 
 ## 2026-09-08 发布记录
 
@@ -61,3 +61,11 @@ Vercel middleware 仅匹配 `/releases/`。地区为 `CN` 且已配置 `TENCENT_
 - 免费证书 `ae4Ym4bz` 已签发给 `assets-cn.clipdock.video`，到期时间 `2026-12-07 20:59:59`（控制台显示）。DNS 验证记录已添加。证书已在推荐配置页面选中，尚待 HTTPS 服务确认与下发。
 - 月度预算 `COS 与 CDN 月度预算（含 ClipDock）` 已保存：COS + CDN 产品合计 50 元，40/50 元阈值提醒；包含既有 Split Screen 用量，仅告警、不自动停服。
 - 尚未启用主站素材香港分流。确认 CDN HTTPS 独立计费条款后，继续完成 HTTPS、Range、CORS、缓存和分流验证。
+
+## 2026-09-08 HTTPS 与香港分流上线
+
+- CDN HTTPS 服务及证书已下发，CNAME 显示已生效；HTTPS 清单与本地一致。视频 Range 返回 206，返回的 1024 字节与原视频一致，响应包含 `Access-Control-Allow-Origin: *`，缓存已命中。
+- Vercel 生产环境 `TENCENT_CDN_ORIGIN=https://assets-cn.clipdock.video` 已生效。实际请求验证得到 307 香港跳转及 `private, no-store`；跳转后的文件能正常读取。
+- `deployment.json` 已启用腾讯云清单校验。正式构建支持跟随区域跳转，43 个页面、37 个 sitemap URL、1748 处本地引用检查通过。
+- `www` 的 DNS 改为 Vercel 推荐的 `A 76.76.21.21`，使用现有素材项目中的主机名匹配规则转到正式主域名。裸域名的 GitHub Pages 解析保持原配置。
+- HTTPS 和请求链路已验收；尚未完成中国大陆三大运营商的多地速度测试。
