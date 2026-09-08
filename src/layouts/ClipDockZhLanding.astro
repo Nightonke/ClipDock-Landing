@@ -253,7 +253,7 @@ const structuredData = [
 						<div class:list={["cd-screenshot-stage", `is-${feature.tone}`, { "cd-feature-video-stage": Boolean(feature.video), "cd-feature-image-stage": Boolean(feature.carousel) }]} data-reveal>
 							{feature.video ? (
 								<>
-								<video class="cd-feature-video" src={mediaUrl(`/assets/demos/${feature.video}.mp4`)} poster={mediaUrl(`/assets/demos/${feature.video}.jpg`)} autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-label={`${feature.kicker}操作演示`}></video>
+								<video crossorigin="anonymous" class="cd-feature-video" src={mediaUrl(`/assets/demos/${feature.video}.mp4`)} poster={mediaUrl(`/assets/demos/${feature.video}.jpg`)} autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-label={`${feature.kicker}操作演示`}></video>
 								<progress class="cd-feature-progress" value="0" max="100" aria-label="视频播放进度"></progress>
 								<VideoRecovery />
 								<p class="cd-feature-caption" data-fallback={feature.kicker} aria-live="off">{captionAt(`/assets/demos/${feature.video}.mp4`, 0, feature.kicker)}</p>

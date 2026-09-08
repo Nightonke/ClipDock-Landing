@@ -42,6 +42,8 @@ class Page(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if tag == "video" and attrs.get("crossorigin") != "anonymous":
+            errors.append(f"{self.path}: video must use anonymous CORS for CDN range redirects")
         if tag == 'link' and attrs.get('rel') == 'canonical':
             self.canonical = attrs.get('href')
             return

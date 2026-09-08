@@ -3,7 +3,7 @@
   <button type="button">重试播放</button>
 </div>
 <style>
-  .video-recovery { width: 100%; margin-top: 12px; font-size: .875rem; line-height: 1.5; }
+  .video-recovery { position: absolute; z-index: 2; inset-inline: 24px; top: 50%; transform: translateY(-50%); display: grid; justify-items: center; padding: 16px; border: 1.5px solid var(--ink, #171916); border-radius: 14px; background: var(--paper-strong, #fffdf7); color: var(--ink, #171916); text-align: center; font-size: .875rem; line-height: 1.5; }
   .video-recovery[hidden] { display: none; }
   button { margin: 8px 0 0; min-height: 44px; border: 1.5px solid currentColor; border-radius: 10px; padding: 8px 14px; background: transparent; color: inherit; font: inherit; cursor: pointer; }
   button:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }

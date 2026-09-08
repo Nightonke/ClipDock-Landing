@@ -71,3 +71,11 @@ Vercel middleware 仅匹配 `/releases/`。地区为 `CN` 且已配置 `TENCENT_
 - www 跳转中间件覆盖所有路径；已指定新解析地址验证有效 TLS、根路径及教程路径的 308，并保留查询参数。部分递归 DNS 仍可能缓存旧 GitHub 地址，需等待原 TTL 过期。
 - 正式浏览器验证：首页 5 个演示视频均可加载，教程首屏及附近截图加载成功；最新主站自动部署检查成功。
 - HTTPS 和请求链路已验收；尚未完成中国大陆三大运营商的多地速度测试。
+
+
+## 2026-09-08 视频跨域续传修复
+
+- Chrome 现场：视频先取得 Vercel 的缓存 206，后续 Range 收到跳转到 `assets-cn.clipdock.video` 的 307，目标请求立即被取消（0 字节、0 毫秒），播放器报 `PIPELINE_ERROR_READ`。未指定 CORS 的媒体缓冲区不能在已有数据后合并跨域续传。
+- 全站视频使用 `crossorigin="anonymous"`，两端素材服务已提供 `Access-Control-Allow-Origin: *`。生产构建检查每个 video 标签，避免遗漏。
+- 真实 Chrome 对照：`node tests/fixtures/video-range-server.mjs` 后访问 `http://localhost:4324/`。同一视频先返回前 2 MiB，再将后续 Range 跳到另一端口；旧配置复现相同错误，CORS 配置完整播放 34.5 秒、零错误。
+- 自动恢复不再展示反复出现的提示；最终失败操作采用绝对定位浮层，避免增减卡片高度。
