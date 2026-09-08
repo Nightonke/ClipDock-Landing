@@ -68,4 +68,6 @@ Vercel middleware 仅匹配 `/releases/`。地区为 `CN` 且已配置 `TENCENT_
 - Vercel 生产环境 `TENCENT_CDN_ORIGIN=https://assets-cn.clipdock.video` 已生效。实际请求验证得到 307 香港跳转及 `private, no-store`；跳转后的文件能正常读取。
 - `deployment.json` 已启用腾讯云清单校验。正式构建支持跟随区域跳转，43 个页面、37 个 sitemap URL、1748 处本地引用检查通过。
 - `www` 的 DNS 改为 Vercel 推荐的 `A 76.76.21.21`，使用现有素材项目中的主机名匹配规则转到正式主域名。裸域名的 GitHub Pages 解析保持原配置。
+- www 跳转中间件覆盖所有路径；已指定新解析地址验证有效 TLS、根路径及教程路径的 308，并保留查询参数。部分递归 DNS 仍可能缓存旧 GitHub 地址，需等待原 TTL 过期。
+- 正式浏览器验证：首页 5 个演示视频均可加载，教程首屏及附近截图加载成功；最新主站自动部署检查成功。
 - HTTPS 和请求链路已验收；尚未完成中国大陆三大运营商的多地速度测试。

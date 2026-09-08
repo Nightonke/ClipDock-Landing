@@ -2,6 +2,11 @@ import { geolocation, next } from '@vercel/functions';
 import { tencentRedirect } from './routing.mjs';
 
 export default function middleware(request: Request) {
+  const url = new URL(request.url);
+  if (url.hostname === 'www.clipdock.video') {
+    url.hostname = 'clipdock.video';
+    return Response.redirect(url, 308);
+  }
   const destination = tencentRedirect(request.url, geolocation(request).country, process.env.TENCENT_CDN_ORIGIN);
   if (!destination) return next({ headers: { 'X-Media-CDN': 'vercel' } });
   return new Response(null, {
@@ -15,4 +20,4 @@ export default function middleware(request: Request) {
   });
 }
 
-export const config = { matcher: '/releases/:path*' };
+export const config = { matcher: '/:path*' };
