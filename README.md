@@ -33,6 +33,6 @@ npm run build:production
 - 扩展流程与验证：[多语言维护](docs/localization.md)
 - 已发布语言：`src/i18n/locales.ts` 中的 `publishedLocales`
 - 图片优化：[docs/image-optimization.md](docs/image-optimization.md)
-- App Store 登记的法律链接：`https://daysinyear.github.io/ClipDock/privacy.html` 和 `https://daysinyear.github.io/ClipDock/user.html`
+- 站内法律页面：`/privacy/`、`/terms/`，以及各已发布语言的对应路径；正文位于 `src/i18n/<locale>/legal.ts`，共用 `src/layouts/LegalPage.astro`
 
-法律入口沿用 App Store 已登记的外链；这些外部页面目前仍含剪贴板工具描述，应由产品维护者另行更新，避免沿用网站模板中的 Split Screen 条款。
+用户协议和隐私政策直接在 clipdock.video 展示，支持同页语言切换并纳入 sitemap。正文按当前视频下载和处理功能维护；更新依据及 App Store 链接迁移说明见 [法律页面维护](docs/legal-pages.md)。

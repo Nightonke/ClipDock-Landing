@@ -1,7 +1,9 @@
 ---
-import { publishedLocales } from "@/i18n/locales";
+import LegalPage from "@layouts/LegalPage.astro";
+import { defaultLocale, publishedLocales, type Locale } from "@/i18n/locales";
 export function getStaticPaths() {
-  return publishedLocales.filter(locale => locale !== "en-US").map(locale => ({ params: { locale } }));
+  return publishedLocales.filter(locale => locale !== defaultLocale).map(locale => ({ params: { locale } }));
 }
-return Astro.redirect("https://daysinyear.github.io/ClipDock/user.html", 302);
+const locale = Astro.params.locale as Locale;
 ---
+<LegalPage locale={locale} page="terms" />

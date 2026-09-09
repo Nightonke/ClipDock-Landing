@@ -6,14 +6,12 @@ import { localizedPath, publishedLocales } from "./src/i18n/locales";
 
 const draftPaths = new Set(publishedLocales.flatMap(locale => tutorialStructure.filter(article => !article.screenshotsReady).map(article => localizedPath(locale, `articles/${article.slug}`))));
 
-const redirects = new Set(publishedLocales.flatMap(locale => ["privacy", "terms"].map(page => localizedPath(locale, page))));
-
 export default defineConfig({
   site: "https://clipdock.video",
   integrations: [tailwind(), sitemap({
     filter: (page) => {
       const pathname = new URL(page).pathname;
-      return !draftPaths.has(pathname) && !redirects.has(pathname) && !pathname.includes('/404');
+      return !draftPaths.has(pathname) && !pathname.includes('/404');
     },
   })],
   output: "static", // optional

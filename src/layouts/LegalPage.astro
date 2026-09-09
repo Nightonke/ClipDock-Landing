@@ -1,0 +1,77 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { commonCopy } from "@/i18n/common";
+import { landingContent } from "@/i18n/content";
+import { legalContent, type LegalPage } from "@/i18n/legal";
+import { getLanguageLinks, localizedPath, localeMeta, type Locale } from "@/i18n/locales";
+import { parseMarkdown } from "@/utils/parseMarkdown";
+
+interface Props {
+	locale: Locale;
+	page: LegalPage;
+}
+
+const { locale, page } = Astro.props;
+const app = landingContent[locale];
+const copy = legalContent[locale];
+const document = copy[page];
+const homeHref = localizedPath(locale);
+const html = await parseMarkdown(document.content);
+---
+
+<Layout
+	title={`${document.title} | ${app.shortName}`}
+	description={document.description}
+	lang={localeMeta[locale].htmlLang}
+	appData={app}
+	alternates={getLanguageLinks(locale, page)}
+	homeHref={homeHref}
+	privacyHref={localizedPath(locale, "privacy")}
+	termsHref={localizedPath(locale, "terms")}
+	labels={app.labels}
+>
+	<main id="main-content" class="legal-shell">
+		<div class="legal-toolbar">
+			<nav class="detail-breadcrumb" aria-label={commonCopy[locale].breadcrumb}>
+				<a href={homeHref}>{commonCopy[locale].home}</a>
+				<span aria-current="page">{document.title}</span>
+			</nav>
+			<nav class="legal-languages" aria-label={copy.navigationLabel}>
+				{(["privacy", "terms"] as const).map(key => (
+					<a href={localizedPath(locale, key)} aria-current={key === page ? "page" : undefined}>
+						{copy[key].title}
+					</a>
+				))}
+			</nav>
+		</div>
+		<article class="prose">
+			<h1>{document.title}</h1>
+			<p class="legal-date">{copy.effectiveDateLabel} <time datetime={copy.effectiveDate}>{copy.effectiveDateText}</time></p>
+			<Fragment set:html={html} />
+		</article>
+	</main>
+</Layout>
+
+<style>
+	.legal-shell {
+		max-width: 880px;
+	}
+
+	.detail-breadcrumb {
+		margin: 0;
+	}
+
+	.prose {
+		max-width: none;
+		overflow-wrap: anywhere;
+	}
+
+	.legal-date {
+		font-size: 0.9rem;
+	}
+
+	.prose :global(h2),
+	.prose :global(h3) {
+		line-height: 1.35;
+	}
+</style>

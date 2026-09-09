@@ -34,6 +34,7 @@ class Page(HTMLParser):
         self.step_ids = []
         self.screenshots = 0
         self.metadata = []
+        self.redirect = False
         self.feed(path.read_text())
 
     def handle_starttag(self, tag, pairs):
@@ -42,6 +43,7 @@ class Page(HTMLParser):
             self.lang = attrs.get('lang', '')
             self.direction = attrs.get('dir', '')
         if tag == 'meta' and attrs.get('property') == 'og:locale': self.og_locale = attrs.get('content', '')
+        if tag == 'meta' and attrs.get('http-equiv', '').lower() == 'refresh': self.redirect = True
         if tag == 'link' and attrs.get('rel') == 'canonical': self.canonical = attrs['href']
         if tag == 'link' and attrs.get('rel') == 'alternate' and 'hreflang' in attrs:
             self.alternates[attrs['hreflang']] = attrs['href']
@@ -94,7 +96,7 @@ for locale in PUBLISHED:
     expected_articles = {article['slug'] + '/' for article in REGISTRY['articles']}
     if articles.keys() != expected_articles:
         errors.append(f'{locale}: tutorial route set differs from registry')
-    for suffix in ['', 'articles'] + ['articles/' + article['slug'] for article in REGISTRY['articles']]:
+    for suffix in ['', 'articles', 'privacy', 'terms'] + ['articles/' + article['slug'] for article in REGISTRY['articles']]:
         route = localized(locale, suffix)
         page = pages.get(route)
         if page is None:
@@ -120,9 +122,9 @@ for locale in PUBLISHED:
         if locale == 'zh-Hant' and any(re.search(r'[这为与从个们来时载链视频图选择开关设网页]', text) for text in page.text + page.metadata):
             errors.append(f'{route}: Simplified Chinese residue in Traditional Chinese copy')
     for legal in ['privacy', 'terms']:
-        path = ROOT / localized(locale, legal).lstrip('/') / 'index.html'
-        if not path.exists() or 'http-equiv="refresh"' not in path.read_text():
-            errors.append(f'{locale}: missing legal redirect: {legal}')
+        page = pages.get(localized(locale, legal))
+        if page is None or page.redirect or sum(len(text.strip()) for text in page.text) < 1000:
+            errors.append(f'{locale}: legal page must contain the full policy without a redirect: {legal}')
 
 for locale in REGISTRY['locales']:
     if (locale not in PUBLISHED or locale == DEFAULT) and (ROOT / locale / 'index.html').exists():
@@ -136,8 +138,8 @@ if not sitemap_urls:
     errors.append('Sitemap contains no page URLs')
 for locale in PUBLISHED:
     for legal in ['privacy', 'terms']:
-        if localized(locale, legal) in sitemap_urls:
-            errors.append(f'{locale}: legal redirect in sitemap')
+        if localized(locale, legal) not in sitemap_urls:
+            errors.append(f'{locale}: legal page missing from sitemap: {legal}')
     for article in REGISTRY['articles']:
         route = localized(locale, 'articles/' + article['slug'])
         if (route in sitemap_urls) != article['screenshotsReady']:

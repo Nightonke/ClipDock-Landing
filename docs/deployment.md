@@ -34,7 +34,7 @@ Vercel middleware 仅匹配 `/releases/`。地区为 `CN` 且已配置 `TENCENT_
 - 教程仅在 `screenshotsReady` 为真时开放索引。当前中英文各 35 篇教程截图齐备；保留各篇的实测限制说明。
 - 已发布语言为英语和简体中文，教程逐篇对应；繁体及旧功能/场景模板仍不生成。
 - `scripts/verify-locales.py` 检查英文文案残留、35 篇双语覆盖、步骤/截图数量及双向 hreflang。
-- `/privacy/`、`/terms/` 及中文对应路径跳转到 App Store 登记的正式外链，不收录重复跳转页。
+- `/privacy/`、`/terms/` 及各已发布语言的对应路径直接展示完整站内正文，具有对应语言的 canonical、hreflang，并收录到 sitemap。
 - 上线后提交 `https://clipdock.video/sitemap-index.xml`，检查 Google 的抓取结果。提交不代表立即收录。
 
 ## 回退
@@ -43,7 +43,7 @@ Vercel middleware 仅匹配 `/releases/`。地区为 `CN` 且已配置 `TENCENT_
 
 ## 维护事项
 
-用户已确认 COS 及 CDN HTTPS 计费条款，HTTPS 与香港分流已开启。免费证书到期前需要重新申请并部署，不能仅申请而不下发。App Store 当前法律外链含旧剪贴板工具描述，需要产品侧更新。
+用户已确认 COS 及 CDN HTTPS 计费条款，HTTPS 与香港分流已开启。免费证书到期前需要重新申请并部署，不能仅申请而不下发。站内法律页发布后，App Store Connect 中登记的旧法律链接可更新到 clipdock.video，详见 [法律页面维护](legal-pages.md)。
 
 ## 2026-09-08 发布记录
 
