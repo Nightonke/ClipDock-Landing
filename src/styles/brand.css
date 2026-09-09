@@ -1290,7 +1290,7 @@ a {
 	font-size: 0.82rem;
 }
 
-html[lang="zh-Hans"] .footer-links {
+html:is([lang="zh-Hans"], [lang="zh-Hant"]) .footer-links {
 	text-transform: none;
 }
 

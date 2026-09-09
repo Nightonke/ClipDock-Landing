@@ -7,6 +7,7 @@ import { landingContent } from "@/i18n/content";
 import { siteUI } from "@/i18n/site-ui";
 import {
 	defaultLocale,
+	localeMeta,
 	getLanguageLinks,
 	localizedPath,
 	type Locale,
@@ -58,18 +59,13 @@ const socialImageURL = Astro.site
 const xDefaultHref =
 	alternates.find((alternate) => alternate.locale === defaultLocale)?.href ??
 	"/";
-const ogLocaleMap: Record<Locale, string> = {
-	"en-US": "en_US",
-	"zh-Hans": "zh_CN",
-	"zh-Hant": "zh_TW",
-};
 const jsonLd = structuredData
 	? JSON.stringify(structuredData).replace(/</g, "\\u003c")
 	: undefined;
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={lang} dir={localeMeta[activeLocale].dir}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -105,10 +101,10 @@ const jsonLd = structuredData
 		<meta property="og:url" content={canonicalURL} />
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content={navTitle} />
-		<meta property="og:locale" content={ogLocaleMap[activeLocale]} />
-		{Object.entries(ogLocaleMap)
+		<meta property="og:locale" content={localeMeta[activeLocale].ogLocale} />
+		{Object.entries(localeMeta)
 			.filter(([locale]) => locale !== activeLocale && alternates.some(link => link.locale === locale))
-			.map(([, locale]) => <meta property="og:locale:alternate" content={locale} />)}
+			.map(([, locale]) => <meta property="og:locale:alternate" content={locale.ogLocale} />)}
 		{description && <meta property="og:description" content={description} />}
 		<meta property="og:image" content={socialImageURL} />
 		<meta property="og:image:type" content="image/png" />

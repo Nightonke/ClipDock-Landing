@@ -1,3 +1,8 @@
+import { ui as hantUI } from './zh-Hant/site-ui';
+import { categories as hantCategories, platformNotes as hantNotes } from './zh-Hant/tutorial-index';
+import { tutorialCopy as hantTutorials } from './zh-Hant/tutorials';
+import { screenshotCopy as hantScreenshots } from './zh-Hant/screenshots';
+import { captions as hantCaptions } from './zh-Hant/demo-captions';
 import { validateCopy } from "./shared/validate";
 import type { PublishedLocale } from './locales';
 import type { SiteUI, TutorialCopy } from './types';
@@ -22,6 +27,7 @@ export interface LanguageCatalog {
 }
 export const catalogs: Record<PublishedLocale, LanguageCatalog> = {
  'en-US': { ui: enUI, categories: enCategories, platformNotes: enNotes, tutorialCopy: enTutorials, screenshotCopy: enScreenshots, captions: enCaptions },
+ 'zh-Hant': { ui: hantUI, categories: hantCategories, platformNotes: hantNotes, tutorialCopy: hantTutorials, screenshotCopy: hantScreenshots, captions: hantCaptions },
  'zh-Hans': { ui: zhUI, categories: zhCategories, platformNotes: zhNotes, tutorialCopy: zhTutorials, screenshotCopy: zhScreenshots, captions: zhCaptions },
 };
 export function getCatalog(locale: string): LanguageCatalog {

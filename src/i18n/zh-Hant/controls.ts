@@ -6,5 +6,5 @@ export const controls = {
   "switchDark": "切換為深色主題",
   "switchSystem": "跟隨系統主題",
   "toggleAnswer": "展開或收起答案",
-  "backToTop": "返回頂端"
+  "backToTop": "返回頂部"
 };

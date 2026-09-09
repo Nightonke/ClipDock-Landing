@@ -8,10 +8,10 @@ export const locales = ["en-US", "zh-Hans", "zh-Hant"] as const;
 export type Locale = (typeof locales)[number];
 
 // Only reviewed ClipDock translations are published.
-export const publishedLocales = ["en-US", "zh-Hans"] as const satisfies readonly Locale[];
+export const publishedLocales = ["en-US", "zh-Hans", "zh-Hant"] as const satisfies readonly Locale[];
 export type PublishedLocale = (typeof publishedLocales)[number];
 
-export const localeMeta: Record<Locale, { label: string; hrefLang: string; htmlLang: string }> = { "en-US": en, "zh-Hans": zh, "zh-Hant": traditional };
+export const localeMeta: Record<Locale, { label: string; hrefLang: string; htmlLang: string; ogLocale: string; dir: "ltr" | "rtl" }> = { "en-US": en, "zh-Hans": zh, "zh-Hant": traditional };
 
 export const localizedPath = (locale: Locale, page = "") => {
 	const cleanPage = page.replace(/^\/|\/$/g, "");

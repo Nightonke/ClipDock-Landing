@@ -1,0 +1,184 @@
+[
+  {
+    "test": "language switch",
+    "width": 375,
+    "locale": "en-US",
+    "path": "/articles/add-watermark-video-iphone/",
+    "expected": "/articles/add-watermark-video-iphone/"
+  },
+  {
+    "test": "language switch",
+    "width": 375,
+    "locale": "zh-Hans",
+    "path": "/zh-Hans/articles/add-watermark-video-iphone/",
+    "expected": "/zh-Hans/articles/add-watermark-video-iphone/"
+  },
+  {
+    "test": "language switch",
+    "width": 375,
+    "locale": "zh-Hant",
+    "path": "/zh-Hant/articles/add-watermark-video-iphone/",
+    "expected": "/zh-Hant/articles/add-watermark-video-iphone/"
+  },
+  {
+    "test": "old language homepage",
+    "width": 375,
+    "route": "/",
+    "lang": "en",
+    "overflow": false
+  },
+  {
+    "test": "old language homepage",
+    "width": 375,
+    "route": "/zh-Hans/",
+    "lang": "zh-Hans",
+    "overflow": false
+  },
+  {
+    "test": "feature section",
+    "width": 375,
+    "index": 0,
+    "text": "01\n從連結到影片\n從分享連結\n下載影片\n\n貼上支援的平台分享連結或網址，影隨存會提取可下載的影片、圖片或音訊。來源提供高畫質或無浮水印版本時，可依需要選擇；畫質、格式和浮水印情況以實際資源為準。\n\n檢視支援的平台\n\nYouTube、Sora（OpenAI）、Instagram（含限時動態）、X（Twitter）、TikTok、Threads、Facebook、Vimeo、afreecatv、Tumblr、Triller、Likee、Twitch、Pinterest、Snapchat、Reddit、VK、Dailymotion、SoundCloud、Lemon8、Suno 音樂、AcFun、嗶哩嗶哩（B 站）、天貓、閒魚、大眾點評、UC 視頻、趣頭條、皮皮蝦、皮皮搞笑、微博、秒拍、綠洲、小咖秀、美圖秀秀、美拍、網易雲音樂、央視網（CCTV）、新華網、虎嗅、虎牙、鬥魚、糖豆、喜馬拉雅、陌陌、映客、迅雷、WIDE 短視頻、最右、開眼、酷燃、剪映、糗事百科、梨視頻等平台。實際可下載的內容以連結解析結果為準\n\n按來源選擇可用畫質\n支援影片、圖片和音訊\n切換到背景也可繼續下載"
+  },
+  {
+    "test": "feature section",
+    "width": 375,
+    "index": 1,
+    "text": "02\n不必貼上，只需複製\n複製連結\n背景下載\n\n開啟「自動下載剪貼簿鏈接」和「後台識別並下載」，並保持子母畫面執行。在 YouTube、TikTok、X 等平台複製支援的分享連結，影隨存就會在背景建立下載任務。開啟下載通知並允許通知權限後，可收到完成或失敗提醒。\n\n開啟後，不必切回 App 貼上\n子母畫面可滑到螢幕邊緣收起"
+  },
+  {
+    "test": "feature section",
+    "width": 375,
+    "index": 2,
+    "text": "03\n播放後偵測可下載資源\n播放網頁影片\n長按選擇下載\n\n進入「網頁影片」，開啟目標頁面並播放影片。如有廣告，請跳過或等待廣告結束，再長按影片選擇可下載資源；也可以透過底部偵測按鈕檢視已偵測到的影片。資源是否可下載取決於網站和存取條件。\n\n偵測頁面中的可下載影片\n從偵測清單選擇需要的資源\n長按定位正在播放的影片"
+  },
+  {
+    "test": "feature section",
+    "width": 375,
+    "index": 3,
+    "text": "04\n批次下載\n選好清單\n批次下載\n\n貼上支援的頻道、個人頁面、播放清單或話題頁連結，載入清單後選擇需要的影片或圖片，再加入下載佇列。清單按頁載入，免費版最多可載入前 2 頁；可下載範圍以實際回傳結果為準，不一定包含全部作品。\n\n檢視批次下載支援範圍"
+  },
+  {
+    "test": "feature section",
+    "width": 375,
+    "index": 4,
+    "text": "05\nYouTube 字幕提取\n影片字幕\n單獨儲存\n\n貼上 YouTube 影片連結，提取已有字幕。選好需要的語言與檔案格式，儲存到檔案或分享給其他 App，方便閱讀、整理和後續使用。\n\n支援已有的自動產生字幕與多語言軌道\n可多選字幕，支援 SRT、VTT 等七種格式\n儲存到「檔案」，或直接分享\n檢視字幕提取教學\n↗"
+  },
+  {
+    "test": "language switch",
+    "width": 1440,
+    "locale": "en-US",
+    "path": "/articles/add-watermark-video-iphone/",
+    "expected": "/articles/add-watermark-video-iphone/"
+  },
+  {
+    "test": "language switch",
+    "width": 1440,
+    "locale": "zh-Hans",
+    "path": "/zh-Hans/articles/add-watermark-video-iphone/",
+    "expected": "/zh-Hans/articles/add-watermark-video-iphone/"
+  },
+  {
+    "test": "language switch",
+    "width": 1440,
+    "locale": "zh-Hant",
+    "path": "/zh-Hant/articles/add-watermark-video-iphone/",
+    "expected": "/zh-Hant/articles/add-watermark-video-iphone/"
+  },
+  {
+    "test": "old language homepage",
+    "width": 1440,
+    "route": "/",
+    "lang": "en",
+    "overflow": false
+  },
+  {
+    "test": "old language homepage",
+    "width": 1440,
+    "route": "/zh-Hans/",
+    "lang": "zh-Hans",
+    "overflow": false
+  },
+  {
+    "test": "feature section",
+    "width": 1440,
+    "index": 0,
+    "text": "01\n從連結到影片\n從分享連結\n下載影片\n\n貼上支援的平台分享連結或網址，影隨存會提取可下載的影片、圖片或音訊。來源提供高畫質或無浮水印版本時，可依需要選擇；畫質、格式和浮水印情況以實際資源為準。\n\n檢視支援的平台\n\nYouTube、Sora（OpenAI）、Instagram（含限時動態）、X（Twitter）、TikTok、Threads、Facebook、Vimeo、afreecatv、Tumblr、Triller、Likee、Twitch、Pinterest、Snapchat、Reddit、VK、Dailymotion、SoundCloud、Lemon8、Suno 音樂、AcFun、嗶哩嗶哩（B 站）、天貓、閒魚、大眾點評、UC 視頻、趣頭條、皮皮蝦、皮皮搞笑、微博、秒拍、綠洲、小咖秀、美圖秀秀、美拍、網易雲音樂、央視網（CCTV）、新華網、虎嗅、虎牙、鬥魚、糖豆、喜馬拉雅、陌陌、映客、迅雷、WIDE 短視頻、最右、開眼、酷燃、剪映、糗事百科、梨視頻等平台。實際可下載的內容以連結解析結果為準\n\n按來源選擇可用畫質\n支援影片、圖片和音訊\n切換到背景也可繼續下載"
+  },
+  {
+    "test": "feature section",
+    "width": 1440,
+    "index": 1,
+    "text": "02\n不必貼上，只需複製\n複製連結\n背景下載\n\n開啟「自動下載剪貼簿鏈接」和「後台識別並下載」，並保持子母畫面執行。在 YouTube、TikTok、X 等平台複製支援的分享連結，影隨存就會在背景建立下載任務。開啟下載通知並允許通知權限後，可收到完成或失敗提醒。\n\n開啟後，不必切回 App 貼上\n子母畫面可滑到螢幕邊緣收起"
+  },
+  {
+    "test": "feature section",
+    "width": 1440,
+    "index": 2,
+    "text": "03\n播放後偵測可下載資源\n播放網頁影片\n長按選擇下載\n\n進入「網頁影片」，開啟目標頁面並播放影片。如有廣告，請跳過或等待廣告結束，再長按影片選擇可下載資源；也可以透過底部偵測按鈕檢視已偵測到的影片。資源是否可下載取決於網站和存取條件。\n\n偵測頁面中的可下載影片\n從偵測清單選擇需要的資源\n長按定位正在播放的影片"
+  },
+  {
+    "test": "feature section",
+    "width": 1440,
+    "index": 3,
+    "text": "04\n批次下載\n選好清單\n批次下載\n\n貼上支援的頻道、個人頁面、播放清單或話題頁連結，載入清單後選擇需要的影片或圖片，再加入下載佇列。清單按頁載入，免費版最多可載入前 2 頁；可下載範圍以實際回傳結果為準，不一定包含全部作品。\n\n檢視批次下載支援範圍"
+  },
+  {
+    "test": "feature section",
+    "width": 1440,
+    "index": 4,
+    "text": "05\nYouTube 字幕提取\n影片字幕\n單獨儲存\n\n貼上 YouTube 影片連結，提取已有字幕。選好需要的語言與檔案格式，儲存到檔案或分享給其他 App，方便閱讀、整理和後續使用。\n\n支援已有的自動產生字幕與多語言軌道\n可多選字幕，支援 SRT、VTT 等七種格式\n儲存到「檔案」，或直接分享\n檢視字幕提取教學\n↗"
+  },
+  {
+    "test": "demo playback",
+    "index": 0,
+    "ready": 4,
+    "playing": true,
+    "caption": "開啟影片分享選單，點一下「複製連結」。",
+    "src": "/assets/demos/share-link.mp4"
+  },
+  {
+    "test": "demo playback",
+    "index": 1,
+    "ready": 4,
+    "playing": true,
+    "caption": "開啟「自動下載剪貼簿鏈接」和「後台識別並下載」。",
+    "src": "/assets/demos/copy-background.mp4"
+  },
+  {
+    "test": "demo playback",
+    "index": 2,
+    "ready": 4,
+    "playing": true,
+    "caption": "在內建瀏覽器開啟網頁，先播放影片。",
+    "src": "/assets/demos/web-long-press.mp4"
+  },
+  {
+    "test": "demo playback",
+    "index": 3,
+    "ready": 4,
+    "playing": true,
+    "caption": "在「批次」頁貼上播放清單連結。",
+    "src": "/assets/demos/batch-playlist.mp4"
+  },
+  {
+    "test": "carousel pause",
+    "label": "開啟自動輪播"
+  },
+  {
+    "test": "carousel last step",
+    "caption": "5 / 5 · 儲存到檔案或分享"
+  },
+  {
+    "test": "carousel resume",
+    "label": "暫停自動輪播"
+  },
+  {
+    "test": "media recovery",
+    "text": "影片暫時無法播放\n重試播放"
+  },
+  {
+    "test": "shared 404",
+    "home": "返回繁體中文首頁"
+  }
+]

@@ -4,15 +4,15 @@ import type { Locale } from "@/i18n/locales";
 
 interface Props { text: string; locale: Locale }
 const { text, locale } = Astro.props;
-const lines = text.split("\n").map(headingParts);
+const lines = text.split("\n").map(line => headingParts(line, locale));
 ---
-{locale === "zh-Hans" ? (
+{(locale === "zh-Hans" || locale === "zh-Hant") ? (
 	<Fragment>{lines.map((parts, index) => (
 		<Fragment>{index > 0 && <br />}{parts.map((part, wordIndex) => (
 			<Fragment>{wordIndex > 0 && /\s$/.test(parts[wordIndex - 1]) && <wbr />}<span class="heading-word">{part}</span></Fragment>
 		))}</Fragment>
 	))}</Fragment>
-) : text}
+) : <Fragment>{text.split("\n").map((line, index) => <Fragment>{index > 0 && <br />}{line}</Fragment>)}</Fragment>}
 
 <style>
 	.heading-word { white-space: nowrap; }

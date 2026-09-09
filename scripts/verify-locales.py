@@ -5,12 +5,25 @@ from pathlib import Path
 from urllib.parse import urlparse
 import json
 import re
+import subprocess
+import xml.etree.ElementTree as ET
+
+REGISTRY = json.loads(subprocess.check_output(["node", str(Path(__file__).with_name("export-locale-registry.cjs"))], text=True))
+DEFAULT = REGISTRY["defaultLocale"]
+PUBLISHED = REGISTRY["publishedLocales"]
+META = REGISTRY["localeMeta"]
+
+def localized(locale, page=""):
+    prefix = "" if locale == DEFAULT else locale + "/"
+    return "/" + prefix + (page.strip("/") + "/" if page else "")
 
 ROOT = Path(__file__).resolve().parents[1] / 'dist'
 class Page(HTMLParser):
     def __init__(self, path):
         super().__init__()
         self.lang = ''
+        self.direction = ''
+        self.og_locale = ''
         self.canonical = ''
         self.alternates = {}
         self.main = False
@@ -25,7 +38,10 @@ class Page(HTMLParser):
 
     def handle_starttag(self, tag, pairs):
         attrs = dict(pairs)
-        if tag == 'html': self.lang = attrs.get('lang', '')
+        if tag == 'html':
+            self.lang = attrs.get('lang', '')
+            self.direction = attrs.get('dir', '')
+        if tag == 'meta' and attrs.get('property') == 'og:locale': self.og_locale = attrs.get('content', '')
         if tag == 'link' and attrs.get('rel') == 'canonical': self.canonical = attrs['href']
         if tag == 'link' and attrs.get('rel') == 'alternate' and 'hreflang' in attrs:
             self.alternates[attrs['hreflang']] = attrs['href']
@@ -63,27 +79,69 @@ for route, page in pages.items():
             errors.append(f'{route}: missing alternate {href}')
             continue
         if lang != 'x-default':
-            expected = 'en' if lang == 'en-US' else lang
+            expected = next((meta['htmlLang'] for meta in META.values() if meta['hrefLang'] == lang), None)
             if target.lang != expected: errors.append(f'{route}: alternate language mismatch: {href}')
             if page.canonical not in target.alternates.values():
                 errors.append(f'{route}: alternate is not reciprocal: {href}')
 
-# Every published Chinese guide must now have a complete English counterpart.
-chinese_articles = {route.removeprefix('/zh-Hans'): page for route, page in pages.items()
-                    if route.startswith('/zh-Hans/articles/') and route != '/zh-Hans/articles/'}
-english_articles = {route: page for route, page in pages.items()
-                    if route.startswith('/articles/') and route != '/articles/'}
-if chinese_articles.keys() != english_articles.keys():
-    errors.append('English and Chinese tutorial route sets differ')
-for route, source in chinese_articles.items():
-    translated = english_articles.get(route)
-    if translated and (translated.step_ids != source.step_ids or translated.screenshots != source.screenshots):
-        errors.append(f'{route}: incomplete translated steps or screenshots')
+# Check all routes against the actual language and tutorial registries.
+counts = {}
+for locale in PUBLISHED:
+    article_prefix = localized(locale, 'articles')
+    articles = {route.removeprefix(article_prefix): page for route, page in pages.items()
+                if route.startswith(article_prefix) and route != article_prefix}
+    counts[locale] = len(articles)
+    expected_articles = {article['slug'] + '/' for article in REGISTRY['articles']}
+    if articles.keys() != expected_articles:
+        errors.append(f'{locale}: tutorial route set differs from registry')
+    for suffix in ['', 'articles'] + ['articles/' + article['slug'] for article in REGISTRY['articles']]:
+        route = localized(locale, suffix)
+        page = pages.get(route)
+        if page is None:
+            errors.append(f'{route}: required localized page missing')
+            continue
+        if (page.lang, page.direction, page.og_locale) != (META[locale]['htmlLang'], META[locale]['dir'], META[locale]['ogLocale']):
+            errors.append(f'{route}: incorrect lang, dir or OG locale')
+        if urlparse(page.canonical).path != route or not page.canonical.startswith('https://'):
+            errors.append(f'{route}: canonical must point to itself with an absolute URL')
+        expected_alternates = {META[other]['hrefLang']: localized(other, suffix) for other in PUBLISHED}
+        expected_alternates['x-default'] = localized(DEFAULT, suffix)
+        if {lang: urlparse(href).path for lang, href in page.alternates.items()} != expected_alternates:
+            errors.append(f'{route}: incomplete or incorrect hreflang set')
+        if any(not href.startswith('https://') for href in page.alternates.values()):
+            errors.append(f'{route}: hreflang URL must be absolute')
+        source = pages.get(localized(DEFAULT, suffix))
+        if source and (page.step_ids, page.screenshots) != (source.step_ids, source.screenshots):
+            errors.append(f'{route}: incomplete steps or screenshots')
+        for link in page.links:
+            target = pages.get(urlparse(link).path)
+            if target and target.lang and target.lang != page.lang:
+                errors.append(f'{route}: cross-language content link: {link}')
+        if locale == 'zh-Hant' and any(re.search(r'[这为与从个们来时载链视频图选择开关设网页]', text) for text in page.text + page.metadata):
+            errors.append(f'{route}: Simplified Chinese residue in Traditional Chinese copy')
+    for legal in ['privacy', 'terms']:
+        path = ROOT / localized(locale, legal).lstrip('/') / 'index.html'
+        if not path.exists() or 'http-equiv="refresh"' not in path.read_text():
+            errors.append(f'{locale}: missing legal redirect: {legal}')
 
-for required in ('/', '/zh-Hans/', '/articles/', '/articles/extract-youtube-subtitles-iphone/'):
-    if required not in pages or not pages[required].lang:
-        errors.append(f'{required}: required localized page missing')
-if (ROOT / 'zh-Hant/index.html').exists() or (ROOT / 'en-US/index.html').exists():
-    errors.append('Unpublished or duplicate locale homepage generated')
-print(json.dumps({'localized_pages': sum(bool(p.lang) for p in pages.values()), 'english_tutorials': len(english_articles), 'chinese_tutorials': len(chinese_articles), 'errors': errors}, indent=2))
+for locale in REGISTRY['locales']:
+    if (locale not in PUBLISHED or locale == DEFAULT) and (ROOT / locale / 'index.html').exists():
+        errors.append(f'{locale}: unpublished or duplicate locale homepage generated')
+
+sitemap_urls = set()
+for path in ROOT.glob('sitemap-*.xml'):
+    tree = ET.parse(path)
+    sitemap_urls.update(urlparse(node.text).path for node in tree.findall('.//{*}url/{*}loc'))
+if not sitemap_urls:
+    errors.append('Sitemap contains no page URLs')
+for locale in PUBLISHED:
+    for legal in ['privacy', 'terms']:
+        if localized(locale, legal) in sitemap_urls:
+            errors.append(f'{locale}: legal redirect in sitemap')
+    for article in REGISTRY['articles']:
+        route = localized(locale, 'articles/' + article['slug'])
+        if (route in sitemap_urls) != article['screenshotsReady']:
+            errors.append(f'{route}: sitemap published/draft mismatch')
+
+print(json.dumps({'localized_pages': sum(bool(p.lang) for p in pages.values()), 'tutorials_by_locale': counts, 'errors': errors}, indent=2))
 raise SystemExit(bool(errors))

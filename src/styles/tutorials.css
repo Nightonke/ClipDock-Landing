@@ -99,4 +99,4 @@ html[lang="en"] :is(.tutorial-index h1, .tutorial-hero h1, .tutorial-card h3, .t
 .tutorial-example-url a { overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 4px; }
 
 /* Chinese headings wrap between words, with balanced lines on cards and phones. */
-html[lang="zh-Hans"] :is(.tutorial-index h1, .tutorial-hero h1, .tutorial-card h3, .tutorial-step-copy h2, .tutorial-step-detail h3, .tutorial-troubleshooting h3) { overflow-wrap: normal; text-wrap: balance; line-break: strict; }
+html:is([lang="zh-Hans"], [lang="zh-Hant"]) :is(.tutorial-index h1, .tutorial-hero h1, .tutorial-card h3, .tutorial-step-copy h2, .tutorial-step-detail h3, .tutorial-troubleshooting h3) { overflow-wrap: normal; text-wrap: balance; line-break: strict; }

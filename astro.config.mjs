@@ -1,10 +1,12 @@
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
-import { tutorials, articleHref } from "./src/content/tutorials";
+import { tutorialStructure } from "./src/content/tutorial-structure";
+import { localizedPath, publishedLocales } from "./src/i18n/locales";
 
-const draftPaths = new Set(tutorials.filter(article => !article.screenshotsReady).map(article => articleHref(article.slug)));
-const redirects = new Set(['/privacy/', '/terms/', '/zh-Hans/privacy/', '/zh-Hans/terms/']);
+const draftPaths = new Set(publishedLocales.flatMap(locale => tutorialStructure.filter(article => !article.screenshotsReady).map(article => localizedPath(locale, `articles/${article.slug}`))));
+
+const redirects = new Set(publishedLocales.flatMap(locale => ["privacy", "terms"].map(page => localizedPath(locale, page))));
 
 export default defineConfig({
   site: "https://clipdock.video",

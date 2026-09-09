@@ -1,4 +1,5 @@
 import { validateCopy } from "../shared/validate";
+import * as zhHant from '../zh-Hant/home';
 import * as zhHans from '../zh-Hans/home';
 import * as enUS from '../en-US/home';
 import type { HomeFeatures, HomeTools } from './types';
@@ -10,7 +11,7 @@ type HomeContent = {
  ui: Record<keyof typeof zhHans.ui, string>;
 };
 export const homeContent: Record<PublishedLocale, HomeContent> = {
- 'zh-Hans': zhHans, 'en-US': enUS,
+ 'zh-Hant': zhHant, 'zh-Hans': zhHans, 'en-US': enUS,
 };
 
 for (const [locale, content] of Object.entries(homeContent)) {

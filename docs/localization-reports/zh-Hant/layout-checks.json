@@ -1,0 +1,1725 @@
+{
+  "checks": [
+    {
+      "width": 375,
+      "route": "/zh-Hant/",
+      "pageOverflow": false,
+      "headings": 31,
+      "overflow": [],
+      "h1": "連結交給影隨存\n影片圖片輕鬆存"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/",
+      "pageOverflow": false,
+      "headings": 47,
+      "overflow": [],
+      "h1": "下載、儲存與處理\n一步步學會"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/extract-youtube-subtitles-iphone/",
+      "pageOverflow": false,
+      "headings": 23,
+      "overflow": [],
+      "h1": "如何提取 YouTube 已有字幕？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/download-tiktok-video-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何下載 TikTok 影片並儲存到相簿？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/download-douyin-video-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何下載抖音影片並儲存到相簿？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/download-facebook-video-iphone/",
+      "pageOverflow": false,
+      "headings": 24,
+      "overflow": [],
+      "h1": "如何下載 Facebook 影片與 Reels？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/download-xiaohongshu-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何下載小紅書影片並儲存到相簿？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/download-bilibili-video-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何下載 B 站影片並儲存到相簿？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/download-youtube-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何下載 YouTube 影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/download-instagram-reels-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何下載 Instagram Reels？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/download-x-twitter-video-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何下載 X（Twitter）影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/copy-link-auto-download-iphone/",
+      "pageOverflow": false,
+      "headings": 17,
+      "overflow": [],
+      "h1": "如何開啟複製連結自動下載？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/copy-tiktok-links-background/",
+      "pageOverflow": false,
+      "headings": 17,
+      "overflow": [],
+      "h1": "如何邊滑 TikTok 邊複製連結下載？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/batch-download-youtube-shorts-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube Shorts？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/batch-download-youtube-hashtag-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube 話題影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/batch-download-youtube-channel-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube 頻道影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/download-youtube-playlist-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube 播放清單？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/batch-download-instagram-hashtag-iphone/",
+      "pageOverflow": false,
+      "headings": 19,
+      "overflow": [],
+      "h1": "如何批次下載 Instagram 話題圖片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/batch-download-instagram-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何批次下載 Instagram 個人頁面作品？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/batch-download-tiktok-hashtag-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何批次下載 TikTok 話題影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/batch-download-tiktok-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何批次下載 TikTok 個人頁面影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/batch-download-douyin-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何批次下載抖音個人頁面影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/batch-download-weibo-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何批次下載微博個人頁面影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/batch-download-bilibili-collection-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何批次下載 B 站合集影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/batch-download-bilibili-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 28,
+      "overflow": [],
+      "h1": "如何批次下載 B 站 UP 主影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/video-to-gif-iphone/",
+      "pageOverflow": false,
+      "headings": 24,
+      "overflow": [],
+      "h1": "如何將影片轉為 GIF？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/video-to-live-photo-iphone/",
+      "pageOverflow": false,
+      "headings": 23,
+      "overflow": [],
+      "h1": "如何將影片轉為實況照片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/transcode-video-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何轉換影片格式與壓縮影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/trim-video-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何裁切影片長度？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/join-videos-iphone/",
+      "pageOverflow": false,
+      "headings": 35,
+      "overflow": [],
+      "h1": "如何按順序拼接多個影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/interleave-videos-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何交叉拼接影片片段？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/segment-grid-video-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何製作分段宮格影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/resize-video-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何調整影片畫布比例與佈局？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/rotate-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何旋轉影片方向？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/mirror-video-iphone/",
+      "pageOverflow": false,
+      "headings": 23,
+      "overflow": [],
+      "h1": "如何鏡像翻轉影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/reverse-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何倒放影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/change-video-speed-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何加速或放慢影片？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/edit-video-audio-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何將影片靜音或調整音量？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/add-watermark-video-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何給影片新增文字浮水印？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/capture-video-frames-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何擷取影片畫面？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/extract-audio-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何提取影片中的音訊？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/change-video-md5-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何使用影片 MD5 修改工具？"
+    },
+    {
+      "width": 375,
+      "route": "/zh-Hant/articles/merge-audio-video-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何合併音訊與影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/",
+      "pageOverflow": false,
+      "headings": 31,
+      "overflow": [],
+      "h1": "連結交給影隨存\n影片圖片輕鬆存"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/",
+      "pageOverflow": false,
+      "headings": 47,
+      "overflow": [],
+      "h1": "下載、儲存與處理\n一步步學會"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/extract-youtube-subtitles-iphone/",
+      "pageOverflow": false,
+      "headings": 23,
+      "overflow": [],
+      "h1": "如何提取 YouTube 已有字幕？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/download-tiktok-video-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何下載 TikTok 影片並儲存到相簿？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/download-douyin-video-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何下載抖音影片並儲存到相簿？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/download-facebook-video-iphone/",
+      "pageOverflow": false,
+      "headings": 24,
+      "overflow": [],
+      "h1": "如何下載 Facebook 影片與 Reels？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/download-xiaohongshu-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何下載小紅書影片並儲存到相簿？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/download-bilibili-video-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何下載 B 站影片並儲存到相簿？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/download-youtube-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何下載 YouTube 影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/download-instagram-reels-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何下載 Instagram Reels？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/download-x-twitter-video-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何下載 X（Twitter）影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/copy-link-auto-download-iphone/",
+      "pageOverflow": false,
+      "headings": 17,
+      "overflow": [],
+      "h1": "如何開啟複製連結自動下載？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/copy-tiktok-links-background/",
+      "pageOverflow": false,
+      "headings": 17,
+      "overflow": [],
+      "h1": "如何邊滑 TikTok 邊複製連結下載？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/batch-download-youtube-shorts-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube Shorts？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/batch-download-youtube-hashtag-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube 話題影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/batch-download-youtube-channel-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube 頻道影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/download-youtube-playlist-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube 播放清單？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/batch-download-instagram-hashtag-iphone/",
+      "pageOverflow": false,
+      "headings": 19,
+      "overflow": [],
+      "h1": "如何批次下載 Instagram 話題圖片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/batch-download-instagram-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何批次下載 Instagram 個人頁面作品？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/batch-download-tiktok-hashtag-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何批次下載 TikTok 話題影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/batch-download-tiktok-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何批次下載 TikTok 個人頁面影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/batch-download-douyin-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何批次下載抖音個人頁面影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/batch-download-weibo-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何批次下載微博個人頁面影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/batch-download-bilibili-collection-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何批次下載 B 站合集影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/batch-download-bilibili-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 28,
+      "overflow": [],
+      "h1": "如何批次下載 B 站 UP 主影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/video-to-gif-iphone/",
+      "pageOverflow": false,
+      "headings": 24,
+      "overflow": [],
+      "h1": "如何將影片轉為 GIF？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/video-to-live-photo-iphone/",
+      "pageOverflow": false,
+      "headings": 23,
+      "overflow": [],
+      "h1": "如何將影片轉為實況照片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/transcode-video-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何轉換影片格式與壓縮影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/trim-video-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何裁切影片長度？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/join-videos-iphone/",
+      "pageOverflow": false,
+      "headings": 35,
+      "overflow": [],
+      "h1": "如何按順序拼接多個影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/interleave-videos-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何交叉拼接影片片段？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/segment-grid-video-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何製作分段宮格影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/resize-video-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何調整影片畫布比例與佈局？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/rotate-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何旋轉影片方向？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/mirror-video-iphone/",
+      "pageOverflow": false,
+      "headings": 23,
+      "overflow": [],
+      "h1": "如何鏡像翻轉影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/reverse-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何倒放影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/change-video-speed-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何加速或放慢影片？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/edit-video-audio-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何將影片靜音或調整音量？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/add-watermark-video-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何給影片新增文字浮水印？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/capture-video-frames-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何擷取影片畫面？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/extract-audio-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何提取影片中的音訊？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/change-video-md5-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何使用影片 MD5 修改工具？"
+    },
+    {
+      "width": 390,
+      "route": "/zh-Hant/articles/merge-audio-video-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何合併音訊與影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/",
+      "pageOverflow": false,
+      "headings": 31,
+      "overflow": [],
+      "h1": "連結交給影隨存\n影片圖片輕鬆存"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/",
+      "pageOverflow": false,
+      "headings": 47,
+      "overflow": [],
+      "h1": "下載、儲存與處理\n一步步學會"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/extract-youtube-subtitles-iphone/",
+      "pageOverflow": false,
+      "headings": 23,
+      "overflow": [],
+      "h1": "如何提取 YouTube 已有字幕？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/download-tiktok-video-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何下載 TikTok 影片並儲存到相簿？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/download-douyin-video-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何下載抖音影片並儲存到相簿？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/download-facebook-video-iphone/",
+      "pageOverflow": false,
+      "headings": 24,
+      "overflow": [],
+      "h1": "如何下載 Facebook 影片與 Reels？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/download-xiaohongshu-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何下載小紅書影片並儲存到相簿？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/download-bilibili-video-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何下載 B 站影片並儲存到相簿？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/download-youtube-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何下載 YouTube 影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/download-instagram-reels-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何下載 Instagram Reels？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/download-x-twitter-video-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何下載 X（Twitter）影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/copy-link-auto-download-iphone/",
+      "pageOverflow": false,
+      "headings": 17,
+      "overflow": [],
+      "h1": "如何開啟複製連結自動下載？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/copy-tiktok-links-background/",
+      "pageOverflow": false,
+      "headings": 17,
+      "overflow": [],
+      "h1": "如何邊滑 TikTok 邊複製連結下載？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/batch-download-youtube-shorts-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube Shorts？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/batch-download-youtube-hashtag-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube 話題影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/batch-download-youtube-channel-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube 頻道影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/download-youtube-playlist-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube 播放清單？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/batch-download-instagram-hashtag-iphone/",
+      "pageOverflow": false,
+      "headings": 19,
+      "overflow": [],
+      "h1": "如何批次下載 Instagram 話題圖片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/batch-download-instagram-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何批次下載 Instagram 個人頁面作品？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/batch-download-tiktok-hashtag-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何批次下載 TikTok 話題影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/batch-download-tiktok-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何批次下載 TikTok 個人頁面影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/batch-download-douyin-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何批次下載抖音個人頁面影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/batch-download-weibo-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何批次下載微博個人頁面影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/batch-download-bilibili-collection-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何批次下載 B 站合集影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/batch-download-bilibili-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 28,
+      "overflow": [],
+      "h1": "如何批次下載 B 站 UP 主影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/video-to-gif-iphone/",
+      "pageOverflow": false,
+      "headings": 24,
+      "overflow": [],
+      "h1": "如何將影片轉為 GIF？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/video-to-live-photo-iphone/",
+      "pageOverflow": false,
+      "headings": 23,
+      "overflow": [],
+      "h1": "如何將影片轉為實況照片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/transcode-video-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何轉換影片格式與壓縮影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/trim-video-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何裁切影片長度？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/join-videos-iphone/",
+      "pageOverflow": false,
+      "headings": 35,
+      "overflow": [],
+      "h1": "如何按順序拼接多個影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/interleave-videos-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何交叉拼接影片片段？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/segment-grid-video-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何製作分段宮格影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/resize-video-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何調整影片畫布比例與佈局？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/rotate-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何旋轉影片方向？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/mirror-video-iphone/",
+      "pageOverflow": false,
+      "headings": 23,
+      "overflow": [],
+      "h1": "如何鏡像翻轉影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/reverse-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何倒放影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/change-video-speed-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何加速或放慢影片？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/edit-video-audio-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何將影片靜音或調整音量？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/add-watermark-video-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何給影片新增文字浮水印？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/capture-video-frames-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何擷取影片畫面？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/extract-audio-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何提取影片中的音訊？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/change-video-md5-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何使用影片 MD5 修改工具？"
+    },
+    {
+      "width": 768,
+      "route": "/zh-Hant/articles/merge-audio-video-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何合併音訊與影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/",
+      "pageOverflow": false,
+      "headings": 31,
+      "overflow": [],
+      "h1": "連結交給影隨存\n影片圖片輕鬆存"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/",
+      "pageOverflow": false,
+      "headings": 47,
+      "overflow": [],
+      "h1": "下載、儲存與處理\n一步步學會"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/extract-youtube-subtitles-iphone/",
+      "pageOverflow": false,
+      "headings": 23,
+      "overflow": [],
+      "h1": "如何提取 YouTube 已有字幕？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/download-tiktok-video-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何下載 TikTok 影片並儲存到相簿？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/download-douyin-video-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何下載抖音影片並儲存到相簿？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/download-facebook-video-iphone/",
+      "pageOverflow": false,
+      "headings": 24,
+      "overflow": [],
+      "h1": "如何下載 Facebook 影片與 Reels？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/download-xiaohongshu-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何下載小紅書影片並儲存到相簿？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/download-bilibili-video-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何下載 B 站影片並儲存到相簿？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/download-youtube-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何下載 YouTube 影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/download-instagram-reels-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何下載 Instagram Reels？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/download-x-twitter-video-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何下載 X（Twitter）影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/copy-link-auto-download-iphone/",
+      "pageOverflow": false,
+      "headings": 17,
+      "overflow": [],
+      "h1": "如何開啟複製連結自動下載？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/copy-tiktok-links-background/",
+      "pageOverflow": false,
+      "headings": 17,
+      "overflow": [],
+      "h1": "如何邊滑 TikTok 邊複製連結下載？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/batch-download-youtube-shorts-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube Shorts？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/batch-download-youtube-hashtag-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube 話題影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/batch-download-youtube-channel-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube 頻道影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/download-youtube-playlist-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube 播放清單？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/batch-download-instagram-hashtag-iphone/",
+      "pageOverflow": false,
+      "headings": 19,
+      "overflow": [],
+      "h1": "如何批次下載 Instagram 話題圖片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/batch-download-instagram-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何批次下載 Instagram 個人頁面作品？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/batch-download-tiktok-hashtag-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何批次下載 TikTok 話題影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/batch-download-tiktok-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何批次下載 TikTok 個人頁面影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/batch-download-douyin-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何批次下載抖音個人頁面影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/batch-download-weibo-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何批次下載微博個人頁面影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/batch-download-bilibili-collection-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何批次下載 B 站合集影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/batch-download-bilibili-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 28,
+      "overflow": [],
+      "h1": "如何批次下載 B 站 UP 主影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/video-to-gif-iphone/",
+      "pageOverflow": false,
+      "headings": 24,
+      "overflow": [],
+      "h1": "如何將影片轉為 GIF？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/video-to-live-photo-iphone/",
+      "pageOverflow": false,
+      "headings": 23,
+      "overflow": [],
+      "h1": "如何將影片轉為實況照片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/transcode-video-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何轉換影片格式與壓縮影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/trim-video-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何裁切影片長度？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/join-videos-iphone/",
+      "pageOverflow": false,
+      "headings": 35,
+      "overflow": [],
+      "h1": "如何按順序拼接多個影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/interleave-videos-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何交叉拼接影片片段？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/segment-grid-video-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何製作分段宮格影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/resize-video-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何調整影片畫布比例與佈局？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/rotate-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何旋轉影片方向？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/mirror-video-iphone/",
+      "pageOverflow": false,
+      "headings": 23,
+      "overflow": [],
+      "h1": "如何鏡像翻轉影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/reverse-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何倒放影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/change-video-speed-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何加速或放慢影片？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/edit-video-audio-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何將影片靜音或調整音量？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/add-watermark-video-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何給影片新增文字浮水印？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/capture-video-frames-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何擷取影片畫面？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/extract-audio-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何提取影片中的音訊？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/change-video-md5-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何使用影片 MD5 修改工具？"
+    },
+    {
+      "width": 1024,
+      "route": "/zh-Hant/articles/merge-audio-video-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何合併音訊與影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/",
+      "pageOverflow": false,
+      "headings": 31,
+      "overflow": [],
+      "h1": "連結交給影隨存\n影片圖片輕鬆存"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/",
+      "pageOverflow": false,
+      "headings": 47,
+      "overflow": [],
+      "h1": "下載、儲存與處理\n一步步學會"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/extract-youtube-subtitles-iphone/",
+      "pageOverflow": false,
+      "headings": 23,
+      "overflow": [],
+      "h1": "如何提取 YouTube 已有字幕？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/download-tiktok-video-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何下載 TikTok 影片並儲存到相簿？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/download-douyin-video-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何下載抖音影片並儲存到相簿？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/download-facebook-video-iphone/",
+      "pageOverflow": false,
+      "headings": 24,
+      "overflow": [],
+      "h1": "如何下載 Facebook 影片與 Reels？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/download-xiaohongshu-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何下載小紅書影片並儲存到相簿？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/download-bilibili-video-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何下載 B 站影片並儲存到相簿？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/download-youtube-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何下載 YouTube 影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/download-instagram-reels-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何下載 Instagram Reels？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/download-x-twitter-video-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何下載 X（Twitter）影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/copy-link-auto-download-iphone/",
+      "pageOverflow": false,
+      "headings": 17,
+      "overflow": [],
+      "h1": "如何開啟複製連結自動下載？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/copy-tiktok-links-background/",
+      "pageOverflow": false,
+      "headings": 17,
+      "overflow": [],
+      "h1": "如何邊滑 TikTok 邊複製連結下載？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/batch-download-youtube-shorts-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube Shorts？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/batch-download-youtube-hashtag-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube 話題影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/batch-download-youtube-channel-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube 頻道影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/download-youtube-playlist-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何批次下載 YouTube 播放清單？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/batch-download-instagram-hashtag-iphone/",
+      "pageOverflow": false,
+      "headings": 19,
+      "overflow": [],
+      "h1": "如何批次下載 Instagram 話題圖片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/batch-download-instagram-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何批次下載 Instagram 個人頁面作品？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/batch-download-tiktok-hashtag-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何批次下載 TikTok 話題影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/batch-download-tiktok-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何批次下載 TikTok 個人頁面影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/batch-download-douyin-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何批次下載抖音個人頁面影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/batch-download-weibo-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何批次下載微博個人頁面影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/batch-download-bilibili-collection-iphone/",
+      "pageOverflow": false,
+      "headings": 20,
+      "overflow": [],
+      "h1": "如何批次下載 B 站合集影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/batch-download-bilibili-profile-iphone/",
+      "pageOverflow": false,
+      "headings": 28,
+      "overflow": [],
+      "h1": "如何批次下載 B 站 UP 主影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/video-to-gif-iphone/",
+      "pageOverflow": false,
+      "headings": 24,
+      "overflow": [],
+      "h1": "如何將影片轉為 GIF？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/video-to-live-photo-iphone/",
+      "pageOverflow": false,
+      "headings": 23,
+      "overflow": [],
+      "h1": "如何將影片轉為實況照片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/transcode-video-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何轉換影片格式與壓縮影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/trim-video-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何裁切影片長度？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/join-videos-iphone/",
+      "pageOverflow": false,
+      "headings": 35,
+      "overflow": [],
+      "h1": "如何按順序拼接多個影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/interleave-videos-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何交叉拼接影片片段？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/segment-grid-video-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何製作分段宮格影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/resize-video-iphone/",
+      "pageOverflow": false,
+      "headings": 26,
+      "overflow": [],
+      "h1": "如何調整影片畫布比例與佈局？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/rotate-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何旋轉影片方向？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/mirror-video-iphone/",
+      "pageOverflow": false,
+      "headings": 23,
+      "overflow": [],
+      "h1": "如何鏡像翻轉影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/reverse-video-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何倒放影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/change-video-speed-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何加速或放慢影片？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/edit-video-audio-iphone/",
+      "pageOverflow": false,
+      "headings": 22,
+      "overflow": [],
+      "h1": "如何將影片靜音或調整音量？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/add-watermark-video-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何給影片新增文字浮水印？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/capture-video-frames-iphone/",
+      "pageOverflow": false,
+      "headings": 21,
+      "overflow": [],
+      "h1": "如何擷取影片畫面？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/extract-audio-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何提取影片中的音訊？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/change-video-md5-iphone/",
+      "pageOverflow": false,
+      "headings": 18,
+      "overflow": [],
+      "h1": "如何使用影片 MD5 修改工具？"
+    },
+    {
+      "width": 1440,
+      "route": "/zh-Hant/articles/merge-audio-video-iphone/",
+      "pageOverflow": false,
+      "headings": 27,
+      "overflow": [],
+      "h1": "如何合併音訊與影片？"
+    }
+  ],
+  "exceptions": []
+}

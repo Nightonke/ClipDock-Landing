@@ -1,5 +1,6 @@
 ---
 import { notFound } from "@/i18n/en-US/errors";
+import { notFound as traditionalNotFound } from "@/i18n/zh-Hant/errors";
 import { notFound as chineseNotFound } from "@/i18n/zh-Hans/errors";
 import { siteConfig } from "@config/site";
 import Layout from "@layouts/Layout.astro";
@@ -26,6 +27,7 @@ import { getLanguageLinks } from "@/i18n/locales";
 				</p>
 				<a class="button button-dark" href="/" style="margin-top: 2rem;">{notFound.home}</a>
                 <p lang="zh-Hans"><a href="/zh-Hans/">{chineseNotFound.languageHome}</a></p>
+                <p lang="zh-Hant"><a href="/zh-Hant/">{traditionalNotFound.languageHome}</a></p>
 			</div>
 		</div>
 	</main>

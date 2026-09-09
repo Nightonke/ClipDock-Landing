@@ -26,7 +26,7 @@ npm run build:production
 ## 内容维护
 
 - 共用首页：`src/layouts/ClipDockLanding.astro`
-- 所有语言文案：`src/i18n/en-US/`、`src/i18n/zh-Hans/`（首页、教程、SEO、界面标签、截图标题和字幕）
+- 所有语言文案：`src/i18n/en-US/`、`src/i18n/zh-Hans/`、`src/i18n/zh-Hant/`（首页、教程、SEO、界面标签、截图标题和字幕）
 - 共用教程结构与素材：`src/content/tutorial-structure.ts`
 - 文案完整性检查：`npm run check:i18n`；评审与新增语言流程见 [多语言维护](docs/localization.md)
 - 多语言教程索引与可用性：`src/content/localized-tutorials.ts`
