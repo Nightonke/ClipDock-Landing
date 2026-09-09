@@ -1,4 +1,6 @@
 ---
+import { commonCopy } from "@/i18n/common";
+import { defaultLocale } from "@/i18n/locales";
 import type { MarkdownContentProps } from "@/types/layout";
 import { parseMarkdown } from "@/utils/parseMarkdown";
 
@@ -10,17 +12,18 @@ const {
 	homeHref = "/",
 	languageLinks = [],
 } = Astro.props;
+const ui = commonCopy[languageLinks.find(link => link.isActive)?.locale ?? defaultLocale];
 const htmlContent = await parseMarkdown(content);
 ---
 
 <main id="main-content" class="legal-shell">
 	<div class="legal-toolbar">
-		<nav class="detail-breadcrumb" aria-label="Breadcrumb" style="margin: 0">
-			<a href={homeHref}>Home</a>
+		<nav class="detail-breadcrumb" aria-label={ui.breadcrumb} style="margin: 0">
+			<a href={homeHref}>{ui.home}</a>
 			<span aria-current="page">{breadcrumbLabel}</span>
 		</nav>
 		{languageLinks.length > 0 && (
-			<nav class="legal-languages" aria-label="Language">
+			<nav class="legal-languages" aria-label={ui.language}>
 				{languageLinks.map((link) => (
 					<a
 						href={link.href}

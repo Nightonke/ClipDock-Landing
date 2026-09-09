@@ -1,8 +1,0 @@
----
-import TutorialArticle from "@layouts/TutorialArticle.astro";
-import { getTutorials } from "@/content/localized-tutorials";
-export function getStaticPaths() {
- return getTutorials("zh-Hans").map(article => ({ params: { slug: article.slug }, props: { article } }));
-}
----
-<TutorialArticle article={Astro.props.article} locale="zh-Hans" />

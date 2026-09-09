@@ -1,3 +1,6 @@
+import { meta as en } from "./en-US/meta";
+import { meta as zh } from "./zh-Hans/meta";
+import { meta as traditional } from "./zh-Hant/meta";
 export const defaultLocale = "en-US" as const;
 
 export const locales = ["en-US", "zh-Hans", "zh-Hant"] as const;
@@ -8,26 +11,7 @@ export type Locale = (typeof locales)[number];
 export const publishedLocales = ["en-US", "zh-Hans"] as const satisfies readonly Locale[];
 export type PublishedLocale = (typeof publishedLocales)[number];
 
-export const localeMeta: Record<
-	Locale,
-	{ label: string; hrefLang: string; htmlLang: string }
-> = {
-	"en-US": {
-		label: "English",
-		hrefLang: "en-US",
-		htmlLang: "en",
-	},
-	"zh-Hans": {
-		label: "简体中文",
-		hrefLang: "zh-Hans",
-		htmlLang: "zh-Hans",
-	},
-	"zh-Hant": {
-		label: "繁體中文",
-		hrefLang: "zh-Hant",
-		htmlLang: "zh-Hant",
-	},
-};
+export const localeMeta: Record<Locale, { label: string; hrefLang: string; htmlLang: string }> = { "en-US": en, "zh-Hans": zh, "zh-Hant": traditional };
 
 export const localizedPath = (locale: Locale, page = "") => {
 	const cleanPage = page.replace(/^\/|\/$/g, "");

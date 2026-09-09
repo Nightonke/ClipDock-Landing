@@ -1,4 +1,6 @@
 ---
+import { notFound } from "@/i18n/en-US/errors";
+import { notFound as chineseNotFound } from "@/i18n/zh-Hans/errors";
 import { siteConfig } from "@config/site";
 import Layout from "@layouts/Layout.astro";
 import { landingContent } from "@/i18n/content";
@@ -6,8 +8,8 @@ import { getLanguageLinks } from "@/i18n/locales";
 ---
 
 <Layout
-	title={`404 - Page Not Found | ${siteConfig.name}`}
-	description="This page does not exist. Return to ClipDock to explore video extraction, downloads, organization, and processing tools."
+	title={`${notFound.title} | ${siteConfig.name}`}
+	description={notFound.description}
 	noindex
 	lang="en"
 	appData={landingContent["en-US"]}
@@ -17,13 +19,13 @@ import { getLanguageLinks } from "@/i18n/locales";
 	<main id="main-content" class="detail-main">
 		<div class="site-shell" style="min-height: 68vh; display: grid; place-items: center;">
 			<div style="max-width: 760px; width: 100%; min-width: 0; text-align: center;">
-				<p class="eyebrow" style="margin-inline: auto;">Error / 404</p>
-				<h1 class="display-title" style="font-size: clamp(2.5rem, 8vw, 5rem);">Page not found</h1>
+				<p class="eyebrow" style="margin-inline: auto;">{notFound.eyebrow}</p>
+				<h1 class="display-title" style="font-size: clamp(2.5rem, 8vw, 5rem);">{notFound.heading}</h1>
 				<p class="section-lede" style="margin-inline: auto;">
-					This page may have moved. Return to ClipDock for video downloads, captions, and video tools.
+					{notFound.body}
 				</p>
-				<a class="button button-dark" href="/" style="margin-top: 2rem;">Back to home</a>
-                <p lang="zh-Hans"><a href="/zh-Hans/">返回简体中文首页</a></p>
+				<a class="button button-dark" href="/" style="margin-top: 2rem;">{notFound.home}</a>
+                <p lang="zh-Hans"><a href="/zh-Hans/">{chineseNotFound.languageHome}</a></p>
 			</div>
 		</div>
 	</main>

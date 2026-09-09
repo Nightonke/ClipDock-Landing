@@ -1,0 +1,427 @@
+import type { TutorialCopy } from "../../types";
+export const copy: Record<string, TutorialCopy> = {
+  "download-youtube-playlist-iphone": {
+    "title": "How to batch download YouTube playlists on iPhone and iPad in 2026",
+    "description": "Load a YouTube playlist in ClipDock, select videos and quality, add tasks to the queue, and check missing items or download failures.",
+    "intro": "A playlist download starts with the list itself, rather than one video inside it. It can help back up your own series or authorized course clips without copying each video link separately.",
+    "tips": [
+      {
+        "title": "The extracted count differs from the playlist count",
+        "text": "Check for inaccessible videos and confirm the playlist URL. A source’s displayed count is not necessarily the number currently downloadable. Avoid repeatedly submitting the whole list without checking."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is a playlist download identical to a channel download?",
+        "answer": "Both are batch workflows, but the source page and range of included posts differ. Inspect the actual results for the URL you use."
+      },
+      {
+        "question": "Will completed batch downloads automatically appear in Photos?",
+        "answer": "Check the app’s actual save location first. Downloading to the library and exporting to Photos are separate steps."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Paste the playlist link in Batch",
+        "text": "Copy the YouTube playlist’s share link. Open Extract in ClipDock, switch to Batch, and tap Paste. Confirm that it is a playlist URL, rather than a single-video address."
+      },
+      {
+        "title": "Load the list and wait for results",
+        "text": "Tap Load list and wait for Loading list to finish. This only retrieves selectable resources; it does not start downloading. You still need to select items and tap Add to queue."
+      },
+      {
+        "title": "Select videos and add them to the queue",
+        "text": "Check the videos and use All, Video, or Image to filter by type. Adjust the checkmarks or use Select loaded. Set Batch quality; the screenshot follows download settings. Tap Add to queue when ready. The example has 24 selected items, but the actual count depends on what loads."
+      },
+      {
+        "title": "Check queue status and download progress",
+        "text": "Open Manager and inspect Active. Queued means waiting; a running download shows progress, speed, and time remaining. Done holds completed tasks and Failed holds failures. Active 24 in the screenshot means 24 tasks are still being processed, not that all have finished."
+      }
+    ]
+  },
+  "batch-download-instagram-profile-iphone": {
+    "title": "How to batch download Instagram profile videos and images on iPhone and iPad",
+    "description": "Copy an Instagram profile URL, load its posts in ClipDock, filter media, choose batch quality, and add downloads to the queue. Includes five screenshots.",
+    "intro": "Load a creator’s profile to select several Instagram videos and images together. Five screenshots cover the profile URL, list loading, resource selection, and download queue. iPad users can follow the same process.",
+    "tips": [
+      {
+        "title": "Check the loaded range first",
+        "text": "Use the actual returned list. It does not establish that Stories, private or deleted posts, or all historical content are included. Confirm creator, media type, and selection count before submitting."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Can I download only videos?",
+        "answer": "Use the Video filter, then check the item selections and Add to queue count. This example selects 16 resources containing both videos and images."
+      },
+      {
+        "question": "Does loading a profile start downloading?",
+        "answer": "No. Select resources, check quality and count, then tap Add to queue."
+      },
+      {
+        "question": "Why are there 12 posts but 16 items?",
+        "answer": "Posts and media resources use different units. A multi-image post can supply several items. The selected count and queue button determine how many are submitted."
+      },
+      {
+        "question": "Does Unlimited mean all users have no limits?",
+        "answer": "No. It is the account state shown in the screenshot. Available quantities and limits depend on the current account and app version."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Copy the Instagram profile URL",
+        "text": "Open the creator’s profile in Instagram, tap the three-dot menu at the upper right, and choose Copy profile URL. You need the profile address. For one Reel, use the single-video guide."
+      },
+      {
+        "title": "Paste the URL in Batch",
+        "text": "Open Extract in ClipDock, select Batch at the top, and tap Paste. Check the account address. The page’s Guide describes copying a list URL, loading and selecting items, and adding them to the queue."
+      },
+      {
+        "title": "Load the list and wait for results",
+        "text": "Tap Load list and wait for Loading list to finish. This only retrieves selectable resources; it does not start downloading. You still need to select items and tap Add to queue."
+      },
+      {
+        "title": "Filter resources and add them to the queue",
+        "text": "Check the creator’s name when the list returns. This example shows 1 page, 12 posts, 16 items, and 16 selected. Review the resources and the count in parentheses on Add to queue before tapping it.",
+        "sections": [
+          {
+            "title": "Filter and select media",
+            "text": "All shows every media type, Video filters videos, and Image filters images. Blue checkmarks show selected items. Adjust them as needed and check the total selection and Add to queue count before submitting, even when using the Video filter."
+          },
+          {
+            "title": "Why do posts and items have different counts?",
+            "text": "One post can include several media items. The screenshots label images 1/5, 2/5, and 3/5, so 12 posts can yield 16 items. This is the loaded result, rather than the creator’s complete history."
+          },
+          {
+            "title": "Individual selection and Select loaded",
+            "text": "Blue checkmarks on the right mark selected items. Adjust them, or use Select loaded to select currently loaded resources. Check the on-screen count. Change link lets you replace the profile URL."
+          },
+          {
+            "title": "Batch quality",
+            "text": "Follow download settings uses the quality preference in your download settings. Tap Batch quality to inspect the options available in your current version, then confirm before adding tasks."
+          }
+        ]
+      },
+      {
+        "title": "Check the tasks in Manager",
+        "text": "After adding the queue, open Manager. The screenshot shows Active 16, with both Queued items and videos showing download progress. Open completed results from Done. To export to the system library, use Save to Photos from the result.",
+        "sections": [
+          {
+            "title": "Queued does not mean completed",
+            "text": "Queued means waiting. Progress, speed, and remaining time indicate an active download. This screenshot shows the queue running; it does not prove all 16 resources have downloaded or been saved to Photos."
+          }
+        ]
+      }
+    ]
+  },
+  "batch-download-tiktok-profile-iphone": {
+    "title": "How to batch download TikTok profile videos on iPhone and iPad",
+    "description": "Load a TikTok creator profile in ClipDock, select resources and quality, and add videos to the queue. Includes five screenshots.",
+    "intro": "To save several posts from one TikTok creator, start with the profile link and load it in Batch. Five screenshots show copying the profile link, selecting resources, and checking the download queue.",
+    "tips": [
+      {
+        "title": "Choose the posts you actually need",
+        "text": "A profile batch suits several posts from one creator. A single-video link is easier to verify for one item. Before submitting the profile again, check what has already downloaded to avoid duplicates."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does loading a profile start downloading?",
+        "answer": "No. Select resources, check quality and count, then tap Add to queue."
+      },
+      {
+        "question": "Will every post on the profile appear?",
+        "answer": "Not necessarily. Use the resources actually returned; do not treat the list as a complete backup of all historical or restricted content."
+      },
+      {
+        "question": "Why are some items simply called Resource?",
+        "answer": "That is the name returned in this example. Use the thumbnail, media type, and date to check the item, then preview the download. A generic title alone does not identify its content."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Copy the creator’s profile link",
+        "text": "Open the creator’s profile in TikTok, tap the share arrow at the upper right, and choose Copy link in Send to. Copy the profile address, rather than a single-video link."
+      },
+      {
+        "title": "Paste the profile URL in Batch",
+        "text": "Open Extract in ClipDock, select Batch, and tap Paste. The example shows tiktok.com/@hyz00_. Check the creator before loading."
+      },
+      {
+        "title": "Load the list and wait for results",
+        "text": "Tap Load list and wait for Loading list to finish. This only retrieves selectable resources; it does not start downloading. You still need to select items and tap Add to queue."
+      },
+      {
+        "title": "Choose resources and quality, then add to queue",
+        "text": "Check the creator’s name. The example shows 1 page, 33 posts, 42 items, and 42 selected. Review the items, then tap Add to queue. Its parentheses show the selected quantity.",
+        "sections": [
+          {
+            "title": "Filter and select media",
+            "text": "All shows every media type, Video filters videos, and Image filters images. Blue checkmarks show selected items. Adjust them as needed and check the total selection and Add to queue count before submitting, even when using the Video filter."
+          },
+          {
+            "title": "Select loaded and the loaded range",
+            "text": "Select loaded selects items already loaded. Posts and items are different counts because one post can contain several media items. The current list is not necessarily the creator’s entire history. Use Change link to switch to another creator."
+          },
+          {
+            "title": "Batch quality",
+            "text": "Follow download settings uses the quality preference in your download settings. Tap Batch quality to inspect the options available in your current version, then confirm before adding tasks."
+          },
+          {
+            "title": "Check counts and account limits",
+            "text": "The selected count and Unlimited label are the state shown for this example, rather than a promise that every account or profile has the same limits. Check your own screen before submitting."
+          }
+        ]
+      },
+      {
+        "title": "Check download progress and failures",
+        "text": "Open Manager. The screenshot shows Active 41, Done 14, and Failed 1, with both queued and downloading items. These are the manager’s current totals and cannot be treated as the completion results of this 42-item batch.",
+        "sections": [
+          {
+            "title": "Queued, downloading, and completed",
+            "text": "Queued means a task is waiting; a progress bar means it is downloading. Open completed files in Done and check the picture and sound. Use Save to Photos for a system-library copy. These screenshots do not show every task completing or a successful Photos save."
+          },
+          {
+            "title": "Check failed tasks individually",
+            "text": "Open Failed and read the specific task and error, then check its link and your connection. The screenshot does not expand the failure details, so Failed 1 alone does not establish a cause or whether it belongs to this batch."
+          }
+        ]
+      }
+    ]
+  },
+  "batch-download-douyin-profile-iphone": {
+    "title": "How to batch download Douyin profile videos on iPhone and iPad",
+    "description": "Load a Douyin creator profile in ClipDock, select resources and quality, and add videos to the queue. Five reused TikTok screenshots illustrate the process.",
+    "intro": "To save several posts from one Douyin creator, start with the profile link and load it in Batch. This guide reuses five TikTok screenshots to illustrate the workflow. The account, URL, and task counts are examples, not a recorded Douyin test. Use your own Douyin profile link.",
+    "tips": [
+      {
+        "title": "Choose the posts you actually need",
+        "text": "A profile batch suits several posts from one creator. A single-video link is easier to verify for one item. Before submitting the profile again, check what has already downloaded to avoid duplicates."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does loading a profile start downloading?",
+        "answer": "No. Select resources, check quality and count, then tap Add to queue."
+      },
+      {
+        "question": "Will every post on the profile appear?",
+        "answer": "Not necessarily. Use the resources actually returned; do not treat the list as a complete backup of all historical or restricted content."
+      },
+      {
+        "question": "Why are some items simply called Resource?",
+        "answer": "That is the name returned in this example. Use the thumbnail, media type, and date to check the item, then preview the download. A generic title alone does not identify its content."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Copy the creator’s profile link",
+        "text": "Open the creator’s profile in Douyin and choose Copy link from its profile sharing controls. The illustration shows TikTok’s Send to / Copy link; Douyin’s button position depends on its current interface. Use the profile link, not an individual video URL."
+      },
+      {
+        "title": "Paste the profile URL in Batch",
+        "text": "Open Extract in ClipDock, select Batch, and tap Paste. The tiktok.com URL in the image is only an illustration. Paste your Douyin profile URL and confirm the creator."
+      },
+      {
+        "title": "Load the list and wait for results",
+        "text": "Tap Load list and wait for Loading list to finish. This only retrieves selectable resources; it does not start downloading. You still need to select items and tap Add to queue."
+      },
+      {
+        "title": "Choose resources and quality, then add to queue",
+        "text": "Check the creator’s name. The illustration shows 1 page, 33 posts, 42 items, and 42 selected. Your Douyin result may have different counts. Review the items, then tap Add to queue. Its parentheses show the selected quantity.",
+        "sections": [
+          {
+            "title": "Filter and select media",
+            "text": "All shows every media type, Video filters videos, and Image filters images. Blue checkmarks show selected items. Adjust them as needed and check the total selection and Add to queue count before submitting, even when using the Video filter."
+          },
+          {
+            "title": "Select loaded and the loaded range",
+            "text": "Select loaded selects items already loaded. Posts and items are different counts because one post can contain several media items. The current list is not necessarily the creator’s entire history. Use Change link to switch to another creator."
+          },
+          {
+            "title": "Batch quality",
+            "text": "Follow download settings uses the quality preference in your download settings. Tap Batch quality to inspect the options available in your current version, then confirm before adding tasks."
+          },
+          {
+            "title": "Check counts and account limits",
+            "text": "The selected count and Unlimited label are the state shown for this example, rather than a promise that every account or profile has the same limits. Check your own screen before submitting."
+          }
+        ]
+      },
+      {
+        "title": "Check download progress and failures",
+        "text": "Open Manager. The screenshot shows Active 41, Done 14, and Failed 1, with both queued and downloading items. These are the manager’s current totals and cannot be treated as the completion results of this 42-item batch.",
+        "sections": [
+          {
+            "title": "Queued, downloading, and completed",
+            "text": "Queued means a task is waiting; a progress bar means it is downloading. Open completed files in Done and check the picture and sound. Use Save to Photos for a system-library copy. These screenshots do not show every task completing or a successful Photos save."
+          },
+          {
+            "title": "Check failed tasks individually",
+            "text": "Open Failed and read the specific task and error, then check its link and your connection. The screenshot does not expand the failure details, so Failed 1 alone does not establish a cause or whether it belongs to this batch."
+          }
+        ]
+      }
+    ]
+  },
+  "batch-download-weibo-profile-iphone": {
+    "title": "How to batch download Weibo profile videos on iPhone and iPad",
+    "description": "Copy a Weibo profile URL, load and select its videos in ClipDock, load another page if needed, and check the download queue. Includes five screenshots.",
+    "intro": "To save multiple videos from one Weibo creator, load the profile and choose the resources you want. Five screenshots cover the profile link, list loading, pagination, selection, and download progress. Source names and content may be in Chinese.",
+    "tips": [
+      {
+        "title": "Check each loaded batch",
+        "text": "Select what you need and load another page only as needed. Check existing downloads before resubmitting. A returned list is not a complete historical backup."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Why does the list contain only 16 items?",
+        "answer": "This example has loaded one page of 16 items, with Load next page available below. Load more if needed and inspect the results; availability depends on the source."
+      },
+      {
+        "question": "Does loading another page download it?",
+        "answer": "Loading and downloading are separate. Check the selected items and tap Add to queue to create tasks."
+      },
+      {
+        "question": "Can I download just some videos?",
+        "answer": "Adjust the checkmarks. Even after filtering to Video, confirm the total selected count and the queue button before submitting."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Copy the Weibo profile URL",
+        "text": "Open the creator’s profile in Weibo and tap the three-dot menu at the upper right to open Share. Find the chain-link copy action in the bottom area, left of Home. Its English label is truncated to Copy…e URL in the screenshot. Copy the current profile link."
+      },
+      {
+        "title": "Paste the profile URL in Batch",
+        "text": "Open Extract in ClipDock, switch to Batch, and tap Paste. Check the address. The example uses weibo.com/u/1749964961; use your intended creator’s profile."
+      },
+      {
+        "title": "Load the list and wait for results",
+        "text": "Tap Load list and wait for Loading list to finish. This only retrieves selectable resources; it does not start downloading. You still need to select items and tap Add to queue."
+      },
+      {
+        "title": "Choose videos and load another page if needed",
+        "text": "Confirm the creator’s name. The example shows 1 page, 16 posts, 16 items, and 16 selected. The screenshot is scrolled to items 11–16, with Load next page at the end.",
+        "sections": [
+          {
+            "title": "Load next page",
+            "text": "If the desired videos are not in the loaded list, tap Load next page and wait for additional items, then recheck the selection count. The screenshot shows only the first page and the next-page control, rather than the whole history."
+          },
+          {
+            "title": "Filter and select media",
+            "text": "All shows every media type, Video filters videos, and Image filters images. Blue checkmarks show selected items. Adjust them as needed and check the total selection and Add to queue count before submitting, even when using the Video filter."
+          },
+          {
+            "title": "Set quality and add to queue",
+            "text": "Batch quality is set to Follow download settings. Inspect the available options if you want to change it, then check the scope and tap Add to queue (16). The number is the current selection count; yours may differ."
+          },
+          {
+            "title": "Posts, items, and account limits",
+            "text": "Posts counts posts and items counts media; both happen to be 16 here. Other profiles may differ. Unlimited is the illustrated account’s status, not a universal limit. Change link lets you switch creator."
+          }
+        ]
+      },
+      {
+        "title": "Inspect the download queue in Manager",
+        "text": "The screenshot shows Active 13, Done 49, and Failed 1. Some items are Queued, while others show progress, speed, and time remaining. These current manager totals do not establish the outcome of this 16-item batch.",
+        "sections": [
+          {
+            "title": "Queued, downloading, and completed",
+            "text": "Queued means a task is waiting; a progress bar means it is downloading. Open completed files in Done and check the picture and sound. Use Save to Photos for a system-library copy. These screenshots do not show every task completing or a successful Photos save."
+          },
+          {
+            "title": "Check failed tasks individually",
+            "text": "Open Failed and read the specific task and error, then check its link and your connection. The screenshot does not expand the failure details, so Failed 1 alone does not establish a cause or whether it belongs to this batch."
+          }
+        ]
+      }
+    ]
+  },
+  "batch-download-bilibili-profile-iphone": {
+    "title": "How to batch download Bilibili creator videos on iPhone and iPad",
+    "description": "Use a Bilibili creator’s profile share link to load uploads in ClipDock, select videos and quality, and manage the queue. Includes five screenshots.",
+    "intro": "Start with a creator’s profile share link to save several Bilibili uploads. This guide explains profile short links, pagination, batch quality, and the download queue through five screenshots. Bilibili’s source controls and some content are in Chinese.",
+    "tips": [
+      {
+        "title": "Use the actual returned list",
+        "text": "A loaded profile is not guaranteed to include every historical upload or restricted item. Check what has already downloaded before submitting again."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Can I paste a b23.tv short URL directly?",
+        "answer": "This example successfully loads a list from a b23.tv link copied from a creator profile. Confirm both the source page and the returned creator."
+      },
+      {
+        "question": "Why are there only 20 resources?",
+        "answer": "Only one page is loaded here. Use Load next page and inspect the additional resources actually returned."
+      },
+      {
+        "question": "Does this also demonstrate collections, favorites, or multi-part videos?",
+        "answer": "No. These screenshots show a creator’s profile uploads. Other link types need their own workflow checks."
+      },
+      {
+        "question": "Is the highest quality guaranteed?",
+        "answer": "No. The screenshot follows download settings. Available resolutions depend on the returned resources."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Copy the creator’s profile share link",
+        "text": "Open the creator’s profile in Bilibili, tap the three-dot menu at the upper right, and choose Copy link. In the screenshot it sits between Weibo and More. Confirm you are sharing the creator’s profile."
+      },
+      {
+        "title": "Paste the profile short link in Batch",
+        "text": "Open Extract in ClipDock, select Batch, and tap Paste. The b23.tv profile short URL in this example successfully loads the creator’s list.",
+        "sections": [
+          {
+            "title": "Check where the short link came from",
+            "text": "There is no need to rewrite this copied URL. However, the b23.tv domain alone does not distinguish a profile from an individual video. Copy from the profile and check the creator’s name after loading."
+          }
+        ]
+      },
+      {
+        "title": "Load the list and wait for results",
+        "text": "Tap Load list and wait for Loading list to finish. This only retrieves selectable resources; it does not start downloading. You still need to select items and tap Add to queue."
+      },
+      {
+        "title": "Choose videos and load more uploads if needed",
+        "text": "The example returns Getfitbyivana with 1 page, 20 posts, 20 items, and 20 selected. Items 15–20 are visible; media type, duration, and date help identify them.",
+        "sections": [
+          {
+            "title": "Load next page to see more uploads",
+            "text": "Tap Load next page at the end of the list to retrieve more items, then check new content and the selection count. The current 20 items are the loaded range, not necessarily the creator’s whole history."
+          },
+          {
+            "title": "Filter and select media",
+            "text": "All shows every media type, Video filters videos, and Image filters images. Blue checkmarks show selected items. Adjust them as needed and check the total selection and Add to queue count before submitting, even when using the Video filter."
+          },
+          {
+            "title": "Check Batch quality before submitting",
+            "text": "The screenshot uses Follow download settings. Tap Batch quality to inspect available choices, then tap Add to queue (20). The detailed resolution menu is not expanded here, so actual qualities must be checked in the results."
+          },
+          {
+            "title": "Confirm creator and counts",
+            "text": "Change link lets you replace the URL. Posts and items count posts and media; both are 20 here. Unlimited is the shown account status, and actual limits depend on your account."
+          }
+        ]
+      },
+      {
+        "title": "Check the queue and completed results",
+        "text": "In Manager, the screenshot shows Active 20, Done 62, and Failed 1, with Queued items and running download information. These are current manager totals. Done 62 is not the completion count for this batch of 20.",
+        "sections": [
+          {
+            "title": "Choose long videos carefully",
+            "text": "The list contains long videos with different file sizes. Start with a few needed items and use actual progress to plan your wait, rather than queuing many unwanted tasks."
+          },
+          {
+            "title": "Preview completed files and handle failures",
+            "text": "Open completed videos in Done and check picture and sound, then use Save to Photos if needed. Inspect individual errors in Failed. These screenshots show the queue running, not all tasks finishing or successful Photos saves."
+          }
+        ]
+      }
+    ]
+  }
+};

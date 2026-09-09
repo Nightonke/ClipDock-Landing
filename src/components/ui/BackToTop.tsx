@@ -1,8 +1,9 @@
+import { controls } from "@/i18n/en-US/controls";
 import { AnimatePresence, motion } from "framer-motion";
 import { memo, useEffect, useState } from "react";
 import { FiChevronUp } from "react-icons/fi";
 
-const BackToTop = () => {
+const BackToTop = ({ label = controls.backToTop }: { label?: string }) => {
 	const [isVisible, setIsVisible] = useState(false);
 
 	const scrollToTop = () => {
@@ -42,7 +43,7 @@ const BackToTop = () => {
 					whileTap={{ scale: 0.95 }}
 					onClick={scrollToTop}
 					className="button-base fixed bottom-8 right-8 z-50 flex h-14 w-14 items-center justify-center text-heading shadow-lg hover:shadow-xl transition-shadow duration-200 p-0"
-					aria-label="Back to top"
+					aria-label={label}
 				>
 					<FiChevronUp size={28} />
 				</motion.button>

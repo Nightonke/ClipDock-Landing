@@ -1,19 +1,14 @@
 ---
 import { mediaUrl } from "@config/media";
 import { responsiveImageHtml } from "@/lib/responsive-image";
-import { screenshotBriefs } from "@/content/tutorials";
+import { getScreenshot } from "@/content/localized-tutorials";
 import OrangePhoneFrame from "./OrangePhoneFrame.astro";
-import { englishScreenshotTitles } from "@/content/en-US/tutorials";
 import { siteUI } from "@/i18n/site-ui";
 import type { Locale } from "@/i18n/locales";
 interface Props { id: string; locale?: Locale }
 const { id, locale = "zh-Hans" } = Astro.props;
 const ui = siteUI(locale);
-const source = screenshotBriefs[id];
-if (!source) throw new Error(`Unknown screenshot: ${id}`);
-const title = locale === "en-US" ? englishScreenshotTitles[id] : source.title;
-if (!title) throw new Error(`Missing ${locale} screenshot title: ${id}`);
-const shot = { ...source, title };
+const shot = getScreenshot(locale, id);
 const mark = shot.highlight;
 const arrowPath = mark && (mark.x > 800
 	? `M ${mark.x - 170} ${mark.y - 110} Q ${mark.x - 55} ${mark.y - 100} ${mark.x + 25} ${mark.y + 35} m -5 -65 l 5 65 l -61 -25`

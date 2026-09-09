@@ -1,4 +1,4 @@
-import type { HomeFeatures, HomeTools } from './types';
+import type { HomeFeatures, HomeTools } from '../home/types';
 
 export const capabilities = ['Shared link downloads', 'URL downloads', 'Copy to download', 'Stay in your app', 'Find videos on a webpage', 'Profile downloads', 'Channel downloads', 'Hashtag downloads', 'Playlist downloads', 'Collection downloads', 'Background downloads', 'Video library', 'Save to Photos', 'Trim', 'Convert', 'Join', 'Resize', 'Rotate', 'Mirror', 'Change speed', 'Extract audio', 'Merge audio and video', 'Reverse', 'Add watermarks', 'Create GIFs', 'Create Live Photos', 'Capture frames', 'Change MD5', 'YouTube captions'];
 

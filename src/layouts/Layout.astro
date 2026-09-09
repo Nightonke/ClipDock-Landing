@@ -1,4 +1,5 @@
 ---
+import { commonCopy } from "@/i18n/common";
 import SiteFooter from "@/sections/SiteFooter.astro";
 import SiteHeader from "@/sections/SiteHeader.astro";
 import { siteConfig } from "@config/site";
@@ -31,7 +32,7 @@ const {
 	termsHref = localizedPath(defaultLocale, "terms"),
 	labels = landingContent[defaultLocale].labels,
 	ogImage = "/assets/clipdock-app-icon.png",
-	ogImageAlt = "ClipDock — Web video downloader for iPhone and iPad.",
+	ogImageAlt,
 	structuredData,
 	noindex = false,
 } = Astro.props;
@@ -113,13 +114,13 @@ const jsonLd = structuredData
 		<meta property="og:image:type" content="image/png" />
 		<meta property="og:image:width" content="512" />
 		<meta property="og:image:height" content="512" />
-		<meta property="og:image:alt" content={ogImageAlt} />
+		<meta property="og:image:alt" content={ogImageAlt ?? commonCopy[activeLocale].ogImageAlt} />
 
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={title} />
 		{description && <meta name="twitter:description" content={description} />}
 		<meta name="twitter:image" content={socialImageURL} />
-		<meta name="twitter:image:alt" content={ogImageAlt} />
+		<meta name="twitter:image:alt" content={ogImageAlt ?? commonCopy[activeLocale].ogImageAlt} />
 
 		<link rel="icon" type="image/png" href={siteConfig.logo} />
 		<link rel="apple-touch-icon" href={siteConfig.logo} />

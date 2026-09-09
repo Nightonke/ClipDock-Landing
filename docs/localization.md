@@ -1,51 +1,77 @@
-# 多语言维护
+# 多语言文案维护与评审
 
-当前已启用 `en-US` 与 `zh-Hans`。英语使用无前缀 URL，中文保留 `/zh-Hans/`。主页不按设备语言自动跳转，用户通过导航选择语言。繁体仍未启用。
+已发布语言为 `en-US` 和 `zh-Hans`。英文使用 `/`，简体中文使用 `/zh-Hans/`，首页与 35 篇教程均共用模板。不会按设备语言自动跳转。
 
-## 本次英文范围
+## 唯一编辑入口
 
-- 首页 `/`：与中文共用 `ClipDockLanding.astro`，包含功能、工具介绍、FAQ、字幕轮播和四段演示字幕。
-- 教程目录 `/articles/`。
-- 字幕教程 `/articles/extract-youtube-subtitles-iphone/`：复用现有五张英文界面截图。
-- 35 篇英文教程与中文逐篇对应：8 篇单平台下载、2 篇复制即下载、6 篇批量下载、1 篇字幕提取、18 篇视频工具。首页工具卡片、相关推荐和语言切换均已接通。
-- 首页社交分享图使用现有 ClipDock 图标，避免引用历史 `/og.png` 旧品牌图片。
-- 法律链接继续沿用现有外链；不将旧模板法律文案发布为英文法律页。
+所有可翻译文案按语言归入 `src/i18n/<locale>/`。评审、改写或翻译时编辑对应语言目录，不在页面模板、语言选择器或公共结构中添加句子。中英文教程不再互相导入正文；两套译文共同引用语言无关的教程结构。
 
-## 文件职责
+| 文件 | 内容与评审重点 |
+| --- | --- |
+| `meta.ts` | 语言菜单名称、HTML 与 hreflang 标识 |
+| `landing.ts` | 产品名称、首页 SEO 标题和描述、关键词、页脚标签；其中旧功能、评论、截图数组和法律正文为历史内容，当前首页不使用 |
+| `home.ts` | 首页功能、18 个工具卡片、FAQ、下载区域文案 |
+| `site-ui.ts` | 导航、教程公共按钮、目录标签、视频错误提示、轮播和无障碍标签 |
+| `common.ts` | 共用短标签、社交分享图说明，以及旧模板辅助标题 |
+| `tutorial-index.ts` | 教程分类名称、分类说明、平台支持说明 |
+| `tutorials/platform.ts` | 单平台下载教程 |
+| `tutorials/clipboard.ts` | 复制即下载教程 |
+| `tutorials/batch.ts` | 批量下载教程 |
+| `tutorials/subtitles.ts` | YouTube 字幕教程 |
+| `tutorials/tools.ts` | 18 篇视频工具教程 |
+| `screenshots.ts` | 每个截图 ID 对应的明确标题与备注；标题不再从步骤标题自动推导 |
+| `demo-captions.ts` | 四段录屏的字幕文字，条目顺序对应公共时间轴 |
+| `errors.ts` | 404 文案；当前静态 404 使用英文正文和中文首页入口 |
+| `controls.ts` | 保留的 React 控件标签，通过属性传入；旧控件默认使用英文 |
+| `marketing.ts` | 未发布的历史 Split Screen 营销内容，不能作为新语言上线的译文来源 |
 
-- `src/i18n/locales.ts`：已发布语言、路径和语言元数据。
-- `src/i18n/home/{zh-Hans,en-US}.ts`：首页文案；`types.ts` 约束共用结构。
-- `src/i18n/site-ui.ts`：导航、教程公共标签、演示与轮播控件、播放失败提示。
-- `src/config/demoCaptions.ts`：同一录屏的中英文字幕，共用时间轴。
-- `src/content/en-US/`：按平台、复制即下载、批量下载和视频工具分文件维护。`tutorials.ts` 汇总英文文章与图片标题，`translation.ts` 复用中文文章的 slug、截图 ID、顺序和实测状态，并检查步骤、细节、FAQ 和排错条目完整性。
-- `src/content/localized-tutorials.ts`：语言对应文章、分类和可用性。语言菜单、hreflang 和相关推荐均按实际文章筛选。
-- `src/layouts/Tutorial{Article,Index,Layout}.astro`：共用教程正文、目录和外壳。
+`zh-Hant/` 只保存已有的未发布内容，不代表繁体官网已完成。其旧营销内容仍包含自动繁简转换，正式启用前必须补齐当前首页、教程和人工评审。英文 `site-defaults.ts` 保存站点兼容默认值，并非其他语言的译文来源。外链隐私政策与服务条款由外部页面管理，本仓库内的历史法律正文不会代替它们。
 
-旧 `LandingPage.astro` 与 `i18n/marketing.ts` 保留为未发布的历史模板。新的首页及教程不依赖其营销文案。`i18n/content.ts` 仍提供应用基本信息和 SEO，里面的旧截图、评论及功能数组不用于新的共用首页。
+## 公共结构
 
-## 添加下一篇英文教程
+- `src/i18n/types.ts`、`home/types.ts`：文案字段类型。
+- `src/i18n/catalog.ts`：已发布语言的 UI、教程、截图和字幕注册表；未知语言不会悄悄回退为中文。
+- `src/i18n/{content,common,site-ui,marketing}.ts` 与 `home/index.ts`：语言选择和兼容入口，不存放译文。
+- `src/content/tutorial-structure.ts`：文章 slug、分类标识、顺序、相关推荐、步骤截图 ID、条目数量、实测状态和素材坐标。修改这些内容属于结构/证据变更，需要同步检查所有语言。
+- `src/content/localized-tutorials.ts`：将文案和公共结构组装为教程，并检查覆盖和缺失字段。
+- `src/config/demo-timings.ts`：视频字幕时间轴；`demoCaptions.ts` 只负责选择字幕。
+- `src/pages/[locale]/articles/`：非默认语言教程路由，新增语言不必复制中文页面。
 
-1. 在对应英文分类文件中加入同 slug 的完整译文，包括步骤、FAQ、排错说明和已有验证限制；不要因为翻译而把未实测内容标记为已验证。
-2. 在 `englishScreenshotTitles` 中补齐所有使用的截图 ID；构建遇到缺失标题会失败。核对截图中的按钮名称，必要时引入对应语言的新素材。
-3. 如果属于新分类，在 `englishCategories` 中补充分类名称和说明。
-4. 英文发布要求与中文教程完整对应，缺少译文会使构建失败。构建后，对应路由、首页工具链接、相关推荐及语言切换自动生效。
+## 文案评审流程
 
-推荐术语：Extract（提取）、Batch（批量）、Manager（管理）、Save to Photos（保存到相册）、Save to Files（保存到文件）、captions（字幕）、caption track（字幕轨道）。App 按钮名称以实际截图为准。
+1. 以相同文件名、相同文章 slug 对照两种语言。反馈注明 `语言 / 文件 / slug / 字段`，例如 `en-US / tutorials/tools.ts / extract-audio-iphone / steps[0].text`。数组索引从 0 开始。
+2. 区分翻译准确性、自然表达、产品事实、截图按钮名称与 SEO 表述。直接改语言文件；不要为了让译文通过检查而删除验证条件。
+3. 截图标题和正文分开核对。修改步骤标题不会自动改写图片标题。核对 `screenshots.ts` 中对应 ID；共享图片可能用于多篇教程。
+4. 保留证据边界：抖音教程使用 TikTok 示意截图；VIP 参数未实测、MD5 未比较哈希、音轨未逐段试听、仅展示保存入口等限制不能在翻译中消失。截图中的来源平台文字仍属于原始素材。
+5. 完成文案检查、构建、页面检查，再人工查看长标题、移动端换行、视频字幕和语言切换。
 
-## 验证
+可导出一份便于审稿的 JSON，包含当前语言的主要上线文案，并排除历史营销页和法律正文：
 
 ```sh
+node scripts/export-copy-review.cjs en-US > /tmp/clipdock-en-US-review.json
+node scripts/export-copy-review.cjs zh-Hans > /tmp/clipdock-zh-Hans-review.json
+```
+
+导出文件是评审快照，修改仍须回填语言源文件；它不包含图片内嵌文字或外链法律页面。
+
+## 新增语言
+
+1. 新建 `src/i18n/<locale>/`，按照已发布语言的目录提供完整译文，保留字段名、文章 slug 和截图 ID。无需复制历史 `marketing.ts` 中的产品宣传来充数。
+2. 在 `locales.ts` 注册语言及元数据。准备好 `landing.ts` 和首页数据，并接入 `content.ts`、`common.ts`、`home/index.ts`、`catalog.ts` 和 `config/demoCaptions.ts` 的显式注册表。注册是代码修改，单纯复制目录不会自动上线。
+3. 审稿完成后才加入 `publishedLocales`。类型检查会要求补齐已发布语言的注册项；构建会检查教程、图片标题和字幕覆盖。当前 `/404.html` 是全站共用静态错误页，不会自动生成每种语言的 404。
+4. 更新页面验证脚本中当前针对英/中文的语言规则，加入新语言的残留语言检查；执行全量构建与对应语言切换验证。非默认语言教程路由会自动生成。
+
+## 验证命令
+
+```sh
+npm run check:i18n
+npx tsc --noEmit
 npm run build
 python3 scripts/verify-site.py
 python3 scripts/verify-locales.py
-npx tsc --noEmit
-npm run preview
+node --test tests/videoRecovery.test.mjs
 ```
 
-多语言检查验证页面主语言、英文正文及描述中文残留、中英文文章覆盖与步骤/截图数量、错误的跨语言内容链接、对应页面 hreflang 及其双向关系。正式构建也会执行此检查。
+语言检查覆盖缺失文章、空白正文、遗漏 UI 字段、步骤/细节/FAQ/排错数量、图片标题与字幕时间边界，GitHub Actions 会执行。页面检查覆盖主语言、英文中文残留、教程对应关系、跨语言链接和双向 hreflang。自动检查不能代替语义评审。
 
-浏览器检查中英文首页、教程列表、对应文章切换、手机菜单、视频字幕随进度更新，以及轮播播放/暂停。全站共用素材保持原样，无新增素材时不需要新建 CDN 素材版本。
-
-## 素材与验证边界
-
-复用现有真实素材，没有新增或改动 CDN 文件。Bilibili、Weibo、小红书等来源页面保留原平台文字，英文正文解释对应操作；抖音单条与主页教程明确标注 TikTok 配图仅作示意。保留各工具的 VIP 范围和实测限制，包括 MD5 未比较哈希、合并音轨未逐段试听、付费参数未实测及部分截图只展示保存入口。
+正式发布使用 `npm run build:production`，并按 `docs/deployment.md` 执行。文案重组不涉及新增媒体资源，不需要新建 CDN 素材版本。

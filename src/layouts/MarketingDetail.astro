@@ -1,4 +1,5 @@
 ---
+import { commonCopy } from "@/i18n/common";
 import { responsiveImageHtml } from "@/lib/responsive-image";
 import { landingContent } from "@/i18n/content";
 import {
@@ -154,11 +155,7 @@ const structuredData = [
 			<div class="site-shell">
 				<p class="section-kicker">{marketing.detailLabels.howItWorks}</p>
 				<h2 class="section-title">
-					{locale === "en-US"
-						? "Three steps from source to clarity."
-						: locale === "zh-Hans"
-							? "三个步骤，从素材到清晰结论。"
-							: "三個步驟，從素材到清楚結論。"}
+					{commonCopy[locale].legacySteps}
 				</h2>
 				<div class="steps-list" style="margin-top: 50px">
 					{page.steps.map((item) => (

@@ -1,0 +1,9 @@
+---
+import TutorialArticle from "@layouts/TutorialArticle.astro";
+import { getTutorials } from "@/content/localized-tutorials";
+import { publishedLocales, defaultLocale } from "@/i18n/locales";
+export function getStaticPaths() {
+ return publishedLocales.filter(locale => locale !== defaultLocale).flatMap(locale => getTutorials(locale).map(article => ({ params: { locale, slug: article.slug }, props: { article, locale } })));
+}
+---
+<TutorialArticle article={Astro.props.article} locale={Astro.props.locale} />

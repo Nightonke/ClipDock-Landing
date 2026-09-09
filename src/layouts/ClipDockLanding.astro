@@ -1,4 +1,5 @@
 ---
+import { commonCopy } from "@/i18n/common";
 import { mediaUrl } from "@config/media";
 import type { LanguageLink } from "@/types/content";
 import type { landingContent } from "@/i18n/content";
@@ -143,7 +144,7 @@ const structuredData = [
 							) : feature.carousel ? (
 								<SubtitleCarousel locale={content.locale} />
 							) : (<>
-							<div class="cd-stage-label">SCREEN PLACEHOLDER / {feature.number}</div>
+							<div class="cd-stage-label">{commonCopy[content.locale].screenPlaceholder} / {feature.number}</div>
 							<div class="cd-phone-placeholder">
 								<span class="cd-phone-speaker"></span>
 								<div class="cd-placeholder-copy">

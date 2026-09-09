@@ -1,0 +1,8 @@
+---
+import { publishedLocales, defaultLocale } from "@/i18n/locales";
+import TutorialIndex from "@layouts/TutorialIndex.astro";
+export function getStaticPaths() {
+ return publishedLocales.filter(locale => locale !== defaultLocale).map(locale => ({ params: { locale }, props: { locale } }));
+}
+---
+<TutorialIndex locale={Astro.props.locale} />

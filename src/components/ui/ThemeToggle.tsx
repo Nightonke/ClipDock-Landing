@@ -1,15 +1,16 @@
+import { controls } from "@/i18n/en-US/controls";
 import { motion } from "framer-motion";
 import { memo, useCallback, useEffect, useState } from "react";
 import { FiMonitor, FiMoon, FiSun } from "react-icons/fi";
 import type { Theme } from "@/types/props";
 
 const THEMES = [
-	{ key: "light", icon: FiSun, label: "Light" },
-	{ key: "dark", icon: FiMoon, label: "Dark" },
-	{ key: "system", icon: FiMonitor, label: "System" },
+	{ key: "light", icon: FiSun },
+	{ key: "dark", icon: FiMoon },
+	{ key: "system", icon: FiMonitor },
 ] as const;
 
-const ThemeToggle = () => {
+const ThemeToggle = ({ labels = controls }: { labels?: typeof controls }) => {
 	const [theme, setTheme] = useState<Theme>("system");
 	const [mounted, setMounted] = useState(false);
 
@@ -53,7 +54,7 @@ const ThemeToggle = () => {
 			{!mounted ? (
 				THEMES.map((t) => <div key={t.key} className="w-8 h-8" />)
 			) : (
-				THEMES.map(({ key, icon: Icon, label }) => {
+				THEMES.map(({ key, icon: Icon }) => {
 					const isActive = theme === key;
 
 					return (
@@ -66,8 +67,8 @@ const ThemeToggle = () => {
 								: "text-muted hover:text-body hover:bg-gray-200 dark:hover:bg-white/10"
 								}`}
 							whileTap={{ scale: 0.9 }}
-							title={label}
-							aria-label={`Switch to ${label.toLowerCase()} theme`}
+							title={labels[key]}
+							aria-label={labels[key === "light" ? "switchLight" : key === "dark" ? "switchDark" : "switchSystem"]}
 						>
 							{isActive && (
 								<motion.div

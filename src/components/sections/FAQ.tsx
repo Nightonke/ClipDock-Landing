@@ -1,7 +1,8 @@
+import { controls } from "@/i18n/en-US/controls";
 import { memo } from "react";
 import type { FAQList } from "@/types/components";
 
-const FAQ = ({ items, title }: FAQList) => (
+const FAQ = ({ items, title, toggleLabel = controls.toggleAnswer }: FAQList & { toggleLabel?: string }) => (
 	<div className="mb-0">
 		<h2 className="mb-6 text-2xl font-semibold text-heading">
 			{title}
@@ -19,7 +20,7 @@ const FAQ = ({ items, title }: FAQList) => (
 								fill="none"
 								viewBox="0 0 24 24"
 								stroke="currentColor"
-								aria-label="Toggle answer visibility"
+								aria-label={toggleLabel}
 								role="img"
 							>
 								<path

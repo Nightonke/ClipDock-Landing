@@ -1,0 +1,38 @@
+import { validateCopy } from "./shared/validate";
+import type { PublishedLocale } from './locales';
+import type { SiteUI, TutorialCopy } from './types';
+import { ui as enUI } from './en-US/site-ui';
+import { ui as zhUI } from './zh-Hans/site-ui';
+import { categories as enCategories, platformNotes as enNotes } from './en-US/tutorial-index';
+import { categories as zhCategories, platformNotes as zhNotes } from './zh-Hans/tutorial-index';
+import { tutorialCopy as enTutorials } from './en-US/tutorials';
+import { tutorialCopy as zhTutorials } from './zh-Hans/tutorials';
+import { screenshotCopy as enScreenshots } from './en-US/screenshots';
+import { screenshotCopy as zhScreenshots } from './zh-Hans/screenshots';
+import { captions as enCaptions } from './en-US/demo-captions';
+import { captions as zhCaptions } from './zh-Hans/demo-captions';
+
+export interface LanguageCatalog {
+ ui: SiteUI;
+ categories: Array<{ id: string; name: string; description: string }>;
+ platformNotes: Record<string, string>;
+ tutorialCopy: Record<string, TutorialCopy>;
+ screenshotCopy: Record<string, { title: string; brief: string }>;
+ captions: Record<string, string[]>;
+}
+export const catalogs: Record<PublishedLocale, LanguageCatalog> = {
+ 'en-US': { ui: enUI, categories: enCategories, platformNotes: enNotes, tutorialCopy: enTutorials, screenshotCopy: enScreenshots, captions: enCaptions },
+ 'zh-Hans': { ui: zhUI, categories: zhCategories, platformNotes: zhNotes, tutorialCopy: zhTutorials, screenshotCopy: zhScreenshots, captions: zhCaptions },
+};
+export function getCatalog(locale: string): LanguageCatalog {
+ const key = locale === 'en' ? 'en-US' : locale;
+ if (!Object.hasOwn(catalogs, key)) throw new Error(`No published language catalog: ${locale}`);
+ return catalogs[key as PublishedLocale];
+}
+
+for (const [locale, catalog] of Object.entries(catalogs)) {
+ validateCopy(enUI, catalog.ui, `${locale}/site-ui`);
+ validateCopy(enCategories, catalog.categories, `${locale}/tutorial-index`);
+ validateCopy(enNotes, catalog.platformNotes, `${locale}/platform-notes`);
+ validateCopy(enCaptions, catalog.captions, `${locale}/demo-captions`);
+}
