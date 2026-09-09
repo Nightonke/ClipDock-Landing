@@ -1,58 +1,58 @@
 import type { TutorialCopy } from "../../types";
 export const copy: Record<string, TutorialCopy> = {
   "batch-download-bilibili-collection-iphone": {
-    "title": "2026 年如何在 iPhone/iPad 上批量下载 Bilibili（哔哩哔哩）合集视频？",
-    "description": "从 Bilibili 合集分享面板复制链接，在 ClipDock影随存中加载视频列表、选择画质并创建批量下载任务，附 b23.tv 分享链接示例。",
-    "intro": "Bilibili 合集批量下载的输入是合集的分享链接，适合备份自己的系列作品或已获授权的视频，减少逐集复制视频链接的操作。",
+    "title": "如何批量下载 B 站合集视频？",
+    "description": "在 iPhone 和 iPad 上，从 B 站合集分享面板复制链接，在影随存中加载视频列表、选择画质并创建批量下载任务，附 b23.tv 分享链接示例。",
+    "intro": "B 站合集批量下载的输入是合集的分享链接，适合备份自己的系列作品或已获授权的视频，减少逐集复制视频链接的操作。",
     "tips": [
       {
         "title": "解析数量与合集显示集数不一致",
-        "text": "先检查是否复制了合集链接，再核对已加载页数、账号限制和资源是否可访问。Select loaded 只选择当前已加载资源，实际返回列表不一定包含全部集数，不要盲目重复提交整个合集。"
+        "text": "先检查是否复制了合集链接，再核对已加载页数、账号限制和资源是否可访问。“全选已加载”只选择当前已加载资源，实际返回列表不一定包含全部集数，不要盲目重复提交整个合集。"
       }
     ],
     "faq": [
       {
-        "question": "Bilibili 合集链接和 UP 主主页链接有什么区别？",
+        "question": "B 站合集链接和 UP 主主页链接有什么区别？",
         "answer": "合集链接对应一组视频，UP 主主页链接对应创作者页面。请从目标合集的分享面板复制链接；b23.tv 短链接本身不能说明来源类型，加载后还要核对合集名称和返回列表。"
       },
       {
         "question": "批量完成后会自动进入相册吗？",
-        "answer": "可在 Download Settings 开启 Auto-Save Completed Downloads to Photos，自动保存支持的下载文件；否则在下载后手动选择 Save to Photos。保存需要相册访问权限和支持的格式。"
+        "answer": "可在“下载设置”开启“下载完成后自动保存到相册”，自动保存支持的下载文件；否则在下载后手动选择“保存到相册”。保存需要相册访问权限和支持的格式。"
       }
     ],
     "steps": [
       {
-        "title": "复制 Bilibili 合集链接",
-        "text": "在哔哩哔哩打开需要下载的合集，点击合集面板中的分享按钮，再选择「复制链接」。示例合集为「米娜舞蹈-大摆锤」，页面显示共 62 集。确认分享的是合集，而不是正在播放的单个视频。"
+        "title": "复制 B 站合集链接",
+        "text": "在哔哩哔哩打开需要下载的合集，点击合集面板中的分享按钮，再选择“复制链接”。示例合集为“米娜舞蹈-大摆锤”，页面显示共 62 集。确认分享的是合集，而不是正在播放的单个视频。"
       },
       {
-        "title": "在 Batch 分页填入合集链接",
-        "text": "打开 ClipDock影随存的 Extract 页面，切换到 Batch（批量）分页，点击 Paste（粘贴）填入复制的链接。本例使用下面的 b23.tv 短链接；请使用从目标合集分享面板复制的实际地址。",
+        "title": "粘贴合集链接",
+        "text": "打开影随存的“资源提取”（Extract）页面，切换到“批量”（Batch）分页，点击“粘贴”（Paste）填入复制的链接。本例使用下面的 b23.tv 短链接；请使用从目标合集分享面板复制的实际地址。",
         "exampleUrl": "https://b23.tv/drSfmMh"
       },
       {
         "title": "加载合集视频列表",
-        "text": "点击 Load list（加载列表），等待 Loading list 提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
+        "text": "点击“加载列表”（Load list），等待“正在加载列表”（Loading list）提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
       },
       {
         "title": "选择视频并加入下载队列",
-        "text": "核对来源名称与目标合集一致，勾选需要的视频，可使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。示例中已加载并选中 62 项，按钮显示 Add to queue (62)。"
+        "text": "核对来源名称与目标合集一致，勾选需要的视频，可使用“全选已加载”（Select loaded）。设置“统一画质”（Batch quality），确认已选数量，再点击“加入下载队列”（Add to queue）。示例中已加载并选中 62 项，按钮显示“加入下载队列（62）”。"
       },
       {
         "title": "查看排队状态与下载进度",
-        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。"
+        "text": "打开“资源管理”（Manager）查看下载。“下载中”（Active）包含排队和正在处理的任务，“已完成”（Done）列出下载完成的文件，“失败”（Failed）是需要处理的失败任务。打开具体条目核对状态。"
       }
     ],
-    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。“资源管理”的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
   },
   "batch-download-tiktok-hashtag-iphone": {
-    "title": "2026 年如何在 iPhone/iPad 上批量下载 TikTok Hashtag 话题视频？",
-    "description": "使用 TikTok Hashtag 话题链接，在 ClipDock影随存中加载视频列表、选择画质并创建批量下载任务，附 beauty 话题链接格式示例。",
-    "intro": "TikTok Hashtag 批量下载的输入是话题页链接，适合集中保存同一话题下自己拥有或已获授权的视频。本教程以 beauty 话题为例，减少逐条复制视频链接的操作。",
+    "title": "如何批量下载 TikTok 话题视频？",
+    "description": "在 iPhone 和 iPad 上，使用 TikTok 话题链接，在影随存中加载视频列表、选择画质并创建批量下载任务，附 beauty 话题链接格式示例。",
+    "intro": "TikTok 话题批量下载的输入是话题页链接，适合集中保存同一话题下自己拥有或已获授权的视频。本教程以 beauty 话题为例，减少逐条复制视频链接的操作。",
     "tips": [
       {
         "title": "解析结果与话题页显示内容不同",
-        "text": "先确认链接中包含 /tag/，再检查话题名称、已加载页数和账号限制。实际返回列表不一定包含话题下的全部视频，Select loaded 只选择已加载资源，不要盲目重复提交整份列表。"
+        "text": "先确认链接中包含 /tag/，再检查话题名称、已加载页数和账号限制。实际返回列表不一定包含话题下的全部视频，“全选已加载”只选择已加载资源，不要盲目重复提交整份列表。"
       }
     ],
     "faq": [
@@ -62,38 +62,38 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "批量完成后会自动进入相册吗？",
-        "answer": "可在 Download Settings 开启 Auto-Save Completed Downloads to Photos，自动保存支持的下载文件；否则在下载后手动选择 Save to Photos。保存需要相册访问权限和支持的格式。"
+        "answer": "可在“下载设置”开启“下载完成后自动保存到相册”，自动保存支持的下载文件；否则在下载后手动选择“保存到相册”。保存需要相册访问权限和支持的格式。"
       }
     ],
     "steps": [
       {
-        "title": "在 Batch 分页填入 TikTok 话题链接",
-        "text": "TikTok 话题链接的格式是 https://www.tiktok.com/tag/话题名称，下面以 beauty 为例。打开 ClipDock影随存的 Extract 页面，切换到 Batch（批量）分页，点击 Paste（粘贴）填入完整链接。地址中的话题名称不需要加 #。",
+        "title": "粘贴 TikTok 话题链接",
+        "text": "TikTok 话题链接的格式是 https://www.tiktok.com/tag/话题名称，下面以 beauty 为例。打开影随存的“资源提取”（Extract）页面，切换到“批量”（Batch）分页，点击“粘贴”（Paste）填入完整链接。地址中的话题名称不需要加 #。",
         "exampleUrl": "https://www.tiktok.com/tag/beauty"
       },
       {
         "title": "加载话题视频列表",
-        "text": "点击 Load list（加载列表），等待 Loading list 提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
+        "text": "点击“加载列表”（Load list），等待“正在加载列表”（Loading list）提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
       },
       {
         "title": "选择视频并加入下载队列",
-        "text": "核对来源为 beauty，勾选需要的视频，可使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。示例中已加载并选中 19 项，按钮显示 Add to queue (19)。"
+        "text": "核对来源为 beauty，勾选需要的视频，可使用“全选已加载”（Select loaded）。设置“统一画质”（Batch quality），确认已选数量，再点击“加入下载队列”（Add to queue）。示例中已加载并选中 19 项，按钮显示“加入下载队列（19）”。"
       },
       {
         "title": "查看排队状态与下载进度",
-        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。"
+        "text": "打开“资源管理”（Manager）查看下载。“下载中”（Active）包含排队和正在处理的任务，“已完成”（Done）列出下载完成的文件，“失败”（Failed）是需要处理的失败任务。打开具体条目核对状态。"
       }
     ],
-    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。“资源管理”的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
   },
   "batch-download-instagram-hashtag-iphone": {
-    "title": "2026 年如何在 iPhone/iPad 上批量下载 Instagram Hashtag 话题图片？",
-    "description": "使用 Instagram Hashtag 话题链接，在 ClipDock影随存中加载图片列表、筛选资源并创建批量下载任务，附 model 话题链接格式示例。",
-    "intro": "Instagram Hashtag 批量下载的输入是话题页链接，适合集中保存同一话题下自己拥有或已获授权的图片。本教程以 model 话题为例，减少逐条复制帖子链接的操作。",
+    "title": "如何批量下载 Instagram 话题图片？",
+    "description": "在 iPhone 和 iPad 上，使用 Instagram 话题链接，在影随存中加载图片列表、筛选资源并创建批量下载任务，附 model 话题链接格式示例。",
+    "intro": "Instagram 话题批量下载的输入是话题页链接，适合集中保存同一话题下自己拥有或已获授权的图片。本教程以 model 话题为例，减少逐条复制帖子链接的操作。",
     "tips": [
       {
         "title": "解析结果与话题页显示内容不同",
-        "text": "先确认链接中包含 /explore/tags/，再检查话题名称、已加载页数和账号限制。实际返回列表不一定包含话题下的全部帖子，Select loaded 只选择已加载资源，不要盲目重复提交整份列表。"
+        "text": "先确认链接中包含 /explore/tags/，再检查话题名称、已加载页数和账号限制。实际返回列表不一定包含话题下的全部帖子，“全选已加载”只选择已加载资源，不要盲目重复提交整份列表。"
       }
     ],
     "faq": [
@@ -103,120 +103,120 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "批量完成后会自动进入相册吗？",
-        "answer": "可在 Download Settings 开启 Auto-Save Completed Downloads to Photos，自动保存支持的下载文件；否则在下载后手动选择 Save to Photos。保存需要相册访问权限和支持的格式。"
+        "answer": "可在“下载设置”开启“下载完成后自动保存到相册”，自动保存支持的下载文件；否则在下载后手动选择“保存到相册”。保存需要相册访问权限和支持的格式。"
       }
     ],
     "steps": [
       {
-        "title": "在 Batch 分页填入 Instagram 话题链接",
-        "text": "Instagram 话题链接的格式是 https://www.instagram.com/explore/tags/话题名称，下面以 model 为例。打开 ClipDock影随存的 Extract 页面，切换到 Batch（批量）分页，点击 Paste（粘贴）填入完整链接。地址中的话题名称不需要加 #。",
+        "title": "粘贴 Instagram 话题链接",
+        "text": "Instagram 话题链接的格式是 https://www.instagram.com/explore/tags/话题名称，下面以 model 为例。打开影随存的“资源提取”（Extract）页面，切换到“批量”（Batch）分页，点击“粘贴”（Paste）填入完整链接。地址中的话题名称不需要加 #。",
         "exampleUrl": "https://www.instagram.com/explore/tags/model"
       },
       {
         "title": "加载话题资源列表",
-        "text": "点击 Load list（加载列表），等待 Loading list 提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
+        "text": "点击“加载列表”（Load list），等待“正在加载列表”（Loading list）提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
       },
       {
         "title": "选择图片并加入下载队列",
-        "text": "核对来源为 model，勾选需要的图片，可使用 Image（图片）筛选或 Select loaded（全选已加载）。筛选后仍需核对已选条目和数量，再点击 Add to queue（加入队列）。示例中已加载并选中 21 项，列表条目标记为 Image，按钮显示 Add to queue (21)。"
+        "text": "核对来源为 model，勾选需要的图片，可使用“图片”（Image）筛选或“全选已加载”（Select loaded）。筛选后仍需核对已选条目和数量，再点击“加入下载队列”（Add to queue）。示例中已加载并选中 21 项，列表条目标记为“图片”，按钮显示“加入下载队列（21）”。"
       },
       {
         "title": "查看排队状态与下载进度",
-        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。"
+        "text": "打开“资源管理”（Manager）查看下载。“下载中”（Active）包含排队和正在处理的任务，“已完成”（Done）列出下载完成的文件，“失败”（Failed）是需要处理的失败任务。打开具体条目核对状态。"
       }
     ],
-    "exampleNote": "截图展示 Image 条目的选择和队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+    "exampleNote": "截图展示“图片”条目的选择和队列运行状态，未展示全部下载完成或相册保存成功。“资源管理”的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
   },
   "batch-download-youtube-shorts-iphone": {
-    "title": "2026 年如何在 iPhone/iPad 上批量下载 YouTube Shorts？",
-    "description": "使用 YouTube 频道的 Shorts 页面链接，在 ClipDock影随存中加载短视频列表、选择画质并创建批量下载任务，附完整链接格式示例。",
+    "title": "如何批量下载 YouTube Shorts？",
+    "description": "在 iPhone 和 iPad 上，使用 YouTube 频道的 Shorts 页面链接，在影随存中加载短视频列表、选择画质并创建批量下载任务，附完整链接格式示例。",
     "intro": "Shorts 批量下载的输入是频道的 Shorts 页面，适合集中保存同一创作者的短视频。用于备份自己的作品或已获授权的视频，减少逐条复制链接的操作。",
     "tips": [
       {
         "title": "解析结果与频道 Shorts 页面显示内容不同",
-        "text": "先确认频道标识和地址末尾的 /shorts，再检查已加载页数和账号限制。实际返回列表不一定包含频道全部 Shorts，Select loaded 只选择已加载资源，不要盲目重复提交整份列表。"
+        "text": "先确认频道标识和地址末尾的 /shorts，再检查已加载页数和账号限制。实际返回列表不一定包含频道全部 Shorts，“全选已加载”只选择已加载资源，不要盲目重复提交整份列表。"
       }
     ],
     "faq": [
       {
         "question": "频道 Shorts 列表链接和单条 Shorts 链接有什么区别？",
-        "answer": "https://youtube.com/@dailymoodvideo/shorts 这样的地址对应频道的 Shorts 列表；/shorts/视频ID 这样的地址对应单条短视频。批量下载请使用带频道标识、以 /shorts 结尾的列表链接。"
+        "answer": "https://youtube.com/@dailymoodvideo/shorts 这样的地址对应频道的 Shorts 列表；/shorts/视频 ID 这样的地址对应单条短视频。批量下载请使用带频道标识、以 /shorts 结尾的列表链接。"
       },
       {
         "question": "批量完成后会自动进入相册吗？",
-        "answer": "可在 Download Settings 开启 Auto-Save Completed Downloads to Photos，自动保存支持的下载文件；否则在下载后手动选择 Save to Photos。保存需要相册访问权限和支持的格式。"
+        "answer": "可在“下载设置”开启“下载完成后自动保存到相册”，自动保存支持的下载文件；否则在下载后手动选择“保存到相册”。保存需要相册访问权限和支持的格式。"
       }
     ],
     "steps": [
       {
-        "title": "在 Batch 分页填入 Shorts 列表链接",
-        "text": "使用频道 Shorts 页面的完整地址，格式为 https://youtube.com/@频道标识/shorts，下面以 @dailymoodvideo 为例。打开 ClipDock影随存的 Extract 页面，切换到 Batch（批量）分页，点击 Paste（粘贴）填入。确认地址末尾保留 /shorts。",
+        "title": "粘贴 Shorts 列表链接",
+        "text": "使用频道 Shorts 页面的完整地址，格式为 https://youtube.com/@频道标识/shorts，下面以 @dailymoodvideo 为例。打开影随存的“资源提取”（Extract）页面，切换到“批量”（Batch）分页，点击“粘贴”（Paste）填入。确认地址末尾保留 /shorts。",
         "exampleUrl": "https://youtube.com/@dailymoodvideo/shorts"
       },
       {
         "title": "加载 Shorts 视频列表",
-        "text": "点击 Load list（加载列表），等待 Loading list 提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
+        "text": "点击“加载列表”（Load list），等待“正在加载列表”（Loading list）提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
       },
       {
         "title": "选择视频并加入下载队列",
-        "text": "核对来源为 @dailymoodvideo，勾选需要的短视频，可使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。示例中已加载并选中 48 项，按钮显示 Add to queue (48)。"
+        "text": "核对来源为 @dailymoodvideo，勾选需要的短视频，可使用“全选已加载”（Select loaded）。设置“统一画质”（Batch quality），确认已选数量，再点击“加入下载队列”（Add to queue）。示例中已加载并选中 48 项，按钮显示“加入下载队列（48）”。"
       },
       {
         "title": "查看排队状态与下载进度",
-        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。"
+        "text": "打开“资源管理”（Manager）查看下载。“下载中”（Active）包含排队和正在处理的任务，“已完成”（Done）列出下载完成的文件，“失败”（Failed）是需要处理的失败任务。打开具体条目核对状态。"
       }
     ],
-    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。“资源管理”的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
   },
   "batch-download-youtube-hashtag-iphone": {
-    "title": "2026 年如何在 iPhone/iPad 上批量下载 YouTube Hashtag 话题视频？",
-    "description": "使用 YouTube Hashtag 话题链接，在 ClipDock影随存中加载视频列表、选择画质并创建批量下载任务，附 carmusic 链接格式示例。",
-    "intro": "Hashtag 批量下载的输入是 YouTube 话题页链接，适合集中保存同一话题下自己拥有或已获授权的视频，减少逐条复制视频链接的操作。",
+    "title": "如何批量下载 YouTube 话题视频？",
+    "description": "在 iPhone 和 iPad 上，使用 YouTube 话题链接，在影随存中加载视频列表、选择画质并创建批量下载任务，附 carmusic 链接格式示例。",
+    "intro": "话题批量下载的输入是 YouTube 话题页链接，适合集中保存同一话题下自己拥有或已获授权的视频，减少逐条复制视频链接的操作。",
     "tips": [
       {
         "title": "解析结果与话题页显示内容不同",
-        "text": "先确认链接中包含 /hashtag/，再检查话题名称、已加载页数和账号限制。实际返回列表不一定包含话题下的全部视频，Select loaded 只选择已加载资源，不要盲目重复提交整份列表。"
+        "text": "先确认链接中包含 /hashtag/，再检查话题名称、已加载页数和账号限制。实际返回列表不一定包含话题下的全部视频，“全选已加载”只选择已加载资源，不要盲目重复提交整份列表。"
       }
     ],
     "faq": [
       {
-        "question": "Hashtag 链接和频道、播放列表链接有什么区别？",
-        "answer": "Hashtag 链接对应话题页，可包含不同创作者的视频；频道链接对应创作者主页，播放列表链接对应特定集合。使用 https://youtube.com/hashtag/carmusic 这样的完整话题链接，不要只粘贴 #carmusic。"
+        "question": "话题链接和频道、播放列表链接有什么区别？",
+        "answer": "话题链接对应话题页，可包含不同创作者的视频；频道链接对应创作者主页，播放列表链接对应特定集合。使用 https://youtube.com/hashtag/carmusic 这样的完整话题链接，不要只粘贴 #carmusic。"
       },
       {
         "question": "批量完成后会自动进入相册吗？",
-        "answer": "可在 Download Settings 开启 Auto-Save Completed Downloads to Photos，自动保存支持的下载文件；否则在下载后手动选择 Save to Photos。保存需要相册访问权限和支持的格式。"
+        "answer": "可在“下载设置”开启“下载完成后自动保存到相册”，自动保存支持的下载文件；否则在下载后手动选择“保存到相册”。保存需要相册访问权限和支持的格式。"
       }
     ],
     "steps": [
       {
-        "title": "在 Batch 分页填入 Hashtag 链接",
-        "text": "YouTube 话题链接的格式是 https://youtube.com/hashtag/话题名称，下面以 carmusic 为例。打开 ClipDock影随存的 Extract 页面，切换到 Batch（批量）分页，点击 Paste（粘贴）填入完整链接。地址中的话题名称不需要加 #。",
+        "title": "粘贴话题链接",
+        "text": "YouTube 话题链接的格式是 https://youtube.com/hashtag/话题名称，下面以 carmusic 为例。打开影随存的“资源提取”（Extract）页面，切换到“批量”（Batch）分页，点击“粘贴”（Paste）填入完整链接。地址中的话题名称不需要加 #。",
         "exampleUrl": "https://youtube.com/hashtag/carmusic"
       },
       {
         "title": "加载话题视频列表",
-        "text": "点击 Load list（加载列表），等待 Loading list 提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
+        "text": "点击“加载列表”（Load list），等待“正在加载列表”（Loading list）提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
       },
       {
         "title": "选择视频并加入下载队列",
-        "text": "核对来源为 carmusic，勾选需要的视频，可使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。示例中已加载并选中 36 项，按钮显示 Add to queue (36)。"
+        "text": "核对来源为 carmusic，勾选需要的视频，可使用“全选已加载”（Select loaded）。设置“统一画质”（Batch quality），确认已选数量，再点击“加入下载队列”（Add to queue）。示例中已加载并选中 36 项，按钮显示“加入下载队列（36）”。"
       },
       {
         "title": "查看排队状态与下载进度",
-        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。"
+        "text": "打开“资源管理”（Manager）查看下载。“下载中”（Active）包含排队和正在处理的任务，“已完成”（Done）列出下载完成的文件，“失败”（Failed）是需要处理的失败任务。打开具体条目核对状态。"
       }
     ],
-    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。“资源管理”的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
   },
   "batch-download-youtube-channel-iphone": {
-    "title": "2026 年如何在 iPhone/iPad 上批量下载 YouTube 频道视频？",
-    "description": "取得 YouTube 频道链接，在 ClipDock影随存中解析多条视频、确认结果并创建批量任务，处理缺失条目和下载失败。",
+    "title": "如何批量下载 YouTube 频道视频？",
+    "description": "在 iPhone 和 iPad 上，取得 YouTube 频道链接，在影随存中解析多条视频、确认结果并创建批量任务，处理缺失条目和下载失败。",
     "intro": "频道批量下载的输入是创作者的频道主页，而不是其中某个视频。适合备份自己的频道作品或已获授权的视频，减少逐条复制视频链接的操作。",
     "tips": [
       {
         "title": "解析数量与频道显示数量不一致",
-        "text": "先检查已加载页数和账号限制，再确认是否有不可访问的作品。频道显示数量不等于本次实际可下载数量，Select loaded 只选择已加载资源，不要盲目重复提交整个频道。"
+        "text": "先检查已加载页数和账号限制，再确认是否有不可访问的作品。频道显示数量不等于本次实际可下载数量，“全选已加载”只选择已加载资源，不要盲目重复提交整个频道。"
       }
     ],
     "faq": [
@@ -226,36 +226,36 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "批量完成后会自动进入相册吗？",
-        "answer": "可在 Download Settings 开启 Auto-Save Completed Downloads to Photos，自动保存支持的下载文件；否则在下载后手动选择 Save to Photos。保存需要相册访问权限和支持的格式。"
+        "answer": "可在“下载设置”开启“下载完成后自动保存到相册”，自动保存支持的下载文件；否则在下载后手动选择“保存到相册”。保存需要相册访问权限和支持的格式。"
       }
     ],
     "steps": [
       {
         "title": "复制 YouTube 频道链接",
-        "text": "打开需要下载的 YouTube 频道主页，使用分享功能，在分享面板点击 Copy link（复制链接）。示例频道为 @fashion-house-mafia，确认复制的是频道链接，而不是某个视频或播放列表的地址。"
+        "text": "打开需要下载的 YouTube 频道主页，使用分享功能，在分享面板点击“复制链接”（Copy link）。示例频道为 @fashion-house-mafia，确认复制的是频道链接，而不是某个视频或播放列表的地址。"
       },
       {
-        "title": "在 Batch 分页填入频道链接",
-        "text": "打开 ClipDock影随存的 Extract 页面，切换到 Batch（批量）分页，点击 Paste（粘贴）填入频道链接。免费版可加载前 2 页，加载更多需要付费 VIP，具体以 App 内显示为准。"
+        "title": "粘贴频道链接",
+        "text": "打开影随存的“资源提取”（Extract）页面，切换到“批量”（Batch）分页，点击“粘贴”（Paste）填入频道链接。免费版可加载前 2 页，加载更多需要付费 VIP，具体以 App 内显示为准。"
       },
       {
         "title": "加载频道视频列表",
-        "text": "点击 Load list（加载列表），等待 Loading list 提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
+        "text": "点击“加载列表”（Load list），等待“正在加载列表”（Loading list）提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
       },
       {
         "title": "选择视频并加入下载队列",
-        "text": "核对来源并勾选需要的视频或图片，可按类型筛选或使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。"
+        "text": "核对来源并勾选需要的视频或图片，可按类型筛选或使用“全选已加载”（Select loaded）。设置“统一画质”（Batch quality），确认已选数量，再点击“加入下载队列”（Add to queue）。"
       },
       {
         "title": "查看排队状态与下载进度",
-        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。"
+        "text": "打开“资源管理”（Manager）查看下载。“下载中”（Active）包含排队和正在处理的任务，“已完成”（Done）列出下载完成的文件，“失败”（Failed）是需要处理的失败任务。打开具体条目核对状态。"
       }
     ],
-    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。“资源管理”的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
   },
   "download-youtube-playlist-iphone": {
-    "title": "2026 年如何在 iPhone/iPad 上批量下载 YouTube 播放列表？",
-    "description": "取得 YouTube 播放列表链接，在 ClipDock影随存中解析多条视频、确认结果并创建批量任务，处理缺失条目和下载失败。",
+    "title": "如何批量下载 YouTube 播放列表？",
+    "description": "在 iPhone 和 iPad 上，取得 YouTube 播放列表链接，在影随存中解析多条视频、确认结果并创建批量任务，处理缺失条目和下载失败。",
     "intro": "播放列表批量下载的输入是一份列表，而不是其中某个视频。适合备份自己的系列作品或已获授权的课程片段，减少逐条复制视频链接的操作。",
     "tips": [
       {
@@ -270,33 +270,33 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "批量完成后会自动进入相册吗？",
-        "answer": "可在 Download Settings 开启 Auto-Save Completed Downloads to Photos，自动保存支持的下载文件；否则在下载后手动选择 Save to Photos。保存需要相册访问权限和支持的格式。"
+        "answer": "可在“下载设置”开启“下载完成后自动保存到相册”，自动保存支持的下载文件；否则在下载后手动选择“保存到相册”。保存需要相册访问权限和支持的格式。"
       }
     ],
     "steps": [
       {
-        "title": "在 Batch 分页填入播放列表链接",
-        "text": "复制 YouTube 播放列表的分享链接，打开 ClipDock影随存的 Extract 页面，切换到 Batch（批量）分页，点击 Paste（粘贴）填入。确认使用的是播放列表链接，而不是单个视频的地址。"
+        "title": "粘贴播放列表链接",
+        "text": "复制 YouTube 播放列表的分享链接，打开影随存的“资源提取”（Extract）页面，切换到“批量”（Batch）分页，点击“粘贴”（Paste）填入。确认使用的是播放列表链接，而不是单个视频的地址。"
       },
       {
         "title": "加载播放列表",
-        "text": "点击 Load list（加载列表），等待 Loading list 提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
+        "text": "点击“加载列表”（Load list），等待“正在加载列表”（Loading list）提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
       },
       {
         "title": "选择视频并加入下载队列",
-        "text": "核对来源并勾选需要的视频或图片，可按类型筛选或使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。"
+        "text": "核对来源并勾选需要的视频或图片，可按类型筛选或使用“全选已加载”（Select loaded）。设置“统一画质”（Batch quality），确认已选数量，再点击“加入下载队列”（Add to queue）。"
       },
       {
         "title": "查看排队状态与下载进度",
-        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。"
+        "text": "打开“资源管理”（Manager）查看下载。“下载中”（Active）包含排队和正在处理的任务，“已完成”（Done）列出下载完成的文件，“失败”（Failed）是需要处理的失败任务。打开具体条目核对状态。"
       }
     ],
-    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。“资源管理”的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
   },
   "batch-download-instagram-profile-iphone": {
-    "title": "如何在 iPhone 和 iPad 上批量下载 Instagram 主页视频与图片？",
-    "description": "批量保存同一位Instagram作者的作品：复制主页链接，在 Batch 中加载列表，再选择需要的媒体下载。",
-    "intro": "批量保存同一位Instagram作者的作品：复制主页链接，在 Batch 中加载列表，再选择需要的媒体下载。",
+    "title": "如何批量下载 Instagram 主页作品？",
+    "description": "在 iPhone 和 iPad 上，批量保存同一位 Instagram 作者的作品：复制主页链接，在“批量”中加载列表，再选择需要的媒体下载。",
+    "intro": "批量保存同一位 Instagram 作者的作品：复制主页链接，在“批量”中加载列表，再选择需要的媒体下载。",
     "tips": [
       {
         "title": "先核对已加载范围",
@@ -306,73 +306,73 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "只下载视频，可以不下载图片吗？",
-        "answer": "使用 Video 筛选，再核对已选条目和 Add to queue 的数量后提交。"
+        "answer": "使用“视频”筛选，再核对已选条目和“加入下载队列”的数量后提交。"
       },
       {
-        "question": "点击 Load list 就会下载吗？",
-        "answer": "不会。加载后还需要选择条目，并点击 Add to queue 才会加入下载队列。"
+        "question": "点击加载列表就会下载吗？",
+        "answer": "不会。加载后还需要选择条目，并点击“加入下载队列”才会加入下载队列。"
       },
       {
         "question": "为什么显示 12 posts，却有 16 items？",
         "answer": "帖子与媒体资源不是同一计数单位，多图帖子可以包含多项图片资源。实际下载数量看选中项和加入队列按钮。"
       },
       {
-        "question": "截图中的 Unlimited 代表所有用户都不限量吗？",
+        "question": "截图中的不限量代表所有用户都不限量吗？",
         "answer": "不是。请以自己账号显示的下载额度和限制为准。"
       }
     ],
     "steps": [
       {
         "title": "复制 Instagram 主页链接",
-        "text": "在 Instagram 打开目标作者的个人主页，点击右上角省略号，在菜单中选择 Copy profile URL（复制主页链接）。这里需要作者主页地址；只下载某一条 Reels 时，可使用单条视频教程。"
+        "text": "在 Instagram 打开目标作者的个人主页，点击右上角省略号，在菜单中选择“复制主页链接”（Copy profile URL）。这里需要作者主页地址；只下载某一条 Reels 时，可使用单条视频教程。"
       },
       {
-        "title": "在 Batch 分页粘贴链接",
-        "text": "打开 ClipDock 的 Extract（提取）→ Batch（批量），点击 Paste（粘贴），确认是目标Instagram主页链接。"
+        "title": "粘贴链接",
+        "text": "打开影随存，进入“资源提取”（Extract）的“批量”（Batch）页，点击“粘贴”（Paste），确认是目标 Instagram 主页链接。"
       },
       {
         "title": "加载主页作品列表",
-        "text": "点击 Load list（加载列表），等待 Loading list（正在加载列表）提示结束。加载列表只是获取可供选择的作品，还不会开始下载；下一步确认选择并加入队列后才会创建下载任务。"
+        "text": "点击“加载列表”（Load list），等待“正在加载列表”（Loading list）提示结束。加载列表只是获取可供选择的作品，还不会开始下载；下一步确认选择并加入队列后才会创建下载任务。"
       },
       {
         "title": "筛选资源并加入下载队列",
-        "text": "核对来源并勾选需要的视频或图片，可按类型筛选或使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。",
+        "text": "核对来源并勾选需要的视频或图片，可按类型筛选或使用“全选已加载”（Select loaded）。设置“统一画质”（Batch quality），确认已选数量，再点击“加入下载队列”（Add to queue）。",
         "sections": [
           {
-            "title": "All、Video、Image：按媒体类型筛选",
-            "text": "All 显示全部类型，Video 筛选视频，Image 筛选图片。只需要视频时切换 Video，并在提交前核对条目勾选状态和总选择数，避免将不需要的图片一起加入队列。"
+            "title": "全部、视频、图片：按媒体类型筛选",
+            "text": "“全部”（All）显示全部类型，“视频”（Video）筛选视频，“图片”（Image）筛选图片。只需要视频时切换“视频”，并在提交前核对条目勾选状态和总选择数，避免将不需要的图片一起加入队列。"
           },
           {
             "title": "帖子数与资源数为什么不同？",
             "text": "一条帖子可以包含多个媒体文件。例如，多图帖子会让资源数大于帖子数。下载前请核对已选数量。"
           },
           {
-            "title": "逐项选择与 Select loaded",
-            "text": "条目右侧的蓝色勾选表示已选中，可按需调整。Select loaded 用于选择已加载的条目；以页面显示的选择数量为准。Change link 可用于更换主页链接。"
+            "title": "逐项选择与全选已加载",
+            "text": "条目右侧的蓝色勾选表示已选中，可按需调整。“全选已加载”用于选择已加载的条目；以页面显示的选择数量为准。“更换链接”（Change link）可用于更换主页链接。"
           },
           {
-            "title": "Batch quality：批量画质",
-            "text": "Follow download settings 使用下载设置中的画质偏好。点击 Batch quality 查看可用选项，确认选择后再加入队列。"
+            "title": "统一画质：批量画质",
+            "text": "“跟随下载设置”（Follow download settings）使用下载设置中的画质偏好。点击“统一画质”查看可用选项，确认选择后再加入队列。"
           }
         ]
       },
       {
-        "title": "在 Manager 检查任务状态",
-        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。",
+        "title": "在“资源管理”中检查任务状态",
+        "text": "打开“资源管理”（Manager）查看下载。“下载中”（Active）包含排队和正在处理的任务，“已完成”（Done）列出下载完成的文件，“失败”（Failed）是需要处理的失败任务。打开具体条目核对状态。",
         "sections": [
           {
             "title": "排队不等于下载完成",
-            "text": "Queued 表示排队等待。到 Done 预览已完成文件，到 Failed 查看具体错误。如果文件未自动保存，使用 Save to Photos 保留相册副本。"
+            "text": "“等待下载”（Queued）表示排队等待。到“已完成”预览已完成文件，到“失败”查看具体错误。如果文件未自动保存，使用“保存到相册”（Save to Photos）保留相册副本。"
           }
         ]
       }
     ],
-    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。“资源管理”的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
   },
   "batch-download-tiktok-profile-iphone": {
-    "title": "如何在 iPhone 和 iPad 上批量下载 TikTok 主页视频？",
-    "description": "批量保存同一位TikTok作者的作品：复制主页链接，在 Batch 中加载列表，再选择需要的媒体下载。",
-    "intro": "批量保存同一位TikTok作者的作品：复制主页链接，在 Batch 中加载列表，再选择需要的媒体下载。",
+    "title": "如何批量下载 TikTok 主页视频？",
+    "description": "在 iPhone 和 iPad 上，批量保存同一位 TikTok 作者的作品：复制主页链接，在“批量”中加载列表，再选择需要的媒体下载。",
+    "intro": "批量保存同一位 TikTok 作者的作品：复制主页链接，在“批量”中加载列表，再选择需要的媒体下载。",
     "tips": [
       {
         "title": "先选择需要的作品",
@@ -382,59 +382,59 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "加载主页列表就会开始下载吗？",
-        "answer": "不会。需要选中资源，核对画质和数量，再点击 Add to queue。"
+        "answer": "不会。需要选中资源，核对画质和数量，再点击“加入下载队列”。"
       },
       {
         "question": "主页上的所有作品都会出现在列表里吗？",
         "answer": "不保证。以实际加载的资源为准，不把列表视为全部历史内容或受限内容的完整备份。"
       },
       {
-        "question": "为什么有些条目只显示 Resource？",
+        "question": "为什么有些条目只显示资源？",
         "answer": "有些条目使用通用标题。可结合缩略图、媒体类型和日期辨认，下载后再预览文件。"
       }
     ],
     "steps": [
       {
         "title": "复制作者主页链接",
-        "text": "在 TikTok 打开目标作者主页，点击右上角分享箭头，在 Send to（发送至）面板中点击 Copy link（复制链接）。这里复制的是作者主页，不是单条视频链接。"
+        "text": "在 TikTok 打开目标作者主页，点击右上角分享箭头，在“发送至”（Send to）面板中点击“复制链接”（Copy link）。这里复制的是作者主页，不是单条视频链接。"
       },
       {
-        "title": "在 Batch 分页粘贴主页地址",
-        "text": "打开 ClipDock 的 Extract（提取）→ Batch（批量），点击 Paste（粘贴），确认是目标TikTok主页链接。"
+        "title": "粘贴主页地址",
+        "text": "打开影随存，进入“资源提取”（Extract）的“批量”（Batch）页，点击“粘贴”（Paste），确认是目标 TikTok 主页链接。"
       },
       {
         "title": "加载列表并等待结果",
-        "text": "点击 Load list（加载列表），等待 Loading list（正在加载列表）结束。这个阶段只加载可选择的资源，还没有开始下载；需要在下一步确认条目并点击 Add to queue。"
+        "text": "点击“加载列表”（Load list），等待“正在加载列表”（Loading list）结束。这个阶段只加载可选择的资源，还没有开始下载；需要在下一步确认条目并点击“加入下载队列”（Add to queue）。"
       },
       {
         "title": "选择资源、画质并加入队列",
-        "text": "核对来源并勾选需要的视频或图片，可按类型筛选或使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。",
+        "text": "核对来源并勾选需要的视频或图片，可按类型筛选或使用“全选已加载”（Select loaded）。设置“统一画质”（Batch quality），确认已选数量，再点击“加入下载队列”。",
         "sections": [
           {
-            "title": "All、Video、Image：筛选媒体类型",
-            "text": "All 查看全部资源，Video 查看视频，Image 查看图片。需要只下载视频时先切换 Video，再核对勾选状态和提交数量。条目右侧蓝色勾选表示已选中，可按需调整。"
+            "title": "全部、视频、图片：筛选媒体类型",
+            "text": "“全部”（All）查看全部资源，“视频”（Video）查看视频，“图片”（Image）查看图片。需要只下载视频时先切换“视频”，再核对勾选状态和提交数量。条目右侧蓝色勾选表示已选中，可按需调整。"
           },
           {
-            "title": "Select loaded 与已加载范围",
-            "text": "Select loaded 用于选择已加载的条目。posts 是帖子数，items 是资源数，一个帖子可能包含多项媒体，因此两者不一定相同。当前列表不等于作者的全部历史作品；要更换作者可点击 Change link。"
+            "title": "全选已加载与已加载范围",
+            "text": "“全选已加载”用于选择已加载的条目。posts 是帖子数，items 是资源数，一个帖子可能包含多项媒体，因此两者不一定相同。当前列表不等于作者的全部历史作品；要更换作者可点击“更换链接”（Change link）。"
           },
           {
-            "title": "Batch quality：批量画质",
-            "text": "Follow download settings 使用下载设置中的画质偏好。点击 Batch quality 查看可用选项，确认选择后再加入队列。"
+            "title": "统一画质：批量画质",
+            "text": "“跟随下载设置”（Follow download settings）使用下载设置中的画质偏好。点击“统一画质”查看可用选项，确认选择后再加入队列。"
           },
           {
             "title": "数量与账号限制以界面为准",
-            "text": "提交前检查已选数量和账号可用下载额度。posts 是帖子数，items 是媒体文件数，两者可能不同。更换来源时，点击 Change link。"
+            "text": "提交前检查已选数量和账号可用下载额度。posts 是帖子数，items 是媒体文件数，两者可能不同。更换来源时，点击“更换链接”。"
           }
         ]
       },
       {
         "title": "查看下载进度和失败任务",
-        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。",
+        "text": "打开“资源管理”（Manager）查看下载。“下载中”（Active）包含排队和正在处理的任务，“已完成”（Done）列出下载完成的文件，“失败”（Failed）是需要处理的失败任务。打开具体条目核对状态。",
         "sections": [
           {
             "title": "排队、下载中与已完成",
-            "text": "Queued 表示排队等待。到 Done 预览已完成文件，到 Failed 查看具体错误。如果文件未自动保存，使用 Save to Photos 保留相册副本。"
+            "text": "“等待下载”（Queued）表示排队等待。到“已完成”预览已完成文件，到“失败”查看具体错误。如果文件未自动保存，使用“保存到相册”（Save to Photos）保留相册副本。"
           },
           {
             "title": "有失败条目时怎么检查",
@@ -443,12 +443,12 @@ export const copy: Record<string, TutorialCopy> = {
         ]
       }
     ],
-    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。“资源管理”的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
   },
   "batch-download-douyin-profile-iphone": {
-    "title": "如何在 iPhone 和 iPad 上批量下载抖音主页视频？",
-    "description": "批量保存同一位抖音作者的作品：复制主页链接，在 Batch 中加载列表，再选择需要的媒体下载。",
-    "intro": "批量保存同一位抖音作者的作品：复制主页链接，在 Batch 中加载列表，再选择需要的媒体下载。本篇借用 TikTok 配图说明步骤，并非抖音实测记录；请使用自己的抖音主页链接。",
+    "title": "如何批量下载抖音主页视频？",
+    "description": "在 iPhone 和 iPad 上，批量保存同一位抖音作者的作品：复制主页链接，在“批量”中加载列表，再选择需要的媒体下载。",
+    "intro": "批量保存同一位抖音作者的作品：复制主页链接，在“批量”中加载列表，再选择需要的媒体下载。本篇借用 TikTok 配图说明步骤，并非抖音实测记录；请使用自己的抖音主页链接。",
     "tips": [
       {
         "title": "先选择需要的作品",
@@ -458,14 +458,14 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "加载主页列表就会开始下载吗？",
-        "answer": "不会。需要选中资源，核对画质和数量，再点击 Add to queue。"
+        "answer": "不会。需要选中资源，核对画质和数量，再点击“加入下载队列”。"
       },
       {
         "question": "主页上的所有作品都会出现在列表里吗？",
         "answer": "不保证。以实际加载的资源为准，不把列表视为全部历史内容或受限内容的完整备份。"
       },
       {
-        "question": "为什么有些条目只显示 Resource？",
+        "question": "为什么有些条目只显示资源？",
         "answer": "有些条目使用通用标题。可结合缩略图、媒体类型和日期辨认，下载后再预览文件。"
       }
     ],
@@ -475,42 +475,42 @@ export const copy: Record<string, TutorialCopy> = {
         "text": "在抖音打开作者主页，通过主页分享菜单复制链接。"
       },
       {
-        "title": "在 Batch 分页粘贴主页地址",
-        "text": "打开 ClipDock 的 Extract（提取）→ Batch（批量），点击 Paste（粘贴），确认是目标抖音主页链接。"
+        "title": "粘贴主页地址",
+        "text": "打开影随存，进入“资源提取”（Extract）的“批量”（Batch）页，点击“粘贴”（Paste），确认是目标抖音主页链接。"
       },
       {
         "title": "加载列表并等待结果",
-        "text": "点击 Load list（加载列表），等待 Loading list（正在加载列表）结束。这个阶段只加载可选择的资源，还没有开始下载；需要在下一步确认条目并点击 Add to queue。"
+        "text": "点击“加载列表”（Load list），等待“正在加载列表”（Loading list）结束。这个阶段只加载可选择的资源，还没有开始下载；需要在下一步确认条目并点击“加入下载队列”（Add to queue）。"
       },
       {
         "title": "选择资源、画质并加入队列",
-        "text": "核对来源并勾选需要的视频或图片，可按类型筛选或使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。",
+        "text": "核对来源并勾选需要的视频或图片，可按类型筛选或使用“全选已加载”（Select loaded）。设置“统一画质”（Batch quality），确认已选数量，再点击“加入下载队列”。",
         "sections": [
           {
-            "title": "All、Video、Image：筛选媒体类型",
-            "text": "All 查看全部资源，Video 查看视频，Image 查看图片。需要只下载视频时先切换 Video，再核对勾选状态和提交数量。条目右侧蓝色勾选表示已选中，可按需调整。"
+            "title": "全部、视频、图片：筛选媒体类型",
+            "text": "“全部”（All）查看全部资源，“视频”（Video）查看视频，“图片”（Image）查看图片。需要只下载视频时先切换“视频”，再核对勾选状态和提交数量。条目右侧蓝色勾选表示已选中，可按需调整。"
           },
           {
-            "title": "Select loaded 与已加载范围",
-            "text": "Select loaded 用于选择已加载的条目。posts 是帖子数，items 是资源数，一个帖子可能包含多项媒体，因此两者不一定相同。当前列表不等于作者的全部历史作品；要更换作者可点击 Change link。"
+            "title": "全选已加载与已加载范围",
+            "text": "“全选已加载”用于选择已加载的条目。posts 是帖子数，items 是资源数，一个帖子可能包含多项媒体，因此两者不一定相同。当前列表不等于作者的全部历史作品；要更换作者可点击“更换链接”（Change link）。"
           },
           {
-            "title": "Batch quality：批量画质",
-            "text": "Follow download settings 使用下载设置中的画质偏好。点击 Batch quality 查看可用选项，确认选择后再加入队列。"
+            "title": "统一画质：批量画质",
+            "text": "“跟随下载设置”（Follow download settings）使用下载设置中的画质偏好。点击“统一画质”查看可用选项，确认选择后再加入队列。"
           },
           {
             "title": "数量与账号限制以界面为准",
-            "text": "提交前检查已选数量和账号可用下载额度。posts 是帖子数，items 是媒体文件数，两者可能不同。更换来源时，点击 Change link。"
+            "text": "提交前检查已选数量和账号可用下载额度。posts 是帖子数，items 是媒体文件数，两者可能不同。更换来源时，点击“更换链接”。"
           }
         ]
       },
       {
         "title": "查看下载进度和失败任务",
-        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。",
+        "text": "打开“资源管理”（Manager）查看下载。“下载中”（Active）包含排队和正在处理的任务，“已完成”（Done）列出下载完成的文件，“失败”（Failed）是需要处理的失败任务。打开具体条目核对状态。",
         "sections": [
           {
             "title": "排队、下载中与已完成",
-            "text": "Queued 表示排队等待。到 Done 预览已完成文件，到 Failed 查看具体错误。如果文件未自动保存，使用 Save to Photos 保留相册副本。"
+            "text": "“等待下载”（Queued）表示排队等待。到“已完成”预览已完成文件，到“失败”查看具体错误。如果文件未自动保存，使用“保存到相册”（Save to Photos）保留相册副本。"
           },
           {
             "title": "有失败条目时怎么检查",
@@ -519,12 +519,12 @@ export const copy: Record<string, TutorialCopy> = {
         ]
       }
     ],
-    "exampleNote": "本篇复用 TikTok 配图，图中的账号、链接和数量并非抖音实测记录。截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+    "exampleNote": "本篇复用 TikTok 配图，图中的账号、链接和数量并非抖音实测记录。截图展示队列运行状态，未展示全部下载完成或相册保存成功。“资源管理”的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
   },
   "batch-download-weibo-profile-iphone": {
-    "title": "如何在 iPhone 和 iPad 上批量下载微博主页视频？",
-    "description": "批量保存同一位微博作者的作品：复制主页链接，在 Batch 中加载列表，再选择需要的媒体下载。",
-    "intro": "批量保存同一位微博作者的作品：复制主页链接，在 Batch 中加载列表，再选择需要的媒体下载。",
+    "title": "如何批量下载微博主页视频？",
+    "description": "在 iPhone 和 iPad 上，批量保存同一位微博作者的作品：复制主页链接，在“批量”中加载列表，再选择需要的媒体下载。",
+    "intro": "批量保存同一位微博作者的作品：复制主页链接，在“批量”中加载列表，再选择需要的媒体下载。",
     "tips": [
       {
         "title": "分批核对下载范围",
@@ -534,15 +534,15 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "为什么列表只有 16 项？",
-        "answer": "列表最初只显示已加载页的内容。若有更多作品，可使用 Load next page 继续加载。"
+        "answer": "列表最初只显示已加载页的内容。若有更多作品，可使用“加载下一页”继续加载。"
       },
       {
         "question": "点击加载下一页就会下载吗？",
-        "answer": "加载列表与下载是两个阶段。确认已选条目后，需要点击 Add to queue 才会加入下载队列。"
+        "answer": "加载列表与下载是两个阶段。确认已选条目后，需要点击“加入下载队列”才会加入下载队列。"
       },
       {
         "question": "可以只下载部分视频吗？",
-        "answer": "可以按需调整条目勾选状态。使用 Video 筛选后，也应核对总选择数和 Add to queue 的数量再提交。"
+        "answer": "可以按需调整条目勾选状态。使用“视频”筛选后，也应核对总选择数和“加入下载队列”的数量再提交。"
       }
     ],
     "steps": [
@@ -551,42 +551,42 @@ export const copy: Record<string, TutorialCopy> = {
         "text": "在微博打开作者主页，展开分享菜单并选择复制链接。请复制主页地址，而不是单条微博。"
       },
       {
-        "title": "在 Batch 中粘贴主页地址",
-        "text": "打开 ClipDock 的 Extract（提取）→ Batch（批量），点击 Paste（粘贴），确认是目标微博主页链接。"
+        "title": "粘贴主页地址",
+        "text": "打开影随存，进入“资源提取”（Extract）的“批量”（Batch）页，点击“粘贴”（Paste），确认是目标微博主页链接。"
       },
       {
         "title": "加载列表并等待返回",
-        "text": "点击 Load list（加载列表），页面出现 Loading list（正在加载列表）时等待返回。加载列表不会直接开始下载，之后还需要选择资源并点击 Add to queue（加入队列）。"
+        "text": "点击“加载列表”（Load list），页面出现“正在加载列表”（Loading list）时等待返回。加载列表不会直接开始下载，之后还需要选择资源并点击“加入下载队列”（Add to queue）。"
       },
       {
         "title": "选择视频，按需加载下一页",
-        "text": "核对来源并勾选需要的视频或图片，可按类型筛选或使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。",
+        "text": "核对来源并勾选需要的视频或图片，可按类型筛选或使用“全选已加载”（Select loaded）。设置“统一画质”（Batch quality），确认已选数量，再点击“加入下载队列”。",
         "sections": [
           {
-            "title": "Load next page：继续查看更多作品",
-            "text": "点击 Load next page 加载更多条目，再检查新内容和已选数量。已加载列表不一定包含全部历史或受限作品。"
+            "title": "加载下一页：继续查看更多作品",
+            "text": "点击“加载下一页”（Load next page）加载更多条目，再检查新内容和已选数量。已加载列表不一定包含全部历史或受限作品。"
           },
           {
             "title": "筛选与勾选需要的资源",
-            "text": "All 显示全部类型，Video 筛选视频，Image 筛选图片。条目右侧蓝色勾选表示已选中；Select loaded 用于选择已加载条目。只需要部分视频时调整勾选，再核对底部按钮中的数量。"
+            "text": "“全部”（All）显示全部类型，“视频”（Video）筛选视频，“图片”（Image）筛选图片。条目右侧蓝色勾选表示已选中；“全选已加载”用于选择已加载条目。只需要部分视频时调整勾选，再核对底部按钮中的数量。"
           },
           {
             "title": "批量画质与加入队列",
-            "text": "Follow download settings 使用下载设置中的画质偏好。点击 Batch quality 查看可用选项，确认选择后再加入队列。"
+            "text": "“跟随下载设置”（Follow download settings）使用下载设置中的画质偏好。点击“统一画质”查看可用选项，确认选择后再加入队列。"
           },
           {
             "title": "帖子数、资源数与使用限制",
-            "text": "提交前检查已选数量和账号可用下载额度。posts 是帖子数，items 是媒体文件数，两者可能不同。更换来源时，点击 Change link。"
+            "text": "提交前检查已选数量和账号可用下载额度。posts 是帖子数，items 是媒体文件数，两者可能不同。更换来源时，点击“更换链接”（Change link）。"
           }
         ]
       },
       {
-        "title": "在 Manager 查看下载队列",
-        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。",
+        "title": "在“资源管理”中查看下载队列",
+        "text": "打开“资源管理”（Manager）查看下载。“下载中”（Active）包含排队和正在处理的任务，“已完成”（Done）列出下载完成的文件，“失败”（Failed）是需要处理的失败任务。打开具体条目核对状态。",
         "sections": [
           {
             "title": "完成后预览并保存",
-            "text": "Queued 表示排队等待。到 Done 预览已完成文件，到 Failed 查看具体错误。如果文件未自动保存，使用 Save to Photos 保留相册副本。"
+            "text": "“等待下载”（Queued）表示排队等待。到“已完成”预览已完成文件，到“失败”查看具体错误。如果文件未自动保存，使用“保存到相册”（Save to Photos）保留相册副本。"
           },
           {
             "title": "检查失败条目",
@@ -595,12 +595,12 @@ export const copy: Record<string, TutorialCopy> = {
         ]
       }
     ],
-    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。“资源管理”的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
   },
   "batch-download-bilibili-profile-iphone": {
-    "title": "如何在 iPhone 和 iPad 上批量下载 Bilibili（B 站）UP 主视频？",
-    "description": "批量保存同一位B 站作者的作品：复制主页链接，在 Batch 中加载列表，再选择需要的媒体下载。",
-    "intro": "批量保存同一位B 站作者的作品：复制主页链接，在 Batch 中加载列表，再选择需要的媒体下载。",
+    "title": "如何批量下载 B 站 UP 主视频？",
+    "description": "在 iPhone 和 iPad 上，批量保存同一位 B 站作者的作品：复制主页链接，在“批量”中加载列表，再选择需要的媒体下载。",
+    "intro": "批量保存同一位 B 站作者的作品：复制主页链接，在“批量”中加载列表，再选择需要的媒体下载。",
     "tips": [
       {
         "title": "按实际列表选择作品",
@@ -614,7 +614,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "为什么只有 20 项资源？",
-        "answer": "本例当前只加载了一页，列表底部提供 Load next page，可以继续加载并查看实际返回的资源。"
+        "answer": "本例当前只加载了一页，列表底部提供“加载下一页”，可以继续加载并查看实际返回的资源。"
       },
       {
         "question": "这篇也演示了合集、收藏夹或多 P 视频吗？",
@@ -622,7 +622,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "一定能下载最高画质吗？",
-        "answer": "不保证。可用画质取决于链接返回的媒体，请在加入队列前检查 Batch quality。"
+        "answer": "不保证。可用画质取决于链接返回的媒体，请在加入队列前检查“统一画质”。"
       }
     ],
     "steps": [
@@ -631,8 +631,8 @@ export const copy: Record<string, TutorialCopy> = {
         "text": "在 B 站打开 UP 主主页，通过分享菜单复制链接。确认分享的是主页，而不是单条视频。"
       },
       {
-        "title": "在 Batch 中粘贴主页短链接",
-        "text": "打开 ClipDock 的 Extract（提取）→ Batch（批量），点击 Paste（粘贴），确认是目标B 站主页链接。",
+        "title": "粘贴主页短链接",
+        "text": "打开影随存，进入“资源提取”（Extract）的“批量”（Batch）页，点击“粘贴”（Paste），确认是目标 B 站主页链接。",
         "sections": [
           {
             "title": "短链接也要核对来源",
@@ -642,33 +642,33 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "加载投稿列表",
-        "text": "点击 Load list（加载列表），等待 Loading list（正在加载列表）提示结束。加载只获取可选择的资源，不会立即开始下载；还需要在列表中确认条目并加入队列。"
+        "text": "点击“加载列表”（Load list），等待“正在加载列表”（Loading list）提示结束。加载只获取可选择的资源，不会立即开始下载；还需要在列表中确认条目并加入队列。"
       },
       {
         "title": "选择视频并按需加载下一页",
-        "text": "核对来源并勾选需要的视频或图片，可按类型筛选或使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。",
+        "text": "核对来源并勾选需要的视频或图片，可按类型筛选或使用“全选已加载”（Select loaded）。设置“统一画质”（Batch quality），确认已选数量，再点击“加入下载队列”（Add to queue）。",
         "sections": [
           {
-            "title": "Load next page：查看更多投稿",
-            "text": "点击 Load next page 加载更多条目，再检查新内容和已选数量。已加载列表不一定包含全部历史或受限作品。"
+            "title": "加载下一页：查看更多投稿",
+            "text": "点击“加载下一页”（Load next page）加载更多条目，再检查新内容和已选数量。已加载列表不一定包含全部历史或受限作品。"
           },
           {
             "title": "筛选和勾选下载范围",
-            "text": "All 查看全部类型，Video 筛选视频，Image 筛选图片。右侧蓝色勾选表示已选中，可以按需调整；Select loaded 用于选择已加载条目。提交前检查总选择数，避免下载不需要的资源。"
+            "text": "“全部”（All）查看全部类型，“视频”（Video）筛选视频，“图片”（Image）筛选图片。右侧蓝色勾选表示已选中，可以按需调整；“全选已加载”用于选择已加载条目。提交前检查总选择数，避免下载不需要的资源。"
           },
           {
-            "title": "Batch quality：批量画质",
-            "text": "Follow download settings 使用下载设置中的画质偏好。点击 Batch quality 查看可用选项，确认选择后再加入队列。"
+            "title": "统一画质：批量画质",
+            "text": "“跟随下载设置”（Follow download settings）使用下载设置中的画质偏好。点击“统一画质”查看可用选项，确认选择后再加入队列。"
           },
           {
             "title": "核对账号与数量",
-            "text": "提交前检查已选数量和账号可用下载额度。posts 是帖子数，items 是媒体文件数，两者可能不同。更换来源时，点击 Change link。"
+            "text": "提交前检查已选数量和账号可用下载额度。posts 是帖子数，items 是媒体文件数，两者可能不同。更换来源时，点击“更换链接”（Change link）。"
           }
         ]
       },
       {
         "title": "查看下载队列与完成结果",
-        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。",
+        "text": "打开“资源管理”（Manager）查看下载。“下载中”（Active）包含排队和正在处理的任务，“已完成”（Done）列出下载完成的文件，“失败”（Failed）是需要处理的失败任务。打开具体条目核对状态。",
         "sections": [
           {
             "title": "长视频先确认下载范围",
@@ -676,11 +676,11 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "完成后预览与保存",
-            "text": "Queued 表示排队等待。到 Done 预览已完成文件，到 Failed 查看具体错误。如果文件未自动保存，使用 Save to Photos 保留相册副本。"
+            "text": "“等待下载”（Queued）表示排队等待。到“已完成”预览已完成文件，到“失败”查看具体错误。如果文件未自动保存，使用“保存到相册”（Save to Photos）保留相册副本。"
           }
         ]
       }
     ],
-    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。“资源管理”的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
   }
 };

@@ -2,7 +2,7 @@ import type { UiLabels } from "@/types/content";
 import { sharedStoreData, type LocalizedLandingContent } from "../shared/landing";
 const zhHansAppPreview = {
 	...sharedStoreData.appPreview,
-	ariaLabel: "ClipDock影随存 iPhone App 预览视频",
+	ariaLabel: "ClipDock 影随存 iPhone App 预览视频",
 };
 
 const zhHansLabels: UiLabels = {
@@ -31,13 +31,13 @@ const zhHansLabels: UiLabels = {
 export const landing: LocalizedLandingContent = {
 		locale: "zh-Hans",
 		htmlLang: "zh-Hans",
-		name: "ClipDock影随存",
-		shortName: "ClipDock影随存",
+		name: "ClipDock 影随存",
+		shortName: "ClipDock 影随存",
 		description:
 			"从支持的分享链接中提取、后台下载、保存和整理视频，并使用实用工具处理视频文件。",
-		seoTitle: "ClipDock影随存｜iPhone 与 iPad 网页视频下载器",
+		seoTitle: "ClipDock 影随存｜iPhone 与 iPad 网页视频下载器",
 		metaDescription:
-			"使用 ClipDock影随存从支持的网址和分享链接提取、下载、保存、整理并处理视频，支持 iPhone 与 iPad。",
+			"使用 ClipDock 影随存从支持的网址和分享链接提取、下载、保存、整理并处理视频，支持 iPhone 与 iPad。",
 		keywords: [
 			"ClipDock",
 			"影随存",

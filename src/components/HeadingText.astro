@@ -1,0 +1,19 @@
+---
+import { headingParts } from "@/lib/heading-parts";
+import type { Locale } from "@/i18n/locales";
+
+interface Props { text: string; locale: Locale }
+const { text, locale } = Astro.props;
+const lines = text.split("\n").map(headingParts);
+---
+{locale === "zh-Hans" ? (
+	<Fragment>{lines.map((parts, index) => (
+		<Fragment>{index > 0 && <br />}{parts.map((part, wordIndex) => (
+			<Fragment>{wordIndex > 0 && /\s$/.test(parts[wordIndex - 1]) && <wbr />}<span class="heading-word">{part}</span></Fragment>
+		))}</Fragment>
+	))}</Fragment>
+) : text}
+
+<style>
+	.heading-word { white-space: nowrap; }
+</style>

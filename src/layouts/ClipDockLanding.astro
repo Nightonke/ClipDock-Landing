@@ -1,4 +1,5 @@
 ---
+import HeadingText from "@/components/HeadingText.astro";
 import { commonCopy } from "@/i18n/common";
 import { mediaUrl } from "@config/media";
 import type { LanguageLink } from "@/types/content";
@@ -119,7 +120,7 @@ const structuredData = [
 					<div class="site-shell cd-feature-grid">
 						<div class="cd-feature-copy" data-reveal>
 							<div class="cd-feature-kicker"><strong>{feature.number}</strong><span>{feature.kicker}</span></div>
-							<h2>{feature.title.split("\n").map((line, index) => content.locale === "en-US" ? <>{index > 0 && " "}<span class="cd-title-line">{line}</span></> : <>{index > 0 && <br />}{line}</>)}</h2>
+							<h2>{feature.title.split("\n").map((line, index) => content.locale === "en-US" ? <>{index > 0 && " "}<span class="cd-title-line">{line}</span></> : <>{index > 0 && <br />}<HeadingText text={line} locale={content.locale} /></>)}</h2>
 							<p>{feature.description}</p>
 							<ul>{feature.points.map((point, index) => (
 								<li>
@@ -164,7 +165,7 @@ const structuredData = [
 				<div class="cd-section-heading">
 					<div>
 						<p class="section-kicker">{ui.toolsKicker}</p>
-						<h2 class="section-title">{ui.toolsTitle}</h2>
+						<h2 class="section-title"><HeadingText text={ui.toolsTitle} locale={content.locale} /></h2>
 					</div>
 					<p class="section-lede">{ui.toolsDescription}</p>
 				</div>
@@ -175,7 +176,7 @@ const structuredData = [
                         return (
 						<Card class="cd-tool-card" href={href} aria-label={href ? `${tool.title}: ${ui.readTutorial}` : undefined} data-reveal>
 							<span>{tool.mark}</span>
-							<h3>{tool.title}</h3>
+							<h3><HeadingText text={tool.title} locale={content.locale} /></h3>
 							<p>{tool.description}</p>
 						</Card>
 					); })}
@@ -188,7 +189,7 @@ const structuredData = [
 				<div class="cd-trust-heading">
 					<div>
 						<p class="section-kicker">{ui.trustKicker}</p>
-						<h2 class="section-title">{ui.trustTitle}</h2>
+						<h2 class="section-title"><HeadingText text={ui.trustTitle} locale={content.locale} /></h2>
 					</div>
 					<p class="section-lede">{ui.trustDescription}</p>
 				</div>
@@ -203,7 +204,7 @@ const structuredData = [
 		<section id="faq" class="cd-section cd-faq">
 			<div class="site-shell">
 				<p class="section-kicker">{ui.faqKicker}</p>
-				<h2 class="section-title">{ui.faqTitle}</h2>
+				<h2 class="section-title"><HeadingText text={ui.faqTitle} locale={content.locale} /></h2>
 				<div class="cd-faq-list">
 					{faqs.map((item) => (
 						<details class="cd-faq-item">
@@ -219,7 +220,7 @@ const structuredData = [
 			<div class="site-shell cd-closing-panel" data-reveal>
 				<div class="cd-closing-copy">
 					<p class="eyebrow">{ui.closingKicker}</p>
-					<h2 class="section-title">{ui.closingTitle}</h2>
+					<h2 class="section-title"><HeadingText text={ui.closingTitle} locale={content.locale} /></h2>
 					<p class="section-lede">{ui.closingDescription}</p>
 					<a class="button button-dark" href={storeURL} target="_blank" rel="noopener noreferrer">{ui.storeDownload}</a>
 				</div>
@@ -355,6 +356,9 @@ const structuredData = [
 	.cd-feature-copy h2 { max-width: 100%; margin: 0; font-family: var(--display); font-size: clamp(2.9rem, 5.1vw, 5.1rem); letter-spacing: -.07em; line-height: .94; text-wrap: wrap; }
 	:global(html[lang="en"]) .cd-feature-copy h2 { font-size: var(--fitted-title-size, clamp(2.9rem, 5.1vw, 5.1rem)); line-height: 1.08; text-wrap: balance; }
 	.cd-title-line { display: block; }
+	:global(html[lang="zh-Hans"]) .cd-feature-copy h2 { line-height: 1.18; text-wrap: balance; }
+	:global(html[lang="zh-Hans"]) .section-title { line-height: 1.2; }
+	:global(html[lang="zh-Hans"]) .cd-tool-card h3 { line-height: 1.3; }
 	.cd-feature-copy > p { max-width: 620px; margin: 1.35rem 0 0; color: var(--ink-soft); font-size: 1.1rem; line-height: 1.68; }
 	.cd-feature-copy ul { display: grid; margin: 2rem 0 0; padding: 0; border-top: 1px solid var(--line-strong); list-style: none; }
 	.cd-feature-copy li { display: grid; grid-template-columns: 28px 1fr; gap: 8px; padding: .86rem 0; border-bottom: 1px solid var(--line); font-weight: 750; }

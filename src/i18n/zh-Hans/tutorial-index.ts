@@ -7,7 +7,7 @@ export const categories = [
   {
     "id": "clipboard",
     "name": "复制即下载",
-    "description": "减少切换 App，让复制链接接上下载任务。"
+    "description": "开启后台识别后，复制链接即可创建下载任务，减少切换 App。"
   },
   {
     "id": "batch",
@@ -26,6 +26,6 @@ export const categories = [
   }
 ];
 export const platformNotes: Record<string, string> = {
-  "platform": "YouTube、Sora(OpenAI)、Instagram(包含快拍)、Twitter、TK、Threads、Facebook、Vimeo、afreecatv、Tumblr、Triller、Likee、Twitch、Pinterest、Snapchat、Reddit、VK、Dailymotion、SoundCloud、Lemon8、Suno音乐、AcFun、B、天猫、闲鱼、大众点评、UC视频、趣头条、皮皮虾、皮皮搞笑、微博、秒拍、绿洲、小咖秀、美图秀秀、美拍、云音乐、央视网(CCTV)、新华网、虎嗅、虎牙、斗鱼、糖豆、喜马拉雅、陌陌、映客、迅雷、WIDE短视频 、最右、开眼、酷燃、剪映、糗事百科、梨视频、**等上千个平台",
-  "batch": "支持YouTube(频道页、Shorts、Hashtag、播放列表)、Instagram(作者主页、Hashtag列表)、Twitter(X)、TK(作者主页、Hashtag列表)、D(主页、合集)、B(主页、合集)、微博、好看等主页批量提取"
+  "platform": "YouTube、Sora（OpenAI）、Instagram（含快拍）、X（Twitter）、TikTok、Threads、Facebook、Vimeo、afreecatv、Tumblr、Triller、Likee、Twitch、Pinterest、Snapchat、Reddit、VK、Dailymotion、SoundCloud、Lemon8、Suno 音乐、AcFun、哔哩哔哩（B 站）、天猫、闲鱼、大众点评、UC 视频、趣头条、皮皮虾、皮皮搞笑、微博、秒拍、绿洲、小咖秀、美图秀秀、美拍、网易云音乐、央视网（CCTV）、新华网、虎嗅、虎牙、斗鱼、糖豆、喜马拉雅、陌陌、映客、迅雷、WIDE 短视频、最右、开眼、酷燃、剪映、糗事百科、梨视频等平台。具体可下载的内容以链接解析结果为准。",
+  "batch": "支持 YouTube（频道、Shorts、话题页、播放列表）、Instagram（作者主页、话题页）、TikTok（作者主页、话题页）、抖音（主页、合集）、哔哩哔哩（主页、合集），以及 X（Twitter）、微博、好看视频等平台的主页。不同平台支持的链接类型和可加载范围有所不同。"
 };

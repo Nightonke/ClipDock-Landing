@@ -1,4 +1,5 @@
 ---
+import HeadingText from "@/components/HeadingText.astro";
 import TutorialLayout from "@layouts/TutorialLayout.astro";
 import TutorialScreenshot from "@/components/TutorialScreenshot.astro";
 import type { Tutorial } from "@/content/tutorials";
@@ -34,7 +35,7 @@ const structuredData = [
 	<main id="main-content" class="tutorial-page site-shell">
 		<nav class="tutorial-breadcrumb" aria-label={ui.breadcrumb}><a href={homeHref}>{ui.home}</a><span aria-hidden="true">/</span><a href={indexHref}>{ui.tutorials}</a><span aria-hidden="true">/</span><a href={`${indexHref}#${category.id}`}>{category.name}</a></nav>
 		<header class="tutorial-hero">
-			<p class="eyebrow">{category.name}</p><h1>{article.title}</h1>
+			<p class="eyebrow">{category.name}</p><h1><HeadingText text={article.title} locale={locale} /></h1>
 			<p class="tutorial-lead">{article.intro}</p>
 			{!article.screenshotsReady && <p class="tutorial-draft">{ui.draft}</p>}
 			{article.verificationNote && <p class="tutorial-draft">{article.verificationNote}</p>}
@@ -46,14 +47,14 @@ const structuredData = [
 				{article.steps.map((step, index) => (
 					<section id={`step-${index + 1}`} class:list={["tutorial-step", { "tutorial-step-illustrated": step.image, "tutorial-step-reverse": index % 2 === 1 }]}>
 						<div class="tutorial-step-copy">
-							<p class="tutorial-step-index"><strong>{String(index + 1).padStart(2, "0")}</strong><span>{ui.step}</span></p><h2>{step.title}</h2><p>{step.text}</p>
+							<p class="tutorial-step-index"><strong>{String(index + 1).padStart(2, "0")}</strong><span>{ui.step}</span></p><h2><HeadingText text={step.title} locale={locale} /></h2><p>{step.text}</p>
 							{step.exampleUrl && <p class="tutorial-example-url"><a href={step.exampleUrl} target="_blank" rel="noopener noreferrer">{step.exampleUrl}</a></p>}
-							{step.sections?.map(section => <div class="tutorial-step-detail"><h3>{section.title}</h3><p>{section.text}</p></div>)}
+							{step.sections?.map(section => <div class="tutorial-step-detail"><h3><HeadingText text={section.title} locale={locale} /></h3><p>{section.text}</p></div>)}
 						</div>
 						{step.image && <TutorialScreenshot id={step.image} locale={locale} />}
 					</section>
 				))}
-				<section id="troubleshooting" class="tutorial-troubleshooting"><h2>{ui.troubleshooting}</h2>{article.tips.map(tip => <div><h3>{tip.title}</h3><p>{tip.text}</p></div>)}</section>
+				<section id="troubleshooting" class="tutorial-troubleshooting"><h2>{ui.troubleshooting}</h2>{article.tips.map(tip => <div><h3><HeadingText text={tip.title} locale={locale} /></h3><p>{tip.text}</p></div>)}</section>
 				<section id="questions" class="tutorial-questions"><h2>{ui.questions}</h2>{article.faq.map(item => <details><summary>{item.question}</summary><p>{item.answer}</p></details>)}</section>
                 {platformNote && <section class="tutorial-platforms" aria-labelledby="supported-platforms">
                     <h2 id="supported-platforms">{ui.supportedPlatforms}</h2><p>{platformNote}</p>
@@ -62,6 +63,6 @@ const structuredData = [
 				<div class="tutorial-cta"><h2>{ui.ctaTitle}</h2><p>{ui.ctaText}</p><a class="button button-dark" href={storeURL} target="_blank" rel="noopener noreferrer">{ui.ctaButton}</a></div>
 			</article>
 		</div>
-		{related.length > 0 && <section class="tutorial-related"><h2>{ui.related}</h2><div class="tutorial-card-grid">{related.map(item => <a class="tutorial-card" href={articleHref(item.slug)}><h3>{item.title}</h3><p>{item.description}</p><span class="tutorial-read">{ui.read}</span></a>)}</div></section>}
+		{related.length > 0 && <section class="tutorial-related"><h2>{ui.related}</h2><div class="tutorial-card-grid">{related.map(item => <a class="tutorial-card" href={articleHref(item.slug)}><h3><HeadingText text={item.title} locale={locale} /></h3><p>{item.description}</p><span class="tutorial-read">{ui.read}</span></a>)}</div></section>}
 	</main>
 </TutorialLayout>

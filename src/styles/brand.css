@@ -1290,6 +1290,10 @@ a {
 	font-size: 0.82rem;
 }
 
+html[lang="zh-Hans"] .footer-links {
+	text-transform: none;
+}
+
 .detail-main {
 	padding: clamp(70px, 9vw, 120px) 0 30px;
 }

@@ -1,4 +1,5 @@
 ---
+import HeadingText from "@/components/HeadingText.astro";
 import TutorialLayout from "@layouts/TutorialLayout.astro";
 import { getTutorials, getCategories } from "@/content/localized-tutorials";
 import { localizedPath, type Locale } from "@/i18n/locales";
@@ -17,7 +18,7 @@ const draftCount = tutorials.filter(article => !article.screenshotsReady).length
 	<main id="main-content" class="tutorial-index site-shell">
 		<header class="tutorial-index-hero">
 			<p class="eyebrow">{landingContent[locale].shortName} · {ui.tutorials}</p>
-			<h1>{locale === "en-US" ? ui.indexHeading.replace(/\n/g, " ") : ui.indexHeading.split("\n").map((line, index) => <>{index > 0 && <br />}{line}</>)}</h1>
+			<h1>{locale === "en-US" ? ui.indexHeading.replace(/\n/g, " ") : <HeadingText text={ui.indexHeading} locale={locale} />}</h1>
 			<p class="tutorial-lead">{ui.indexIntro}</p>
 			{ui.toolCount && <p class="tutorial-lead">{ui.toolCount.replace("{count}", String(toolCount))}</p>}
 			{draftCount > 0 && <p class="tutorial-draft">{ui.draftCount.replace("{count}", String(draftCount))}</p>}
@@ -33,7 +34,7 @@ const draftCount = tutorials.filter(article => !article.screenshotsReady).length
 						<a class="tutorial-card" href={articleHref(article.slug)}>
 							<span class="tutorial-tag">{category.name} · iPhone / iPad</span>
 							{article.verificationNote && <span class="tutorial-tag">{ui.unverified}</span>}
-							<h3>{article.title}</h3><p>{article.description}</p><span class="tutorial-read">{ui.read} <span aria-hidden="true">↗</span></span>
+							<h3><HeadingText text={article.title} locale={locale} /></h3><p>{article.description}</p><span class="tutorial-read">{ui.read} <span aria-hidden="true">↗</span></span>
 						</a>
 					))}
 				</div>
