@@ -1,5 +1,14 @@
 # ClipDock 正式部署
 
+## 2026-09-09 素材校验连接中断修复
+
+- 韩语提交 `916e3c1` 的 [Actions #17](https://github.com/Nightonke/ClipDock-Landing/actions/runs/34370908217) 通过语言与视频恢复检查后，在获取腾讯云 `manifest.json` 时遇到 `curl (56): Connection reset by peer`，因此未部署新页面。
+- 两端 CDN 随后均返回 200，`c5dcf79585974e0e` 的 526 个素材清单完全相同；没有发现素材版本不同步。原脚本的 `curl --retry 2` 不覆盖接收数据时连接重置，参见 [curl 重试说明](https://curl.se/docs/manpage.html#--retry)。
+- 正式构建统一使用 `scripts/download-published-media.mjs` 下载清单和响应式图片。连接重置、传输不完整、超时和可重试 HTTP 状态最多尝试 4 次，间隔 1 / 2 / 4 秒；连接超时为 10 秒，单次清单 / 图片请求上限分别为 30 / 60 秒。
+- 每次尝试独立收集响应，丢弃失败尝试的残缺字节；404 等确定性错误直接失败。仍核对原素材、发布版本、两端清单及图片 SHA-256，不跳过腾讯云检查。
+- 新增 `node --test tests/publishedMediaDownload.test.mjs` 并纳入 Actions，使用本地 TCP 服务复现连接重置、半途断流、跳转后 503、404、持续故障与请求超时。
+- 本地 6 项故障测试和 `npm run build:production` 通过：226 个页面、225 个 sitemap URL、13,417 个本地引用，两端素材校验及五种语言检查均无错误。
+
 ## 2026-09-09 批量下载视频片尾修复
 
 - `batch-playlist.mp4` 无损截取前 19 秒（456 帧），删除约 2.04 秒的黑屏及 CapCut 片尾；保留帧与原视频逐帧校验一致，字幕原有 19 秒结束时间保持不变。
