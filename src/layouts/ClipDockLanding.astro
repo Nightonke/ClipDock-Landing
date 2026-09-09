@@ -78,7 +78,7 @@ const structuredData = [
 		<section class="cd-hero">
 			<div class="site-shell cd-hero-grid">
 				<div class="cd-hero-copy">
-					<p class="eyebrow">{ui.eyebrow}</p>
+					<p class="eyebrow">{content.locale === "en-US" ? <>{ui.eyebrow.split(" · ")[0]} · <span class="cd-device-names">{ui.eyebrow.split(" · ")[1]}</span></> : ui.eyebrow}</p>
 					<h1 class="display-title cd-hero-title"><span>{ui.heroLine1}</span><span>{ui.heroLine2}</span></h1>
 					<p class="cd-hero-description">
 						{ui.heroDescription}
@@ -119,7 +119,7 @@ const structuredData = [
 					<div class="site-shell cd-feature-grid">
 						<div class="cd-feature-copy" data-reveal>
 							<div class="cd-feature-kicker"><strong>{feature.number}</strong><span>{feature.kicker}</span></div>
-							<h2>{feature.title.split("\n").map((line, index) => <>{index > 0 && <br />}{line}</>)}</h2>
+							<h2>{feature.title.split("\n").map((line, index) => content.locale === "en-US" ? <>{index > 0 && " "}<span class="cd-title-line">{line}</span></> : <>{index > 0 && <br />}{line}</>)}</h2>
 							<p>{feature.description}</p>
 							<ul>{feature.points.map((point, index) => (
 								<li>
@@ -235,6 +235,57 @@ const structuredData = [
 	import { setupVideoRecovery } from "@/lib/videoRecoveryUI";
 	import { captionAt } from "@config/demoCaptions";
 
+	// Fit complete English phrases only when the normal responsive size exceeds the column.
+	if (document.documentElement.lang === "en") {
+		const titles = [...document.querySelectorAll<HTMLElement>(".cd-hero-title, .cd-feature-copy h2, .cd-trust-grid strong")];
+		const fitTitles = () => {
+			const minimumSize = parseFloat(getComputedStyle(document.documentElement).fontSize) * 2;
+			for (const title of titles) {
+				title.style.removeProperty("--fitted-title-size");
+				const availableWidth = title.getBoundingClientRect().width;
+				if (!availableWidth) continue;
+				const normalSize = parseFloat(getComputedStyle(title).fontSize);
+				const probe = title.cloneNode(true) as HTMLElement;
+				probe.setAttribute("aria-hidden", "true");
+				probe.style.cssText = `position:fixed;visibility:hidden;pointer-events:none;width:max-content;max-width:none;font-size:${normalSize}px;`;
+				probe.querySelectorAll<HTMLElement>("span").forEach((line) => {
+					line.style.cssText = "display:block;white-space:nowrap;";
+				});
+				title.parentElement!.append(probe);
+				const phraseWidth = probe.getBoundingClientRect().width;
+				probe.remove();
+				if (phraseWidth > availableWidth) {
+					const fittedSize = Math.max(Math.min(minimumSize, normalSize), normalSize * (availableWidth - 1) / phraseWidth);
+					title.style.setProperty("--fitted-title-size", `${fittedSize}px`);
+				}
+			}
+			// These three peer cards share the smallest size required by any title.
+			const trustTitles = titles.filter((title) => title.matches(".cd-trust-grid strong"));
+			if (trustTitles.length) {
+				const sharedSize = Math.min(...trustTitles.map((title) => parseFloat(getComputedStyle(title).fontSize)));
+				trustTitles.forEach((title) => title.style.setProperty("--fitted-title-size", `${sharedSize}px`));
+			}
+		};
+		let frame = 0;
+		const scheduleFit = () => {
+			cancelAnimationFrame(frame);
+			frame = requestAnimationFrame(fitTitles);
+		};
+		const widths = new WeakMap<Element, number>();
+		const observer = new ResizeObserver((entries) => {
+			if (entries.some(({ target, contentRect }) => {
+				const previous = widths.get(target);
+				widths.set(target, contentRect.width);
+				return previous !== contentRect.width;
+			})) scheduleFit();
+		});
+		titles.forEach((title) => observer.observe(title));
+		window.addEventListener("resize", scheduleFit);
+		document.fonts.ready.then(scheduleFit);
+		document.fonts.addEventListener("loadingdone", scheduleFit);
+		fitTitles();
+	}
+
 	document.querySelectorAll<HTMLElement>(".cd-feature-video-stage").forEach((stage) => {
 		const video = stage.querySelector<HTMLVideoElement>("video")!;
 		setupVideoRecovery(stage, video);
@@ -259,7 +310,11 @@ const structuredData = [
 	.cd-hero-copy { container-type: inline-size; }
 	.cd-hero-title { max-width: none; font-size: clamp(2.9rem, 5.1vw, 5.1rem); line-height: 1.16; }
 	.cd-hero-title span { display: block; white-space: nowrap; }
-	:global(html[lang="en"]) .cd-hero-title span { white-space: normal; }
+	.cd-device-names { text-transform: none; }
+	:global(html[lang="en"]) .cd-hero-copy,
+	:global(html[lang="en"]) .cd-feature-copy { container-type: inline-size; min-width: 0; }
+	:global(html[lang="en"]) .cd-hero-title { font-size: var(--fitted-title-size, clamp(2.9rem, 5.1vw, 5.1rem)); }
+	:global(html[lang="en"]) .cd-hero-title span { white-space: normal; text-wrap: balance; }
 	.cd-hero-description { max-width: 650px; margin: 1.7rem 0 0; color: var(--ink-soft); font-size: clamp(1.08rem, 1.8vw, 1.35rem); line-height: 1.65; }
 	.cd-hero-actions { display: flex; flex-wrap: wrap; align-items: stretch; gap: 12px; margin-top: 2rem; }
 	.cd-hero-actions > a { flex: 0 1 220px; width: 220px; max-width: 100%; min-width: 0; min-height: 80px; }
@@ -298,6 +353,8 @@ const structuredData = [
 	.cd-feature-kicker { display: flex; align-items: center; gap: 12px; margin-bottom: 1.35rem; color: var(--ink-soft); font-family: var(--mono); font-size: .72rem; font-weight: 900; letter-spacing: .08em; }
 	.cd-feature-kicker strong { display: grid; place-items: center; width: 44px; height: 44px; border: 1.5px solid var(--ink); border-radius: 50%; background: var(--blue); color: var(--ink); }
 	.cd-feature-copy h2 { max-width: 100%; margin: 0; font-family: var(--display); font-size: clamp(2.9rem, 5.1vw, 5.1rem); letter-spacing: -.07em; line-height: .94; text-wrap: wrap; }
+	:global(html[lang="en"]) .cd-feature-copy h2 { font-size: var(--fitted-title-size, clamp(2.9rem, 5.1vw, 5.1rem)); line-height: 1.08; text-wrap: balance; }
+	.cd-title-line { display: block; }
 	.cd-feature-copy > p { max-width: 620px; margin: 1.35rem 0 0; color: var(--ink-soft); font-size: 1.1rem; line-height: 1.68; }
 	.cd-feature-copy ul { display: grid; margin: 2rem 0 0; padding: 0; border-top: 1px solid var(--line-strong); list-style: none; }
 	.cd-feature-copy li { display: grid; grid-template-columns: 28px 1fr; gap: 8px; padding: .86rem 0; border-bottom: 1px solid var(--line); font-weight: 750; }
@@ -343,7 +400,7 @@ const structuredData = [
 	.cd-trust-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
 	.cd-trust-grid article { min-height: 300px; padding: clamp(28px, 4vw, 48px); border-right: 1.5px solid var(--ink); }
 	.cd-trust-grid article:last-child { border-right: 0; }
-	.cd-trust-grid strong { display: block; font-family: var(--display); font-size: clamp(2rem, 3.5vw, 3.7rem); letter-spacing: -.06em; line-height: .95; }
+	.cd-trust-grid strong { display: block; font-family: var(--display); font-size: var(--fitted-title-size, clamp(2rem, 3.5vw, 3.7rem)); letter-spacing: -.06em; line-height: .95; }
 	.cd-trust-grid h3 { margin: .78rem 0; font-size: 1rem; }
 	.cd-trust-grid p { margin: 0; color: var(--ink-soft); line-height: 1.58; }
 	.cd-faq .section-kicker, .cd-faq .section-title { text-align: center; margin-inline: auto; }

@@ -2,7 +2,7 @@ import type { TutorialCopy } from "../../types";
 export const copy: Record<string, TutorialCopy> = {
   "copy-link-auto-download-iphone": {
     "title": "iPhone 如何只复制链接就下载视频？无需反复切换 App",
-    "description": "了解 ClipDock影随存复制即下载的准备流程、单条验证和完成通知，减少在来源 App 与下载器之间来回粘贴。",
+    "description": "在 ClipDock影随存开启复制链接自动下载，保持画中画运行，浏览时无需反复切换 App。",
     "intro": "复制即下载适合从不同作品中逐条挑选视频：你在来源 App 复制分享链接，ClipDock影随存在功能已就绪时识别并创建任务。它和一次解析整个主页的批量下载是两种不同流程。",
     "tips": [
       {
@@ -13,7 +13,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "关闭 App 或锁屏后一定能继续识别吗？",
-        "answer": "不能把后台功能理解为无条件常驻。锁屏、强制退出和系统资源调度下的具体表现，需要按照当前 App 版本和实际测试确认。"
+        "answer": "使用后台识别时请保持画中画开启。锁屏、强制退出或系统资源调度可能中断识别；如果复制链接后没有响应，返回 ClipDock 检查状态。"
       },
       {
         "question": "复制即下载等于批量解析主页吗？",
@@ -23,21 +23,22 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "开启复制即下载与后台检测",
-        "text": "打开 ClipDock影随存的 Extract 页面，在 Video 分页开启 Fill from Clipboard（从剪贴板填入）、Auto-download Links（自动下载链接）和 Detect in Background（后台检测），如图中的三个绿色开关。"
+        "text": "打开 ClipDock 的 Extract（提取）→ Video（视频），开启 Fill from Clipboard、Auto-download Links 和 Detect in Background。需要下载提醒时，请允许通知。"
       },
       {
         "title": "切到视频平台，保持悬浮窗开启",
-        "text": "切换到 TikTok 等视频平台，确认屏幕上出现 ClipDock影随存的画中画悬浮窗。图中 Copy a link to download 提示表示可以开始复制链接；可以将悬浮窗滑动到屏幕边缘收起，但请保持画中画开启，不要关闭悬浮窗。"
+        "text": "切换到视频 App，保持 ClipDock 的画中画悬浮窗开启。看到 Copy a link to download 提示后即可复制链接。若挡住画面，可滑到屏幕边缘收起，但不要关闭。"
       },
       {
         "title": "复制想保存的视频链接",
         "text": "刷到喜欢的视频后打开分享面板，点击 Copy link（复制链接），不需要再回到 ClipDock影随存粘贴。悬浮窗提示可以滑到屏幕边缘收起，但要保持画中画开启。"
       },
       {
-        "title": "边刷边复制，查看后台下载提示",
-        "text": "观看录屏中的连续操作：复制分享链接后，ClipDock影随存在后台识别资源并创建下载任务，你可以继续浏览其他视频。留意系统通知中的任务状态；浏览结束后，到 Manager（管理）检查结果，需要相册副本时再执行保存到相册。"
+        "title": "继续浏览并检查下载结果",
+        "text": "先复制一条链接，确认 ClipDock 已接收后再继续。浏览期间保持画中画开启；结束后到 Manager 查看完成和失败任务，按需保存到相册。"
       }
-    ]
+    ],
+    "exampleNote": "录屏展示后台识别复制的链接并创建下载任务。收到通知不代表每个文件都已下载完成或保存到相册。"
   },
   "copy-tiktok-links-background": {
     "title": "如何边刷 TikTok 边复制链接下载视频？",
@@ -52,17 +53,17 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "为什么这篇和普通 TikTok 下载教程分开？",
-        "answer": "普通教程是复制后回 App 手动提交；这里重点是首次准备、自动接收验证和连续收集的过程。"
+        "answer": "普通教程是在 ClipDock 手动粘贴链接；此流程让你浏览 TikTok 时，通过复制链接创建下载任务。"
       },
       {
         "question": "复制时有系统权限提示怎么办？",
-        "answer": "按当前系统和 App 的提示理解并处理权限。不要默认忽略提示后功能仍然正常，也不需要提供账号密码给教程。"
+        "answer": "按提示允许剪贴板识别或通知所需权限。如果关闭了提示，返回 ClipDock 确认功能已就绪，再继续复制链接。"
       }
     ],
     "steps": [
       {
         "title": "开启自动下载与后台检测",
-        "text": "在 ClipDock影随存的 Extract 页面打开 Video 分页，开启 Fill from Clipboard（从剪贴板填入）、Auto-download Links（自动下载链接）和 Detect in Background（后台检测），确认三个开关均为绿色。"
+        "text": "打开 ClipDock 的 Extract（提取）→ Video（视频），开启 Fill from Clipboard、Auto-download Links 和 Detect in Background。需要下载提醒时，请允许通知。"
       },
       {
         "title": "回到 TikTok，确认悬浮窗已出现",
@@ -73,9 +74,10 @@ export const copy: Record<string, TutorialCopy> = {
         "text": "在目标视频上点击分享按钮，选择 Copy link（复制链接），然后继续浏览。不需要来回切换 App；若悬浮窗挡住画面，可以按提示滑到屏幕边缘收起，保持画中画开启。"
       },
       {
-        "title": "观看连续复制与后台下载演示",
-        "text": "录屏展示了边刷 TikTok 边复制多个作品链接的过程，以及后台识别、创建下载任务的通知。确认第一条链接已接收后再继续收集；浏览结束后到 Manager 检查完成与失败任务，避免只凭通知判断结果。"
+        "title": "继续浏览并检查下载结果",
+        "text": "先复制一条链接，确认 ClipDock 已接收后再继续。浏览期间保持画中画开启；结束后到 Manager 查看完成和失败任务，按需保存到相册。"
       }
-    ]
+    ],
+    "exampleNote": "录屏展示后台识别复制的链接并创建下载任务。收到通知不代表每个文件都已下载完成或保存到相册。"
   }
 };

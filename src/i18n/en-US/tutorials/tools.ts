@@ -2,8 +2,8 @@ import type { TutorialCopy } from "../../types";
 export const copy: Record<string, TutorialCopy> = {
   "video-to-gif-iphone": {
     "title": "How to convert a video to GIF on iPhone and iPad",
-    "description": "Convert a video to GIF in ClipDock. Choose the clip, frame rate, and width, check VIP limits, and save the animation on iPhone or iPad.",
-    "intro": "Choose the action first, then balance smoothness, detail, and file size. This example converts a roughly six-second video and explains presets, frame rate, width, and size estimates. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is in English.",
+    "description": "Turn a short video clip into a GIF. Choose the action to keep, then adjust frame rate and width to balance smoothness, detail, and file size.",
+    "intro": "Turn a short video clip into a GIF. Choose the action to keep, then adjust frame rate and width to balance smoothness, detail, and file size.",
     "tips": [
       {
         "title": "The GIF is too large",
@@ -17,17 +17,17 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "Why do some options have a star?",
-        "answer": "The page marks clips over 10 seconds, high frame rates, width 720, and presets as VIP features. This example uses free settings."
+        "answer": "The page marks clips over 10 seconds, high frame rates, width 720, and presets as VIP features."
       }
     ],
     "steps": [
       {
         "title": "Open Video to GIF in Process",
-        "text": "Tap Process in the bottom navigation. Find Video to GIF in row 1, in the left column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Video to GIF."
       },
       {
         "title": "Choose the video to process",
-        "text": "In Select Video, tap Choose from Photos and pick your source. Use Choose from Files for media stored in Files. An empty download list does not prevent importing from Photos. Some examples reuse a previously trimmed clip of about six seconds; you can prepare a short sample with Trim Video."
+        "text": "In Select Video, tap Choose from Photos or Choose from Files and select your video. You can import a video even when the download list is empty."
       },
       {
         "title": "Choose the clip and preset",
@@ -35,7 +35,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "Custom and starred presets",
-            "text": "Custom lets you choose settings yourself. Clear*, Smooth*, and Long* are presets aimed at detail, smoothness, and longer clips. A star marks VIP access. This test exports with Custom; the exact paid preset settings were not verified."
+            "text": "Custom lets you choose settings yourself. Clear*, Smooth*, and Long* provide presets for detail, smoothness, or longer clips. A star marks VIP access."
           },
           {
             "title": "Clip Range: keep the action you need",
@@ -63,14 +63,15 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "Save the generated GIF",
-        "text": "Processing Complete appears with a file ending in .gif. Use Save to Photos to save the animation or Share File to share it. Done dismisses the dialog. Check the motion in an app that plays GIFs."
+        "text": "When Processing Complete appears, tap Save to Photos to save the GIF or Share File to share it. Done closes the dialog. Open the saved GIF in an app that supports animation."
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example exported a roughly six-second GIF with Custom, 8 fps, and width 360. Paid preset settings were not verified."
   },
   "video-to-live-photo-iphone": {
     "title": "How to turn a video into a Live Photo on iPhone",
-    "description": "Turn a video into a Live Photo with ClipDock. Set the motion range, cover frame, sound, and quality, then check the save result on iPhone.",
-    "intro": "A Live Photo can retain a short moment with sound and a chosen still cover. This example uses a three-second range and Balanced quality, and reaches the app’s successful-save confirmation. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is in English.",
+    "description": "Turn a short clip into a Live Photo with a still cover and optional sound. Choose the motion range and cover frame, then save it to Photos.",
+    "intro": "Turn a short clip into a Live Photo with a still cover and optional sound. Choose the motion range and cover frame, then save it to Photos.",
     "tips": [
       {
         "title": "Check the cover and motion separately",
@@ -84,17 +85,17 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "How is it different from GIF?",
-        "answer": "The formats and sharing behavior differ. Live Photos can keep sound; GIFs are animations without audio."
+        "answer": "Live Photos can keep sound; GIFs are animations without audio."
       }
     ],
     "steps": [
       {
         "title": "Open Video to Live Photo in Process",
-        "text": "Tap Process in the bottom navigation. Find Video to Live Photo in row 1, in the middle column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Video to Live Photo."
       },
       {
         "title": "Choose the video to process",
-        "text": "In Select Video, tap Choose from Photos and pick your source. Use Choose from Files for media stored in Files. An empty download list does not prevent importing from Photos. Some examples reuse a previously trimmed clip of about six seconds; you can prepare a short sample with Trim Video."
+        "text": "In Select Video, tap Choose from Photos or Choose from Files and select your video. You can import a video even when the download list is empty."
       },
       {
         "title": "Choose the motion range and cover",
@@ -120,20 +121,21 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Balanced, HD*, and Original*",
-            "text": "Balanced is the tested choice. HD and Original are marked VIP. A quality setting cannot add details that were absent from the source."
+            "text": "Choose Balanced for a starting point. HD and Original are marked VIP. Higher quality cannot recover detail missing from the source."
           }
         ]
       },
       {
         "title": "Check the Live Photo in Photos",
-        "text": "The app displays Live Photo saved to Photos, reporting a successful save. Tap OK, then open Photos and inspect the Live Photo badge and playback. The recorded test verified the app’s save confirmation; the screenshot does not replace a hands-on long-press playback check."
+        "text": "Wait for Live Photo saved to Photos, then tap OK. Open Photos and press and hold the Live Photo to check its motion, cover, and sound."
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example used a three-second range and Balanced quality and reached the app’s save confirmation. Long-press playback in Photos was not verified."
   },
   "transcode-video-iphone": {
     "title": "How to convert and compress videos on iPhone and iPad",
-    "description": "Convert or compress video with ClipDock on iPhone and iPad. Learn how format, codec, resolution, and bitrate affect your exported file.",
-    "intro": "Transcode Video changes file format and compression settings. This guide explains format, codec, resolution, and bitrate using a completed MP4/H.264 export. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is in English.",
+    "description": "Use Transcode Video to change a video’s format or reduce its file size. Choose a format, resolution, and quality, then preview the exported result.",
+    "intro": "Use Transcode Video to change a video’s format or reduce its file size. Choose a format, resolution, and quality, then preview the exported result.",
     "tips": [
       {
         "title": "Unhappy with the compression?",
@@ -153,11 +155,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Transcode Video in Process",
-        "text": "Tap Process in the bottom navigation. Find Transcode Video in row 1, in the right column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Transcode Video."
       },
       {
         "title": "Choose the video to process",
-        "text": "In Select Video, tap Choose from Photos and pick your source. Use Choose from Files for media stored in Files. An empty download list does not prevent importing from Photos. Some examples reuse a previously trimmed clip of about six seconds; you can prepare a short sample with Trim Video."
+        "text": "In Select Video, tap Choose from Photos or Choose from Files and select your video. You can import a video even when the download list is empty."
       },
       {
         "title": "Choose format, quality, and resolution",
@@ -183,7 +185,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "Codec: H.264 and HEVC*",
-            "text": "This example uses H.264. HEVC is marked VIP and can offer efficient compression, but check receiving-device and software support. MP4 is not restricted to one codec."
+            "text": "H.264 is a starting option. HEVC requires VIP and can offer efficient compression, but check support in the app or device that will play the file. MP4 can contain different codecs."
           },
           {
             "title": "Bitrate: Auto, Target Size*, and Custom Bitrate*",
@@ -197,7 +199,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "Check the result, then save or keep processing",
-        "text": "The output ends in _transcode.mp4 and is about six seconds long. Compare size and picture quality, especially text edges, dark areas, and fast movement.",
+        "text": "Preview the exported video and compare its size and quality with the original. Check text edges, dark areas, and fast movement before saving.",
         "sections": [
           {
             "title": "Preview and save",
@@ -209,12 +211,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example exported a roughly six-second MP4/H.264 video using Original resolution, Standard quality, Keep Sound, and Auto bitrate."
   },
   "trim-video-iphone": {
     "title": "How to trim a video’s duration on iPhone and iPad",
-    "description": "Keep a selected time range with ClipDock’s Trim Video tool on iPhone and iPad. Set start and end points, preview the result, and save.",
-    "intro": "Use Trim Video to keep a selected time range. This example trims the first six seconds from a roughly 2:26 source for use in GIFs, Live Photos, or short demos. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is in English.",
+    "description": "Keep just the part of a video you need. Set the start and end points in Trim Video, then save the clip or use it in another tool.",
+    "intro": "Keep just the part of a video you need. Set the start and end points in Trim Video, then save the clip or use it in another tool.",
     "tips": [
       {
         "title": "This trims time, not the canvas",
@@ -228,17 +231,17 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "Why does Even Split open VIP?",
-        "answer": "It is starred and required VIP in the test. The Select Segment workflow successfully exported."
+        "answer": "Even Split requires VIP. Use Select Segment to keep one time range."
       }
     ],
     "steps": [
       {
         "title": "Open Trim Video in Process",
-        "text": "Tap Process in the bottom navigation. Find Trim Video in row 2, in the left column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Trim Video."
       },
       {
         "title": "Choose the video to process",
-        "text": "In Select Video, tap Choose from Photos and pick your source. Use Choose from Files for media stored in Files. An empty download list does not prevent importing from Photos. Some examples reuse a previously trimmed clip of about six seconds; you can prepare a short sample with Trim Video."
+        "text": "In Select Video, tap Choose from Photos or Choose from Files and select your video. You can import a video even when the download list is empty."
       },
       {
         "title": "Choose the trim mode and time range",
@@ -254,13 +257,13 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Even Split* divides the whole video",
-            "text": "The option describes splitting the full video into equal pieces and exporting them together. Opening it in the recorded test showed the VIP page; an even-split export was not tested. Use Select Segment for a normal trim."
+            "text": "Even Split divides the full video into equal pieces and exports them together. It requires VIP. Use Select Segment to keep a single range."
           }
         ]
       },
       {
         "title": "Check the result, then save or keep processing",
-        "text": "After Start Processing, the example produces _trim.mp4 with a displayed duration of about six seconds. Check both ends before saving. Keep Processing lets you reuse the short clip with another tool.",
+        "text": "Tap Start Processing, then play the exported clip to check its start and end. Save it or use Keep Processing to open it in another tool.",
         "sections": [
           {
             "title": "Preview and save",
@@ -272,12 +275,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. Select Segment exported the opening six seconds of a roughly 2:26 video. Even Split opened the VIP page; its export was not tested."
   },
   "join-videos-iphone": {
     "title": "How to join several videos on iPhone and iPad",
-    "description": "Use ClipDock to stitch Photos videos, distinguish the main clip from added clips, reorder them, and save the result. Includes six screenshots.",
-    "intro": "Stitch Videos joins travel clips, event footage, or recorded explanations in sequence. This example combines three Photos videos and explains each setting. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0 with English app controls; iPad users can follow the same entry.",
+    "description": "Use Stitch Videos to combine travel clips, event footage, or recorded explanations in sequence. Choose the opening video, add the remaining clips, and arrange their order.",
+    "intro": "Use Stitch Videos to combine travel clips, event footage, or recorded explanations in sequence. Choose the opening video, add the remaining clips, and arrange their order.",
     "tips": [
       {
         "title": "The sources have different orientations or dimensions",
@@ -285,7 +289,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "Avoid leaving an already arranged setup",
-        "text": "The magic-wand control opens Quick Edit for the main video. In the test, returning to Stitch Videos through it reset the added count to zero. Start processing directly after arranging clips, or recheck the appended list after switching tools."
+        "text": "The magic-wand control opens Quick Edit for the main video. Returning to Stitch Videos through it can reset the appended list. Start processing directly after arranging clips, or recheck the appended list after switching tools."
       }
     ],
     "faq": [
@@ -299,7 +303,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "Can I set transitions, background music, or output quality here?",
-        "answer": "Those options are not shown on the tested stitching page. It previews the main video, adds clips, and changes their appended order. Use the corresponding tools for other effects."
+        "answer": "This stitching page does not offer those options. It previews the main video, adds clips, and changes their appended order. Use the corresponding tools for other effects."
       },
       {
         "question": "Why is the video missing from Photos after Done?",
@@ -309,10 +313,10 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Stitch Videos in Process",
-        "text": "Tap Process in ClipDock and find Stitch Videos in the middle of the second row. The orange arrow and outline mark the tool."
+        "text": "Open Process, then tap Stitch Videos."
       },
       {
-        "title": "Choose the main video and read its preview",
+        "title": "Choose and preview the main video",
         "text": "In Select Video, use Choose from Photos to select the first clip. This main video will be the opening of the result. Check the source when the settings page appears.",
         "sections": [
           {
@@ -345,11 +349,11 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "Check counts and reorder the added clips",
-        "text": "2 clips added means two appended clips plus the main one, for three in total. The added list begins with Clip 2, which follows the main video. Additional clips play from top to bottom.",
+        "text": "The added count excludes the opening video: 2 clips added means three clips in total. The appended list starts with Clip 2 and plays from top to bottom after the main video.",
         "sections": [
           {
             "title": "Up and down arrows reorder appended clips",
-            "text": "Use the arrows to move a clip. The recorded test moves the 05:11 clip before the 04:10 clip. The top item cannot move farther up and the bottom cannot move farther down, so those arrows are disabled. Both directions are unavailable when there is only one appended clip."
+            "text": "Use the up and down arrows to reorder appended clips. The first cannot move farther up and the last cannot move farther down. Both arrows are disabled when there is only one appended clip."
           },
           {
             "title": "The main video stays at the beginning",
@@ -377,7 +381,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "Preview and save the joined video",
-        "text": "The result page displays the output, timeline, and thumbnails. This example produces _concat.mp4 with a displayed duration of 11:46, and playback was verified. Input durations are displayed in whole seconds; check the actual output for the total.",
+        "text": "Preview the joined video and check the order of the clips. Use the output’s duration to check the total, since the input list rounds each clip’s duration to whole seconds.",
         "sections": [
           {
             "title": "What to check before saving",
@@ -385,7 +389,7 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Save to Photos",
-            "text": "Tap Save to Photos and grant permission to add media if asked. The recorded test received Saved to Photos. Check the finished video in Photos afterward."
+            "text": "Tap Save to Photos and allow access if prompted. Wait for Saved to Photos, then open Photos to view the finished video."
           },
           {
             "title": "Keep processing, share, or finish",
@@ -393,12 +397,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example joined three clips, reordered the appended clips, played the 11:46 result, and received a Photos save confirmation. Returning through Quick Edit reset the appended list in this version."
   },
   "interleave-videos-iphone": {
     "title": "How to interleave video segments on iPhone and iPad",
-    "description": "Alternate segments from two videos with ClipDock on iPhone and iPad. Set segment counts, starting order, and audio fades, then inspect the export.",
-    "intro": "Interleave divides source videos and alternates between them. This A/B example explains segment counts, starting order, and short audio fades at cuts. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is in English.",
+    "description": "Use Interleave to alternate segments from different videos. Add your sources, choose how to divide them, and set the starting order and audio transitions.",
+    "intro": "Use Interleave to alternate segments from different videos. Add your sources, choose how to divide them, and set the starting order and audio transitions.",
     "tips": [
       {
         "title": "The switching rhythm is uneven",
@@ -412,17 +417,17 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "Why can the default Total Segments work despite its star?",
-        "answer": "The page says up to five segments are free, and the default five exported successfully. Read the selected value and the page’s access notes together."
+        "answer": "Up to five total segments are free. Check the selected value and the access notes together; a star on the control does not mean every value requires VIP."
       }
     ],
     "steps": [
       {
         "title": "Open Interleave in Process",
-        "text": "Tap Process in the bottom navigation. Find Interleave in row 2, in the right column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Interleave."
       },
       {
         "title": "Choose the video to process",
-        "text": "In Select Video, tap Choose from Photos and pick your source. Use Choose from Files for media stored in Files. An empty download list does not prevent importing from Photos. Some examples reuse a previously trimmed clip of about six seconds; you can prepare a short sample with Trim Video."
+        "text": "In Select Video, tap Choose from Photos or Choose from Files and select your video. You can import a video even when the download list is empty."
       },
       {
         "title": "Add videos A and B",
@@ -458,7 +463,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "Check the result, then save or keep processing",
-        "text": "Start Processing produces _interleave.mp4 with a displayed duration of 02:31. Inspect every switch for source order and audio transitions; checking only the first frame is not enough.",
+        "text": "Tap Start Processing, then play through the transitions. Check which source comes first, the segment order, and the sound at each cut.",
         "sections": [
           {
             "title": "Preview and save",
@@ -470,12 +475,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The A/B example used five total segments, Start with A, and the default 50 ms audio fade. The result displayed 02:31."
   },
   "segment-grid-video-iphone": {
     "title": "How to turn a video into a segment grid on iPhone and iPad",
-    "description": "Split one video into a 2×2 grid with ClipDock. Set rows, columns, sound, and output dimensions on iPhone or iPad, with illustrated examples.",
-    "intro": "Segment Grid splits one video into time segments and plays them together in a grid. This example divides about six seconds into four parts for a 2×2 layout. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is in English.",
+    "description": "Split one video into time segments that play together in a grid. Choose the rows and columns, then set the sound and output dimensions.",
+    "intro": "Split one video into time segments that play together in a grid. Choose the rows and columns, then set the sound and output dimensions.",
     "tips": [
       {
         "title": "The tiles are too small to see clearly",
@@ -495,11 +501,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Segment Grid in Process",
-        "text": "Tap Process in the bottom navigation. Find Segment Grid in row 3, in the left column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Segment Grid."
       },
       {
         "title": "Choose the video to process",
-        "text": "In Select Video, tap Choose from Photos and pick your source. Use Choose from Files for media stored in Files. An empty download list does not prevent importing from Photos. Some examples reuse a previously trimmed clip of about six seconds; you can prepare a short sample with Trim Video."
+        "text": "In Select Video, tap Choose from Photos or Choose from Files and select your video. You can import a video even when the download list is empty."
       },
       {
         "title": "Set rows, columns, and sound",
@@ -515,7 +521,7 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Free settings and starred options",
-            "text": "The page marks three or more rows or columns, square output, and retaining each tile’s original size as VIP. The default 2×2 with original-video-size output exported successfully."
+            "text": "Start with the free 2×2 grid and Original Video Size. Three or more rows or columns, square output, and preserving each tile’s original size require VIP."
           }
         ]
       },
@@ -535,7 +541,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "Check the result, then save or keep processing",
-        "text": "The output shows four time segments in a 2×2 grid. The input is about six seconds; the page estimates about two seconds, while the result’s whole-second display reads about one second. Play the output and do not treat rounded time labels as frame-accurate measurements.",
+        "text": "Tap Start Processing, then preview the grid. Check that each tile shows the intended segment and that the output size and sound suit your use.",
         "sections": [
           {
             "title": "Preview and save",
@@ -547,12 +553,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example exported a muted 2×2 grid at Original Video Size. For the roughly six-second input, the estimate was about two seconds and the whole-second result label read about one second; neither is a frame-accurate measurement."
   },
   "resize-video-iphone": {
     "title": "How to change video aspect ratio and canvas on iPhone and iPad",
-    "description": "Change video aspect ratio with ClipDock on iPhone and iPad. Compare Fit and Fill, choose a canvas, and check the resized result.",
-    "intro": "Choose both a canvas ratio and how the picture fits inside it. This example uses 1:1 with Fit to preserve a landscape picture inside a square canvas. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is in English.",
+    "description": "Change a video’s aspect ratio with Resize / Canvas. Choose a canvas shape, then use Fit to keep the whole picture or Fill to cover the canvas.",
+    "intro": "Change a video’s aspect ratio with Resize / Canvas. Choose a canvas shape, then use Fit to keep the whole picture or Fill to cover the canvas.",
     "tips": [
       {
         "title": "Decide whether edge cropping is acceptable",
@@ -562,7 +569,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Does changing the ratio stretch the picture?",
-        "answer": "The tested Fit layout preserves proportions and adds background. Inspect other modes in preview rather than assuming a canvas change always stretches the image."
+        "answer": "Fit preserves proportions and adds background where needed. Preview other layouts before exporting to check for cropping or stretching."
       },
       {
         "question": "How do I change pixel resolution?",
@@ -572,11 +579,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Resize / Canvas in Process",
-        "text": "Tap Process in the bottom navigation. Find Resize / Canvas in row 3, in the middle column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Resize / Canvas."
       },
       {
         "title": "Choose the video to process",
-        "text": "In Select Video, tap Choose from Photos and pick your source. Use Choose from Files for media stored in Files. An empty download list does not prevent importing from Photos. Some examples reuse a previously trimmed clip of about six seconds; you can prepare a short sample with Trim Video."
+        "text": "In Select Video, tap Choose from Photos or Choose from Files and select your video. You can import a video even when the download list is empty."
       },
       {
         "title": "Choose the canvas ratio",
@@ -598,7 +605,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "Fit keeps the whole picture",
-            "text": "Fit scales the entire picture proportionally, potentially leaving background areas. Use it when subjects, subtitles, or edge details must remain visible. This is the tested mode."
+            "text": "Fit scales the entire picture proportionally, potentially leaving background areas. Use it when subjects, subtitles, or edge details must remain visible."
           },
           {
             "title": "Fill covers the canvas",
@@ -606,13 +613,13 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Starred blur and multi-panel layouts",
-            "text": "The menu includes Blur 1:1*, Double 1:1*, Symmetric Double 1:1*, Triple 1:1*, and Triple Blur 1:1*. These VIP blur-background or multi-panel modes were not export-tested here."
+            "text": "Blur 1:1*, Double 1:1*, Symmetric Double 1:1*, Triple 1:1*, and Triple Blur 1:1* are VIP blur-background or multi-panel layouts."
           }
         ]
       },
       {
         "title": "Check the result, then save or keep processing",
-        "text": "The _resize.mp4 result preserves the whole landscape image with surrounding black background. Check playback and final dimensions for your intended use.",
+        "text": "Preview the output and check the canvas shape, edges, and background. With Fit, make sure the full picture remains visible before saving.",
         "sections": [
           {
             "title": "Preview and save",
@@ -624,12 +631,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example exported a 1:1 canvas using Fit and a black background. Paid blur and multi-panel modes were not export-tested."
   },
   "rotate-video-iphone": {
     "title": "How to rotate videos on iPhone and iPad",
-    "description": "Rotate a video right, left, or upside down with ClipDock on iPhone and iPad. Check the preview and save the corrected orientation.",
-    "intro": "Rotate Video corrects sideways or upside-down pictures. This example rotates 90 degrees right, with the change visible in both settings and the export. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is in English.",
+    "description": "Fix a sideways or upside-down video with Rotate Video. Choose a rotation angle, check the preview, and save the corrected video.",
+    "intro": "Fix a sideways or upside-down video with Rotate Video. Choose a rotation angle, check the preview, and save the corrected video.",
     "tips": [
       {
         "title": "Rotation and mirroring differ",
@@ -649,11 +657,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Rotate Video in Process",
-        "text": "Tap Process in the bottom navigation. Find Rotate Video in row 3, in the right column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Rotate Video."
       },
       {
         "title": "Choose the video to process",
-        "text": "In Select Video, tap Choose from Photos and pick your source. Use Choose from Files for media stored in Files. An empty download list does not prevent importing from Photos. Some examples reuse a previously trimmed clip of about six seconds; you can prepare a short sample with Trim Video."
+        "text": "In Select Video, tap Choose from Photos or Choose from Files and select your video. You can import a video even when the download list is empty."
       },
       {
         "title": "Choose the rotation direction",
@@ -671,7 +679,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "Check the result, then save or keep processing",
-        "text": "After Start Processing, the output picture is rotated 90 degrees right and remains about six seconds long. Check text and subject orientation before saving.",
+        "text": "Tap Start Processing, then check the exported video’s orientation. Confirm that text and subjects appear the right way up before saving.",
         "sections": [
           {
             "title": "Preview and save",
@@ -683,12 +691,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example rotated a roughly six-second clip 90 degrees right; the change appeared in the preview and export."
   },
   "mirror-video-iphone": {
     "title": "How to mirror or flip videos on iPhone and iPad",
-    "description": "Flip videos horizontally or vertically with ClipDock. Learn H Flip, V Flip, and VIP symmetry options on iPhone and iPad.",
-    "intro": "Mirror Video flips a picture horizontally or vertically. This H Flip example swaps the left and right sides of a seascape in the preview and result. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is in English.",
+    "description": "Flip a video horizontally or vertically with Mirror Video. Preview the effect before exporting, especially when the picture contains text or logos.",
+    "intro": "Flip a video horizontally or vertically with Mirror Video. Preview the effect before exporting, especially when the picture contains text or logos.",
     "tips": [
       {
         "title": "Text may reverse as well",
@@ -708,11 +717,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Mirror Video in Process",
-        "text": "Tap Process in the bottom navigation. Find Mirror Video in row 4, in the left column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Mirror Video."
       },
       {
         "title": "Choose the video to process",
-        "text": "In Select Video, tap Choose from Photos and pick your source. Use Choose from Files for media stored in Files. An empty download list does not prevent importing from Photos. Some examples reuse a previously trimmed clip of about six seconds; you can prepare a short sample with Trim Video."
+        "text": "In Select Video, tap Choose from Photos or Choose from Files and select your video. You can import a video even when the download list is empty."
       },
       {
         "title": "Preview the mirror effect",
@@ -728,13 +737,13 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Side Sym*, Top Sym*, and Center Sym*",
-            "text": "These starred VIP symmetry effects differ from simply flipping the entire picture. Their entries were inspected, but paid-mode exports were not tested."
+            "text": "These VIP modes create symmetry effects rather than simply flipping the full picture. Check the preview when choosing a mode."
           }
         ]
       },
       {
         "title": "Check the result, then save or keep processing",
-        "text": "The H Flip result swaps the seascape and clouds left to right. Remember that embedded subtitles, logos, and text are mirrored too.",
+        "text": "Preview the mirrored video and check left-right or top-bottom details. Text, logos, and embedded subtitles flip with the rest of the picture.",
         "sections": [
           {
             "title": "Preview and save",
@@ -746,12 +755,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example exported H Flip. Paid symmetry entries were inspected, but their exports were not tested."
   },
   "reverse-video-iphone": {
     "title": "How to reverse a video on iPhone and iPad",
-    "description": "Play a video backward with ClipDock on iPhone and iPad. Choose how to handle audio, inspect the reversed action, and save the result.",
-    "intro": "Reverse Video plays action from end to beginning. This example uses default mute, and the result starts at the end of the original clip. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is in English.",
+    "description": "Make a video play backward with Reverse Video. Choose whether to mute, keep, or reverse the audio, then preview the result.",
+    "intro": "Make a video play backward with Reverse Video. Choose whether to mute, keep, or reverse the audio, then preview the result.",
     "tips": [
       {
         "title": "Trim first, then reverse",
@@ -771,11 +781,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Reverse Video in Process",
-        "text": "Tap Process in the bottom navigation. Find Reverse Video in row 4, in the middle column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Reverse Video."
       },
       {
         "title": "Choose the video to process",
-        "text": "In Select Video, tap Choose from Photos and pick your source. Use Choose from Files for media stored in Files. An empty download list does not prevent importing from Photos. Some examples reuse a previously trimmed clip of about six seconds; you can prepare a short sample with Trim Video."
+        "text": "In Select Video, tap Choose from Photos or Choose from Files and select your video. You can import a video even when the download list is empty."
       },
       {
         "title": "Choose how to handle sound",
@@ -787,13 +797,13 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Keep Audio versus Reverse Audio",
-            "text": "Keep Audio preserves the original audio order; Reverse Audio reverses sound. Listen to exported dialogue or music to check the effect. Only mute mode was tested here."
+            "text": "Keep Audio preserves the original audio order; Reverse Audio reverses the sound. Choose the effect you want and listen to the exported dialogue or music."
           }
         ]
       },
       {
         "title": "Check the result, then save or keep processing",
-        "text": "The first frame shows the person from the end of the original video, and thumbnail order is reversed. The displayed duration remains about six seconds. Play it to confirm that motion proceeds backward.",
+        "text": "Play the result to confirm the action runs backward. Check the beginning, ending, and selected sound mode before saving.",
         "sections": [
           {
             "title": "Preview and save",
@@ -805,12 +815,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. Only Mute mode was tested. The result began at the end of the original clip; Keep Audio and Reverse Audio were not verified."
   },
   "change-video-speed-iphone": {
     "title": "How to speed up or slow down videos on iPhone and iPad",
-    "description": "Speed up or slow down videos with ClipDock on iPhone and iPad. Understand duration, pitch preservation, speed limits, and high-speed audio.",
-    "intro": "Change Speed adjusts playback with a multiplier. This example uses 1.50x to turn about six seconds into four, with notes on pitch and speed limits. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is in English.",
+    "description": "Speed up or slow down a clip with Change Speed. Choose a multiplier and check how it affects duration and sound before saving.",
+    "intro": "Speed up or slow down a clip with Change Speed. Choose a multiplier and check how it affects duration and sound before saving.",
     "tips": [
       {
         "title": "Slower does not always mean smoother",
@@ -830,11 +841,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Change Speed in Process",
-        "text": "Tap Process in the bottom navigation. Find Change Speed in row 4, in the right column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Change Speed."
       },
       {
         "title": "Choose the video to process",
-        "text": "In Select Video, tap Choose from Photos and pick your source. Use Choose from Files for media stored in Files. An empty download list does not prevent importing from Photos. Some examples reuse a previously trimmed clip of about six seconds; you can prepare a short sample with Trim Video."
+        "text": "In Select Video, tap Choose from Photos or Choose from Files and select your video. You can import a video even when the download list is empty."
       },
       {
         "title": "Set speed and pitch behavior",
@@ -856,7 +867,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "Check the result, then save or keep processing",
-        "text": "At 1.50x with pitch preservation off, the output shows about four seconds, matching the estimate. Check rhythm and sound before saving.",
+        "text": "Play the output and check its pace, duration, and sound. If the result feels too fast or slow, adjust the multiplier and export again.",
         "sections": [
           {
             "title": "Preview and save",
@@ -868,12 +879,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example used 1.50x with Preserve Pitch off, turning roughly six seconds into four seconds."
   },
   "edit-video-audio-iphone": {
     "title": "How to mute a video or change its volume on iPhone and iPad",
-    "description": "Mute video or adjust its volume with ClipDock on iPhone and iPad. Check the selected level and learn which audio controls require VIP.",
-    "intro": "Audio Editing provides mute, volume, and replacement controls. This guide explains Volume mode and a completed export using the displayed 100% level. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is in English.",
+    "description": "Use Audio Editing to mute a video, adjust its volume, or replace its audio. Select a mode, check the settings, and listen to the result.",
+    "intro": "Use Audio Editing to mute a video, adjust its volume, or replace its audio. Select a mode, check the settings, and listen to the result.",
     "tips": [
       {
         "title": "Audio is distorted or noisy",
@@ -893,11 +905,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Audio Editing in Process",
-        "text": "Tap Process in the bottom navigation. Find Audio Editing in row 5, in the left column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Audio Editing."
       },
       {
         "title": "Choose the video to process",
-        "text": "In Select Video, tap Choose from Photos and pick your source. Use Choose from Files for media stored in Files. An empty download list does not prevent importing from Photos. Some examples reuse a previously trimmed clip of about six seconds; you can prepare a short sample with Trim Video."
+        "text": "In Select Video, tap Choose from Photos or Choose from Files and select your video. You can import a video even when the download list is empty."
       },
       {
         "title": "Choose the audio processing mode",
@@ -909,17 +921,17 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Volume changes the audio level",
-            "text": "The percentage at the right is the selected level; this example uses 100%. Read the label after dragging and listen to the result. Raising volume does not repair noise or improve recording quality."
+            "text": "Drag the volume slider and read the percentage beside it. 100% is the original level. Raising volume can also amplify noise, so listen to the export before saving."
           },
           {
             "title": "Replace* and Fade In/Out*",
-            "text": "Replace changes the audio source, while Fade In/Out fades audio at the ends. Both are marked VIP and were not executed in this test. For separate audio and video inputs, see Merge Audio and Video."
+            "text": "Replace changes the audio source; Fade In/Out fades sound at the ends. Both require VIP. For separate audio and video inputs, see Merge Audio and Video."
           }
         ]
       },
       {
         "title": "Check the result, then save or keep processing",
-        "text": "The _audio_edit.mp4 file was generated at Volume 100%, also shown in export history. To change loudness, confirm that the slider percentage actually changes, then export and compare by listening.",
+        "text": "Listen to the exported video and compare it with the original. To change loudness, make sure the slider percentage changes before exporting; 100% keeps the selected level at its original value.",
         "sections": [
           {
             "title": "Preview and save",
@@ -931,12 +943,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example exported at Volume 100%; it did not demonstrate a changed volume level. Replace and Fade In/Out were not executed."
   },
   "add-watermark-video-iphone": {
     "title": "How to add a text watermark to videos on iPhone and iPad",
-    "description": "Add a text watermark to video with ClipDock. Set its size and position, understand VIP style controls, and preview the exported result.",
-    "intro": "Add Watermark controls text, size, position, and style. Settings use ClipDock Demo, while a physical-device result demonstrates previewing and saving. The entry and settings screenshots come from an iPhone 17 Pro Max simulator; the exported result comes from a physical iPhone. The app interface is in English.",
+    "description": "Add a text watermark with ClipDock on iPhone or iPad. Choose text, size, and position, then preview and save the video.",
+    "intro": "Add a text watermark with Add Watermark. Enter your text and choose its size and position. The settings and result images use different wording and footage; see the example notes.",
     "tips": [
       {
         "title": "Preview before saving",
@@ -956,11 +969,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Add Watermark in Process",
-        "text": "Tap Process in the bottom navigation. Find Add Watermark in row 5, in the middle column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Add Watermark."
       },
       {
         "title": "Choose the video to process",
-        "text": "In Select Video, tap Choose from Photos and pick your source. Use Choose from Files for media stored in Files. An empty download list does not prevent importing from Photos. Some examples reuse a previously trimmed clip of about six seconds; you can prepare a short sample with Trim Video."
+        "text": "In Select Video, tap Choose from Photos or Choose from Files and select your video. You can import a video even when the download list is empty."
       },
       {
         "title": "Set the watermark text and size",
@@ -968,7 +981,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "Text and Image*",
-            "text": "Text adds a text watermark. Image is the VIP image-watermark option. Only text was configured here."
+            "text": "Text adds a text watermark. Image is the VIP image-watermark option."
           },
           {
             "title": "Text Size",
@@ -990,17 +1003,17 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Opacity*",
-            "text": "The example shows 75%. Lower opacity makes the watermark fainter and potentially harder to read. This parameter requires VIP; the test keeps its default."
+            "text": "The example shows 75%. Lower opacity makes the watermark fainter and potentially harder to read. Changing this parameter requires VIP."
           }
         ]
       },
       {
         "title": "Preview and save the watermarked output",
-        "text": "Tap Start Processing after checking settings. The physical-iPhone result is a 15-second file ending in _watermark.mp4, with Made by ClipDock visible at bottom right.",
+        "text": "Tap Start Processing, then preview the watermark on the exported video. Check its text, position, and readability across different scenes.",
         "sections": [
           {
             "title": "Check the watermark",
-            "text": "Play the result and check legibility, position, and overlap with subjects or subtitles. The result screenshot uses different source footage and wording from the settings example, but demonstrates the same text-watermark workflow."
+            "text": "Play the result and check legibility, position, and overlap with subjects or subtitles."
           },
           {
             "title": "Save to Photos or share",
@@ -1012,12 +1025,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "Entry and settings images use an iPhone 17 Pro Max simulator; the result is from a physical iPhone. Settings show ClipDock Demo, while the result uses Made by ClipDock on different footage. Only text watermarking was configured; paid style changes were not tested."
   },
   "capture-video-frames-iphone": {
     "title": "How to capture video frames on iPhone and iPad",
-    "description": "Export a video frame as an image with ClipDock on iPhone and iPad. Choose the time, save to Photos, and learn about VIP batch capture.",
-    "intro": "Video Capture exports images from a video. This guide tests Single-frame capture and explains the VIP Batch, Smart, and Sheet entries. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is in English.",
+    "description": "Save a frame from a video as an image with Video Capture. Choose a clear moment, preview the frame, and save or share it.",
+    "intro": "Save a frame from a video as an image with Video Capture. Choose a clear moment, preview the frame, and save or share it.",
     "tips": [
       {
         "title": "The frame looks blurry",
@@ -1027,7 +1041,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Can it capture several frames at once?",
-        "answer": "The interface has Batch*, which requires VIP. Single was tested here; batch settings and results were not verified."
+        "answer": "Batch* captures multiple frames and requires VIP. Use Single to choose and export one frame."
       },
       {
         "question": "How is this different from a phone screenshot?",
@@ -1037,11 +1051,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Video Capture in Process",
-        "text": "Tap Process in the bottom navigation. Find Video Capture in row 5, in the right column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Video Capture."
       },
       {
         "title": "Choose the video to process",
-        "text": "In Select Video, tap Choose from Photos and pick your source. Use Choose from Files for media stored in Files. An empty download list does not prevent importing from Photos. Some examples reuse a previously trimmed clip of about six seconds; you can prepare a short sample with Trim Video."
+        "text": "In Select Video, tap Choose from Photos or Choose from Files and select your video. You can import a video even when the download list is empty."
       },
       {
         "title": "Choose capture mode and time",
@@ -1053,7 +1067,7 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Batch*, Smart*, and Sheet*",
-            "text": "These VIP entries offer batch capture, smart capture, and a preview sheet. Their paid settings and outputs were not tested, so this guide does not assume specific intervals, algorithms, or sheet layouts."
+            "text": "Batch, Smart, and Sheet are VIP entries for batch capture, smart frame selection, and preview sheets. Open the relevant mode to see its settings."
           },
           {
             "title": "Add Timestamp",
@@ -1063,7 +1077,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "Preview and save the image",
-        "text": "Export Image opens Screenshot Preview. The example shows 66 KB, JPEG, and 640×338. Check the image, then choose Save to Photos or Share File. Done closes the preview.",
+        "text": "Tap Export Image to open Screenshot Preview. Check the frame, dimensions, and file size, then use Save to Photos or Share File. Done closes the preview.",
         "sections": [
           {
             "title": "Dimensions come from the video",
@@ -1071,12 +1085,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. Single-frame capture exported a 640×338 JPEG. Batch, Smart, and Sheet settings and outputs were not verified."
   },
   "extract-audio-iphone": {
     "title": "How to extract audio from a video on iPhone and iPad",
-    "description": "Extract an M4A audio file from a Photos video with ClipDock, inspect the result, and open sharing or saving options. Includes four screenshots.",
-    "intro": "Open Extract Audio in ClipDock and choose a video from Photos to create an independent audio file. Four screenshots show the workflow on an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is English; system sharing labels may follow the device language. iPad users can follow the same tool entry.",
+    "description": "Save a video’s sound as a separate file with Extract Audio. Choose a video from Photos or Files, then save or share the extracted audio.",
+    "intro": "Save a video’s sound as a separate file with Extract Audio. Choose a video from Photos or Files, then save or share the extracted audio.",
     "tips": [
       {
         "title": "No sound in the extracted result?",
@@ -1090,7 +1105,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Can I choose MP3 or another format?",
-        "answer": "In this test, selecting the source directly generated M4A without a format menu. This guide does not include MP3 conversion steps."
+        "answer": "This workflow produces M4A and does not offer a format menu. MP3 conversion is not covered here."
       },
       {
         "question": "Why is the output missing from Photos?",
@@ -1104,7 +1119,7 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Extract Audio",
-        "text": "Tap Process in ClipDock and find Extract Audio at the bottom left of the tool grid. Prepare a video that contains sound, such as your own explanation, interview, or authorized footage."
+        "text": "Open Process, then tap Extract Audio."
       },
       {
         "title": "Choose a video from Photos",
@@ -1112,18 +1127,19 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "Wait for audio extraction",
-        "text": "Selecting the video starts extraction directly; no extra start button is needed. The test shows no format-settings page. Processing Complete appears with a filename ending in .m4a. Tap Share File to continue exporting, or Done to dismiss the dialog."
+        "text": "Selecting a video starts extraction without an extra start button. When Processing Complete appears with an .m4a file, tap Share File to save or share it. Done closes the dialog."
       },
       {
         "title": "Open sharing and saving options",
-        "text": "Share File opens a sheet with the audio file and size, about 2.4 MB in this example. Use Save to Files below to retain a separate copy, or inspect More for available receiving apps. After saving, listen to the file to check its sound and duration."
+        "text": "In Share File, choose Save to Files to keep a separate copy, or choose another app to share it. Open the saved audio and check its sound and duration."
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. Selecting the source generated M4A directly without a format menu. The screenshots reach the share sheet, not a completed Files save. System sharing labels may follow the device language."
   },
   "change-video-md5-iphone": {
     "title": "How to use the video MD5 tool on iPhone and iPad",
-    "description": "Use ClipDock’s Change MD5 tool on iPhone and iPad. See the processing workflow and understand why actual file hashes need separate verification.",
-    "intro": "Change MD5 creates a processed file from a video. This guide shows its entry and result; a byte-level file digest is not a measure of improved picture quality or changed video content. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is in English.",
+    "description": "Use Change MD5 to create a processed copy of a video. If you need to confirm a different MD5 hash, compare the original and output files with a hash checker.",
+    "intro": "Use Change MD5 to create a processed copy of a video. If you need to confirm a different MD5 hash, compare the original and output files with a hash checker.",
     "tips": [
       {
         "title": "Verify the actual files",
@@ -1143,21 +1159,21 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Change MD5 in Process",
-        "text": "Tap Process in the bottom navigation. Find Change MD5 in row 6, in the middle column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Change MD5."
       },
       {
         "title": "Choose a video and wait for processing",
-        "text": "After opening Change MD5, use Choose from Photos or another appropriate source. The test uses a previously exported short clip through Quick Edit. Processing starts directly without a separate settings page.",
+        "text": "Choose a video from Photos or another available source. Processing starts directly without a separate settings page.",
         "sections": [
           {
             "title": "There is no target-digest input",
-            "text": "This workflow shows no MD5 input field or format parameters. Do not treat it as a tool for choosing any arbitrary digest value."
+            "text": "There is no field for entering a target MD5. This tool does not let you choose an arbitrary digest value."
           }
         ]
       },
       {
         "title": "Check the result, then save or keep processing",
-        "text": "A new _md5.mp4 file appears, showing about six seconds. The test reached the output page but did not compare input and output MD5 values. If you need digest evidence, calculate the actual hashes of both files separately.",
+        "text": "Check the new file, then save or share it. If your workflow requires a different MD5, calculate and compare the original and output hashes; a new filename alone is not confirmation.",
         "sections": [
           {
             "title": "Preview and save",
@@ -1169,12 +1185,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example reached the output page with a new _md5.mp4 file. Input and output MD5 hashes were not compared."
   },
   "merge-audio-video-iphone": {
     "title": "How to merge audio and video on iPhone and iPad",
-    "description": "Combine video with audio from Files or another Photos video using ClipDock on iPhone and iPad. Choose sources and check the merged result.",
-    "intro": "Use Merge Audio and Video when picture and sound come from different files. This example selects a short video and takes audio from another Photos video to create a merged export. Screenshots come from an iPhone 17 Pro Max simulator running iOS 26.0. The app interface is in English.",
+    "description": "Combine a video with audio from another file using Merge Audio and Video. Select the video first, choose an audio source, then check the sound and sync after exporting.",
+    "intro": "Combine a video with audio from another file using Merge Audio and Video. Select the video first, choose an audio source, then check the sound and sync after exporting.",
     "tips": [
       {
         "title": "Sound is out of sync or the ending is wrong",
@@ -1184,24 +1201,24 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Must I extract audio first?",
-        "answer": "No. The example uses Extract audio from Photos video to take sound directly from another video."
+        "answer": "No. Choose Extract audio from Photos video to use sound directly from another video."
       },
       {
         "question": "Can I adjust the ratio of two audio tracks?",
-        "answer": "No mixing-ratio or multi-track controls are shown in this workflow. This guide does not describe it as a multi-track mixer."
+        "answer": "This page does not provide mixing-ratio or multi-track controls. Prepare the audio separately if you need to mix tracks."
       }
     ],
     "steps": [
       {
         "title": "Open Merge Audio and Video in Process",
-        "text": "Tap Process in the bottom navigation. Find Merge Audio and Video in row 6, in the right column, and tap the entry marked by the arrow."
+        "text": "Open Process, then tap Merge Audio and Video."
       },
       {
         "title": "Choose the video to process",
-        "text": "In Select Video, tap Choose from Photos and pick your source. Use Choose from Files for media stored in Files. An empty download list does not prevent importing from Photos. Some examples reuse a previously trimmed clip of about six seconds; you can prepare a short sample with Trim Video."
+        "text": "In Select Video, tap Choose from Photos or Choose from Files and select your video. You can import a video even when the download list is empty."
       },
       {
-        "title": "Choose the picture source first",
+        "title": "Choose the video source first",
         "text": "Import the video whose picture you want to retain. The card shows its preview, dimensions, and duration. Audio Source initially reads Not Selected.",
         "sections": [
           {
@@ -1230,13 +1247,13 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "No additional mixing controls are shown",
-            "text": "This page shows Audio Source without independent mixing levels, timing offset, looping, or audio-trim parameters. Check the output by listening if length, sync, or original-audio handling matters. Do not assume a particular automatic mixing behavior."
+            "text": "Audio Source selects the sound input. This page has no separate mixing levels, timing offset, looping, or audio-trim controls. Prepare your sources first if you need those adjustments, and listen to the export."
           }
         ]
       },
       {
         "title": "Check the result, then save or keep processing",
-        "text": "The merged result page shows a video of about six seconds. File generation was verified, but the merged track was not listened through segment by segment. Before saving, check the sound source, initial sync, volume, and ending, especially if the source durations differ.",
+        "text": "Play the merged video before saving. Check the audio source, initial sync, volume, and ending, especially when the source files have different durations.",
         "sections": [
           {
             "title": "Preview and save",
@@ -1248,6 +1265,7 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example generated a roughly six-second video using audio from another Photos video. The merged track was not listened through segment by segment."
   }
 };

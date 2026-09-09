@@ -2,8 +2,8 @@ import type { TutorialCopy } from "../../types";
 export const copy: Record<string, TutorialCopy> = {
   "video-to-gif-iphone": {
     "title": "如何在 iPhone 和 iPad 上把视频转换为 GIF？",
-    "description": "把一个动作做成动图时，先确定片段，再平衡流畅度、清晰度和文件大小。本文用约 6 秒视频演示 GIF 转换，说明预设、帧率、宽度以及体积估算。附真实操作截图和参数说明。",
-    "intro": "把一个动作做成动图时，先确定片段，再平衡流畅度、清晰度和文件大小。本文用约 6 秒视频演示 GIF 转换，说明预设、帧率、宽度以及体积估算。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0）。英文按钮附中文说明。",
+    "description": "把视频中的一段动作做成 GIF。先选好片段，再调整帧率和宽度，平衡流畅度、清晰度与文件大小。",
+    "intro": "把视频中的一段动作做成 GIF。先选好片段，再调整帧率和宽度，平衡流畅度、清晰度与文件大小。",
     "tips": [
       {
         "title": "动图太大",
@@ -23,11 +23,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "在 Process 页面打开 Video to GIF",
-        "text": "点击底部 Process（处理），在工具总览找到第 1 排左侧的 Video to GIF，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Video to GIF。"
       },
       {
         "title": "选择要处理的视频",
-        "text": "在 Select Video 页面点击 Choose from Photos（从相册选择），选中素材；存放在文件中的素材可从 Choose from Files 进入。下载列表为空不影响从相册导入。本文部分步骤复用了先前裁出的约 6 秒短片段；你可以先用 Trim Video 准备短素材。"
+        "text": "在 Select Video（选择视频）中，点击 Choose from Photos（从相册选择）或 Choose from Files（从文件选择）导入视频。下载列表为空也可以导入。"
       },
       {
         "title": "选择片段和预设",
@@ -35,7 +35,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "Custom 与带星号的预设",
-            "text": "Custom 用于自行选择参数。Clear*、Smooth*、Long* 分别是偏向清晰、流畅和较长内容的预设入口，带星号表示需要 VIP。本次使用 Custom 完成导出，未验证付费预设的具体参数组合。"
+            "text": "Custom 用于自行选择参数。Clear*、Smooth*、Long* 分别提供偏向清晰、流畅和较长片段的预设，星号表示需要 VIP。"
           },
           {
             "title": "Clip Range：只保留需要的动作",
@@ -63,15 +63,16 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "保存生成的 GIF",
-        "text": "本次出现 Processing Complete，输出文件以 .gif 结尾。点击 Save to Photos 保存动图，或通过 Share File 分享文件；Done 关闭提示。保存后应在支持 GIF 播放的应用中检查动作。",
+        "text": "出现 Processing Complete（处理完成）后，点击 Save to Photos 保存 GIF，或用 Share File 分享。Done 关闭提示。保存后在支持动图的应用中查看播放效果。",
         "sections": []
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 示例使用 Custom、8 fps、360 宽度导出约 6 秒 GIF，未验证付费预设的具体参数组合。"
   },
   "video-to-live-photo-iphone": {
     "title": "如何在 iPhone 上把视频转换为实况照片（Live Photo）？",
-    "description": "Live Photo 可以保留一小段动作和声音。选择动作范围后，还可以指定静止封面。本例使用 3 秒范围与 Balanced 画质，已收到保存到相册的成功提示。附真实操作截图和参数说明。",
-    "intro": "Live Photo 可以保留一小段动作和声音。选择动作范围后，还可以指定静止封面。本例使用 3 秒范围与 Balanced 画质，已收到保存到相册的成功提示。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0）。英文按钮附中文说明。",
+    "description": "把一小段视频转成 Live Photo，可选择静止封面并保留声音。选好动作范围和封面帧，再保存到相册。",
+    "intro": "把一小段视频转成 Live Photo，可选择静止封面并保留声音。选好动作范围和封面帧，再保存到相册。",
     "tips": [
       {
         "title": "封面和动作分别检查",
@@ -91,11 +92,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "在 Process 页面打开 Video to Live Photo",
-        "text": "点击底部 Process（处理），在工具总览找到第 1 排中间的 Video to Live Photo，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Video to Live Photo。"
       },
       {
         "title": "选择要处理的视频",
-        "text": "在 Select Video 页面点击 Choose from Photos（从相册选择），选中素材；存放在文件中的素材可从 Choose from Files 进入。下载列表为空不影响从相册导入。本文部分步骤复用了先前裁出的约 6 秒短片段；你可以先用 Trim Video 准备短素材。"
+        "text": "在 Select Video（选择视频）中，点击 Choose from Photos（从相册选择）或 Choose from Files（从文件选择）导入视频。下载列表为空也可以导入。"
       },
       {
         "title": "确定实况范围与封面",
@@ -121,21 +122,22 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Balanced、HD*、Original*",
-            "text": "Balanced 是本次实测的画质选项；HD 和 Original 带 VIP 标记。画质选项不会提高原素材本身的细节，仍需检查输入画面。"
+            "text": "可先选择 Balanced。HD 和 Original 带 VIP 标记；提高输出画质无法补回源视频中缺失的细节。"
           }
         ]
       },
       {
         "title": "到相册检查实况效果",
-        "text": "本次处理后直接出现 Live Photo saved to Photos，表示 App 报告已保存实况照片。点击 OK，再到照片 App 查看结果的实况标记与播放效果。本次已验证 App 的保存成功提示，未用截图代替实际长按播放验证。",
+        "text": "等待 Live Photo saved to Photos（实况照片已保存到相册）提示，再点击 OK。到照片 App 长按实况照片，检查动作、封面和声音。",
         "sections": []
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 示例使用 3 秒范围和 Balanced 画质，已收到 App 的保存成功提示，未验证照片 App 中的长按播放。"
   },
   "transcode-video-iphone": {
     "title": "如何在 iPhone 和 iPad 上转换视频格式与压缩视频？",
-    "description": "需要调整视频格式或减小文件时，可以使用 Transcode Video。格式、编码、尺寸和码率各自影响不同方面，本文按页面分组解释，并用默认 MP4／H.264 参数完成一次导出。附真实操作截图和参数说明。",
-    "intro": "需要调整视频格式或减小文件时，可以使用 Transcode Video。格式、编码、尺寸和码率各自影响不同方面，本文按页面分组解释，并用默认 MP4／H.264 参数完成一次导出。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0）。英文按钮附中文说明。",
+    "description": "使用 Transcode Video 调整视频格式或减小文件体积。选择格式、分辨率和画质，导出后预览效果。",
+    "intro": "使用 Transcode Video 调整视频格式或减小文件体积。选择格式、分辨率和画质，导出后预览效果。",
     "tips": [
       {
         "title": "压缩后不满意",
@@ -155,11 +157,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "在 Process 页面打开 Transcode Video",
-        "text": "点击底部 Process（处理），在工具总览找到第 1 排右侧的 Transcode Video，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Transcode Video。"
       },
       {
         "title": "选择要处理的视频",
-        "text": "在 Select Video 页面点击 Choose from Photos（从相册选择），选中素材；存放在文件中的素材可从 Choose from Files 进入。下载列表为空不影响从相册导入。本文部分步骤复用了先前裁出的约 6 秒短片段；你可以先用 Trim Video 准备短素材。"
+        "text": "在 Select Video（选择视频）中，点击 Choose from Photos（从相册选择）或 Choose from Files（从文件选择）导入视频。下载列表为空也可以导入。"
       },
       {
         "title": "先选格式、画质和分辨率",
@@ -185,7 +187,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "Codec：H.264 与 HEVC*",
-            "text": "H.264 是本次使用的编码。HEVC 带 VIP 标记，通常可用于更高压缩效率的场景，但应确认接收设备或软件支持。格式选为 MP4 并不意味着只能使用一种编码。"
+            "text": "可先选择 H.264。HEVC 需要 VIP，可用于提高压缩效率，但请确认播放设备或应用支持。MP4 容器可以采用不同编码。"
           },
           {
             "title": "Bitrate：Auto、Target Size*、Custom Bitrate*",
@@ -199,7 +201,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "检查结果，再保存或继续处理",
-        "text": "本次生成了以 _transcode.mp4 结尾的文件，结果页显示约 6 秒。导出后比较文件大小与画面质量，尤其留意文字边缘、暗部和快速运动。",
+        "text": "预览导出视频，与原片比较体积和画质，尤其检查文字边缘、暗部和快速运动，再决定是否保存。",
         "sections": [
           {
             "title": "预览与保存",
@@ -211,12 +213,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 示例使用 Original 分辨率、Standard 画质、Keep Sound 和 Auto 码率，导出约 6 秒的 MP4／H.264 视频。"
   },
   "trim-video-iphone": {
     "title": "如何在 iPhone 和 iPad 上裁剪视频时长？",
-    "description": "只保留视频里需要的一段，可以用 Trim Video 设置开始和结束时间。本例从约 2 分 26 秒的素材中截出开头约 6 秒，适合继续制作 GIF、实况照片或短演示。附真实操作截图和参数说明。",
-    "intro": "只保留视频里需要的一段，可以用 Trim Video 设置开始和结束时间。本例从约 2 分 26 秒的素材中截出开头约 6 秒，适合继续制作 GIF、实况照片或短演示。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0）。英文按钮附中文说明。",
+    "description": "只保留视频中需要的部分。在 Trim Video 中设置开始与结束时间，再保存片段或交给其他工具继续处理。",
+    "intro": "只保留视频中需要的部分。在 Trim Video 中设置开始与结束时间，再保存片段或交给其他工具继续处理。",
     "tips": [
       {
         "title": "这里裁剪的是时间",
@@ -230,17 +233,17 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "为何均分入口弹出 VIP 页面？",
-        "answer": "Even Split 带星号，本次实测需要 VIP；Select Segment 流程已成功导出。"
+        "answer": "Even Split 需要 VIP。只截取一个时间范围时，使用 Select Segment 即可。"
       }
     ],
     "steps": [
       {
         "title": "在 Process 页面打开 Trim Video",
-        "text": "点击底部 Process（处理），在工具总览找到第 2 排左侧的 Trim Video，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Trim Video。"
       },
       {
         "title": "选择要处理的视频",
-        "text": "在 Select Video 页面点击 Choose from Photos（从相册选择），选中素材；存放在文件中的素材可从 Choose from Files 进入。下载列表为空不影响从相册导入。本文部分步骤复用了先前裁出的约 6 秒短片段；你可以先用 Trim Video 准备短素材。"
+        "text": "在 Select Video（选择视频）中，点击 Choose from Photos（从相册选择）或 Choose from Files（从文件选择）导入视频。下载列表为空也可以导入。"
       },
       {
         "title": "设置裁剪模式和时间范围",
@@ -256,13 +259,13 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Even Split*：按段均分",
-            "text": "Even Split 的提示说明会把完整视频平均分成多段并一次导出。本次点击后出现 VIP 页面，未执行均分导出；普通截取使用 Select Segment 即可。"
+            "text": "Even Split 将完整视频均分成多段并一起导出，需要 VIP。只保留一个片段时，使用 Select Segment。"
           }
         ]
       },
       {
         "title": "检查结果，再保存或继续处理",
-        "text": "点击 Start Processing 后，本次生成 _trim.mp4，结果页显示约 6 秒。先播放检查开头和结尾，再保存；如需继续做其他效果，可用 Keep Processing 复用短片段。",
+        "text": "点击 Start Processing，播放导出的片段并检查开头和结尾。确认后保存，或用 Keep Processing 交给其他工具继续处理。",
         "sections": [
           {
             "title": "预览与保存",
@@ -274,20 +277,21 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 示例通过 Select Segment 截出约 2 分 26 秒素材的前 6 秒。Even Split 打开了 VIP 页面，未执行均分导出。"
   },
   "join-videos-iphone": {
     "title": "如何在 iPhone 和 iPad 上拼接多个视频？",
-    "description": "使用 ClipDock影随存拼接相册视频，了解主视频、追加片段数量、上下箭头排序、处理进度和结果保存，附六张真实操作截图。",
-    "intro": "把旅行片段、活动记录或分段拍摄的讲解按顺序接起来，可以使用 ClipDock影随存的 Stitch Videos（拼接视频）。本文用三个相册视频演示从导入、排序到保存的完整流程，并逐项解释设置页。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0），英文按钮附中文对照；iPad 用户可对照相同功能入口操作。",
+    "description": "使用 Stitch Videos（拼接视频）把旅行片段、活动记录或分段讲解接起来。先选择开头的主视频，再添加其他片段并调整顺序。",
+    "intro": "使用 Stitch Videos（拼接视频）把旅行片段、活动记录或分段讲解接起来。先选择开头的主视频，再添加其他片段并调整顺序。",
     "tips": [
       {
         "title": "横竖屏或尺寸不一致怎么办？",
-        "text": "本次拼接页没有单独的画布、裁切或留边设置。对画面比例有要求时，先用 Resize / Canvas（调整尺寸／画布）或相应工具准备素材，再进行拼接，并检查输出效果。"
+        "text": "拼接页没有单独的画布、裁切或留边设置。对画面比例有要求时，先用 Resize / Canvas（调整尺寸／画布）或相应工具准备素材，再进行拼接，并检查输出效果。"
       },
       {
         "title": "暂时不要离开当前设置页",
-        "text": "右上角魔棒会将当前主视频带入 Quick Edit（快速编辑）工具选择。本次实测从那里重新进入 Stitch Videos 后，追加数量重置为 0。如果已排好顺序，直接开始处理；切换工具后应重新核对追加列表。"
+        "text": "右上角魔棒会将当前主视频带入 Quick Edit（快速编辑）工具选择。通过该入口返回 Stitch Videos 可能重置追加列表。如果已排好顺序，直接开始处理；切换工具后应重新核对追加列表。"
       }
     ],
     "faq": [
@@ -297,11 +301,11 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "可以把追加片段移到主视频前面吗？",
-        "answer": "本次界面的上下箭头只调整追加列表内部顺序，第一段追加视频的向上箭头为灰色。需要更换开头时，应重新选择主视频。"
+        "answer": "界面中的上下箭头只调整追加列表内部顺序，第一段追加视频的向上箭头为灰色。需要更换开头时，应重新选择主视频。"
       },
       {
         "question": "这里能设置转场、背景音乐或输出画质吗？",
-        "answer": "本次拼接设置页没有这些选项。页面主要用于预览主视频、添加片段及调整追加顺序；需要其他效果时，使用对应处理工具。"
+        "answer": "拼接设置页没有这些选项。页面主要用于预览主视频、添加片段及调整追加顺序；需要其他效果时，使用对应处理工具。"
       },
       {
         "question": "点击 Done 后为什么相册里没有成片？",
@@ -311,11 +315,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "在 Process 页面打开拼接工具",
-        "text": "打开 ClipDock影随存，点击底部 Process（处理）分页。在工具总览中，找到第二排中间的 Stitch Videos（拼接视频），点击进入。截图中的橙色箭头和边框标出了这个入口。"
+        "text": "点击底部 Process（处理），再打开 Stitch Videos。"
       },
       {
         "title": "选择主视频，读懂预览信息",
-        "text": "进入 Select Video（选择视频）后，通过 Choose from Photos（从相册选择）选中第一段视频。这段是主视频，会作为拼接结果的开头。进入截图中的设置页后，先核对素材。",
+        "text": "进入 Select Video（选择视频）后，通过 Choose from Photos（从相册选择）选中第一段视频。这段是主视频，会作为拼接结果的开头。进入设置页后，先核对素材。",
         "sections": [
           {
             "title": "预览、文件名与时间轴",
@@ -323,7 +327,7 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "640×338 是什么？",
-            "text": "这是当前主视频的画面尺寸，单位为像素。它是素材信息，不是输出尺寸选择器。本次拼接设置页没有独立的分辨率、帧率或画质选项。"
+            "text": "这是当前主视频的画面尺寸，单位为像素。它是素材信息，不是输出尺寸选择器。拼接设置页没有独立的分辨率、帧率或画质选项。"
           },
           {
             "title": "为什么已经选了视频，却显示 0 clips added？",
@@ -347,11 +351,11 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "核对数量，调整播放顺序",
-        "text": "截图中显示 2 clips added，表示在主视频后追加了两段，最终共三段。列表从 Clip 2 开始编号，按从上到下的顺序接在主视频之后。",
+        "text": "追加数量不包含开头的主视频：2 clips added 表示最终共三段。追加列表从 Clip 2 开始，按从上到下的顺序接在主视频之后。",
         "sections": [
           {
             "title": "上下箭头：调整追加片段顺序",
-            "text": "点击向上或向下箭头移动对应片段。本次已实测把 05:11 的片段移到 04:10 的片段前面。最上面的追加片段不能继续上移，最下面的不能继续下移，因此边界处的箭头会变灰；只有一段追加视频时，两个方向都不可用。"
+            "text": "用上下箭头调整追加片段的顺序。第一段不能继续上移，最后一段不能继续下移；只有一段追加视频时，两个箭头均不可用。"
           },
           {
             "title": "主视频与追加列表的区别",
@@ -379,7 +383,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "预览成片并保存到相册",
-        "text": "完成后结果页会显示生成的视频、时间轴和缩略图。本次输出文件以 _concat.mp4 结尾，结果页显示 11:46，已验证能够播放。输入列表的时长按秒显示，核对总时长时应以实际输出为准。",
+        "text": "预览拼接结果，确认片段顺序。输入列表中的时长按整秒显示，核对总时长时请以输出文件为准。",
         "sections": [
           {
             "title": "保存前检查哪些地方",
@@ -387,7 +391,7 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Save to Photos：保存到相册",
-            "text": "点击 Save to Photos（保存到相册）。首次使用可能需要允许 App 添加照片和视频；保存完成后会出现 Saved to Photos 提示。本次实测已收到这一成功提示，可以再到照片 App 查看成片。"
+            "text": "点击 Save to Photos，按提示允许相册访问。等待 Saved to Photos（已保存到相册），再到照片 App 查看成片。"
           },
           {
             "title": "继续处理、分享与完成",
@@ -395,12 +399,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 示例拼接了三段视频、调整了追加顺序，播放了显示为 11:46 的结果，并收到保存成功提示。该版本中通过 Quick Edit 返回拼接工具后，追加列表被重置。"
   },
   "interleave-videos-iphone": {
     "title": "如何在 iPhone 和 iPad 上交错拼接视频片段？",
-    "description": "Interleave 会先分段，再按视频顺序交替输出，适合在不同素材之间切换。本文用 A、B 两个视频演示，解释总段数、起始顺序以及声音切口的淡入淡出。附真实操作截图和参数说明。",
-    "intro": "Interleave 会先分段，再按视频顺序交替输出，适合在不同素材之间切换。本文用 A、B 两个视频演示，解释总段数、起始顺序以及声音切口的淡入淡出。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0）。英文按钮附中文说明。",
+    "description": "使用 Interleave 在不同视频的片段之间交替切换。添加素材后，选择分段方式、起始顺序和声音过渡。",
+    "intro": "使用 Interleave 在不同视频的片段之间交替切换。添加素材后，选择分段方式、起始顺序和声音过渡。",
     "tips": [
       {
         "title": "节奏忽快忽慢",
@@ -414,17 +419,17 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "Total Segments 有星号，为什么默认能用？",
-        "answer": "页面说明免费支持最多 5 段，本次默认 5 段已成功输出。是否需要 VIP 要结合参数值和页面说明判断。"
+        "answer": "总计最多 5 段可免费使用。结合所选数值和权限说明判断，控件上的星号不代表每个数值都需要 VIP。"
       }
     ],
     "steps": [
       {
         "title": "在 Process 页面打开 Interleave",
-        "text": "点击底部 Process（处理），在工具总览找到第 2 排右侧的 Interleave，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Interleave。"
       },
       {
         "title": "选择要处理的视频",
-        "text": "在 Select Video 页面点击 Choose from Photos（从相册选择），选中素材；存放在文件中的素材可从 Choose from Files 进入。下载列表为空不影响从相册导入。本文部分步骤复用了先前裁出的约 6 秒短片段；你可以先用 Trim Video 准备短素材。"
+        "text": "在 Select Video（选择视频）中，点击 Choose from Photos（从相册选择）或 Choose from Files（从文件选择）导入视频。下载列表为空也可以导入。"
       },
       {
         "title": "添加 A、B 视频",
@@ -460,7 +465,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "检查结果，再保存或继续处理",
-        "text": "点击 Start Processing 后，本次生成 _interleave.mp4，结果页显示 02:31。应逐个检查交替位置，确认 A、B 的切换、顺序与声音过渡，而不是只看首帧。",
+        "text": "点击 Start Processing，逐个播放检查切换位置，确认起始素材、片段顺序和声音过渡。",
         "sections": [
           {
             "title": "预览与保存",
@@ -472,12 +477,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 A／B 示例采用总计 5 段、Start with A 和默认 50 ms 音频淡入淡出，结果显示为 02:31。"
   },
   "segment-grid-video-iphone": {
     "title": "如何在 iPhone 和 iPad 上把视频分段并排成网格？",
-    "description": "Segment Grid 把同一个视频按时间分成多段，再让这些片段在一个网格中同时显示。本例把约 6 秒视频分成四段，生成 2×2 的视频网格。附真实操作截图和参数说明。",
-    "intro": "Segment Grid 把同一个视频按时间分成多段，再让这些片段在一个网格中同时显示。本例把约 6 秒视频分成四段，生成 2×2 的视频网格。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0）。英文按钮附中文说明。",
+    "description": "把同一个视频按时间分段，让各片段在宫格中同时播放。先选行列数，再设置声音和输出尺寸。",
+    "intro": "把同一个视频按时间分段，让各片段在宫格中同时播放。先选行列数，再设置声音和输出尺寸。",
     "tips": [
       {
         "title": "每格看不清",
@@ -497,11 +503,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "在 Process 页面打开 Segment Grid",
-        "text": "点击底部 Process（处理），在工具总览找到第 3 排左侧的 Segment Grid，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Segment Grid。"
       },
       {
         "title": "选择要处理的视频",
-        "text": "在 Select Video 页面点击 Choose from Photos（从相册选择），选中素材；存放在文件中的素材可从 Choose from Files 进入。下载列表为空不影响从相册导入。本文部分步骤复用了先前裁出的约 6 秒短片段；你可以先用 Trim Video 准备短素材。"
+        "text": "在 Select Video（选择视频）中，点击 Choose from Photos（从相册选择）或 Choose from Files（从文件选择）导入视频。下载列表为空也可以导入。"
       },
       {
         "title": "设置行列与声音",
@@ -517,7 +523,7 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "带星号参数的免费范围",
-            "text": "页面注明 3 行或 3 列及以上、方形输出和保留每格原始尺寸需要 VIP。本次默认 2×2、原视频尺寸已成功导出。"
+            "text": "可先使用免费的 2×2 宫格和 Original Video Size。3 行或 3 列及以上、方形输出及保留每格原始尺寸需要 VIP。"
           }
         ]
       },
@@ -537,7 +543,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "检查结果，再保存或继续处理",
-        "text": "点击 Start Processing 后，本次结果显示四个时间片段组成的 2×2 网格。输入约 6 秒，页面预估约 2 秒，结果时长按整秒显示约 1 秒；应播放检查实际内容，不将整数显示当作精确帧级时长。",
+        "text": "点击 Start Processing，再预览宫格。检查每格的片段是否正确，以及输出尺寸和声音是否符合需要。",
         "sections": [
           {
             "title": "预览与保存",
@@ -549,12 +555,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 示例以静音、2×2 和 Original Video Size 导出。约 6 秒素材的预计时长为约 2 秒，结果整秒标签显示约 1 秒；这两种显示均不是帧级精确测量。"
   },
   "resize-video-iphone": {
     "title": "如何在 iPhone 和 iPad 上调整视频比例与画布？",
-    "description": "将横屏素材放进方形或竖屏画布时，需要同时决定画布比例和画面的放置方式。本例使用 1:1 与 Fit，保留完整画面并生成方形画布视频。附真实操作截图和参数说明。",
-    "intro": "将横屏素材放进方形或竖屏画布时，需要同时决定画布比例和画面的放置方式。本例使用 1:1 与 Fit，保留完整画面并生成方形画布视频。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0）。英文按钮附中文说明。",
+    "description": "使用 Resize / Canvas 调整视频画布比例。选好画布后，用 Fit 保留完整画面，或用 Fill 铺满画布。",
+    "intro": "使用 Resize / Canvas 调整视频画布比例。选好画布后，用 Fit 保留完整画面，或用 Fill 铺满画布。",
     "tips": [
       {
         "title": "先决定是否允许裁掉边缘",
@@ -564,7 +571,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "改比例会把画面拉伸吗？",
-        "answer": "本文使用 Fit 保持画面比例并留背景。不同布局要通过预览判断，不要把改画布直接理解成强制拉伸。"
+        "answer": "Fit 保持画面比例，并在需要时添加背景。选择其他布局后，导出前请检查是否裁切或拉伸。"
       },
       {
         "question": "怎样调整输出分辨率？",
@@ -574,11 +581,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "在 Process 页面打开 Resize / Canvas",
-        "text": "点击底部 Process（处理），在工具总览找到第 3 排中间的 Resize / Canvas，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Resize / Canvas。"
       },
       {
         "title": "选择要处理的视频",
-        "text": "在 Select Video 页面点击 Choose from Photos（从相册选择），选中素材；存放在文件中的素材可从 Choose from Files 进入。下载列表为空不影响从相册导入。本文部分步骤复用了先前裁出的约 6 秒短片段；你可以先用 Trim Video 准备短素材。"
+        "text": "在 Select Video（选择视频）中，点击 Choose from Photos（从相册选择）或 Choose from Files（从文件选择）导入视频。下载列表为空也可以导入。"
       },
       {
         "title": "选择画布比例",
@@ -608,13 +615,13 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "带星号的模糊与多格布局",
-            "text": "列表包含 Blur 1:1*、Double 1:1*、Symmetric Double 1:1*、Triple 1:1*、Triple Blur 1:1*。这些是模糊背景或多格布局入口，需要 VIP；本次未验证其具体输出。"
+            "text": "Blur 1:1*、Double 1:1*、Symmetric Double 1:1*、Triple 1:1* 和 Triple Blur 1:1* 是需要 VIP 的模糊背景或多格布局。"
           }
         ]
       },
       {
         "title": "检查结果，再保存或继续处理",
-        "text": "本次生成 _resize.mp4。结果中横屏内容完整保留，周围出现黑色背景；请结合播放和成片尺寸检查比例是否适合目标场景。",
+        "text": "预览结果，检查画布比例、边缘和背景。使用 Fit 时，确认完整画面都保留下来再保存。",
         "sections": [
           {
             "title": "预览与保存",
@@ -626,12 +633,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 示例使用 1:1 画布、Fit 和黑色背景完成导出，未验证付费模糊背景或多格布局的输出。"
   },
   "rotate-video-iphone": {
     "title": "如何在 iPhone 和 iPad 上旋转视频方向？",
-    "description": "视频横着或倒着显示时，可以用 Rotate Video 改变画面方向。本例采用向右旋转 90 度，设置页预览和导出结果均显示了方向变化。附真实操作截图和参数说明。",
-    "intro": "视频横着或倒着显示时，可以用 Rotate Video 改变画面方向。本例采用向右旋转 90 度，设置页预览和导出结果均显示了方向变化。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0）。英文按钮附中文说明。",
+    "description": "视频横着或倒着显示时，使用 Rotate Video 调整方向。选择旋转角度，检查预览，再保存结果。",
+    "intro": "视频横着或倒着显示时，使用 Rotate Video 调整方向。选择旋转角度，检查预览，再保存结果。",
     "tips": [
       {
         "title": "旋转与镜像不同",
@@ -645,17 +653,17 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "旋转会改变时长吗？",
-        "answer": "这个操作调整方向，本次约 6 秒输入仍输出约 6 秒。"
+        "answer": "这个操作调整方向，旋转后请检查输出时长。"
       }
     ],
     "steps": [
       {
         "title": "在 Process 页面打开 Rotate Video",
-        "text": "点击底部 Process（处理），在工具总览找到第 3 排右侧的 Rotate Video，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Rotate Video。"
       },
       {
         "title": "选择要处理的视频",
-        "text": "在 Select Video 页面点击 Choose from Photos（从相册选择），选中素材；存放在文件中的素材可从 Choose from Files 进入。下载列表为空不影响从相册导入。本文部分步骤复用了先前裁出的约 6 秒短片段；你可以先用 Trim Video 准备短素材。"
+        "text": "在 Select Video（选择视频）中，点击 Choose from Photos（从相册选择）或 Choose from Files（从文件选择）导入视频。下载列表为空也可以导入。"
       },
       {
         "title": "选择旋转方向",
@@ -673,7 +681,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "检查结果，再保存或继续处理",
-        "text": "点击 Start Processing 后，本次输出画面已向右旋转 90 度，结果时长仍约 6 秒。检查文字和主体方向正确后保存。",
+        "text": "点击 Start Processing，检查导出视频的方向。确认文字和主体朝向正确后再保存。",
         "sections": [
           {
             "title": "预览与保存",
@@ -685,12 +693,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 示例将约 6 秒片段向右旋转 90 度，预览与导出均显示方向变化。"
   },
   "mirror-video-iphone": {
     "title": "如何在 iPhone 和 iPad 上镜像翻转视频？",
-    "description": "Mirror Video 可左右或上下翻转画面。本例使用 H Flip，设置页和导出结果中的海景左右位置发生交换。附真实操作截图和参数说明。",
-    "intro": "Mirror Video 可左右或上下翻转画面。本例使用 H Flip，设置页和导出结果中的海景左右位置发生交换。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0）。英文按钮附中文说明。",
+    "description": "使用 Mirror Video 左右或上下翻转画面。导出前检查效果，尤其留意视频里的文字和标志。",
+    "intro": "使用 Mirror Video 左右或上下翻转画面。导出前检查效果，尤其留意视频里的文字和标志。",
     "tips": [
       {
         "title": "字幕可能一起反向",
@@ -710,11 +719,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "在 Process 页面打开 Mirror Video",
-        "text": "点击底部 Process（处理），在工具总览找到第 4 排左侧的 Mirror Video，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Mirror Video。"
       },
       {
         "title": "选择要处理的视频",
-        "text": "在 Select Video 页面点击 Choose from Photos（从相册选择），选中素材；存放在文件中的素材可从 Choose from Files 进入。下载列表为空不影响从相册导入。本文部分步骤复用了先前裁出的约 6 秒短片段；你可以先用 Trim Video 准备短素材。"
+        "text": "在 Select Video（选择视频）中，点击 Choose from Photos（从相册选择）或 Choose from Files（从文件选择）导入视频。下载列表为空也可以导入。"
       },
       {
         "title": "预览镜像效果",
@@ -731,13 +740,13 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Side Sym*、Top Sym*、Center Sym*",
-            "text": "这些是带 VIP 标记的对称效果入口。它们与把整个画面简单翻面不同，本次仅核对入口，未验证付费模式输出。"
+            "text": "这些 VIP 模式用于制作对称效果，与翻转整幅画面不同。选择时请查看预览。"
           }
         ]
       },
       {
         "title": "检查结果，再保存或继续处理",
-        "text": "本次 H Flip 已生成结果，海景与云层左右位置与原图相反。保存前注意字幕、标志和文字也会跟着镜像。",
+        "text": "预览镜像结果，检查左右或上下位置。文字、标志和内嵌字幕也会随画面一起翻转。",
         "sections": [
           {
             "title": "预览与保存",
@@ -749,12 +758,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 示例完成了 H Flip 导出；付费对称效果仅核对入口，未验证输出。"
   },
   "reverse-video-iphone": {
     "title": "如何在 iPhone 和 iPad 上倒放视频？",
-    "description": "Reverse Video 让动作从结尾往开头播放。除了反转画面，还需要决定声音怎样处理。本例使用默认静音，结果首帧对应原片末尾。附真实操作截图和参数说明。",
-    "intro": "Reverse Video 让动作从结尾往开头播放。除了反转画面，还需要决定声音怎样处理。本例使用默认静音，结果首帧对应原片末尾。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0）。英文按钮附中文说明。",
+    "description": "使用 Reverse Video 让视频从结尾向开头播放。选择静音、保留原音或倒放音频，再预览结果。",
+    "intro": "使用 Reverse Video 让视频从结尾向开头播放。选择静音、保留原音或倒放音频，再预览结果。",
     "tips": [
       {
         "title": "先裁短再倒放",
@@ -774,11 +784,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "在 Process 页面打开 Reverse Video",
-        "text": "点击底部 Process（处理），在工具总览找到第 4 排中间的 Reverse Video，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Reverse Video。"
       },
       {
         "title": "选择要处理的视频",
-        "text": "在 Select Video 页面点击 Choose from Photos（从相册选择），选中素材；存放在文件中的素材可从 Choose from Files 进入。下载列表为空不影响从相册导入。本文部分步骤复用了先前裁出的约 6 秒短片段；你可以先用 Trim Video 准备短素材。"
+        "text": "在 Select Video（选择视频）中，点击 Choose from Photos（从相册选择）或 Choose from Files（从文件选择）导入视频。下载列表为空也可以导入。"
       },
       {
         "title": "选择倒放时的声音",
@@ -790,13 +800,13 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Keep Audio 与 Reverse Audio",
-            "text": "Keep Audio 保留原有音频播放顺序；Reverse Audio 则用于反转声音。两者听感不同，尤其对白和音乐需要导出后试听。本次只实测了静音模式。"
+            "text": "Keep Audio 保留原有音频顺序；Reverse Audio 倒放声音。按需要选择，并试听导出的对白或音乐。"
           }
         ]
       },
       {
         "title": "检查结果，再保存或继续处理",
-        "text": "本次结果首帧从原视频末尾的人物画面开始，缩略图顺序也反向排列，显示时长仍约 6 秒。请实际播放，检查动作是否从结尾向开头进行。",
+        "text": "播放结果，确认动作由后向前进行。检查开头、结尾和所选声音模式，再保存视频。",
         "sections": [
           {
             "title": "预览与保存",
@@ -808,12 +818,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 示例仅实测 Mute 模式，结果从原片末尾开始；未验证 Keep Audio 和 Reverse Audio。"
   },
   "change-video-speed-iphone": {
     "title": "如何在 iPhone 和 iPad 上加速或放慢视频？",
-    "description": "Change Speed 用速度倍数改变视频节奏。本文使用 1.50x，把约 6 秒片段输出为约 4 秒，并解释音调保留和速度范围。附真实操作截图和参数说明。",
-    "intro": "Change Speed 用速度倍数改变视频节奏。本文使用 1.50x，把约 6 秒片段输出为约 4 秒，并解释音调保留和速度范围。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0）。英文按钮附中文说明。",
+    "description": "使用 Change Speed 加快或放慢视频。选择速度倍数，检查时长和声音变化后再保存。",
+    "intro": "使用 Change Speed 加快或放慢视频。选择速度倍数，检查时长和声音变化后再保存。",
     "tips": [
       {
         "title": "放慢不一定更流畅",
@@ -833,11 +844,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "在 Process 页面打开 Change Speed",
-        "text": "点击底部 Process（处理），在工具总览找到第 4 排右侧的 Change Speed，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Change Speed。"
       },
       {
         "title": "选择要处理的视频",
-        "text": "在 Select Video 页面点击 Choose from Photos（从相册选择），选中素材；存放在文件中的素材可从 Choose from Files 进入。下载列表为空不影响从相册导入。本文部分步骤复用了先前裁出的约 6 秒短片段；你可以先用 Trim Video 准备短素材。"
+        "text": "在 Select Video（选择视频）中，点击 Choose from Photos（从相册选择）或 Choose from Files（从文件选择）导入视频。下载列表为空也可以导入。"
       },
       {
         "title": "设置速度和音调",
@@ -859,7 +870,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "检查结果，再保存或继续处理",
-        "text": "本次使用 1.50x、未开启保留音调，结果显示约 4 秒，与页面估算一致。保存前检查节奏与声音是否适合用途。",
+        "text": "播放结果，检查节奏、时长和声音。如果过快或过慢，调整速度倍数后重新导出。",
         "sections": [
           {
             "title": "预览与保存",
@@ -871,12 +882,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 示例使用 1.50x，未开启 Preserve Pitch，将约 6 秒片段输出为约 4 秒。"
   },
   "edit-video-audio-iphone": {
     "title": "如何在 iPhone 和 iPad 上静音视频或调整音量？",
-    "description": "Audio Editing 用于处理视频中的声音，页面提供静音、音量和替换入口。本文展开 Volume 模式讲解，本次按显示的 100% 音量完成了导出。附真实操作截图和参数说明。",
-    "intro": "Audio Editing 用于处理视频中的声音，页面提供静音、音量和替换入口。本文展开 Volume 模式讲解，本次按显示的 100% 音量完成了导出。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0）。英文按钮附中文说明。",
+    "description": "使用 Audio Editing 将视频静音、调整音量或替换音频。选择处理方式并设置参数，导出后试听结果。",
+    "intro": "使用 Audio Editing 将视频静音、调整音量或替换音频。选择处理方式并设置参数，导出后试听结果。",
     "tips": [
       {
         "title": "声音失真或太吵",
@@ -886,7 +898,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "这会输出音频文件吗？",
-        "answer": "本工具处理视频中的声音，本次输出仍为视频。需要独立音频文件请使用 Extract Audio。"
+        "answer": "本工具处理视频中的声音，输出仍为视频。需要独立音频文件请使用 Extract Audio。"
       },
       {
         "question": "音量百分比怎样确认？",
@@ -896,11 +908,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "在 Process 页面打开 Audio Editing",
-        "text": "点击底部 Process（处理），在工具总览找到第 5 排左侧的 Audio Editing，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Audio Editing。"
       },
       {
         "title": "选择要处理的视频",
-        "text": "在 Select Video 页面点击 Choose from Photos（从相册选择），选中素材；存放在文件中的素材可从 Choose from Files 进入。下载列表为空不影响从相册导入。本文部分步骤复用了先前裁出的约 6 秒短片段；你可以先用 Trim Video 准备短素材。"
+        "text": "在 Select Video（选择视频）中，点击 Choose from Photos（从相册选择）或 Choose from Files（从文件选择）导入视频。下载列表为空也可以导入。"
       },
       {
         "title": "选择声音处理模式",
@@ -912,17 +924,17 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Volume：调整声音大小",
-            "text": "右侧百分比表示当前音量比例，100% 是本次使用的值。拖动后以百分比标签为准，再试听结果；提高音量不等于修复噪声或改善录音质量。"
+            "text": "拖动音量滑块，查看旁边的百分比，100% 表示原有音量比例。提高音量也可能放大噪声，保存前请试听导出结果。"
           },
           {
             "title": "Replace* 与 Fade In/Out*",
-            "text": "Replace 是替换音频入口，Fade In/Out 用于声音淡入淡出，两者带 VIP 标记。本次未执行这两项付费功能。需要单独选音频与视频合成，也可查看音视频合并教程。"
+            "text": "Replace 替换音频来源；Fade In/Out 为声音添加淡入淡出，两者均需要 VIP。如需分别选择视频与音频合成，可使用 Merge Audio and Video。"
           }
         ]
       },
       {
         "title": "检查结果，再保存或继续处理",
-        "text": "本次按 Volume 100% 生成 _audio_edit.mp4，导出历史也显示 Volume 100%。若需要降低或提高音量，先确认滑块旁的百分比确实改变，再导出并试听比较。",
+        "text": "试听导出视频并与原片比较。需要改变音量时，先确认滑块旁的百分比已改变再导出；100% 表示维持原有音量比例。",
         "sections": [
           {
             "title": "预览与保存",
@@ -934,12 +946,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 示例以 Volume 100% 导出，未演示改变音量后的效果；未执行 Replace 和 Fade In/Out。"
   },
   "add-watermark-video-iphone": {
     "title": "如何在 iPhone 和 iPad 上给视频添加文字水印？",
-    "description": "Add Watermark 可以为视频添加文字水印，并调整大小、位置及样式。本文用 ClipDock Demo 演示参数设置，再用真机导出结果说明预览与保存。附真实操作截图和参数说明。",
-    "intro": "Add Watermark 可以为视频添加文字水印，并调整大小、位置及样式。本文用 ClipDock Demo 演示参数设置，再用真机导出结果说明预览与保存。入口与参数图来自 iPhone 17 Pro Max 模拟器，导出结果图来自 iPhone 真机。英文按钮附中文说明。",
+    "description": "在 iPhone 或 iPad 上用 ClipDock影随存添加文字水印，设置文字、大小和位置，再预览并保存视频。",
+    "intro": "使用 Add Watermark 添加文字水印，输入文字并设置大小和位置。参数图与结果图使用了不同文字和素材，详见示例说明。",
     "tips": [
       {
         "title": "先预览，再保存",
@@ -959,11 +972,11 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "在 Process 页面打开 Add Watermark",
-        "text": "点击底部 Process（处理），在工具总览找到第 5 排中间的 Add Watermark，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Add Watermark。"
       },
       {
         "title": "选择要处理的视频",
-        "text": "在 Select Video 页面点击 Choose from Photos（从相册选择），选中素材；存放在文件中的素材可从 Choose from Files 进入。下载列表为空不影响从相册导入。本文部分步骤复用了先前裁出的约 6 秒短片段；你可以先用 Trim Video 准备短素材。"
+        "text": "在 Select Video（选择视频）中，点击 Choose from Photos（从相册选择）或 Choose from Files（从文件选择）导入视频。下载列表为空也可以导入。"
       },
       {
         "title": "设置水印文字与大小",
@@ -993,13 +1006,13 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Opacity*：透明度",
-            "text": "本例显示 75%。透明度越低水印通常越淡，但也更容易看不清；这个参数需要 VIP。本次保留默认值。"
+            "text": "本例显示 75%。透明度越低水印通常越淡，但也更容易看不清；这个参数需要 VIP。"
           }
         ]
       },
       {
         "title": "预览水印成片并保存",
-        "text": "确认参数后点击 Start Processing，完成后会出现结果页。图中是真机导出的 15 秒视频，文件名以 _watermark.mp4 结尾，右下角可见 Made by ClipDock 水印。",
+        "text": "点击 Start Processing，在导出视频中预览水印。检查文字、位置，以及不同画面下是否清晰可读。",
         "sections": [
           {
             "title": "检查水印效果",
@@ -1015,12 +1028,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "入口和参数图来自 iPhone 17 Pro Max 模拟器，结果图来自 iPhone 真机。参数使用 ClipDock Demo，结果使用另一段素材和 Made by ClipDock。示例只配置文字水印，未验证付费样式修改。"
   },
   "capture-video-frames-iphone": {
     "title": "如何在 iPhone 和 iPad 上截取视频画面与查看批量截图选项？",
-    "description": "Video Capture 从视频中导出图片。本文实测 Single 单帧截图，并说明 Batch、Smart、Sheet 这些带 VIP 标记的入口，避免把系统截屏与视频帧导出混淆。附真实操作截图和参数说明。",
-    "intro": "Video Capture 从视频中导出图片。本文实测 Single 单帧截图，并说明 Batch、Smart、Sheet 这些带 VIP 标记的入口，避免把系统截屏与视频帧导出混淆。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0）。英文按钮附中文说明。",
+    "description": "使用 Video Capture 把视频中的一帧保存为图片。选一个清晰的时刻，预览画面后保存或分享。",
+    "intro": "使用 Video Capture 把视频中的一帧保存为图片。选一个清晰的时刻，预览画面后保存或分享。",
     "tips": [
       {
         "title": "画面模糊",
@@ -1030,21 +1044,21 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "能一次批量截图吗？",
-        "answer": "界面提供 Batch*，需要 VIP。本篇已实测 Single，未验证批量设置和输出。"
+        "answer": "Batch* 用于批量截帧，需要 VIP。只保存一帧时，使用 Single。"
       },
       {
         "question": "与手机截屏有什么区别？",
-        "answer": "Video Capture 导出视频帧，本次得到 640×338 JPEG；手机截屏还可能包含播放控件和系统界面。"
+        "answer": "Video Capture 导出视频帧，导出的尺寸取决于源视频；手机截屏还可能包含播放控件和系统界面。"
       }
     ],
     "steps": [
       {
         "title": "在 Process 页面打开 Video Capture",
-        "text": "点击底部 Process（处理），在工具总览找到第 5 排右侧的 Video Capture，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Video Capture。"
       },
       {
         "title": "选择要处理的视频",
-        "text": "在 Select Video 页面点击 Choose from Photos（从相册选择），选中素材；存放在文件中的素材可从 Choose from Files 进入。下载列表为空不影响从相册导入。本文部分步骤复用了先前裁出的约 6 秒短片段；你可以先用 Trim Video 准备短素材。"
+        "text": "在 Select Video（选择视频）中，点击 Choose from Photos（从相册选择）或 Choose from Files（从文件选择）导入视频。下载列表为空也可以导入。"
       },
       {
         "title": "选择截图模式和时间",
@@ -1056,7 +1070,7 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Batch*、Smart*、Sheet*",
-            "text": "分别是批量截图、智能截图和预览图表入口，当前需要 VIP。本次未进入付费设置或执行这些模式，因此不假定批量间隔、智能算法或图表排版的具体参数。"
+            "text": "Batch、Smart 和 Sheet 分别是批量截帧、智能挑帧和预览图表入口，需要 VIP。进入相应模式查看设置。"
           },
           {
             "title": "Add Timestamp",
@@ -1066,7 +1080,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "预览图片并保存",
-        "text": "本次 Export Image 后出现 Screenshot Preview，显示 66 KB、JPEG、640×338。核对画面后点击 Save to Photos 保存图片，或用 Share File 分享；Done 关闭预览。",
+        "text": "点击 Export Image 打开 Screenshot Preview（截图预览）。核对画面、尺寸和文件大小，再用 Save to Photos 保存或 Share File 分享。Done 关闭预览。",
         "sections": [
           {
             "title": "尺寸来自视频画面",
@@ -1074,12 +1088,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 Single 单帧模式导出了 640×338 JPEG，未验证 Batch、Smart 和 Sheet 的设置及输出。"
   },
   "extract-audio-iphone": {
     "title": "如何在 iPhone 和 iPad 上提取视频音频？",
-    "description": "使用 ClipDock影随存从 iPhone 相册视频中提取 M4A 音频，查看处理结果并打开文件分享入口，附四张真实操作截图。",
-    "intro": "想单独保存视频里的声音？打开 ClipDock影随存的 Extract Audio（提取音频），从相册选中视频，即可生成独立的音频文件。下面用四张真实操作截图说明完整步骤。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0），App 使用英文界面，按钮附有中文对照；iPad 用户可对照相同功能入口操作。",
+    "description": "使用 Extract Audio（提取音频）单独保存视频里的声音。从相册或“文件”选择视频，再保存或分享提取出的音频。",
+    "intro": "使用 Extract Audio（提取音频）单独保存视频里的声音。从相册或“文件”选择视频，再保存或分享提取出的音频。",
     "tips": [
       {
         "title": "提取后没有声音怎么办？",
@@ -1093,7 +1108,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "可以选择 MP3 等其他格式吗？",
-        "answer": "本次实测中，选中视频后直接生成 M4A，没有出现格式选择界面。本文按这一实际流程演示，不包含 MP3 转换步骤。"
+        "answer": "此流程直接生成 M4A，不提供格式菜单，本文不包含 MP3 转换步骤。"
       },
       {
         "question": "为什么照片 App 里找不到输出？",
@@ -1107,7 +1122,7 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "打开提取音频工具",
-        "text": "打开 ClipDock影随存，点击底部 Process（处理）分页，在工具列表中找到 Extract Audio（提取音频）。截图中的入口位于最下排左侧。操作前，准备好一段有声音的视频，例如自己的讲解、访谈或已获授权的素材。"
+        "text": "点击底部 Process（处理），再打开 Extract Audio。"
       },
       {
         "title": "从相册选择视频",
@@ -1115,18 +1130,19 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "等待音频提取完成",
-        "text": "选中视频后，App 会直接开始提取，无需再点击开始按钮。本次操作没有出现格式设置页，完成后弹出 Processing Complete（处理完成），生成的文件名以 .m4a 结尾。点击 Share File（分享文件）继续导出；Done（完成）用于关闭提示。"
+        "text": "选中视频后直接开始提取，无需再点击开始按钮。出现 Processing Complete 和 .m4a 文件后，点击 Share File 保存或分享；Done 关闭提示。"
       },
       {
         "title": "打开分享与保存入口",
-        "text": "点击 Share File 后，分享面板会显示音频文件及其大小，截图中本次输出约为 2.4 MB。需要单独保存时，使用下方的保存到“文件”入口；需要交给其他 App 时，可查看“更多”中的可用选项。保存后建议打开音频试听，确认声音和时长符合预期。"
+        "text": "在 Share File 分享面板中，选择保存到“文件”保留副本，或选择其他 App 分享。保存后打开音频，检查声音和时长。"
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 示例选中素材后直接生成 M4A，没有格式菜单。截图展示到分享面板，未展示保存到“文件”完成。系统分享按钮可能跟随设备语言。"
   },
   "change-video-md5-iphone": {
     "title": "如何在 iPhone 和 iPad 上使用视频 MD5 修改工具？",
-    "description": "Change MD5 会为所选视频生成新的处理文件。本文演示实际入口和结果页；文件摘要属于字节层面的标识，不应把改变摘要理解成改善画质或改变视频内容。附真实操作截图和参数说明。",
-    "intro": "Change MD5 会为所选视频生成新的处理文件。本文演示实际入口和结果页；文件摘要属于字节层面的标识，不应把改变摘要理解成改善画质或改变视频内容。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0）。英文按钮附中文说明。",
+    "description": "使用 Change MD5 为视频生成处理副本。如果需要确认 MD5 已变化，请使用哈希校验工具比较原文件与输出文件。",
+    "intro": "使用 Change MD5 为视频生成处理副本。如果需要确认 MD5 已变化，请使用哈希校验工具比较原文件与输出文件。",
     "tips": [
       {
         "title": "以实际文件校验为准",
@@ -1146,21 +1162,21 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "在 Process 页面打开 Change MD5",
-        "text": "点击底部 Process（处理），在工具总览找到第 6 排中间的 Change MD5，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Change MD5。"
       },
       {
         "title": "选择视频并等待处理",
-        "text": "点击 Change MD5 后，从 Choose from Photos 选择素材，或按文件所在位置使用其他入口。本次使用已导出的短视频进行快速编辑，进入功能后直接处理，没有单独的参数设置页。",
+        "text": "从相册或其他可用来源选择视频，随后直接开始处理，没有单独的参数设置页。",
         "sections": [
           {
             "title": "没有可填写的目标摘要",
-            "text": "本次流程没有出现 MD5 输入框或格式参数。不要把它理解成可以指定任意摘要值的工具。"
+            "text": "此工具不提供目标 MD5 输入框，不能指定任意摘要值。"
           }
         ]
       },
       {
         "title": "检查结果，再保存或继续处理",
-        "text": "本次生成了以 _md5.mp4 结尾的新文件，结果页显示约 6 秒。已经验证到输出结果页，未进行输入与输出的 MD5 数值比对；需要摘要证据时，应另行计算两个文件的实际值。",
+        "text": "检查新文件，再保存或分享。如果需要确认 MD5 不同，请计算并比较原文件与输出文件的哈希值；文件名变化不能代替校验。",
         "sections": [
           {
             "title": "预览与保存",
@@ -1172,12 +1188,13 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 示例已生成 _md5.mp4 并进入结果页，未比较输入与输出文件的 MD5 数值。"
   },
   "merge-audio-video-iphone": {
     "title": "如何在 iPhone 和 iPad 上合并音频与视频？",
-    "description": "当画面和声音来自不同文件时，可以使用 Merge Audio and Video。本文选一个短视频，再从另一段相册视频取得音频，完成一次合并导出。附真实操作截图和参数说明。",
-    "intro": "当画面和声音来自不同文件时，可以使用 Merge Audio and Video。本文选一个短视频，再从另一段相册视频取得音频，完成一次合并导出。截图来自 iPhone 17 Pro Max 模拟器（iOS 26.0）。英文按钮附中文说明。",
+    "description": "使用 Merge Audio and Video 将视频与另一份文件中的声音合并。先选视频，再选音频来源，导出后检查声音和同步效果。",
+    "intro": "使用 Merge Audio and Video 将视频与另一份文件中的声音合并。先选视频，再选音频来源，导出后检查声音和同步效果。",
     "tips": [
       {
         "title": "声画不同步或结尾不合适",
@@ -1187,21 +1204,21 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "必须先提取音频吗？",
-        "answer": "不必，本次从 Extract audio from Photos video 直接选择另一段相册视频作为声音来源。"
+        "answer": "不必。选择 Extract audio from Photos video，即可直接从另一段相册视频取得声音。"
       },
       {
         "question": "是否能同时调节两条音轨的比例？",
-        "answer": "本次页面没有显示混音比例或多音轨调节控件，不将其描述为多轨混音器。"
+        "answer": "此页面没有混音比例或多音轨控件。需要混音时，请先单独准备音频。"
       }
     ],
     "steps": [
       {
         "title": "在 Process 页面打开 Merge Audio and Video",
-        "text": "点击底部 Process（处理），在工具总览找到第 6 排右侧的 Merge Audio and Video，点击箭头标出的入口。"
+        "text": "点击底部 Process（处理），再打开 Merge Audio and Video。"
       },
       {
         "title": "选择要处理的视频",
-        "text": "在 Select Video 页面点击 Choose from Photos（从相册选择），选中素材；存放在文件中的素材可从 Choose from Files 进入。下载列表为空不影响从相册导入。本文部分步骤复用了先前裁出的约 6 秒短片段；你可以先用 Trim Video 准备短素材。"
+        "text": "在 Select Video（选择视频）中，点击 Choose from Photos（从相册选择）或 Choose from Files（从文件选择）导入视频。下载列表为空也可以导入。"
       },
       {
         "title": "先选择画面素材",
@@ -1233,13 +1250,13 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "本页没有额外混音参数",
-            "text": "本次页面只提供 Audio Source，没有独立的音量比例、对齐偏移、循环或音频裁剪参数。对声音长度、同步和原音处理有要求时，必须通过输出试听确认，不能假定会按某种方式自动混音。"
+            "text": "Audio Source 用于选择声音输入。此页面没有独立的混音比例、时间偏移、循环或音频裁剪控件。需要这些调整时，先处理素材，再合并并试听。"
           }
         ]
       },
       {
         "title": "检查结果，再保存或继续处理",
-        "text": "本次合并后出现视频结果页，时长约 6 秒。已验证生成结果，但尚未逐段试听合并音轨；保存前应检查声音来源、开头同步、音量和结尾，尤其注意两份素材时长不一致的情况。",
+        "text": "保存前播放合并结果，检查音频来源、开头同步、音量和结尾，尤其留意两份素材时长不同的情况。",
         "sections": [
           {
             "title": "预览与保存",
@@ -1251,6 +1268,7 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "截图采用 iPhone 17 Pro Max 模拟器（iOS 26.0）的英文界面，正文附中文按钮说明。示例参数和使用限制以该版本为背景。 示例从另一段相册视频取得音频并生成约 6 秒视频，尚未逐段试听合并音轨。"
   }
 };

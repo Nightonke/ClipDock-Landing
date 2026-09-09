@@ -21,6 +21,7 @@ export function assembleTutorials(locale: string): Tutorial[] {
   if (!categories.some(category => category.id === source.category)) fail('category');
   if (copy.steps.length !== source.steps.length) fail('steps');
   if (copy.tips.length !== source.tipCount || copy.faq.length !== source.faqCount) fail('tips/FAQ');
+  if (copy.exampleNote !== undefined) validateCopy({ exampleNote: 'required' }, copy, `${locale}/${source.slug}/example note`);
   if (source.requiresVerificationNote && !copy.verificationNote) fail('verification note');
   const steps = copy.steps.map((step, index) => {
    const evidence = source.steps[index];

@@ -22,7 +22,7 @@ export const categories = [
   {
     "id": "tools",
     "name": "Video tools",
-    "description": "Trim, convert, join, and edit videos with settings and tested examples."
+    "description": "Trim, convert, join, and edit videos with step-by-step guides."
   }
 ];
 export const platformNotes: Record<string, string> = {

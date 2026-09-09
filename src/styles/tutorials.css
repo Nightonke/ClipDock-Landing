@@ -85,3 +85,13 @@
 	.tutorial-toc nav { grid-template-columns: 1fr; }
 	.tutorial-hero { padding-block: 32px; }
 }
+
+/* Balance English headings without forcing breaks inside words. */
+html[lang="en"] .tutorial-index-hero { container-type: inline-size; }
+html[lang="en"] .tutorial-index h1 { font-size: clamp(2.2rem, 8cqw, 4.2rem); }
+html[lang="en"] :is(.tutorial-index h1, .tutorial-hero h1, .tutorial-card h3, .tutorial-step-copy h2) { overflow-wrap: normal; text-wrap: balance; }
+
+.tutorial-example-notes { margin-top: 20px; color: var(--ink-soft); font-size: .875rem; line-height: 1.7; }
+.tutorial-example-notes summary { width: fit-content; cursor: pointer; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+.tutorial-example-notes summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
+.tutorial-example-notes p { max-width: 78ch; margin: 12px 0 0; }

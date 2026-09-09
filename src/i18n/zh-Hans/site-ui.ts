@@ -64,12 +64,13 @@ export const ui: SiteUI = {
   "ctaTitle": "在你的设备上试一试",
   "ctaText": "ClipDock影随存可免费下载，包含 App 内购买。具体功能入口与可用选项以 App 当前版本为准。",
   "ctaButton": "在 App Store 下载",
-  "toolCount": "{count} 个视频处理功能均附入口标注与真实截图；各篇注明参数限制和实测情况。",
+  "toolCount": "{count} 个视频工具的分步教程，带你从选择素材到保存结果。",
   "draftCount": "另有 {count} 篇教程仍待补充截图与核对步骤。",
   "indexTitle": "视频下载、字幕提取与处理教程｜iPhone / iPad｜ClipDock影随存",
   "indexDescription": "在 iPhone 和 iPad 上下载视频、使用复制即下载、批量保存主页与播放列表，提取 YouTube 字幕，以及提取音频、制作实况照片和拼接视频。",
   "indexHeading": "从第一条链接，\n到你的保存方式。",
   "indexIntro": "在 iPhone 和 iPad 上下载视频、批量保存作品、提取 YouTube 字幕，再把素材处理成你需要的样子。",
   "categories": "教程分类",
+  "exampleNotes": "示例说明",
   "unverified": "导出验证未完成"
 };

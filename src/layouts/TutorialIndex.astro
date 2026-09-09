@@ -17,7 +17,7 @@ const draftCount = tutorials.filter(article => !article.screenshotsReady).length
 	<main id="main-content" class="tutorial-index site-shell">
 		<header class="tutorial-index-hero">
 			<p class="eyebrow">{landingContent[locale].shortName} · {ui.tutorials}</p>
-			<h1>{ui.indexHeading.split("\n").map((line, index) => <>{index > 0 && <br />}{line}</>)}</h1>
+			<h1>{locale === "en-US" ? ui.indexHeading.replace(/\n/g, " ") : ui.indexHeading.split("\n").map((line, index) => <>{index > 0 && <br />}{line}</>)}</h1>
 			<p class="tutorial-lead">{ui.indexIntro}</p>
 			{ui.toolCount && <p class="tutorial-lead">{ui.toolCount.replace("{count}", String(toolCount))}</p>}
 			{draftCount > 0 && <p class="tutorial-draft">{ui.draftCount.replace("{count}", String(draftCount))}</p>}

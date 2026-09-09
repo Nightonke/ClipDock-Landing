@@ -2,8 +2,8 @@ import type { TutorialCopy } from "../../types";
 export const copy: Record<string, TutorialCopy> = {
   "download-tiktok-video-iphone": {
     "title": "2026 年如何在 iPhone 上下载 TikTok 视频并保存到相册？",
-    "description": "从 TikTok 分享链接开始，使用 ClipDock影随存提取视频、查看下载进度并保存到 iPhone 相册，附四张真实操作截图。",
-    "intro": "想把一条有权保存的 TikTok 视频留在手机里，可以先复制它的分享链接，再交给 ClipDock影随存识别。本文介绍单条视频的完整流程；iPad 用户也可以按相同思路操作。",
+    "description": "在 iPhone 或 iPad 上用 ClipDock影随存下载TikTok视频：复制链接，选择可用媒体，再保存到相册。",
+    "intro": "复制你有权保存的TikTok视频链接，粘贴到 ClipDock影随存，选择需要的媒体下载，再保存或分享。",
     "tips": [
       {
         "title": "链接能打开，却没有识别结果",
@@ -13,7 +13,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "为什么下载完成，却没出现在相册？",
-        "answer": "App 资料库和系统相册是两个位置。先确认任务完成，再从 App 执行保存到相册，并检查照片权限。"
+        "answer": "Done 表示文件已下载到 ClipDock。可在 Download Settings 中开启 Auto-Save Completed Downloads to Photos 自动保存，或手动点击 Save to Photos。若相册里没有文件，请检查访问权限和保存错误。"
       },
       {
         "question": "可以连着保存多个 TikTok 视频吗？",
@@ -23,26 +23,27 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "复制视频的分享链接",
-        "text": "在 TikTok 中打开目标视频，展开分享面板，点击 Copy link（复制链接）。复制的是这条视频的分享链接，而不是作者主页。本文截图使用英文界面，按钮旁的中文说明便于对照。"
+        "text": "在 TikTok 打开视频，点击 Share（分享）→ Copy link（复制链接）。请复制作品链接，而不是作者主页。"
       },
       {
         "title": "提交到 ClipDock影随存",
-        "text": "打开 ClipDock影随存的 Extract 页面，在 Video 分页中确认 Extract from Link 区域的链接。截图中 Fill from Clipboard 已开启，链接已从剪贴板填入；若输入框为空，可点击 Paste（粘贴）。确认后点击 Extract（提取）。"
+        "text": "打开 ClipDock 的 Extract（提取）→ Video（视频），在 Extract from Link 下点击 Paste（粘贴）；如果链接已自动填入，直接核对。确认是目标TikTok视频后，点击 Extract（提取）。"
       },
       {
         "title": "查看视频下载进度",
-        "text": "开始提取后，页面显示 Downloading（下载中）以及进度和文件大小。点击 View Task（查看任务）可以进入对应任务，也可以通过底部 Manager（管理）查看下载状态。等待任务进入 Done（已完成）后再打开视频。"
+        "text": "点击 View Task（查看任务）或进入 Manager（管理），查看进度、速度和剩余时间，等待完成后再打开文件。"
       },
       {
         "title": "预览并保存到相册",
-        "text": "在 Manager 的 Done 列表打开已完成的视频，点击播放按钮预览。确认内容正确后点击 Save to Photos（保存到相册）。若系统请求照片权限，按提示允许保存，再到照片 App 中检查结果。"
+        "text": "在 Manager 的 Done（已完成）列表打开视频，检查画面和声音。若未自动保存，点击 Save to Photos（保存到相册），按提示允许相册访问，再到照片 App 查看副本。"
       }
-    ]
+    ],
+    "exampleNote": "配图用英文 App 界面演示TikTok流程，来源内容可能使用其他语言。截图展示保存入口，未展示相册保存成功。可用媒体、格式和画质取决于你的链接。"
   },
   "download-douyin-video-iphone": {
     "title": "2026 年如何在 iPhone 上下载抖音视频并保存到相册？",
-    "description": "从抖音分享链接开始，使用 ClipDock影随存提取视频、查看下载进度并保存到 iPhone 相册，复用 TikTok 教程的四张截图演示操作流程。",
-    "intro": "想把一条有权保存的抖音视频留在手机里，可以先复制它的分享链接，再交给 ClipDock影随存识别。本文介绍单条视频的操作流程；iPad 用户也可以按相同思路操作。配图沿用 TikTok 教程，图中的平台名称、链接和视频素材仅作流程示意，并非抖音实测截图。",
+    "description": "在 iPhone 或 iPad 上用 ClipDock影随存下载抖音视频：复制链接，选择可用媒体，再保存到相册。",
+    "intro": "复制抖音视频链接，粘贴到 ClipDock影随存下载。本篇借用 TikTok 配图说明步骤，并非抖音实测记录；请使用自己的抖音链接。",
     "tips": [
       {
         "title": "链接能打开，却没有识别结果",
@@ -52,7 +53,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "为什么下载完成，却没出现在相册？",
-        "answer": "App 资料库和系统相册是两个位置。先确认任务完成，再从 App 执行保存到相册，并检查照片权限。"
+        "answer": "Done 表示文件已下载到 ClipDock。可在 Download Settings 中开启 Auto-Save Completed Downloads to Photos 自动保存，或手动点击 Save to Photos。若相册里没有文件，请检查访问权限和保存错误。"
       },
       {
         "question": "图中的链接为什么不是抖音？",
@@ -62,26 +63,27 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "复制视频的分享链接",
-        "text": "在抖音中打开目标视频，展开分享面板，点击“复制链接”。复制的是这条视频的分享链接，而不是作者主页。本步骤配图为 TikTok 的 Copy link 入口示意，抖音的实际按钮位置以当前界面为准。"
+        "text": "在抖音打开视频，通过分享菜单复制链接。请复制作品链接，而不是作者主页。"
       },
       {
         "title": "提交到 ClipDock影随存",
-        "text": "打开 ClipDock影随存的 Extract 页面，在 Video 分页中确认 Extract from Link 区域的链接。截图中 Fill from Clipboard 已开启；操作时请填入你复制的抖音视频链接，若输入框为空，可点击 Paste（粘贴）。确认后点击 Extract（提取）。"
+        "text": "打开 ClipDock 的 Extract（提取）→ Video（视频），在 Extract from Link 下点击 Paste（粘贴）；如果链接已自动填入，直接核对。确认是目标抖音视频后，点击 Extract（提取）。"
       },
       {
         "title": "查看视频下载进度",
-        "text": "开始提取后，页面显示 Downloading（下载中）以及进度和文件大小。点击 View Task（查看任务）可以进入对应任务，也可以通过底部 Manager（管理）查看下载状态。等待任务进入 Done（已完成）后再打开视频。"
+        "text": "点击 View Task（查看任务）或进入 Manager（管理），查看进度、速度和剩余时间，等待完成后再打开文件。"
       },
       {
         "title": "预览并保存到相册",
-        "text": "在 Manager 的 Done 列表打开已完成的视频，点击播放按钮预览。确认内容正确后点击 Save to Photos（保存到相册）。若系统请求照片权限，按提示允许保存，再到照片 App 中检查结果。"
+        "text": "在 Manager 的 Done（已完成）列表打开视频，检查画面和声音。若未自动保存，点击 Save to Photos（保存到相册），按提示允许相册访问，再到照片 App 查看副本。"
       }
-    ]
+    ],
+    "exampleNote": "TikTok 配图仅用于说明 App 操作，其中的平台、链接、素材和数量不代表抖音下载结果。截图展示保存入口，未展示相册保存成功。"
   },
   "download-facebook-video-iphone": {
     "title": "如何在 iPhone 和 iPad 上下载 Facebook 视频与 Reels？",
-    "description": "从 Facebook 分享面板复制视频链接，使用 ClipDock影随存提取、选择画质、下载并保存到相册，附五张操作截图与格式说明。",
-    "intro": "想把 Facebook 视频保存到 iPhone 或 iPad，可以从作品的分享链接开始。本教程以一条 Reels 为例，展示复制链接、选择画质、下载与保存的步骤。以下五张截图使用英文界面，可对照中文按钮说明操作。",
+    "description": "在 iPhone 或 iPad 上用 ClipDock影随存下载Facebook视频：复制链接，选择可用媒体，再保存到相册。",
+    "intro": "复制你有权保存的Facebook视频链接，粘贴到 ClipDock影随存，选择需要的媒体下载，再保存或分享。",
     "tips": [
       {
         "title": "没有得到可下载结果",
@@ -91,7 +93,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "本教程演示的是 Facebook Reels 吗？",
-        "answer": "是，截图中的来源链接为 facebook.com/reel/。处理其他 Facebook 视频时，也应复制具体作品链接；可下载资源以实际解析结果为准。"
+        "answer": "是，本例使用 Facebook Reels。处理其他视频时，复制具体作品链接并检查返回的媒体。"
       },
       {
         "question": "每个视频都能选择 1080p 吗？",
@@ -99,17 +101,17 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "下载完成后为什么在相册找不到？",
-        "answer": "先在 Manager 的 Done 列表打开视频，再点击 Save to Photos，并检查照片权限和保存提示。App 内的下载文件不会因为任务完成就自动出现在系统相册。"
+        "answer": "Done 表示文件已下载到 ClipDock。可在 Download Settings 中开启 Auto-Save Completed Downloads to Photos 自动保存，或手动点击 Save to Photos。若相册里没有文件，请检查访问权限和保存错误。"
       }
     ],
     "steps": [
       {
         "title": "复制 Facebook 视频链接",
-        "text": "在 Facebook 打开目标视频或 Reels，展开分享面板，在底部 Share to（分享至）一行点击 Copy link（复制链接）。复制当前作品的链接，供下一步提取使用。"
+        "text": "打开 Facebook 视频或 Reels，点击 Share（分享），再选择 Copy link（复制链接）。"
       },
       {
         "title": "粘贴链接并提取视频",
-        "text": "打开 ClipDock影随存，进入底部 Extract（提取）页面，在 Extract from Link 区域点击 Paste（粘贴），确认输入的是 Facebook 视频链接，再点击 Extract（提取）。截图中的链接包含 facebook.com/reel/；Fill from Clipboard 等自动化开关处于关闭状态，本次流程使用手动粘贴即可。"
+        "text": "打开 ClipDock 的 Extract（提取）→ Video（视频），在 Extract from Link 下点击 Paste（粘贴）；如果链接已自动填入，直接核对。确认是目标Facebook视频后，点击 Extract（提取）。"
       },
       {
         "title": "选择画质和文件格式",
@@ -125,30 +127,31 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "是否设为默认画质",
-            "text": "底部 Set this quality as default and don't ask again 可将所选清晰度设为默认。希望每次比较画质、格式和大小时，可以像截图一样保持关闭。"
+            "text": "Set this quality as default and don’t ask again 用于保存画质偏好。希望每次比较画质和格式时，保持关闭即可。"
           }
         ]
       },
       {
         "title": "查看下载进度",
-        "text": "开始下载后，页面显示 Downloading（下载中）、完成百分比、速度、预计剩余时间及已下载大小。点击 View Task（查看任务）或底部 Manager（管理）查看任务，等待下载完成。截图显示 94.58%，此时仍在下载。"
+        "text": "点击 View Task（查看任务）或进入 Manager（管理），查看进度、速度和剩余时间，等待完成后再打开文件。"
       },
       {
         "title": "预览视频并保存到相册",
-        "text": "在 Manager 的 Done（已完成）列表中打开视频。截图展示约 11 秒、9.04 MB 的结果及 Facebook 来源链接。点击播放检查画面和声音，再点击 Save to Photos（保存到相册），按系统提示完成保存，并到照片 App 中查看。",
+        "text": "在 Manager 的 Done（已完成）列表打开视频，检查画面和声音。若未自动保存，点击 Save to Photos（保存到相册），按提示允许相册访问，再到照片 App 查看副本。",
         "sections": [
           {
             "title": "下载完成与相册保存是两步",
-            "text": "Done 列表表示任务已下载到 App 内；还需要执行 Save to Photos，才能将视频保存到系统相册。本图展示保存入口，未展示保存成功提示。"
+            "text": "Done 表示文件已下载到 ClipDock。可在 Download Settings 中开启 Auto-Save Completed Downloads to Photos 自动保存，或手动点击 Save to Photos。若相册里没有文件，请检查访问权限和保存错误。"
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "配图用英文 App 界面演示Facebook流程，来源内容可能使用其他语言。截图展示保存入口，未展示相册保存成功。可用媒体、格式和画质取决于你的链接。"
   },
   "download-xiaohongshu-video-iphone": {
     "title": "如何在 iPhone 和 iPad 上下载小红书视频并保存到相册？",
-    "description": "复制小红书视频笔记的分享链接，使用 ClipDock影随存提取、下载并保存到相册，附四张操作配图及多项资源切换说明。",
-    "intro": "想把小红书视频笔记保存到 iPhone 或 iPad，可以先复制笔记的分享链接，再用 ClipDock影随存提取和下载。本文用四张配图说明完整操作顺序；分享面板中的联系人头像和用户名已做模糊处理。英文按钮旁附中文说明，方便对照。",
+    "description": "在 iPhone 或 iPad 上用 ClipDock影随存下载小红书视频：复制链接，选择可用媒体，再保存到相册。",
+    "intro": "复制你有权保存的小红书视频链接，粘贴到 ClipDock影随存，选择需要的媒体下载，再保存或分享。",
     "tips": [
       {
         "title": "粘贴后没有提取结果",
@@ -158,56 +161,57 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "需要先删掉分享文案吗？",
-        "answer": "本例带着文案和短链接一起粘贴，并完成了下载。若遇到链接识别问题，可以重新复制或只保留链接重试。"
+        "answer": "可以连同完整链接一起粘贴分享文案。如果识别失败，尝试只粘贴 URL。"
       },
       {
         "question": "每条笔记都会出现两项资源吗？",
-        "answer": "不一定。1 / 2 是这次结果页的显示，其他笔记的资源数量和内容以实际解析结果为准。"
+        "answer": "不是。不同笔记返回的媒体数量和类型可能不同，请逐项预览后再保存。"
       },
       {
         "question": "这篇也演示了图文笔记下载吗？",
-        "answer": "没有，本文截图演示的是视频笔记，不把本例的结果视为图文笔记流程。"
+        "answer": "本篇介绍视频笔记，未演示图文笔记下载。"
       }
     ],
     "steps": [
       {
         "title": "复制小红书视频笔记链接",
-        "text": "在小红书打开目标视频笔记，点击分享入口。在 Share to（分享至）面板底部找到 Copy link（复制链接），截图中位于最下排左起第二个。复制当前笔记的分享内容，供下一步粘贴使用。"
+        "text": "在小红书打开视频笔记，点击分享，再选择复制链接。可以连同分享文案一起复制。"
       },
       {
         "title": "粘贴分享内容并提取",
-        "text": "打开 ClipDock影随存，进入底部 Extract（提取）页面，在 Extract from Link 区域点击 Paste（粘贴）。本例输入框中既有“谁的 GT？！这车太帅了！”文案，也有小红书短链接。确认包含目标笔记链接后，点击 Extract（提取）。",
+        "text": "打开 ClipDock 的 Extract（提取）→ Video（视频），在 Extract from Link 下点击 Paste（粘贴）；如果链接已自动填入，直接核对。确认是目标小红书视频后，点击 Extract（提取）。",
         "sections": [
           {
             "title": "分享文案与链接可以一起粘贴",
-            "text": "本例保留了小红书分享文案，并完成了后续下载。粘贴后应确认链接也在其中，而不是只有标题文字；如果没有识别到链接，可重新复制，或只保留链接再尝试。"
+            "text": "粘贴分享文案时，请保留完整链接。如果 ClipDock 无法识别，重新复制链接或只粘贴 URL。"
           }
         ]
       },
       {
         "title": "查看视频下载进度",
-        "text": "下载开始后，页面显示 Downloading（下载中）、完成百分比及已下载大小。本图显示 60.03%、2.44 MB / 4.06 MB，任务尚未完成。点击 View Task（查看任务）或底部 Manager（管理）查看状态，等待完成后再打开视频。"
+        "text": "点击 View Task（查看任务）或进入 Manager（管理），查看进度、速度和剩余时间，等待完成后再打开文件。"
       },
       {
         "title": "核对资源并保存到相册",
-        "text": "在 Manager 中打开已完成的视频，点击播放检查画面和声音。本图显示约 31 秒、4.06 MB 的视频，并保留小红书来源链接。确认后点击 Save to Photos（保存到相册），按系统提示完成保存，再到照片 App 中核对。",
+        "text": "在 Manager 的 Done（已完成）列表打开视频，检查画面和声音。若未自动保存，点击 Save to Photos（保存到相册），按提示允许相册访问，再到照片 App 查看副本。",
         "sections": [
           {
             "title": "用左右箭头切换资源",
-            "text": "预览页顶部显示 1 / 2，表示当前为两项资源中的第一项。可点击右箭头查看下一项，再决定保存哪一项；不要仅凭序号假定另一项的内容或格式。实际资源数量以结果页为准。"
+            "text": "结果包含多个文件时，用左右箭头逐项预览，核对内容后再保存。计数器表示当前在列表中的位置。"
           },
           {
             "title": "下载完成后还要保存",
-            "text": "下载到 App 内与保存到系统相册是两个步骤。若相册里找不到视频，先确认已点击 Save to Photos，并检查照片权限及保存提示。本图展示保存入口，没有展示保存成功提示。"
+            "text": "Done 表示文件已下载到 ClipDock。可在 Download Settings 中开启 Auto-Save Completed Downloads to Photos 自动保存，或手动点击 Save to Photos。若相册里没有文件，请检查访问权限和保存错误。"
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "配图用英文 App 界面演示小红书流程，来源内容可能使用其他语言。截图展示保存入口，未展示相册保存成功。可用媒体、格式和画质取决于你的链接。 分享图中的联系人头像和用户名已模糊处理。示例包含分享文字和短链接，仅演示视频笔记。"
   },
   "download-bilibili-video-iphone": {
     "title": "如何在 iPhone 和 iPad 上下载 Bilibili（B 站）视频并保存到相册？",
-    "description": "复制 B 站单条视频分享链接，使用 ClipDock影随存提取、选择清晰度、下载并保存到相册，附五张操作截图。",
-    "intro": "想把一条 B 站视频保存到 iPhone 或 iPad，可以从视频页面复制分享链接，再交给 ClipDock影随存提取。本文以“背景音乐版”视频为例，说明选择画质、查看下载进度和预览保存的步骤。",
+    "description": "在 iPhone 或 iPad 上用 ClipDock影随存下载B 站视频：复制链接，选择可用媒体，再保存到相册。",
+    "intro": "复制你有权保存的B 站视频链接，粘贴到 ClipDock影随存，选择需要的媒体下载，再保存或分享。",
     "tips": [
       {
         "title": "下载前核对视频版本",
@@ -225,7 +229,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "这篇演示了全部分 P 下载吗？",
-        "answer": "没有，本组截图展示的是单条视频的提取与下载，不据此推断全部分 P 都会下载。"
+        "answer": "本篇下载单条视频，未演示多 P 视频的全部分 P 下载。"
       },
       {
         "question": "如何批量下载 UP 主的其他视频？",
@@ -235,15 +239,15 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "复制 B 站视频分享链接",
-        "text": "在 Bilibili 打开目标视频，展开分享面板，点击“复制链接”。截图中该按钮位于“微博”右侧。这里复制的是具体视频页面的链接；需要同一 UP 主的多条投稿时，可改用主页批量下载教程。"
+        "text": "在 B 站打开视频，通过分享菜单复制链接。需要同一 UP 主的多条投稿时，请使用主页批量下载教程。"
       },
       {
         "title": "粘贴链接并提取视频",
-        "text": "打开 ClipDock影随存，进入底部 Extract（提取）页面，选择顶部 Video（视频）分页。在 Extract from Link 区域点击 Paste（粘贴），核对链接后点击 Extract（提取）。本例直接粘贴 b23.tv 开头的分享短链接，自动填入和自动下载开关保持关闭即可完成这套手动流程。"
+        "text": "打开 ClipDock 的 Extract（提取）→ Video（视频），在 Extract from Link 下点击 Paste（粘贴）；如果链接已自动填入，直接核对。确认是目标B 站视频后，点击 Extract（提取）。"
       },
       {
         "title": "选择清晰度并开始下载",
-        "text": "在 Select Quality（选择清晰度）面板核对缩略图和“背景音乐版”标题，再选择画质。本例选中 1080p MP4，预计 55.3 MB；还显示 720p MP4（约 27.5 MB）、480p MP4（约 17.8 MB）和下方的 360p 入口。选好后点击 Download（下载）。",
+        "text": "在 Select Quality 中核对标题和缩略图，比较分辨率、格式与预计大小，选择后点击 Download。可用画质取决于视频。",
         "sections": [
           {
             "title": "结合清晰度与文件大小选择",
@@ -251,38 +255,39 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "是否设置默认画质",
-            "text": "底部 Set this quality as default and don't ask again 用于将所选清晰度设为默认。希望每次都比较画质和大小时，可像截图一样保持关闭。"
+            "text": "Set this quality as default and don’t ask again 保存所选画质。希望每次比较选项时，保持关闭。"
           }
         ]
       },
       {
         "title": "查看视频下载进度",
-        "text": "下载开始后，页面显示 Downloading（下载中）、进度百分比、速度、预计剩余时间和已下载大小。本图为 15.00%，仍需等待。点击 View Task（查看任务）或底部 Manager（管理），查看对应任务的状态。"
+        "text": "点击 View Task（查看任务）或进入 Manager（管理），查看进度、速度和剩余时间，等待完成后再打开文件。"
       },
       {
         "title": "预览视频并保存到相册",
-        "text": "在 Manager 的 Done（已完成）列表打开目标视频。本图的标题为“背景音乐版”，显示时长约 8 分 55 秒、大小 46.44 MB，预览停在 00:56，并保留原始来源链接。点击播放检查画面和声音，再点击 Save to Photos（保存到相册），按系统提示完成保存。",
+        "text": "在 Manager 的 Done（已完成）列表打开视频，检查画面和声音。若未自动保存，点击 Save to Photos（保存到相册），按提示允许相册访问，再到照片 App 查看副本。",
         "sections": [
           {
             "title": "以最终文件信息为准",
-            "text": "画质面板的预计大小、下载过程中的大小与最终文件大小可能不同。本例结果页显示 46.44 MB，应结合实际文件和播放效果核对。"
+            "text": "预计大小和最终大小可能不同，请检查下载文件的信息与播放效果。"
           },
           {
             "title": "1 / 63 是预览列表位置",
-            "text": "结果页上方显示 1 / 63，背景的 Done 列表也有 63 项。这个序号不表示本条视频有 63 个分 P；用标题与来源链接确认当前文件，左右箭头用于切换预览条目。"
+            "text": "1 / 63 表示预览列表中 63 项的第 1 项，不是当前视频的分 P 数量。用箭头切换条目，并核对标题和来源。"
           },
           {
             "title": "下载到 App 后还需保存到相册",
-            "text": "Done 表示任务已完成，不等于已保存到系统相册。点击 Save to Photos 后检查保存提示和照片权限，再到照片 App 中查看。本图展示保存入口，未展示保存成功提示。"
+            "text": "Done 表示文件已下载到 ClipDock。可在 Download Settings 中开启 Auto-Save Completed Downloads to Photos 自动保存，或手动点击 Save to Photos。若相册里没有文件，请检查访问权限和保存错误。"
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "配图用英文 App 界面演示B 站流程，来源内容可能使用其他语言。截图展示保存入口，未展示相册保存成功。可用媒体、格式和画质取决于你的链接。 示例使用 b23.tv 链接下载标为“背景音乐版”的单条视频，并未演示全部分 P 下载。"
   },
   "download-youtube-video-iphone": {
     "title": "2026 年如何在 iPhone 和 iPad 上下载 YouTube 视频？",
-    "description": "使用 ClipDock影随存在 iPhone 和 iPad 上提取 YouTube 视频、选择清晰度、查看下载进度并保存到相册，附五张真实操作截图。",
-    "intro": "这篇教程针对一条 YouTube 视频的保存。先从具体视频取得分享链接，再查看 ClipDock影随存返回的资源；若你要保存整个播放列表，请使用对应的批量教程。",
+    "description": "在 iPhone 或 iPad 上用 ClipDock影随存下载YouTube视频：复制链接，选择可用媒体，再保存到相册。",
+    "intro": "复制你有权保存的YouTube视频链接，粘贴到 ClipDock影随存，选择需要的媒体下载，再保存或分享。",
     "tips": [
       {
         "title": "下载的文件没有声音",
@@ -302,30 +307,31 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "复制 YouTube 视频链接",
-        "text": "在 YouTube 中打开目标视频，点击分享按钮，在分享面板中选择 Copy link（复制链接）。这里复制的是当前视频的链接；如果要保存播放列表，请使用对应的批量下载教程。本文截图为英文界面，可对照按钮旁的中文说明操作。"
+        "text": "在 YouTube 打开视频，点击 Share（分享）→ Copy link（复制链接）。需要播放列表中的多个视频时，请使用播放列表教程。"
       },
       {
         "title": "提交链接并提取视频",
-        "text": "打开 ClipDock影随存的 Extract 页面，在 Video 分页找到 Extract from Link 区域。点击 Paste（粘贴）填入链接；如果链接已经从剪贴板填入，确认后直接点击 Extract（提取）。"
+        "text": "打开 ClipDock 的 Extract（提取）→ Video（视频），在 Extract from Link 下点击 Paste（粘贴）；如果链接已自动填入，直接核对。确认是目标YouTube视频后，点击 Extract（提取）。"
       },
       {
         "title": "选择清晰度并开始下载",
-        "text": "提取后，在 Select Quality（选择清晰度）面板中选择所需画质。截图中的示例提供 1080p、720p、480p 等选项，并显示 MP4 格式与预计大小。确认选项后点击 Download（下载）。若希望以后使用同一画质，可开启底部的默认清晰度开关；可用画质以每次实际解析结果为准。"
+        "text": "在 Select Quality（选择画质）中核对缩略图，比较分辨率、格式和预计大小，选择后点击 Download。需要保留偏好时，可开启默认画质开关。可用选项取决于视频。"
       },
       {
         "title": "查看下载进度",
-        "text": "下载开始后，页面会显示 Downloading（下载中）、百分比、下载速度、预计剩余时间和已下载大小。点击 View Task（查看任务）或底部 Manager（管理）查看任务，等待下载完成。"
+        "text": "点击 View Task（查看任务）或进入 Manager（管理），查看进度、速度和剩余时间，等待完成后再打开文件。"
       },
       {
         "title": "预览并保存到相册",
-        "text": "在 Manager 中打开已完成的视频，点击播放按钮检查画面和声音。如果结果页包含多项资源，可用左右箭头切换并确认目标视频。点击 Save to Photos（保存到相册），按需允许照片权限，再到照片 App 中查看保存结果。"
+        "text": "在 Manager 的 Done（已完成）列表打开视频，检查画面和声音。若未自动保存，点击 Save to Photos（保存到相册），按提示允许相册访问，再到照片 App 查看副本。"
       }
-    ]
+    ],
+    "exampleNote": "配图用英文 App 界面演示YouTube流程，来源内容可能使用其他语言。截图展示保存入口，未展示相册保存成功。可用媒体、格式和画质取决于你的链接。"
   },
   "download-instagram-reels-iphone": {
     "title": "2026 年如何在 iPhone 上下载 Instagram Reels？",
-    "description": "使用 ClipDock影随存在 iPhone 或 iPad 上下载 Instagram Reels，从复制分享链接、提取视频到保存相册，附四张真实操作截图。",
-    "intro": "保存一条 Instagram Reels，关键是取得作品本身的分享链接。这篇从单条 Reels 的复制链接入口讲起，再完成识别、下载与相册保存。",
+    "description": "在 iPhone 或 iPad 上用 ClipDock影随存下载Instagram视频：复制链接，选择可用媒体，再保存到相册。",
+    "intro": "复制你有权保存的Instagram视频链接，粘贴到 ClipDock影随存，选择需要的媒体下载，再保存或分享。",
     "tips": [
       {
         "title": "私密账号或已失效作品",
@@ -345,26 +351,27 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "复制 Reels 的作品链接",
-        "text": "在 Instagram 打开目标 Reels，点击分享按钮，在分享面板底部选择 Copy link（复制链接）。这里复制的是当前作品的链接，而不是作者主页。本文截图为英文界面，可对照按钮旁的中文说明操作。"
+        "text": "在 Instagram 打开 Reels，点击 Share（分享）→ Copy link（复制链接）。使用作品链接，而不是作者主页。"
       },
       {
         "title": "提交链接并提取视频",
-        "text": "打开 ClipDock影随存的 Extract 页面，在 Video 分页找到 Extract from Link 区域。截图中链接已从剪贴板自动填入；如果输入框为空，点击 Paste（粘贴）。确认是目标 Reels 的链接后，点击 Extract（提取）。"
+        "text": "打开 ClipDock 的 Extract（提取）→ Video（视频），在 Extract from Link 下点击 Paste（粘贴）；如果链接已自动填入，直接核对。确认是目标Instagram视频后，点击 Extract（提取）。"
       },
       {
         "title": "查看下载进度",
-        "text": "下载开始后，页面显示 Downloading（下载中）、完成百分比和已下载大小。点击 View Task（查看任务）或底部 Manager（管理）查看任务，等待视频下载完成。"
+        "text": "点击 View Task（查看任务）或进入 Manager（管理），查看进度、速度和剩余时间，等待完成后再打开文件。"
       },
       {
         "title": "预览并保存到相册",
-        "text": "在 Manager 中打开已完成的视频，点击播放按钮检查画面和声音。如果预览页有多项资源，可用左右箭头切换，确认要保存的视频。点击 Save to Photos（保存到相册），按需允许照片权限，再到照片 App 中查看结果。"
+        "text": "在 Manager 的 Done（已完成）列表打开视频，检查画面和声音。若未自动保存，点击 Save to Photos（保存到相册），按提示允许相册访问，再到照片 App 查看副本。"
       }
-    ]
+    ],
+    "exampleNote": "配图用英文 App 界面演示Instagram流程，来源内容可能使用其他语言。截图展示保存入口，未展示相册保存成功。可用媒体、格式和画质取决于你的链接。"
   },
   "download-x-twitter-video-iphone": {
     "title": "2026 年如何在 iPhone 上下载 X（Twitter）视频？",
-    "description": "使用 ClipDock影随存在 iPhone 或 iPad 上下载 X（Twitter）视频，从复制帖子链接、选择清晰度到保存相册，附五张真实操作截图。",
-    "intro": "在 X 上看到需要保存的视频时，应复制包含该视频的帖子链接。昵称、个人主页和文字截图都不能代替目标帖子的地址。",
+    "description": "在 iPhone 或 iPad 上用 ClipDock影随存下载X视频：复制链接，选择可用媒体，再保存到相册。",
+    "intro": "复制你有权保存的X视频链接，粘贴到 ClipDock影随存，选择需要的媒体下载，再保存或分享。",
     "tips": [
       {
         "title": "帖子有媒体，但不是想要的视频",
@@ -384,24 +391,25 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "复制含视频的帖子链接",
-        "text": "在 X 中打开目标帖子，点击分享按钮，在面板底部选择 Copy Link（复制链接）。截图中央显示的是 X Chat 设置提示，复制链接入口位于左下角，不是中央的 Set up 按钮。本文截图为英文界面，可对照中文说明操作。"
+        "text": "在 X 打开含视频的帖子，点击分享并选择 Copy Link（复制链接）。"
       },
       {
         "title": "提交链接并提取视频",
-        "text": "打开 ClipDock影随存的 Extract 页面，在 Video 分页找到 Extract from Link 区域。点击 Paste（粘贴）填入帖子链接；如果链接已经填入，确认后直接点击 Extract（提取）。"
+        "text": "打开 ClipDock 的 Extract（提取）→ Video（视频），在 Extract from Link 下点击 Paste（粘贴）；如果链接已自动填入，直接核对。确认是目标X视频后，点击 Extract（提取）。"
       },
       {
         "title": "选择清晰度并开始下载",
-        "text": "提取后，在 Select Quality（选择清晰度）面板中核对视频缩略图并选择画质。截图中的示例提供 720p、480p 和 360p 的 MP4 选项，并显示预计大小。点击 Download（下载）开始保存；可用画质以实际解析结果为准。底部开关可将所选清晰度设为默认。"
+        "text": "在 Select Quality（选择画质）中核对缩略图，比较分辨率、格式和预计大小，选择后点击 Download。需要保留偏好时，可开启默认画质开关。可用选项取决于视频。"
       },
       {
         "title": "查看下载进度",
-        "text": "下载开始后，页面显示 Downloading（下载中）、完成百分比、下载速度、预计剩余时间和已下载大小。点击 View Task（查看任务）或底部 Manager（管理）查看任务，等待下载完成。"
+        "text": "点击 View Task（查看任务）或进入 Manager（管理），查看进度、速度和剩余时间，等待完成后再打开文件。"
       },
       {
         "title": "预览并保存到相册",
-        "text": "在 Manager 中打开已完成的视频，点击播放按钮检查画面和声音。如果预览页有多项资源，可用左右箭头切换，确认目标视频。点击 Save to Photos（保存到相册），按需允许照片权限，再到照片 App 中查看保存结果。"
+        "text": "在 Manager 的 Done（已完成）列表打开视频，检查画面和声音。若未自动保存，点击 Save to Photos（保存到相册），按提示允许相册访问，再到照片 App 查看副本。"
       }
-    ]
+    ],
+    "exampleNote": "配图用英文 App 界面演示X流程，来源内容可能使用其他语言。截图展示保存入口，未展示相册保存成功。可用媒体、格式和画质取决于你的链接。 分享图中央的 Set up 属于 X Chat；复制链接入口在左下角。"
   }
 };

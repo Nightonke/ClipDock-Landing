@@ -2,8 +2,8 @@ import type { TutorialCopy } from "../../types";
 export const copy: Record<string, TutorialCopy> = {
   "extract-youtube-subtitles-iphone": {
     "title": "How to extract YouTube captions on iPhone and iPad",
-    "description": "Extract existing YouTube captions with ClipDock, choose languages and formats such as SRT or VTT, then save or share the files. Includes five screenshots.",
-    "intro": "Save the captions already available on a YouTube video for reading, reference, or further editing. Paste the video link into ClipDock, select the caption tracks and a file format, then export. The five screenshots below show the English app interface.",
+    "description": "Extract existing YouTube captions on iPhone or iPad with ClipDock. Choose languages and an export format, then save to Files or share.",
+    "intro": "Save captions already available on a YouTube video for reading or editing. Paste the link, choose caption tracks and a format, then save or share the files.",
     "tips": [
       {
         "title": "No captions found?",
@@ -17,7 +17,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Can I extract auto-generated captions?",
-        "answer": "Yes, when the video provides them. The English (auto-generated) track in the screenshot is one example. Availability depends on the extraction results."
+        "answer": "Yes, when they are available. Look for tracks labeled auto-generated in the extraction results."
       },
       {
         "question": "Can I export several languages together?",
@@ -43,11 +43,11 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "Choose your caption languages",
-        "text": "When extraction finishes, you will see the video thumbnail, title, duration, and available caption tracks. Tap the circle beside a track to select it, choose several tracks, or tap Select all. The example shows English (auto-generated) and English (United Kingdom). Languages and track counts depend on the video."
+        "text": "Select the circle beside each caption track you want, or tap Select all. Check the language and whether a track is auto-generated. Available languages and tracks depend on the video."
       },
       {
         "title": "Choose a file format",
-        "text": "Tap Format: SRT to open the Caption format menu. The screenshot lists SRT, VTT, TTML, JSON3, SRV1, SRV2, and SRV3. Choose a format supported by the app you plan to use, and check the formats listed beneath each selected track.",
+        "text": "Tap Format: SRT to open Caption format. Choose from SRT, VTT, TTML, JSON3, SRV1, SRV2, and SRV3 according to your receiving app, and check availability beneath each selected track.",
         "sections": [
           {
             "title": "Not sure which format to choose?",
@@ -57,11 +57,11 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "Save the files or share them",
-        "text": "Once you have chosen the languages and format, tap Export captions at the bottom. The number in parentheses is the number of selected tracks; this example has two. The Export to menu offers Save to Files and Share.",
+        "text": "Tap Export captions after choosing the tracks and format. The number in parentheses is your selected track count. Choose Save to Files or Share in the Export to menu.",
         "sections": [
           {
             "title": "Save to Files",
-            "text": "Choose Save to Files, select a location in the system dialog, and confirm. Open the Files app to check the exported captions. The screenshot shows the export menu, rather than a completed save."
+            "text": "Choose Save to Files, select a location, and confirm. Open Files to check the saved captions."
           },
           {
             "title": "Share with another app",
@@ -69,6 +69,7 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "The screenshots use English app controls and show two available English tracks. They reach the export menu, not a completed file save. This workflow extracts existing captions; it does not translate or transcribe audio."
   }
 };

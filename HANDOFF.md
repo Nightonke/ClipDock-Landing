@@ -53,18 +53,11 @@
 2. 后台下载、保存、预览、搜索、排序和分享视频，或保存到系统相册。
 3. 视频工具包含裁剪、转码、拼接、尺寸调整、旋转、镜像、变速、音频提取、音视频合并、倒放、水印、GIF、Live Photo、批量截图和 MD5 修改。
 
-## 4. 重要：模板中仍待替换的内容
+## 4. 旧模板清理状态（2026-09-09 更新）
 
-当前项目是“可编译的模板副本”，并不是完成版 ClipDock 网站。下一段 Codex 对话必须先完成以下内容，再开启自动部署：
+当前首页和教程使用 ClipDock 文案。旧营销数据、未生成的功能／使用场景路由及其模板已移除；三种语言中的旧功能、FAQ、评论、法律正文和截图说明已清理。兼容数据中的旧数组保持为空。
 
-- `src/i18n/marketing.ts` 仍然是 Split Screen Player 的首页故事、功能章节、使用场景、比较表和详情页文案，需要全部改写为 ClipDock。
-- `src/i18n/content.ts` 中的 feature、FAQ、review、legal 和截图 alt 文案仍有大量 Split Screen Player 内容，需要全部替换。
-- `public/assets/screenshots/` 仍是旧产品网站素材。应从 `references/app-store-screenshots/` 选图、裁切和优化后替换。
-- `public/assets/videos/` 仍是旧产品演示视频。应替换为 ClipDock 录屏；没有合适视频时，应先移除视频区而不是继续使用旧视频。
-- `public/og.png` 仍是旧品牌社交分享图，最终视觉确定后重新生成。
-- `src/config/features.ts`、`faqs.ts`、`reviews.ts`、`screenshots.ts` 等兼容层需要与新内容保持一致。
-- 隐私政策和用户协议当前仍继承旧站内容。需要以 ClipDock 的真实行为和 App Store 元数据为依据重写，不能只替换产品名。
-- 旧素材清理完成后，搜索 `Split Screen`、`splitscreenplayer`、`36 videos`、`144 layouts`，结果应为零。
+当前文案入口与发布流程见 `docs/localization.md`。法律入口继续跳转至 App Store 登记的外部页面。本次清理未修改当前隐私声明或替换媒体素材。
 
 ## 5. 建议的内容架构
 

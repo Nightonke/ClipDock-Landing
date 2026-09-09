@@ -136,7 +136,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "用户提供的 IMG_3450.PNG，橙色手机壳。"
   },
   "tool-gif-process": {
-    "title": "在 Process 页面打开箭头所指的 Video to GIF",
+    "title": "在 Process 页面打开 Video to GIF",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-gif-settings": {
@@ -152,7 +152,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "iPhone 17 Pro Max 模拟器（iOS 26.0）真实操作截图，橙色外壳。"
   },
   "tool-live-process": {
-    "title": "在 Process 页面打开箭头所指的 Video to Live Photo",
+    "title": "在 Process 页面打开 Video to Live Photo",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-live-settings": {
@@ -168,7 +168,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "iPhone 17 Pro Max 模拟器（iOS 26.0）真实操作截图，橙色外壳。"
   },
   "tool-transcode-process": {
-    "title": "在 Process 页面打开箭头所指的 Transcode Video",
+    "title": "在 Process 页面打开 Transcode Video",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-transcode-settings": {
@@ -184,7 +184,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "iPhone 17 Pro Max 模拟器（iOS 26.0）真实操作截图，橙色外壳。"
   },
   "tool-trim-process": {
-    "title": "在 Process 页面打开箭头所指的 Trim Video",
+    "title": "在 Process 页面打开 Trim Video",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-trim-settings": {
@@ -196,7 +196,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "iPhone 17 Pro Max 模拟器（iOS 26.0）真实操作截图，橙色外壳。"
   },
   "tool-interleave-process": {
-    "title": "在 Process 页面打开箭头所指的 Interleave",
+    "title": "在 Process 页面打开 Interleave",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-interleave-settings": {
@@ -212,7 +212,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "iPhone 17 Pro Max 模拟器（iOS 26.0）真实操作截图，橙色外壳。"
   },
   "tool-grid-process": {
-    "title": "在 Process 页面打开箭头所指的 Segment Grid",
+    "title": "在 Process 页面打开 Segment Grid",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-grid-settings": {
@@ -228,7 +228,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "iPhone 17 Pro Max 模拟器（iOS 26.0）真实操作截图，橙色外壳。"
   },
   "tool-resize-process": {
-    "title": "在 Process 页面打开箭头所指的 Resize / Canvas",
+    "title": "在 Process 页面打开 Resize / Canvas",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-resize-settings": {
@@ -244,7 +244,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "iPhone 17 Pro Max 模拟器（iOS 26.0）真实操作截图，橙色外壳。"
   },
   "tool-rotate-process": {
-    "title": "在 Process 页面打开箭头所指的 Rotate Video",
+    "title": "在 Process 页面打开 Rotate Video",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-rotate-settings": {
@@ -256,7 +256,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "iPhone 17 Pro Max 模拟器（iOS 26.0）真实操作截图，橙色外壳。"
   },
   "tool-mirror-process": {
-    "title": "在 Process 页面打开箭头所指的 Mirror Video",
+    "title": "在 Process 页面打开 Mirror Video",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-mirror-settings": {
@@ -272,7 +272,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "iPhone 17 Pro Max 模拟器（iOS 26.0）真实操作截图，橙色外壳。"
   },
   "tool-reverse-process": {
-    "title": "在 Process 页面打开箭头所指的 Reverse Video",
+    "title": "在 Process 页面打开 Reverse Video",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-reverse-settings": {
@@ -284,7 +284,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "iPhone 17 Pro Max 模拟器（iOS 26.0）真实操作截图，橙色外壳。"
   },
   "tool-speed-process": {
-    "title": "在 Process 页面打开箭头所指的 Change Speed",
+    "title": "在 Process 页面打开 Change Speed",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-speed-settings": {
@@ -296,7 +296,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "iPhone 17 Pro Max 模拟器（iOS 26.0）真实操作截图，橙色外壳。"
   },
   "tool-audio-edit-process": {
-    "title": "在 Process 页面打开箭头所指的 Audio Editing",
+    "title": "在 Process 页面打开 Audio Editing",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-audio-edit-settings": {
@@ -308,7 +308,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "iPhone 17 Pro Max 模拟器（iOS 26.0）真实操作截图，橙色外壳。"
   },
   "tool-watermark-process": {
-    "title": "在 Process 页面打开箭头所指的 Add Watermark",
+    "title": "在 Process 页面打开 Add Watermark",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-watermark-settings": {
@@ -324,7 +324,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "用户提供的 iPhone 真机导出结果截图，橙色外壳。"
   },
   "tool-capture-process": {
-    "title": "在 Process 页面打开箭头所指的 Video Capture",
+    "title": "在 Process 页面打开 Video Capture",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-capture-settings": {
@@ -336,7 +336,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "iPhone 17 Pro Max 模拟器（iOS 26.0）真实操作截图，橙色外壳。"
   },
   "tool-md5-process": {
-    "title": "在 Process 页面打开箭头所指的 Change MD5",
+    "title": "在 Process 页面打开 Change MD5",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-md5-result": {
@@ -344,7 +344,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "iPhone 17 Pro Max 模拟器（iOS 26.0）真实操作截图，橙色外壳。"
   },
   "tool-merge-process": {
-    "title": "在 Process 页面打开箭头所指的 Merge Audio and Video",
+    "title": "在 Process 页面打开 Merge Audio and Video",
     "brief": "真实工具总览，使用 AppStoreScreenshotFramer 橙色外壳与入口标注。"
   },
   "tool-merge-settings": {
@@ -412,7 +412,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "IMG_3431.PNG，橙色手机壳。"
   },
   "clipboard-demo": {
-    "title": "演示：连续复制链接，后台识别并创建下载任务",
+    "title": "继续浏览并检查下载结果",
     "brief": "复制即后台下载录屏。"
   },
   "x-copy-orange": {
@@ -584,7 +584,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": "真实分享面板，显示 M4A 文件、大小和保存入口。"
   },
   "join-process": {
-    "title": "点击底部 Process，再打开箭头所指的 Stitch Videos",
+    "title": "点击底部 Process，再打开 Stitch Videos",
     "brief": "真实工具总览，橙色外壳；箭头标注拼接入口。"
   },
   "join-settings": {

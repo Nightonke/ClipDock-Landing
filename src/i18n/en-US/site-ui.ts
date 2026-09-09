@@ -23,7 +23,7 @@ export const ui: SiteUI = {
   "retry": "Retry playback",
   "failed": "This video could not be played",
   "demoTitles": [
-    "Download a link",
+    "Download from a link",
     "Copy to download",
     "Save from a webpage",
     "Download a playlist"
@@ -64,12 +64,13 @@ export const ui: SiteUI = {
   "ctaTitle": "Try it on your device",
   "ctaText": "ClipDock is free to download, with in-app purchases. Features and available options depend on the current app version.",
   "ctaButton": "Download on the App Store",
-  "toolCount": "{count} video tools with illustrated entry points, settings, and notes on what was tested.",
+  "toolCount": "Step-by-step guides to {count} video tools, from choosing a source to saving the result.",
   "draftCount": "{count} tutorials are awaiting screenshots and review.",
   "indexTitle": "ClipDock tutorials for iPhone and iPad",
   "indexDescription": "Learn how to save and work with media in ClipDock, with step-by-step instructions and screenshots.",
   "indexHeading": "A link is just\nthe beginning.",
-  "indexIntro": "Download supported videos, collect links in the background, save batches, extract YouTube captions, and turn your media into the format you need.",
+  "indexIntro": "Download supported videos, download from copied links in the background, save batches, extract YouTube captions, and turn your media into the format you need.",
   "categories": "Tutorial categories",
+  "exampleNotes": "Example notes",
   "unverified": "Export verification incomplete"
 };

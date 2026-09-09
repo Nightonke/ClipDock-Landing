@@ -2,8 +2,8 @@ import type { TutorialCopy } from "../../types";
 export const copy: Record<string, TutorialCopy> = {
   "download-tiktok-video-iphone": {
     "title": "How to download TikTok videos to Photos on iPhone in 2026",
-    "description": "Copy a TikTok share link, extract the video in ClipDock, check its download, and save it to Photos. Includes four screenshots for iPhone and iPad.",
-    "intro": "To keep a TikTok video you have the right to save, copy its share link and let ClipDock extract it. This guide covers a single video from link to Photos; iPad users can follow the same workflow.",
+    "description": "Download a TikTok video with ClipDock on iPhone or iPad: copy its link, choose available media, and save it to Photos.",
+    "intro": "Copy the link to a TikTok video you have permission to save. Paste it into ClipDock, download the media you want, then save or share it.",
     "tips": [
       {
         "title": "The link opens, but no media is found",
@@ -13,7 +13,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Why is a completed download missing from Photos?",
-        "answer": "The ClipDock library and the system Photos library are separate. Wait for the task to finish, then use Save to Photos and check photo permissions."
+        "answer": "Done means the file has downloaded into ClipDock. Enable Auto-Save Completed Downloads to Photos in Download Settings for automatic saving, or tap Save to Photos yourself. If it is missing from Photos, check permissions and any save errors."
       },
       {
         "question": "Can I save several TikTok videos in a row?",
@@ -23,26 +23,27 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Copy the video’s share link",
-        "text": "Open the video in TikTok, open the share panel, and tap Copy link. Copy the link to this video, rather than the creator’s profile. The screenshots show the English interface."
+        "text": "Open the video in TikTok, tap Share, then Copy link. Copy the video’s link rather than the creator’s profile."
       },
       {
         "title": "Submit the link to ClipDock",
-        "text": "Open Extract in ClipDock, select Video, and check the link under Extract from Link. Fill from Clipboard is enabled in the screenshot, so the copied link is already filled in. If the field is empty, tap Paste. Check the link, then tap Extract."
+        "text": "Open Extract → Video in ClipDock. Tap Paste under Extract from Link, or check the link if it was filled from the clipboard. Confirm that it points to your TikTok video, then tap Extract."
       },
       {
         "title": "Check download progress",
-        "text": "Once the download starts, ClipDock shows Downloading, the progress percentage, and the downloaded size. Tap View Task or open Manager in the bottom navigation to follow the task. Wait for it to finish before opening the video."
+        "text": "Tap View Task or open Manager to check download progress, speed, and time remaining. Wait for the task to finish before opening the file."
       },
       {
         "title": "Preview and save to Photos",
-        "text": "In Manager, open the video from the Done list and tap Play to preview it. Once you have confirmed the content, tap Save to Photos. Allow saving if iOS asks for photo access, then check the result in Photos."
+        "text": "Open the video in Manager’s Done list and check its picture and sound. If it has not been saved automatically, tap Save to Photos and allow access if prompted. Open Photos to check the saved copy."
       }
-    ]
+    ],
+    "exampleNote": "The screenshots illustrate the TikTok workflow with English app controls. Source content may use another language. They show the save action, not a completed Photos save. Available media, formats, and quality depend on your link."
   },
   "download-douyin-video-iphone": {
     "title": "How to download Douyin videos to Photos on iPhone in 2026",
-    "description": "Use a Douyin share link to extract and download a video in ClipDock, then save it to Photos. Four reused TikTok screenshots illustrate the workflow.",
-    "intro": "Copy the share link of a Douyin video you have the right to save, then use ClipDock to extract it. iPad users can follow the same steps. This guide reuses TikTok screenshots: the platform, links, and media shown are illustrations of the workflow, not a recorded Douyin test.",
+    "description": "Download a Douyin video with ClipDock on iPhone or iPad: copy its link, choose available media, and save it to Photos.",
+    "intro": "Copy a Douyin video link and paste it into ClipDock to download. This guide uses TikTok images to illustrate the steps; they are not a recorded Douyin test. Use your own Douyin link.",
     "tips": [
       {
         "title": "The link opens, but no media is found",
@@ -52,7 +53,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Why is a completed download missing from Photos?",
-        "answer": "The ClipDock library and the system Photos library are separate. Wait for the task to finish, then use Save to Photos and check photo permissions."
+        "answer": "Done means the file has downloaded into ClipDock. Enable Auto-Save Completed Downloads to Photos in Download Settings for automatic saving, or tap Save to Photos yourself. If it is missing from Photos, check permissions and any save errors."
       },
       {
         "question": "Why does the screenshot show a TikTok link?",
@@ -62,26 +63,27 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Copy the video’s share link",
-        "text": "Open the video in Douyin, open its share panel, and choose Copy link. Use the individual video link, rather than a creator profile. The illustration shows TikTok’s Copy link option; the position of Douyin’s button depends on its current interface."
+        "text": "Open the video in Douyin and copy its link from the share menu. Use the video’s link rather than the creator’s profile."
       },
       {
         "title": "Submit the Douyin link to ClipDock",
-        "text": "Open Extract, select Video, and check the Extract from Link field. Fill from Clipboard is enabled in the illustration. For your own download, enter the Douyin video link you copied, or tap Paste if the field is empty. Confirm it, then tap Extract."
+        "text": "Open Extract → Video in ClipDock. Tap Paste under Extract from Link, or check the link if it was filled from the clipboard. Confirm that it points to your Douyin video, then tap Extract."
       },
       {
         "title": "Check download progress",
-        "text": "Once the download starts, ClipDock shows Downloading, the progress percentage, and the downloaded size. Tap View Task or open Manager in the bottom navigation to follow the task. Wait for it to finish before opening the video."
+        "text": "Tap View Task or open Manager to check download progress, speed, and time remaining. Wait for the task to finish before opening the file."
       },
       {
         "title": "Preview and save to Photos",
-        "text": "Open the completed video in Manager and play it to check the picture and sound. If the preview contains several items, use the left and right arrows to select the right one. Tap Save to Photos, allow photo access if prompted, and check the result in Photos."
+        "text": "Open the video in Manager’s Done list and check its picture and sound. If it has not been saved automatically, tap Save to Photos and allow access if prompted. Open Photos to check the saved copy."
       }
-    ]
+    ],
+    "exampleNote": "The TikTok screenshots illustrate the app controls only. Their platform, URLs, media, and counts do not represent a Douyin download. They show the save action, not a completed Photos save."
   },
   "download-facebook-video-iphone": {
     "title": "How to download Facebook videos and Reels on iPhone and iPad",
-    "description": "Copy a Facebook video link, choose the quality and format in ClipDock, download it, and save to Photos. Includes five screenshots and format notes.",
-    "intro": "Start with a video’s share link to save it on your iPhone or iPad. This guide uses a Facebook Reel to show copying, quality selection, downloading, and saving. The five screenshots show the English interface.",
+    "description": "Download a Facebook video with ClipDock on iPhone or iPad: copy its link, choose available media, and save it to Photos.",
+    "intro": "Copy the link to a Facebook video you have permission to save. Paste it into ClipDock, download the media you want, then save or share it.",
     "tips": [
       {
         "title": "No downloadable result?",
@@ -91,7 +93,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Does this example use Facebook Reels?",
-        "answer": "Yes. Its source URL contains facebook.com/reel/. For other Facebook videos, copy the specific item’s link and check the actual available resources."
+        "answer": "Yes, the example uses a Facebook Reel. For other videos, copy the specific video’s link and check the returned media."
       },
       {
         "question": "Can every video be downloaded in 1080p?",
@@ -99,17 +101,17 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "Why is a completed download missing from Photos?",
-        "answer": "The ClipDock library and the system Photos library are separate. Wait for the task to finish, then use Save to Photos and check photo permissions."
+        "answer": "Done means the file has downloaded into ClipDock. Enable Auto-Save Completed Downloads to Photos in Download Settings for automatic saving, or tap Save to Photos yourself. If it is missing from Photos, check permissions and any save errors."
       }
     ],
     "steps": [
       {
         "title": "Copy the Facebook video link",
-        "text": "Open the video or Reel in Facebook, open the share panel, and tap Copy link in the Share to row at the bottom. Copy the current item’s link for the next step."
+        "text": "Open the Facebook video or Reel, tap Share, then Copy link."
       },
       {
         "title": "Paste the link and extract the video",
-        "text": "Open Extract in ClipDock and tap Paste under Extract from Link. Confirm that the link points to the Facebook video, then tap Extract. The example URL contains facebook.com/reel/. Automation switches such as Fill from Clipboard are off; manual pasting is sufficient."
+        "text": "Open Extract → Video in ClipDock. Tap Paste under Extract from Link, or check the link if it was filled from the clipboard. Confirm that it points to your Facebook video, then tap Extract."
       },
       {
         "title": "Choose the quality and file format",
@@ -125,30 +127,31 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Set a default quality only if you want to",
-            "text": "Set this quality as default and don’t ask again saves the preference. Leave it off, as shown, if you want to compare quality, format, and size for each download."
+            "text": "Set this quality as default and don’t ask again saves your preference. Leave it off if you want to compare quality and format each time."
           }
         ]
       },
       {
         "title": "Follow the download",
-        "text": "The Downloading view shows percentage, speed, estimated time remaining, and downloaded size. Tap View Task or open Manager and wait for completion. The screenshot shows 94.58%, so the download is still in progress."
+        "text": "Tap View Task or open Manager to check download progress, speed, and time remaining. Wait for the task to finish before opening the file."
       },
       {
         "title": "Preview the result and save to Photos",
-        "text": "Open the video from Manager’s Done list. The example result is about 11 seconds long and 9.04 MB, with its Facebook source link. Play it to check the picture and sound, then tap Save to Photos and follow the system prompts. Check Photos afterward.",
+        "text": "Open the video in Manager’s Done list and check its picture and sound. If it has not been saved automatically, tap Save to Photos and allow access if prompted. Open Photos to check the saved copy.",
         "sections": [
           {
             "title": "Downloading and saving to Photos are separate steps",
-            "text": "Done means the file has downloaded into the app. You still need Save to Photos to export it to the system library. The screenshot shows this action, rather than a successful-save message."
+            "text": "Done means the file has downloaded into ClipDock. Enable Auto-Save Completed Downloads to Photos in Download Settings for automatic saving, or tap Save to Photos yourself. If it is missing from Photos, check permissions and any save errors."
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "The screenshots illustrate the Facebook workflow with English app controls. Source content may use another language. They show the save action, not a completed Photos save. Available media, formats, and quality depend on your link."
   },
   "download-xiaohongshu-video-iphone": {
     "title": "How to download Xiaohongshu videos on iPhone and iPad",
-    "description": "Copy a Xiaohongshu video post’s share link, download it with ClipDock, and save it to Photos. Includes four screenshots and notes on multiple results.",
-    "intro": "Start with a Xiaohongshu video post’s share link, then extract and download it in ClipDock. Four screenshots show the sequence. Contact avatars and usernames in the share panel have been blurred. The app controls shown are in English; source content may appear in Chinese.",
+    "description": "Download a Xiaohongshu video with ClipDock on iPhone or iPad: copy its link, choose available media, and save it to Photos.",
+    "intro": "Copy the link to a Xiaohongshu video you have permission to save. Paste it into ClipDock, download the media you want, then save or share it.",
     "tips": [
       {
         "title": "Nothing is extracted after pasting",
@@ -158,56 +161,57 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Must I remove the share caption first?",
-        "answer": "The illustrated download succeeds with both the caption and short URL. If link detection fails, copy the link again or try retaining only the URL."
+        "answer": "You can paste shared text with its complete URL. If detection fails, try pasting only the URL."
       },
       {
         "question": "Does every post return two items?",
-        "answer": "No. The 1 / 2 counter belongs to this result. Other posts may return different amounts and kinds of media."
+        "answer": "No. Posts can return different numbers and types of media. Preview each item before saving."
       },
       {
         "question": "Does this guide also demonstrate image posts?",
-        "answer": "No. These screenshots show a video post, and do not establish the workflow for image posts."
+        "answer": "This guide covers video posts. Image-post downloading is not demonstrated here."
       }
     ],
     "steps": [
       {
         "title": "Copy the video post’s link",
-        "text": "Open the video post in Xiaohongshu and open Share. Find Copy link at the bottom of Share to; it is the second option from the left in the screenshot’s bottom row. Copy the current post’s share content."
+        "text": "Open the video post in Xiaohongshu, tap Share, and choose Copy link. You can copy the shared text together with its link."
       },
       {
         "title": "Paste the share content and extract",
-        "text": "Open Extract in ClipDock and tap Paste under Extract from Link. The example contains a Chinese caption about a car together with a Xiaohongshu short link. Check that the target link is included, then tap Extract.",
+        "text": "Open Extract → Video in ClipDock. Tap Paste under Extract from Link, or check the link if it was filled from the clipboard. Confirm that it points to your Xiaohongshu video, then tap Extract.",
         "sections": [
           {
             "title": "Share text can be pasted with the link",
-            "text": "The example retains the share caption and proceeds to download. Make sure the pasted content includes the link, rather than just the title. If no link is detected, copy it again or try pasting only the URL."
+            "text": "Keep the complete URL when pasting shared text. If ClipDock cannot find it, copy the link again or paste only the URL."
           }
         ]
       },
       {
         "title": "Check download progress",
-        "text": "The Downloading view shows percentage and downloaded size. This screenshot reads 60.03% and 2.44 MB / 4.06 MB, so the task is not finished. Tap View Task or open Manager and wait for it to complete."
+        "text": "Tap View Task or open Manager to check download progress, speed, and time remaining. Wait for the task to finish before opening the file."
       },
       {
         "title": "Check the media and save to Photos",
-        "text": "Open the completed video in Manager and play it to check the picture and sound. The example is about 31 seconds and 4.06 MB, with its Xiaohongshu source link. Tap Save to Photos, follow the prompts, and check Photos.",
+        "text": "Open the video in Manager’s Done list and check its picture and sound. If it has not been saved automatically, tap Save to Photos and allow access if prompted. Open Photos to check the saved copy.",
         "sections": [
           {
             "title": "Switch between items with the arrows",
-            "text": "The preview header shows 1 / 2: the first of two items. Tap the right arrow to inspect the next item before deciding what to save. The counter alone does not establish the other item’s contents or format. Resource counts vary by result."
+            "text": "Use the left and right arrows to preview each item when the result contains multiple files. Check its content before saving; the counter shows your position in the list."
           },
           {
             "title": "Save after downloading",
-            "text": "Downloading into the app and saving to Photos are separate steps. If the video is missing from Photos, check that you tapped Save to Photos, then check permissions and the save message. The screenshot does not show a successful-save confirmation."
+            "text": "Done means the file has downloaded into ClipDock. Enable Auto-Save Completed Downloads to Photos in Download Settings for automatic saving, or tap Save to Photos yourself. If it is missing from Photos, check permissions and any save errors."
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "The screenshots illustrate the Xiaohongshu workflow with English app controls. Source content may use another language. They show the save action, not a completed Photos save. Available media, formats, and quality depend on your link. Contact avatars and usernames in the sharing image are blurred. The example includes shared text and a short URL and covers a video post only."
   },
   "download-bilibili-video-iphone": {
     "title": "How to download Bilibili videos on iPhone and iPad",
-    "description": "Copy a Bilibili video link, choose a quality in ClipDock, download it, and save it to Photos. Includes five screenshots of a single-video workflow.",
-    "intro": "Copy a video’s share link in Bilibili and submit it to ClipDock. This example uses a video labeled as a background-music version and explains quality selection, progress, previewing, and saving. Bilibili’s source interface and video title in the screenshots are in Chinese.",
+    "description": "Download a Bilibili video with ClipDock on iPhone or iPad: copy its link, choose available media, and save it to Photos.",
+    "intro": "Copy the link to a Bilibili video you have permission to save. Paste it into ClipDock, download the media you want, then save or share it.",
     "tips": [
       {
         "title": "Check the video version",
@@ -225,7 +229,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "Does this demonstrate downloading every part of a video?",
-        "answer": "No. The screenshots show extracting and downloading one video, and do not prove that all parts are included."
+        "answer": "This guide downloads one video. It does not demonstrate downloading every part of a multi-part video."
       },
       {
         "question": "How do I download more uploads from a creator?",
@@ -235,15 +239,15 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Copy the Bilibili video link",
-        "text": "Open the video in Bilibili and open its share panel. Tap Copy link, positioned to the right of Weibo in the screenshot. This is the specific video page’s link. To save multiple uploads from a creator, use the profile batch download guide."
+        "text": "Open the video in Bilibili, open Share, and choose Copy link. To download several uploads from one creator, use the profile batch guide instead."
       },
       {
         "title": "Paste the link and extract",
-        "text": "Open Extract in ClipDock, select Video, and tap Paste under Extract from Link. Check the URL and tap Extract. This example uses the b23.tv short share link directly. Automatic filling and downloading can remain off for this manual workflow."
+        "text": "Open Extract → Video in ClipDock. Tap Paste under Extract from Link, or check the link if it was filled from the clipboard. Confirm that it points to your Bilibili video, then tap Extract."
       },
       {
         "title": "Choose a quality and start downloading",
-        "text": "Check the thumbnail and the background-music-version title in Select Quality. The selected option is 1080p MP4, estimated at 55.3 MB. The list also shows 720p MP4 at about 27.5 MB, 480p MP4 at about 17.8 MB, and a 360p option below. Tap Download.",
+        "text": "In Select Quality, check the title and thumbnail, then compare resolution, format, and estimated size. Select an option and tap Download. Available quality depends on the video.",
         "sections": [
           {
             "title": "Balance resolution and size",
@@ -251,38 +255,39 @@ export const copy: Record<string, TutorialCopy> = {
           },
           {
             "title": "Decide whether to save a quality preference",
-            "text": "Set this quality as default and don’t ask again stores the chosen quality. Leave it off to compare options each time."
+            "text": "Set this quality as default and don’t ask again stores your choice. Leave it off if you want to compare options for each download."
           }
         ]
       },
       {
         "title": "Monitor the download",
-        "text": "Downloading shows percentage, speed, time remaining, and downloaded size. This screenshot is at 15.00%, so you still need to wait. Tap View Task or open Manager to check the task."
+        "text": "Tap View Task or open Manager to check download progress, speed, and time remaining. Wait for the task to finish before opening the file."
       },
       {
         "title": "Preview and save the video",
-        "text": "Open the completed video from Done in Manager. The result shows the background-music-version title, about 8 minutes 55 seconds, and 46.44 MB. Playback is at 00:56, and the source link is retained. Play the video to check it, then use Save to Photos.",
+        "text": "Open the video in Manager’s Done list and check its picture and sound. If it has not been saved automatically, tap Save to Photos and allow access if prompted. Open Photos to check the saved copy.",
         "sections": [
           {
             "title": "Use the final file information",
-            "text": "The quality estimate, in-progress size, and final size can differ. The result here is 46.44 MB. Check the actual file and playback."
+            "text": "Estimated and final sizes can differ. Check the downloaded file’s size and playback rather than relying on the estimate."
           },
           {
             "title": "1 / 63 is a position in the preview list",
-            "text": "The header shows 1 / 63 and the Done list behind it contains 63 items. This does not mean the video has 63 parts. Confirm the title and source; the arrows switch between preview items."
+            "text": "A counter such as 1 / 63 means the first item in a 63-item preview list. It does not count parts of one video. Use the arrows to switch items and check the title and source."
           },
           {
             "title": "Done does not mean saved to Photos",
-            "text": "After tapping Save to Photos, check permissions and the save message, then open Photos. The screenshot shows the save action, rather than a successful-save confirmation."
+            "text": "Done means the file has downloaded into ClipDock. Enable Auto-Save Completed Downloads to Photos in Download Settings for automatic saving, or tap Save to Photos yourself. If it is missing from Photos, check permissions and any save errors."
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "The screenshots illustrate the Bilibili workflow with English app controls. Source content may use another language. They show the save action, not a completed Photos save. Available media, formats, and quality depend on your link. The example uses a b23.tv link to a single video labeled as a background-music version, not an all-parts download."
   },
   "download-youtube-video-iphone": {
     "title": "How to download YouTube videos on iPhone and iPad in 2026",
-    "description": "Use ClipDock to extract a YouTube video link, choose a quality, follow the download, and save to Photos. Includes five screenshots.",
-    "intro": "Start with the share link of the YouTube video you want to save. Download only content you own or have permission to use, and check the resources actually returned by ClipDock.",
+    "description": "Download a YouTube video with ClipDock on iPhone or iPad: copy its link, choose available media, and save it to Photos.",
+    "intro": "Copy the link to a YouTube video you have permission to save. Paste it into ClipDock, download the media you want, then save or share it.",
     "tips": [
       {
         "title": "The downloaded file has no sound",
@@ -302,30 +307,31 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Copy the YouTube video link",
-        "text": "Open the video in YouTube, tap Share, and choose Copy link. Use the specific video’s link, rather than a search result or channel page. The screenshots show the English interface."
+        "text": "Open the video in YouTube, tap Share, and choose Copy link. For multiple videos from a playlist, use the playlist guide."
       },
       {
         "title": "Paste the link into ClipDock",
-        "text": "Open Extract, choose Video, and find Extract from Link. Paste the copied link, or confirm it if already filled in, then tap Extract."
+        "text": "Open Extract → Video in ClipDock. Tap Paste under Extract from Link, or check the link if it was filled from the clipboard. Confirm that it points to your YouTube video, then tap Extract."
       },
       {
         "title": "Choose a quality and download",
-        "text": "Check the thumbnail and available options in Select Quality. The screenshot offers 1080p, 720p, and 480p among its options, with MP4 format and estimated sizes. Compare them, choose the resource you want, and tap Download. Available options depend on the video. The switch at the bottom can save a default quality."
+        "text": "In Select Quality, check the thumbnail and compare resolution, format, and estimated size. Choose an option and tap Download. Use the default-quality switch if you want to keep that preference. Available options depend on the video."
       },
       {
         "title": "Check download progress",
-        "text": "Downloading shows percentage, speed, estimated time remaining, and downloaded size. Tap View Task or open Manager and wait for completion."
+        "text": "Tap View Task or open Manager to check download progress, speed, and time remaining. Wait for the task to finish before opening the file."
       },
       {
         "title": "Preview and save to Photos",
-        "text": "Open the completed video in Manager and play it to check the picture and sound. If the preview contains several items, use the left and right arrows to select the right one. Tap Save to Photos, allow photo access if prompted, and check the result in Photos."
+        "text": "Open the video in Manager’s Done list and check its picture and sound. If it has not been saved automatically, tap Save to Photos and allow access if prompted. Open Photos to check the saved copy."
       }
-    ]
+    ],
+    "exampleNote": "The screenshots illustrate the YouTube workflow with English app controls. Source content may use another language. They show the save action, not a completed Photos save. Available media, formats, and quality depend on your link."
   },
   "download-instagram-reels-iphone": {
     "title": "How to download Instagram Reels on iPhone in 2026",
-    "description": "Save an Instagram Reel on iPhone or iPad with ClipDock: copy its link, extract and download the video, then save to Photos. Includes four screenshots.",
-    "intro": "To save an Instagram Reel, obtain the share link to the Reel itself. This guide starts at Copy link and continues through extraction, downloading, and saving to Photos.",
+    "description": "Download a Instagram video with ClipDock on iPhone or iPad: copy its link, choose available media, and save it to Photos.",
+    "intro": "Copy the link to a Instagram video you have permission to save. Paste it into ClipDock, download the media you want, then save or share it.",
     "tips": [
       {
         "title": "Private accounts and unavailable posts",
@@ -345,26 +351,27 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Copy the Reel’s share link",
-        "text": "Open the Reel in Instagram, tap Share, and choose Copy link at the bottom of the share panel. Use the link to the Reel, rather than the creator’s profile. The screenshots use English controls."
+        "text": "Open the Reel in Instagram, tap Share, and choose Copy link. Use the Reel’s link rather than the creator’s profile."
       },
       {
         "title": "Submit the link and extract",
-        "text": "Open Extract in ClipDock, choose Video, and find Extract from Link. The screenshot has the link filled from the clipboard. If the input is empty, tap Paste. Check that it is the intended Reel, then tap Extract."
+        "text": "Open Extract → Video in ClipDock. Tap Paste under Extract from Link, or check the link if it was filled from the clipboard. Confirm that it points to your Instagram video, then tap Extract."
       },
       {
         "title": "Check download progress",
-        "text": "Once the download starts, ClipDock shows Downloading, the progress percentage, and the downloaded size. Tap View Task or open Manager in the bottom navigation to follow the task. Wait for it to finish before opening the video."
+        "text": "Tap View Task or open Manager to check download progress, speed, and time remaining. Wait for the task to finish before opening the file."
       },
       {
         "title": "Preview and save to Photos",
-        "text": "Open the completed video in Manager and play it to check the picture and sound. If the preview contains several items, use the left and right arrows to select the right one. Tap Save to Photos, allow photo access if prompted, and check the result in Photos."
+        "text": "Open the video in Manager’s Done list and check its picture and sound. If it has not been saved automatically, tap Save to Photos and allow access if prompted. Open Photos to check the saved copy."
       }
-    ]
+    ],
+    "exampleNote": "The screenshots illustrate the Instagram workflow with English app controls. Source content may use another language. They show the save action, not a completed Photos save. Available media, formats, and quality depend on your link."
   },
   "download-x-twitter-video-iphone": {
     "title": "How to download X (Twitter) videos on iPhone in 2026",
-    "description": "Copy an X post link, choose a video quality in ClipDock, download it, and save it to Photos on iPhone or iPad. Includes five screenshots.",
-    "intro": "Copy the link to the X post containing the video you want. A username, profile page, or screenshot of the post’s text cannot replace that URL.",
+    "description": "Download a X video with ClipDock on iPhone or iPad: copy its link, choose available media, and save it to Photos.",
+    "intro": "Copy the link to a X video you have permission to save. Paste it into ClipDock, download the media you want, then save or share it.",
     "tips": [
       {
         "title": "The post contains media, but not the video you wanted",
@@ -383,25 +390,26 @@ export const copy: Record<string, TutorialCopy> = {
     ],
     "steps": [
       {
-        "title": "Copy the post containing the video",
-        "text": "Open the post in X, tap Share, and choose Copy Link at the bottom of the panel. The center of the screenshot is an X Chat setup prompt. The correct control is Copy Link at the lower left, rather than the central Set up button."
+        "title": "Copy the link to the post",
+        "text": "Open the X post containing the video, tap Share, and choose Copy Link."
       },
       {
         "title": "Submit the post link",
-        "text": "Open Extract in ClipDock, choose Video, and tap Paste under Extract from Link. If the link is already filled in, check it and tap Extract."
+        "text": "Open Extract → Video in ClipDock. Tap Paste under Extract from Link, or check the link if it was filled from the clipboard. Confirm that it points to your X video, then tap Extract."
       },
       {
         "title": "Choose the quality and download",
-        "text": "In Select Quality, check the thumbnail and choose a resolution. The example offers 720p, 480p, and 360p MP4 options with estimated sizes. Tap Download. Available qualities depend on the actual result. The bottom switch can save the quality as your default."
+        "text": "In Select Quality, check the thumbnail and compare resolution, format, and estimated size. Choose an option and tap Download. Use the default-quality switch if you want to keep that preference. Available options depend on the video."
       },
       {
         "title": "Follow the download",
-        "text": "Downloading shows percentage, speed, estimated time remaining, and downloaded size. Tap View Task or open Manager to check the task and wait for completion."
+        "text": "Tap View Task or open Manager to check download progress, speed, and time remaining. Wait for the task to finish before opening the file."
       },
       {
         "title": "Preview and save to Photos",
-        "text": "Open the completed video in Manager and play it to check the picture and sound. If the preview contains several items, use the left and right arrows to select the right one. Tap Save to Photos, allow photo access if prompted, and check the result in Photos."
+        "text": "Open the video in Manager’s Done list and check its picture and sound. If it has not been saved automatically, tap Save to Photos and allow access if prompted. Open Photos to check the saved copy."
       }
-    ]
+    ],
+    "exampleNote": "The screenshots illustrate the X workflow with English app controls. Source content may use another language. They show the save action, not a completed Photos save. Available media, formats, and quality depend on your link. The central Set up button in the sharing image belongs to X Chat; Copy Link is at the lower left."
   }
 };

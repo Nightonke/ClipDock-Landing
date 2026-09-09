@@ -348,7 +348,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": ""
   },
   "tool-merge-settings": {
-    "title": "Choose the picture source first",
+    "title": "Choose the video source first",
     "brief": ""
   },
   "tool-merge-source": {
@@ -408,15 +408,15 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": ""
   },
   "clipboard-copy-orange": {
-    "title": "Copy a video you want to save",
+    "title": "Copy the video’s link",
     "brief": ""
   },
   "clipboard-demo": {
-    "title": "Keep browsing and watch the download notifications",
+    "title": "Keep browsing and check your downloads",
     "brief": ""
   },
   "x-copy-orange": {
-    "title": "Copy the post containing the video",
+    "title": "Copy the link to the post",
     "brief": ""
   },
   "x-extract-orange": {
@@ -508,7 +508,7 @@ export const screenshotCopy: Record<string, { title: string; brief: string }> = 
     "brief": ""
   },
   "join-settings": {
-    "title": "Choose the main video and read its preview",
+    "title": "Choose and preview the main video",
     "brief": ""
   },
   "join-source": {

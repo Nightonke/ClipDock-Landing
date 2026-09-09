@@ -49,6 +49,7 @@ indexHeading: string;
 indexIntro: string;
 categories: string;
 unverified: string;
+exampleNotes: string;
 }
 export type Section = { title: string; text: string };
-export interface TutorialCopy { title: string; description: string; intro: string; verificationNote?: string; steps: Array<Section & { sections?: Section[] }>; tips: Section[]; faq: Array<{ question: string; answer: string }> }
+export interface TutorialCopy { title: string; description: string; intro: string; verificationNote?: string; exampleNote?: string; steps: Array<Section & { sections?: Section[] }>; tips: Section[]; faq: Array<{ question: string; answer: string }> }

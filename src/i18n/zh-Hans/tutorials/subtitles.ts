@@ -2,8 +2,8 @@ import type { TutorialCopy } from "../../types";
 export const copy: Record<string, TutorialCopy> = {
   "extract-youtube-subtitles-iphone": {
     "title": "如何在 iPhone 和 iPad 上提取 YouTube 字幕？",
-    "description": "使用 ClipDock影随存提取 YouTube 已有字幕，选择语言和 SRT、VTT 等格式，保存到文件或分享，附五张真实操作截图。",
-    "intro": "把 YouTube 视频中已有的字幕单独保存下来，方便阅读、整理和后续使用。在 ClipDock影随存中粘贴视频链接，提取字幕后选择语言与格式，再导出即可。以下五张截图使用英文界面，可对照按钮旁的中文说明操作。",
+    "description": "用 ClipDock影随存在 iPhone 或 iPad 提取 YouTube 已有字幕，选择语言和格式，再保存到“文件”或分享。",
+    "intro": "把 YouTube 视频已有的字幕保存下来，方便阅读或编辑。粘贴链接，选择字幕轨道和格式，再保存或分享文件。",
     "tips": [
       {
         "title": "没有提取到字幕怎么办？",
@@ -17,7 +17,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "能提取自动生成的字幕吗？",
-        "answer": "可以提取视频提供的自动生成字幕。截图中的 English (auto-generated) 就是其中一条；是否可用以实际提取结果为准。"
+        "answer": "可以，前提是视频提供这类字幕。可在提取结果中查找标为 auto-generated 的轨道。"
       },
       {
         "question": "可以一次导出多种语言吗？",
@@ -43,11 +43,11 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "选择需要的字幕语言",
-        "text": "完成后，页面显示视频缩略图、标题、时长和可用字幕轨道。点击每条字幕左侧的圆圈选择，可以单选、多选，或点击 Select all（全选）。截图中有 English (auto-generated)（英语自动生成字幕）和 English (United Kingdom)（英国英语）两条轨道；实际语言和数量取决于视频。"
+        "text": "点击需要的字幕轨道左侧圆圈，或用 Select all（全选）。核对语言及是否为自动生成字幕；可用语言和轨道取决于视频。"
       },
       {
         "title": "选择字幕文件格式",
-        "text": "点击 Format: SRT（格式：SRT）打开 Caption format（字幕格式）菜单。截图列出了 SRT、VTT、TTML、JSON3、SRV1、SRV2 和 SRV3。根据后续使用的软件选择格式，并核对所选轨道下方列出的可用格式。",
+        "text": "点击 Format: SRT 打开 Caption format（字幕格式）。根据接收软件选择 SRT、VTT、TTML、JSON3、SRV1、SRV2 或 SRV3，并检查各条所选轨道下方的可用格式。",
         "sections": [
           {
             "title": "不知道选哪个格式？",
@@ -57,11 +57,11 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "导出到文件或分享",
-        "text": "确认语言和格式后，点击底部 Export captions（导出字幕）。括号中的数字表示选中的字幕轨道数，截图中选中了两条。弹出的 Export to（导出到）菜单提供 Save to Files（保存到文件）和 Share（分享）两个入口。",
+        "text": "选好轨道和格式后，点击 Export captions（导出字幕）。括号内是已选轨道数。在 Export to 菜单选择 Save to Files（保存到文件）或 Share（分享）。",
         "sections": [
           {
             "title": "保存到文件",
-            "text": "选择 Save to Files 后，按系统提示选择保存位置并确认，再打开“文件”App 检查导出的字幕文件。截图展示的是导出菜单，尚未展示保存完成状态。"
+            "text": "选择 Save to Files，指定保存位置并确认，再打开“文件”App 检查字幕。"
           },
           {
             "title": "分享给其他 App",
@@ -69,6 +69,7 @@ export const copy: Record<string, TutorialCopy> = {
           }
         ]
       }
-    ]
+    ],
+    "exampleNote": "配图采用英文 App 界面，展示两条可用英语字幕轨道，操作展示到导出菜单，未展示文件保存完成。此流程提取已有字幕，不进行翻译或音频转写。"
   }
 };
