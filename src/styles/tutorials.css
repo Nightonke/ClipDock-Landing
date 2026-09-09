@@ -100,3 +100,8 @@ html[lang="en"] :is(.tutorial-index h1, .tutorial-hero h1, .tutorial-card h3, .t
 
 /* Chinese headings wrap between words, with balanced lines on cards and phones. */
 html:is([lang="zh-Hans"], [lang="zh-Hant"]) :is(.tutorial-index h1, .tutorial-hero h1, .tutorial-card h3, .tutorial-step-copy h2, .tutorial-step-detail h3, .tutorial-troubleshooting h3) { overflow-wrap: normal; text-wrap: balance; line-break: strict; }
+
+/* Keep Japanese punctuation together and allow natural kana/kanji line breaks. */
+html[lang="ja"] :is(.tutorial-index h1, .tutorial-hero h1, .tutorial-card h3, .tutorial-step-copy h2, .tutorial-step-detail h3, .tutorial-troubleshooting h3) { overflow-wrap: normal; text-wrap: balance; line-break: strict; line-height: 1.45; letter-spacing: -.025em; }
+/* Long example URLs need an emergency wrap within otherwise normally wrapped prose. */
+html[lang="ja"] :is(.tutorial-body, .tutorial-questions) p { overflow-wrap: anywhere; }

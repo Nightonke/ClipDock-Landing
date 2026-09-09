@@ -1,5 +1,6 @@
 ---
 import { siteUI } from "@/i18n/site-ui";
+import { commonCopy } from "@/i18n/common";
 import { localizedPath, type Locale } from "@/i18n/locales";
 import type { LanguageLink } from "@/types/content";
 
@@ -45,7 +46,14 @@ const ui = siteUI(locale);
 
 		<div class="header-actions">
 			<details class="language-menu">
-				<summary aria-label={currentLanguage}>{currentLanguage}</summary>
+				<summary aria-label={`${commonCopy[locale].language}: ${currentLanguage}`} title={currentLanguage}>
+					<svg class="language-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false">
+						<circle cx="12" cy="12" r="9" />
+						<ellipse cx="12" cy="12" rx="4" ry="9" />
+						<path d="M3 12h18" />
+					</svg>
+					<span class="language-label">{currentLanguage}</span>
+				</summary>
 				<div class="language-popover">
 					{languageLinks.map((link) => (
 						<a
@@ -77,18 +85,34 @@ const ui = siteUI(locale);
 					<a href={homeAnchor("#faq")}>{nav.faq}</a>
 					<a href={localizedPath(locale, "articles")}>{ui.tutorials}</a>
 					<a href={storeHref} target="_blank" rel="noopener noreferrer">{nav.getApp}</a>
-					{languageLinks.map((link) => (
-						<a
-							href={link.href}
-							hreflang={link.hrefLang}
-							data-locale-choice={link.locale}
-							aria-current={link.isActive ? "page" : undefined}
-						>
-							{link.label}
-						</a>
-					))}
 				</nav>
 			</details>
 		</div>
 	</header>
 </div>
+
+<script>
+	document.querySelectorAll<HTMLElement>(".site-header").forEach((header) => {
+		const menus = [...header.querySelectorAll<HTMLDetailsElement>("details")];
+		menus.forEach((menu) => {
+			menu.addEventListener("toggle", () => {
+				if (menu.open) menus.forEach((other) => { if (other !== menu) other.open = false; });
+			});
+			menu.addEventListener("click", (event) => {
+				if (event.target instanceof Element && event.target.closest("a")) menu.open = false;
+			});
+		});
+		document.addEventListener("click", (event) => {
+			const target = event.target;
+			if (!(target instanceof Node)) return;
+			menus.forEach((menu) => { if (!menu.contains(target)) menu.open = false; });
+		});
+		document.addEventListener("keydown", (event) => {
+			if (event.key !== "Escape") return;
+			const openMenu = menus.find((menu) => menu.open);
+			if (!openMenu) return;
+			openMenu.open = false;
+			openMenu.querySelector("summary")?.focus();
+		});
+	});
+</script>

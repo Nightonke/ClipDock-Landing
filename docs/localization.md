@@ -2,7 +2,7 @@
 
 新增语言时请先阅读 [新增语言指南](localization-playbook.md)：其中包含语言优先级、App 术语对照、完整注册清单、多个 Codex 对话的协作方式和可复制的任务提示词。
 
-构建中已启用的语言为 `en-US`、`zh-Hans` 和 `zh-Hant`。英文使用 `/`，简体中文使用 `/zh-Hans/`，繁体中文使用 `/zh-Hant/`，首页与 41 篇教程均共用模板。繁中本次尚未部署。不会按设备语言自动跳转。
+构建中已启用的语言为 `en-US`、`zh-Hans`、`zh-Hant` 和 `ja`。英文使用 `/`，简体中文使用 `/zh-Hans/`，繁体中文使用 `/zh-Hant/`，日语使用 `/ja/`，首页、41 篇教程及站内法律页面共用模板。日语本次尚未部署。不会按设备语言自动跳转。
 
 ## 唯一编辑入口
 
@@ -23,10 +23,11 @@
 | `tutorials/tools.ts` | 18 篇视频工具教程 |
 | `screenshots.ts` | 每个截图 ID 对应的明确标题与备注；标题不再从步骤标题自动推导 |
 | `demo-captions.ts` | 四段录屏的字幕文字，条目顺序对应公共时间轴 |
+| `legal.ts` | 站内隐私政策、用户协议、生效日期与法律导航 |
 | `errors.ts` | 404 文案；当前静态 404 使用英文正文和中文首页入口 |
 | `controls.ts` | 保留的 React 控件标签，通过属性传入；旧控件默认使用英文 |
 
-`zh-Hant/` 已补齐当前完整内容，采用台湾常用表达，操作名按 App 繁中实际值保留。术语差异、验证与部署状态见 [繁中交付记录](localization-reports/zh-Hant.md)。英文 `site-defaults.ts` 保存站点兼容默认值，并非其他语言的译文来源。外链隐私政策与服务条款由外部页面管理，本仓库不保存法律正文副本。
+`zh-Hant/` 已补齐当前完整内容，采用台湾常用表达，操作名按 App 繁中实际值保留。术语差异、验证与部署状态见 [繁中交付记录](localization-reports/zh-Hant.md)。英文 `site-defaults.ts` 保存站点兼容默认值，并非其他语言的译文来源。`ja/` 提供完整日语内容，按钮名称按 App 日语实际值保留，疑点和验证范围见 [日语交付记录](localization-reports/ja.md)。当前隐私政策和服务条款由 `legal.ts` 注册站内正文，新增语言需同步翻译并纳入 sitemap；新增语言指南中的外链法律页描述仅适用于旧基准。
 
 ## 简体中文文案约定
 
@@ -65,9 +66,9 @@ node scripts/export-copy-review.cjs zh-Hans > /tmp/clipdock-zh-Hans-review.json
 ## 新增语言
 
 1. 新建 `src/i18n/<locale>/`，按照已发布语言的目录提供完整译文，保留字段名、文章 slug 和截图 ID。仅提供当前产品的文案。
-2. 在 `locales.ts` 注册语言及元数据。准备好 `landing.ts` 和首页数据，并接入 `content.ts`、`common.ts`、`home/index.ts`、`catalog.ts` 和 `config/demoCaptions.ts` 的显式注册表。注册是代码修改，单纯复制目录不会自动上线。
+2. 在 `locales.ts` 注册语言及元数据。准备好 `landing.ts` 和首页数据，并接入 `content.ts`、`common.ts`、`home/index.ts`、`catalog.ts`、`legal.ts` 和 `config/demoCaptions.ts` 的显式注册表。注册是代码修改，单纯复制目录不会自动上线。
 3. 审稿完成后才加入 `publishedLocales`。类型检查会要求补齐已发布语言的注册项；构建会检查教程、图片标题和字幕覆盖。当前 `/404.html` 是全站共用静态错误页，不会自动生成每种语言的 404。
-4. 更新页面验证脚本中当前针对英/中文的语言规则，加入新语言的残留语言检查；执行全量构建与对应语言切换验证。非默认语言教程路由会自动生成。
+4. 检查页面验证脚本中按语言注册表执行的规则，加入新语言的残留语言检查；执行全量构建与对应语言切换验证。非默认语言教程路由会自动生成。
 
 ## 验证命令
 
@@ -80,6 +81,6 @@ python3 scripts/verify-locales.py
 node --test tests/videoRecovery.test.mjs
 ```
 
-语言检查覆盖缺失文章、空白正文、遗漏 UI 字段、步骤/细节/FAQ/排错数量、图片标题与字幕时间边界，GitHub Actions 会执行。页面检查读取实际语言注册表，覆盖 lang/dir/OG、canonical、源语言残留、全部已发布语言的教程对应关系、跨语言链接、双向 hreflang、法律跳转与 sitemap。自动检查不能代替语义评审。
+语言检查覆盖缺失文章、空白正文、遗漏 UI 字段、步骤/细节/FAQ/排错数量、图片标题与字幕时间边界，GitHub Actions 会执行。页面检查读取实际语言注册表，覆盖 lang/dir/OG、canonical、源语言残留、全部已发布语言的教程对应关系、跨语言链接、双向 hreflang、站内法律正文与 sitemap。自动检查不能代替语义评审。
 
 正式发布使用 `npm run build:production`，并按 `docs/deployment.md` 执行。文案重组不涉及新增媒体资源，不需要新建 CDN 素材版本。

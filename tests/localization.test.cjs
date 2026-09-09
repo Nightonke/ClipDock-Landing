@@ -16,6 +16,7 @@ const { captionAt } = require('../src/config/demoCaptions.ts');
 const { homeContent } = require('../src/i18n/home/index.ts');
 const { publishedLocales, localeMeta, getLanguageLinks } = require('../src/i18n/locales.ts');
 const { headingParts } = require('../src/lib/heading-parts.ts');
+const { legalContent } = require('../src/i18n/legal.ts');
 
 test('every published catalog covers the same tutorials and uses its own screenshot titles', () => {
  for (const [locale, catalog] of Object.entries(catalogs)) {
@@ -73,6 +74,28 @@ test('published locale registries and language links stay in sync', () => {
  }
  assert.equal(localeMeta['zh-Hant'].ogLocale, 'zh_TW');
  assert.equal(localeMeta['zh-Hant'].htmlLang, 'zh-Hant');
+ assert.deepEqual(Object.keys(legalContent).sort(), [...publishedLocales].sort());
+ assert.equal(localeMeta.ja.ogLocale, 'ja_JP');
+ assert.equal(localeMeta.ja.htmlLang, 'ja');
+ assert.equal(localeMeta.ja.label, '日本語');
+});
+
+test('Japanese prose is translated independently, including captions and legal documents', () => {
+ const check = (source, translated, path = '') => {
+  if (typeof source === 'string') {
+   // Japanese shares kanji with Chinese: compare whole source sentences, not characters.
+   if (/[。？！]/.test(source) && /[\u3400-\u9fff]/.test(source)) assert.notEqual(translated, source, path);
+  } else if (source && typeof source === 'object') {
+   for (const [key, value] of Object.entries(source)) check(value, translated?.[key], `${path}/${key}`);
+  }
+ };
+ check(catalogs['zh-Hans'], catalogs.ja, 'catalog');
+ check(homeContent['zh-Hans'], homeContent.ja, 'home');
+ check(legalContent['zh-Hans'], legalContent.ja, 'legal');
+ for (const page of ['privacy', 'terms']) {
+  assert.ok(legalContent.ja[page].content.length > 1000);
+  assert.doesNotMatch(legalContent.ja[page].content, /\]\(\/zh-/);
+ }
 });
 
 test('translations preserve placeholders and media UI list lengths', () => {

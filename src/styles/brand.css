@@ -19,6 +19,19 @@
 	--mono: "SFMono-Regular", "Roboto Mono", ui-monospace, Menlo, Monaco, Consolas, monospace;
 }
 
+html[lang="ja"] {
+	--display: "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+	--body: "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+	line-break: strict;
+	word-break: normal;
+}
+
+html[lang="ja"] :is(h1, h2, h3, summary, .footer-links) {
+	line-break: strict;
+	word-break: normal;
+	text-transform: none;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -113,10 +126,14 @@ a {
 }
 
 .site-header {
+	--header-control-size: 44px;
+	--header-control-radius: 12px;
+	--header-inset: 10px;
 	display: grid;
 	grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
 	align-items: center;
 	min-height: 68px;
+	padding: var(--header-inset);
 	border: 1.5px solid var(--line);
 	border-radius: 21px;
 	background: rgba(255, 253, 247, 0.9);
@@ -131,17 +148,16 @@ a {
 	align-items: center;
 	gap: 10px;
 	width: fit-content;
-	padding: 9px 14px;
+	padding: 0;
 	font-family: var(--display);
 	font-size: 1rem;
 	letter-spacing: -0.035em;
+	white-space: nowrap;
 }
 
 .brand-link img {
-	width: 43px;
-	height: 43px;
+	width: var(--header-control-size);
 	border: 1px solid var(--line);
-	border-radius: 12px;
 	box-shadow: 0 5px 18px rgba(47, 134, 255, 0.16);
 }
 
@@ -155,6 +171,12 @@ a {
 	font-weight: 800;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
+}
+
+.primary-nav a {
+	display: inline-flex;
+	align-items: center;
+	min-height: var(--header-control-size);
 }
 
 .primary-nav a,
@@ -178,11 +200,15 @@ a {
 	align-items: center;
 	justify-content: flex-end;
 	gap: 8px;
-	padding-right: 8px;
 }
 
 .language-menu {
 	position: relative;
+}
+
+.language-icon {
+	display: none;
+	flex-shrink: 0;
 }
 
 .language-menu > summary,
@@ -190,17 +216,9 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 44px;
 	border: 1.5px solid var(--line);
-	border-radius: 12px;
 	background: var(--paper-strong);
-	padding: 0 13px;
-	font-family: var(--mono);
-	font-size: 0.68rem;
-	font-weight: 800;
-	letter-spacing: 0.06em;
 	list-style: none;
-	text-transform: uppercase;
 	cursor: pointer;
 }
 
@@ -283,6 +301,30 @@ a {
 	font-size: 0.88rem;
 }
 
+.site-header :is(.brand-link img, .header-actions > .button, .language-menu > summary, .mobile-menu > summary) {
+	height: var(--header-control-size);
+	min-height: var(--header-control-size);
+	flex-shrink: 0;
+	border-width: 1.5px;
+	border-radius: var(--header-control-radius);
+}
+
+.site-header :where(.header-actions > .button, .language-menu > summary, .mobile-menu > summary) {
+	padding: 0 13px;
+	font-family: var(--body);
+	font-size: 0.82rem;
+	font-weight: 800;
+	line-height: 1;
+	letter-spacing: 0;
+	text-transform: none;
+	white-space: nowrap;
+}
+
+.site-header .button:is(:hover, :active) {
+	transform: none;
+	box-shadow: none;
+}
+
 .mobile-menu {
 	display: none;
 	position: relative;
@@ -309,6 +351,14 @@ a {
 
 .mobile-popover a:last-child {
 	border-bottom: 0;
+}
+
+.language-popover,
+.mobile-popover {
+	max-height: calc(100vh - 100px);
+	max-height: calc(100dvh - 100px);
+	overflow-y: auto;
+	overscroll-behavior: contain;
 }
 
 .eyebrow {
@@ -1557,10 +1607,6 @@ html:is([lang="zh-Hans"], [lang="zh-Hant"]) .footer-links {
 		display: block;
 	}
 
-	.language-menu {
-		display: none;
-	}
-
 	.hero-grid,
 	.chapter-grid,
 	.detail-hero {
@@ -1674,38 +1720,35 @@ html:is([lang="zh-Hans"], [lang="zh-Hant"]) .footer-links {
 	}
 
 	.site-header {
+		--header-inset: 6px;
 		min-height: 60px;
 		border-radius: 17px;
 	}
 
 	.brand-link {
-		padding: 7px 10px;
 		font-size: 0.9rem;
-	}
-
-	.brand-link img {
-		width: 38px;
-		height: 38px;
-		border-radius: 10px;
+		gap: 8px;
 	}
 
 	.header-actions {
 		gap: 6px;
-		padding-right: 6px;
 	}
 
 	.header-actions > .button {
-		display: inline-flex;
-		min-height: 42px;
-		border-radius: 11px;
-		padding-inline: 0.85rem;
-		font-size: 0.78rem;
-		white-space: nowrap;
+		display: none;
 	}
 
-	.mobile-menu > summary {
-		min-height: 42px;
-		padding-inline: 11px;
+	.language-icon {
+		display: block;
+	}
+
+	.language-label {
+		display: none;
+	}
+
+	.site-header .language-menu > summary {
+		width: var(--header-control-size);
+		padding: 0;
 	}
 
 	.hero {
@@ -1936,16 +1979,6 @@ html:is([lang="zh-Hans"], [lang="zh-Hant"]) .footer-links {
 
 	.prose {
 		font-size: 1rem;
-	}
-}
-
-@media (max-width: 480px) {
-	.brand-link {
-		gap: 0;
-	}
-
-	.brand-link span {
-		display: none;
 	}
 }
 

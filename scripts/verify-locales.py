@@ -121,6 +121,8 @@ for locale in PUBLISHED:
                 errors.append(f'{route}: cross-language content link: {link}')
         if locale == 'zh-Hant' and any(re.search(r'[这为与从个们来时载链视频图选择开关设网页]', text) for text in page.text + page.metadata):
             errors.append(f'{route}: Simplified Chinese residue in Traditional Chinese copy')
+        if locale == 'ja' and any(re.search(r'点击|粘贴|下载完成|保存到相册|已加载|选择视频|本例使用|截图展示', text) for text in page.text + page.metadata):
+            errors.append(f'{route}: untranslated Chinese instruction in Japanese copy')
     for legal in ['privacy', 'terms']:
         page = pages.get(localized(locale, legal))
         if page is None or page.redirect or sum(len(text.strip()) for text in page.text) < 1000:

@@ -1,3 +1,8 @@
+import { ui as jaUI } from './ja/site-ui';
+import { categories as jaCategories, platformNotes as jaNotes } from './ja/tutorial-index';
+import { tutorialCopy as jaTutorials } from './ja/tutorials';
+import { screenshotCopy as jaScreenshots } from './ja/screenshots';
+import { captions as jaCaptions } from './ja/demo-captions';
 import { ui as hantUI } from './zh-Hant/site-ui';
 import { categories as hantCategories, platformNotes as hantNotes } from './zh-Hant/tutorial-index';
 import { tutorialCopy as hantTutorials } from './zh-Hant/tutorials';
@@ -26,6 +31,7 @@ export interface LanguageCatalog {
  captions: Record<string, string[]>;
 }
 export const catalogs: Record<PublishedLocale, LanguageCatalog> = {
+ ja: { ui: jaUI, categories: jaCategories, platformNotes: jaNotes, tutorialCopy: jaTutorials, screenshotCopy: jaScreenshots, captions: jaCaptions },
  'en-US': { ui: enUI, categories: enCategories, platformNotes: enNotes, tutorialCopy: enTutorials, screenshotCopy: enScreenshots, captions: enCaptions },
  'zh-Hant': { ui: hantUI, categories: hantCategories, platformNotes: hantNotes, tutorialCopy: hantTutorials, screenshotCopy: hantScreenshots, captions: hantCaptions },
  'zh-Hans': { ui: zhUI, categories: zhCategories, platformNotes: zhNotes, tutorialCopy: zhTutorials, screenshotCopy: zhScreenshots, captions: zhCaptions },
