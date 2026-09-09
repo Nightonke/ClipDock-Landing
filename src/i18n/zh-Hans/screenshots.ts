@@ -1,4 +1,108 @@
 export const screenshotCopy: Record<string, { title: string; brief: string }> = {
+  "bilibili-collection-copy": {
+    "title": "从哔哩哔哩合集分享面板复制链接",
+    "brief": ""
+  },
+  "bilibili-collection-input": {
+    "title": "在 Batch 填入 Bilibili 合集短链接",
+    "brief": ""
+  },
+  "bilibili-collection-loading": {
+    "title": "加载 Bilibili 合集视频列表",
+    "brief": ""
+  },
+  "bilibili-collection-select": {
+    "title": "选择 62 项合集视频并加入下载队列",
+    "brief": ""
+  },
+  "bilibili-collection-queue": {
+    "title": "在 Manager 查看 Bilibili 合集下载进度",
+    "brief": ""
+  },
+  "tiktok-hashtag-input": {
+    "title": "在 Batch 填入 TikTok beauty 话题链接",
+    "brief": ""
+  },
+  "tiktok-hashtag-loading": {
+    "title": "加载 TikTok Hashtag 话题视频列表",
+    "brief": ""
+  },
+  "tiktok-hashtag-select": {
+    "title": "选择 19 项话题视频并加入下载队列",
+    "brief": ""
+  },
+  "tiktok-hashtag-queue": {
+    "title": "在 Manager 查看 beauty 话题视频下载进度",
+    "brief": ""
+  },
+  "instagram-hashtag-input": {
+    "title": "在 Batch 填入 Instagram model 话题链接",
+    "brief": ""
+  },
+  "instagram-hashtag-loading": {
+    "title": "加载 Instagram Hashtag 话题资源列表",
+    "brief": ""
+  },
+  "instagram-hashtag-select": {
+    "title": "选择 21 项话题图片并加入下载队列",
+    "brief": ""
+  },
+  "instagram-hashtag-queue": {
+    "title": "在 Manager 查看 model 话题图片下载队列",
+    "brief": ""
+  },
+  "youtube-shorts-input": {
+    "title": "在 Batch 填入 YouTube 频道 Shorts 列表链接",
+    "brief": ""
+  },
+  "youtube-shorts-loading": {
+    "title": "加载 @dailymoodvideo 的 Shorts 视频列表",
+    "brief": ""
+  },
+  "youtube-shorts-select": {
+    "title": "选择 48 项 Shorts 视频并加入下载队列",
+    "brief": ""
+  },
+  "youtube-shorts-queue": {
+    "title": "在 Manager 查看 Shorts 排队状态和下载进度",
+    "brief": ""
+  },
+  "youtube-hashtag-input": {
+    "title": "在 Batch 填入 YouTube carmusic 话题链接",
+    "brief": ""
+  },
+  "youtube-hashtag-loading": {
+    "title": "加载 YouTube Hashtag 话题视频列表",
+    "brief": ""
+  },
+  "youtube-hashtag-select": {
+    "title": "选择 36 项话题视频并加入下载队列",
+    "brief": ""
+  },
+  "youtube-hashtag-queue": {
+    "title": "在 Manager 查看 carmusic 话题下载进度",
+    "brief": ""
+  },
+  "youtube-channel-copy": {
+    "title": "从分享面板复制 YouTube 频道链接",
+    "brief": ""
+  },
+  "youtube-channel-input": {
+    "title": "在 Batch 粘贴频道链接并检查页数限制",
+    "brief": ""
+  },
+  "youtube-channel-loading": {
+    "title": "加载 YouTube 频道列表",
+    "brief": ""
+  },
+  "youtube-channel-select": {
+    "title": "检查已加载的 30 条频道视频和批量画质",
+    "brief": ""
+  },
+  "youtube-channel-queue": {
+    "title": "在 Manager 查看频道任务排队和下载进度",
+    "brief": ""
+  },
   "bilibili-copy-link-orange": {
     "title": "在 B 站视频分享面板点击复制链接",
     "brief": "用户提供的 Bilibili 单视频下载截图，橙色手机壳。"

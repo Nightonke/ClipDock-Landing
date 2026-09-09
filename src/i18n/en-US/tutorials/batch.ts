@@ -1,5 +1,258 @@
 import type { TutorialCopy } from "../../types";
 export const copy: Record<string, TutorialCopy> = {
+  "batch-download-bilibili-collection-iphone": {
+    "title": "How to batch download Bilibili collection videos on iPhone and iPad in 2026",
+    "description": "Copy a Bilibili collection share link into ClipDock, load videos, choose quality and add a batch to the queue. Includes a b23.tv link example.",
+    "intro": "A Bilibili collection download starts with the collection’s share link. It can help back up your own series or authorized videos without copying each episode’s link separately.",
+    "tips": [
+      {
+        "title": "The extracted count differs from the collection’s episode count",
+        "text": "Check that you copied the collection link, then check loaded pages, account limits and resource availability. Select loaded only selects currently loaded resources, and the returned list may not include every episode. Avoid repeatedly submitting the whole collection without checking."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How does a Bilibili collection link differ from a creator profile link?",
+        "answer": "A collection link identifies a group of videos, while a profile link identifies a creator page. Copy the link from the target collection’s share panel. A b23.tv short link alone does not establish the source type, so check the collection name and returned list after loading."
+      },
+      {
+        "question": "Will completed batch downloads automatically appear in Photos?",
+        "answer": "Enable Auto-Save Completed Downloads to Photos in Download Settings to save supported downloads automatically. Otherwise, use Save to Photos after downloading. Saving requires photo access and a supported format."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Copy the Bilibili collection link",
+        "text": "Open the collection you want to download in Bilibili. Tap the Share button in the collection panel, then choose Copy link. The example collection is a dance series showing 62 episodes. Confirm that you are sharing the collection, rather than the individual video currently playing."
+      },
+      {
+        "title": "Paste the collection link in Batch",
+        "text": "Open Extract in ClipDock, switch to Batch, and tap Paste to enter the copied link. This example uses the b23.tv short link below. Use the actual address copied from your target collection’s share panel.",
+        "exampleUrl": "https://b23.tv/drSfmMh"
+      },
+      {
+        "title": "Load the collection list and wait for results",
+        "text": "Tap Load list and wait for Loading list to finish. This only retrieves selectable resources; it does not start downloading. You still need to select items and tap Add to queue."
+      },
+      {
+        "title": "Select videos and add them to the queue",
+        "text": "Confirm that the source name matches your collection and select the videos you want. Use Select loaded as needed. Choose Batch quality, confirm the selected count, then tap Add to queue. The example shows 62 loaded and selected items, with Add to queue (62) on the button."
+      },
+      {
+        "title": "Check queue status and download progress",
+        "text": "Open Manager to follow your downloads. Active contains queued and running tasks, Done contains completed files, and Failed contains tasks that need attention. Open a task to check its status."
+      }
+    ],
+    "exampleNote": "The screenshots show a running queue, not completion of every download or a successful Photos save. Manager totals include other tasks and are not the result count for this batch. The shown account limits and media counts are examples."
+  },
+  "batch-download-tiktok-hashtag-iphone": {
+    "title": "How to batch download TikTok hashtag videos on iPhone and iPad in 2026",
+    "description": "Use a TikTok hashtag URL in ClipDock, load videos, choose quality and add a batch to the queue. Includes a beauty hashtag link format example.",
+    "intro": "A TikTok hashtag download starts with a topic page. It can help save your own or authorized videos under the same tag without copying each video link separately. This guide uses the beauty hashtag as an example.",
+    "tips": [
+      {
+        "title": "The results differ from the hashtag page",
+        "text": "Confirm that the link contains /tag/, then check the topic name, loaded pages and account limits. The returned list may not include every video under the hashtag. Select loaded only selects loaded resources. Avoid repeatedly submitting the whole list without checking."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How does a TikTok hashtag link differ from a profile link?",
+        "answer": "A hashtag link identifies content under a topic and can include videos from different creators. A profile link identifies one creator. For hashtag batch downloads, use a full URL such as https://www.tiktok.com/tag/beauty, rather than just #beauty."
+      },
+      {
+        "question": "Will completed batch downloads automatically appear in Photos?",
+        "answer": "Enable Auto-Save Completed Downloads to Photos in Download Settings to save supported downloads automatically. Otherwise, use Save to Photos after downloading. Saving requires photo access and a supported format."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Paste the TikTok hashtag link in Batch",
+        "text": "TikTok hashtag links use the format https://www.tiktok.com/tag/topic-name. The example below uses beauty. Open Extract in ClipDock, switch to Batch, and tap Paste to enter the full link. Do not add # before the topic name in the URL.",
+        "exampleUrl": "https://www.tiktok.com/tag/beauty"
+      },
+      {
+        "title": "Load the hashtag list and wait for results",
+        "text": "Tap Load list and wait for Loading list to finish. This only retrieves selectable resources; it does not start downloading. You still need to select items and tap Add to queue."
+      },
+      {
+        "title": "Select videos and add them to the queue",
+        "text": "Confirm beauty as the source and select the videos you want. Use Select loaded as needed. Choose Batch quality, confirm the selected count, then tap Add to queue. The example shows 19 loaded and selected items, with Add to queue (19) on the button."
+      },
+      {
+        "title": "Check queue status and download progress",
+        "text": "Open Manager to follow your downloads. Active contains queued and running tasks, Done contains completed files, and Failed contains tasks that need attention. Open a task to check its status."
+      }
+    ],
+    "exampleNote": "The screenshots show a running queue, not completion of every download or a successful Photos save. Manager totals include other tasks and are not the result count for this batch. The shown account limits and media counts are examples."
+  },
+  "batch-download-instagram-hashtag-iphone": {
+    "title": "How to batch download Instagram hashtag photos on iPhone and iPad in 2026",
+    "description": "Use an Instagram hashtag URL in ClipDock, load images, filter resources and add a batch to the queue. Includes a model hashtag link format example.",
+    "intro": "An Instagram hashtag download starts with a topic page. It can help save your own or authorized photos under the same tag without copying each post link separately. This guide uses the model hashtag as an example.",
+    "tips": [
+      {
+        "title": "The results differ from the hashtag page",
+        "text": "Confirm that the link contains /explore/tags/, then check the topic name, loaded pages and account limits. The returned list may not include every post under the hashtag. Select loaded only selects loaded resources. Avoid repeatedly submitting the whole list without checking."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How does an Instagram hashtag link differ from a profile link?",
+        "answer": "A hashtag link identifies content under a topic and can include posts from different creators. A profile link identifies one creator. For hashtag batch downloads, use a full URL such as https://www.instagram.com/explore/tags/model, rather than just #model."
+      },
+      {
+        "question": "Will completed batch downloads automatically appear in Photos?",
+        "answer": "Enable Auto-Save Completed Downloads to Photos in Download Settings to save supported downloads automatically. Otherwise, use Save to Photos after downloading. Saving requires photo access and a supported format."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Paste the Instagram hashtag link in Batch",
+        "text": "Instagram hashtag links use the format https://www.instagram.com/explore/tags/topic-name. The example below uses model. Open Extract in ClipDock, switch to Batch, and tap Paste to enter the full link. Do not add # before the topic name in the URL.",
+        "exampleUrl": "https://www.instagram.com/explore/tags/model"
+      },
+      {
+        "title": "Load the hashtag list and wait for results",
+        "text": "Tap Load list and wait for Loading list to finish. This only retrieves selectable resources; it does not start downloading. You still need to select items and tap Add to queue."
+      },
+      {
+        "title": "Select photos and add them to the queue",
+        "text": "Confirm model as the source and select the photos you want. Use the Image filter or Select loaded as needed. After filtering, check the selected items and count before tapping Add to queue. The example shows 21 loaded and selected items labeled Image, with Add to queue (21) on the button."
+      },
+      {
+        "title": "Check queue status and download progress",
+        "text": "Open Manager to follow your downloads. Active contains queued and running tasks, Done contains completed files, and Failed contains tasks that need attention. Open a task to check its status."
+      }
+    ],
+    "exampleNote": "The screenshots show selection of items labeled Image and a running queue, not completion of every download or a successful Photos save. Manager totals include other tasks and are not the result count for this batch. The shown account limits and media counts are examples."
+  },
+  "batch-download-youtube-shorts-iphone": {
+    "title": "How to batch download YouTube Shorts on iPhone and iPad in 2026",
+    "description": "Use a YouTube channel’s Shorts page in ClipDock, load short videos, choose quality and add a batch to the queue. Includes a full URL example.",
+    "intro": "A Shorts batch download starts with a channel’s Shorts page. It can help save your own or authorized short videos from one creator without copying each video link separately.",
+    "tips": [
+      {
+        "title": "The results differ from the channel’s Shorts page",
+        "text": "Confirm the channel handle and /shorts at the end of the URL, then check loaded pages and account limits. The returned list may not include every Short on the channel. Select loaded only selects loaded resources. Avoid repeatedly submitting the whole list without checking."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How does a channel Shorts link differ from a single Short’s link?",
+        "answer": "An address such as https://youtube.com/@dailymoodvideo/shorts identifies a channel’s Shorts list. An address containing /shorts/video-ID identifies one short video. For batch downloading, use the list URL with the channel handle and /shorts at the end."
+      },
+      {
+        "question": "Will completed batch downloads automatically appear in Photos?",
+        "answer": "Enable Auto-Save Completed Downloads to Photos in Download Settings to save supported downloads automatically. Otherwise, use Save to Photos after downloading. Saving requires photo access and a supported format."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Paste the channel’s Shorts link in Batch",
+        "text": "Use the full channel Shorts URL in the format https://youtube.com/@channel-handle/shorts. The example below uses @dailymoodvideo. Open Extract in ClipDock, switch to Batch, and tap Paste. Make sure the address keeps /shorts at the end.",
+        "exampleUrl": "https://youtube.com/@dailymoodvideo/shorts"
+      },
+      {
+        "title": "Load the Shorts list and wait for results",
+        "text": "Tap Load list and wait for Loading list to finish. This only retrieves selectable resources; it does not start downloading. You still need to select items and tap Add to queue."
+      },
+      {
+        "title": "Select videos and add them to the queue",
+        "text": "Confirm @dailymoodvideo as the source and select the short videos you want. Use Select loaded as needed. Choose Batch quality, confirm the selected count, then tap Add to queue. The example shows 48 loaded and selected items, with Add to queue (48) on the button."
+      },
+      {
+        "title": "Check queue status and download progress",
+        "text": "Open Manager to follow your downloads. Active contains queued and running tasks, Done contains completed files, and Failed contains tasks that need attention. Open a task to check its status."
+      }
+    ],
+    "exampleNote": "The screenshots show a running queue, not completion of every download or a successful Photos save. Manager totals include other tasks and are not the result count for this batch. The shown account limits and media counts are examples."
+  },
+  "batch-download-youtube-hashtag-iphone": {
+    "title": "How to batch download YouTube hashtag videos on iPhone and iPad in 2026",
+    "description": "Use a YouTube hashtag URL in ClipDock, load videos, select quality and add a batch to the queue. Includes a carmusic link format example.",
+    "intro": "A hashtag download starts with a YouTube topic page. It can help save your own or authorized videos from the same topic without copying each video link separately.",
+    "tips": [
+      {
+        "title": "The results differ from the hashtag page",
+        "text": "Confirm that the link contains /hashtag/, then check the topic name, loaded pages and account limits. The returned list may not include every video under the hashtag. Select loaded only selects loaded resources. Avoid repeatedly submitting the whole list without checking."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How does a hashtag link differ from a channel or playlist link?",
+        "answer": "A hashtag link identifies a topic page that can contain videos from different creators. A channel link identifies a creator page, and a playlist link identifies a particular collection. Use a full topic URL such as https://youtube.com/hashtag/carmusic, rather than just #carmusic."
+      },
+      {
+        "question": "Will completed batch downloads automatically appear in Photos?",
+        "answer": "Enable Auto-Save Completed Downloads to Photos in Download Settings to save supported downloads automatically. Otherwise, use Save to Photos after downloading. Saving requires photo access and a supported format."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Paste the hashtag link in Batch",
+        "text": "YouTube hashtag links use the format https://youtube.com/hashtag/topic-name. The example below uses carmusic. Open Extract in ClipDock, switch to Batch, and tap Paste to enter the full link. Do not add # before the topic name in the URL.",
+        "exampleUrl": "https://youtube.com/hashtag/carmusic"
+      },
+      {
+        "title": "Load the hashtag list and wait for results",
+        "text": "Tap Load list and wait for Loading list to finish. This only retrieves selectable resources; it does not start downloading. You still need to select items and tap Add to queue."
+      },
+      {
+        "title": "Select videos and add them to the queue",
+        "text": "Confirm carmusic as the source and select the videos you want. Use Select loaded as needed. Choose Batch quality, confirm the selected count, then tap Add to queue. The example shows 36 loaded and selected items, with Add to queue (36) on the button."
+      },
+      {
+        "title": "Check queue status and download progress",
+        "text": "Open Manager to follow your downloads. Active contains queued and running tasks, Done contains completed files, and Failed contains tasks that need attention. Open a task to check its status."
+      }
+    ],
+    "exampleNote": "The screenshots show a running queue, not completion of every download or a successful Photos save. Manager totals include other tasks and are not the result count for this batch. The shown account limits and media counts are examples."
+  },
+  "batch-download-youtube-channel-iphone": {
+    "title": "How to batch download YouTube channel videos on iPhone and iPad in 2026",
+    "description": "Load a YouTube channel in ClipDock, select videos and quality, add tasks to the queue, and check missing items or download failures.",
+    "intro": "A channel download starts with the creator’s channel page, rather than one video inside it. It can help back up your own uploads or authorized videos without copying each video link separately.",
+    "tips": [
+      {
+        "title": "The extracted count differs from the channel count",
+        "text": "Check loaded pages and account limits, then check for inaccessible videos. A channel’s displayed count is not necessarily the number currently downloadable. Select loaded only selects loaded resources. Avoid repeatedly submitting the whole channel without checking."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How does a channel download differ from a playlist download?",
+        "answer": "Both are batch workflows, but the source page and range of included posts differ. A channel link identifies a creator page; a playlist link identifies a particular collection. Inspect the actual results for the URL you use."
+      },
+      {
+        "question": "Will completed batch downloads automatically appear in Photos?",
+        "answer": "Enable Auto-Save Completed Downloads to Photos in Download Settings to save supported downloads automatically. Otherwise, use Save to Photos after downloading. Saving requires photo access and a supported format."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Copy the YouTube channel link",
+        "text": "Open the YouTube channel you want to download and use its Share action. In the share sheet, tap Copy link. The example channel is @fashion-house-mafia. Confirm that you copied the channel address, rather than a video or playlist URL."
+      },
+      {
+        "title": "Paste the channel link in Batch",
+        "text": "Open Extract in ClipDock, switch to Batch, and tap Paste to enter the channel link. The free version can load the first 2 pages; paid VIP is required to load more. Check the limit shown in your app."
+      },
+      {
+        "title": "Load the channel list and wait for results",
+        "text": "Tap Load list and wait for Loading list to finish. This only retrieves selectable resources; it does not start downloading. You still need to select items and tap Add to queue."
+      },
+      {
+        "title": "Select videos and add them to the queue",
+        "text": "Check the source and select the videos or images you want. Use the type filters and Select loaded as needed. Choose Batch quality, confirm the selected count, then tap Add to queue."
+      },
+      {
+        "title": "Check queue status and download progress",
+        "text": "Open Manager to follow your downloads. Active contains queued and running tasks, Done contains completed files, and Failed contains tasks that need attention. Open a task to check its status."
+      }
+    ],
+    "exampleNote": "The screenshots show a running queue, not completion of every download or a successful Photos save. Manager totals include other tasks and are not the result count for this batch. The shown account limits and media counts are examples."
+  },
   "download-youtube-playlist-iphone": {
     "title": "How to batch download YouTube playlists on iPhone and iPad in 2026",
     "description": "Load a YouTube playlist in ClipDock, select videos and quality, add tasks to the queue, and check missing items or download failures.",

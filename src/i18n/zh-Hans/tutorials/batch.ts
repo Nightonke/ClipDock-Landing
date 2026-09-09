@@ -1,5 +1,258 @@
 import type { TutorialCopy } from "../../types";
 export const copy: Record<string, TutorialCopy> = {
+  "batch-download-bilibili-collection-iphone": {
+    "title": "2026 年如何在 iPhone/iPad 上批量下载 Bilibili（哔哩哔哩）合集视频？",
+    "description": "从 Bilibili 合集分享面板复制链接，在 ClipDock影随存中加载视频列表、选择画质并创建批量下载任务，附 b23.tv 分享链接示例。",
+    "intro": "Bilibili 合集批量下载的输入是合集的分享链接，适合备份自己的系列作品或已获授权的视频，减少逐集复制视频链接的操作。",
+    "tips": [
+      {
+        "title": "解析数量与合集显示集数不一致",
+        "text": "先检查是否复制了合集链接，再核对已加载页数、账号限制和资源是否可访问。Select loaded 只选择当前已加载资源，实际返回列表不一定包含全部集数，不要盲目重复提交整个合集。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Bilibili 合集链接和 UP 主主页链接有什么区别？",
+        "answer": "合集链接对应一组视频，UP 主主页链接对应创作者页面。请从目标合集的分享面板复制链接；b23.tv 短链接本身不能说明来源类型，加载后还要核对合集名称和返回列表。"
+      },
+      {
+        "question": "批量完成后会自动进入相册吗？",
+        "answer": "可在 Download Settings 开启 Auto-Save Completed Downloads to Photos，自动保存支持的下载文件；否则在下载后手动选择 Save to Photos。保存需要相册访问权限和支持的格式。"
+      }
+    ],
+    "steps": [
+      {
+        "title": "复制 Bilibili 合集链接",
+        "text": "在哔哩哔哩打开需要下载的合集，点击合集面板中的分享按钮，再选择「复制链接」。示例合集为「米娜舞蹈-大摆锤」，页面显示共 62 集。确认分享的是合集，而不是正在播放的单个视频。"
+      },
+      {
+        "title": "在 Batch 分页填入合集链接",
+        "text": "打开 ClipDock影随存的 Extract 页面，切换到 Batch（批量）分页，点击 Paste（粘贴）填入复制的链接。本例使用下面的 b23.tv 短链接；请使用从目标合集分享面板复制的实际地址。",
+        "exampleUrl": "https://b23.tv/drSfmMh"
+      },
+      {
+        "title": "加载合集视频列表",
+        "text": "点击 Load list（加载列表），等待 Loading list 提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
+      },
+      {
+        "title": "选择视频并加入下载队列",
+        "text": "核对来源名称与目标合集一致，勾选需要的视频，可使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。示例中已加载并选中 62 项，按钮显示 Add to queue (62)。"
+      },
+      {
+        "title": "查看排队状态与下载进度",
+        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。"
+      }
+    ],
+    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+  },
+  "batch-download-tiktok-hashtag-iphone": {
+    "title": "2026 年如何在 iPhone/iPad 上批量下载 TikTok Hashtag 话题视频？",
+    "description": "使用 TikTok Hashtag 话题链接，在 ClipDock影随存中加载视频列表、选择画质并创建批量下载任务，附 beauty 话题链接格式示例。",
+    "intro": "TikTok Hashtag 批量下载的输入是话题页链接，适合集中保存同一话题下自己拥有或已获授权的视频。本教程以 beauty 话题为例，减少逐条复制视频链接的操作。",
+    "tips": [
+      {
+        "title": "解析结果与话题页显示内容不同",
+        "text": "先确认链接中包含 /tag/，再检查话题名称、已加载页数和账号限制。实际返回列表不一定包含话题下的全部视频，Select loaded 只选择已加载资源，不要盲目重复提交整份列表。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "TikTok 话题链接和主页链接有什么区别？",
+        "answer": "话题链接对应同一标签下的内容，可包含不同创作者的视频；主页链接对应某位创作者。批量下载话题内容时，请使用 https://www.tiktok.com/tag/beauty 这样的完整地址，不要只粘贴 #beauty。"
+      },
+      {
+        "question": "批量完成后会自动进入相册吗？",
+        "answer": "可在 Download Settings 开启 Auto-Save Completed Downloads to Photos，自动保存支持的下载文件；否则在下载后手动选择 Save to Photos。保存需要相册访问权限和支持的格式。"
+      }
+    ],
+    "steps": [
+      {
+        "title": "在 Batch 分页填入 TikTok 话题链接",
+        "text": "TikTok 话题链接的格式是 https://www.tiktok.com/tag/话题名称，下面以 beauty 为例。打开 ClipDock影随存的 Extract 页面，切换到 Batch（批量）分页，点击 Paste（粘贴）填入完整链接。地址中的话题名称不需要加 #。",
+        "exampleUrl": "https://www.tiktok.com/tag/beauty"
+      },
+      {
+        "title": "加载话题视频列表",
+        "text": "点击 Load list（加载列表），等待 Loading list 提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
+      },
+      {
+        "title": "选择视频并加入下载队列",
+        "text": "核对来源为 beauty，勾选需要的视频，可使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。示例中已加载并选中 19 项，按钮显示 Add to queue (19)。"
+      },
+      {
+        "title": "查看排队状态与下载进度",
+        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。"
+      }
+    ],
+    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+  },
+  "batch-download-instagram-hashtag-iphone": {
+    "title": "2026 年如何在 iPhone/iPad 上批量下载 Instagram Hashtag 话题图片？",
+    "description": "使用 Instagram Hashtag 话题链接，在 ClipDock影随存中加载图片列表、筛选资源并创建批量下载任务，附 model 话题链接格式示例。",
+    "intro": "Instagram Hashtag 批量下载的输入是话题页链接，适合集中保存同一话题下自己拥有或已获授权的图片。本教程以 model 话题为例，减少逐条复制帖子链接的操作。",
+    "tips": [
+      {
+        "title": "解析结果与话题页显示内容不同",
+        "text": "先确认链接中包含 /explore/tags/，再检查话题名称、已加载页数和账号限制。实际返回列表不一定包含话题下的全部帖子，Select loaded 只选择已加载资源，不要盲目重复提交整份列表。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Instagram 话题链接和主页链接有什么区别？",
+        "answer": "话题链接对应同一标签下的内容，可包含不同创作者的帖子；主页链接对应某位创作者。批量下载话题内容时，请使用 https://www.instagram.com/explore/tags/model 这样的完整地址，不要只粘贴 #model。"
+      },
+      {
+        "question": "批量完成后会自动进入相册吗？",
+        "answer": "可在 Download Settings 开启 Auto-Save Completed Downloads to Photos，自动保存支持的下载文件；否则在下载后手动选择 Save to Photos。保存需要相册访问权限和支持的格式。"
+      }
+    ],
+    "steps": [
+      {
+        "title": "在 Batch 分页填入 Instagram 话题链接",
+        "text": "Instagram 话题链接的格式是 https://www.instagram.com/explore/tags/话题名称，下面以 model 为例。打开 ClipDock影随存的 Extract 页面，切换到 Batch（批量）分页，点击 Paste（粘贴）填入完整链接。地址中的话题名称不需要加 #。",
+        "exampleUrl": "https://www.instagram.com/explore/tags/model"
+      },
+      {
+        "title": "加载话题资源列表",
+        "text": "点击 Load list（加载列表），等待 Loading list 提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
+      },
+      {
+        "title": "选择图片并加入下载队列",
+        "text": "核对来源为 model，勾选需要的图片，可使用 Image（图片）筛选或 Select loaded（全选已加载）。筛选后仍需核对已选条目和数量，再点击 Add to queue（加入队列）。示例中已加载并选中 21 项，列表条目标记为 Image，按钮显示 Add to queue (21)。"
+      },
+      {
+        "title": "查看排队状态与下载进度",
+        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。"
+      }
+    ],
+    "exampleNote": "截图展示 Image 条目的选择和队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+  },
+  "batch-download-youtube-shorts-iphone": {
+    "title": "2026 年如何在 iPhone/iPad 上批量下载 YouTube Shorts？",
+    "description": "使用 YouTube 频道的 Shorts 页面链接，在 ClipDock影随存中加载短视频列表、选择画质并创建批量下载任务，附完整链接格式示例。",
+    "intro": "Shorts 批量下载的输入是频道的 Shorts 页面，适合集中保存同一创作者的短视频。用于备份自己的作品或已获授权的视频，减少逐条复制链接的操作。",
+    "tips": [
+      {
+        "title": "解析结果与频道 Shorts 页面显示内容不同",
+        "text": "先确认频道标识和地址末尾的 /shorts，再检查已加载页数和账号限制。实际返回列表不一定包含频道全部 Shorts，Select loaded 只选择已加载资源，不要盲目重复提交整份列表。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "频道 Shorts 列表链接和单条 Shorts 链接有什么区别？",
+        "answer": "https://youtube.com/@dailymoodvideo/shorts 这样的地址对应频道的 Shorts 列表；/shorts/视频ID 这样的地址对应单条短视频。批量下载请使用带频道标识、以 /shorts 结尾的列表链接。"
+      },
+      {
+        "question": "批量完成后会自动进入相册吗？",
+        "answer": "可在 Download Settings 开启 Auto-Save Completed Downloads to Photos，自动保存支持的下载文件；否则在下载后手动选择 Save to Photos。保存需要相册访问权限和支持的格式。"
+      }
+    ],
+    "steps": [
+      {
+        "title": "在 Batch 分页填入 Shorts 列表链接",
+        "text": "使用频道 Shorts 页面的完整地址，格式为 https://youtube.com/@频道标识/shorts，下面以 @dailymoodvideo 为例。打开 ClipDock影随存的 Extract 页面，切换到 Batch（批量）分页，点击 Paste（粘贴）填入。确认地址末尾保留 /shorts。",
+        "exampleUrl": "https://youtube.com/@dailymoodvideo/shorts"
+      },
+      {
+        "title": "加载 Shorts 视频列表",
+        "text": "点击 Load list（加载列表），等待 Loading list 提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
+      },
+      {
+        "title": "选择视频并加入下载队列",
+        "text": "核对来源为 @dailymoodvideo，勾选需要的短视频，可使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。示例中已加载并选中 48 项，按钮显示 Add to queue (48)。"
+      },
+      {
+        "title": "查看排队状态与下载进度",
+        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。"
+      }
+    ],
+    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+  },
+  "batch-download-youtube-hashtag-iphone": {
+    "title": "2026 年如何在 iPhone/iPad 上批量下载 YouTube Hashtag 话题视频？",
+    "description": "使用 YouTube Hashtag 话题链接，在 ClipDock影随存中加载视频列表、选择画质并创建批量下载任务，附 carmusic 链接格式示例。",
+    "intro": "Hashtag 批量下载的输入是 YouTube 话题页链接，适合集中保存同一话题下自己拥有或已获授权的视频，减少逐条复制视频链接的操作。",
+    "tips": [
+      {
+        "title": "解析结果与话题页显示内容不同",
+        "text": "先确认链接中包含 /hashtag/，再检查话题名称、已加载页数和账号限制。实际返回列表不一定包含话题下的全部视频，Select loaded 只选择已加载资源，不要盲目重复提交整份列表。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Hashtag 链接和频道、播放列表链接有什么区别？",
+        "answer": "Hashtag 链接对应话题页，可包含不同创作者的视频；频道链接对应创作者主页，播放列表链接对应特定集合。使用 https://youtube.com/hashtag/carmusic 这样的完整话题链接，不要只粘贴 #carmusic。"
+      },
+      {
+        "question": "批量完成后会自动进入相册吗？",
+        "answer": "可在 Download Settings 开启 Auto-Save Completed Downloads to Photos，自动保存支持的下载文件；否则在下载后手动选择 Save to Photos。保存需要相册访问权限和支持的格式。"
+      }
+    ],
+    "steps": [
+      {
+        "title": "在 Batch 分页填入 Hashtag 链接",
+        "text": "YouTube 话题链接的格式是 https://youtube.com/hashtag/话题名称，下面以 carmusic 为例。打开 ClipDock影随存的 Extract 页面，切换到 Batch（批量）分页，点击 Paste（粘贴）填入完整链接。地址中的话题名称不需要加 #。",
+        "exampleUrl": "https://youtube.com/hashtag/carmusic"
+      },
+      {
+        "title": "加载话题视频列表",
+        "text": "点击 Load list（加载列表），等待 Loading list 提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
+      },
+      {
+        "title": "选择视频并加入下载队列",
+        "text": "核对来源为 carmusic，勾选需要的视频，可使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。示例中已加载并选中 36 项，按钮显示 Add to queue (36)。"
+      },
+      {
+        "title": "查看排队状态与下载进度",
+        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。"
+      }
+    ],
+    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+  },
+  "batch-download-youtube-channel-iphone": {
+    "title": "2026 年如何在 iPhone/iPad 上批量下载 YouTube 频道视频？",
+    "description": "取得 YouTube 频道链接，在 ClipDock影随存中解析多条视频、确认结果并创建批量任务，处理缺失条目和下载失败。",
+    "intro": "频道批量下载的输入是创作者的频道主页，而不是其中某个视频。适合备份自己的频道作品或已获授权的视频，减少逐条复制视频链接的操作。",
+    "tips": [
+      {
+        "title": "解析数量与频道显示数量不一致",
+        "text": "先检查已加载页数和账号限制，再确认是否有不可访问的作品。频道显示数量不等于本次实际可下载数量，Select loaded 只选择已加载资源，不要盲目重复提交整个频道。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "频道下载和播放列表下载有什么区别？",
+        "answer": "两者都属于批量任务，但输入页面和覆盖作品范围不同。频道链接对应创作者主页，播放列表链接对应特定集合，应检查实际解析结果。"
+      },
+      {
+        "question": "批量完成后会自动进入相册吗？",
+        "answer": "可在 Download Settings 开启 Auto-Save Completed Downloads to Photos，自动保存支持的下载文件；否则在下载后手动选择 Save to Photos。保存需要相册访问权限和支持的格式。"
+      }
+    ],
+    "steps": [
+      {
+        "title": "复制 YouTube 频道链接",
+        "text": "打开需要下载的 YouTube 频道主页，使用分享功能，在分享面板点击 Copy link（复制链接）。示例频道为 @fashion-house-mafia，确认复制的是频道链接，而不是某个视频或播放列表的地址。"
+      },
+      {
+        "title": "在 Batch 分页填入频道链接",
+        "text": "打开 ClipDock影随存的 Extract 页面，切换到 Batch（批量）分页，点击 Paste（粘贴）填入频道链接。免费版可加载前 2 页，加载更多需要付费 VIP，具体以 App 内显示为准。"
+      },
+      {
+        "title": "加载频道视频列表",
+        "text": "点击 Load list（加载列表），等待 Loading list 提示结束。加载列表只是获取可选择的作品，不会立即开始下载；下一步还需要选择条目并加入队列。"
+      },
+      {
+        "title": "选择视频并加入下载队列",
+        "text": "核对来源并勾选需要的视频或图片，可按类型筛选或使用 Select loaded（全选已加载）。设置 Batch quality（批量画质），确认已选数量，再点击 Add to queue（加入队列）。"
+      },
+      {
+        "title": "查看排队状态与下载进度",
+        "text": "打开 Manager 查看下载。Active 包含排队和正在处理的任务，Done 是已完成文件，Failed 是需要处理的失败任务。打开具体条目核对状态。"
+      }
+    ],
+    "exampleNote": "截图展示队列运行状态，未展示全部下载完成或相册保存成功。Manager 的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+  },
   "download-youtube-playlist-iphone": {
     "title": "2026 年如何在 iPhone/iPad 上批量下载 YouTube 播放列表？",
     "description": "取得 YouTube 播放列表链接，在 ClipDock影随存中解析多条视频、确认结果并创建批量任务，处理缺失条目和下载失败。",

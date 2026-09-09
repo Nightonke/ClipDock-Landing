@@ -167,6 +167,7 @@ export const tutorialStructure = [
     "category": "platform",
     "screenshotsReady": true,
     "related": [
+      "batch-download-bilibili-collection-iphone",
       "batch-download-bilibili-profile-iphone",
       "extract-audio-iphone",
       "trim-video-iphone"
@@ -202,6 +203,7 @@ export const tutorialStructure = [
     "category": "platform",
     "screenshotsReady": true,
     "related": [
+      "batch-download-youtube-channel-iphone",
       "download-youtube-playlist-iphone",
       "extract-audio-iphone",
       "copy-link-auto-download-iphone"
@@ -361,10 +363,113 @@ export const tutorialStructure = [
     "requiresVerificationNote": false
   },
   {
+    "slug": "batch-download-youtube-shorts-iphone",
+    "category": "batch",
+    "screenshotsReady": true,
+    "related": [
+      "batch-download-youtube-channel-iphone",
+      "batch-download-youtube-hashtag-iphone",
+      "download-youtube-playlist-iphone"
+    ],
+    "steps": [
+      {
+        "image": "youtube-shorts-input",
+        "sectionCount": 0
+      },
+      {
+        "image": "youtube-shorts-loading",
+        "sectionCount": 0
+      },
+      {
+        "image": "youtube-shorts-select",
+        "sectionCount": 0
+      },
+      {
+        "image": "youtube-shorts-queue",
+        "sectionCount": 0
+      }
+    ],
+    "tipCount": 1,
+    "faqCount": 2,
+    "requiresVerificationNote": false
+  },
+  {
+    "slug": "batch-download-youtube-hashtag-iphone",
+    "category": "batch",
+    "screenshotsReady": true,
+    "related": [
+      "batch-download-instagram-hashtag-iphone",
+      "batch-download-youtube-shorts-iphone",
+      "batch-download-youtube-channel-iphone",
+      "download-youtube-playlist-iphone",
+      "download-youtube-video-iphone"
+    ],
+    "steps": [
+      {
+        "image": "youtube-hashtag-input",
+        "sectionCount": 0
+      },
+      {
+        "image": "youtube-hashtag-loading",
+        "sectionCount": 0
+      },
+      {
+        "image": "youtube-hashtag-select",
+        "sectionCount": 0
+      },
+      {
+        "image": "youtube-hashtag-queue",
+        "sectionCount": 0
+      }
+    ],
+    "tipCount": 1,
+    "faqCount": 2,
+    "requiresVerificationNote": false
+  },
+  {
+    "slug": "batch-download-youtube-channel-iphone",
+    "category": "batch",
+    "screenshotsReady": true,
+    "related": [
+      "batch-download-youtube-shorts-iphone",
+      "batch-download-youtube-hashtag-iphone",
+      "download-youtube-playlist-iphone",
+      "download-youtube-video-iphone",
+      "batch-download-tiktok-profile-iphone"
+    ],
+    "steps": [
+      {
+        "image": "youtube-channel-copy",
+        "sectionCount": 0
+      },
+      {
+        "image": "youtube-channel-input",
+        "sectionCount": 0
+      },
+      {
+        "image": "youtube-channel-loading",
+        "sectionCount": 0
+      },
+      {
+        "image": "youtube-channel-select",
+        "sectionCount": 0
+      },
+      {
+        "image": "youtube-channel-queue",
+        "sectionCount": 0
+      }
+    ],
+    "tipCount": 1,
+    "faqCount": 2,
+    "requiresVerificationNote": false
+  },
+  {
     "slug": "download-youtube-playlist-iphone",
     "category": "batch",
     "screenshotsReady": true,
     "related": [
+      "batch-download-youtube-hashtag-iphone",
+      "batch-download-youtube-channel-iphone",
       "download-youtube-video-iphone",
       "join-videos-iphone",
       "batch-download-tiktok-profile-iphone"
@@ -392,10 +497,43 @@ export const tutorialStructure = [
     "requiresVerificationNote": false
   },
   {
+    "slug": "batch-download-instagram-hashtag-iphone",
+    "category": "batch",
+    "screenshotsReady": true,
+    "related": [
+      "batch-download-tiktok-hashtag-iphone",
+      "batch-download-instagram-profile-iphone",
+      "download-instagram-reels-iphone",
+      "batch-download-youtube-hashtag-iphone"
+    ],
+    "steps": [
+      {
+        "image": "instagram-hashtag-input",
+        "sectionCount": 0
+      },
+      {
+        "image": "instagram-hashtag-loading",
+        "sectionCount": 0
+      },
+      {
+        "image": "instagram-hashtag-select",
+        "sectionCount": 0
+      },
+      {
+        "image": "instagram-hashtag-queue",
+        "sectionCount": 0
+      }
+    ],
+    "tipCount": 1,
+    "faqCount": 2,
+    "requiresVerificationNote": false
+  },
+  {
     "slug": "batch-download-instagram-profile-iphone",
     "category": "batch",
     "screenshotsReady": true,
     "related": [
+      "batch-download-instagram-hashtag-iphone",
       "download-instagram-reels-iphone",
       "download-youtube-playlist-iphone",
       "join-videos-iphone"
@@ -427,10 +565,42 @@ export const tutorialStructure = [
     "requiresVerificationNote": false
   },
   {
+    "slug": "batch-download-tiktok-hashtag-iphone",
+    "category": "batch",
+    "screenshotsReady": true,
+    "related": [
+      "batch-download-tiktok-profile-iphone",
+      "download-tiktok-video-iphone",
+      "batch-download-instagram-hashtag-iphone"
+    ],
+    "steps": [
+      {
+        "image": "tiktok-hashtag-input",
+        "sectionCount": 0
+      },
+      {
+        "image": "tiktok-hashtag-loading",
+        "sectionCount": 0
+      },
+      {
+        "image": "tiktok-hashtag-select",
+        "sectionCount": 0
+      },
+      {
+        "image": "tiktok-hashtag-queue",
+        "sectionCount": 0
+      }
+    ],
+    "tipCount": 1,
+    "faqCount": 2,
+    "requiresVerificationNote": false
+  },
+  {
     "slug": "batch-download-tiktok-profile-iphone",
     "category": "batch",
     "screenshotsReady": true,
     "related": [
+      "batch-download-tiktok-hashtag-iphone",
       "download-tiktok-video-iphone",
       "batch-download-douyin-profile-iphone",
       "batch-download-instagram-profile-iphone"
@@ -532,10 +702,46 @@ export const tutorialStructure = [
     "requiresVerificationNote": false
   },
   {
+    "slug": "batch-download-bilibili-collection-iphone",
+    "category": "batch",
+    "screenshotsReady": true,
+    "related": [
+      "batch-download-bilibili-profile-iphone",
+      "download-bilibili-video-iphone",
+      "download-youtube-playlist-iphone"
+    ],
+    "steps": [
+      {
+        "image": "bilibili-collection-copy",
+        "sectionCount": 0
+      },
+      {
+        "image": "bilibili-collection-input",
+        "sectionCount": 0
+      },
+      {
+        "image": "bilibili-collection-loading",
+        "sectionCount": 0
+      },
+      {
+        "image": "bilibili-collection-select",
+        "sectionCount": 0
+      },
+      {
+        "image": "bilibili-collection-queue",
+        "sectionCount": 0
+      }
+    ],
+    "tipCount": 1,
+    "faqCount": 2,
+    "requiresVerificationNote": false
+  },
+  {
     "slug": "batch-download-bilibili-profile-iphone",
     "category": "batch",
     "screenshotsReady": true,
     "related": [
+      "batch-download-bilibili-collection-iphone",
       "download-bilibili-video-iphone",
       "batch-download-weibo-profile-iphone",
       "download-youtube-playlist-iphone"
@@ -1170,6 +1376,136 @@ export const tutorialStructure = [
   }
 ];
 export const screenshotAssets: Record<string, { src?: string; width?: number; height?: number; framed?: boolean; video?: string; poster?: string; highlight?: { x: number; y: number; width: number; height: number } }> = {
+  "bilibili-collection-copy": {
+    "src": "/assets/tutorials/bilibili-collection/copy-link.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "bilibili-collection-input": {
+    "src": "/assets/tutorials/bilibili-collection/input.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "bilibili-collection-loading": {
+    "src": "/assets/tutorials/bilibili-collection/loading.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "bilibili-collection-select": {
+    "src": "/assets/tutorials/bilibili-collection/select.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "bilibili-collection-queue": {
+    "src": "/assets/tutorials/bilibili-collection/queue.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "tiktok-hashtag-input": {
+    "src": "/assets/tutorials/tiktok-hashtag/input.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "tiktok-hashtag-loading": {
+    "src": "/assets/tutorials/tiktok-hashtag/loading.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "tiktok-hashtag-select": {
+    "src": "/assets/tutorials/tiktok-hashtag/select.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "tiktok-hashtag-queue": {
+    "src": "/assets/tutorials/tiktok-hashtag/queue.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "instagram-hashtag-input": {
+    "src": "/assets/tutorials/instagram-hashtag/input.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "instagram-hashtag-loading": {
+    "src": "/assets/tutorials/instagram-hashtag/loading.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "instagram-hashtag-select": {
+    "src": "/assets/tutorials/instagram-hashtag/select.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "instagram-hashtag-queue": {
+    "src": "/assets/tutorials/instagram-hashtag/queue.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "youtube-shorts-input": {
+    "src": "/assets/tutorials/youtube-shorts/input.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "youtube-shorts-loading": {
+    "src": "/assets/tutorials/youtube-shorts/loading.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "youtube-shorts-select": {
+    "src": "/assets/tutorials/youtube-shorts/select.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "youtube-shorts-queue": {
+    "src": "/assets/tutorials/youtube-shorts/queue.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "youtube-hashtag-input": {
+    "src": "/assets/tutorials/youtube-hashtag/input.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "youtube-hashtag-loading": {
+    "src": "/assets/tutorials/youtube-hashtag/loading.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "youtube-hashtag-select": {
+    "src": "/assets/tutorials/youtube-hashtag/select.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "youtube-hashtag-queue": {
+    "src": "/assets/tutorials/youtube-hashtag/queue.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "youtube-channel-copy": {
+    "src": "/assets/tutorials/youtube-channel/copy-link.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "youtube-channel-input": {
+    "src": "/assets/tutorials/youtube-channel/input.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "youtube-channel-loading": {
+    "src": "/assets/tutorials/youtube-channel/loading.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "youtube-channel-select": {
+    "src": "/assets/tutorials/youtube-channel/select.PNG",
+    "width": 1320,
+    "height": 2868
+  },
+  "youtube-channel-queue": {
+    "src": "/assets/tutorials/youtube-channel/queue.PNG",
+    "width": 1320,
+    "height": 2868
+  },
   "bilibili-copy-link-orange": {
     "src": "/assets/tutorials/bilibili/copy-link-orange.webp",
     "width": 1319,

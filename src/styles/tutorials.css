@@ -95,3 +95,5 @@ html[lang="en"] :is(.tutorial-index h1, .tutorial-hero h1, .tutorial-card h3, .t
 .tutorial-example-notes summary { width: fit-content; cursor: pointer; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
 .tutorial-example-notes summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
 .tutorial-example-notes p { max-width: 78ch; margin: 12px 0 0; }
+
+.tutorial-example-url a { overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 4px; }

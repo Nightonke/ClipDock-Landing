@@ -1,4 +1,108 @@
 export const screenshotCopy: Record<string, { title: string; brief: string }> = {
+  "bilibili-collection-copy": {
+    "title": "Copy the link from the Bilibili collection share panel",
+    "brief": ""
+  },
+  "bilibili-collection-input": {
+    "title": "Paste the Bilibili collection short link in Batch",
+    "brief": ""
+  },
+  "bilibili-collection-loading": {
+    "title": "Load the Bilibili collection video list",
+    "brief": ""
+  },
+  "bilibili-collection-select": {
+    "title": "Select 62 collection videos and add them to the queue",
+    "brief": ""
+  },
+  "bilibili-collection-queue": {
+    "title": "Track Bilibili collection downloads in Manager",
+    "brief": ""
+  },
+  "tiktok-hashtag-input": {
+    "title": "Paste the TikTok beauty hashtag link in Batch",
+    "brief": ""
+  },
+  "tiktok-hashtag-loading": {
+    "title": "Load the TikTok hashtag video list",
+    "brief": ""
+  },
+  "tiktok-hashtag-select": {
+    "title": "Select 19 hashtag videos and add them to the queue",
+    "brief": ""
+  },
+  "tiktok-hashtag-queue": {
+    "title": "Track beauty hashtag video downloads in Manager",
+    "brief": ""
+  },
+  "instagram-hashtag-input": {
+    "title": "Paste the Instagram model hashtag link in Batch",
+    "brief": ""
+  },
+  "instagram-hashtag-loading": {
+    "title": "Load the Instagram hashtag resource list",
+    "brief": ""
+  },
+  "instagram-hashtag-select": {
+    "title": "Select 21 hashtag images and add them to the queue",
+    "brief": ""
+  },
+  "instagram-hashtag-queue": {
+    "title": "Track model hashtag image downloads in Manager",
+    "brief": ""
+  },
+  "youtube-shorts-input": {
+    "title": "Paste the YouTube channel Shorts link in Batch",
+    "brief": ""
+  },
+  "youtube-shorts-loading": {
+    "title": "Load the Shorts list from @dailymoodvideo",
+    "brief": ""
+  },
+  "youtube-shorts-select": {
+    "title": "Select 48 Shorts and add them to the download queue",
+    "brief": ""
+  },
+  "youtube-shorts-queue": {
+    "title": "Track queued and running Shorts downloads in Manager",
+    "brief": ""
+  },
+  "youtube-hashtag-input": {
+    "title": "Paste the YouTube carmusic hashtag link in Batch",
+    "brief": ""
+  },
+  "youtube-hashtag-loading": {
+    "title": "Load the YouTube hashtag video list",
+    "brief": ""
+  },
+  "youtube-hashtag-select": {
+    "title": "Select 36 hashtag videos and add them to the queue",
+    "brief": ""
+  },
+  "youtube-hashtag-queue": {
+    "title": "Track carmusic hashtag downloads in Manager",
+    "brief": ""
+  },
+  "youtube-channel-copy": {
+    "title": "Copy a YouTube channel link from the share sheet",
+    "brief": ""
+  },
+  "youtube-channel-input": {
+    "title": "Paste the YouTube channel link in Batch and check page limits",
+    "brief": ""
+  },
+  "youtube-channel-loading": {
+    "title": "Load the YouTube channel list",
+    "brief": ""
+  },
+  "youtube-channel-select": {
+    "title": "Review 30 loaded channel videos and batch quality",
+    "brief": ""
+  },
+  "youtube-channel-queue": {
+    "title": "Track queued and running channel downloads in Manager",
+    "brief": ""
+  },
   "bilibili-copy-link-orange": {
     "title": "Copy the Bilibili video link",
     "brief": ""
