@@ -2,7 +2,7 @@
 
 ## 架构与域名
 
-- `clipdock.video`：GitHub Pages；英文首页 `/`、教程 `/articles/`；中文首页 `/zh-Hans/`、教程 `/zh-Hans/articles/`。
+- `clipdock.video`：GitHub Pages；英文首页 `/`、教程 `/articles/`；简体中文首页 `/zh-Hans/`、教程 `/zh-Hans/articles/`；繁体中文首页 `/zh-Hant/`、教程 `/zh-Hant/articles/`。
 - `www.clipdock.video`：Vercel 提供 HTTPS 308 跳转到主域名，保留路径与查询参数。
 - `assets.clipdock.video`：Vercel 项目 `clipdock-assets`。
 - `assets-cn.clipdock.video`：腾讯云香港 COS + 中国境外 CDN。已配置 Vercel 生产环境的 `TENCENT_CDN_ORIGIN`，中国大陆素材请求转到此域名，其他地区由 Vercel 提供。
@@ -14,7 +14,7 @@
 
 1. 在仓库根目录运行 `npm run media:prepare`。它生成响应式图片、素材清单和 `infrastructure/media-cdn/public/releases/<内容哈希>/`。
 2. 将该版本完整上传至腾讯云，并保留相同的 `releases/<版本>/assets/...` 路径及 `manifest.json`。保留先前版本，以支持页面回退。
-3. 在 `infrastructure/media-cdn/` 运行 `npm ci`、`npm test`、`npm run build`；确认 `.vercel/project.json` 链接到 `clipdock-assets` 后，用 Vercel CLI 发布。不要上传整个仓库或 `references/`。
+3. 在 `infrastructure/media-cdn/` 运行 `npm ci`、`npm test`、`npm run build`；确认 `.vercel/project.json` 链接到 `clipdock-assets` 后，用 Vercel CLI 发布。`media:prepare` 会重建本地暂存目录，因此部署 Vercel 前还须恢复并校验上一版本到 `public/releases/`，让旧页面与回退版本继续可用。不要上传整个仓库或 `references/`。
 4. 确认 Vercel 与腾讯云的清单和文件一致，图片正常、视频返回正确 MIME 且支持 Range。更新 `deployment.json` 的 `mediaBaseUrl`；腾讯云就绪后填入 `tencentOrigin`。
 5. 运行 `npm run build:production`。检查通过后提交并推送 `main`，由 GitHub Actions 发布页面。
 
@@ -31,9 +31,9 @@ Vercel middleware 仅匹配 `/releases/`。地区为 `CN` 且已配置 `TENCENT_
 ## 上线检查
 
 - `scripts/verify-site.py` 检查生成页面的本地链接、素材路径、canonical、教程索引、截图占位和 sitemap。
-- 教程仅在 `screenshotsReady` 为真时开放索引。当前中英文各 35 篇教程截图齐备；保留各篇的实测限制说明。
-- 已发布语言为英语和简体中文，教程逐篇对应；繁体及旧功能/场景模板仍不生成。
-- `scripts/verify-locales.py` 检查英文文案残留、35 篇双语覆盖、步骤/截图数量及双向 hreflang。
+- 教程仅在 `screenshotsReady` 为真时开放索引。当前英语、简体中文、繁体中文各 41 篇教程截图齐备；保留各篇的实测限制说明。
+- 发布语言为英语、简体中文和繁体中文，教程逐篇对应；旧功能/场景模板仍不生成。
+- `scripts/verify-locales.py` 检查各语言文案完整性、41 篇三语覆盖、步骤/截图数量及双向 hreflang。
 - `/privacy/`、`/terms/` 及各已发布语言的对应路径直接展示完整站内正文，具有对应语言的 canonical、hreflang，并收录到 sitemap。
 - 上线后提交 `https://clipdock.video/sitemap-index.xml`，检查 Google 的抓取结果。提交不代表立即收录。
 
@@ -88,3 +88,11 @@ Vercel middleware 仅匹配 `/releases/`。地区为 `CN` 且已配置 `TENCENT_
 - 正式构建检查两端 CDN 清单，并验证全站链接、教程完整性、语言标记和双向 hreflang；TypeScript 与 4 项视频恢复测试通过。
 - 浏览器检查了英文目录、平台下载、复制即下载、批量下载、拼接及音视频工具；320/390 像素小屏与桌面显示正常。
 - 英文首页为根路径，中文仍保留 `/zh-Hans/`，通过菜单选择语言。主站按现有 `main` 推送流程发布。
+
+## 2026-09-09 繁体中文发布素材同步
+
+- 修复主站发布被素材版本校验阻塞的问题：新增的 26 张教程原图及 52 张响应式图片现已包含在素材版本 `1ce0d649b3537c86`，共 526 个素材及 `manifest.json`。
+- 腾讯云上传任务显示 527/527 成功；两端入口清单一致，78 个新增文件的 CDN SHA-256 全部匹配，5 个视频的 Range、MIME、CORS 及返回字节检查通过。
+- Vercel 生产部署 `dpl_ErcG7fE7KvPNS6vz7uuUU9KVFJsk` 同时包含新版本和旧版本 `5061412bf9a8eadd`；腾讯云也保留旧版本。
+- `deployment.json` 已切换到新版本。正式构建通过：136 个页面、135 个 sitemap URL、7657 处本地引用；三种语言各 41 篇教程，包含繁中首页、教程和法律页。
+- 7 项语言完整性、4 项视频恢复和 2 项素材分流测试通过。推送本次配置后，由 GitHub Actions 发布主站。
