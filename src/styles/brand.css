@@ -32,6 +32,20 @@ html[lang="ja"] :is(h1, h2, h3, summary, .footer-links) {
 	text-transform: none;
 }
 
+/* Keep Korean spacing intact; long URLs can still wrap inside prose. */
+html[lang="ko"] {
+	--display: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
+	--body: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
+	word-break: keep-all;
+	overflow-wrap: anywhere;
+}
+
+html[lang="ko"] :is(h1, h2, h3, summary, .button, .footer-links, .eyebrow, .section-kicker) {
+	text-transform: none;
+	word-break: keep-all;
+	overflow-wrap: normal;
+}
+
 * {
 	box-sizing: border-box;
 }

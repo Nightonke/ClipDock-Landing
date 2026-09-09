@@ -78,6 +78,36 @@ test('published locale registries and language links stay in sync', () => {
  assert.equal(localeMeta.ja.ogLocale, 'ja_JP');
  assert.equal(localeMeta.ja.htmlLang, 'ja');
  assert.equal(localeMeta.ja.label, '日本語');
+ assert.equal(localeMeta.ko.ogLocale, 'ko_KR');
+ assert.equal(localeMeta.ko.htmlLang, 'ko');
+ assert.equal(localeMeta.ko.label, '한국어');
+});
+
+test('Korean copy covers prose, legal pages and actual App terms without source-language fallback', () => {
+ const inspect = (value, path = '') => {
+  if (typeof value === 'string') {
+   const prose = value.replace(/背景音乐版|米娜舞蹈-大摆锤/g, '');
+   assert.doesNotMatch(prose, /[\u3400-\u9fff\u3040-\u30ff]/, path);
+  } else if (value && typeof value === 'object') {
+   for (const [key, child] of Object.entries(value)) inspect(child, `${path}/${key}`);
+  }
+ };
+ inspect(catalogs.ko, 'catalog');
+ inspect(homeContent.ko, 'home');
+ inspect(legalContent.ko, 'legal');
+ const clipboard = catalogs.ko.tutorialCopy['copy-link-auto-download-iphone'];
+ assert.ok(clipboard);
+ const instructions = JSON.stringify(clipboard);
+ for (const label of ['자동완성 클립보드 링크', '클립보드 링크 자동 다운로드', '백그라운드에서 인식 및 다운로드']) {
+  assert.ok(instructions.includes(label), label);
+ }
+ for (const page of ['privacy', 'terms']) {
+  assert.ok(legalContent.ko[page].content.length > 1000);
+  assert.doesNotMatch(legalContent.ko[page].content, /\]\(\/(?:zh-|ja\/)/);
+ }
+ const batchSlugs = tutorialStructure.filter(article => article.category === 'batch').map(article => article.slug);
+ assert.ok(batchSlugs.length > 0);
+ for (const slug of batchSlugs) assert.match(JSON.stringify(catalogs.ko.tutorialCopy[slug]), /2페이지/, slug);
 });
 
 test('Japanese prose is translated independently, including captions and legal documents', () => {

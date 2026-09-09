@@ -1,3 +1,8 @@
+import { ui as koUI } from './ko/site-ui';
+import { categories as koCategories, platformNotes as koNotes } from './ko/tutorial-index';
+import { tutorialCopy as koTutorials } from './ko/tutorials';
+import { screenshotCopy as koScreenshots } from './ko/screenshots';
+import { captions as koCaptions } from './ko/demo-captions';
 import { ui as jaUI } from './ja/site-ui';
 import { categories as jaCategories, platformNotes as jaNotes } from './ja/tutorial-index';
 import { tutorialCopy as jaTutorials } from './ja/tutorials';
@@ -31,6 +36,7 @@ export interface LanguageCatalog {
  captions: Record<string, string[]>;
 }
 export const catalogs: Record<PublishedLocale, LanguageCatalog> = {
+ ko: { ui: koUI, categories: koCategories, platformNotes: koNotes, tutorialCopy: koTutorials, screenshotCopy: koScreenshots, captions: koCaptions },
  ja: { ui: jaUI, categories: jaCategories, platformNotes: jaNotes, tutorialCopy: jaTutorials, screenshotCopy: jaScreenshots, captions: jaCaptions },
  'en-US': { ui: enUI, categories: enCategories, platformNotes: enNotes, tutorialCopy: enTutorials, screenshotCopy: enScreenshots, captions: enCaptions },
  'zh-Hant': { ui: hantUI, categories: hantCategories, platformNotes: hantNotes, tutorialCopy: hantTutorials, screenshotCopy: hantScreenshots, captions: hantCaptions },

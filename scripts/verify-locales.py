@@ -123,6 +123,15 @@ for locale in PUBLISHED:
             errors.append(f'{route}: Simplified Chinese residue in Traditional Chinese copy')
         if locale == 'ja' and any(re.search(r'点击|粘贴|下载完成|保存到相册|已加载|选择视频|本例使用|截图展示', text) for text in page.text + page.metadata):
             errors.append(f'{route}: untranslated Chinese instruction in Japanese copy')
+        if locale == 'ko':
+            # Exact original-media titles may remain quoted; Korean prose must be translated.
+            for text in page.text + page.metadata:
+                residue = text
+                for original in ('背景音乐版', '米娜舞蹈-大摆锤'):
+                    residue = residue.replace(original, '')
+                if re.search(r'[\u3400-\u9fff\u3040-\u30ff]', residue):
+                    errors.append(f'{route}: untranslated Chinese/Japanese copy: {residue[:100]}')
+                    break
     for legal in ['privacy', 'terms']:
         page = pages.get(localized(locale, legal))
         if page is None or page.redirect or sum(len(text.strip()) for text in page.text) < 1000:

@@ -1,0 +1,22 @@
+import type { SiteUI } from "../types";
+export const ui: SiteUI = {
+ nav: { features: "주요 기능", useCases: "동영상 도구", faq: "자주 묻는 질문", getApp: "앱 다운로드", menu: "메뉴" },
+ tagline: "링크로 저장하고, 간편하게 편집하세요.", tutorials: "사용 가이드", header: "사이트 머리글", home: "홈",
+ primaryNav: "주 탐색", mobileNav: "모바일 탐색", footerNav: "바닥글 탐색", skip: "본문으로 건너뛰기",
+ demos: "ClipDock 기능 시연", chooseDemo: "시연 동영상 선택", progress: "동영상 재생 진행률",
+ demoEmpty: "시연 동영상을 준비하고 있습니다", demoEmptyHint: "아래 기능 소개를 먼저 확인하세요", retry: "재생 다시 시도", failed: "지금은 동영상을 재생할 수 없습니다",
+ demoTitles: ["공유 링크로 다운로드", "복사 후 백그라운드 다운로드", "웹 동영상을 길게 눌러 다운로드", "재생목록 일괄 다운로드"],
+ demoDescriptions: ["공유 링크를 복사해 동영상이나 이미지를 추출하고 다운로드하세요.", "백그라운드 인식을 켜고 화면 속 화면을 유지하면 링크 복사로 다운로드 작업을 만듭니다.", "내장 브라우저에서 동영상을 재생하고 길게 눌러 다운로드할 리소스를 고르세요.", "재생목록을 추출하고 여러 동영상을 한 번에 다운로드하세요."],
+ slideTitles: ["YouTube 동영상 링크 붙여넣기", "자막 추출 완료 기다리기", "필요한 자막 언어 선택하기", "자막 파일 형식 선택하기", "파일에 저장하거나 공유하기"],
+ carousel: "슬라이드", subtitleSteps: "YouTube 자막 추출 단계", chooseStep: "단계 선택", step: "단계", pause: "일시 정지", play: "재생",
+ pauseCarousel: "자동 슬라이드 일시 정지", playCarousel: "자동 슬라이드 시작", breadcrumb: "탐색 경로", contents: "목차",
+ troubleshooting: "문제 해결", questions: "자주 묻는 질문", steps: "사용 단계", related: "함께 보면 좋은 가이드", read: "사용 방법 보기",
+ openImage: "큰 이미지 열기", screenshot: "스크린샷", missingScreenshot: "실제 조작 화면 준비 중",
+ draft: "가이드 초안 · 스크린샷과 세부 조작을 확인 중이며 직접 검증한 가이드로 표시되지 않았습니다.", supportedPlatforms: "지원 플랫폼",
+ ctaTitle: "내 기기에서 사용해 보세요", ctaText: "ClipDock은 무료로 다운로드할 수 있으며 앱 내 구입을 포함합니다. 기능 위치와 선택 가능한 옵션은 현재 앱 버전을 확인하세요.", ctaButton: "App Store에서 다운로드",
+ toolCount: "동영상 도구 {count}개의 단계별 안내로 미디어 선택부터 결과 저장까지 따라 해 보세요.", draftCount: "가이드 {count}개는 스크린샷 추가와 단계 확인이 필요합니다.",
+ indexTitle: "동영상 다운로드·자막 추출·편집 가이드 | iPhone·iPad | ClipDock",
+ indexDescription: "iPhone과 iPad에서 동영상 다운로드, 링크 복사 후 자동 다운로드, 프로필·재생목록 일괄 저장, YouTube 자막 추출, 오디오 추출, Live Photo 만들기와 동영상 접합을 알아보세요.",
+ indexHeading: "다운로드부터 편집까지\n차근차근 따라 하세요", indexIntro: "iPhone과 iPad에서 동영상을 다운로드하고 게시물을 모아 저장하세요. YouTube 자막을 추출하고 미디어를 원하는 모습으로 편집하는 방법도 알아보세요.",
+ categories: "가이드 분류", exampleNotes: "예시 설명", unverified: "내보내기 검증 미완료",
+};

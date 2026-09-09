@@ -1,0 +1,227 @@
+[
+  {
+    "path": "ko/index.html",
+    "twitterTitle": "ClipDock | iPhone·iPad 웹 동영상 다운로더",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/privacy/index.html",
+    "twitterTitle": "개인정보 처리방침 | ClipDock",
+    "validJSONLD": false
+  },
+  {
+    "path": "ko/articles/index.html",
+    "twitterTitle": "동영상 다운로드·자막 추출·편집 가이드 | iPhone·iPad | ClipDock",
+    "validJSONLD": false
+  },
+  {
+    "path": "ko/terms/index.html",
+    "twitterTitle": "이용약관 | ClipDock",
+    "validJSONLD": false
+  },
+  {
+    "path": "ko/articles/batch-download-weibo-profile-iphone/index.html",
+    "twitterTitle": "Weibo 프로필 동영상을 일괄 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/copy-link-auto-download-iphone/index.html",
+    "twitterTitle": "링크 복사 후 자동 다운로드를 켜는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/batch-download-youtube-hashtag-iphone/index.html",
+    "twitterTitle": "YouTube 해시태그 동영상을 일괄 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/download-tiktok-video-iphone/index.html",
+    "twitterTitle": "TikTok 동영상을 다운로드해 사진에 저장하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/segment-grid-video-iphone/index.html",
+    "twitterTitle": "동영상 구간을 그리드로 배치하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/download-xiaohongshu-video-iphone/index.html",
+    "twitterTitle": "샤오홍슈 동영상을 다운로드해 사진에 저장하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/extract-audio-iphone/index.html",
+    "twitterTitle": "동영상에서 오디오를 추출하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/download-instagram-reels-iphone/index.html",
+    "twitterTitle": "Instagram 릴스를 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/extract-youtube-subtitles-iphone/index.html",
+    "twitterTitle": "YouTube에 있는 자막을 추출하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/edit-video-audio-iphone/index.html",
+    "twitterTitle": "동영상을 음소거하거나 볼륨을 조정하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/batch-download-youtube-shorts-iphone/index.html",
+    "twitterTitle": "YouTube Shorts를 일괄 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/download-bilibili-video-iphone/index.html",
+    "twitterTitle": "Bilibili 동영상을 다운로드해 사진에 저장하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/video-to-live-photo-iphone/index.html",
+    "twitterTitle": "동영상을 Live Photo로 변환하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/download-x-twitter-video-iphone/index.html",
+    "twitterTitle": "X(Twitter) 동영상을 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/batch-download-youtube-channel-iphone/index.html",
+    "twitterTitle": "YouTube 채널 동영상을 일괄 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/interleave-videos-iphone/index.html",
+    "twitterTitle": "동영상 구간을 번갈아 이어 붙이는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/reverse-video-iphone/index.html",
+    "twitterTitle": "동영상을 거꾸로 재생하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/download-youtube-playlist-iphone/index.html",
+    "twitterTitle": "YouTube 재생목록을 일괄 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/batch-download-tiktok-hashtag-iphone/index.html",
+    "twitterTitle": "TikTok 해시태그 동영상을 일괄 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/batch-download-bilibili-collection-iphone/index.html",
+    "twitterTitle": "Bilibili 컬렉션 동영상을 일괄 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/batch-download-instagram-hashtag-iphone/index.html",
+    "twitterTitle": "Instagram 해시태그 이미지를 일괄 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/mirror-video-iphone/index.html",
+    "twitterTitle": "동영상을 미러링하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/batch-download-bilibili-profile-iphone/index.html",
+    "twitterTitle": "Bilibili 크리에이터 동영상을 일괄 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/change-video-md5-iphone/index.html",
+    "twitterTitle": "동영상 MD5 수정 도구를 사용하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/batch-download-douyin-profile-iphone/index.html",
+    "twitterTitle": "Douyin 프로필 동영상을 일괄 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/capture-video-frames-iphone/index.html",
+    "twitterTitle": "동영상의 한 장면을 이미지로 저장하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/change-video-speed-iphone/index.html",
+    "twitterTitle": "동영상 속도를 빠르게 또는 느리게 바꾸는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/rotate-video-iphone/index.html",
+    "twitterTitle": "동영상 방향을 회전하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/batch-download-tiktok-profile-iphone/index.html",
+    "twitterTitle": "TikTok 프로필 동영상을 일괄 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/resize-video-iphone/index.html",
+    "twitterTitle": "동영상 캔버스 비율과 배치를 바꾸는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/batch-download-instagram-profile-iphone/index.html",
+    "twitterTitle": "Instagram 프로필 게시물을 일괄 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/join-videos-iphone/index.html",
+    "twitterTitle": "여러 동영상을 순서대로 이어 붙이는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/trim-video-iphone/index.html",
+    "twitterTitle": "동영상에서 원하는 구간만 자르는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/video-to-gif-iphone/index.html",
+    "twitterTitle": "동영상을 GIF로 변환하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/merge-audio-video-iphone/index.html",
+    "twitterTitle": "오디오와 동영상을 합치는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/transcode-video-iphone/index.html",
+    "twitterTitle": "동영상 형식을 변환하고 용량을 줄이는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/download-facebook-video-iphone/index.html",
+    "twitterTitle": "Facebook 동영상과 릴스를 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/download-douyin-video-iphone/index.html",
+    "twitterTitle": "Douyin 동영상을 다운로드해 사진에 저장하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/copy-tiktok-links-background/index.html",
+    "twitterTitle": "TikTok을 보면서 링크 복사로 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/download-youtube-video-iphone/index.html",
+    "twitterTitle": "YouTube 동영상을 다운로드하는 방법 | ClipDock",
+    "validJSONLD": true
+  },
+  {
+    "path": "ko/articles/add-watermark-video-iphone/index.html",
+    "twitterTitle": "동영상에 텍스트 워터마크를 넣는 방법 | ClipDock",
+    "validJSONLD": true
+  }
+]

@@ -1,0 +1,1850 @@
+[
+  {
+    "headings": [
+      {
+        "lines": 2,
+        "text": "Found a video?\nMake it yours."
+      },
+      {
+        "lines": 2,
+        "text": "Paste a link.\nSave the video."
+      },
+      {
+        "lines": 2,
+        "text": "Keep browsing.\nKeep saving."
+      },
+      {
+        "lines": 3,
+        "text": "Play it.\nPress and hold to save."
+      },
+      {
+        "lines": 2,
+        "text": "A whole playlist.\nOne queue."
+      },
+      {
+        "lines": 1,
+        "text": "Keep the words, too."
+      },
+      {
+        "lines": 2,
+        "text": "Your pocket video toolbox."
+      },
+      {
+        "lines": 1,
+        "text": "Trim video"
+      },
+      {
+        "lines": 1,
+        "text": "Convert video"
+      },
+      {
+        "lines": 1,
+        "text": "Join videos"
+      },
+      {
+        "lines": 1,
+        "text": "Interleave clips"
+      },
+      {
+        "lines": 1,
+        "text": "Build a video grid"
+      },
+      {
+        "lines": 1,
+        "text": "Resize / Canvas"
+      },
+      {
+        "lines": 1,
+        "text": "Rotate video"
+      },
+      {
+        "lines": 1,
+        "text": "Mirror video"
+      },
+      {
+        "lines": 1,
+        "text": "Change speed"
+      },
+      {
+        "lines": 1,
+        "text": "Extract audio"
+      },
+      {
+        "lines": 1,
+        "text": "Edit video audio"
+      },
+      {
+        "lines": 1,
+        "text": "Merge audio and video"
+      },
+      {
+        "lines": 1,
+        "text": "Reverse video"
+      },
+      {
+        "lines": 1,
+        "text": "Add a watermark"
+      },
+      {
+        "lines": 1,
+        "text": "Create a GIF"
+      },
+      {
+        "lines": 1,
+        "text": "Create a Live Photo"
+      },
+      {
+        "lines": 1,
+        "text": "Capture frames"
+      },
+      {
+        "lines": 1,
+        "text": "Change MD5"
+      },
+      {
+        "lines": 2,
+        "text": "Useful tools. Clear limits."
+      },
+      {
+        "lines": 1,
+        "text": "App data"
+      },
+      {
+        "lines": 1,
+        "text": "iPhone and iPad"
+      },
+      {
+        "lines": 1,
+        "text": "Save responsibly"
+      },
+      {
+        "lines": 2,
+        "text": "Before you download."
+      },
+      {
+        "lines": 3,
+        "text": "Keep your videos close."
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 375,
+    "path": "/",
+    "width": 375
+  },
+  {
+    "headings": [
+      {
+        "lines": 4,
+        "text": "How to convert and compress videos on iPhone and iPad"
+      },
+      {
+        "lines": 2,
+        "text": "Open Transcode Video in Process"
+      },
+      {
+        "lines": 2,
+        "text": "Choose the video to process"
+      },
+      {
+        "lines": 2,
+        "text": "Choose format, quality, and resolution"
+      },
+      {
+        "lines": 1,
+        "text": "Output Format: MP4, MOV, and M4V"
+      },
+      {
+        "lines": 1,
+        "text": "Output Quality: detail versus size"
+      },
+      {
+        "lines": 1,
+        "text": "Resolution and Sound"
+      },
+      {
+        "lines": 2,
+        "text": "Understand codec and bitrate"
+      },
+      {
+        "lines": 1,
+        "text": "Codec: H.264 and HEVC*"
+      },
+      {
+        "lines": 2,
+        "text": "Bitrate: Auto, Target Size*, and Custom Bitrate*"
+      },
+      {
+        "lines": 1,
+        "text": "VIP options in the illustrated version"
+      },
+      {
+        "lines": 2,
+        "text": "Check the result, then save or keep processing"
+      },
+      {
+        "lines": 1,
+        "text": "Preview and save"
+      },
+      {
+        "lines": 1,
+        "text": "What the other buttons do"
+      },
+      {
+        "lines": 1,
+        "text": "Troubleshooting"
+      },
+      {
+        "lines": 1,
+        "text": "Unhappy with the compression?"
+      },
+      {
+        "lines": 1,
+        "text": "Frequently asked questions"
+      },
+      {
+        "lines": 1,
+        "text": "Try it on your device"
+      },
+      {
+        "lines": 1,
+        "text": "Explore next"
+      },
+      {
+        "lines": 3,
+        "text": "How to change video aspect ratio and canvas on iPhone and iPad"
+      },
+      {
+        "lines": 2,
+        "text": "How to trim a video’s duration on iPhone and iPad"
+      },
+      {
+        "lines": 3,
+        "text": "How to mute a video or change its volume on iPhone and iPad"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 375,
+    "path": "/articles/transcode-video-iphone/",
+    "width": 375
+  },
+  {
+    "headings": [
+      {
+        "lines": 2,
+        "text": "链接交给影随存\n视频图片轻松存"
+      },
+      {
+        "lines": 2,
+        "text": "从分享链接\n下载视频"
+      },
+      {
+        "lines": 2,
+        "text": "复制链接\n后台下载"
+      },
+      {
+        "lines": 2,
+        "text": "播放网页视频\n长按选择下载"
+      },
+      {
+        "lines": 2,
+        "text": "选好列表\n批量下载"
+      },
+      {
+        "lines": 2,
+        "text": "视频字幕\n单独保存"
+      },
+      {
+        "lines": 1,
+        "text": "随身视频工具箱"
+      },
+      {
+        "lines": 1,
+        "text": "视频裁剪"
+      },
+      {
+        "lines": 1,
+        "text": "视频转码"
+      },
+      {
+        "lines": 1,
+        "text": "视频拼接"
+      },
+      {
+        "lines": 1,
+        "text": "交叉拼接"
+      },
+      {
+        "lines": 1,
+        "text": "分段宫格"
+      },
+      {
+        "lines": 1,
+        "text": "尺寸/画布"
+      },
+      {
+        "lines": 1,
+        "text": "视频旋转"
+      },
+      {
+        "lines": 1,
+        "text": "视频镜像"
+      },
+      {
+        "lines": 1,
+        "text": "视频变速"
+      },
+      {
+        "lines": 1,
+        "text": "提取音频"
+      },
+      {
+        "lines": 1,
+        "text": "音频处理"
+      },
+      {
+        "lines": 1,
+        "text": "音视频合并"
+      },
+      {
+        "lines": 1,
+        "text": "视频倒放"
+      },
+      {
+        "lines": 1,
+        "text": "添加水印"
+      },
+      {
+        "lines": 1,
+        "text": "视频转 GIF"
+      },
+      {
+        "lines": 1,
+        "text": "视频转实况"
+      },
+      {
+        "lines": 1,
+        "text": "视频截图"
+      },
+      {
+        "lines": 1,
+        "text": "修改 MD5"
+      },
+      {
+        "lines": 2,
+        "text": "下载有能力，也有边界。"
+      },
+      {
+        "lines": 1,
+        "text": "App 数据"
+      },
+      {
+        "lines": 1,
+        "text": "iPhone 与 iPad"
+      },
+      {
+        "lines": 1,
+        "text": "保存有权使用的内容"
+      },
+      {
+        "lines": 2,
+        "text": "下载之前，先把问题说清楚。"
+      },
+      {
+        "lines": 2,
+        "text": "让视频真正留在手边。"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 375,
+    "path": "/zh-Hans/",
+    "width": 375
+  },
+  {
+    "headings": [
+      {
+        "lines": 2,
+        "text": "如何转换视频格式与压缩视频？"
+      },
+      {
+        "lines": 1,
+        "text": "打开“视频转码”工具"
+      },
+      {
+        "lines": 1,
+        "text": "选择要处理的视频"
+      },
+      {
+        "lines": 1,
+        "text": "先选格式、画质和分辨率"
+      },
+      {
+        "lines": 1,
+        "text": "输出格式：MP4、MOV、M4V"
+      },
+      {
+        "lines": 1,
+        "text": "输出质量：画质与体积取舍"
+      },
+      {
+        "lines": 1,
+        "text": "分辨率与声音"
+      },
+      {
+        "lines": 1,
+        "text": "理解编码器与码率"
+      },
+      {
+        "lines": 1,
+        "text": "编码：H.264 与 HEVC*"
+      },
+      {
+        "lines": 1,
+        "text": "码率：自动、目标大小*、自定义码率*"
+      },
+      {
+        "lines": 1,
+        "text": "当前版本的 VIP 范围"
+      },
+      {
+        "lines": 1,
+        "text": "检查结果，再保存或继续处理"
+      },
+      {
+        "lines": 1,
+        "text": "预览与保存"
+      },
+      {
+        "lines": 1,
+        "text": "其他按钮的用途"
+      },
+      {
+        "lines": 1,
+        "text": "遇到问题时"
+      },
+      {
+        "lines": 1,
+        "text": "压缩后不满意"
+      },
+      {
+        "lines": 1,
+        "text": "常见问题"
+      },
+      {
+        "lines": 1,
+        "text": "在你的设备上试一试"
+      },
+      {
+        "lines": 1,
+        "text": "接下来，你可能需要"
+      },
+      {
+        "lines": 2,
+        "text": "如何调整视频画布比例与布局？"
+      },
+      {
+        "lines": 1,
+        "text": "如何裁剪视频时长？"
+      },
+      {
+        "lines": 1,
+        "text": "如何静音视频或调整音量？"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 375,
+    "path": "/zh-Hans/articles/transcode-video-iphone/",
+    "width": 375
+  },
+  {
+    "headings": [
+      {
+        "lines": 2,
+        "text": "連結交給影隨存\n影片圖片輕鬆存"
+      },
+      {
+        "lines": 2,
+        "text": "從分享連結\n下載影片"
+      },
+      {
+        "lines": 2,
+        "text": "複製連結\n背景下載"
+      },
+      {
+        "lines": 2,
+        "text": "播放網頁影片\n長按選擇下載"
+      },
+      {
+        "lines": 2,
+        "text": "選好清單\n批次下載"
+      },
+      {
+        "lines": 2,
+        "text": "影片字幕\n單獨儲存"
+      },
+      {
+        "lines": 1,
+        "text": "隨身影片工具箱"
+      },
+      {
+        "lines": 1,
+        "text": "影片裁切"
+      },
+      {
+        "lines": 1,
+        "text": "影片轉碼"
+      },
+      {
+        "lines": 1,
+        "text": "視訊拼接"
+      },
+      {
+        "lines": 1,
+        "text": "交叉拼接"
+      },
+      {
+        "lines": 1,
+        "text": "分段宮格"
+      },
+      {
+        "lines": 1,
+        "text": "尺寸/畫布"
+      },
+      {
+        "lines": 1,
+        "text": "視訊旋轉"
+      },
+      {
+        "lines": 1,
+        "text": "視訊鏡像"
+      },
+      {
+        "lines": 1,
+        "text": "視訊變速"
+      },
+      {
+        "lines": 1,
+        "text": "提取音訊"
+      },
+      {
+        "lines": 1,
+        "text": "音訊處理"
+      },
+      {
+        "lines": 1,
+        "text": "影音合併"
+      },
+      {
+        "lines": 1,
+        "text": "影片倒放"
+      },
+      {
+        "lines": 1,
+        "text": "添加浮水印"
+      },
+      {
+        "lines": 1,
+        "text": "影片轉 GIF"
+      },
+      {
+        "lines": 1,
+        "text": "影片轉實況"
+      },
+      {
+        "lines": 1,
+        "text": "影片截圖"
+      },
+      {
+        "lines": 1,
+        "text": "修改 MD5"
+      },
+      {
+        "lines": 3,
+        "text": "安心使用，先了解下載限制。"
+      },
+      {
+        "lines": 1,
+        "text": "App 資料"
+      },
+      {
+        "lines": 1,
+        "text": "iPhone 與 iPad"
+      },
+      {
+        "lines": 1,
+        "text": "儲存有權使用的內容"
+      },
+      {
+        "lines": 2,
+        "text": "下載前，你可能想知道"
+      },
+      {
+        "lines": 2,
+        "text": "讓影片真正留在手邊。"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 375,
+    "path": "/zh-Hant/",
+    "width": 375
+  },
+  {
+    "headings": [
+      {
+        "lines": 2,
+        "text": "如何轉換影片格式與壓縮影片？"
+      },
+      {
+        "lines": 1,
+        "text": "開啟「影片轉碼」工具"
+      },
+      {
+        "lines": 1,
+        "text": "選擇要處理的影片"
+      },
+      {
+        "lines": 1,
+        "text": "先選格式、畫質和解析度"
+      },
+      {
+        "lines": 1,
+        "text": "輸出格式：MP4、MOV、M4V"
+      },
+      {
+        "lines": 1,
+        "text": "輸出品質：畫質與體積取捨"
+      },
+      {
+        "lines": 1,
+        "text": "解析度與聲音"
+      },
+      {
+        "lines": 1,
+        "text": "理解編碼器與位元速率"
+      },
+      {
+        "lines": 1,
+        "text": "編碼：H.264 與 HEVC*"
+      },
+      {
+        "lines": 2,
+        "text": "位元速率：自動、目標大小*、自訂位元速率*"
+      },
+      {
+        "lines": 1,
+        "text": "目前版本的 VIP 範圍"
+      },
+      {
+        "lines": 1,
+        "text": "檢查結果，再儲存或繼續處理"
+      },
+      {
+        "lines": 1,
+        "text": "預覽與儲存"
+      },
+      {
+        "lines": 1,
+        "text": "其他按鈕的用途"
+      },
+      {
+        "lines": 1,
+        "text": "遇到問題時"
+      },
+      {
+        "lines": 1,
+        "text": "壓縮後不滿意"
+      },
+      {
+        "lines": 1,
+        "text": "常見問題"
+      },
+      {
+        "lines": 1,
+        "text": "在你的裝置上試一試"
+      },
+      {
+        "lines": 1,
+        "text": "接下來，你可能需要"
+      },
+      {
+        "lines": 2,
+        "text": "如何調整影片畫布比例與佈局？"
+      },
+      {
+        "lines": 1,
+        "text": "如何裁切影片長度？"
+      },
+      {
+        "lines": 1,
+        "text": "如何將影片靜音或調整音量？"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 375,
+    "path": "/zh-Hant/articles/transcode-video-iphone/",
+    "width": 375
+  },
+  {
+    "headings": [
+      {
+        "lines": 2,
+        "text": "リンクひとつで\n動画を手元に。"
+      },
+      {
+        "lines": 2,
+        "text": "共有リンクから\n動画を保存"
+      },
+      {
+        "lines": 2,
+        "text": "リンクをコピーして\n自動ダウンロード"
+      },
+      {
+        "lines": 2,
+        "text": "Web動画を再生して\n長押しで選択"
+      },
+      {
+        "lines": 2,
+        "text": "リストから選んで\nまとめて保存"
+      },
+      {
+        "lines": 2,
+        "text": "字幕を選んで\nファイルに保存"
+      },
+      {
+        "lines": 2,
+        "text": "動画ツールを、\n手元に。"
+      },
+      {
+        "lines": 1,
+        "text": "動画のトリミング"
+      },
+      {
+        "lines": 2,
+        "text": "動画のトランスコーディング"
+      },
+      {
+        "lines": 1,
+        "text": "動画の結合"
+      },
+      {
+        "lines": 1,
+        "text": "クロススプライシング"
+      },
+      {
+        "lines": 2,
+        "text": "セグメント化された宮殿のグリッド"
+      },
+      {
+        "lines": 1,
+        "text": "サイズ/キャンバス"
+      },
+      {
+        "lines": 1,
+        "text": "動画の回転"
+      },
+      {
+        "lines": 1,
+        "text": "動画ミラーリング"
+      },
+      {
+        "lines": 1,
+        "text": "動画速度の変更"
+      },
+      {
+        "lines": 1,
+        "text": "音声を抽出する"
+      },
+      {
+        "lines": 1,
+        "text": "オーディオ処理"
+      },
+      {
+        "lines": 2,
+        "text": "オーディオと動画のマージ"
+      },
+      {
+        "lines": 1,
+        "text": "動画を逆再生"
+      },
+      {
+        "lines": 1,
+        "text": "透かしを追加する"
+      },
+      {
+        "lines": 1,
+        "text": "動画を GIF に変換"
+      },
+      {
+        "lines": 1,
+        "text": "動画を Live Photo に変換"
+      },
+      {
+        "lines": 2,
+        "text": "動画のスクリーンショット"
+      },
+      {
+        "lines": 1,
+        "text": "MD5を修正する"
+      },
+      {
+        "lines": 3,
+        "text": "できることと、\n利用条件。"
+      },
+      {
+        "lines": 1,
+        "text": "アプリのデータ"
+      },
+      {
+        "lines": 1,
+        "text": "iPhone・iPad"
+      },
+      {
+        "lines": 1,
+        "text": "権利のあるコンテンツを保存"
+      },
+      {
+        "lines": 1,
+        "text": "使い始める前に。"
+      },
+      {
+        "lines": 2,
+        "text": "動画を、\nいつも手元に。"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 375,
+    "path": "/ja/",
+    "width": 375
+  },
+  {
+    "headings": [
+      {
+        "lines": 2,
+        "text": "動画の形式を変換・圧縮する"
+      },
+      {
+        "lines": 2,
+        "text": "「動画のトランスコーディング」を開く"
+      },
+      {
+        "lines": 1,
+        "text": "動画を選ぶ"
+      },
+      {
+        "lines": 1,
+        "text": "形式・画質・解像度を選ぶ"
+      },
+      {
+        "lines": 1,
+        "text": "MP4・MOV・M4V"
+      },
+      {
+        "lines": 1,
+        "text": "画質とサイズのバランス"
+      },
+      {
+        "lines": 1,
+        "text": "解像度と音声"
+      },
+      {
+        "lines": 2,
+        "text": "コーデックとビットレートを確認する"
+      },
+      {
+        "lines": 1,
+        "text": "H.264とHEVC*"
+      },
+      {
+        "lines": 2,
+        "text": "自動・ターゲットサイズ*・カスタムコードレート*"
+      },
+      {
+        "lines": 1,
+        "text": "VIPが必要な設定"
+      },
+      {
+        "lines": 1,
+        "text": "結果を確認して保存する"
+      },
+      {
+        "lines": 1,
+        "text": "プレビューして保存する"
+      },
+      {
+        "lines": 1,
+        "text": "ほかのボタンの用途"
+      },
+      {
+        "lines": 1,
+        "text": "困ったときは"
+      },
+      {
+        "lines": 1,
+        "text": "圧縮結果が期待と違う"
+      },
+      {
+        "lines": 1,
+        "text": "よくある質問"
+      },
+      {
+        "lines": 1,
+        "text": "お使いのデバイスで試す"
+      },
+      {
+        "lines": 1,
+        "text": "関連する使い方"
+      },
+      {
+        "lines": 2,
+        "text": "動画の縦横比とレイアウトを変える"
+      },
+      {
+        "lines": 2,
+        "text": "動画の必要な時間帯を切り出す"
+      },
+      {
+        "lines": 2,
+        "text": "動画をミュート・音量調整する"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 375,
+    "path": "/ja/articles/transcode-video-iphone/",
+    "width": 375
+  },
+  {
+    "headings": [
+      {
+        "lines": 1,
+        "text": "Page not found"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 375,
+    "path": "/404.html",
+    "width": 375
+  },
+  {
+    "headings": [
+      {
+        "lines": 2,
+        "text": "Found a video?\nMake it yours."
+      },
+      {
+        "lines": 2,
+        "text": "Paste a link.\nSave the video."
+      },
+      {
+        "lines": 2,
+        "text": "Keep browsing.\nKeep saving."
+      },
+      {
+        "lines": 2,
+        "text": "Play it.\nPress and hold to save."
+      },
+      {
+        "lines": 2,
+        "text": "A whole playlist.\nOne queue."
+      },
+      {
+        "lines": 1,
+        "text": "Keep the words, too."
+      },
+      {
+        "lines": 2,
+        "text": "Your pocket video toolbox."
+      },
+      {
+        "lines": 1,
+        "text": "Trim video"
+      },
+      {
+        "lines": 1,
+        "text": "Convert video"
+      },
+      {
+        "lines": 1,
+        "text": "Join videos"
+      },
+      {
+        "lines": 1,
+        "text": "Interleave clips"
+      },
+      {
+        "lines": 1,
+        "text": "Build a video grid"
+      },
+      {
+        "lines": 1,
+        "text": "Resize / Canvas"
+      },
+      {
+        "lines": 1,
+        "text": "Rotate video"
+      },
+      {
+        "lines": 1,
+        "text": "Mirror video"
+      },
+      {
+        "lines": 1,
+        "text": "Change speed"
+      },
+      {
+        "lines": 1,
+        "text": "Extract audio"
+      },
+      {
+        "lines": 1,
+        "text": "Edit video audio"
+      },
+      {
+        "lines": 1,
+        "text": "Merge audio and video"
+      },
+      {
+        "lines": 1,
+        "text": "Reverse video"
+      },
+      {
+        "lines": 1,
+        "text": "Add a watermark"
+      },
+      {
+        "lines": 1,
+        "text": "Create a GIF"
+      },
+      {
+        "lines": 1,
+        "text": "Create a Live Photo"
+      },
+      {
+        "lines": 1,
+        "text": "Capture frames"
+      },
+      {
+        "lines": 1,
+        "text": "Change MD5"
+      },
+      {
+        "lines": 2,
+        "text": "Useful tools. Clear limits."
+      },
+      {
+        "lines": 1,
+        "text": "App data"
+      },
+      {
+        "lines": 1,
+        "text": "iPhone and iPad"
+      },
+      {
+        "lines": 1,
+        "text": "Save responsibly"
+      },
+      {
+        "lines": 2,
+        "text": "Before you download."
+      },
+      {
+        "lines": 2,
+        "text": "Keep your videos close."
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 1440,
+    "path": "/",
+    "width": 1440
+  },
+  {
+    "headings": [
+      {
+        "lines": 3,
+        "text": "How to convert and compress videos on iPhone and iPad"
+      },
+      {
+        "lines": 1,
+        "text": "Open Transcode Video in Process"
+      },
+      {
+        "lines": 1,
+        "text": "Choose the video to process"
+      },
+      {
+        "lines": 2,
+        "text": "Choose format, quality, and resolution"
+      },
+      {
+        "lines": 1,
+        "text": "Output Format: MP4, MOV, and M4V"
+      },
+      {
+        "lines": 1,
+        "text": "Output Quality: detail versus size"
+      },
+      {
+        "lines": 1,
+        "text": "Resolution and Sound"
+      },
+      {
+        "lines": 1,
+        "text": "Understand codec and bitrate"
+      },
+      {
+        "lines": 1,
+        "text": "Codec: H.264 and HEVC*"
+      },
+      {
+        "lines": 1,
+        "text": "Bitrate: Auto, Target Size*, and Custom Bitrate*"
+      },
+      {
+        "lines": 1,
+        "text": "VIP options in the illustrated version"
+      },
+      {
+        "lines": 2,
+        "text": "Check the result, then save or keep processing"
+      },
+      {
+        "lines": 1,
+        "text": "Preview and save"
+      },
+      {
+        "lines": 1,
+        "text": "What the other buttons do"
+      },
+      {
+        "lines": 1,
+        "text": "Troubleshooting"
+      },
+      {
+        "lines": 1,
+        "text": "Unhappy with the compression?"
+      },
+      {
+        "lines": 1,
+        "text": "Frequently asked questions"
+      },
+      {
+        "lines": 1,
+        "text": "Try it on your device"
+      },
+      {
+        "lines": 1,
+        "text": "Explore next"
+      },
+      {
+        "lines": 2,
+        "text": "How to change video aspect ratio and canvas on iPhone and iPad"
+      },
+      {
+        "lines": 2,
+        "text": "How to trim a video’s duration on iPhone and iPad"
+      },
+      {
+        "lines": 2,
+        "text": "How to mute a video or change its volume on iPhone and iPad"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 1440,
+    "path": "/articles/transcode-video-iphone/",
+    "width": 1440
+  },
+  {
+    "headings": [
+      {
+        "lines": 2,
+        "text": "链接交给影随存\n视频图片轻松存"
+      },
+      {
+        "lines": 2,
+        "text": "从分享链接\n下载视频"
+      },
+      {
+        "lines": 2,
+        "text": "复制链接\n后台下载"
+      },
+      {
+        "lines": 2,
+        "text": "播放网页视频\n长按选择下载"
+      },
+      {
+        "lines": 2,
+        "text": "选好列表\n批量下载"
+      },
+      {
+        "lines": 2,
+        "text": "视频字幕\n单独保存"
+      },
+      {
+        "lines": 1,
+        "text": "随身视频工具箱"
+      },
+      {
+        "lines": 1,
+        "text": "视频裁剪"
+      },
+      {
+        "lines": 1,
+        "text": "视频转码"
+      },
+      {
+        "lines": 1,
+        "text": "视频拼接"
+      },
+      {
+        "lines": 1,
+        "text": "交叉拼接"
+      },
+      {
+        "lines": 1,
+        "text": "分段宫格"
+      },
+      {
+        "lines": 1,
+        "text": "尺寸/画布"
+      },
+      {
+        "lines": 1,
+        "text": "视频旋转"
+      },
+      {
+        "lines": 1,
+        "text": "视频镜像"
+      },
+      {
+        "lines": 1,
+        "text": "视频变速"
+      },
+      {
+        "lines": 1,
+        "text": "提取音频"
+      },
+      {
+        "lines": 1,
+        "text": "音频处理"
+      },
+      {
+        "lines": 1,
+        "text": "音视频合并"
+      },
+      {
+        "lines": 1,
+        "text": "视频倒放"
+      },
+      {
+        "lines": 1,
+        "text": "添加水印"
+      },
+      {
+        "lines": 1,
+        "text": "视频转 GIF"
+      },
+      {
+        "lines": 1,
+        "text": "视频转实况"
+      },
+      {
+        "lines": 1,
+        "text": "视频截图"
+      },
+      {
+        "lines": 1,
+        "text": "修改 MD5"
+      },
+      {
+        "lines": 2,
+        "text": "下载有能力，也有边界。"
+      },
+      {
+        "lines": 1,
+        "text": "App 数据"
+      },
+      {
+        "lines": 1,
+        "text": "iPhone 与 iPad"
+      },
+      {
+        "lines": 1,
+        "text": "保存有权使用的内容"
+      },
+      {
+        "lines": 2,
+        "text": "下载之前，先把问题说清楚。"
+      },
+      {
+        "lines": 2,
+        "text": "让视频真正留在手边。"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 1440,
+    "path": "/zh-Hans/",
+    "width": 1440
+  },
+  {
+    "headings": [
+      {
+        "lines": 1,
+        "text": "如何转换视频格式与压缩视频？"
+      },
+      {
+        "lines": 1,
+        "text": "打开“视频转码”工具"
+      },
+      {
+        "lines": 1,
+        "text": "选择要处理的视频"
+      },
+      {
+        "lines": 1,
+        "text": "先选格式、画质和分辨率"
+      },
+      {
+        "lines": 1,
+        "text": "输出格式：MP4、MOV、M4V"
+      },
+      {
+        "lines": 1,
+        "text": "输出质量：画质与体积取舍"
+      },
+      {
+        "lines": 1,
+        "text": "分辨率与声音"
+      },
+      {
+        "lines": 1,
+        "text": "理解编码器与码率"
+      },
+      {
+        "lines": 1,
+        "text": "编码：H.264 与 HEVC*"
+      },
+      {
+        "lines": 1,
+        "text": "码率：自动、目标大小*、自定义码率*"
+      },
+      {
+        "lines": 1,
+        "text": "当前版本的 VIP 范围"
+      },
+      {
+        "lines": 1,
+        "text": "检查结果，再保存或继续处理"
+      },
+      {
+        "lines": 1,
+        "text": "预览与保存"
+      },
+      {
+        "lines": 1,
+        "text": "其他按钮的用途"
+      },
+      {
+        "lines": 1,
+        "text": "遇到问题时"
+      },
+      {
+        "lines": 1,
+        "text": "压缩后不满意"
+      },
+      {
+        "lines": 1,
+        "text": "常见问题"
+      },
+      {
+        "lines": 1,
+        "text": "在你的设备上试一试"
+      },
+      {
+        "lines": 1,
+        "text": "接下来，你可能需要"
+      },
+      {
+        "lines": 1,
+        "text": "如何调整视频画布比例与布局？"
+      },
+      {
+        "lines": 1,
+        "text": "如何裁剪视频时长？"
+      },
+      {
+        "lines": 1,
+        "text": "如何静音视频或调整音量？"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 1440,
+    "path": "/zh-Hans/articles/transcode-video-iphone/",
+    "width": 1440
+  },
+  {
+    "headings": [
+      {
+        "lines": 2,
+        "text": "連結交給影隨存\n影片圖片輕鬆存"
+      },
+      {
+        "lines": 2,
+        "text": "從分享連結\n下載影片"
+      },
+      {
+        "lines": 2,
+        "text": "複製連結\n背景下載"
+      },
+      {
+        "lines": 2,
+        "text": "播放網頁影片\n長按選擇下載"
+      },
+      {
+        "lines": 2,
+        "text": "選好清單\n批次下載"
+      },
+      {
+        "lines": 2,
+        "text": "影片字幕\n單獨儲存"
+      },
+      {
+        "lines": 1,
+        "text": "隨身影片工具箱"
+      },
+      {
+        "lines": 1,
+        "text": "影片裁切"
+      },
+      {
+        "lines": 1,
+        "text": "影片轉碼"
+      },
+      {
+        "lines": 1,
+        "text": "視訊拼接"
+      },
+      {
+        "lines": 1,
+        "text": "交叉拼接"
+      },
+      {
+        "lines": 1,
+        "text": "分段宮格"
+      },
+      {
+        "lines": 1,
+        "text": "尺寸/畫布"
+      },
+      {
+        "lines": 1,
+        "text": "視訊旋轉"
+      },
+      {
+        "lines": 1,
+        "text": "視訊鏡像"
+      },
+      {
+        "lines": 1,
+        "text": "視訊變速"
+      },
+      {
+        "lines": 1,
+        "text": "提取音訊"
+      },
+      {
+        "lines": 1,
+        "text": "音訊處理"
+      },
+      {
+        "lines": 1,
+        "text": "影音合併"
+      },
+      {
+        "lines": 1,
+        "text": "影片倒放"
+      },
+      {
+        "lines": 1,
+        "text": "添加浮水印"
+      },
+      {
+        "lines": 1,
+        "text": "影片轉 GIF"
+      },
+      {
+        "lines": 1,
+        "text": "影片轉實況"
+      },
+      {
+        "lines": 1,
+        "text": "影片截圖"
+      },
+      {
+        "lines": 1,
+        "text": "修改 MD5"
+      },
+      {
+        "lines": 2,
+        "text": "安心使用，先了解下載限制。"
+      },
+      {
+        "lines": 1,
+        "text": "App 資料"
+      },
+      {
+        "lines": 1,
+        "text": "iPhone 與 iPad"
+      },
+      {
+        "lines": 1,
+        "text": "儲存有權使用的內容"
+      },
+      {
+        "lines": 2,
+        "text": "下載前，你可能想知道"
+      },
+      {
+        "lines": 2,
+        "text": "讓影片真正留在手邊。"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 1440,
+    "path": "/zh-Hant/",
+    "width": 1440
+  },
+  {
+    "headings": [
+      {
+        "lines": 1,
+        "text": "如何轉換影片格式與壓縮影片？"
+      },
+      {
+        "lines": 1,
+        "text": "開啟「影片轉碼」工具"
+      },
+      {
+        "lines": 1,
+        "text": "選擇要處理的影片"
+      },
+      {
+        "lines": 1,
+        "text": "先選格式、畫質和解析度"
+      },
+      {
+        "lines": 1,
+        "text": "輸出格式：MP4、MOV、M4V"
+      },
+      {
+        "lines": 1,
+        "text": "輸出品質：畫質與體積取捨"
+      },
+      {
+        "lines": 1,
+        "text": "解析度與聲音"
+      },
+      {
+        "lines": 1,
+        "text": "理解編碼器與位元速率"
+      },
+      {
+        "lines": 1,
+        "text": "編碼：H.264 與 HEVC*"
+      },
+      {
+        "lines": 1,
+        "text": "位元速率：自動、目標大小*、自訂位元速率*"
+      },
+      {
+        "lines": 1,
+        "text": "目前版本的 VIP 範圍"
+      },
+      {
+        "lines": 1,
+        "text": "檢查結果，再儲存或繼續處理"
+      },
+      {
+        "lines": 1,
+        "text": "預覽與儲存"
+      },
+      {
+        "lines": 1,
+        "text": "其他按鈕的用途"
+      },
+      {
+        "lines": 1,
+        "text": "遇到問題時"
+      },
+      {
+        "lines": 1,
+        "text": "壓縮後不滿意"
+      },
+      {
+        "lines": 1,
+        "text": "常見問題"
+      },
+      {
+        "lines": 1,
+        "text": "在你的裝置上試一試"
+      },
+      {
+        "lines": 1,
+        "text": "接下來，你可能需要"
+      },
+      {
+        "lines": 1,
+        "text": "如何調整影片畫布比例與佈局？"
+      },
+      {
+        "lines": 1,
+        "text": "如何裁切影片長度？"
+      },
+      {
+        "lines": 1,
+        "text": "如何將影片靜音或調整音量？"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 1440,
+    "path": "/zh-Hant/articles/transcode-video-iphone/",
+    "width": 1440
+  },
+  {
+    "headings": [
+      {
+        "lines": 2,
+        "text": "リンクひとつで\n動画を手元に。"
+      },
+      {
+        "lines": 2,
+        "text": "共有リンクから\n動画を保存"
+      },
+      {
+        "lines": 2,
+        "text": "リンクをコピーして\n自動ダウンロード"
+      },
+      {
+        "lines": 2,
+        "text": "Web動画を再生して\n長押しで選択"
+      },
+      {
+        "lines": 2,
+        "text": "リストから選んで\nまとめて保存"
+      },
+      {
+        "lines": 2,
+        "text": "字幕を選んで\nファイルに保存"
+      },
+      {
+        "lines": 2,
+        "text": "動画ツールを、\n手元に。"
+      },
+      {
+        "lines": 1,
+        "text": "動画のトリミング"
+      },
+      {
+        "lines": 1,
+        "text": "動画のトランスコーディング"
+      },
+      {
+        "lines": 1,
+        "text": "動画の結合"
+      },
+      {
+        "lines": 1,
+        "text": "クロススプライシング"
+      },
+      {
+        "lines": 2,
+        "text": "セグメント化された宮殿のグリッド"
+      },
+      {
+        "lines": 1,
+        "text": "サイズ/キャンバス"
+      },
+      {
+        "lines": 1,
+        "text": "動画の回転"
+      },
+      {
+        "lines": 1,
+        "text": "動画ミラーリング"
+      },
+      {
+        "lines": 1,
+        "text": "動画速度の変更"
+      },
+      {
+        "lines": 1,
+        "text": "音声を抽出する"
+      },
+      {
+        "lines": 1,
+        "text": "オーディオ処理"
+      },
+      {
+        "lines": 1,
+        "text": "オーディオと動画のマージ"
+      },
+      {
+        "lines": 1,
+        "text": "動画を逆再生"
+      },
+      {
+        "lines": 1,
+        "text": "透かしを追加する"
+      },
+      {
+        "lines": 1,
+        "text": "動画を GIF に変換"
+      },
+      {
+        "lines": 1,
+        "text": "動画を Live Photo に変換"
+      },
+      {
+        "lines": 1,
+        "text": "動画のスクリーンショット"
+      },
+      {
+        "lines": 1,
+        "text": "MD5を修正する"
+      },
+      {
+        "lines": 2,
+        "text": "できることと、\n利用条件。"
+      },
+      {
+        "lines": 1,
+        "text": "アプリのデータ"
+      },
+      {
+        "lines": 1,
+        "text": "iPhone・iPad"
+      },
+      {
+        "lines": 1,
+        "text": "権利のあるコンテンツを保存"
+      },
+      {
+        "lines": 1,
+        "text": "使い始める前に。"
+      },
+      {
+        "lines": 2,
+        "text": "動画を、\nいつも手元に。"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 1440,
+    "path": "/ja/",
+    "width": 1440
+  },
+  {
+    "headings": [
+      {
+        "lines": 1,
+        "text": "動画の形式を変換・圧縮する"
+      },
+      {
+        "lines": 1,
+        "text": "「動画のトランスコーディング」を開く"
+      },
+      {
+        "lines": 1,
+        "text": "動画を選ぶ"
+      },
+      {
+        "lines": 1,
+        "text": "形式・画質・解像度を選ぶ"
+      },
+      {
+        "lines": 1,
+        "text": "MP4・MOV・M4V"
+      },
+      {
+        "lines": 1,
+        "text": "画質とサイズのバランス"
+      },
+      {
+        "lines": 1,
+        "text": "解像度と音声"
+      },
+      {
+        "lines": 1,
+        "text": "コーデックとビットレートを確認する"
+      },
+      {
+        "lines": 1,
+        "text": "H.264とHEVC*"
+      },
+      {
+        "lines": 1,
+        "text": "自動・ターゲットサイズ*・カスタムコードレート*"
+      },
+      {
+        "lines": 1,
+        "text": "VIPが必要な設定"
+      },
+      {
+        "lines": 1,
+        "text": "結果を確認して保存する"
+      },
+      {
+        "lines": 1,
+        "text": "プレビューして保存する"
+      },
+      {
+        "lines": 1,
+        "text": "ほかのボタンの用途"
+      },
+      {
+        "lines": 1,
+        "text": "困ったときは"
+      },
+      {
+        "lines": 1,
+        "text": "圧縮結果が期待と違う"
+      },
+      {
+        "lines": 1,
+        "text": "よくある質問"
+      },
+      {
+        "lines": 1,
+        "text": "お使いのデバイスで試す"
+      },
+      {
+        "lines": 1,
+        "text": "関連する使い方"
+      },
+      {
+        "lines": 2,
+        "text": "動画の縦横比とレイアウトを変える"
+      },
+      {
+        "lines": 1,
+        "text": "動画の必要な時間帯を切り出す"
+      },
+      {
+        "lines": 1,
+        "text": "動画をミュート・音量調整する"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 1440,
+    "path": "/ja/articles/transcode-video-iphone/",
+    "width": 1440
+  },
+  {
+    "headings": [
+      {
+        "lines": 1,
+        "text": "Page not found"
+      }
+    ],
+    "overflow": [],
+    "pageWidth": 1440,
+    "path": "/404.html",
+    "width": 1440
+  }
+]

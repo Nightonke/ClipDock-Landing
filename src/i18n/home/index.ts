@@ -1,3 +1,4 @@
+import * as ko from "../ko/home";
 import * as ja from "../ja/home";
 import { validateCopy } from "../shared/validate";
 import * as zhHant from '../zh-Hant/home';
@@ -12,7 +13,7 @@ type HomeContent = {
  ui: Record<keyof typeof zhHans.ui, string>;
 };
 export const homeContent: Record<PublishedLocale, HomeContent> = {
- ja, 'zh-Hant': zhHant, 'zh-Hans': zhHans, 'en-US': enUS,
+ ko, ja, 'zh-Hant': zhHant, 'zh-Hans': zhHans, 'en-US': enUS,
 };
 
 for (const [locale, content] of Object.entries(homeContent)) {

@@ -105,3 +105,12 @@ html:is([lang="zh-Hans"], [lang="zh-Hant"]) :is(.tutorial-index h1, .tutorial-he
 html[lang="ja"] :is(.tutorial-index h1, .tutorial-hero h1, .tutorial-card h3, .tutorial-step-copy h2, .tutorial-step-detail h3, .tutorial-troubleshooting h3) { overflow-wrap: normal; text-wrap: balance; line-break: strict; line-height: 1.45; letter-spacing: -.025em; }
 /* Long example URLs need an emergency wrap within otherwise normally wrapped prose. */
 html[lang="ja"] :is(.tutorial-body, .tutorial-questions) p { overflow-wrap: anywhere; }
+
+/* Korean titles wrap at spaces without splitting ordinary words. */
+html[lang="ko"] :is(.tutorial-index h1, .tutorial-hero h1, .tutorial-card h3, .tutorial-step-copy h2, .tutorial-step-detail h3, .tutorial-troubleshooting h3) {
+	word-break: keep-all;
+	overflow-wrap: normal;
+	text-wrap: balance;
+	line-height: 1.4;
+	letter-spacing: -.025em;
+}

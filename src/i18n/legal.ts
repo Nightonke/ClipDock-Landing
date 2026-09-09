@@ -1,3 +1,4 @@
+import { legal as ko } from "./ko/legal";
 import { legal as ja } from "./ja/legal";
 import type { Locale } from "./locales";
 import { legal as en } from "./en-US/legal";
@@ -26,4 +27,5 @@ export const legalContent: Record<Locale, LegalCopy> = {
 	"zh-Hans": zh,
 	"zh-Hant": traditional,
 	ja,
+	ko,
 };
