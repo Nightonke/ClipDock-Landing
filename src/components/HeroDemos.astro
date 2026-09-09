@@ -41,6 +41,30 @@ const demos = ["share-link", "copy-background", "web-long-press", "batch-playlis
 		const progress = root.querySelector<HTMLProgressElement>(".demo-progress")!;
 		const buttons = root.querySelectorAll<HTMLButtonElement>(".demo-buttons button");
 		let activeButton = buttons[0];
+		// Keep preload elements alive, and request only the next clip in the sequence.
+		const preloaded = new Map<string, { video: HTMLVideoElement; poster: HTMLImageElement }>();
+		const preloadNext = () => {
+			if (document.hidden) return;
+			const available = Array.from(buttons).filter((button) => button.dataset.src);
+			const next = available[(available.indexOf(activeButton) + 1) % available.length];
+			const src = next?.dataset.src;
+			if (!src || preloaded.has(src)) return;
+			const upcoming = document.createElement("video");
+			upcoming.crossOrigin = "anonymous";
+			upcoming.preload = "auto";
+			upcoming.muted = true;
+			upcoming.playsInline = true;
+			const poster = new Image();
+			preloaded.set(src, { video: upcoming, poster });
+			poster.src = next.dataset.poster!;
+			upcoming.src = src;
+			upcoming.load();
+		};
+		// Let the active clip start before spending bandwidth on the next one.
+		video.addEventListener("playing", preloadNext);
+		document.addEventListener("visibilitychange", () => {
+			if (!video.paused) preloadNext();
+		});
 		const updateCaption = () => {
 			const text = captionAt(activeButton.dataset.src ?? "", video.currentTime, activeButton.dataset.description!, document.documentElement.lang);
 			if (description.textContent !== text) description.textContent = text;

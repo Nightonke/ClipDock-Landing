@@ -54,6 +54,15 @@ const slides = ["paste-link", "extracting", "select-tracks", "select-format", "e
   let frame = 0;
   let visible = false;
   let paused = reducedMotion.matches;
+  const warmImages = () => {
+   if (!visible) return;
+   [current, (current + 1) % slides.length].forEach((index) => {
+    const image = slides[index].querySelector<HTMLImageElement>("img")!;
+    // Use the actual responsive image so preloading selects the same srcset candidate.
+    image.loading = "eager";
+    void image.decode().catch(() => { /* A failed image must not stop the carousel. */ });
+   });
+  };
   const paint = () => fills.forEach((fill, index) => {
    fill.style.transform = `scaleX(${index < current ? 1 : index === current ? elapsed / duration : 0})`;
   });
@@ -66,6 +75,7 @@ const slides = ["paste-link", "extracting", "select-tracks", "select-format", "e
     else button.removeAttribute("aria-current");
    });
    caption.textContent = `${current + 1} / ${slides.length} · ${slides[current].dataset.title}`;
+   warmImages();
    paint();
   };
   const tick = (now: number) => {
@@ -86,7 +96,7 @@ const slides = ["paste-link", "extracting", "select-tracks", "select-format", "e
   toggle.addEventListener("click", () => { paused = !paused; sync(); });
   document.addEventListener("visibilitychange", sync);
   reducedMotion.addEventListener("change", () => { paused = reducedMotion.matches; sync(); });
-  new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; sync(); }, { threshold: .25 }).observe(carousel);
+  new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; warmImages(); sync(); }, { threshold: .25 }).observe(carousel);
   sync();
  });
 </script>
