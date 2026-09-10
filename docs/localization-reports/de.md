@@ -260,8 +260,16 @@
 ## 交付状态与范围限制
 
 - 已在构建列表和站内导航启用德语。
-- 已完成本地与正式构建验收，已更新 `docs/localization.md` 的语言现状。发布结果记录于本文和 `docs/deployment.md`。
+- 已提交、推送并部署，正式入口为 `https://clipdock.video/de/`。已更新 `docs/localization.md` 的语言现状，发布结果同步记录于 `docs/deployment.md`。
 - 没有修改、编译或启动 ResourceDownloader；App Store 元数据及地区链接未修改。
 - 共享 404 正文没有变为德语；德语 `errors.ts` 不代表已接入独立 404 路由。
 - 本次未进行德语母语者人工审校、真机 Safari/iOS 验收或重新实测 App 下载/工具。原图和录屏保持原语言，教程内原有示例限制完整保留。
 - 目前未发现未解决的注册、构建、结构缺失或所检查宽度下的排版错误。App 现有德语术语疑点详列于上文，按实际入口引用，未修改 App。
+
+## 2026-09-10 正式发布
+
+- 实现提交 [`8355be9`](https://github.com/Nightonke/ClipDock-Landing/commit/8355be97d9cbf9868eb697f29991a12610eb74f8) 已推送 `main`。[GitHub Actions #21](https://github.com/Nightonke/ClipDock-Landing/actions/runs/34433655622) 的构建与 GitHub Pages 部署均成功，包括语言完整性、视频恢复、素材下载故障恢复和正式构建检查。
+- [德语首页](https://clipdock.video/de/)、教程索引、41 篇教程、隐私政策与用户协议共 45 页均返回 200，HTML 与本地正式构建逐字节一致。两个线上 sitemap 文件也完全一致，共 360 条 URL，其中德语 45 条。见 [live-verification.json](de/live-verification.json)。
+- 发布沿用素材版本 `c5dcf79585974e0e`；正式构建确认两端各 526 个素材清单一致，没有重新部署素材服务。
+- 线上 Chromium 验证首页、教程索引、水印教程及两页法律正文在 375 / 1440 px 的 10 个组合，均无横向溢出。查看了[线上手机截图](de/live-home-375.png)和[线上桌面截图](de/live-home-1440.png)。
+- 首页 5 个视频元素均从正式 CDN 成功播放，无媒体错误；水印教程全部 5 张图片加载成功。八语言菜单、手机导航至教程索引，以及德语 → 英语 → 德语保留水印教程 slug 的实际切换通过，浏览器无运行时错误。见 [live-browser-verification.json](de/live-browser-verification.json)。
