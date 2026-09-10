@@ -47,7 +47,7 @@ const structuredData = [
 				{article.steps.map((step, index) => (
 					<section id={`step-${index + 1}`} class:list={["tutorial-step", { "tutorial-step-illustrated": step.image, "tutorial-step-reverse": index % 2 === 1 }]}>
 						<div class="tutorial-step-copy">
-							<p class="tutorial-step-index"><strong>{String(index + 1).padStart(2, "0")}</strong><span>{ui.step}</span></p><h2><HeadingText text={step.title} locale={locale} /></h2><p>{step.text}</p>
+							<p class="tutorial-step-index"><strong>{String(index + 1).padStart(2, "0")}</strong></p><h2><HeadingText text={step.title} locale={locale} /></h2><p>{step.text}</p>
 							{step.exampleUrl && <p class="tutorial-example-url"><a href={step.exampleUrl} target="_blank" rel="noopener noreferrer">{step.exampleUrl}</a></p>}
 							{step.sections?.map(section => <div class="tutorial-step-detail"><h3><HeadingText text={section.title} locale={locale} /></h3><p>{section.text}</p></div>)}
 						</div>
