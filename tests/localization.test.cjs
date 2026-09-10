@@ -265,3 +265,47 @@ test('German preserves App terminology, independent copy and functional limits',
  };
  for (const sourceLocale of ['en-US', 'zh-Hans']) compareProse(catalogs[sourceLocale], catalog, sourceLocale);
 });
+
+test('French preserves source evidence, App labels and locale-specific routes', () => {
+ const locale = 'fr';
+ assert.deepEqual(localeMeta[locale], { label: 'Français', hrefLang: 'fr', htmlLang: 'fr', ogLocale: 'fr_FR', dir: 'ltr' });
+ const catalog = catalogs.fr;
+ const normalized = value => JSON.stringify(value).replace(/[\u00a0\u202f]/g, ' ');
+ const inspect = (value, path = '') => {
+  if (typeof value === 'string') {
+   assert.doesNotMatch(value.replace(/米娜舞蹈-大摆锤/g, ''), /[\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]/, path);
+  } else if (value && typeof value === 'object') {
+   for (const [key, child] of Object.entries(value)) inspect(child, `${path}/${key}`);
+  }
+ };
+ inspect(catalog, 'catalog');
+ inspect(homeContent.fr, 'home');
+ inspect(legalContent.fr, 'legal');
+ assert.deepEqual(Object.keys(catalog.screenshotCopy).sort(), Object.keys(catalogs['zh-Hans'].screenshotCopy).sort());
+ for (const article of tutorialStructure) {
+  const source = catalogs['zh-Hans'].tutorialCopy[article.slug];
+  const translated = catalog.tutorialCopy[article.slug];
+  if (source.exampleNote) assert.ok(translated.exampleNote?.trim(), `${article.slug}: example note`);
+  if (source.verificationNote) assert.ok(translated.verificationNote?.trim(), `${article.slug}: verification note`);
+  source.steps.forEach((step, index) => assert.equal(translated.steps[index].exampleUrl, step.exampleUrl, `${article.slug}: example URL`));
+  if (article.category === 'batch') {
+   const prose = normalized(translated);
+   for (const label of ['Lot', 'Charger la liste', 'Ajouter à la file', '2 premières pages', 'VIP payant']) assert.ok(prose.includes(label), `${article.slug}: ${label}`);
+  }
+ }
+ const clipboard = normalized(catalog.tutorialCopy['copy-link-auto-download-iphone']);
+ for (const label of ['Remplir à partir du Presse-papiers', 'Liens de téléchargement automatique', 'Détecter en arrière-plan', 'image dans l’image']) assert.ok(clipboard.includes(label), label);
+ assert.match(normalized(catalog.tutorialCopy['extract-youtube-subtitles-iphone']), /ne traduit pas automatiquement et ne transcrit pas/);
+ assert.match(normalized(catalog.tutorialCopy['add-watermark-video-iphone']), /Réduire la valeur du curseur « Opacité » rend le filigrane plus pâle/);
+ assert.match(catalog.tutorialCopy['change-video-md5-iphone'].exampleNote, /n’ont pas été comparés/);
+ assert.match(catalog.tutorialCopy['merge-audio-video-iphone'].exampleNote, /n’a pas été écoutée passage par passage/);
+ for (const page of ['privacy', 'terms']) {
+  assert.ok(legalContent.fr[page].content.length > 1000);
+  assert.doesNotMatch(legalContent.fr[page].content, /\]\(\/(?!fr\/)/);
+ }
+ const compare = (source, translated, path = '') => {
+  if (typeof source === 'string' && source.length > 80 && !source.startsWith('https://')) assert.notEqual(translated, source, path);
+  else if (source && typeof source === 'object') for (const [key, child] of Object.entries(source)) compare(child, translated?.[key], `${path}/${key}`);
+ };
+ for (const sourceLocale of ['en-US', 'zh-Hans', 'de']) compare(catalogs[sourceLocale], catalog, sourceLocale);
+});

@@ -1,0 +1,327 @@
+{
+  "checks": 32,
+  "origin": "http://127.0.0.1:4331",
+  "pages": 16,
+  "results": [
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "Found a video?Make it yours.",
+      "url": "/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "How to change video aspect ratio and canvas on iPhone and iPad",
+      "url": "/articles/resize-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "链接交给影随存视频图片轻松存",
+      "url": "/zh-Hans/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "如何调整视频画布比例与布局？",
+      "url": "/zh-Hans/articles/resize-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "連結交給影隨存影片圖片輕鬆存",
+      "url": "/zh-Hant/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "如何調整影片畫布比例與佈局？",
+      "url": "/zh-Hant/articles/resize-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "リンクひとつで動画を手元に。",
+      "url": "/ja/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "動画の縦横比とレイアウトを変える",
+      "url": "/ja/articles/resize-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "링크 하나로동영상을 내 손에",
+      "url": "/ko/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "동영상 캔버스 비율과 배치를 바꾸는 방법",
+      "url": "/ko/articles/resize-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "Copia el enlace.Guarda el vídeo.",
+      "url": "/es/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Ajusta el lienzo y la distribución del vídeo",
+      "url": "/es/articles/resize-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "Copie o link.Salve o vídeo.",
+      "url": "/pt-BR/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Como ajustar a proporção e o layout do vídeo?",
+      "url": "/pt-BR/articles/resize-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "Link kopieren.Video behalten.",
+      "url": "/de/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Seitenverhältnis und Videolayout ändern",
+      "url": "/de/articles/resize-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "Found a video?Make it yours.",
+      "url": "/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "How to change video aspect ratio and canvas on iPhone and iPad",
+      "url": "/articles/resize-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "链接交给影随存视频图片轻松存",
+      "url": "/zh-Hans/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "如何调整视频画布比例与布局？",
+      "url": "/zh-Hans/articles/resize-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "連結交給影隨存影片圖片輕鬆存",
+      "url": "/zh-Hant/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "如何調整影片畫布比例與佈局？",
+      "url": "/zh-Hant/articles/resize-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "リンクひとつで動画を手元に。",
+      "url": "/ja/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "動画の縦横比とレイアウトを変える",
+      "url": "/ja/articles/resize-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "링크 하나로동영상을 내 손에",
+      "url": "/ko/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "동영상 캔버스 비율과 배치를 바꾸는 방법",
+      "url": "/ko/articles/resize-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "Copia el enlace.Guarda el vídeo.",
+      "url": "/es/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Ajusta el lienzo y la distribución del vídeo",
+      "url": "/es/articles/resize-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "Copie o link.Salve o vídeo.",
+      "url": "/pt-BR/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Como ajustar a proporção e o layout do vídeo?",
+      "url": "/pt-BR/articles/resize-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "Link kopieren.Video behalten.",
+      "url": "/de/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Seitenverhältnis und Videolayout ändern",
+      "url": "/de/articles/resize-video-iphone/",
+      "width": 1440
+    }
+  ]
+}

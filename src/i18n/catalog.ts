@@ -1,3 +1,8 @@
+import { ui as frUI } from './fr/site-ui';
+import { categories as frCategories, platformNotes as frNotes } from './fr/tutorial-index';
+import { tutorialCopy as frTutorials } from './fr/tutorials';
+import { screenshotCopy as frScreenshots } from './fr/screenshots';
+import { captions as frCaptions } from './fr/demo-captions';
 import { ui as deUI } from './de/site-ui';
 import { categories as deCategories, platformNotes as deNotes } from './de/tutorial-index';
 import { tutorialCopy as deTutorials } from './de/tutorials';
@@ -51,6 +56,7 @@ export interface LanguageCatalog {
  captions: Record<string, string[]>;
 }
 export const catalogs: Record<PublishedLocale, LanguageCatalog> = {
+ fr: { ui: frUI, categories: frCategories, platformNotes: frNotes, tutorialCopy: frTutorials, screenshotCopy: frScreenshots, captions: frCaptions },
  de: { ui: deUI, categories: deCategories, platformNotes: deNotes, tutorialCopy: deTutorials, screenshotCopy: deScreenshots, captions: deCaptions },
  "pt-BR": { ui: ptBRUI, categories: ptBRCategories, platformNotes: ptBRNotes, tutorialCopy: ptBRTutorials, screenshotCopy: ptBRScreenshots, captions: ptBRCaptions },
  es: { ui: esUI, categories: esCategories, platformNotes: esNotes, tutorialCopy: esTutorials, screenshotCopy: esScreenshots, captions: esCaptions },

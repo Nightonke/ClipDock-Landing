@@ -1,3 +1,4 @@
+import { meta as fr } from "./fr/meta";
 import { meta as de } from "./de/meta";
 import { meta as ptBR } from "./pt-BR/meta";
 import { meta as es } from "./es/meta";
@@ -8,15 +9,15 @@ import { meta as zh } from "./zh-Hans/meta";
 import { meta as traditional } from "./zh-Hant/meta";
 export const defaultLocale = "en-US" as const;
 
-export const locales = ["en-US", "zh-Hans", "zh-Hant", "ja", "ko", "es", "pt-BR", "de"] as const;
+export const locales = ["en-US", "zh-Hans", "zh-Hant", "ja", "ko", "es", "pt-BR", "de", "fr"] as const;
 
 export type Locale = (typeof locales)[number];
 
 // Only reviewed ClipDock translations are published.
-export const publishedLocales = ["en-US", "zh-Hans", "zh-Hant", "ja", "ko", "es", "pt-BR", "de"] as const satisfies readonly Locale[];
+export const publishedLocales = ["en-US", "zh-Hans", "zh-Hant", "ja", "ko", "es", "pt-BR", "de", "fr"] as const satisfies readonly Locale[];
 export type PublishedLocale = (typeof publishedLocales)[number];
 
-export const localeMeta: Record<Locale, { label: string; hrefLang: string; htmlLang: string; ogLocale: string; dir: "ltr" | "rtl" }> = { "en-US": en, "zh-Hans": zh, "zh-Hant": traditional, ja, ko, es, "pt-BR": ptBR, de };
+export const localeMeta: Record<Locale, { label: string; hrefLang: string; htmlLang: string; ogLocale: string; dir: "ltr" | "rtl" }> = { "en-US": en, "zh-Hans": zh, "zh-Hant": traditional, ja, ko, es, "pt-BR": ptBR, de, fr };
 
 export const localizedPath = (locale: Locale, page = "") => {
 	const cleanPage = page.replace(/^\/|\/$/g, "");

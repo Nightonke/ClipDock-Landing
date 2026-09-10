@@ -1,3 +1,4 @@
+import { common as fr } from "./fr/common";
 import { common as de } from "./de/common";
 import { common as ptBR } from "./pt-BR/common";
 import { common as es } from "./es/common";
@@ -7,4 +8,4 @@ import type { Locale } from "./locales";
 import { common as c0 } from "./en-US/common";
 import { common as c1 } from "./zh-Hans/common";
 import { common as c2 } from "./zh-Hant/common";
-export const commonCopy: Record<Locale, typeof c0> = { "en-US": c0, "zh-Hans": c1, "zh-Hant": c2, ja, ko, es, "pt-BR": ptBR, de };
+export const commonCopy: Record<Locale, typeof c0> = { "en-US": c0, "zh-Hans": c1, "zh-Hant": c2, ja, ko, es, "pt-BR": ptBR, de, fr };

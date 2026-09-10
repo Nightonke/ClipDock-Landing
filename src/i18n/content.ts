@@ -1,3 +1,4 @@
+import { landing as fr } from "./fr/landing";
 import { landing as de } from "./de/landing";
 import { landing as ptBR } from "./pt-BR/landing";
 import { landing as es } from "./es/landing";
@@ -8,4 +9,4 @@ import type { LocalizedLandingContent } from "./shared/landing";
 import { landing as content0 } from './en-US/landing';
 import { landing as content1 } from './zh-Hans/landing';
 import { landing as content2 } from './zh-Hant/landing';
-export const landingContent: Record<Locale, LocalizedLandingContent> = { "en-US": content0, "zh-Hans": content1, "zh-Hant": content2, ja, ko, es, "pt-BR": ptBR, de };
+export const landingContent: Record<Locale, LocalizedLandingContent> = { "en-US": content0, "zh-Hans": content1, "zh-Hant": content2, ja, ko, es, "pt-BR": ptBR, de, fr };

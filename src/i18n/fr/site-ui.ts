@@ -1,0 +1,17 @@
+import type { SiteUI } from "../types";
+export const ui: SiteUI = {
+  nav: { features: "Fonctionnalités", useCases: "Outils vidéo", faq: "Questions fréquentes", getApp: "Télécharger", menu: "Menu" },
+  tagline: "Enregistrez vos vidéos depuis un lien. Retouchez-les facilement.", tutorials: "Tutoriels", header: "En-tête du site", home: "Accueil",
+  primaryNav: "Navigation principale", mobileNav: "Navigation mobile", footerNav: "Navigation de pied de page", skip: "Aller au contenu",
+  demos: "Démonstrations de ClipDock", chooseDemo: "Choisir une démonstration", progress: "Progression de la lecture", demoEmpty: "Démonstration à venir", demoEmptyHint: "Découvrez les fonctionnalités ci-dessous", retry: "Réessayer la lecture", failed: "La vidéo est momentanément indisponible",
+  demoTitles: ["Télécharger depuis un lien", "Copier et télécharger en arrière-plan", "Télécharger par appui long", "Télécharger une playlist par lot"],
+  demoDescriptions: ["Copiez un lien de partage pour extraire et télécharger des vidéos ou des images.", "Activez la détection en arrière-plan et gardez l’image dans l’image active pour lancer des téléchargements en copiant des liens.", "Lisez une vidéo dans le navigateur intégré, puis maintenez le doigt dessus pour choisir un média disponible.", "Chargez une playlist et sélectionnez plusieurs vidéos à télécharger."],
+  slideTitles: ["Coller le lien YouTube", "Attendre l’extraction des sous-titres", "Choisir les langues", "Choisir le format des sous-titres", "Enregistrer dans Fichiers ou partager"],
+  carousel: "Carrousel", subtitleSteps: "Étapes d’extraction des sous-titres YouTube", chooseStep: "Choisir une étape", step: "Étape", pause: "Pause", play: "Lire", pauseCarousel: "Suspendre le défilement automatique", playCarousel: "Activer le défilement automatique",
+  breadcrumb: "Fil d’Ariane", contents: "Dans ce tutoriel", troubleshooting: "En cas de problème", questions: "Questions fréquentes", steps: "Étapes", related: "Pour aller plus loin", read: "Lire le tutoriel", openImage: "Agrandir l’image", screenshot: "Capture d’écran", missingScreenshot: "Capture de l’application à venir",
+  draft: "Tutoriel en cours de rédaction · Les captures et les étapes restent à vérifier. Ce tutoriel n’est pas encore validé par un essai.", supportedPlatforms: "Plateformes compatibles",
+  ctaTitle: "Essayez sur votre appareil", ctaText: "ClipDock est disponible en téléchargement gratuit, avec achats intégrés. Les outils et les options proposés dépendent de la version actuelle de l’application.", ctaButton: "Télécharger sur l’App Store",
+  toolCount: "{count} tutoriels d’outils vidéo, du choix du fichier à l’enregistrement du résultat.", draftCount: "Les captures et les étapes de {count} autres tutoriels restent à vérifier.",
+  indexTitle: "Tutoriels vidéo et sous-titres pour iPhone et iPad | ClipDock", indexDescription: "Téléchargez des vidéos sur iPhone et iPad, automatisez les téléchargements par copie de liens, enregistrez des profils et des playlists par lot, extrayez des sous-titres YouTube et retouchez vos vidéos.",
+  indexHeading: "Télécharger et retoucher, étape par étape", indexIntro: "Apprenez à télécharger des vidéos, à sélectionner des publications par lot et à extraire des sous-titres YouTube, puis adaptez vos fichiers à vos besoins sur iPhone et iPad.", categories: "Catégories", unverified: "Exportation non entièrement vérifiée", exampleNotes: "À propos de l’exemple"
+};

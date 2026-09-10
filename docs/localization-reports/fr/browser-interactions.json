@@ -1,0 +1,163 @@
+{
+  "captionChecks": [
+    {
+      "actual": "Ouvrez le partage de la vidéo et copiez le lien.",
+      "cue": 0,
+      "key": "/assets/demos/share-link.mp4",
+      "time": 2
+    },
+    {
+      "actual": "Revenez dans ClipDock : le lien est rempli automatiquement.",
+      "cue": 1,
+      "key": "/assets/demos/share-link.mp4",
+      "time": 5
+    },
+    {
+      "actual": "Touchez « Extraire » pour détecter la vidéo du lien.",
+      "cue": 2,
+      "key": "/assets/demos/share-link.mp4",
+      "time": 7
+    },
+    {
+      "actual": "Le téléchargement démarre. Suivez-le dans « Gestion ».",
+      "cue": 3,
+      "key": "/assets/demos/share-link.mp4",
+      "time": 10.2
+    },
+    {
+      "actual": "Activez « Liens de téléchargement automatique » et « Détecter en arrière-plan ».",
+      "cue": 0,
+      "key": "/assets/demos/copy-background.mp4",
+      "time": 2
+    },
+    {
+      "actual": "Revenez dans l’application vidéo et gardez l’image dans l’image active.",
+      "cue": 1,
+      "key": "/assets/demos/copy-background.mp4",
+      "time": 5
+    },
+    {
+      "actual": "Ouvrez le partage d’une vidéo et copiez son lien.",
+      "cue": 2,
+      "key": "/assets/demos/copy-background.mp4",
+      "time": 8
+    },
+    {
+      "actual": "Continuez à parcourir les vidéos et à copier leurs liens.",
+      "cue": 3,
+      "key": "/assets/demos/copy-background.mp4",
+      "time": 12.5
+    },
+    {
+      "actual": "Autorisez les notifications pour être averti du début du téléchargement.",
+      "cue": 4,
+      "key": "/assets/demos/copy-background.mp4",
+      "time": 18
+    },
+    {
+      "actual": "Chaque lien compatible copié crée une tâche de téléchargement.",
+      "cue": 5,
+      "key": "/assets/demos/copy-background.mp4",
+      "time": 27.75
+    },
+    {
+      "actual": "Ouvrez la page dans le navigateur intégré et lancez la vidéo.",
+      "cue": 0,
+      "key": "/assets/demos/web-long-press.mp4",
+      "time": 2
+    },
+    {
+      "actual": "Consultez les vidéos détectées et choisissez celle à télécharger.",
+      "cue": 1,
+      "key": "/assets/demos/web-long-press.mp4",
+      "time": 5
+    },
+    {
+      "actual": "La vérification du média crée une tâche de téléchargement.",
+      "cue": 2,
+      "key": "/assets/demos/web-long-press.mp4",
+      "time": 8
+    },
+    {
+      "actual": "Ouvrez « Gestion » pour suivre la progression.",
+      "cue": 3,
+      "key": "/assets/demos/web-long-press.mp4",
+      "time": 13
+    },
+    {
+      "actual": "Une fois le téléchargement terminé, ouvrez la vidéo ou enregistrez-la dans Photos.",
+      "cue": 4,
+      "key": "/assets/demos/web-long-press.mp4",
+      "time": 17.792
+    },
+    {
+      "actual": "Collez un lien de playlist dans « Lot ».",
+      "cue": 0,
+      "key": "/assets/demos/batch-playlist.mp4",
+      "time": 1.5
+    },
+    {
+      "actual": "Touchez « Charger la liste » pour en extraire les vidéos.",
+      "cue": 1,
+      "key": "/assets/demos/batch-playlist.mp4",
+      "time": 4
+    },
+    {
+      "actual": "Sélectionnez les vidéos et ajoutez-les à la file.",
+      "cue": 2,
+      "key": "/assets/demos/batch-playlist.mp4",
+      "time": 6.5
+    },
+    {
+      "actual": "Suivez les téléchargements dans « Gestion ».",
+      "cue": 3,
+      "key": "/assets/demos/batch-playlist.mp4",
+      "time": 13.5
+    }
+  ],
+  "controls": {
+    ".cd-faq-item": {
+      "open": true,
+      "text": "Quels liens ClipDock prend-il en charge ?"
+    },
+    ".cd-platform-details": {
+      "open": true,
+      "text": "Voir les plateformes compatibles"
+    },
+    "carouselPaused": {
+      "label": "Activer le défilement automatique",
+      "text": "Lire"
+    },
+    "carouselPlaying": {
+      "label": "Suspendre le défilement automatique",
+      "text": "Pause"
+    },
+    "carouselSelected": {
+      "caption": "5 / 5 · Enregistrer dans Fichiers ou partager",
+      "current": "step",
+      "label": "Étape 5: Enregistrer dans Fichiers ou partager"
+    }
+  },
+  "heroDemos": [
+    {
+      "caption": "Ouvrez le partage de la vidéo et copiez le lien.",
+      "label": "Télécharger depuis un lien",
+      "src": "/assets/demos/share-link.mp4"
+    },
+    {
+      "caption": "Activez « Liens de téléchargement automatique » et « Détecter en arrière-plan ».",
+      "label": "Copier et télécharger en arrière-plan",
+      "src": "/assets/demos/copy-background.mp4"
+    },
+    {
+      "caption": "Ouvrez la page dans le navigateur intégré et lancez la vidéo.",
+      "label": "Télécharger par appui long",
+      "src": "/assets/demos/web-long-press.mp4"
+    },
+    {
+      "caption": "Collez un lien de playlist dans « Lot ».",
+      "label": "Télécharger une playlist par lot",
+      "src": "/assets/demos/batch-playlist.mp4"
+    }
+  ]
+}

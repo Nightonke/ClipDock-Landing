@@ -1,0 +1,2257 @@
+{
+  "checks": 225,
+  "origin": "http://127.0.0.1:4331",
+  "pages": 45,
+  "results": [
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "Un lien à copier.Une vidéo à garder.",
+      "url": "/fr/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 47,
+      "overflow": [],
+      "title": "Télécharger et retoucher, étape par étape",
+      "url": "/fr/articles/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 11,
+      "overflow": [],
+      "title": "Politique de confidentialité",
+      "url": "/fr/privacy/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Conditions d’utilisation",
+      "url": "/fr/terms/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger une vidéo TikTok dans Photos",
+      "url": "/fr/articles/download-tiktok-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger une vidéo Douyin dans Photos",
+      "url": "/fr/articles/download-douyin-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 19,
+      "overflow": [],
+      "title": "Télécharger des vidéos et Reels Facebook",
+      "url": "/fr/articles/download-facebook-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Télécharger une vidéo Xiaohongshu dans Photos",
+      "url": "/fr/articles/download-xiaohongshu-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger une vidéo Bilibili dans Photos",
+      "url": "/fr/articles/download-bilibili-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Télécharger une vidéo YouTube",
+      "url": "/fr/articles/download-youtube-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger un Reel Instagram",
+      "url": "/fr/articles/download-instagram-reels-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Télécharger une vidéo X (Twitter)",
+      "url": "/fr/articles/download-x-twitter-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 13,
+      "overflow": [],
+      "title": "Télécharger automatiquement les liens copiés",
+      "url": "/fr/articles/copy-link-auto-download-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 13,
+      "overflow": [],
+      "title": "Télécharger tout en parcourant TikTok",
+      "url": "/fr/articles/copy-tiktok-links-background/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger les Shorts d’une chaîne YouTube",
+      "url": "/fr/articles/batch-download-youtube-shorts-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Télécharger des vidéos d’un hashtag YouTube",
+      "url": "/fr/articles/batch-download-youtube-hashtag-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Télécharger des vidéos d’une chaîne YouTube",
+      "url": "/fr/articles/batch-download-youtube-channel-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Télécharger une playlist YouTube par lot",
+      "url": "/fr/articles/download-youtube-playlist-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Télécharger des images d’un hashtag Instagram",
+      "url": "/fr/articles/batch-download-instagram-hashtag-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger les publications d’un profil Instagram",
+      "url": "/fr/articles/batch-download-instagram-profile-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger des vidéos d’un hashtag TikTok",
+      "url": "/fr/articles/batch-download-tiktok-hashtag-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 22,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un profil TikTok",
+      "url": "/fr/articles/batch-download-tiktok-profile-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un profil Douyin",
+      "url": "/fr/articles/batch-download-douyin-profile-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un profil Weibo",
+      "url": "/fr/articles/batch-download-weibo-profile-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Télécharger une collection Bilibili par lot",
+      "url": "/fr/articles/batch-download-bilibili-collection-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 23,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un créateur Bilibili",
+      "url": "/fr/articles/batch-download-bilibili-profile-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Extraire les sous-titres existants de YouTube",
+      "url": "/fr/articles/extract-youtube-subtitles-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 19,
+      "overflow": [],
+      "title": "Transformer une vidéo en GIF",
+      "url": "/fr/articles/video-to-gif-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Transformer une vidéo en Live Photo",
+      "url": "/fr/articles/video-to-live-photo-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 22,
+      "overflow": [],
+      "title": "Convertir ou compresser une vidéo",
+      "url": "/fr/articles/transcode-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Couper une vidéo à la durée voulue",
+      "url": "/fr/articles/trim-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 29,
+      "overflow": [],
+      "title": "Assembler plusieurs vidéos dans l’ordre",
+      "url": "/fr/articles/join-videos-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Alterner les segments de plusieurs vidéos",
+      "url": "/fr/articles/interleave-videos-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Créer une grille avec les passages d’une vidéo",
+      "url": "/fr/articles/segment-grid-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Adapter le cadre et les proportions d’une vidéo",
+      "url": "/fr/articles/resize-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Faire pivoter une vidéo",
+      "url": "/fr/articles/rotate-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Retourner une vidéo en miroir",
+      "url": "/fr/articles/mirror-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Lire une vidéo à l’envers",
+      "url": "/fr/articles/reverse-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Accélérer ou ralentir une vidéo",
+      "url": "/fr/articles/change-video-speed-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Couper le son d’une vidéo ou régler son volume",
+      "url": "/fr/articles/edit-video-audio-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 22,
+      "overflow": [],
+      "title": "Ajouter un filigrane texte à une vidéo",
+      "url": "/fr/articles/add-watermark-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Extraire une image d’une vidéo",
+      "url": "/fr/articles/capture-video-frames-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Extraire le son d’une vidéo",
+      "url": "/fr/articles/extract-audio-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Utiliser l’outil de modification MD5",
+      "url": "/fr/articles/change-video-md5-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 375,
+      "brokenImages": [],
+      "documentWidth": 375,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Fusionner une vidéo et une source audio",
+      "url": "/fr/articles/merge-audio-video-iphone/",
+      "width": 375
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "Un lien à copier.Une vidéo à garder.",
+      "url": "/fr/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 47,
+      "overflow": [],
+      "title": "Télécharger et retoucher, étape par étape",
+      "url": "/fr/articles/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 11,
+      "overflow": [],
+      "title": "Politique de confidentialité",
+      "url": "/fr/privacy/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Conditions d’utilisation",
+      "url": "/fr/terms/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger une vidéo TikTok dans Photos",
+      "url": "/fr/articles/download-tiktok-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger une vidéo Douyin dans Photos",
+      "url": "/fr/articles/download-douyin-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 19,
+      "overflow": [],
+      "title": "Télécharger des vidéos et Reels Facebook",
+      "url": "/fr/articles/download-facebook-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Télécharger une vidéo Xiaohongshu dans Photos",
+      "url": "/fr/articles/download-xiaohongshu-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger une vidéo Bilibili dans Photos",
+      "url": "/fr/articles/download-bilibili-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Télécharger une vidéo YouTube",
+      "url": "/fr/articles/download-youtube-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger un Reel Instagram",
+      "url": "/fr/articles/download-instagram-reels-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Télécharger une vidéo X (Twitter)",
+      "url": "/fr/articles/download-x-twitter-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 13,
+      "overflow": [],
+      "title": "Télécharger automatiquement les liens copiés",
+      "url": "/fr/articles/copy-link-auto-download-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 13,
+      "overflow": [],
+      "title": "Télécharger tout en parcourant TikTok",
+      "url": "/fr/articles/copy-tiktok-links-background/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger les Shorts d’une chaîne YouTube",
+      "url": "/fr/articles/batch-download-youtube-shorts-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Télécharger des vidéos d’un hashtag YouTube",
+      "url": "/fr/articles/batch-download-youtube-hashtag-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Télécharger des vidéos d’une chaîne YouTube",
+      "url": "/fr/articles/batch-download-youtube-channel-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Télécharger une playlist YouTube par lot",
+      "url": "/fr/articles/download-youtube-playlist-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Télécharger des images d’un hashtag Instagram",
+      "url": "/fr/articles/batch-download-instagram-hashtag-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger les publications d’un profil Instagram",
+      "url": "/fr/articles/batch-download-instagram-profile-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger des vidéos d’un hashtag TikTok",
+      "url": "/fr/articles/batch-download-tiktok-hashtag-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 22,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un profil TikTok",
+      "url": "/fr/articles/batch-download-tiktok-profile-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un profil Douyin",
+      "url": "/fr/articles/batch-download-douyin-profile-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un profil Weibo",
+      "url": "/fr/articles/batch-download-weibo-profile-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Télécharger une collection Bilibili par lot",
+      "url": "/fr/articles/batch-download-bilibili-collection-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 23,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un créateur Bilibili",
+      "url": "/fr/articles/batch-download-bilibili-profile-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Extraire les sous-titres existants de YouTube",
+      "url": "/fr/articles/extract-youtube-subtitles-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 19,
+      "overflow": [],
+      "title": "Transformer une vidéo en GIF",
+      "url": "/fr/articles/video-to-gif-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Transformer une vidéo en Live Photo",
+      "url": "/fr/articles/video-to-live-photo-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 22,
+      "overflow": [],
+      "title": "Convertir ou compresser une vidéo",
+      "url": "/fr/articles/transcode-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Couper une vidéo à la durée voulue",
+      "url": "/fr/articles/trim-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 29,
+      "overflow": [],
+      "title": "Assembler plusieurs vidéos dans l’ordre",
+      "url": "/fr/articles/join-videos-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Alterner les segments de plusieurs vidéos",
+      "url": "/fr/articles/interleave-videos-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Créer une grille avec les passages d’une vidéo",
+      "url": "/fr/articles/segment-grid-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Adapter le cadre et les proportions d’une vidéo",
+      "url": "/fr/articles/resize-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Faire pivoter une vidéo",
+      "url": "/fr/articles/rotate-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Retourner une vidéo en miroir",
+      "url": "/fr/articles/mirror-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Lire une vidéo à l’envers",
+      "url": "/fr/articles/reverse-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Accélérer ou ralentir une vidéo",
+      "url": "/fr/articles/change-video-speed-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Couper le son d’une vidéo ou régler son volume",
+      "url": "/fr/articles/edit-video-audio-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 22,
+      "overflow": [],
+      "title": "Ajouter un filigrane texte à une vidéo",
+      "url": "/fr/articles/add-watermark-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Extraire une image d’une vidéo",
+      "url": "/fr/articles/capture-video-frames-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Extraire le son d’une vidéo",
+      "url": "/fr/articles/extract-audio-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Utiliser l’outil de modification MD5",
+      "url": "/fr/articles/change-video-md5-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 390,
+      "brokenImages": [],
+      "documentWidth": 390,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Fusionner une vidéo et une source audio",
+      "url": "/fr/articles/merge-audio-video-iphone/",
+      "width": 390
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "Un lien à copier.Une vidéo à garder.",
+      "url": "/fr/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 47,
+      "overflow": [],
+      "title": "Télécharger et retoucher, étape par étape",
+      "url": "/fr/articles/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 11,
+      "overflow": [],
+      "title": "Politique de confidentialité",
+      "url": "/fr/privacy/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Conditions d’utilisation",
+      "url": "/fr/terms/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger une vidéo TikTok dans Photos",
+      "url": "/fr/articles/download-tiktok-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger une vidéo Douyin dans Photos",
+      "url": "/fr/articles/download-douyin-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 19,
+      "overflow": [],
+      "title": "Télécharger des vidéos et Reels Facebook",
+      "url": "/fr/articles/download-facebook-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Télécharger une vidéo Xiaohongshu dans Photos",
+      "url": "/fr/articles/download-xiaohongshu-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger une vidéo Bilibili dans Photos",
+      "url": "/fr/articles/download-bilibili-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Télécharger une vidéo YouTube",
+      "url": "/fr/articles/download-youtube-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger un Reel Instagram",
+      "url": "/fr/articles/download-instagram-reels-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Télécharger une vidéo X (Twitter)",
+      "url": "/fr/articles/download-x-twitter-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 13,
+      "overflow": [],
+      "title": "Télécharger automatiquement les liens copiés",
+      "url": "/fr/articles/copy-link-auto-download-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 13,
+      "overflow": [],
+      "title": "Télécharger tout en parcourant TikTok",
+      "url": "/fr/articles/copy-tiktok-links-background/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger les Shorts d’une chaîne YouTube",
+      "url": "/fr/articles/batch-download-youtube-shorts-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Télécharger des vidéos d’un hashtag YouTube",
+      "url": "/fr/articles/batch-download-youtube-hashtag-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Télécharger des vidéos d’une chaîne YouTube",
+      "url": "/fr/articles/batch-download-youtube-channel-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Télécharger une playlist YouTube par lot",
+      "url": "/fr/articles/download-youtube-playlist-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Télécharger des images d’un hashtag Instagram",
+      "url": "/fr/articles/batch-download-instagram-hashtag-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger les publications d’un profil Instagram",
+      "url": "/fr/articles/batch-download-instagram-profile-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger des vidéos d’un hashtag TikTok",
+      "url": "/fr/articles/batch-download-tiktok-hashtag-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 22,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un profil TikTok",
+      "url": "/fr/articles/batch-download-tiktok-profile-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un profil Douyin",
+      "url": "/fr/articles/batch-download-douyin-profile-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un profil Weibo",
+      "url": "/fr/articles/batch-download-weibo-profile-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Télécharger une collection Bilibili par lot",
+      "url": "/fr/articles/batch-download-bilibili-collection-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 23,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un créateur Bilibili",
+      "url": "/fr/articles/batch-download-bilibili-profile-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Extraire les sous-titres existants de YouTube",
+      "url": "/fr/articles/extract-youtube-subtitles-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 19,
+      "overflow": [],
+      "title": "Transformer une vidéo en GIF",
+      "url": "/fr/articles/video-to-gif-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Transformer une vidéo en Live Photo",
+      "url": "/fr/articles/video-to-live-photo-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 22,
+      "overflow": [],
+      "title": "Convertir ou compresser une vidéo",
+      "url": "/fr/articles/transcode-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Couper une vidéo à la durée voulue",
+      "url": "/fr/articles/trim-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 29,
+      "overflow": [],
+      "title": "Assembler plusieurs vidéos dans l’ordre",
+      "url": "/fr/articles/join-videos-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Alterner les segments de plusieurs vidéos",
+      "url": "/fr/articles/interleave-videos-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Créer une grille avec les passages d’une vidéo",
+      "url": "/fr/articles/segment-grid-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Adapter le cadre et les proportions d’une vidéo",
+      "url": "/fr/articles/resize-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Faire pivoter une vidéo",
+      "url": "/fr/articles/rotate-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Retourner une vidéo en miroir",
+      "url": "/fr/articles/mirror-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Lire une vidéo à l’envers",
+      "url": "/fr/articles/reverse-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Accélérer ou ralentir une vidéo",
+      "url": "/fr/articles/change-video-speed-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Couper le son d’une vidéo ou régler son volume",
+      "url": "/fr/articles/edit-video-audio-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 22,
+      "overflow": [],
+      "title": "Ajouter un filigrane texte à une vidéo",
+      "url": "/fr/articles/add-watermark-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Extraire une image d’une vidéo",
+      "url": "/fr/articles/capture-video-frames-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Extraire le son d’une vidéo",
+      "url": "/fr/articles/extract-audio-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Utiliser l’outil de modification MD5",
+      "url": "/fr/articles/change-video-md5-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 768,
+      "brokenImages": [],
+      "documentWidth": 768,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Fusionner une vidéo et une source audio",
+      "url": "/fr/articles/merge-audio-video-iphone/",
+      "width": 768
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "Un lien à copier.Une vidéo à garder.",
+      "url": "/fr/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 47,
+      "overflow": [],
+      "title": "Télécharger et retoucher, étape par étape",
+      "url": "/fr/articles/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 11,
+      "overflow": [],
+      "title": "Politique de confidentialité",
+      "url": "/fr/privacy/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Conditions d’utilisation",
+      "url": "/fr/terms/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger une vidéo TikTok dans Photos",
+      "url": "/fr/articles/download-tiktok-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger une vidéo Douyin dans Photos",
+      "url": "/fr/articles/download-douyin-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 19,
+      "overflow": [],
+      "title": "Télécharger des vidéos et Reels Facebook",
+      "url": "/fr/articles/download-facebook-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Télécharger une vidéo Xiaohongshu dans Photos",
+      "url": "/fr/articles/download-xiaohongshu-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger une vidéo Bilibili dans Photos",
+      "url": "/fr/articles/download-bilibili-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Télécharger une vidéo YouTube",
+      "url": "/fr/articles/download-youtube-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger un Reel Instagram",
+      "url": "/fr/articles/download-instagram-reels-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Télécharger une vidéo X (Twitter)",
+      "url": "/fr/articles/download-x-twitter-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 13,
+      "overflow": [],
+      "title": "Télécharger automatiquement les liens copiés",
+      "url": "/fr/articles/copy-link-auto-download-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 13,
+      "overflow": [],
+      "title": "Télécharger tout en parcourant TikTok",
+      "url": "/fr/articles/copy-tiktok-links-background/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger les Shorts d’une chaîne YouTube",
+      "url": "/fr/articles/batch-download-youtube-shorts-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Télécharger des vidéos d’un hashtag YouTube",
+      "url": "/fr/articles/batch-download-youtube-hashtag-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Télécharger des vidéos d’une chaîne YouTube",
+      "url": "/fr/articles/batch-download-youtube-channel-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Télécharger une playlist YouTube par lot",
+      "url": "/fr/articles/download-youtube-playlist-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Télécharger des images d’un hashtag Instagram",
+      "url": "/fr/articles/batch-download-instagram-hashtag-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger les publications d’un profil Instagram",
+      "url": "/fr/articles/batch-download-instagram-profile-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger des vidéos d’un hashtag TikTok",
+      "url": "/fr/articles/batch-download-tiktok-hashtag-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 22,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un profil TikTok",
+      "url": "/fr/articles/batch-download-tiktok-profile-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un profil Douyin",
+      "url": "/fr/articles/batch-download-douyin-profile-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un profil Weibo",
+      "url": "/fr/articles/batch-download-weibo-profile-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Télécharger une collection Bilibili par lot",
+      "url": "/fr/articles/batch-download-bilibili-collection-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 23,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un créateur Bilibili",
+      "url": "/fr/articles/batch-download-bilibili-profile-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Extraire les sous-titres existants de YouTube",
+      "url": "/fr/articles/extract-youtube-subtitles-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 19,
+      "overflow": [],
+      "title": "Transformer une vidéo en GIF",
+      "url": "/fr/articles/video-to-gif-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Transformer une vidéo en Live Photo",
+      "url": "/fr/articles/video-to-live-photo-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 22,
+      "overflow": [],
+      "title": "Convertir ou compresser une vidéo",
+      "url": "/fr/articles/transcode-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Couper une vidéo à la durée voulue",
+      "url": "/fr/articles/trim-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 29,
+      "overflow": [],
+      "title": "Assembler plusieurs vidéos dans l’ordre",
+      "url": "/fr/articles/join-videos-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Alterner les segments de plusieurs vidéos",
+      "url": "/fr/articles/interleave-videos-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Créer une grille avec les passages d’une vidéo",
+      "url": "/fr/articles/segment-grid-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Adapter le cadre et les proportions d’une vidéo",
+      "url": "/fr/articles/resize-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Faire pivoter une vidéo",
+      "url": "/fr/articles/rotate-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Retourner une vidéo en miroir",
+      "url": "/fr/articles/mirror-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Lire une vidéo à l’envers",
+      "url": "/fr/articles/reverse-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Accélérer ou ralentir une vidéo",
+      "url": "/fr/articles/change-video-speed-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Couper le son d’une vidéo ou régler son volume",
+      "url": "/fr/articles/edit-video-audio-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 22,
+      "overflow": [],
+      "title": "Ajouter un filigrane texte à une vidéo",
+      "url": "/fr/articles/add-watermark-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Extraire une image d’une vidéo",
+      "url": "/fr/articles/capture-video-frames-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Extraire le son d’une vidéo",
+      "url": "/fr/articles/extract-audio-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Utiliser l’outil de modification MD5",
+      "url": "/fr/articles/change-video-md5-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1024,
+      "brokenImages": [],
+      "documentWidth": 1024,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Fusionner une vidéo et une source audio",
+      "url": "/fr/articles/merge-audio-video-iphone/",
+      "width": 1024
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 31,
+      "overflow": [],
+      "title": "Un lien à copier.Une vidéo à garder.",
+      "url": "/fr/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 47,
+      "overflow": [],
+      "title": "Télécharger et retoucher, étape par étape",
+      "url": "/fr/articles/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 11,
+      "overflow": [],
+      "title": "Politique de confidentialité",
+      "url": "/fr/privacy/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Conditions d’utilisation",
+      "url": "/fr/terms/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger une vidéo TikTok dans Photos",
+      "url": "/fr/articles/download-tiktok-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger une vidéo Douyin dans Photos",
+      "url": "/fr/articles/download-douyin-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 19,
+      "overflow": [],
+      "title": "Télécharger des vidéos et Reels Facebook",
+      "url": "/fr/articles/download-facebook-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Télécharger une vidéo Xiaohongshu dans Photos",
+      "url": "/fr/articles/download-xiaohongshu-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger une vidéo Bilibili dans Photos",
+      "url": "/fr/articles/download-bilibili-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Télécharger une vidéo YouTube",
+      "url": "/fr/articles/download-youtube-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger un Reel Instagram",
+      "url": "/fr/articles/download-instagram-reels-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Télécharger une vidéo X (Twitter)",
+      "url": "/fr/articles/download-x-twitter-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 13,
+      "overflow": [],
+      "title": "Télécharger automatiquement les liens copiés",
+      "url": "/fr/articles/copy-link-auto-download-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 13,
+      "overflow": [],
+      "title": "Télécharger tout en parcourant TikTok",
+      "url": "/fr/articles/copy-tiktok-links-background/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger les Shorts d’une chaîne YouTube",
+      "url": "/fr/articles/batch-download-youtube-shorts-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Télécharger des vidéos d’un hashtag YouTube",
+      "url": "/fr/articles/batch-download-youtube-hashtag-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Télécharger des vidéos d’une chaîne YouTube",
+      "url": "/fr/articles/batch-download-youtube-channel-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 16,
+      "overflow": [],
+      "title": "Télécharger une playlist YouTube par lot",
+      "url": "/fr/articles/download-youtube-playlist-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Télécharger des images d’un hashtag Instagram",
+      "url": "/fr/articles/batch-download-instagram-hashtag-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger les publications d’un profil Instagram",
+      "url": "/fr/articles/batch-download-instagram-profile-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Télécharger des vidéos d’un hashtag TikTok",
+      "url": "/fr/articles/batch-download-tiktok-hashtag-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 22,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un profil TikTok",
+      "url": "/fr/articles/batch-download-tiktok-profile-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un profil Douyin",
+      "url": "/fr/articles/batch-download-douyin-profile-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un profil Weibo",
+      "url": "/fr/articles/batch-download-weibo-profile-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Télécharger une collection Bilibili par lot",
+      "url": "/fr/articles/batch-download-bilibili-collection-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 23,
+      "overflow": [],
+      "title": "Télécharger les vidéos d’un créateur Bilibili",
+      "url": "/fr/articles/batch-download-bilibili-profile-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Extraire les sous-titres existants de YouTube",
+      "url": "/fr/articles/extract-youtube-subtitles-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 19,
+      "overflow": [],
+      "title": "Transformer une vidéo en GIF",
+      "url": "/fr/articles/video-to-gif-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Transformer une vidéo en Live Photo",
+      "url": "/fr/articles/video-to-live-photo-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 22,
+      "overflow": [],
+      "title": "Convertir ou compresser une vidéo",
+      "url": "/fr/articles/transcode-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Couper une vidéo à la durée voulue",
+      "url": "/fr/articles/trim-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 29,
+      "overflow": [],
+      "title": "Assembler plusieurs vidéos dans l’ordre",
+      "url": "/fr/articles/join-videos-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Alterner les segments de plusieurs vidéos",
+      "url": "/fr/articles/interleave-videos-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Créer une grille avec les passages d’une vidéo",
+      "url": "/fr/articles/segment-grid-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Adapter le cadre et les proportions d’une vidéo",
+      "url": "/fr/articles/resize-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Faire pivoter une vidéo",
+      "url": "/fr/articles/rotate-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Retourner une vidéo en miroir",
+      "url": "/fr/articles/mirror-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Lire une vidéo à l’envers",
+      "url": "/fr/articles/reverse-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Accélérer ou ralentir une vidéo",
+      "url": "/fr/articles/change-video-speed-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 18,
+      "overflow": [],
+      "title": "Couper le son d’une vidéo ou régler son volume",
+      "url": "/fr/articles/edit-video-audio-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 22,
+      "overflow": [],
+      "title": "Ajouter un filigrane texte à une vidéo",
+      "url": "/fr/articles/add-watermark-video-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 17,
+      "overflow": [],
+      "title": "Extraire une image d’une vidéo",
+      "url": "/fr/articles/capture-video-frames-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 14,
+      "overflow": [],
+      "title": "Extraire le son d’une vidéo",
+      "url": "/fr/articles/extract-audio-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 15,
+      "overflow": [],
+      "title": "Utiliser l’outil de modification MD5",
+      "url": "/fr/articles/change-video-md5-iphone/",
+      "width": 1440
+    },
+    {
+      "bodyWidth": 1440,
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "headingCount": 21,
+      "overflow": [],
+      "title": "Fusionner une vidéo et une source audio",
+      "url": "/fr/articles/merge-audio-video-iphone/",
+      "width": 1440
+    }
+  ]
+}
