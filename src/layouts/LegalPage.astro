@@ -66,6 +66,19 @@ const html = await parseMarkdown(document.content);
 		overflow-wrap: anywhere;
 	}
 
+	:global(html[lang="de"]) .prose :global(h1) {
+		font-size: clamp(2rem, 5vw, 4rem);
+		line-height: 1.15;
+	}
+
+	:global(html[lang="de"]) .prose :global(h2) {
+		font-size: clamp(1.5rem, 3vw, 2rem);
+	}
+
+	:global(html[lang="de"]) .prose :global(h3) {
+		font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+	}
+
 	.legal-date {
 		font-size: 0.9rem;
 	}

@@ -87,9 +87,9 @@
 }
 
 /* Balance Latin-script headings without forcing breaks inside words. */
-html:is([lang="en"], [lang="es"], [lang="pt-BR"]) .tutorial-index-hero { container-type: inline-size; }
-html:is([lang="en"], [lang="es"], [lang="pt-BR"]) .tutorial-index h1 { font-size: clamp(2.2rem, 8cqw, 4.2rem); }
-html:is([lang="en"], [lang="es"], [lang="pt-BR"]) :is(.tutorial-index h1, .tutorial-hero h1, .tutorial-card h3, .tutorial-step-copy h2) { overflow-wrap: normal; text-wrap: balance; }
+html:is([lang="en"], [lang="es"], [lang="pt-BR"], [lang="de"]) .tutorial-index-hero { container-type: inline-size; }
+html:is([lang="en"], [lang="es"], [lang="pt-BR"], [lang="de"]) .tutorial-index h1 { font-size: clamp(2.2rem, 8cqw, 4.2rem); }
+html:is([lang="en"], [lang="es"], [lang="pt-BR"], [lang="de"]) :is(.tutorial-index h1, .tutorial-hero h1, .tutorial-card h3, .tutorial-step-copy h2) { overflow-wrap: normal; text-wrap: balance; }
 
 .tutorial-example-notes { margin-top: 20px; color: var(--ink-soft); font-size: .875rem; line-height: 1.7; }
 .tutorial-example-notes summary { width: fit-content; cursor: pointer; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }

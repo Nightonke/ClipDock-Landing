@@ -1,3 +1,4 @@
+import * as de from "../de/home";
 import * as ptBR from "../pt-BR/home";
 import * as es from "../es/home";
 import * as ko from "../ko/home";
@@ -15,7 +16,7 @@ type HomeContent = {
  ui: Record<keyof typeof zhHans.ui, string>;
 };
 export const homeContent: Record<PublishedLocale, HomeContent> = {
- "pt-BR": ptBR, es, ko, ja, 'zh-Hant': zhHant, 'zh-Hans': zhHans, 'en-US': enUS,
+ de, "pt-BR": ptBR, es, ko, ja, 'zh-Hant': zhHant, 'zh-Hans': zhHans, 'en-US': enUS,
 };
 
 for (const [locale, content] of Object.entries(homeContent)) {

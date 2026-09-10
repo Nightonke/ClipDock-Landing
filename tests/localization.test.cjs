@@ -219,3 +219,49 @@ test('Brazilian Portuguese preserves regional metadata, App actions and function
  };
  for (const sourceLocale of ['en-US', 'es', 'zh-Hans']) compareProse(catalogs[sourceLocale], catalog, sourceLocale);
 });
+
+test('German preserves App terminology, independent copy and functional limits', () => {
+ const locale = 'de';
+ assert.deepEqual(localeMeta[locale], {
+  label: 'Deutsch', hrefLang: 'de', htmlLang: 'de', ogLocale: 'de_DE', dir: 'ltr',
+ });
+ const catalog = catalogs[locale];
+ const inspect = (value, path = '') => {
+  if (typeof value === 'string') {
+   // Exact titles printed in the reused screenshots remain quoted.
+   assert.doesNotMatch(value.replace(/背景音乐版|米娜舞蹈-大摆锤/g, ''), /[\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]/, path);
+  } else if (value && typeof value === 'object') {
+   for (const [key, child] of Object.entries(value)) inspect(child, `${path}/${key}`);
+  }
+ };
+ inspect(catalog, 'catalog');
+ inspect(homeContent[locale], 'home');
+ inspect(legalContent[locale], 'legal');
+ const clipboard = JSON.stringify(catalog.tutorialCopy['copy-link-auto-download-iphone']);
+ for (const label of ['Aus Zwischenablage füllen', 'Links automatisch herunterladen', 'Im Hintergrund erkennen', 'Bild im Bild']) {
+  assert.ok(clipboard.includes(label), label);
+ }
+ for (const article of tutorialStructure.filter(a => a.category === 'batch')) {
+  const copy = JSON.stringify(catalog.tutorialCopy[article.slug]);
+  for (const label of ['Stapel', 'Liste laden', 'Zur Download-Warteschlange']) assert.ok(copy.includes(label), `${article.slug}: ${label}`);
+  assert.match(copy, /ersten 2 Seiten/, article.slug);
+  assert.match(copy, /kostenpflichtiges VIP/, article.slug);
+ }
+ const subtitles = catalog.tutorialCopy['extract-youtube-subtitles-iphone'];
+ assert.ok(subtitles.faq.some(item => /übersetzt nicht automatisch und erzeugt keine Untertitel/.test(item.answer)));
+ assert.match(JSON.stringify(catalog.tutorialCopy['add-watermark-video-iphone']), /niedrigerer Wert bei „Deckkraft“ macht das Wasserzeichen blasser/);
+ assert.match(catalog.tutorialCopy['change-video-md5-iphone'].exampleNote, /wurden nicht verglichen/);
+ assert.match(catalog.tutorialCopy['merge-audio-video-iphone'].exampleNote, /noch nicht Abschnitt für Abschnitt angehört/);
+ for (const label of ['Änderung Geschwindigkeit', 'Ändern MD5', 'Videoaufnahme', 'Größe/Leinwand ändern']) {
+  assert.ok(homeContent[locale].tools.some(tool => tool.title === label), label);
+ }
+ for (const page of ['privacy', 'terms']) {
+  assert.ok(legalContent[locale][page].content.length > 1000);
+  assert.doesNotMatch(legalContent[locale][page].content, /\]\(\/(?!de\/)/);
+ }
+ const compareProse = (source, translated, path = '') => {
+  if (typeof source === 'string' && source.length > 80 && !source.startsWith('https://')) assert.notEqual(translated, source, path);
+  else if (source && typeof source === 'object') for (const [key, child] of Object.entries(source)) compareProse(child, translated?.[key], `${path}/${key}`);
+ };
+ for (const sourceLocale of ['en-US', 'zh-Hans']) compareProse(catalogs[sourceLocale], catalog, sourceLocale);
+});
