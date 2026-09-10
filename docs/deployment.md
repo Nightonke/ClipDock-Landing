@@ -1,5 +1,11 @@
 # ClipDock 正式部署
 
+## 2026-09-10 西班牙语上线
+
+- 实现提交 [`dc38511`](https://github.com/Nightonke/ClipDock-Landing/commit/dc385119676112b1b41d53f0ce4931b5f93fedc0) 已推送 `main`；[Actions #19](https://github.com/Nightonke/ClipDock-Landing/actions/runs/34421604721) 构建与 GitHub Pages 部署成功。
+- [西语首页](https://clipdock.video/es/)、教程列表、41 篇教程和两页法律正文已上线。当前共六种语言，正式构建 271 页、sitemap 270 条 URL；保持素材版本 `c5dcf79585974e0e`，两端各 526 个素材清单校验一致。
+- 45 个西语页面均返回 200，线上 HTML 与本地正式构建逐字节一致，语言标记、canonical、hreflang、元数据和 sitemap 通过检查；手机与桌面布局、5 个视频、教程图片及语言切换验证通过。完整记录见[西语交付记录](localization-reports/es.md)。
+
 ## 2026-09-09 素材校验连接中断修复
 
 - 韩语提交 `916e3c1` 的 [Actions #17](https://github.com/Nightonke/ClipDock-Landing/actions/runs/34370908217) 通过语言与视频恢复检查后，在获取腾讯云 `manifest.json` 时遇到 `curl (56): Connection reset by peer`，因此未部署新页面。

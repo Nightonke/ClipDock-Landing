@@ -1,0 +1,691 @@
+{
+  "commit": "dc385119676112b1b41d53f0ce4931b5f93fedc0",
+  "run": "https://github.com/Nightonke/ClipDock-Landing/actions/runs/34421604721",
+  "pages": [
+    {
+      "route": "/es/articles/add-watermark-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "634f52d4891bb85a7ff398ce22476d4b6fc344d490499758c9d33ae0d9aa36a0"
+    },
+    {
+      "route": "/es/articles/batch-download-bilibili-collection-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "861ac195cbf7de1d50e96b8a2e5914c405a83ada26da89769f08a7d667ab97e3"
+    },
+    {
+      "route": "/es/articles/batch-download-bilibili-profile-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "3d7ef4a776d43e1121fa33185ff27ddd8402e47cea25f291d00693138f92bcba"
+    },
+    {
+      "route": "/es/articles/batch-download-douyin-profile-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "cc180411007ddbd00412855f251c98ba5d7e26e2700a995884323fbe3daea1a9"
+    },
+    {
+      "route": "/es/articles/batch-download-instagram-hashtag-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "947e19bf1d457092837295c551beafceb18d510bcae6d8d77fab8e9ad054f921"
+    },
+    {
+      "route": "/es/articles/batch-download-instagram-profile-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "45fcfd9355fef6ef5685e1668c55aef08625fb94d3715ffafc1ae0704e29cae5"
+    },
+    {
+      "route": "/es/articles/batch-download-tiktok-hashtag-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "977fddaa1f3067f9a943919af9dea0b23a7adb7688b35bc779e8d8d6a26753d8"
+    },
+    {
+      "route": "/es/articles/batch-download-tiktok-profile-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "4ae97b1c5c8587fd9d64554aed02caf5e66d81484ab19e11a7caecd8651d0847"
+    },
+    {
+      "route": "/es/articles/batch-download-weibo-profile-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "35c29e0c62d43d2e787a8b53fdc243172205575e6fd95cd1f4dd9750709b2986"
+    },
+    {
+      "route": "/es/articles/batch-download-youtube-channel-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "d43b45b117f78a1ee4bd68703bf4c8d57cde258949ae939b188434d887525c51"
+    },
+    {
+      "route": "/es/articles/batch-download-youtube-hashtag-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "7db2752863a106273b75da4f06de8bb279fd8a6f603bededda843a51129d643a"
+    },
+    {
+      "route": "/es/articles/batch-download-youtube-shorts-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "132b6dfa9d9c1b79cb7df649f13dfbdddcd0f9d9fb214ac276be6936c7d25e52"
+    },
+    {
+      "route": "/es/articles/capture-video-frames-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "3431c38868a4b2b847dd9cf5156f635dff2a230de484a6024b1f37828708cd7d"
+    },
+    {
+      "route": "/es/articles/change-video-md5-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "9b3f87350721ed57f882af86d99bf9e04065bc38b3cd369dc6e200915831f83f"
+    },
+    {
+      "route": "/es/articles/change-video-speed-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "c642fd04a916c5263d856c804440d256c0a3b5e15ea337a7ac8d959bdcfb148f"
+    },
+    {
+      "route": "/es/articles/copy-link-auto-download-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "80de324cd81f2958cb90ba624fbcca0ea59395c1d70d31b85831f91b0fab9437"
+    },
+    {
+      "route": "/es/articles/copy-tiktok-links-background/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "f5d6ccdfafd00cf15f060699b1cff184dbe60f3999772916736da7ceec041217"
+    },
+    {
+      "route": "/es/articles/download-bilibili-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "33d23caf7108aa1118689d3c99520f63e97366918606e3b4c25a4c5e992ff56d"
+    },
+    {
+      "route": "/es/articles/download-douyin-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "3c2ecf895113e38deafcd0c356ecdea4db3b8c8307117f697cf6e3fb00b62627"
+    },
+    {
+      "route": "/es/articles/download-facebook-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "65c0c74848b9befaa40cbb5d838f91e144301354146a2b086d5e39d2e0519bb2"
+    },
+    {
+      "route": "/es/articles/download-instagram-reels-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "7e2cc34a6d2d69099a63ce8122f8c896101680d1ca9d3ead7af676710a32f211"
+    },
+    {
+      "route": "/es/articles/download-tiktok-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "1a963e76287466897af2993ae9d3ce813677c529c35b899903c93643ca44e3b5"
+    },
+    {
+      "route": "/es/articles/download-x-twitter-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "aec290634f9026da903583bdbe85cd891d0f770b1bdab8eb0a1897b6e43a5f69"
+    },
+    {
+      "route": "/es/articles/download-xiaohongshu-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "b84042d125d84397b21d22a5b31be833a9e34c778a9b3071118f566fb1345fb3"
+    },
+    {
+      "route": "/es/articles/download-youtube-playlist-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "e901bfd3e5eba6b09e55c0292b9b9ab4e9624156babdd35d814d642bb13713a0"
+    },
+    {
+      "route": "/es/articles/download-youtube-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "b8de42dc30b82f0b8a391234af83675c23b36991196a04ebbee991dfd69c5eb6"
+    },
+    {
+      "route": "/es/articles/edit-video-audio-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "eeffe7358633974ddb98c5f7b6eaf11d90917385b8fdd7aa0ba5fce24735cd5b"
+    },
+    {
+      "route": "/es/articles/extract-audio-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "3df9eb1108b5356f4394c90576c4e22707417215f40219c671500fac6d404a72"
+    },
+    {
+      "route": "/es/articles/extract-youtube-subtitles-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "890885816c320d0e6f9328243ad320a37d77b28442cc4f2d9c77f65b3ceb9abb"
+    },
+    {
+      "route": "/es/articles/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "92387bddd1a47bf0e2f804311b0831ff4b22e17889ca6b83b1944f827731a24b"
+    },
+    {
+      "route": "/es/articles/interleave-videos-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "29f1567c1beda7088f716fdb5bc4266e11fe497f0b1a5192f5e938975ae275e4"
+    },
+    {
+      "route": "/es/articles/join-videos-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "c3705a647a56d53ee7f4445c108079581d3bafd44c7df1a098cda604a2febe14"
+    },
+    {
+      "route": "/es/articles/merge-audio-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "912022e1b5e76e32f32427357cc8140cb8bfb50f2593d9454338b686b3958862"
+    },
+    {
+      "route": "/es/articles/mirror-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "0ecc7950d89adfbd7381e0f42bc96624b0e1eec2255f14bc61fe27b6380c3cd0"
+    },
+    {
+      "route": "/es/articles/resize-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "46b413e3c6bcaf488358731f6542ef978ce7aa2e8df4e6a4a9f0324a08263805"
+    },
+    {
+      "route": "/es/articles/reverse-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "8225c4f696ab7d42110b22da08f8bafb4fb71aa1f19332bd96c71784f8cf7731"
+    },
+    {
+      "route": "/es/articles/rotate-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "feea2c441d63fe2b82d50925800a00a73988dd44cd0f0622892ac22c0893383e"
+    },
+    {
+      "route": "/es/articles/segment-grid-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "2b222003b2fd5cfa1dbaf3371042b6abbb586a7c35bcd1b3d9bd1e78c1c46c46"
+    },
+    {
+      "route": "/es/articles/transcode-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "fcf32f2e996c334daedfa2687294cfd1f6c2d0a3a7cf41cf890dc26061e13277"
+    },
+    {
+      "route": "/es/articles/trim-video-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "87c7302f50a56860b2b62f9f0f841a2d7d254b73e2139854fb78468cb218fbd3"
+    },
+    {
+      "route": "/es/articles/video-to-gif-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "775cfe7196c68d226d231239cc4a0ec15232989da8bf0817590ac02b2cf69543"
+    },
+    {
+      "route": "/es/articles/video-to-live-photo-iphone/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "367a834d932aba9c59d02abe961187cbbd211b842a0985a69026a1d82e3c5041"
+    },
+    {
+      "route": "/es/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "adcafa7b38a62144f0a0ed359d857eafe41fa33ff1c6cc9d034a231692b0837b"
+    },
+    {
+      "route": "/es/privacy/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "5d36b54b190dcc7e002b5c29cbadebe22e2cb893d03b1f61c45fa59e07d715f2"
+    },
+    {
+      "route": "/es/terms/",
+      "status": 200,
+      "lang": "es",
+      "matches_local_production": true,
+      "sha256": "2a7df74f2485d7216f3e830b48605f671e6d05b1546febf88147ca53b99cddc2"
+    }
+  ],
+  "sitemap_es_urls": 45,
+  "date": "2026-09-10",
+  "browser": {
+    "url": "https://clipdock.video/es/",
+    "layout_375": {
+      "documentWidth": 375,
+      "headings": [
+        {
+          "font": "38.4px",
+          "height": 86,
+          "text": "Copia el enlace.Guarda el vídeo."
+        },
+        {
+          "font": "36px",
+          "height": 83,
+          "text": "Descarga desde un enlace"
+        },
+        {
+          "font": "36px",
+          "height": 83,
+          "text": "Copia el enlace y sigue viendo"
+        },
+        {
+          "font": "36px",
+          "height": 83,
+          "text": "Mantén pulsado para descargar"
+        },
+        {
+          "font": "36px",
+          "height": 83,
+          "text": "Elige una lista y descarga en lote"
+        },
+        {
+          "font": "36px",
+          "height": 124,
+          "text": "Guarda los subtítulos por separado"
+        },
+        {
+          "font": "36px",
+          "height": 83,
+          "text": "Tus herramientas de vídeo, a mano"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Recortar video"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Transcodificar vídeo"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Unir videos"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Intercalado"
+        },
+        {
+          "font": "26.4px",
+          "height": 69,
+          "text": "Cuadrícula de segmentos"
+        },
+        {
+          "font": "26.4px",
+          "height": 69,
+          "text": "Cambiar el tamaño/lienzo"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Girar video"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Vídeo espejo"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Cambiar velocidad"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Extraer audio"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Edición de audio"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Fusionar audio y vídeo"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Vídeo inverso"
+        },
+        {
+          "font": "26.4px",
+          "height": 69,
+          "text": "Agregar marca de agua"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Vídeo a GIF"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Vídeo a Live Photo"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Captura de video"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Cambiar MD5"
+        },
+        {
+          "font": "44.8px",
+          "height": 206,
+          "text": "Descarga con los límites claros."
+        },
+        {
+          "font": "16px",
+          "height": 24,
+          "text": "Datos de la app"
+        },
+        {
+          "font": "16px",
+          "height": 24,
+          "text": "iPhone y iPad"
+        },
+        {
+          "font": "16px",
+          "height": 24,
+          "text": "Guarda contenido que puedas usar"
+        },
+        {
+          "font": "36px",
+          "height": 83,
+          "text": "Resuelve tus dudas antes de descargar."
+        },
+        {
+          "font": "36px",
+          "height": 124,
+          "text": "Tus vídeos, siempre a mano."
+        }
+      ],
+      "overflow": [],
+      "url": "/es/",
+      "width": 375
+    },
+    "layout_1440": {
+      "documentWidth": 1440,
+      "headings": [
+        {
+          "font": "55.416px",
+          "height": 124,
+          "text": "Copia el enlace.Guarda el vídeo."
+        },
+        {
+          "font": "57.6px",
+          "height": 132,
+          "text": "Descarga desde un enlace"
+        },
+        {
+          "font": "57.6px",
+          "height": 132,
+          "text": "Copia el enlace y sigue viendo"
+        },
+        {
+          "font": "57.6px",
+          "height": 132,
+          "text": "Mantén pulsado para descargar"
+        },
+        {
+          "font": "57.6px",
+          "height": 132,
+          "text": "Elige una lista y descarga en lote"
+        },
+        {
+          "font": "57.6px",
+          "height": 199,
+          "text": "Guarda los subtítulos por separado"
+        },
+        {
+          "font": "57.6px",
+          "height": 132,
+          "text": "Tus herramientas de vídeo, a mano"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Recortar video"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Transcodificar vídeo"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Unir videos"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Intercalado"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Cuadrícula de segmentos"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Cambiar el tamaño/lienzo"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Girar video"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Vídeo espejo"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Cambiar velocidad"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Extraer audio"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Edición de audio"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Fusionar audio y vídeo"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Vídeo inverso"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Agregar marca de agua"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Vídeo a GIF"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Vídeo a Live Photo"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Captura de video"
+        },
+        {
+          "font": "26.4px",
+          "height": 34,
+          "text": "Cambiar MD5"
+        },
+        {
+          "font": "72px",
+          "height": 248,
+          "text": "Descarga con los límites claros."
+        },
+        {
+          "font": "16px",
+          "height": 24,
+          "text": "Datos de la app"
+        },
+        {
+          "font": "16px",
+          "height": 24,
+          "text": "iPhone y iPad"
+        },
+        {
+          "font": "16px",
+          "height": 24,
+          "text": "Guarda contenido que puedas usar"
+        },
+        {
+          "font": "57.6px",
+          "height": 66,
+          "text": "Resuelve tus dudas antes de descargar."
+        },
+        {
+          "font": "57.6px",
+          "height": 199,
+          "text": "Tus vídeos, siempre a mano."
+        }
+      ],
+      "overflow": [],
+      "url": "/es/",
+      "width": 1440
+    },
+    "media": [
+      {
+        "cors": "anonymous",
+        "error": null,
+        "ready": 4,
+        "src": "https://assets.clipdock.video/releases/c5dcf79585974e0e/assets/demos/share-link.mp4"
+      },
+      {
+        "cors": "anonymous",
+        "error": null,
+        "ready": 4,
+        "src": "https://assets.clipdock.video/releases/c5dcf79585974e0e/assets/demos/share-link.mp4"
+      },
+      {
+        "cors": "anonymous",
+        "error": null,
+        "ready": 4,
+        "src": "https://assets.clipdock.video/releases/c5dcf79585974e0e/assets/demos/copy-background.mp4"
+      },
+      {
+        "cors": "anonymous",
+        "error": null,
+        "ready": 4,
+        "src": "https://assets.clipdock.video/releases/c5dcf79585974e0e/assets/demos/web-long-press.mp4"
+      },
+      {
+        "cors": "anonymous",
+        "error": null,
+        "ready": 4,
+        "src": "https://assets.clipdock.video/releases/c5dcf79585974e0e/assets/demos/batch-playlist.mp4"
+      }
+    ],
+    "article_images": [
+      {
+        "loaded": true,
+        "src": "https://assets.clipdock.video/releases/c5dcf79585974e0e/assets/optimized/a3741bac52f3ad69-480.webp"
+      }
+    ],
+    "switching": "es → en-US → es; transcode-video-iphone slug preserved"
+  }
+}

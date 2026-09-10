@@ -73,7 +73,11 @@
 ## 交付状态
 
 - 已在构建中启用。
-- 实现和本地验收已完成；用户已于 2026-09-10 授权提交并部署，按现有 `main` 推送流程由 GitHub Actions 发布。实际提交与上线验收结果另记于下方。
+- 已提交并推送 `main`，实现提交为 [`dc38511`](https://github.com/Nightonke/ClipDock-Landing/commit/dc385119676112b1b41d53f0ce4931b5f93fedc0)。
+- 已于 2026-09-10 部署到正式站点 [clipdock.video/es/](https://clipdock.video/es/)；[GitHub Actions #19](https://github.com/Nightonke/ClipDock-Landing/actions/runs/34421604721) 的构建与部署均成功，语言、视频恢复、素材下载恢复检查全部通过。
+- 线上 45 个西语页面均返回 200，HTML 与本地正式构建逐字节一致；lang、canonical、hreflang 和元数据匹配，sitemap 含全部 45 个西语 URL。
+- 正式站点 375 / 1440 像素首页无溢出，5 个 CDN 视频均正常加载且无媒体错误；转码教程 CDN 图片正常，西语 → 英语 → 西语切换保留文章 slug。[手机截图](es/live-home-375.png)、[桌面截图](es/live-home-1440.png)及[线上检查数据](es/live-verification.json)已保存。
+- 发布后补充的文档与截图使用独立文档提交保存，不改变已部署的网站代码。
 - 未进行母语者审校；浏览器检查覆盖范围见上文。App 内媒体处理效果沿用已有示例证据，没有重新运行 App 测试。
 
 ## 术语表
