@@ -1,3 +1,4 @@
+import { legal as ptBR } from "./pt-BR/legal";
 import { legal as es } from "./es/legal";
 import { legal as ko } from "./ko/legal";
 import { legal as ja } from "./ja/legal";
@@ -30,4 +31,5 @@ export const legalContent: Record<Locale, LegalCopy> = {
 	ja,
 	ko,
 	es,
+	"pt-BR": ptBR,
 };

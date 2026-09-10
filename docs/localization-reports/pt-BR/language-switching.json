@@ -1,0 +1,110 @@
+[
+  {
+    "width": 375,
+    "target": "en-US",
+    "there": {
+      "lang": "en",
+      "url": "/articles/transcode-video-iphone/"
+    },
+    "back": "/pt-BR/articles/transcode-video-iphone/"
+  },
+  {
+    "width": 375,
+    "target": "zh-Hans",
+    "there": {
+      "lang": "zh-Hans",
+      "url": "/zh-Hans/articles/transcode-video-iphone/"
+    },
+    "back": "/pt-BR/articles/transcode-video-iphone/"
+  },
+  {
+    "width": 375,
+    "target": "zh-Hant",
+    "there": {
+      "lang": "zh-Hant",
+      "url": "/zh-Hant/articles/transcode-video-iphone/"
+    },
+    "back": "/pt-BR/articles/transcode-video-iphone/"
+  },
+  {
+    "width": 375,
+    "target": "ja",
+    "there": {
+      "lang": "ja",
+      "url": "/ja/articles/transcode-video-iphone/"
+    },
+    "back": "/pt-BR/articles/transcode-video-iphone/"
+  },
+  {
+    "width": 375,
+    "target": "ko",
+    "there": {
+      "lang": "ko",
+      "url": "/ko/articles/transcode-video-iphone/"
+    },
+    "back": "/pt-BR/articles/transcode-video-iphone/"
+  },
+  {
+    "width": 375,
+    "target": "es",
+    "there": {
+      "lang": "es",
+      "url": "/es/articles/transcode-video-iphone/"
+    },
+    "back": "/pt-BR/articles/transcode-video-iphone/"
+  },
+  {
+    "width": 1440,
+    "target": "en-US",
+    "there": {
+      "lang": "en",
+      "url": "/articles/transcode-video-iphone/"
+    },
+    "back": "/pt-BR/articles/transcode-video-iphone/"
+  },
+  {
+    "width": 1440,
+    "target": "zh-Hans",
+    "there": {
+      "lang": "zh-Hans",
+      "url": "/zh-Hans/articles/transcode-video-iphone/"
+    },
+    "back": "/pt-BR/articles/transcode-video-iphone/"
+  },
+  {
+    "width": 1440,
+    "target": "zh-Hant",
+    "there": {
+      "lang": "zh-Hant",
+      "url": "/zh-Hant/articles/transcode-video-iphone/"
+    },
+    "back": "/pt-BR/articles/transcode-video-iphone/"
+  },
+  {
+    "width": 1440,
+    "target": "ja",
+    "there": {
+      "lang": "ja",
+      "url": "/ja/articles/transcode-video-iphone/"
+    },
+    "back": "/pt-BR/articles/transcode-video-iphone/"
+  },
+  {
+    "width": 1440,
+    "target": "ko",
+    "there": {
+      "lang": "ko",
+      "url": "/ko/articles/transcode-video-iphone/"
+    },
+    "back": "/pt-BR/articles/transcode-video-iphone/"
+  },
+  {
+    "width": 1440,
+    "target": "es",
+    "there": {
+      "lang": "es",
+      "url": "/es/articles/transcode-video-iphone/"
+    },
+    "back": "/pt-BR/articles/transcode-video-iphone/"
+  }
+]

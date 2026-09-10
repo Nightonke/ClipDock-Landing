@@ -1,3 +1,8 @@
+import { ui as ptBRUI } from './pt-BR/site-ui';
+import { categories as ptBRCategories, platformNotes as ptBRNotes } from './pt-BR/tutorial-index';
+import { tutorialCopy as ptBRTutorials } from './pt-BR/tutorials';
+import { screenshotCopy as ptBRScreenshots } from './pt-BR/screenshots';
+import { captions as ptBRCaptions } from './pt-BR/demo-captions';
 import { ui as esUI } from './es/site-ui';
 import { categories as esCategories, platformNotes as esNotes } from './es/tutorial-index';
 import { tutorialCopy as esTutorials } from './es/tutorials';
@@ -41,6 +46,7 @@ export interface LanguageCatalog {
  captions: Record<string, string[]>;
 }
 export const catalogs: Record<PublishedLocale, LanguageCatalog> = {
+ "pt-BR": { ui: ptBRUI, categories: ptBRCategories, platformNotes: ptBRNotes, tutorialCopy: ptBRTutorials, screenshotCopy: ptBRScreenshots, captions: ptBRCaptions },
  es: { ui: esUI, categories: esCategories, platformNotes: esNotes, tutorialCopy: esTutorials, screenshotCopy: esScreenshots, captions: esCaptions },
  ko: { ui: koUI, categories: koCategories, platformNotes: koNotes, tutorialCopy: koTutorials, screenshotCopy: koScreenshots, captions: koCaptions },
  ja: { ui: jaUI, categories: jaCategories, platformNotes: jaNotes, tutorialCopy: jaTutorials, screenshotCopy: jaScreenshots, captions: jaCaptions },

@@ -179,3 +179,43 @@ test('Spanish covers independent prose, App actions, limits and legal pages', ()
  };
  compareProse(source, catalogs.es);
 });
+
+test('Brazilian Portuguese preserves regional metadata, App actions and functional limits', () => {
+ const locale = 'pt-BR';
+ assert.deepEqual(localeMeta[locale], {
+  label: 'Português (Brasil)', hrefLang: locale, htmlLang: locale, ogLocale: 'pt_BR', dir: 'ltr',
+ });
+ const catalog = catalogs[locale];
+ const inspect = (value, path = '') => {
+  if (typeof value === 'string') {
+   // Titles printed in the original media are quoted, not translated UI.
+   assert.doesNotMatch(value.replace(/背景音乐版|米娜舞蹈-大摆锤/g, ''), /[\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]/, path);
+  } else if (value && typeof value === 'object') {
+   for (const [key, child] of Object.entries(value)) inspect(child, `${path}/${key}`);
+  }
+ };
+ inspect(catalog, 'catalog');
+ inspect(homeContent[locale], 'home');
+ inspect(legalContent[locale], 'legal');
+ const clipboard = JSON.stringify(catalog.tutorialCopy['copy-link-auto-download-iphone']);
+ for (const label of ['Preencher da área de transferência', 'Links para download automático', 'Detectar em segundo plano', 'Picture in Picture']) {
+  assert.ok(clipboard.includes(label), label);
+ }
+ for (const article of tutorialStructure.filter(a => a.category === 'batch')) {
+  const copy = JSON.stringify(catalog.tutorialCopy[article.slug]);
+  assert.match(copy, /primeiras 2 páginas/, article.slug);
+  assert.match(copy, /VIP pago/, article.slug);
+ }
+ const subtitles = catalog.tutorialCopy['extract-youtube-subtitles-iphone'];
+ assert.ok(subtitles.faq.some(item => /não traduz automaticamente nem cria legendas/.test(item.answer)));
+ assert.match(JSON.stringify(catalog.tutorialCopy['add-watermark-video-iphone']), /Reduzir o valor de “Opacidade” deixa a marca mais transparente/);
+ for (const page of ['privacy', 'terms']) {
+  assert.ok(legalContent[locale][page].content.length > 1000);
+  assert.doesNotMatch(legalContent[locale][page].content, /\]\(\/(?!pt-BR\/)/);
+ }
+ const compareProse = (source, translated, path = '') => {
+  if (typeof source === 'string' && source.length > 80 && !source.startsWith('https://')) assert.notEqual(translated, source, path);
+  else if (source && typeof source === 'object') for (const [key, child] of Object.entries(source)) compareProse(child, translated?.[key], `${path}/${key}`);
+ };
+ for (const sourceLocale of ['en-US', 'es', 'zh-Hans']) compareProse(catalogs[sourceLocale], catalog, sourceLocale);
+});

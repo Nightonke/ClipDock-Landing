@@ -1,0 +1,135 @@
+[
+  {
+    "src": "/assets/demos/share-link.mp4",
+    "index": 0,
+    "caption": "Abra o compartilhamento do vídeo e toque em Copiar link.",
+    "paused": true,
+    "time": 0.08
+  },
+  {
+    "src": "/assets/demos/share-link.mp4",
+    "index": 1,
+    "caption": "Volte ao ClipDock para preencher o link da área de transferência.",
+    "paused": true,
+    "time": 4.08
+  },
+  {
+    "src": "/assets/demos/share-link.mp4",
+    "index": 2,
+    "caption": "Toque em Extrair para identificar o vídeo do link.",
+    "paused": true,
+    "time": 6.08
+  },
+  {
+    "src": "/assets/demos/share-link.mp4",
+    "index": 3,
+    "caption": "O download começa após a detecção. Acompanhe em Gerenciamento.",
+    "paused": true,
+    "time": 8.08
+  },
+  {
+    "src": "/assets/demos/copy-background.mp4",
+    "index": 0,
+    "caption": "Ative Links para download automático e Detectar em segundo plano.",
+    "paused": true,
+    "time": 0.08
+  },
+  {
+    "src": "/assets/demos/copy-background.mp4",
+    "index": 1,
+    "caption": "Volte ao app de vídeos e mantenha o Picture in Picture ativo.",
+    "paused": true,
+    "time": 4.08
+  },
+  {
+    "src": "/assets/demos/copy-background.mp4",
+    "index": 2,
+    "caption": "Ao encontrar um vídeo, abra o compartilhamento e copie o link.",
+    "paused": true,
+    "time": 6.08
+  },
+  {
+    "src": "/assets/demos/copy-background.mp4",
+    "index": 3,
+    "caption": "Continue vendo vídeos e copiando links sem voltar ao ClipDock.",
+    "paused": true,
+    "time": 10.08
+  },
+  {
+    "src": "/assets/demos/copy-background.mp4",
+    "index": 4,
+    "caption": "Com as notificações ativadas e autorizadas, você recebe avisos de downloads iniciados em segundo plano.",
+    "paused": true,
+    "time": 15.08
+  },
+  {
+    "src": "/assets/demos/copy-background.mp4",
+    "index": 5,
+    "caption": "Continue navegando: cada link copiado cria uma tarefa de download.",
+    "paused": true,
+    "time": 21.08
+  },
+  {
+    "src": "/assets/demos/web-long-press.mp4",
+    "index": 0,
+    "caption": "Abra a página no navegador integrado e reproduza o vídeo.",
+    "paused": true,
+    "time": 0.08
+  },
+  {
+    "src": "/assets/demos/web-long-press.mp4",
+    "index": 1,
+    "caption": "Confira os vídeos detectados e toque no recurso desejado.",
+    "paused": true,
+    "time": 4.08
+  },
+  {
+    "src": "/assets/demos/web-long-press.mp4",
+    "index": 2,
+    "caption": "Após verificar o recurso, o app cria a tarefa de download.",
+    "paused": true,
+    "time": 6.08
+  },
+  {
+    "src": "/assets/demos/web-long-press.mp4",
+    "index": 3,
+    "caption": "Abra Gerenciamento para acompanhar o download.",
+    "paused": true,
+    "time": 10.08
+  },
+  {
+    "src": "/assets/demos/web-long-press.mp4",
+    "index": 4,
+    "caption": "Ao terminar, confira a prévia ou salve o vídeo em Fotos.",
+    "paused": true,
+    "time": 16.079999
+  },
+  {
+    "src": "/assets/demos/batch-playlist.mp4",
+    "index": 0,
+    "caption": "Cole o link da playlist em Lote.",
+    "paused": true,
+    "time": 0.08
+  },
+  {
+    "src": "/assets/demos/batch-playlist.mp4",
+    "index": 1,
+    "caption": "Toque em Carregar lista para identificar os vídeos.",
+    "paused": true,
+    "time": 3.08
+  },
+  {
+    "src": "/assets/demos/batch-playlist.mp4",
+    "index": 2,
+    "caption": "Selecione os vídeos desejados e adicione todos à fila.",
+    "paused": true,
+    "time": 5.08
+  },
+  {
+    "src": "/assets/demos/batch-playlist.mp4",
+    "index": 3,
+    "caption": "Acompanhe os downloads em Gerenciamento.",
+    "paused": true,
+    "time": 8.08
+  }
+]

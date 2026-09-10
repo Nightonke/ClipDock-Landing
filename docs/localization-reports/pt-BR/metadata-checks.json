@@ -1,0 +1,19 @@
+{
+  "pages": 45,
+  "jsonLdTypes": {
+    "MobileApplication": 1,
+    "Offer": 1,
+    "AggregateRating": 1,
+    "FAQPage": 1,
+    "Question": 6,
+    "Answer": 6,
+    "Article": 41,
+    "Organization": 41,
+    "BreadcrumbList": 41,
+    "ListItem": 123
+  },
+  "incorrectInternalPageURLs": [],
+  "sharedOrganizationRootURLs": 41,
+  "articleLanguage": "pt-BR",
+  "ogTwitterDescriptions": "matched localized page descriptions"
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "active": 1,
+    "alt": "Cole o link do YouTube",
+    "caption": "1 / 5 · Cole o link do YouTube"
+  },
+  {
+    "active": 1,
+    "alt": "Aguarde a extração das legendas",
+    "caption": "2 / 5 · Aguarde a extração das legendas"
+  },
+  {
+    "active": 1,
+    "alt": "Escolha os idiomas das legendas",
+    "caption": "3 / 5 · Escolha os idiomas das legendas"
+  },
+  {
+    "active": 1,
+    "alt": "Escolha o formato do arquivo",
+    "caption": "4 / 5 · Escolha o formato do arquivo"
+  },
+  {
+    "active": 1,
+    "alt": "Salve em Arquivos ou compartilhe",
+    "caption": "5 / 5 · Salve em Arquivos ou compartilhe"
+  }
+]

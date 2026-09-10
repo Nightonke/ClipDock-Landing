@@ -1,0 +1,12 @@
+{
+  "method": "Temporarily replaced the local video source with invalid inline MP4, restored it and clicked the real retry button",
+  "error": {
+    "button": "Tentar reproduzir novamente",
+    "message": "Não foi possível reproduzir o vídeo agora"
+  },
+  "recovered": {
+    "error": null,
+    "panelHidden": true,
+    "playing": true
+  }
+}
