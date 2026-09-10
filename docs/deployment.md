@@ -1,5 +1,11 @@
 # ClipDock 正式部署
 
+## 2026-09-10 法语上线
+
+- 实现提交 [`073fa29`](https://github.com/Nightonke/ClipDock-Landing/commit/073fa297178b44e7a949d462fca13a786e024a72) 已推送 `main`；[Actions #22](https://github.com/Nightonke/ClipDock-Landing/actions/runs/34437271063) 构建与 GitHub Pages 部署成功。
+- [法语首页](https://clipdock.video/fr/)、教程索引、41 篇教程和两页法律正文已上线。当前共九种语言，正式构建 406 页、sitemap 405 条 URL；保持素材版本 `c5dcf79585974e0e`，两端各 526 个素材清单校验一致。
+- 45 个法语页面均返回 200，线上 HTML 与本地正式构建逐字节一致，两个 sitemap 文件也完全一致；手机与桌面显示、5 个视频元素、教程图片及语言切换复查通过。完整记录见[法语交付记录](localization-reports/fr.md)。
+
 ## 2026-09-10 德语上线
 
 - 实现提交 [`8355be9`](https://github.com/Nightonke/ClipDock-Landing/commit/8355be97d9cbf9868eb697f29991a12610eb74f8) 已推送 `main`；[Actions #21](https://github.com/Nightonke/ClipDock-Landing/actions/runs/34433655622) 构建与 GitHub Pages 部署成功。

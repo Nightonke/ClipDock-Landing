@@ -254,7 +254,7 @@
 ## 交付状态
 
 - 法语已加入当前分支的构建列表和语言菜单。
-- 用户已授权提交并部署。正式构建已通过，部署提交与线上验收结果记录于下方。
+- 法语已提交、推送至 `main` 并部署到正式站点；部署提交与线上验收结果记录于下方。
 - 未进行法语母语者审校；自动检查与本次语义检查不作此类声明。
 
 ## 正式部署
@@ -262,4 +262,8 @@
 - 2026-09-10：用户授权提交并部署法语版本。
 - `npm run build:production` 通过：406 个页面、405 个 sitemap URL、28,993 个本地引用，9 种语言各 41 篇教程；页面和语言校验均为 0 错误。
 - 沿用素材版本 `c5dcf79585974e0e`；Vercel 与腾讯云两端各 526 个素材清单校验一致，没有发布新素材或修改 CDN 配置。
-- 推送后通过现有 GitHub Pages 工作流部署，待记录工作流结果和正式域名验证。
+- 实现提交 [`073fa29`](https://github.com/Nightonke/ClipDock-Landing/commit/073fa297178b44e7a949d462fca13a786e024a72) 已推送 `main`。[Actions #22](https://github.com/Nightonke/ClipDock-Landing/actions/runs/34437271063) 构建与部署均成功，完成于 2026-09-10 04:28:45 UTC。
+- [法语首页](https://clipdock.video/fr/)、[教程索引](https://clipdock.video/fr/articles/)、41 篇教程和两页法律正文均返回 200，45 页线上 HTML 与本地正式构建逐字节一致。英文与德语首页、两个 sitemap 文件同样一致，共 49 项 HTTP/内容检查通过。
+- 正式域名浏览器验证：首页 1440 / 375 px 和裁框教程 375 px 显示正常；首页 5 个视频元素 readyState 均为 4、无媒体错误，教程已加载的 3 张 CDN 图片正常。裁框教程法语 → 英语 → 法语切换保持 slug；未捕获 JavaScript 错误为 0。独立测试浏览器已关闭。
+- 线上结果见 [HTTP、工作流和浏览器记录](fr/live-verification.json)；截图见 [桌面首页](fr/live-home-1440.png)、[手机首页](fr/live-home-375.png)、[手机教程](fr/live-article-375.png)。
+- 上线记录另作纯文档提交并使用 `[skip ci]`，不重复触发页面部署。App 仓库、App Store 资料和素材服务配置均未修改。

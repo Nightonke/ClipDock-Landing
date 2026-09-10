@@ -1,0 +1,465 @@
+{
+  "checked_at": "2026-09-10T04:29:24.129915+00:00",
+  "source_commit": "073fa297178b44e7a949d462fca13a786e024a72",
+  "french_pages": 45,
+  "results": [
+    {
+      "url": "https://clipdock.video/fr/articles/add-watermark-video-iphone/",
+      "status": 200,
+      "bytes": 25798,
+      "sha256": "bb452654bccecdae394fac9a7164905001d48b30dbea42fadf707bb91548d287",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/batch-download-bilibili-collection-iphone/",
+      "status": 200,
+      "bytes": 27190,
+      "sha256": "483182a0994dcced20ca7b7fb14651057c57b4324023d97ded956047fb640ad4",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/batch-download-bilibili-profile-iphone/",
+      "status": 200,
+      "bytes": 28257,
+      "sha256": "ee38db13cfe2ac0aa9092e298629c4fd37076993529ddb9527737c0f1cff8ea8",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/batch-download-douyin-profile-iphone/",
+      "status": 200,
+      "bytes": 27584,
+      "sha256": "83ef2bf3861162eafa7a068a634ecfb0db7c680e29772f69e7db1a280c7e9756",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/batch-download-instagram-hashtag-iphone/",
+      "status": 200,
+      "bytes": 25550,
+      "sha256": "999e7b13ffb7d0cc00c34f48a742912161fbd7309953d8caffde80e71cdca6f8",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/batch-download-instagram-profile-iphone/",
+      "status": 200,
+      "bytes": 27627,
+      "sha256": "9c7457c91e4f304744e1483367301ddcf28ae25e8220cb54351f2005b98c9286",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/batch-download-tiktok-hashtag-iphone/",
+      "status": 200,
+      "bytes": 24884,
+      "sha256": "8b7e209838d74bd79e6962a2fd6ac16eb363d5347407f6850318f6d8e34b92d2",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/batch-download-tiktok-profile-iphone/",
+      "status": 200,
+      "bytes": 27744,
+      "sha256": "b5ec93be68ab202be480bdc5f153cc44d6e963217bb09a4b9d675dde11629369",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/batch-download-weibo-profile-iphone/",
+      "status": 200,
+      "bytes": 27167,
+      "sha256": "32b1d390ecdb71e646907db16002960a8c52a34feec0d65e396531bac0fee3f0",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/batch-download-youtube-channel-iphone/",
+      "status": 200,
+      "bytes": 27544,
+      "sha256": "232df721c1587140f63fb9fae137ce0b795e44551c1d2139cadaa3891f3ef9d0",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/batch-download-youtube-hashtag-iphone/",
+      "status": 200,
+      "bytes": 25627,
+      "sha256": "52a1640c1484136aca03e9446341ad75c916e4c4e0739d0c68b1bd52bafab215",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/batch-download-youtube-shorts-iphone/",
+      "status": 200,
+      "bytes": 25026,
+      "sha256": "751d602cb777658f5d7a0138673dd9dc877bd4b96c247f12b772889fe4d43e8b",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/capture-video-frames-iphone/",
+      "status": 200,
+      "bytes": 23211,
+      "sha256": "8f7b84031eaed62bcac831145bbb10f21764de6c8ad1f825a40dbb5fdca4995c",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/change-video-md5-iphone/",
+      "status": 200,
+      "bytes": 21162,
+      "sha256": "43ab3bb8c53b7b3f4a8b1c89305e37e5811754a8e13a6413045dba706364265c",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/change-video-speed-iphone/",
+      "status": 200,
+      "bytes": 23352,
+      "sha256": "0ab28f10ae8a7971794d92243e354a15658aee40a1a17deef7328ad541722ca9",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/copy-link-auto-download-iphone/",
+      "status": 200,
+      "bytes": 22733,
+      "sha256": "52bd08bdba3ae607d150e8b67383f73c795eb8c0dd339a6cc858d4eba777ae14",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/copy-tiktok-links-background/",
+      "status": 200,
+      "bytes": 22271,
+      "sha256": "c393fd69c7fcc4bc66272a673e66dd2d42b34ceaeda0d4a3a84cba89de2fe65a",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/download-bilibili-video-iphone/",
+      "status": 200,
+      "bytes": 27160,
+      "sha256": "0f54b23440435c60bdfacdd3816483b4b36cd3847a190355cfbd369ecc045098",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/download-douyin-video-iphone/",
+      "status": 200,
+      "bytes": 23029,
+      "sha256": "b4dbc481db5be61690ab26e5ae2b48e28befb48160fb8da59f6f346541113ff2",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/download-facebook-video-iphone/",
+      "status": 200,
+      "bytes": 26367,
+      "sha256": "7606c961313c7ebb280cd1e3ffb18e9fc7343582009a2d8adafb23e902b9b3f9",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/download-instagram-reels-iphone/",
+      "status": 200,
+      "bytes": 22768,
+      "sha256": "666b4664f7a78c06eae63bb7dc9b3ca7adf862b9612b9ea0f408976c20a885ea",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/download-tiktok-video-iphone/",
+      "status": 200,
+      "bytes": 23148,
+      "sha256": "50445b4cf2ae5267a7605504f7935ce20c1dbfa886d05763bb5dc104b9a14a67",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/download-x-twitter-video-iphone/",
+      "status": 200,
+      "bytes": 24405,
+      "sha256": "318bf50d670dc8f56f87054267484fac7521e10baf2ed6800fc81fa63c79f6aa",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/download-xiaohongshu-video-iphone/",
+      "status": 200,
+      "bytes": 24235,
+      "sha256": "d32f11ea33df30a8a2313a6ba80f8e1bf5a48b2671c04c601629179a0456eb48",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/download-youtube-playlist-iphone/",
+      "status": 200,
+      "bytes": 23994,
+      "sha256": "7bd8b9cc6a99d316c72227d8be20bf89519fa8a9eaeba47af8e87a2bf3bd9a6f",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/download-youtube-video-iphone/",
+      "status": 200,
+      "bytes": 24881,
+      "sha256": "308ffabfa293202d343aa3f0786e89dd4143e7004ebc900044490be57f50da90",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/edit-video-audio-iphone/",
+      "status": 200,
+      "bytes": 23391,
+      "sha256": "4119842acc183d514b81c22d02368938f5759420ba31684337197138e695b72d",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/extract-audio-iphone/",
+      "status": 200,
+      "bytes": 22568,
+      "sha256": "b05709969c73272c144ea5acbc909a2b8fa0f3540692d7b85878eb39cf7f2384",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/extract-youtube-subtitles-iphone/",
+      "status": 200,
+      "bytes": 26715,
+      "sha256": "233b7a9f5dae16909cd666614b28fd324c8a3a8aae6b51344b3987bd9c123339",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/",
+      "status": 200,
+      "bytes": 28831,
+      "sha256": "02e0f3a118fdba16f0e65b78a2de727b2e53c8995dc1db8d8e29172958f99d17",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/interleave-videos-iphone/",
+      "status": 200,
+      "bytes": 25909,
+      "sha256": "7f9a43e8d7f3a0c205509cc7ddc5276bc01e7319cdea4c79ef65f42204cd7be3",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/join-videos-iphone/",
+      "status": 200,
+      "bytes": 30497,
+      "sha256": "1bda819a8a953284f31600b454ed972a1f98f664d12891492c7a5130571cf233",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/merge-audio-video-iphone/",
+      "status": 200,
+      "bytes": 26674,
+      "sha256": "997794db6ac5aa14ffdda66e58924a77e70bdd8c51da650e2456d76ca6472d1a",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/mirror-video-iphone/",
+      "status": 200,
+      "bytes": 23913,
+      "sha256": "1aeea4d2698eaf8b7f843a14619b577427e14b5ce1955ccaf1a998f554ceb9e1",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/resize-video-iphone/",
+      "status": 200,
+      "bytes": 25522,
+      "sha256": "66f3d036c8f89ae3cfcd878b8aa118ab6b98051d643df74d1e43e067f4b37c78",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/reverse-video-iphone/",
+      "status": 200,
+      "bytes": 22775,
+      "sha256": "80a3dbad9644cb271a9facd2556fa6db53a64650e22d7fc1544e4e49b3f53508",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/rotate-video-iphone/",
+      "status": 200,
+      "bytes": 22670,
+      "sha256": "eaa885da5ac73c7d329b0dfebe32383bb25198f94474bede39869ff3bc571d30",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/segment-grid-video-iphone/",
+      "status": 200,
+      "bytes": 25880,
+      "sha256": "aa2f87b80365a4cf98c4bfb39c0157628a13c136259f8f067a5847f427e37d81",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/transcode-video-iphone/",
+      "status": 200,
+      "bytes": 26229,
+      "sha256": "bd6ffac038f11817249d59b99c9ffc23682399dfc92385e1988b19a6a64d3371",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/trim-video-iphone/",
+      "status": 200,
+      "bytes": 23235,
+      "sha256": "775f6fa96eb064c8fc9959879e0b2476d760f346c6facf8bc62dc1ffd693362c",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/video-to-gif-iphone/",
+      "status": 200,
+      "bytes": 24981,
+      "sha256": "0467c1acb5314ee800544c6c411250a9472faf193d74ef49c1ed4ab728b81fc8",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/articles/video-to-live-photo-iphone/",
+      "status": 200,
+      "bytes": 24768,
+      "sha256": "dc702bec508527de9663da5ed6bca44d65d9d354cb0225c53a9bc403a3b36f38",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/",
+      "status": 200,
+      "bytes": 56194,
+      "sha256": "c5488e6a35a8450048b654b107acc960e41ad3e588b2d6ffc58f8356874bf3f4",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/privacy/",
+      "status": 200,
+      "bytes": 19678,
+      "sha256": "bb2c8f0ef4b34be1e4746026c35daa9247f1618e72a29bb5ca4ad1de7fb80480",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/fr/terms/",
+      "status": 200,
+      "bytes": 20146,
+      "sha256": "dc9ecc654eb41ab20d97a64387fe95a3de2f2072caee804196822cec1e28ddb3",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/",
+      "status": 200,
+      "bytes": 51117,
+      "sha256": "32bb1b326fdc5f00c59f5f1ad5e19beee5e7fb0843b551be53d7aae2f5ff536f",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/de/",
+      "status": 200,
+      "bytes": 55586,
+      "sha256": "d0833a317427b497beb4fccbfe4f39543ffb4f0179c4bbf2c6731f5325b72fd4",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/sitemap-index.xml",
+      "status": 200,
+      "bytes": 185,
+      "sha256": "2d6b80ed4cd0fec1b2c9b82f2568e6806c9c1a50c0486122102308cdcfd83807",
+      "matches_local_production": true
+    },
+    {
+      "url": "https://clipdock.video/sitemap-0.xml",
+      "status": 200,
+      "bytes": 34633,
+      "sha256": "6dfad1b9368bee512726078a3ceb40be9f83a9abfdf5de645b11d472ca817c8b",
+      "matches_local_production": true
+    }
+  ],
+  "workflow": {
+    "id": 34437271063,
+    "number": 22,
+    "url": "https://github.com/Nightonke/ClipDock-Landing/actions/runs/34437271063",
+    "status": "completed",
+    "conclusion": "success",
+    "build": "success",
+    "deploy": "success",
+    "completed_at": "2026-09-10T04:28:45Z"
+  },
+  "browser": {
+    "home": {
+      "brokenImages": [],
+      "canonical": "https://clipdock.video/fr/",
+      "documentWidth": 1440,
+      "lang": "fr",
+      "url": "https://clipdock.video/fr/",
+      "videos": [
+        {
+          "error": null,
+          "readyState": 4,
+          "src": "https://assets.clipdock.video/releases/c5dcf79585974e0e/assets/demos/share-link.mp4"
+        },
+        {
+          "error": null,
+          "readyState": 4,
+          "src": "https://assets.clipdock.video/releases/c5dcf79585974e0e/assets/demos/share-link.mp4"
+        },
+        {
+          "error": null,
+          "readyState": 4,
+          "src": "https://assets.clipdock.video/releases/c5dcf79585974e0e/assets/demos/copy-background.mp4"
+        },
+        {
+          "error": null,
+          "readyState": 4,
+          "src": "https://assets.clipdock.video/releases/c5dcf79585974e0e/assets/demos/web-long-press.mp4"
+        },
+        {
+          "error": null,
+          "readyState": 4,
+          "src": "https://assets.clipdock.video/releases/c5dcf79585974e0e/assets/demos/batch-playlist.mp4"
+        }
+      ],
+      "width": 1440
+    },
+    "article": {
+      "documentWidth": 375,
+      "images": [
+        {
+          "src": "https://clipdock.video/assets/clipdock-app-icon.png",
+          "width": 512
+        },
+        {
+          "src": "https://assets.clipdock.video/releases/c5dcf79585974e0e/assets/optimized/7d2e80a06acf7c08-480.webp",
+          "width": 240
+        },
+        {
+          "src": "https://assets.clipdock.video/releases/c5dcf79585974e0e/assets/optimized/45e5285352e937ea-480.webp",
+          "width": 240
+        },
+        {
+          "src": "https://assets.clipdock.video/releases/c5dcf79585974e0e/assets/optimized/7307530998f37a5a-480.webp",
+          "width": 240
+        }
+      ],
+      "lang": "fr",
+      "languageLinks": [
+        {
+          "href": "https://clipdock.video/articles/resize-video-iphone/",
+          "label": "English"
+        },
+        {
+          "href": "https://clipdock.video/zh-Hans/articles/resize-video-iphone/",
+          "label": "简体中文"
+        },
+        {
+          "href": "https://clipdock.video/zh-Hant/articles/resize-video-iphone/",
+          "label": "繁體中文"
+        },
+        {
+          "href": "https://clipdock.video/ja/articles/resize-video-iphone/",
+          "label": "日本語"
+        },
+        {
+          "href": "https://clipdock.video/ko/articles/resize-video-iphone/",
+          "label": "한국어"
+        },
+        {
+          "href": "https://clipdock.video/es/articles/resize-video-iphone/",
+          "label": "Español"
+        },
+        {
+          "href": "https://clipdock.video/pt-BR/articles/resize-video-iphone/",
+          "label": "Português (Brasil)"
+        },
+        {
+          "href": "https://clipdock.video/de/articles/resize-video-iphone/",
+          "label": "Deutsch"
+        },
+        {
+          "href": "https://clipdock.video/fr/articles/resize-video-iphone/",
+          "label": "Français"
+        }
+      ],
+      "url": "https://clipdock.video/fr/articles/resize-video-iphone/",
+      "width": 375
+    },
+    "language_switch": [
+      "https://clipdock.video/fr/articles/resize-video-iphone/",
+      "https://clipdock.video/articles/resize-video-iphone/",
+      "https://clipdock.video/fr/articles/resize-video-iphone/"
+    ],
+    "uncaught_javascript_errors": []
+  }
+}
