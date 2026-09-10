@@ -1,6 +1,5 @@
 ---
 import { responsiveImageHtml } from "@/lib/responsive-image";
-import OrangePhoneFrame from "./OrangePhoneFrame.astro";
 import { siteUI } from "@/i18n/site-ui";
 import type { Locale } from "@/i18n/locales";
 interface Props { locale?: Locale }
@@ -11,7 +10,7 @@ const slides = ["paste-link", "extracting", "select-tracks", "select-format", "e
 <div class="subtitle-carousel" role="region" aria-roledescription={ui.carousel} aria-label={ui.subtitleSteps}>
  <div class="subtitle-slides">
   {slides.map((slide, index) => (
-   <div class="subtitle-slide" hidden={index !== 0} data-title={slide.title}><OrangePhoneFrame><img {...responsiveImageHtml(`/assets/tutorials/youtube-subtitles/${slide.file}.webp`, "(max-width: 700px) 240px, 320px")} alt={slide.title} width="1320" height="2868" loading="lazy" decoding="async" /></OrangePhoneFrame></div>
+   <div class="subtitle-slide" hidden={index !== 0} data-title={slide.title}><img {...responsiveImageHtml(`/assets/tutorials/youtube-subtitles/${slide.file}-orange.webp`, "(max-width: 700px) 240px, 320px")} alt={slide.title} width="1319" height="2748" loading="lazy" decoding="async" /></div>
   ))}
  </div>
  <div class="subtitle-progress" role="group" aria-label={ui.chooseStep}>
@@ -30,6 +29,7 @@ const slides = ["paste-link", "extracting", "select-tracks", "select-format", "e
  .subtitle-carousel { width: 100%; }
  .subtitle-slides { aspect-ratio: 1319 / 2748; }
  .subtitle-slide[hidden] { display: none; }
+ .subtitle-slide img { display: block; width: 100%; height: auto; }
  .subtitle-progress { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; margin-top: 4px; }
  .subtitle-segment { display: flex; align-items: center; min-width: 0; height: 32px; padding: 0; border: 0; background: transparent; cursor: pointer; }
  .segment-track { display: block; width: 100%; height: 3px; overflow: hidden; border-radius: 99px; background: rgba(23,25,22,.18); }

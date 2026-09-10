@@ -1377,134 +1377,160 @@ export const tutorialStructure = [
 ];
 export const screenshotAssets: Record<string, { src?: string; width?: number; height?: number; framed?: boolean; video?: string; poster?: string; highlight?: { x: number; y: number; width: number; height: number } }> = {
   "bilibili-collection-copy": {
-    "src": "/assets/tutorials/bilibili-collection/copy-link.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/bilibili-collection/copy-link-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "bilibili-collection-input": {
-    "src": "/assets/tutorials/bilibili-collection/input.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/bilibili-collection/input-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "bilibili-collection-loading": {
-    "src": "/assets/tutorials/bilibili-collection/loading.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/bilibili-collection/loading-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "bilibili-collection-select": {
-    "src": "/assets/tutorials/bilibili-collection/select.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/bilibili-collection/select-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "bilibili-collection-queue": {
-    "src": "/assets/tutorials/bilibili-collection/queue.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/bilibili-collection/queue-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "tiktok-hashtag-input": {
-    "src": "/assets/tutorials/tiktok-hashtag/input.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/tiktok-hashtag/input-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "tiktok-hashtag-loading": {
-    "src": "/assets/tutorials/tiktok-hashtag/loading.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/tiktok-hashtag/loading-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "tiktok-hashtag-select": {
-    "src": "/assets/tutorials/tiktok-hashtag/select.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/tiktok-hashtag/select-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "tiktok-hashtag-queue": {
-    "src": "/assets/tutorials/tiktok-hashtag/queue.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/tiktok-hashtag/queue-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "instagram-hashtag-input": {
-    "src": "/assets/tutorials/instagram-hashtag/input.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/instagram-hashtag/input-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "instagram-hashtag-loading": {
-    "src": "/assets/tutorials/instagram-hashtag/loading.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/instagram-hashtag/loading-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "instagram-hashtag-select": {
-    "src": "/assets/tutorials/instagram-hashtag/select.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/instagram-hashtag/select-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "instagram-hashtag-queue": {
-    "src": "/assets/tutorials/instagram-hashtag/queue.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/instagram-hashtag/queue-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "youtube-shorts-input": {
-    "src": "/assets/tutorials/youtube-shorts/input.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-shorts/input-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "youtube-shorts-loading": {
-    "src": "/assets/tutorials/youtube-shorts/loading.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-shorts/loading-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "youtube-shorts-select": {
-    "src": "/assets/tutorials/youtube-shorts/select.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-shorts/select-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "youtube-shorts-queue": {
-    "src": "/assets/tutorials/youtube-shorts/queue.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-shorts/queue-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "youtube-hashtag-input": {
-    "src": "/assets/tutorials/youtube-hashtag/input.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-hashtag/input-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "youtube-hashtag-loading": {
-    "src": "/assets/tutorials/youtube-hashtag/loading.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-hashtag/loading-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "youtube-hashtag-select": {
-    "src": "/assets/tutorials/youtube-hashtag/select.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-hashtag/select-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "youtube-hashtag-queue": {
-    "src": "/assets/tutorials/youtube-hashtag/queue.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-hashtag/queue-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "youtube-channel-copy": {
-    "src": "/assets/tutorials/youtube-channel/copy-link.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-channel/copy-link-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "youtube-channel-input": {
-    "src": "/assets/tutorials/youtube-channel/input.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-channel/input-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "youtube-channel-loading": {
-    "src": "/assets/tutorials/youtube-channel/loading.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-channel/loading-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "youtube-channel-select": {
-    "src": "/assets/tutorials/youtube-channel/select.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-channel/select-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "youtube-channel-queue": {
-    "src": "/assets/tutorials/youtube-channel/queue.PNG",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-channel/queue-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "bilibili-copy-link-orange": {
     "src": "/assets/tutorials/bilibili/copy-link-orange.webp",
@@ -2149,29 +2175,34 @@ export const screenshotAssets: Record<string, { src?: string; width?: number; he
     "framed": true
   },
   "subtitles-paste-link": {
-    "src": "/assets/tutorials/youtube-subtitles/paste-link.webp",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-subtitles/paste-link-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "subtitles-extracting": {
-    "src": "/assets/tutorials/youtube-subtitles/extracting.webp",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-subtitles/extracting-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "subtitles-select-tracks": {
-    "src": "/assets/tutorials/youtube-subtitles/select-tracks.webp",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-subtitles/select-tracks-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "subtitles-select-format": {
-    "src": "/assets/tutorials/youtube-subtitles/select-format.webp",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-subtitles/select-format-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "subtitles-export": {
-    "src": "/assets/tutorials/youtube-subtitles/export.webp",
-    "width": 1320,
-    "height": 2868
+    "src": "/assets/tutorials/youtube-subtitles/export-orange.webp",
+    "width": 1319,
+    "height": 2748,
+    "framed": true
   },
   "playlist-input-orange": {
     "src": "/assets/tutorials/youtube-playlist/input-orange.webp",

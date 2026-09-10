@@ -10,6 +10,10 @@
 
 ## 本地归档（不部署、不入 Git）
 
+2026-09-10：以下 7 组教程共 31 张截图已统一为自带橙色手机壳的 `*-orange.webp`：YouTube Shorts、YouTube 话题、YouTube 频道、Instagram 话题、TikTok 话题、B 站合集和 YouTube 字幕提取。使用 NVideo 的 `Tools/AppStoreScreenshotFramer/add_iphone_frame.py --frame orange` 生成透明 PNG，再转换为无损 WebP，尺寸为 `1319×2748`。文章素材设置 `framed: true`；首页字幕轮播直接使用同一批带框图片，不再叠加外壳。
+
+这批原图保存在 `references/tutorial-originals/<分组>/`，加框 PNG 保存在 `references/tutorial-framed/<分组>/`。公开素材目录仅保留新版本，避免继续发布未使用的原图。发布这次变更时，须先发布新的媒体 release 并更新 `deployment.json`，再发布网站；旧媒体 release 不受本地归档影响。
+
 以下确认未引用的旧图片已移到 `references/unused-tutorial-images/`，需要时可恢复：
 
 - `extract-audio/process.png`
