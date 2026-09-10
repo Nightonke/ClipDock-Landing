@@ -32,6 +32,14 @@ html[lang="ja"] :is(h1, h2, h3, summary, .footer-links) {
 	text-transform: none;
 }
 
+/* Spanish prose keeps words intact; long links still have an emergency wrap. */
+html[lang="es"] { word-break: normal; overflow-wrap: anywhere; }
+html[lang="es"] :is(h1, h2, h3, summary, .button, .footer-links, .eyebrow, .section-kicker) {
+	text-transform: none;
+	word-break: normal;
+	overflow-wrap: normal;
+}
+
 /* Keep Korean spacing intact; long URLs can still wrap inside prose. */
 html[lang="ko"] {
 	--display: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;

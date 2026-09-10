@@ -1,3 +1,4 @@
+import { captions as esCaptions } from "../i18n/es/demo-captions";
 import { captions as koCaptions } from "../i18n/ko/demo-captions";
 import { captions as jaCaptions } from "../i18n/ja/demo-captions";
 import { captions as enCaptions } from '../i18n/en-US/demo-captions';
@@ -6,7 +7,7 @@ import { captions as zhCaptions } from '../i18n/zh-Hans/demo-captions';
 import { demoTimings } from './demo-timings';
 import type { PublishedLocale } from '../i18n/locales';
 
-const captions: Record<PublishedLocale, Record<string, string[]>> = { 'en-US': enCaptions, 'zh-Hans': zhCaptions, 'zh-Hant': hantCaptions, ja: jaCaptions, ko: koCaptions };
+const captions: Record<PublishedLocale, Record<string, string[]>> = { 'en-US': enCaptions, 'zh-Hans': zhCaptions, 'zh-Hant': hantCaptions, ja: jaCaptions, ko: koCaptions, es: esCaptions };
 export interface DemoCaption { start: number; end: number; text: string }
 for (const [locale, copy] of Object.entries(captions)) {
  for (const [src, cues] of Object.entries(demoTimings)) {

@@ -1,0 +1,2388 @@
+{
+  "date": "2026-09-10",
+  "sourceCommit": "b24dd90702a7b240a3f2f17ff1ad8a68b3ddd7f2",
+  "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+  "layoutScan": [
+    {
+      "url": "/es/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/privacy/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/terms/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-tiktok-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-douyin-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-facebook-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-xiaohongshu-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-bilibili-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-youtube-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-instagram-reels-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-x-twitter-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/copy-link-auto-download-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/copy-tiktok-links-background/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-bilibili-collection-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-tiktok-hashtag-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-instagram-hashtag-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-youtube-shorts-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-youtube-hashtag-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-youtube-channel-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-youtube-playlist-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-instagram-profile-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-tiktok-profile-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-douyin-profile-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-weibo-profile-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-bilibili-profile-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/extract-youtube-subtitles-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/video-to-gif-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/video-to-live-photo-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/transcode-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/trim-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/join-videos-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/interleave-videos-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/segment-grid-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/resize-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/rotate-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/mirror-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/reverse-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/change-video-speed-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/edit-video-audio-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/add-watermark-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/capture-video-frames-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/extract-audio-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/change-video-md5-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/merge-audio-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/privacy/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/terms/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-tiktok-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-douyin-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-facebook-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-xiaohongshu-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-bilibili-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-youtube-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-instagram-reels-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-x-twitter-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/copy-link-auto-download-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/copy-tiktok-links-background/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-bilibili-collection-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-tiktok-hashtag-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-instagram-hashtag-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-youtube-shorts-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-youtube-hashtag-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-youtube-channel-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-youtube-playlist-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-instagram-profile-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-tiktok-profile-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-douyin-profile-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-weibo-profile-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-bilibili-profile-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/extract-youtube-subtitles-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/video-to-gif-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/video-to-live-photo-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/transcode-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/trim-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/join-videos-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/interleave-videos-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/segment-grid-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/resize-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/rotate-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/mirror-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/reverse-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/change-video-speed-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/edit-video-audio-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/add-watermark-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/capture-video-frames-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/extract-audio-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/change-video-md5-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/merge-audio-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/privacy/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/terms/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-tiktok-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-douyin-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-facebook-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-xiaohongshu-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-bilibili-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-youtube-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-instagram-reels-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-x-twitter-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/copy-link-auto-download-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/copy-tiktok-links-background/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-bilibili-collection-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-tiktok-hashtag-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-instagram-hashtag-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-youtube-shorts-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-youtube-hashtag-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-youtube-channel-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-youtube-playlist-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-instagram-profile-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-tiktok-profile-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-douyin-profile-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-weibo-profile-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-bilibili-profile-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/extract-youtube-subtitles-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/video-to-gif-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/video-to-live-photo-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/transcode-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/trim-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/join-videos-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/interleave-videos-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/segment-grid-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/resize-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/rotate-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/mirror-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/reverse-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/change-video-speed-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/edit-video-audio-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/add-watermark-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/capture-video-frames-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/extract-audio-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/change-video-md5-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/merge-audio-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/privacy/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/terms/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-tiktok-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-douyin-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-facebook-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-xiaohongshu-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-bilibili-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-youtube-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-instagram-reels-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-x-twitter-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/copy-link-auto-download-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/copy-tiktok-links-background/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-bilibili-collection-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-tiktok-hashtag-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-instagram-hashtag-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-youtube-shorts-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-youtube-hashtag-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-youtube-channel-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-youtube-playlist-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-instagram-profile-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-tiktok-profile-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-douyin-profile-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-weibo-profile-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-bilibili-profile-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/extract-youtube-subtitles-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/video-to-gif-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/video-to-live-photo-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/transcode-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/trim-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/join-videos-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/interleave-videos-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/segment-grid-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/resize-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/rotate-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/mirror-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/reverse-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/change-video-speed-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/edit-video-audio-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/add-watermark-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/capture-video-frames-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/extract-audio-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/change-video-md5-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/merge-audio-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/privacy/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/terms/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-tiktok-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-douyin-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-facebook-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-xiaohongshu-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-bilibili-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-youtube-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-instagram-reels-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-x-twitter-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/copy-link-auto-download-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/copy-tiktok-links-background/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-bilibili-collection-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-tiktok-hashtag-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-instagram-hashtag-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-youtube-shorts-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-youtube-hashtag-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-youtube-channel-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/download-youtube-playlist-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-instagram-profile-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-tiktok-profile-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-douyin-profile-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-weibo-profile-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/batch-download-bilibili-profile-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/extract-youtube-subtitles-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/video-to-gif-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/video-to-live-photo-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/transcode-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/trim-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/join-videos-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/interleave-videos-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/segment-grid-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/resize-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/rotate-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/mirror-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/reverse-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/change-video-speed-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/edit-video-audio-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/add-watermark-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/capture-video-frames-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/extract-audio-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/change-video-md5-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/merge-audio-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    }
+  ],
+  "finalChangedPagesAndRegression": [
+    {
+      "url": "/es/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/mirror-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/change-video-speed-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/es/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/mirror-video-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/change-video-speed-iphone/",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "url": "/es/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/mirror-video-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/change-video-speed-iphone/",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "url": "/es/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/mirror-video-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/change-video-speed-iphone/",
+      "width": 1024,
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "url": "/es/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/mirror-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/es/articles/change-video-speed-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/articles/transcode-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/zh-Hans/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/zh-Hans/articles/transcode-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/zh-Hant/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/zh-Hant/articles/transcode-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/ja/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/ja/articles/transcode-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/ko/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/ko/articles/transcode-video-iphone/",
+      "width": 375,
+      "documentWidth": 375,
+      "overflow": []
+    },
+    {
+      "url": "/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/articles/transcode-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/zh-Hans/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/zh-Hans/articles/transcode-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/zh-Hant/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/zh-Hant/articles/transcode-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/ja/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/ja/articles/transcode-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/ko/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/ko/articles/transcode-video-iphone/",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": []
+    }
+  ],
+  "captions": [
+    {
+      "src": "/assets/demos/share-link.mp4",
+      "cue": 0,
+      "caption": "Abre el menú para compartir el vídeo y toca «Copiar enlace».",
+      "error": null,
+      "ready": 4,
+      "time": 0.05
+    },
+    {
+      "src": "/assets/demos/share-link.mp4",
+      "cue": 1,
+      "caption": "Vuelve a ClipDock para rellenar el enlace desde el portapapeles.",
+      "error": null,
+      "ready": 4,
+      "time": 4.05
+    },
+    {
+      "src": "/assets/demos/share-link.mp4",
+      "cue": 2,
+      "caption": "Toca «Extraer» para detectar el vídeo del enlace.",
+      "error": null,
+      "ready": 4,
+      "time": 6.05
+    },
+    {
+      "src": "/assets/demos/share-link.mp4",
+      "cue": 3,
+      "caption": "La descarga comienza tras la detección. Consulta el progreso en «Gestión».",
+      "error": null,
+      "ready": 4,
+      "time": 8.05
+    },
+    {
+      "src": "/assets/demos/copy-background.mp4",
+      "cue": 0,
+      "caption": "Activa «Enlaces de descarga automática» y «Detectar en segundo plano».",
+      "error": null,
+      "ready": 4,
+      "time": 0.05
+    },
+    {
+      "src": "/assets/demos/copy-background.mp4",
+      "cue": 1,
+      "caption": "Vuelve a la app de vídeos y mantén activa la ventana de imagen dentro de imagen.",
+      "error": null,
+      "ready": 4,
+      "time": 4.05
+    },
+    {
+      "src": "/assets/demos/copy-background.mp4",
+      "cue": 2,
+      "caption": "Cuando encuentres un vídeo, abre el menú para compartir y copia el enlace.",
+      "error": null,
+      "ready": 4,
+      "time": 6.05
+    },
+    {
+      "src": "/assets/demos/copy-background.mp4",
+      "cue": 3,
+      "caption": "Sigue viendo vídeos y copiando enlaces sin volver a ClipDock.",
+      "error": null,
+      "ready": 4,
+      "time": 10.05
+    },
+    {
+      "src": "/assets/demos/copy-background.mp4",
+      "cue": 4,
+      "caption": "Con las notificaciones activadas y autorizadas, recibirás avisos al iniciar descargas en segundo plano.",
+      "error": null,
+      "ready": 4,
+      "time": 15.05
+    },
+    {
+      "src": "/assets/demos/copy-background.mp4",
+      "cue": 5,
+      "caption": "Sigue explorando: cada enlace copiado crea una tarea de descarga.",
+      "error": null,
+      "ready": 4,
+      "time": 21.05
+    },
+    {
+      "src": "/assets/demos/web-long-press.mp4",
+      "cue": 0,
+      "caption": "Abre la página en el navegador integrado y reproduce el vídeo.",
+      "error": null,
+      "ready": 4,
+      "time": 0.05
+    },
+    {
+      "src": "/assets/demos/web-long-press.mp4",
+      "cue": 1,
+      "caption": "Consulta los vídeos detectados y toca el recurso que quieras.",
+      "error": null,
+      "ready": 4,
+      "time": 4.05
+    },
+    {
+      "src": "/assets/demos/web-long-press.mp4",
+      "cue": 2,
+      "caption": "Tras verificar el recurso, se crea la tarea de descarga.",
+      "error": null,
+      "ready": 4,
+      "time": 6.05
+    },
+    {
+      "src": "/assets/demos/web-long-press.mp4",
+      "cue": 3,
+      "caption": "Abre «Gestión» para consultar el progreso de la descarga.",
+      "error": null,
+      "ready": 4,
+      "time": 10.05
+    },
+    {
+      "src": "/assets/demos/web-long-press.mp4",
+      "cue": 4,
+      "caption": "Cuando termine, abre la vista previa o guarda el vídeo en Fotos.",
+      "error": null,
+      "ready": 4,
+      "time": 16.05
+    },
+    {
+      "src": "/assets/demos/batch-playlist.mp4",
+      "cue": 0,
+      "caption": "Pega el enlace de la lista de reproducción en «Lote».",
+      "error": null,
+      "ready": 4,
+      "time": 0.05
+    },
+    {
+      "src": "/assets/demos/batch-playlist.mp4",
+      "cue": 1,
+      "caption": "Toca «Cargar lista» para detectar sus vídeos.",
+      "error": null,
+      "ready": 4,
+      "time": 3.05
+    },
+    {
+      "src": "/assets/demos/batch-playlist.mp4",
+      "cue": 2,
+      "caption": "Selecciona los vídeos que quieras y añádelos juntos a la cola.",
+      "error": null,
+      "ready": 4,
+      "time": 5.05
+    },
+    {
+      "src": "/assets/demos/batch-playlist.mp4",
+      "cue": 3,
+      "caption": "Consulta el progreso de las descargas en «Gestión».",
+      "error": null,
+      "ready": 4,
+      "time": 8.05
+    }
+  ],
+  "languageSwitching": {
+    "switching_375": "es → en-US/zh-Hans/zh-Hant/ja/ko → es; slug preserved",
+    "switching_1440": "es → en-US/zh-Hans/zh-Hant/ja/ko → es; slug preserved"
+  },
+  "subtitleControls": {
+    "pause_before": "Pausar el carrusel automático",
+    "pause_after": "Activar el carrusel automático",
+    "subtitle_last": "5 / 5 · Guarda en Archivos o comparte",
+    "resumed": "Pausar el carrusel automático"
+  },
+  "heroDemos": [
+    {
+      "active": "Descarga desde enlaces compartidos",
+      "caption": "Abre el menú para compartir el vídeo y toca «Copiar enlace».",
+      "ready": 4,
+      "src": "/assets/demos/share-link.mp4"
+    },
+    {
+      "active": "Copia y descarga en segundo plano",
+      "caption": "Activa «Enlaces de descarga automática» y «Detectar en segundo plano».",
+      "ready": 4,
+      "src": "/assets/demos/copy-background.mp4"
+    },
+    {
+      "active": "Mantén pulsado para descargar de la web",
+      "caption": "Abre la página en el navegador integrado y reproduce el vídeo.",
+      "ready": 4,
+      "src": "/assets/demos/web-long-press.mp4"
+    },
+    {
+      "active": "Descarga listas de reproducción por lotes",
+      "caption": "Pega el enlace de la lista de reproducción en «Lote».",
+      "ready": 4,
+      "src": "/assets/demos/batch-playlist.mp4"
+    }
+  ],
+  "videoFailure": {
+    "button": "Reintentar reproducción",
+    "hidden": false,
+    "status": "No se puede reproducir el vídeo ahora"
+  },
+  "videoRetry": {
+    "error": null,
+    "hidden": true,
+    "ready": 4
+  },
+  "expandedSections": 8,
+  "shared404": {
+    "body": "ERROR / 404\n\nPage not found\n\nThis page may have moved. Return to ClipDock for video downloads, captions, and video tools.\n\nBack to home\n\n返回简体中文首页\n\n返回繁體中文首頁",
+    "lang": "en",
+    "spanish": true
+  },
+  "structuredData": [
+    {
+      "path": "dist/es/index.html",
+      "types": [
+        "MobileApplication",
+        "Offer",
+        "AggregateRating",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer"
+      ],
+      "languages": []
+    },
+    {
+      "path": "dist/es/privacy/index.html",
+      "types": [],
+      "languages": []
+    },
+    {
+      "path": "dist/es/articles/index.html",
+      "types": [],
+      "languages": []
+    },
+    {
+      "path": "dist/es/terms/index.html",
+      "types": [],
+      "languages": []
+    },
+    {
+      "path": "dist/es/articles/batch-download-weibo-profile-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/copy-link-auto-download-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/batch-download-youtube-hashtag-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/download-tiktok-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/segment-grid-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/download-xiaohongshu-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/extract-audio-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/download-instagram-reels-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/extract-youtube-subtitles-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/edit-video-audio-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/batch-download-youtube-shorts-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/download-bilibili-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/video-to-live-photo-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/download-x-twitter-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/batch-download-youtube-channel-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/interleave-videos-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/reverse-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/download-youtube-playlist-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/batch-download-tiktok-hashtag-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/batch-download-bilibili-collection-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/batch-download-instagram-hashtag-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/mirror-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/batch-download-bilibili-profile-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/change-video-md5-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/batch-download-douyin-profile-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/capture-video-frames-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/change-video-speed-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/rotate-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/batch-download-tiktok-profile-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/resize-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/batch-download-instagram-profile-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/join-videos-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/trim-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/video-to-gif-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/merge-audio-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/transcode-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/download-facebook-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/download-douyin-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/copy-tiktok-links-background/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/download-youtube-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    },
+    {
+      "path": "dist/es/articles/add-watermark-video-iphone/index.html",
+      "types": [
+        "Article",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "languages": [
+        "es"
+      ]
+    }
+  ]
+}

@@ -146,3 +146,36 @@ test('Chinese heading segmentation preserves text, spaces, punctuation and regio
  const words = headingParts('影隨存連結與實況照片', 'zh-Hant');
  for (const word of ['影隨存', '連結', '實況照片']) assert.ok(words.includes(word));
 });
+
+test('Spanish covers independent prose, App actions, limits and legal pages', () => {
+ assert.equal(localeMeta.es.label, 'Español');
+ assert.equal(localeMeta.es.htmlLang, 'es');
+ assert.equal(localeMeta.es.hrefLang, 'es');
+ assert.equal(localeMeta.es.ogLocale, 'es_ES');
+ const inspect = (value, path = '') => {
+  if (typeof value === 'string') {
+   // These titles belong to the original screenshot, not untranslated instructions.
+   assert.doesNotMatch(value.replace(/背景音乐版|米娜舞蹈-大摆锤/g, ''), /[\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]/, path);
+  } else if (value && typeof value === 'object') {
+   for (const [key, child] of Object.entries(value)) inspect(child, `${path}/${key}`);
+  }
+ };
+ inspect(catalogs.es, 'catalog');
+ inspect(homeContent.es, 'home');
+ inspect(legalContent.es, 'legal');
+ const clipboard = JSON.stringify(catalogs.es.tutorialCopy['copy-link-auto-download-iphone']);
+ for (const label of ['Rellenar desde el Portapapeles', 'Enlaces de descarga automática', 'Detectar en segundo plano']) assert.ok(clipboard.includes(label), label);
+ for (const article of tutorialStructure.filter(a => a.category === 'batch')) {
+  assert.match(JSON.stringify(catalogs.es.tutorialCopy[article.slug]), /primeras 2 páginas/, article.slug);
+ }
+ for (const page of ['privacy', 'terms']) {
+  assert.ok(legalContent.es[page].content.length > 1000);
+  assert.doesNotMatch(legalContent.es[page].content, /\]\(\/(?:zh-|ja\/|ko\/)/);
+ }
+ const source = catalogs['en-US'];
+ const compareProse = (original, translated, path = '') => {
+  if (typeof original === 'string' && original.length > 80 && !original.startsWith('https://')) assert.notEqual(translated, original, path);
+  else if (original && typeof original === 'object') for (const [key, child] of Object.entries(original)) compareProse(child, translated?.[key], `${path}/${key}`);
+ };
+ compareProse(source, catalogs.es);
+});
