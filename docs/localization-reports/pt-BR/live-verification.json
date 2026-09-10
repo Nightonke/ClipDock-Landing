@@ -1,0 +1,339 @@
+{
+  "checked_at": "2026-09-10T02:40:22.715359+00:00",
+  "commit": "5658a8cfaa414bbf13be0b954484158147a5a54a",
+  "workflow_run": "https://github.com/Nightonke/ClipDock-Landing/actions/runs/34430159489",
+  "pages": [
+    {
+      "route": "/pt-BR/articles/add-watermark-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "630eb8d8143629e0270218ea4947f1f4649666d4136a4089f883f88181339ae5",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/batch-download-bilibili-collection-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "c1f3dc5dd6d28d9220c7bbf7ea6eebd2be1fa6122613f6e6443bf150e186c59b",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/batch-download-bilibili-profile-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "2ed2d758f76a050a356f770ba778bd584502fdb639cf11f39a8a019c689810fe",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/batch-download-douyin-profile-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "c8ff65d04326149fe98ab843badd1dc3cf0fdf52279375893003d1ab7645dc66",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/batch-download-instagram-hashtag-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "3ea53a91a35ada1cdb41bcf74b6d42203923d5d5305a8e7019de21880f298dd0",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/batch-download-instagram-profile-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "8b0342c30dd27d839b72f9dea59b53989935210bac87d9e4f0b73c89feb4be84",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/batch-download-tiktok-hashtag-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "b5c30f874a28dbea09ecf36ade4ba6551f2f09bd236cfc05bce087f5e1399153",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/batch-download-tiktok-profile-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "f8dfaddea9688c381d2b5ce7801d4d5b56aa0d4d4a1877fab7858214ffe7beb5",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/batch-download-weibo-profile-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "de72cec065d0f4a2c5514325ceb0885a775f07f5d87822a48afc3aaa3c88e5bd",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/batch-download-youtube-channel-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "175e613c019f8757cc04769bb92e05b30240f835850279787ed096467c59c3a6",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/batch-download-youtube-hashtag-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "98a47c92b78da95f98291a05c903d3d8ea2e952fddf458d59bcd8547b4cbdcd4",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/batch-download-youtube-shorts-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "f9f3d16efe966ffc60e74fc0d7b22560f4fe97b5a15d01631a45ed324ebfb5f6",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/capture-video-frames-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "83af26d3813d5f0d307fcf5a2b7645653a29a19a875b5699778d75126feacde0",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/change-video-md5-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "8dcce67f60f5f7bdf186be74bfdce741f7ce81af7bfbf275e9af297dc2e18435",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/change-video-speed-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "b66bae9fe67715c77accd257c6bcf7ade906245fc5bba414fc3dd0e1670958b8",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/copy-link-auto-download-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "8755c93f25a8793b9b04e274b93934c79615922e260380cf46adf9c22a783382",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/copy-tiktok-links-background/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "dc140a285a6c8c5c9291d31265573ceb62bd63f913c129e44477379d5d7f73d6",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/download-bilibili-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "7fdf2d3b19906bc9b37861386b6f9e66015bf5cc4982c27b720ab3a40c4d5436",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/download-douyin-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "bd4aed74beb926ca5a25dbe41aa8b0ac28a863372afb37aa639c1edb8759f67b",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/download-facebook-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "ae51b7b9ae67b746c7b65a5d7d0a974aeea0473b80cf2bab116b80a18efa05c5",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/download-instagram-reels-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "59fe3ea65afb05746ebb530320d3b8bdbee6b723c11dcb86026e2d55e42b4651",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/download-tiktok-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "d17a24275b648c886938ac1c0a1449aca4949801f2d116630c707a0c6cbbfd36",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/download-x-twitter-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "05d982fe396807b0e19328ab5b96e94dfc60eff6e96aff367d5113cb6e1fafde",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/download-xiaohongshu-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "8ae91a70cec36a7df431b93d9143f64730a7737c99dd26cc6445e4e0c3bb640c",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/download-youtube-playlist-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "cce4a4fdf04eaf1602d2276362ce33fe00f525637dbfc40f7665b224e2b09414",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/download-youtube-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "a3f057a091097202c4e02c04aafcb5d70c7c53592d01e853448518304d0ab02d",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/edit-video-audio-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "6c1891a90c6e663f603319ae3052c0721456b3c3918523ad49e68e2f6b2269a7",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/extract-audio-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "20e3bbdcef1efee6e984a545d983526c7ee3bd4d3af180bdfe136a53a57c289f",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/extract-youtube-subtitles-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "443b4da9cc3c5678cb3b54c1b3962c66fc0ca5333b4ce38eeb91b80471d872eb",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "9bd6f1dba0ace9eeae445faf96f6fa57e1c60d8a4086710dc124352a84aa5a5a",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/interleave-videos-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "cbaa567fc9dbc7efbc085cb89b990c6bd3ee3573a44f38a9780416d18b6b482c",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/join-videos-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "4537d0c28664649d61b974eb47e184f44ebcdbb3e3af39433a7853f291153112",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/merge-audio-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "04305edc8d7690b4f6aee11fe3730d78498a8dc6146c30199179f5cd5d4b3090",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/mirror-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "a549ff3124fd1f5c623f737dafb7f639a9a05d698d80efde967addfb4861b2f6",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/resize-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "c898b1f240dda92d30c68634de6eef69fb1d0aeecfab39ef427079c65b8a2ce2",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/reverse-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "91dd67b02166f2a3bb03e7d6c1f8a418a357530128f96d25bf6d5c96de5a624b",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/rotate-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "57d7e7515702539374f5a9fbfdf5ef27d2bdb1cca930cfbc4abcac2c5e725560",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/segment-grid-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "1e3fc94dd42591b646dd74563b86fc0af9ea75ad93ec66a6f3570bf4060ef5b7",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/transcode-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "bacde638395b34fcebd63790e2e424efb55bb05549c4eb16eb59e06cfc103ac2",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/trim-video-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "e03ec7a7f170c44c9a48e70d1af884ce132a497f8635706c6e3615259ea8bc24",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/video-to-gif-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "17a21fd8f1e6aa87ac01ea7c8d7fe6805b57d8667af5021a5e42db0754f4728d",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/articles/video-to-live-photo-iphone/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "dbc9a11daf4567cd3140e84c0d60c50bb413f60ebc22b52df1abd8c5b7ee0fb6",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "236f4e5bc2f996bce51e294f05238784eb8ab5f15127349ce995df75a1956df2",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/privacy/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "59121985202f69fd2299eb12b6339e875f4842f10263ed11d8261b593d9e6a3c",
+      "lang": "pt-BR"
+    },
+    {
+      "route": "/pt-BR/terms/",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "93abbeb24caac71466a431157b1f38ff6205a542e6e9e13f980df416a7d85a8f",
+      "lang": "pt-BR"
+    }
+  ],
+  "sitemaps": [
+    {
+      "route": "/sitemap-0.xml",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "c653538cd02f9fd00d1f2a4fc3ccb7d1847e533dc038c250f753268cf302042b"
+    },
+    {
+      "route": "/sitemap-index.xml",
+      "status": 200,
+      "matches_local_production": true,
+      "sha256": "2d6b80ed4cd0fec1b2c9b82f2568e6806c9c1a50c0486122102308cdcfd83807"
+    }
+  ],
+  "sitemap_urls": 315,
+  "sitemap_pt_BR_urls": 45,
+  "errors": []
+}

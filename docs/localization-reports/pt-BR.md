@@ -215,9 +215,11 @@
 | `npm run check:i18n` | 通过，11 项测试 |
 | `npx tsc --noEmit` | 通过 |
 | `npm run build` | 通过，316 页；含巴葡 45 页 |
+| `npm run build:production` | 通过，316 页；素材版本 `c5dcf79585974e0e`，两端各 526 个素材校验一致 |
 | `python3 scripts/verify-site.py` | 通过，315 条 sitemap URL、20,665 个本地引用，无错误 |
 | `python3 scripts/verify-locales.py` | 通过，7 种语言各 41 篇教程，315 个带语言的页面，无错误 |
 | `node --test tests/videoRecovery.test.mjs` | 通过，4 项测试 |
+| `node --test tests/publishedMediaDownload.test.mjs` | 通过，6 项故障恢复测试 |
 | `git diff --check` | 通过 |
 | 导出实际文案 | `node scripts/export-copy-review.cjs pt-BR > /tmp/clipdock-pt-BR-review.json`；对照通读、术语核对与残留检查 |
 
@@ -253,11 +255,19 @@
 - 未在 Safari / WebKit 或真实 iPhone、iPad 上验收网站；本轮浏览器验证为 Chromium 的不同视口。
 - 不编译、不修改 App，也没有重新实测 App 下载、导出或付费参数。教程沿用已有样例证据与相应限制。
 - 共享 404 未改成巴葡专属页面，外部 Apple 页面与原始素材中的界面保持原语言；App Store 文案、地区链接及真实商店价格未修改。
-- 无未解决的本轮网站实现问题；尚未上线。
+- 无未解决的本轮网站实现问题。
 
+
+## 2026-09-10 正式发布
+
+- 实现提交 [`5658a8c`](https://github.com/Nightonke/ClipDock-Landing/commit/5658a8cfaa414bbf13be0b954484158147a5a54a) 已推送到 `main`。[GitHub Actions #20](https://github.com/Nightonke/ClipDock-Landing/actions/runs/34430159489) 的构建与 GitHub Pages 部署均成功。
+- [巴葡首页](https://clipdock.video/pt-BR/)、教程索引、41 篇教程、隐私政策与用户协议共 45 页均返回 200，HTML 与本地正式构建逐字节一致。
+- 两个线上 sitemap 文件与正式构建一致：共 315 条 URL，含 45 条巴葡 URL。此前静态构建验证的语言标记、canonical、hreflang 和结构化元数据已随同上线。见 [live-verification.json](pt-BR/live-verification.json)。
+- 发布沿用素材版本 `c5dcf79585974e0e`；没有重新部署或修改素材服务。
+- 线上 Chromium 验证 375 / 1440 px 首页、七语言菜单、手机导航，以及手机宽度的转码与 Instagram 主页批量教程；无横向溢出。五个页面视频元素均从正式 CDN 成功播放，转码教程全部图片加载成功；巴葡 → 英语 → 巴葡切换保留文章 slug，法律正文链接互相跳转正常，最终无浏览器运行时错误。见 [live-browser-verification.json](pt-BR/live-browser-verification.json)、[线上手机截图](pt-BR/live-home-375.png)和[线上桌面截图](pt-BR/live-home-1440.png)。
+- 初次浏览器媒体检查中，播放请求遇到新加载请求并抛出 `AbortError`；单独核对该 MP4 的 Range 返回 `206 video/mp4`。随后新浏览器会话等待实际可播放状态，五个视频均通过，没有复现中断；未为此修改网站或 CDN 配置。
 
 ## 交付状态
 
-- 已在构建列表启用；这不代表线上已经部署。
-- 尚未提交、推送或部署。
+- 已提交、推送并部署，正式入口为 `https://clipdock.video/pt-BR/`。
 - App 工程未修改、未编译。
