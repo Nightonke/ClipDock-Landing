@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       
       - name: 设置 Node.js
         uses: actions/setup-node@v4
@@ -36,6 +38,9 @@ jobs:
       
       - name: 验证语言文案完整性
         run: npm run check:i18n
+
+      - name: 验证 sitemap 更新时间
+        run: node --test tests/sitemapLastmod.test.mjs
 
       - name: 验证视频故障恢复
         run: node --test tests/videoRecovery.test.mjs

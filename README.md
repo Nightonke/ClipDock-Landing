@@ -32,6 +32,8 @@ npm run build:production
 - 多语言教程索引与可用性：`src/content/localized-tutorials.ts`
 - 扩展流程与验证：[多语言维护](docs/localization.md)
 - 已发布语言：`src/i18n/locales.ts` 中的 `publishedLocales`
+- 首页和教程目录的重点下载入口：`src/content/download-guides.ts`，九语言介绍位于 `src/i18n/download-guides.ts`
+- sitemap 的 `lastmod` 自动比较各 Git 版本中的页面文案、链接、结构和媒体内容，使用最近一次内容变化的提交时间。修改同一文案文件中的其他教程、内部备注、样式或重复构建不会刷新当前教程的日期。CI 必须获取完整 Git 历史（`fetch-depth: 0`）；本地未提交的页面变更使用编辑时间。验证：`node --test tests/sitemapLastmod.test.mjs`
 - 图片优化：[docs/image-optimization.md](docs/image-optimization.md)
 - 站内法律页面：`/privacy/`、`/terms/`，以及各已发布语言的对应路径；正文位于 `src/i18n/<locale>/legal.ts`，共用 `src/layouts/LegalPage.astro`
 

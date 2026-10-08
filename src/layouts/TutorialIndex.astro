@@ -1,5 +1,6 @@
 ---
 import HeadingText from "@/components/HeadingText.astro";
+import DownloadGuides from "@/components/DownloadGuides.astro";
 import TutorialLayout from "@layouts/TutorialLayout.astro";
 import { getTutorials, getCategories } from "@/content/localized-tutorials";
 import { localizedPath, type Locale } from "@/i18n/locales";
@@ -21,6 +22,7 @@ const toolCount = tutorials.filter(article => article.category === "tools").leng
 			<p class="tutorial-lead">{ui.indexIntro}</p>
 			{ui.toolCount && <p class="tutorial-lead">{ui.toolCount.replace("{count}", String(toolCount))}</p>}
 		</header>
+		<DownloadGuides locale={locale} />
 		<nav class="tutorial-categories" aria-label={ui.categories}>
 			{categories.map(category => <a href={`#${category.id}`}>{category.name}<span>{tutorials.filter(article => article.category === category.id).length}</span></a>)}
 		</nav>

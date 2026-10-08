@@ -4,6 +4,7 @@ from pathlib import Path
 from urllib.parse import unquote, urljoin, urlparse
 import json
 import xml.etree.ElementTree as ET
+from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'dist'
@@ -79,9 +80,20 @@ for path in pages:
 
 ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
 urls = []
+lastmod_count = 0
 for sitemap in DIST.glob('sitemap-*.xml'):
     tree = ET.parse(sitemap)
-    urls.extend(item.text for item in tree.findall('.//s:url/s:loc', ns))
+    for item in tree.findall('.//s:url', ns):
+        url = item.findtext('s:loc', namespaces=ns)
+        urls.append(url)
+        lastmod = item.findtext('s:lastmod', namespaces=ns)
+        try:
+            timestamp = datetime.fromisoformat(lastmod.replace('Z', '+00:00'))
+            if timestamp.tzinfo is None or timestamp > datetime.now(timezone.utc):
+                raise ValueError('missing timezone or future date')
+            lastmod_count += 1
+        except (AttributeError, ValueError):
+            errors.append(f'Invalid or missing sitemap lastmod: {url}: {lastmod}')
 for url in urls:
     if not url.startswith('https://clipdock.video/') or '/404' in url:
         errors.append(f'Invalid sitemap entry {url}')
@@ -90,5 +102,5 @@ for url in urls:
         errors.append(f'Sitemap target missing: {url}')
 if len(urls) != indexable:
     errors.append(f'Expected {indexable} sitemap URLs, got {len(urls)}')
-print(json.dumps({'pages': len(pages), 'sitemap_urls': len(urls), 'local_references_checked': checked, 'errors': errors}, ensure_ascii=False, indent=2))
+print(json.dumps({'pages': len(pages), 'sitemap_urls': len(urls), 'sitemap_lastmod': lastmod_count, 'local_references_checked': checked, 'errors': errors}, ensure_ascii=False, indent=2))
 raise SystemExit(bool(errors))

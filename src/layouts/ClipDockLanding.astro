@@ -7,6 +7,8 @@ import { localizedPath } from "@/i18n/locales";
 import Layout from "./Layout.astro";
 import VideoRecovery from "@/components/VideoRecovery.astro";
 import HeroDemos from "@/components/HeroDemos.astro";
+import DownloadGuides from "@/components/DownloadGuides.astro";
+import { downloadGuideCopy } from "@/i18n/download-guides";
 import SubtitleCarousel from "@/components/SubtitleCarousel.astro";
 import { captionAt } from "@config/demoCaptions";
 import { homeContent } from "@/i18n/home";
@@ -97,6 +99,7 @@ const structuredData = [
 						<span>{content.rating.score} ★ · {content.rating.count} {ui.ratings}</span>
 						<span>{ui.privacyProof}</span>
 					</p>
+					<a class="text-link cd-download-guides-jump" href="#download-guides">{downloadGuideCopy[content.locale].jump} <span aria-hidden="true">↓</span></a>
 				</div>
 
 				<HeroDemos locale={content.locale} />
@@ -112,6 +115,8 @@ const structuredData = [
 				))}
 			</div>
 		</div>
+
+		<div class="site-shell"><DownloadGuides locale={content.locale} showAll /></div>
 
 		<div id="features" class="cd-feature-list">
 			{featureSections.map((feature) => (
@@ -400,6 +405,8 @@ const structuredData = [
 	.cd-screenshot-stage.cd-feature-video-stage { width: min(100%, 300px); min-height: 0; justify-self: center; place-items: center; padding: 16px 16px calc(var(--radius-lg) - 3px); box-shadow: 10px 10px 0 var(--ink); }
 	.cd-screenshot-stage.cd-feature-image-stage { width: min(100%, 300px); min-height: 0; justify-self: center; padding: 16px; place-items: center; }
 	.cd-subtitle-link { margin-top: 1.5rem; }
+	.cd-download-guides-jump { margin-top: 1.2rem; }
+	.cd-download-guides-jump::after { content: none; }
 	.cd-subtitle-link::after { content: none; }
 	.cd-subtitle-link svg { flex-shrink: 0; transition: transform 170ms ease; }
 	.cd-subtitle-link:is(:hover, :focus-visible) svg { transform: translate(2px, -2px); }

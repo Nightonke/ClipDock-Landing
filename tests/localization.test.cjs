@@ -9,6 +9,8 @@ require.extensions['.ts'] = (module, filename) => module._compile(ts.transpileMo
 }).outputText, filename);
 const { catalogs, getCatalog } = require('../src/i18n/catalog.ts');
 const { assembleTutorials, getScreenshot } = require('../src/content/localized-tutorials.ts');
+const { getDownloadGuides, downloadGuideSlugs } = require('../src/content/download-guides.ts');
+const { downloadGuideCopy } = require('../src/i18n/download-guides.ts');
 const { tutorialStructure } = require('../src/content/tutorial-structure.ts');
 const { validateCopy } = require('../src/i18n/shared/validate.ts');
 const { demoTimings } = require('../src/config/demo-timings.ts');
@@ -46,6 +48,16 @@ test('public tutorial and screenshot props exclude internal editorial evidence',
    if (original === undefined) delete source.verificationNote;
    else source.verificationNote = original;
   }
+ }
+});
+
+test('download entrances point to published guides with complete copy in every language', () => {
+ assert.equal(new Set(downloadGuideSlugs).size, 8);
+ for (const locale of publishedLocales) {
+  validateCopy(downloadGuideCopy['en-US'], downloadGuideCopy[locale], `${locale}/download-guides`);
+  const guides = getDownloadGuides(locale);
+  assert.deepEqual(guides.map(article => article.slug), [...downloadGuideSlugs]);
+  assert.ok(guides.every(article => article.screenshotsReady && article.category === 'platform'));
  }
 });
 
