@@ -82,7 +82,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "¿Puedo usarla como fondo animado?",
-        "answer": "Convertir y guardar una Live Photo no garantiza su compatibilidad como fondo de la pantalla de bloqueo. Depende del dispositivo y del sistema. Este tutorial no equipara una conversión correcta con un fondo compatible."
+        "answer": "La compatibilidad de Live Photo como fondo animado de la pantalla de bloqueo depende del iPhone y de la versión de iOS. Después de guardarla, consulta las opciones de fondo disponibles en tu dispositivo."
       },
       {
         "question": "¿En qué se diferencia de un GIF?",
@@ -952,7 +952,7 @@ export const copy: Record<string, TutorialCopy> = {
   "add-watermark-video-iphone": {
     "title": "Añade una marca de agua de texto",
     "description": "Añade una marca de agua con ClipDock en iPhone o iPad: escribe el texto, ajusta tamaño y posición, previsualiza y guarda el vídeo.",
-    "intro": "Usa «Agregar marca de agua» para escribir un texto y ajustar su tamaño y posición. Las capturas de parámetros y del resultado usan textos y vídeos diferentes; consulta las notas del ejemplo.",
+    "intro": "Añade una marca de agua de texto con «Agregar marca de agua». Escribe el texto, elige su tamaño y posición y previsualiza el vídeo antes de guardarlo.",
     "tips": [
       {
         "title": "Previsualiza antes de guardar",
@@ -962,11 +962,11 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "¿La marca de agua con imagen es gratuita?",
-        "answer": "La opción «Imagen*» tiene una marca VIP en esta versión. El ejemplo muestra una marca de texto."
+        "answer": "Las marcas de agua de imagen requieren VIP."
       },
       {
-        "question": "¿Por qué el texto del resultado difiere del de los parámetros?",
-        "answer": "La pantalla de parámetros usa ClipDock Demo; la captura de un dispositivo real usa Made by ClipDock y otro vídeo. Ambas ilustran el mismo flujo de marcas de texto."
+        "question": "¿Cómo evito que la marca de agua tape contenido importante?",
+        "answer": "Previsualiza varias escenas y comprueba el sujeto y los subtítulos. Mueve la marca a una esquina libre o ajusta su tamaño; revisa el vídeo exportado antes de guardarlo."
       }
     ],
     "steps": [
@@ -984,7 +984,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "Texto o imagen*",
-            "text": "«Texto» crea una marca escrita. «Imagen» (Image) es la opción VIP para usar una imagen. Este ejemplo solo configura texto y no usa una marca de imagen."
+            "text": "«Texto» crea una marca escrita. «Imagen» (Image) es la opción VIP para usar una imagen."
           },
           {
             "title": "Tamaño del texto",
@@ -1016,7 +1016,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "Comprueba la marca de agua",
-            "text": "Reproduce el resultado y comprueba la nitidez, la posición y si tapa al sujeto o los subtítulos. La captura final usa otro vídeo y otro texto, pero sigue el mismo flujo de los parámetros anteriores."
+            "text": "Reproduce el resultado y comprueba el texto, la legibilidad y la posición de la marca, así como si tapa el sujeto o los subtítulos."
           },
           {
             "title": "Guarda en Fotos o comparte",
@@ -1152,7 +1152,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "¿Mejora la calidad o reduce el tamaño?",
-        "answer": "Este tutorial no presenta el cambio de MD5 como mejora de imagen ni compresión. Para comprimir, usa «Transcodificar vídeo»."
+        "answer": "MD5 identifica el contenido de un archivo; no mide la calidad del vídeo ni el efecto de la compresión. Para reducir el tamaño, usa «Transcodificar vídeo»."
       },
       {
         "question": "¿Cambiar el hash modifica los derechos de uso del vídeo?",

@@ -255,7 +255,7 @@ export const ui = {
   "subtitleLink": "字幕抽出の使い方を見る",
   "demoSuffix": "操作デモ",
   "progress": "動画の再生位置",
-  "placeholder": "画像準備中",
+
   "toolsKicker": "保存した、その先も",
   "toolsTitle": "動画ツールを、\n手元に。",
   "toolsDescription": "トリミング、変換、結合、共有まで。保存した素材に必要な操作を、ClipDockで続けられます。",

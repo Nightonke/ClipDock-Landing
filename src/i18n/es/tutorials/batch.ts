@@ -448,7 +448,7 @@ export const copy: Record<string, TutorialCopy> = {
   "batch-download-douyin-profile-iphone": {
     "title": "Descarga vídeos de un perfil de Douyin",
     "description": "Guarda publicaciones de un mismo creador de Douyin en iPhone o iPad: copia el perfil, carga la lista en «Lote» y elige qué descargar.",
-    "intro": "Guarda publicaciones de un mismo creador de Douyin: copia el perfil, carga la lista en «Lote» y elige qué descargar. Este tutorial reutiliza capturas de TikTok para ilustrar los pasos; no documenta una prueba de Douyin. Usa tu propio enlace de perfil de Douyin.",
+    "intro": "Guarda publicaciones de un mismo creador de Douyin: copia el enlace del perfil, carga la lista en «Lote» y elige los recursos que quieras descargar.",
     "tips": [
       {
         "title": "Elige primero las publicaciones que necesitas",
@@ -617,8 +617,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "En el ejemplo solo se ha cargado una página. Usa «Cargar siguiente página» al final de la lista para ver los siguientes recursos devueltos."
       },
       {
-        "question": "¿También se muestran colecciones, favoritos o vídeos de varias partes?",
-        "answer": "Este tutorial cubre las publicaciones del perfil. Las colecciones, los favoritos y los vídeos de varias partes usan enlaces diferentes y no se muestran aquí."
+        "question": "¿Debo usar el enlace del perfil para colecciones, favoritos o vídeos de varias partes?",
+        "answer": "El enlace del perfil carga las publicaciones del creador. Las colecciones, los favoritos y los vídeos de varias partes usan enlaces diferentes. Copia el enlace para compartir de la página que quieras y comprueba la lista devuelta."
       },
       {
         "question": "¿Siempre se puede descargar la máxima calidad?",

@@ -43,7 +43,7 @@ export const copy: Record<string, TutorialCopy> = {
   "download-douyin-video-iphone": {
     "title": "Douyin-Videos herunterladen und in Fotos speichern",
     "description": "Lade Douyin-Videos mit ClipDock auf iPhone oder iPad: Link kopieren, verfügbare Medien auswählen und in Fotos speichern.",
-    "intro": "Kopiere einen Douyin-Videolink und füge ihn zum Herunterladen in ClipDock ein. Diese Anleitung verwendet TikTok-Screenshots zur Veranschaulichung und dokumentiert keinen Douyin-Test. Nutze deinen eigenen Douyin-Link.",
+    "intro": "Kopiere den Freigabelink des Douyin-Videos, das du speichern möchtest, füge ihn in ClipDock ein und wähle die verfügbaren Medien zum Herunterladen aus.",
     "tips": [
       {
         "title": "Der Link öffnet sich, aber es gibt kein Ergebnis",
@@ -57,7 +57,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "Warum zeigen die Bilder keinen Douyin-Link?",
-        "answer": "Die TikTok-Bilder veranschaulichen das Kopieren, Extrahieren, Herunterladen und Speichern. Verwende bei der Bedienung deinen eigenen Douyin-Videolink. Welche Medien verfügbar sind, ergibt sich aus der tatsächlichen Extraktion."
+        "answer": "Die Bilder zeigen die App-Bedienung mit einem TikTok-Link. Für einen Douyin-Download füge den Freigabelink deines Douyin-Videos ein und prüfe die Medien aus der Extraktion."
       }
     ],
     "steps": [
@@ -168,8 +168,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "Nein. Anzahl und Art der Medien unterscheiden sich je nach Beitrag. Sieh dir jede Datei vor dem Speichern an."
       },
       {
-        "question": "Zeigt die Anleitung auch Downloads von Bildbeiträgen?",
-        "answer": "Diese Anleitung behandelt Videobeiträge. Downloads von Bild- und Textbeiträgen werden nicht gezeigt."
+        "question": "Welchen Xiaohongshu-Link sollte ich verwenden?",
+        "answer": "Kopiere den Freigabelink eines Videobeitrags. Liefert die Extraktion mehrere Mediendateien, sieh dir jede vor dem Speichern in der Vorschau an."
       }
     ],
     "steps": [
@@ -228,8 +228,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "Nicht unbedingt. 1080p ist eine Option dieses Beispiels. Die verfügbare Auflösung ergibt sich aus der jeweiligen Extraktion."
       },
       {
-        "question": "Zeigt die Anleitung den Download aller Teile eines Videos?",
-        "answer": "Hier wird ein einzelnes Video heruntergeladen. Der Download aller Teile eines mehrteiligen Videos wird nicht gezeigt."
+        "question": "Lädt ein einzelner Videolink alle Teile eines mehrteiligen Videos herunter?",
+        "answer": "Dieser Ablauf speichert ein einzelnes Video. Prüfe Titel und Inhalt aus der Extraktion; die Anzahl der Einträge in der Vorschau ist nicht die Anzahl der Teile dieses Videos."
       },
       {
         "question": "Wie lade ich mehrere Videos desselben Profils herunter?",
@@ -340,8 +340,8 @@ export const copy: Record<string, TutorialCopy> = {
     ],
     "faq": [
       {
-        "question": "Gilt der Ablauf auch für Instagram Stories?",
-        "answer": "Diese Anleitung behandelt nur Reels. Links, Verfügbarkeit und Zugriffsbedingungen von Stories unterscheiden sich. Ein erfolgreicher Reels-Download belegt keine Unterstützung für Stories."
+        "question": "Wie unterscheiden sich Instagram-Story-Links von Reel-Links?",
+        "answer": "Kopiere zum Speichern eines Reels dessen Freigabelink. Stories haben andere Links, Verfügbarkeitszeiten und Zugriffsbedingungen. Welche Medien verfügbar sind, hängt von der Extraktion des jeweiligen Links ab."
       },
       {
         "question": "Wie speichere ich mehrere Videos eines Profils?",

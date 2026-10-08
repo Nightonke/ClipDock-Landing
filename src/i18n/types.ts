@@ -11,7 +11,6 @@ skip: string;
 demos: string;
 chooseDemo: string;
 progress: string;
-demoEmpty: string;
 demoEmptyHint: string;
 retry: string;
 failed: string;
@@ -36,20 +35,24 @@ read: string;
 openImage: string;
 screenshot: string;
 missingScreenshot: string;
-draft: string;
 supportedPlatforms: string;
 ctaTitle: string;
 ctaText: string;
 ctaButton: string;
 toolCount: string;
-draftCount: string;
 indexTitle: string;
 indexDescription: string;
 indexHeading: string;
 indexIntro: string;
 categories: string;
-unverified: string;
-exampleNotes: string;
 }
 export type Section = { title: string; text: string };
-export interface TutorialCopy { title: string; description: string; intro: string; verificationNote?: string; exampleNote?: string; steps: Array<Section & { sections?: Section[]; exampleUrl?: string }>; tips: Section[]; faq: Array<{ question: string; answer: string }> }
+export interface TutorialCopy {
+ title: string; description: string; intro: string;
+ /** Internal editorial evidence. Never include in public page props. */
+ verificationNote?: string;
+ /** Internal editorial evidence. Never include in public page props. */
+ exampleNote?: string;
+ steps: Array<Section & { sections?: Section[]; exampleUrl?: string }>;
+ tips: Section[]; faq: Array<{ question: string; answer: string }>;
+}

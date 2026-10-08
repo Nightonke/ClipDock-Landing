@@ -8,7 +8,7 @@ require.extensions['.ts'] = (module, filename) => module._compile(ts.transpileMo
  compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
 }).outputText, filename);
 const { catalogs, getCatalog } = require('../src/i18n/catalog.ts');
-const { assembleTutorials } = require('../src/content/localized-tutorials.ts');
+const { assembleTutorials, getScreenshot } = require('../src/content/localized-tutorials.ts');
 const { tutorialStructure } = require('../src/content/tutorial-structure.ts');
 const { validateCopy } = require('../src/i18n/shared/validate.ts');
 const { demoTimings } = require('../src/config/demo-timings.ts');
@@ -25,6 +25,28 @@ test('every published catalog covers the same tutorials and uses its own screens
   for (const article of articles) for (const step of article.steps) if (step.image) assert.ok(catalog.screenshotCopy[step.image].title.trim());
  }
  assert.throws(() => getCatalog('__unregistered_test_locale__'), /No published language catalog/);
+});
+
+test('public tutorial and screenshot props exclude internal editorial evidence', () => {
+ for (const [locale, catalog] of Object.entries(catalogs)) {
+  const source = catalog.tutorialCopy[tutorialStructure[0].slug];
+  const original = source.verificationNote;
+  try {
+   source.verificationNote = 'Internal verification status';
+   for (const article of assembleTutorials(locale)) {
+    assert.ok(!Object.hasOwn(article, 'exampleNote'), `${locale}/${article.slug}`);
+    assert.ok(!Object.hasOwn(article, 'verificationNote'), `${locale}/${article.slug}`);
+    for (const step of article.steps) if (step.image) {
+     const shot = getScreenshot(locale, step.image);
+     assert.ok(!Object.hasOwn(shot, 'brief'), `${locale}/${step.image}`);
+     assert.equal(shot.title, catalog.screenshotCopy[step.image].title);
+    }
+   }
+  } finally {
+   if (original === undefined) delete source.verificationNote;
+   else source.verificationNote = original;
+  }
+ }
 });
 
 test('missing translation, verification limit, or screenshot title blocks assembly', () => {
@@ -131,7 +153,7 @@ test('Japanese prose is translated independently, including captions and legal d
 test('translations preserve placeholders and media UI list lengths', () => {
  const source = catalogs['en-US'].ui;
  for (const catalog of Object.values(catalogs)) {
-  for (const key of ['toolCount', 'draftCount']) {
+  for (const key of ['toolCount']) {
    assert.deepEqual(catalog.ui[key].match(/\{[a-z]+\}/g), source[key].match(/\{[a-z]+\}/g));
   }
   for (const key of ['demoTitles', 'demoDescriptions', 'slideTitles']) assert.equal(catalog.ui[key].length, source[key].length);

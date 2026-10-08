@@ -43,7 +43,7 @@ export const copy: Record<string, TutorialCopy> = {
   "download-douyin-video-iphone": {
     "title": "Como baixar vídeos do Douyin e salvar em Fotos?",
     "description": "Baixe vídeos do Douyin no iPhone ou iPad com o ClipDock: copie o link, escolha a mídia disponível e salve em Fotos.",
-    "intro": "Copie o link de um vídeo do Douyin e cole no ClipDock para baixar. Este tutorial usa capturas do TikTok para ilustrar as etapas; ele não documenta um teste no Douyin. Use seu próprio link do Douyin.",
+    "intro": "Copie o link de compartilhamento do vídeo do Douyin que você quer salvar, cole no ClipDock e escolha os recursos disponíveis para baixar.",
     "tips": [
       {
         "title": "O link abre, mas a extração não encontra nada",
@@ -57,7 +57,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "Por que o link nas imagens não é do Douyin?",
-        "answer": "Este tutorial reutiliza imagens do TikTok para explicar como copiar, extrair, baixar e salvar. Ao seguir as etapas, use seu próprio link de vídeo do Douyin. Os recursos disponíveis dependem do resultado real da extração."
+        "answer": "As imagens mostram os controles do app com um link do TikTok. Para baixar do Douyin, cole o link de compartilhamento do seu vídeo do Douyin e confira os recursos retornados pela extração."
       }
     ],
     "steps": [
@@ -168,8 +168,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "Não. A quantidade e o tipo de mídia variam entre publicações. Confira cada item antes de salvar."
       },
       {
-        "question": "O tutorial também mostra como baixar publicações de fotos?",
-        "answer": "Este tutorial aborda publicações de vídeo. Ele não demonstra o download de publicações de fotos e texto."
+        "question": "Qual link do Xiaohongshu devo usar?",
+        "answer": "Copie o link de compartilhamento de uma publicação de vídeo. Se a extração retornar vários arquivos de mídia, pré-visualize cada um antes de salvar."
       }
     ],
     "steps": [
@@ -228,8 +228,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "Não necessariamente. A resolução de 1080p estava disponível neste exemplo. As opções dependem do resultado real da extração."
       },
       {
-        "question": "O tutorial mostra o download de todas as partes de um vídeo?",
-        "answer": "Este tutorial baixa um único vídeo. Ele não demonstra o download de todas as partes de um vídeo dividido em várias partes."
+        "question": "Um link de vídeo baixa todas as partes de um vídeo dividido em várias partes?",
+        "answer": "Este fluxo salva um único vídeo. Confira o título e o conteúdo retornados pela extração; a quantidade de itens da prévia não é o número de partes desse vídeo."
       },
       {
         "question": "Como baixar outros vídeos do mesmo criador em lote?",
@@ -340,8 +340,8 @@ export const copy: Record<string, TutorialCopy> = {
     ],
     "faq": [
       {
-        "question": "Este fluxo também serve para Stories do Instagram?",
-        "answer": "Este tutorial trata apenas de Reels. Os links, o prazo de disponibilidade e as condições de acesso dos Stories são diferentes. Um resultado com Reels não comprova o funcionamento com Stories."
+        "question": "Qual é a diferença entre links de Stories e de Reels do Instagram?",
+        "answer": "Para salvar um Reel, copie o link de compartilhamento dele. Stories têm links, prazos de disponibilidade e condições de acesso diferentes; os recursos disponíveis dependem da extração do link específico."
       },
       {
         "question": "Como salvar vários vídeos do mesmo criador?",

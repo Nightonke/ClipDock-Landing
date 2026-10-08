@@ -36,9 +36,7 @@ const arrowPath = mark && (mark.x > 800
 		</a>
 	) : (
 		<div class="tutorial-shot-placeholder" role="img" aria-label={`${shot.title}: ${ui.missingScreenshot}`}>
-			<span class="shot-id">{ui.screenshot} · {id}</span>
 			<strong>{shot.title}</strong>
-			<p>{shot.brief}</p>
 			<small>{ui.missingScreenshot}</small>
 		</div>
 	)}

@@ -81,7 +81,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Can I use it directly as a live wallpaper?",
-        "answer": "Creating a Live Photo and lock-screen wallpaper compatibility are separate. Support also depends on the device and system. This guide does not treat conversion success as proof of wallpaper support."
+        "answer": "Live Photo wallpaper compatibility depends on your iPhone and iOS version. After saving, check the wallpaper options available on your device."
       },
       {
         "question": "How is it different from GIF?",
@@ -949,7 +949,7 @@ export const copy: Record<string, TutorialCopy> = {
   "add-watermark-video-iphone": {
     "title": "How to add a text watermark to videos on iPhone and iPad",
     "description": "Add a text watermark with ClipDock on iPhone or iPad. Choose text, size, and position, then preview and save the video.",
-    "intro": "Add a text watermark with Add Watermark. Enter your text and choose its size and position. The settings and result images use different wording and footage; see the example notes.",
+    "intro": "Add a text watermark with Add Watermark. Enter your text, choose its size and position, then preview the video before saving.",
     "tips": [
       {
         "title": "Preview before saving",
@@ -959,11 +959,11 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Is an image watermark free?",
-        "answer": "Image* is marked VIP in the shown version. This example demonstrates text."
+        "answer": "Image watermarks require VIP."
       },
       {
-        "question": "Why does the output have different wording from the settings?",
-        "answer": "The settings use ClipDock Demo. The physical-device result uses Made by ClipDock and another video. Both illustrate the same text-watermark workflow."
+        "question": "How do I keep the watermark from covering important content?",
+        "answer": "Preview several scenes and check the subject and subtitles. Move the watermark to a clear corner or adjust its size, then check the exported video before saving."
       }
     ],
     "steps": [
@@ -1013,7 +1013,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "Check the watermark",
-            "text": "Play the result and check legibility, position, and overlap with subjects or subtitles."
+            "text": "Play the result and check the watermark’s text, legibility, position, and overlap with subjects or subtitles."
           },
           {
             "title": "Save to Photos or share",
@@ -1149,7 +1149,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Does it improve quality or reduce file size?",
-        "answer": "This guide does not describe MD5 changes as enhancement or compression. Use Transcode Video for compression."
+        "answer": "An MD5 hash identifies file contents; it is not a measure of video quality or compression. Use Transcode Video to reduce file size."
       },
       {
         "question": "Does a changed digest change my rights to use the video?",

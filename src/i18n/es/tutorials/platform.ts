@@ -43,7 +43,7 @@ export const copy: Record<string, TutorialCopy> = {
   "download-douyin-video-iphone": {
     "title": "Descarga un vídeo de Douyin y guárdalo en Fotos",
     "description": "Descarga vídeos de Douyin con ClipDock en iPhone o iPad: copia el enlace, elige un recurso disponible y guárdalo en Fotos.",
-    "intro": "Copia un enlace de vídeo de Douyin y pégalo en ClipDock para descargarlo. Este tutorial usa capturas de TikTok para ilustrar los pasos; no documenta una prueba de Douyin. Utiliza tu propio enlace de Douyin.",
+    "intro": "Copia el enlace para compartir del vídeo de Douyin que quieras guardar, pégalo en ClipDock y elige los recursos disponibles para descargar.",
     "tips": [
       {
         "title": "El enlace se abre, pero no aparecen resultados",
@@ -57,7 +57,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "¿Por qué el enlace de la imagen no es de Douyin?",
-        "answer": "Se reutilizan capturas de TikTok para mostrar cómo copiar, extraer, descargar y guardar. Usa tu propio enlace de vídeo de Douyin y comprueba los recursos devueltos por la extracción."
+        "answer": "Las imágenes muestran los controles de la app con un enlace de TikTok. Para descargar de Douyin, pega el enlace para compartir de tu vídeo de Douyin y comprueba los recursos devueltos por la extracción."
       }
     ],
     "steps": [
@@ -168,8 +168,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "No. La cantidad y los tipos de recursos varían por publicación. Previsualiza cada uno antes de guardarlo."
       },
       {
-        "question": "¿También se muestran publicaciones de imágenes y texto?",
-        "answer": "Este tutorial cubre publicaciones de vídeo; no muestra descargas de publicaciones de imágenes y texto."
+        "question": "¿Qué enlace de Xiaohongshu debo usar?",
+        "answer": "Copia el enlace para compartir de una publicación de vídeo. Si la extracción devuelve varios archivos, previsualiza cada uno antes de guardarlo."
       }
     ],
     "steps": [
@@ -228,8 +228,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "No necesariamente. 1080p es la calidad disponible en este ejemplo. Las resoluciones dependen de los resultados de la extracción."
       },
       {
-        "question": "¿Se descargan todas las partes de un vídeo?",
-        "answer": "Este tutorial descarga un vídeo individual. No muestra la descarga de todas las partes de un vídeo dividido en varias."
+        "question": "¿Un enlace de vídeo descarga todas las partes de un vídeo dividido en varias?",
+        "answer": "Este flujo guarda un vídeo individual. Comprueba el título y el contenido devueltos por la extracción; la cantidad de elementos en la vista previa no es el número de partes de ese vídeo."
       },
       {
         "question": "¿Cómo descargo otros vídeos del mismo creador?",
@@ -340,8 +340,8 @@ export const copy: Record<string, TutorialCopy> = {
     ],
     "faq": [
       {
-        "question": "¿Este flujo sirve también para historias de Instagram?",
-        "answer": "Este tutorial solo cubre Reels. Las historias tienen enlaces, plazos de disponibilidad y condiciones de acceso distintos. El resultado de un reel no demuestra compatibilidad con historias."
+        "question": "¿En qué se diferencian los enlaces de historias y reels de Instagram?",
+        "answer": "Para guardar un reel, copia su enlace para compartir. Las historias tienen enlaces, plazos de disponibilidad y condiciones de acceso distintos; los recursos disponibles dependen de la extracción del enlace concreto."
       },
       {
         "question": "¿Cómo guardo varios vídeos del mismo creador?",

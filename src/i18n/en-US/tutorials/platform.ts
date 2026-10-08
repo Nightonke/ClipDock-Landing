@@ -43,7 +43,7 @@ export const copy: Record<string, TutorialCopy> = {
   "download-douyin-video-iphone": {
     "title": "How to download Douyin videos to Photos on iPhone in 2026",
     "description": "Download a Douyin video with ClipDock on iPhone or iPad: copy its link, choose available media, and save it to Photos.",
-    "intro": "Copy a Douyin video link and paste it into ClipDock to download. This guide uses TikTok images to illustrate the steps; they are not a recorded Douyin test. Use your own Douyin link.",
+    "intro": "Copy the share link for the Douyin video you want to save, paste it into ClipDock, and choose the available media to download.",
     "tips": [
       {
         "title": "The link opens, but no media is found",
@@ -57,7 +57,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "Why does the screenshot show a TikTok link?",
-        "answer": "The TikTok images illustrate copying, extracting, downloading, and saving. Use your own Douyin video link; available media depends on the actual extraction result."
+        "answer": "The images illustrate the app controls with a TikTok link. To download from Douyin, paste the share link for your Douyin video and check the media returned by extraction."
       }
     ],
     "steps": [
@@ -168,8 +168,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "No. Posts can return different numbers and types of media. Preview each item before saving."
       },
       {
-        "question": "Does this guide also demonstrate image posts?",
-        "answer": "This guide covers video posts. Image-post downloading is not demonstrated here."
+        "question": "Which Xiaohongshu link should I use?",
+        "answer": "Use the share link for a video post. If extraction returns several media files, preview each one before saving."
       }
     ],
     "steps": [
@@ -228,8 +228,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "No. Use the resolutions returned for your link."
       },
       {
-        "question": "Does this demonstrate downloading every part of a video?",
-        "answer": "This guide downloads one video. It does not demonstrate downloading every part of a multi-part video."
+        "question": "Does a single-video link download every part of a multi-part video?",
+        "answer": "This workflow saves a single video. Check the title and content returned by extraction; the preview list’s item count is not the number of parts in that video."
       },
       {
         "question": "How do I download more uploads from a creator?",
@@ -340,8 +340,8 @@ export const copy: Record<string, TutorialCopy> = {
     ],
     "faq": [
       {
-        "question": "Does this also demonstrate Instagram Stories?",
-        "answer": "This guide is for Reels. Stories have different links, expiry times, and access conditions. A successful Reel download is not evidence for Story support."
+        "question": "How do Instagram Story links differ from Reel links?",
+        "answer": "For a Reel, copy the Reel’s share link. Stories use different links, expiry times, and access conditions; available media depends on the specific link’s extraction results."
       },
       {
         "question": "How do I save several videos from one creator?",

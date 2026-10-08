@@ -448,7 +448,7 @@ export const copy: Record<string, TutorialCopy> = {
   "batch-download-douyin-profile-iphone": {
     "title": "Como baixar vídeos de um perfil do Douyin em lote?",
     "description": "No iPhone ou iPad, salve em lote publicações do mesmo criador do Douyin: copie o link do perfil, carregue a lista em “Lote” e escolha a mídia para baixar.",
-    "intro": "Salve em lote publicações do mesmo criador do Douyin: copie o link do perfil, carregue a lista em “Lote” e escolha a mídia para baixar. Este tutorial usa capturas do TikTok para ilustrar as etapas; ele não documenta um teste no Douyin. Use seu próprio link de perfil do Douyin.",
+    "intro": "Salve publicações do mesmo criador do Douyin: copie o link do perfil, carregue a lista em “Lote” e escolha a mídia que deseja baixar.",
     "tips": [
       {
         "title": "Selecione as publicações que você quer",
@@ -617,8 +617,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "Neste exemplo, apenas uma página foi carregada. Use “Carregar próxima página”, no final da lista, para carregar mais e conferir os recursos realmente retornados."
       },
       {
-        "question": "O tutorial também mostra coleções, favoritos ou vídeos com várias partes?",
-        "answer": "Este tutorial aborda as publicações de um perfil. Coleções, favoritos e vídeos com várias partes usam outros links e não são demonstrados aqui."
+        "question": "Devo usar o link do perfil para coleções, favoritos ou vídeos com várias partes?",
+        "answer": "O link do perfil carrega as publicações do criador. Coleções, favoritos e vídeos com várias partes usam outros links. Copie o link de compartilhamento da página desejada e confira a lista retornada."
       },
       {
         "question": "Sempre posso baixar na maior qualidade?",

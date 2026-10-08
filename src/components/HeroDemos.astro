@@ -16,7 +16,7 @@ const demos = ["share-link", "copy-background", "web-long-press", "batch-playlis
 	<div class="demo-card">
 	<div id="hero-demo-screen" class="demo-screen">
 		<video crossorigin="anonymous" autoplay playsinline muted preload="auto" disablepictureinpicture src={mediaUrl(demos[0].src)} poster={mediaUrl(demos[0].poster)} aria-label={demos[0].title}></video>
-		<div class="demo-empty" hidden><strong>{ui.demoEmpty}</strong><span>{ui.demoEmptyHint}</span></div>
+		<div class="demo-empty" hidden><strong>{ui.failed}</strong><span>{ui.demoEmptyHint}</span></div>
 	</div>
 	<div class="demo-footer">
 		<progress class="demo-progress" value="0" max="100" aria-label={ui.progress}></progress>

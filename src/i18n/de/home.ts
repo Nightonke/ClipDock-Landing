@@ -255,7 +255,7 @@ export const ui = {
   "subtitleLink": "Anleitung für Untertitel lesen",
   "demoSuffix": "Demo",
   "progress": "Videofortschritt",
-  "placeholder": "Platzhalter für ein Bild",
+
   "toolsKicker": "Nach dem Download",
   "toolsTitle": "Deine Video-Werkzeuge für unterwegs",
   "toolsDescription": "Mit dem Speichern geht es los. Zuschneiden, umwandeln, zusammenfügen und teilen kannst du ebenfalls direkt in ClipDock.",

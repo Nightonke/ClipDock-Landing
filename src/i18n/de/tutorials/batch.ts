@@ -448,7 +448,7 @@ export const copy: Record<string, TutorialCopy> = {
   "batch-download-douyin-profile-iphone": {
     "title": "Mehrere Videos eines Douyin-Profils herunterladen",
     "description": "Speichere auf iPhone oder iPad mehrere Beiträge desselben Douyin-Profils: Profillink kopieren, unter „Stapel“ die Liste laden und gewünschte Medien auswählen.",
-    "intro": "Speichere mehrere Beiträge desselben Douyin-Profils: Kopiere den Profillink, lade unter „Stapel“ die Liste und wähle die gewünschten Medien aus. Diese Anleitung nutzt TikTok-Screenshots zur Veranschaulichung und dokumentiert keinen Douyin-Test. Verwende deinen eigenen Douyin-Profillink.",
+    "intro": "Speichere mehrere Beiträge desselben Douyin-Profils: Kopiere den Profillink, lade unter „Stapel“ die Liste und wähle die gewünschten Medien zum Herunterladen aus.",
     "tips": [
       {
         "title": "Gewünschte Beiträge gezielt auswählen",
@@ -617,8 +617,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "Im Beispiel ist zunächst eine Seite geladen. Unten kannst du mit „Nächste Seite laden“ weitere Ergebnisse abrufen. Kostenlos sind höchstens die ersten 2 Seiten verfügbar."
       },
       {
-        "question": "Zeigt die Anleitung auch Sammlungen, Favoriten oder mehrteilige Videos?",
-        "answer": "Diese Anleitung behandelt Beiträge eines Profils. Sammlungen, Favoriten und mehrteilige Videos verwenden andere Links und werden hier nicht gezeigt."
+        "question": "Sollte ich für Sammlungen, Favoriten oder mehrteilige Videos einen Profillink verwenden?",
+        "answer": "Ein Profillink lädt die Beiträge des Erstellers. Sammlungen, Favoriten und mehrteilige Videos verwenden andere Links. Kopiere den Freigabelink der gewünschten Seite und prüfe die zurückgegebene Liste."
       },
       {
         "question": "Ist die höchste Qualität immer verfügbar?",

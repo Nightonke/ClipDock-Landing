@@ -255,7 +255,7 @@ export const ui = {
   "subtitleLink": "자막 추출 방법 보기",
   "demoSuffix": " 사용 예시",
   "progress": "동영상 재생 진행률",
-  "placeholder": "이미지 준비 중",
+
   "toolsKicker": "다운로드 다음 단계",
   "toolsTitle": "손안의 동영상 도구함",
   "toolsDescription": "저장은 시작일 뿐입니다. 자르기, 변환, 이어 붙이기, 공유에 필요한 기능도 ClipDock에서 사용하세요.",

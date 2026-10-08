@@ -43,7 +43,7 @@ export const copy: Record<string, TutorialCopy> = {
   "download-douyin-video-iphone": {
     "title": "Douyin 동영상을 다운로드해 사진에 저장하는 방법",
     "description": "iPhone과 iPad에서 ClipDock으로 Douyin 동영상을 다운로드하세요. 링크를 복사하고 제공되는 미디어를 선택한 뒤 사진에 저장할 수 있습니다.",
-    "intro": "Douyin 동영상 링크를 복사해 ClipDock에 붙여넣고 다운로드하세요. 이 안내는 TikTok 이미지를 빌려 절차를 설명하며 Douyin에서 직접 검증한 기록은 아닙니다. 실제로는 본인의 Douyin 링크를 사용하세요.",
+    "intro": "저장하려는 Douyin 동영상의 공유 링크를 복사해 ClipDock에 붙여넣고, 사용할 수 있는 미디어를 선택해 다운로드하세요.",
     "tips": [
       {
         "title": "링크는 열리지만 추출 결과가 없어요",
@@ -57,7 +57,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "이미지 속 링크가 Douyin 링크가 아닌 이유는 무엇인가요?",
-        "answer": "복사, 추출, 다운로드, 저장 과정을 설명하기 위해 TikTok 안내 이미지를 재사용했습니다. 실제로는 본인의 Douyin 동영상 링크를 사용하고 추출된 리소스를 확인하세요."
+        "answer": "이미지는 TikTok 링크로 앱의 조작 방법을 보여줍니다. Douyin에서 다운로드할 때는 대상 동영상의 Douyin 공유 링크를 붙여넣고 추출된 리소스를 확인하세요."
       }
     ],
     "steps": [
@@ -168,8 +168,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "아닙니다. 게시물마다 반환되는 미디어의 수와 종류가 다릅니다. 각 항목을 미리 본 뒤 저장하세요."
       },
       {
-        "question": "이미지와 글로 된 게시물 다운로드도 보여주나요?",
-        "answer": "이 안내는 동영상 게시물을 다루며 이미지와 글로 된 게시물의 다운로드는 보여주지 않습니다."
+        "question": "Xiaohongshu에서는 어떤 링크를 사용해야 하나요?",
+        "answer": "동영상 게시물의 공유 링크를 복사하세요. 추출 결과에 여러 미디어 파일이 있다면 저장 전에 각각 미리 보세요."
       }
     ],
     "steps": [
@@ -228,8 +228,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "항상 지원하는 것은 아닙니다. 1080p는 이 예시에서 제공된 화질이며 선택 가능한 해상도는 실제 추출 결과에 따라 달라집니다."
       },
       {
-        "question": "여러 파트로 된 동영상의 전체 다운로드도 보여주나요?",
-        "answer": "이 안내는 동영상 하나를 다운로드하며 여러 파트 전체를 다운로드하는 과정은 보여주지 않습니다."
+        "question": "단일 동영상 링크로 모든 파트를 다운로드할 수 있나요?",
+        "answer": "이 과정은 동영상 하나를 저장합니다. 추출 결과의 제목과 내용을 확인하세요. 미리 보기 목록의 항목 수는 해당 동영상의 파트 수가 아닙니다."
       },
       {
         "question": "같은 크리에이터의 다른 동영상을 한꺼번에 다운로드하려면 어떻게 하나요?",
@@ -340,8 +340,8 @@ export const copy: Record<string, TutorialCopy> = {
     ],
     "faq": [
       {
-        "question": "Instagram 스토리에도 같은 방법을 쓸 수 있나요?",
-        "answer": "이 안내는 릴스만 다룹니다. 스토리는 링크, 유효 기간, 접근 조건이 다르므로 릴스 하나의 결과로 스토리 지원 여부를 판단할 수 없습니다."
+        "question": "Instagram 스토리 링크와 릴스 링크는 어떻게 다른가요?",
+        "answer": "릴스를 저장하려면 해당 동영상의 공유 링크를 복사하세요. 스토리는 링크, 유효 기간, 접근 조건이 다릅니다. 다운로드할 수 있는 미디어는 대상 링크의 추출 결과에 따라 달라집니다."
       },
       {
         "question": "같은 크리에이터의 여러 동영상을 저장하려면 어떻게 하나요?",

@@ -43,7 +43,7 @@ export const copy: Record<string, TutorialCopy> = {
   "download-douyin-video-iphone": {
     "title": "如何下載抖音影片並儲存到相簿？",
     "description": "在 iPhone 或 iPad 上用影隨存下載抖音影片：複製連結，選擇可用媒體，再儲存到相簿。",
-    "intro": "複製抖音影片連結，貼上到影隨存下載。本篇借用 TikTok 配圖說明步驟，並非抖音實測記錄；請使用自己的抖音連結。",
+    "intro": "複製想要儲存的抖音影片分享連結，貼上到影隨存，再選擇可用資源下載。",
     "tips": [
       {
         "title": "連結能開啟，卻沒有辨識結果",
@@ -57,7 +57,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "question": "圖中的連結為什麼不是抖音？",
-        "answer": "本文沿用 TikTok 教學圖片說明複製、提取、下載和儲存步驟。實際操作時應使用自己的抖音影片連結，可下載資源以實際解析結果為準。"
+        "answer": "配圖使用 TikTok 連結展示應用程式介面的操作。下載抖音影片時，請貼上目標影片的抖音分享連結，並核對解析回傳的資源。"
       }
     ],
     "steps": [
@@ -168,8 +168,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "不是。不同筆記回傳的媒體數量和類型可能不同，請逐項預覽後再儲存。"
       },
       {
-        "question": "這篇也示範了圖文筆記下載嗎？",
-        "answer": "本篇介紹影片筆記，未示範圖文筆記下載。"
+        "question": "應該使用哪種小紅書連結？",
+        "answer": "請複製影片筆記的分享連結。如果解析結果包含多個媒體檔案，儲存前可逐一預覽。"
       }
     ],
     "steps": [
@@ -228,8 +228,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "不一定。1080p 是本例提供的畫質，可選清晰度以實際解析結果為準。"
       },
       {
-        "question": "這篇示範了全部分 P 下載嗎？",
-        "answer": "本篇下載單條影片，未示範多 P 影片的全部分 P 下載。"
+        "question": "單條影片連結會下載多 P 影片的全部分 P 嗎？",
+        "answer": "此流程用於儲存單條影片。請核對解析結果的標題和內容，預覽清單的項目數量不等於該影片的分 P 數量。"
       },
       {
         "question": "如何批次下載 UP 主的其他影片？",
@@ -340,8 +340,8 @@ export const copy: Record<string, TutorialCopy> = {
     ],
     "faq": [
       {
-        "question": "這個流程也適用於 Instagram Story 嗎？",
-        "answer": "本文僅針對 Reels。Story 的連結、有效時間和存取條件不同，不應把單條 Reels 的結果當作 Story 支援證明。"
+        "question": "Instagram Story 連結與 Reels 連結有什麼不同？",
+        "answer": "下載 Reels 時，請複製該影片的分享連結。Story 使用不同的連結，有效時間和存取條件也不同；可下載資源以目標連結的解析結果為準。"
       },
       {
         "question": "如何儲存同一作者的多條影片？",

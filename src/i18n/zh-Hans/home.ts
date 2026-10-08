@@ -141,7 +141,7 @@ export const ui = {
   "subtitleLink": "查看字幕提取教程",
   "demoSuffix": "操作演示",
   "progress": "视频播放进度",
-  "placeholder": "图片暂留空位",
+
   "toolsKicker": "下载之后",
   "toolsTitle": "随身视频工具箱",
   "toolsDescription": "保存只是第一步。裁剪、转换、拼接和分享所需的常用能力，也放在影随存里。",

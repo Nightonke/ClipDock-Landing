@@ -82,7 +82,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "能直接作為動態背景圖片嗎？",
-        "answer": "轉換和儲存 Live Photo 與鎖定螢幕背景圖片相容性是兩回事，是否可用還取決於裝置和系統。轉換成功不代表能用作鎖定螢幕背景圖片。"
+        "answer": "Live Photo 能否用作動態鎖定螢幕背景圖片取決於 iPhone 和 iOS 版本。儲存後，可在裝置的背景圖片設定中查看可用選項。"
       },
       {
         "question": "與 GIF 有什麼不同？",
@@ -952,7 +952,7 @@ export const copy: Record<string, TutorialCopy> = {
   "add-watermark-video-iphone": {
     "title": "如何給影片新增文字浮水印？",
     "description": "在 iPhone 或 iPad 上用影隨存新增文字浮水印，設定文字、大小和位置，再預覽並儲存影片。",
-    "intro": "使用「添加浮水印」新增文字浮水印，輸入文字並設定大小和位置。參數圖與結果圖使用了不同文字和素材，詳見範例說明。",
+    "intro": "使用「添加浮水印」新增文字浮水印，輸入文字並設定大小和位置，儲存前預覽影片效果。",
     "tips": [
       {
         "title": "先預覽，再儲存",
@@ -962,11 +962,11 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "圖片浮水印能免費使用嗎？",
-        "answer": "目前頁面中的「圖片*」帶 VIP 標記，本例示範文字浮水印。"
+        "answer": "圖片浮水印需要 VIP。"
       },
       {
-        "question": "為什麼結果圖與參數圖的文字不同？",
-        "answer": "參數圖使用 ClipDock Demo，真機結果圖使用 Made by ClipDock 和另一段影片素材，兩者示範的是同一套文字浮水印流程。"
+        "question": "如何避免浮水印遮擋重要內容？",
+        "answer": "預覽多個場景，檢查主體和字幕是否清楚。可將浮水印移到空白角落或調整大小，儲存前再檢查匯出影片。"
       }
     ],
     "steps": [
@@ -984,7 +984,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "文字與圖片*",
-            "text": "「文字」為文字浮水印；「圖片」（Image）是使用圖片浮水印的 VIP 入口。本例僅配置了文字，未使用圖片浮水印。"
+            "text": "「文字」用於新增文字浮水印；「圖片」（Image）用於新增圖片浮水印，需要 VIP。"
           },
           {
             "title": "字型大小",
@@ -1016,7 +1016,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "檢查浮水印效果",
-            "text": "點一下播放，檢查浮水印是否清晰、位置是否合適，以及是否遮擋主體或字幕。結果圖使用了另一段素材和浮水印文字，操作流程與前面的參數範例相同。"
+            "text": "點一下播放，檢查浮水印文字是否正確、清晰，位置是否合適，以及是否遮擋主體或字幕。"
           },
           {
             "title": "儲存到相簿或分享",
@@ -1152,7 +1152,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "能改善畫質或減少檔案大小嗎？",
-        "answer": "本文不把修改 MD5 當作畫質增強或壓縮工具。需要壓縮請使用「影片轉碼」。"
+        "answer": "MD5 是檔案內容的摘要，不能用來衡量畫質提升或壓縮效果。需要縮小檔案時，請使用「影片轉碼」。"
       },
       {
         "question": "修改摘要會改變影片的使用權限嗎？",

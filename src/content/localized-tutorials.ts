@@ -4,7 +4,7 @@ import { getCatalog } from '../i18n/catalog';
 import type { TutorialCopy } from '../i18n/types';
 import { tutorialStructure, screenshotAssets } from './tutorial-structure';
 
-export interface Tutorial extends Omit<TutorialCopy, 'steps'> {
+export interface Tutorial extends Omit<TutorialCopy, 'steps' | 'exampleNote' | 'verificationNote'> {
  slug: string; category: string; screenshotsReady?: boolean; related: string[];
  steps: Array<TutorialCopy['steps'][number] & { image?: string }>;
 }
@@ -29,7 +29,9 @@ export function assembleTutorials(locale: string): Tutorial[] {
    if (evidence.image && (!screenshotAssets[evidence.image] || !screenshotCopy[evidence.image]?.title)) fail(`screenshot ${evidence.image}`);
    return { ...step, image: evidence.image };
   });
-  return { ...copy, slug: source.slug, category: source.category, screenshotsReady: source.screenshotsReady, related: source.related, steps };
+  // Editorial evidence stays in the source catalog and never reaches page props.
+  const { exampleNote, verificationNote, ...publicCopy } = copy;
+  return { ...publicCopy, slug: source.slug, category: source.category, screenshotsReady: source.screenshotsReady, related: source.related, steps };
  });
 }
 const articles = new Map<string, Tutorial[]>(publishedLocales.map(locale => [locale, assembleTutorials(locale)]));
@@ -40,7 +42,8 @@ export const getScreenshot = (locale: string, id: string) => {
  const asset = screenshotAssets[id];
  const copy = getCatalog(locale).screenshotCopy[id];
  if (!asset || !copy?.title) throw new Error(`Missing screenshot: ${locale}/${id}`);
- return { ...asset, ...copy };
+ // Production captions use the title; briefs describe asset production internally.
+ return { ...asset, title: copy.title };
 };
 export const hasTutorial = (locale: Locale, slug: string) => getTutorials(locale).some(article => article.slug === slug);
 export const tutorialLanguageLinks = (locale: Locale, slug?: string) => getLanguageLinks(locale, slug ? `articles/${slug}` : 'articles').filter(link => slug ? hasTutorial(link.locale, slug) : getTutorials(link.locale).length > 0);

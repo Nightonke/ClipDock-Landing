@@ -26,8 +26,8 @@ const review = {
  home: load('home'), common: load('common').common, ui: catalog.ui,
  errors: load('errors').notFound,
  categories: catalog.categories, platformNotes: catalog.platformNotes,
- tutorials: catalog.tutorialCopy,
- screenshots: Object.fromEntries([...imageIds].map(id => [id, catalog.screenshotCopy[id]])),
+ tutorials: Object.fromEntries(articles.map(article => [article.slug, article])),
+ screenshots: Object.fromEntries([...imageIds].map(id => [id, { title: catalog.screenshotCopy[id].title }])),
  demoCaptions: catalog.captions,
 };
 process.stdout.write(JSON.stringify(review, null, 2) + '\n');

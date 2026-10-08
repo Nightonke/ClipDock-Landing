@@ -141,7 +141,7 @@ export const ui = {
   "subtitleLink": "Ver tutorial de subtítulos",
   "demoSuffix": " · Demostración",
   "progress": "Progreso de reproducción del vídeo",
-  "placeholder": "Espacio reservado para una imagen",
+
   "toolsKicker": "Después de descargar",
   "toolsTitle": "Tus herramientas de vídeo, a mano",
   "toolsDescription": "Guardar es solo el primer paso. ClipDock también reúne herramientas para recortar, convertir, unir y compartir tus vídeos.",

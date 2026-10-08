@@ -141,7 +141,7 @@ export const ui = {
   "subtitleLink": "檢視字幕提取教學",
   "demoSuffix": "操作示範",
   "progress": "影片播放進度",
-  "placeholder": "圖片暫留空位",
+
   "toolsKicker": "下載之後",
   "toolsTitle": "隨身影片工具箱",
   "toolsDescription": "下載之後，還能繼續創作。用影隨存裁切、轉換、拼接影片，再分享你的作品。",

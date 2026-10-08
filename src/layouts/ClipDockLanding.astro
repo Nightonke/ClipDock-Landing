@@ -1,6 +1,5 @@
 ---
 import HeadingText from "@/components/HeadingText.astro";
-import { commonCopy } from "@/i18n/common";
 import { mediaUrl } from "@config/media";
 import type { LanguageLink } from "@/types/content";
 import type { landingContent } from "@/i18n/content";
@@ -152,12 +151,12 @@ const structuredData = [
 							) : feature.carousel ? (
 								<SubtitleCarousel locale={content.locale} />
 							) : (<>
-							<div class="cd-stage-label">{commonCopy[content.locale].screenPlaceholder} / {feature.number}</div>
+							<div class="cd-stage-label">{feature.kicker} / {feature.number}</div>
 							<div class="cd-phone-placeholder">
 								<span class="cd-phone-speaker"></span>
 								<div class="cd-placeholder-copy">
 									<strong>{feature.placeholder}</strong>
-									<span>{ui.placeholder}</span>
+									<span>{feature.description}</span>
 								</div>
 							</div>
 							</>)}

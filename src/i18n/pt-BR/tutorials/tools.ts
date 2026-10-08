@@ -82,7 +82,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Posso usar diretamente como papel de parede animado?",
-        "answer": "Converter e salvar uma Live Photo não garante compatibilidade com o papel de parede da tela bloqueada. Isso também depende do dispositivo e do sistema. Este tutorial não considera a conversão uma prova de que o papel de parede funcionará."
+        "answer": "A compatibilidade de Live Photo como papel de parede animado da tela bloqueada depende do iPhone e da versão do iOS. Depois de salvar, confira as opções de papel de parede disponíveis no dispositivo."
       },
       {
         "question": "Qual é a diferença em relação ao GIF?",
@@ -952,7 +952,7 @@ export const copy: Record<string, TutorialCopy> = {
   "add-watermark-video-iphone": {
     "title": "Como adicionar uma marca d’água de texto ao vídeo?",
     "description": "Adicione uma marca d’água de texto com o ClipDock no iPhone ou iPad. Defina o texto, o tamanho e a posição, confira e salve o vídeo.",
-    "intro": "Use “Adicionar marca d'água” para inserir texto e definir seu tamanho e posição. As imagens de configuração e resultado usam textos e vídeos diferentes; veja as notas do exemplo.",
+    "intro": "Adicione uma marca d’água de texto com “Adicionar marca d’água”. Digite o texto, escolha o tamanho e a posição e visualize o vídeo antes de salvar.",
     "tips": [
       {
         "title": "Confira antes de salvar",
@@ -962,11 +962,11 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Posso usar uma marca d’água de imagem gratuitamente?",
-        "answer": "A opção “Imagem*” tem marcação VIP nesta tela. O exemplo demonstra uma marca d’água de texto."
+        "answer": "Marcas d’água de imagem exigem VIP."
       },
       {
-        "question": "Por que o texto no resultado difere da configuração?",
-        "answer": "A configuração usa ClipDock Demo. O resultado em um iPhone físico usa Made by ClipDock e outro vídeo. As duas imagens ilustram o mesmo fluxo de marca d’água de texto."
+        "question": "Como evitar que a marca d’água cubra conteúdo importante?",
+        "answer": "Visualize várias cenas e confira o assunto principal e as legendas. Mova a marca para um canto livre ou ajuste o tamanho; confira o vídeo exportado antes de salvar."
       }
     ],
     "steps": [
@@ -984,7 +984,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "Texto ou imagem*",
-            "text": "“Texto” cria uma marca de texto; “Imagem” (Image) é a opção VIP para usar uma imagem como marca d’água. O exemplo configura apenas texto."
+            "text": "“Texto” cria uma marca de texto; “Imagem” (Image) é a opção VIP para usar uma imagem como marca d’água."
           },
           {
             "title": "Tamanho do texto",
@@ -1016,7 +1016,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "Confira o efeito da marca d’água",
-            "text": "Reproduza o vídeo e confira se a marca está legível, bem posicionada e sem cobrir o assunto ou as legendas. A imagem de resultado usa outro vídeo e outro texto, mas segue o mesmo fluxo da configuração anterior."
+            "text": "Reproduza o resultado e confira o texto, a legibilidade e a posição da marca, verificando se ela cobre o assunto principal ou as legendas."
           },
           {
             "title": "Salve em Fotos ou compartilhe",
@@ -1152,7 +1152,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "A ferramenta melhora a qualidade ou reduz o tamanho?",
-        "answer": "Este tutorial não apresenta a alteração de MD5 como melhoria de imagem ou compressão. Para reduzir o tamanho, use “Transcodificar vídeo”."
+        "answer": "MD5 identifica o conteúdo de um arquivo; não mede a qualidade do vídeo nem o efeito da compressão. Para reduzir o tamanho, use “Transcodificar vídeo”."
       },
       {
         "question": "Mudar o hash altera os direitos de uso do vídeo?",

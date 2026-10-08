@@ -82,7 +82,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Kann ich das Ergebnis als bewegtes Hintergrundbild verwenden?",
-        "answer": "Das Umwandeln und Speichern eines Live Photos ist unabhängig von seiner Eignung als Sperrbildschirm-Hintergrund. Diese hängt auch von Gerät und System ab. Ein erfolgreicher Export garantiert keine Verwendung als Hintergrundbild."
+        "answer": "Ob sich ein Live Photo als bewegtes Sperrbildschirm-Hintergrundbild verwenden lässt, hängt vom iPhone und der iOS-Version ab. Prüfe nach dem Speichern die verfügbaren Optionen in den Hintergrundbild-Einstellungen."
       },
       {
         "question": "Was unterscheidet es von einem GIF?",
@@ -952,7 +952,7 @@ export const copy: Record<string, TutorialCopy> = {
   "add-watermark-video-iphone": {
     "title": "Ein Wasserzeichen aus Text hinzufügen",
     "description": "Füge mit ClipDock auf iPhone oder iPad ein Textwasserzeichen hinzu. Lege Text, Größe und Position fest und prüfe das Video vor dem Speichern.",
-    "intro": "Nutze „Wasserzeichen hinzufügen“ für ein Textwasserzeichen. Gib den Text ein und wähle Größe und Position. Die Parameter- und Ergebnisbilder verwenden verschiedene Texte und Quellen; Näheres steht in den Beispielhinweisen.",
+    "intro": "Füge mit „Wasserzeichen hinzufügen“ ein Textwasserzeichen ein. Gib den Text ein, wähle Größe und Position und sieh dir das Video vor dem Speichern in der Vorschau an.",
     "tips": [
       {
         "title": "Erst ansehen, dann speichern",
@@ -962,11 +962,11 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Sind Bildwasserzeichen kostenlos?",
-        "answer": "„Bild*“ ist auf der aktuellen Seite als VIP markiert. Dieses Beispiel zeigt ein Textwasserzeichen."
+        "answer": "Bildwasserzeichen erfordern VIP."
       },
       {
-        "question": "Warum unterscheidet sich der Text im Ergebnisbild?",
-        "answer": "Die Parameterbilder verwenden ClipDock Demo. Das Ergebnis vom echten Gerät verwendet Made by ClipDock und einen anderen Videoclip. Beide zeigen denselben Ablauf für Textwasserzeichen."
+        "question": "Wie verhindere ich, dass das Wasserzeichen wichtige Inhalte verdeckt?",
+        "answer": "Prüfe mehrere Szenen in der Vorschau und achte auf Motiv und Untertitel. Verschiebe das Wasserzeichen in eine freie Ecke oder passe seine Größe an. Prüfe das exportierte Video vor dem Speichern."
       }
     ],
     "steps": [
@@ -984,7 +984,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "Text oder Bild*",
-            "text": "„Text“ erstellt ein Textwasserzeichen. „Bild“ (Image) öffnet die VIP-Funktion für ein Bildwasserzeichen. Das Beispiel konfiguriert nur Text und verwendet kein Bildwasserzeichen."
+            "text": "„Text“ erstellt ein Textwasserzeichen. „Bild“ (Image) öffnet die VIP-Funktion für ein Bildwasserzeichen."
           },
           {
             "title": "Schriftgröße",
@@ -1016,7 +1016,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "Wirkung kontrollieren",
-            "text": "Spiele das Video ab und prüfe Lesbarkeit und Position sowie mögliche Überdeckungen von Motiv oder Untertiteln. Das Ergebnisbild verwendet einen anderen Clip und Wasserzeichentext; der Ablauf entspricht dem vorherigen Parameterbeispiel."
+            "text": "Spiele das Ergebnis ab und prüfe Text, Lesbarkeit und Position des Wasserzeichens sowie mögliche Überlappungen mit Motiv oder Untertiteln."
           },
           {
             "title": "In Fotos speichern oder teilen",
@@ -1152,7 +1152,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Verbessert das die Bildqualität oder verkleinert es die Datei?",
-        "answer": "Diese Anleitung behandelt MD5-Änderungen weder als Qualitätsverbesserung noch als Komprimierung. Verwende zum Verkleinern „Video transkodieren“."
+        "answer": "MD5 kennzeichnet den Inhalt einer Datei; der Wert misst weder die Videoqualität noch den Komprimierungseffekt. Verwende „Video transkodieren“, um die Dateigröße zu reduzieren."
       },
       {
         "question": "Ändert ein anderer Hash meine Nutzungsrechte am Video?",

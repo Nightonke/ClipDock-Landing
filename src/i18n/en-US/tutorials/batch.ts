@@ -448,7 +448,7 @@ export const copy: Record<string, TutorialCopy> = {
   "batch-download-douyin-profile-iphone": {
     "title": "How to batch download Douyin profile videos on iPhone and iPad",
     "description": "Download several posts from one Douyin creator. Copy the profile link, load it in Batch, and choose the media you want to save.",
-    "intro": "Download several posts from one Douyin creator. Copy the profile link, load it in Batch, and choose the media you want to save. The images are borrowed from TikTok to illustrate the steps, not a recorded Douyin test. Use your own Douyin profile link.",
+    "intro": "Save several posts from one Douyin creator. Copy the profile link, load it in Batch, and choose the media you want to download.",
     "tips": [
       {
         "title": "Choose the posts you actually need",
@@ -617,8 +617,8 @@ export const copy: Record<string, TutorialCopy> = {
         "answer": "Only one page is loaded here. Use Load next page and inspect the additional resources actually returned."
       },
       {
-        "question": "Does this also demonstrate collections, favorites, or multi-part videos?",
-        "answer": "This guide covers profile uploads. Collections, favorites, and multi-part videos use different links and are not demonstrated here."
+        "question": "Should I use a profile link for collections, favorites, or multi-part videos?",
+        "answer": "A profile link loads the creator’s uploads. Collections, favorites, and multi-part videos use different links. Copy the share link for the page you want and check the returned list."
       },
       {
         "question": "Is the highest quality guaranteed?",

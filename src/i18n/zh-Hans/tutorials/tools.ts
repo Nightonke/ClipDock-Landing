@@ -82,7 +82,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "能直接作为动态壁纸吗？",
-        "answer": "转换和保存 Live Photo 与锁屏壁纸兼容性是两回事，是否可用还取决于设备和系统。本文不把转换成功等同于壁纸可用。"
+        "answer": "Live Photo 能否用于动态锁屏壁纸取决于 iPhone 和 iOS 版本。保存后，可在设备的壁纸设置中查看可用选项。"
       },
       {
         "question": "与 GIF 有什么不同？",
@@ -952,7 +952,7 @@ export const copy: Record<string, TutorialCopy> = {
   "add-watermark-video-iphone": {
     "title": "如何给视频添加文字水印？",
     "description": "在 iPhone 或 iPad 上用影随存添加文字水印，设置文字、大小和位置，再预览并保存视频。",
-    "intro": "使用“添加水印”添加文字水印，输入文字并设置大小和位置。参数图与结果图使用了不同文字和素材，详见示例说明。",
+    "intro": "使用“添加水印”添加文字水印，输入文字并设置大小和位置，保存前预览视频效果。",
     "tips": [
       {
         "title": "先预览，再保存",
@@ -962,11 +962,11 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "图片水印能免费使用吗？",
-        "answer": "当前页面中的“图片*”带 VIP 标记，本例演示文字水印。"
+        "answer": "图片水印需要 VIP。"
       },
       {
-        "question": "为什么结果图与参数图的文字不同？",
-        "answer": "参数图使用 ClipDock Demo，真机结果图使用 Made by ClipDock 和另一段视频素材，两者演示的是同一套文字水印流程。"
+        "question": "如何避免水印遮挡重要内容？",
+        "answer": "预览多个场景，检查主体和字幕是否清楚。可将水印移到空白角落或调整大小，保存前再检查导出视频。"
       }
     ],
     "steps": [
@@ -984,7 +984,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "文字与图片*",
-            "text": "“文字”为文字水印；“图片”（Image）是使用图片水印的 VIP 入口。本例仅配置了文字，未使用图片水印。"
+            "text": "“文字”用于添加文字水印；“图片”（Image）用于添加图片水印，需要 VIP。"
           },
           {
             "title": "字体大小",
@@ -1016,7 +1016,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "检查水印效果",
-            "text": "点击播放，检查水印是否清晰、位置是否合适，以及是否遮挡主体或字幕。结果图使用了另一段素材和水印文字，操作流程与前面的参数示例相同。"
+            "text": "点击播放，检查水印文字是否正确、清晰，位置是否合适，以及是否遮挡主体或字幕。"
           },
           {
             "title": "保存到相册或分享",
@@ -1152,7 +1152,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "能改善画质或减少文件大小吗？",
-        "answer": "本文不把修改 MD5 当作画质增强或压缩工具。需要压缩请使用“视频转码”。"
+        "answer": "MD5 是文件内容的摘要，不能用来衡量画质提升或压缩效果。需要减小文件大小时，请使用“视频转码”。"
       },
       {
         "question": "修改摘要会改变视频的使用权限吗？",

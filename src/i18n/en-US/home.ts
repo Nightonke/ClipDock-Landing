@@ -58,7 +58,7 @@ export const ui = {
   "subtitleLink": "Read the captions tutorial",
   "demoSuffix": " demo",
   "progress": "Video playback progress",
-  "placeholder": "Image coming soon",
+
   "toolsKicker": "After the download",
   "toolsTitle": "Your pocket video toolbox.",
   "toolsDescription": "Saving is just the start. Trim, convert, join, and share your videos with tools built into ClipDock.",
