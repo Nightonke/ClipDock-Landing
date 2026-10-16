@@ -39,8 +39,15 @@ const structuredData = [
 			<p class="tutorial-lead">{article.intro}</p>
 		</header>
 		<div class="tutorial-body-grid">
-			<aside class="tutorial-toc"><nav aria-label={ui.contents}><strong>{ui.contents}</strong>{article.steps.map((step, index) => <a href={`#step-${index + 1}`}>{String(index + 1).padStart(2, "0")} · {step.title}</a>)}<a href="#troubleshooting">{ui.troubleshooting}</a><a href="#questions">{ui.questions}</a></nav></aside>
+			<aside class="tutorial-toc"><nav aria-label={ui.contents}><strong>{ui.contents}</strong>{article.overview && <a href="#overview">{article.overview.title}</a>}{article.steps.map((step, index) => <a href={`#step-${index + 1}`}>{String(index + 1).padStart(2, "0")} · {step.title}</a>)}<a href="#troubleshooting">{ui.troubleshooting}</a><a href="#questions">{ui.questions}</a></nav></aside>
 			<article class="tutorial-body">
+				{article.overview && <section id="overview" class="tutorial-overview" aria-labelledby="overview-title">
+					<h2 id="overview-title"><HeadingText text={article.overview.title} locale={locale} /></h2>
+					{article.overview.sections.map(section => <div>
+						<h3><HeadingText text={section.title} locale={locale} /></h3><p>{section.text}</p>
+						{section.link && <p><a href={section.link.href}>{section.link.label}</a></p>}
+					</div>)}
+				</section>}
 				{article.steps.map((step, index) => (
 					<section id={`step-${index + 1}`} class:list={["tutorial-step", { "tutorial-step-illustrated": step.image, "tutorial-step-reverse": index % 2 === 1 }]}>
 						<div class="tutorial-step-copy">

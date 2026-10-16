@@ -66,6 +66,18 @@ test('internal notes, image briefs, comments and styling do not refresh public c
  assert.ok([...buildLastmodMap({ root }).values()].every(date => date === first));
 });
 
+test('updating an overview or its source link refreshes only its article', t => {
+ const root = fixture(t);
+ replace(root, catalog, "intro:'Copy a link'", "intro:'Copy a link',overview:{title:'Choose a method',sections:[{title:'Photos',text:'Open the editor',link:{label:'Source',href:'https://example.com/old'}}]}");
+ commit(root, first);
+ replace(root, catalog, 'https://example.com/old', 'https://example.com/new');
+ commit(root, second);
+ const dates = buildLastmodMap({ root });
+ assert.equal(dates.get('/articles/alpha/'), second);
+ assert.equal(dates.get('/articles/beta/'), first);
+ assert.equal(dates.get('/articles/'), first);
+});
+
 test('image bytes update only the page that uses the image', t => {
  const root = fixture(t); commit(root, first);
  write(root, 'public/assets/a.png', 'image-two'); commit(root, second);

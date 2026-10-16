@@ -1,13 +1,13 @@
 import type { TutorialCopy } from "../../types";
 export const copy: Record<string, TutorialCopy> = {
   "video-to-gif-iphone": {
-    "title": "Ein Video in ein GIF umwandeln",
-    "description": "Erstelle auf iPhone oder iPad ein GIF aus einem Videoausschnitt. Wähle den Abschnitt und passe Bildrate und Breite an, um flüssige Bewegung, Details und Dateigröße abzuwägen.",
-    "intro": "Erstelle ein GIF aus einer Bewegung im Video. Wähle zuerst den Ausschnitt und passe dann Bildrate und Breite an, um flüssige Bewegung, Details und Dateigröße abzuwägen.",
+    "title": "Video auf dem iPhone in ein GIF umwandeln",
+    "description": "Erstelle mit ClipDock ein GIF auf dem iPhone: Beispiel mit 6 Sekunden, 8 fps und 360 Pixeln, Tipps zur Dateigröße und Hinweise zu VIP-Optionen.",
+    "intro": "Wähle in ClipDock „Verarbeitung“ → „Video in GIF“, importiere ein Video und grenze die Bewegung ein. Mit „Benutzerdefiniert“, etwa 6 Sekunden, 8 fps und 360 Pixeln Breite lässt sich das gezeigte Beispiel nachstellen. Ein GIF enthält keinen Ton.",
     "tips": [
       {
-        "title": "Das GIF ist zu groß",
-        "text": "Kürze zuerst den Ausschnitt und senke danach Breite oder Bildrate. Ändere jeweils nur einen Wert, damit du Qualität und Größe sinnvoll vergleichen kannst."
+        "title": "Das GIF ist zu groß oder wird nur als Standbild angezeigt",
+        "text": "Kürze bei einer zu großen Datei zuerst den Ausschnitt und senke danach Breite oder Bildrate. Wird nur ein Standbild angezeigt, öffne die exportierte GIF-Datei in einer App mit Animationsunterstützung. Teile die Datei über „Datei teilen“ statt einen Screenshot der Vorschau zu verschicken."
       }
     ],
     "faq": [
@@ -23,7 +23,7 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "„Video in GIF“ öffnen",
-        "text": "Tippe unten auf „Verarbeitung“ (Process) und öffne „Video in GIF“ (Video to GIF)."
+        "text": "Öffne ClipDock, tippe unten auf „Verarbeitung“ (Process) und wähle „Video in GIF“ (Video to GIF). Die folgenden Bilder zeigen die englischen Namen der Bedienelemente."
       },
       {
         "title": "Quellvideo auswählen",
@@ -67,7 +67,28 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": []
       }
     ],
-    "exampleNote": "Die Screenshots stammen aus der englischen Oberfläche eines iPhone-17-Pro-Max-Simulators mit iOS 26.0; die Anleitung nennt die deutschen Bedienelemente. Parameter und Grenzen beziehen sich auf diese Version. Das Beispiel exportiert mit „Benutzerdefiniert“, 8 fps und 360 Pixel Breite ein GIF von etwa 6 Sekunden. Die konkreten Werte der kostenpflichtigen Voreinstellungen wurden nicht geprüft."
+    "exampleNote": "Die Screenshots stammen aus der englischen Oberfläche eines iPhone-17-Pro-Max-Simulators mit iOS 26.0; die Anleitung nennt die deutschen Bedienelemente. Parameter und Grenzen beziehen sich auf diese Version. Das Beispiel exportiert mit „Benutzerdefiniert“, 8 fps und 360 Pixel Breite ein GIF von etwa 6 Sekunden. Die konkreten Werte der kostenpflichtigen Voreinstellungen wurden nicht geprüft.",
+    "overview": {
+      "title": "Einstellungen für dein erstes GIF",
+      "sections": [
+        {
+          "title": "Das Beispiel: etwa 6 Sekunden, 8 fps, 360 Pixel",
+          "text": "Die Screenshots zeigen diese Kombination in der englischen App-Oberfläche. Damit wurde ein GIF erzeugt. Etwa 6 Sekunden bei 8 Bildern pro Sekunde ergeben rund 48 Bilder; die angezeigten ca. 1,2 MB sind eine Schätzung, keine garantierte Exportgröße."
+        },
+        {
+          "title": "Wenn die Datei für das Teilen zu groß ist",
+          "text": "Wähle zuerst eine kürzere Bewegung. Reduziere danach bei Bedarf die Breite von 360 auf 240 Pixel oder die Bildrate von 8 auf 6 fps und exportiere erneut. Vergleiche jeweils die fertige Datei: Eine niedrigere Bildrate kann ruckeliger wirken, eine kleinere Breite verliert Details."
+        },
+        {
+          "title": "Ton und kostenpflichtige Einstellungen",
+          "text": "Für Ton brauchst du ein Videoformat. In der gezeigten Version sind mehr als 10 Sekunden, 15 oder 24 fps, 720 Pixel Breite und die vorgegebenen Presets mit VIP markiert. Das Beispiel nutzt „Benutzerdefiniert“ (Custom) ohne diese Optionen. Prüfe die Markierungen in deiner App-Version.",
+          "link": {
+            "label": "Ein kurzes Video mit Ton zuschneiden",
+            "href": "/de/articles/trim-video-iphone/"
+          }
+        }
+      ]
+    }
   },
   "video-to-live-photo-iphone": {
     "title": "Ein Video in ein Live Photo umwandeln",
@@ -762,9 +783,9 @@ export const copy: Record<string, TutorialCopy> = {
     "exampleNote": "Die Screenshots stammen aus der englischen Oberfläche eines iPhone-17-Pro-Max-Simulators mit iOS 26.0; die Anleitung nennt deutsche Bedienelemente. Parameter und Grenzen beziehen sich auf diese Version. „H Flip“ wurde exportiert. Bei den kostenpflichtigen Symmetrieeffekten wurden nur die Optionen geprüft, nicht die Ausgabe."
   },
   "reverse-video-iphone": {
-    "title": "Ein Video rückwärts abspielen",
-    "description": "Lass auf iPhone oder iPad mit „Video umkehren“ ein Video vom Ende zum Anfang laufen. Wähle stummen, ursprünglichen oder rückwärts abgespielten Ton und prüfe das Ergebnis.",
-    "intro": "Mit „Video umkehren“ läuft dein Video vom Ende zum Anfang. Wähle stummen, ursprünglichen oder rückwärts abgespielten Ton und sieh dir das Ergebnis an.",
+    "title": "Video auf dem iPhone rückwärts abspielen",
+    "description": "Ein Video auf iPhone oder iPad mit ClipDock rückwärts abspielen: Ausschnitt vorbereiten, Tonmodus wählen und den umgekehrten Bewegungsablauf speichern.",
+    "intro": "Öffne in ClipDock „Verarbeitung“ → „Video umkehren“, wähle dein Video und starte die Verarbeitung. Dadurch läuft die Bewegung vom Ende zum Anfang. Das Beispiel zeigt die Variante ohne Ton; anschließend speicherst du das Ergebnis als Video.",
     "tips": [
       {
         "title": "Zuerst kürzen, dann umkehren",
@@ -784,7 +805,7 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "„Video umkehren“ öffnen",
-        "text": "Tippe unten auf „Verarbeitung“ (Process) und öffne „Video umkehren“ (Reverse Video)."
+        "text": "Öffne ClipDock, tippe unten auf „Verarbeitung“ (Process) und wähle „Video umkehren“ (Reverse Video). Die Screenshots zeigen die englischen Beschriftungen; die Anleitung nennt sie jeweils in Klammern."
       },
       {
         "title": "Quellvideo auswählen",
@@ -806,7 +827,7 @@ export const copy: Record<string, TutorialCopy> = {
       },
       {
         "title": "Ergebnis prüfen, speichern oder weiterbearbeiten",
-        "text": "Spiele das Ergebnis ab und prüfe, ob die Bewegung vom Ende zum Anfang läuft. Kontrolliere Anfang, Ende und den Tonmodus, bevor du speicherst.",
+        "text": "Im gezeigten Ergebnis sind das erste Bild und die Reihenfolge der Vorschaubilder umgekehrt. Spiele dein Ergebnis ab und vergleiche Anfang und Ende mit dem Original. Prüfe außerdem, ob der gewählte Tonmodus zum Clip passt.",
         "sections": [
           {
             "title": "Ansehen und speichern",
@@ -819,7 +840,28 @@ export const copy: Record<string, TutorialCopy> = {
         ]
       }
     ],
-    "exampleNote": "Die Screenshots stammen aus der englischen Oberfläche eines iPhone-17-Pro-Max-Simulators mit iOS 26.0; die Anleitung nennt deutsche Bedienelemente. Parameter und Grenzen beziehen sich auf diese Version. Nur „Stummschalten“ wurde praktisch geprüft; das Ergebnis beginnt am Ende des Originals. „Audio behalten“ und „Umgekehrtes Audio“ wurden nicht geprüft."
+    "exampleNote": "Die Screenshots stammen aus der englischen Oberfläche eines iPhone-17-Pro-Max-Simulators mit iOS 26.0; die Anleitung nennt deutsche Bedienelemente. Parameter und Grenzen beziehen sich auf diese Version. Nur „Stummschalten“ wurde praktisch geprüft; das Ergebnis beginnt am Ende des Originals. „Audio behalten“ und „Umgekehrtes Audio“ wurden nicht geprüft.",
+    "overview": {
+      "title": "Ausschnitt und Ton vorab festlegen",
+      "sections": [
+        {
+          "title": "Eine Bewegung vom Ende zum Anfang",
+          "text": "Beim Umkehren ändert sich die Reihenfolge der Bilder. Eine fallende Bewegung läuft beispielsweise nach oben zurück. Drehen und Spiegeln verändern dagegen die Bildausrichtung. Prüfe im Ergebnis zuerst, ob der letzte Moment des Originals nun am Anfang steht."
+        },
+        {
+          "title": "Mit einem kurzen Ausschnitt beginnen",
+          "text": "Schneide zunächst die Bewegung aus, die rückwärts laufen soll. Sonst stehen die Wartezeit und andere unwichtige Teile des Originals ebenfalls in umgekehrter Reihenfolge im Ergebnis. Die Anleitung unten verwendet ein Video aus Fotos oder Dateien; ein vorheriger Download in ClipDock ist nicht nötig.",
+          "link": {
+            "label": "Den gewünschten Videoausschnitt behalten",
+            "href": "/de/articles/trim-video-iphone/"
+          }
+        },
+        {
+          "title": "Stumm, ursprünglicher Ton oder rückwärts laufender Ton",
+          "text": "„Stummschalten“ (Mute) erzeugt ein Ergebnis ohne Ton und ist im Beispiel ausgewählt. Die Oberfläche bietet außerdem „Audio behalten“ (Keep Audio) und „Umgekehrtes Audio“ (Reverse Audio). Achte besonders bei Sprache darauf, welche Tonreihenfolge du möchtest, und höre das Ergebnis vor dem Speichern an."
+        }
+      ]
+    }
   },
   "change-video-speed-iphone": {
     "title": "Ein Video schneller oder langsamer abspielen",

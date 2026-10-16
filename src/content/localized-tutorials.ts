@@ -16,6 +16,14 @@ export function assembleTutorials(locale: string): Tutorial[] {
   const copy = tutorialCopy[source.slug];
   const fail = (field: string) => { throw new Error(`Incomplete ${locale}/${source.slug}: ${field}`); };
   if (!copy) return fail('copy');
+  if (copy.overview) {
+   validateCopy({ title: 'required', sections: [{ title: 'required', text: 'required' }] }, copy.overview, `${locale}/${source.slug}/overview`);
+   copy.overview.sections.forEach(section => {
+    if (!section.link) return;
+    validateCopy({ label: 'required', href: 'required' }, section.link, `${locale}/${source.slug}/overview/link`);
+    if (!/^(https:\/\/|\/(?!\/))/.test(section.link.href)) fail('overview link URL');
+   });
+  }
   validateCopy({ title: 'required', description: 'required', intro: 'required', steps: [{ title: 'required', text: 'required' }], tips: [{ title: 'required', text: 'required' }], faq: [{ question: 'required', answer: 'required' }] }, copy, `${locale}/${source.slug}`);
   copy.steps.forEach((step, index) => step.sections?.forEach((section, sectionIndex) => validateCopy({ title: 'required', text: 'required' }, section, `${locale}/${source.slug}/steps/${index}/sections/${sectionIndex}`)));
   if (!categories.some(category => category.id === source.category)) fail('category');

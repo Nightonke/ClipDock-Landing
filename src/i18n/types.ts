@@ -49,6 +49,10 @@ categories: string;
 export type Section = { title: string; text: string };
 export interface TutorialCopy {
  title: string; description: string; intro: string;
+ overview?: {
+  title: string;
+  sections: Array<Section & { link?: { label: string; href: string } }>;
+ };
  /** Internal editorial evidence. Never include in public page props. */
  verificationNote?: string;
  /** Internal editorial evidence. Never include in public page props. */

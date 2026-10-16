@@ -86,6 +86,23 @@ test('blank text and missing nested UI labels are rejected', () => {
  assert.throws(() => validateCopy({ heading: 'Title' }, { heading: '  ' }, 'copy'), /Missing text/);
 });
 
+test('optional tutorial overviews reject incomplete copy and unsafe links', () => {
+ const source = catalogs['en-US'].tutorialCopy['mirror-video-iphone'];
+ const original = source.overview;
+ try {
+  source.overview = { title: 'Choose a method', sections: [] };
+  assert.throws(() => assembleTutorials('en-US'), /Missing list/);
+  source.overview = { title: 'Choose a method', sections: [{ title: 'Photos', text: 'Use the editor.', link: { label: 'Read more', href: 'javascript:alert(1)' } }] };
+  assert.throws(() => assembleTutorials('en-US'), /overview link URL/);
+  source.overview.sections[0].link.href = '//example.com';
+  assert.throws(() => assembleTutorials('en-US'), /overview link URL/);
+  source.overview.sections[0].link.href = '/articles/rotate-video-iphone/';
+  assert.doesNotThrow(() => assembleTutorials('en-US'));
+  delete source.overview;
+  assert.doesNotThrow(() => assembleTutorials('en-US'));
+ } finally { source.overview = original; }
+});
+
 test('each language keeps caption timing and end boundaries on local and CDN URLs', () => {
  for (const [locale, catalog] of Object.entries(catalogs)) for (const [src, cues] of Object.entries(demoTimings)) {
   assert.equal(catalog.captions[src].length, cues.length);

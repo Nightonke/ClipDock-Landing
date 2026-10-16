@@ -26,6 +26,12 @@
 .tutorial-toc nav { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 24px 0; border-block: 1px solid var(--line-strong); font-size: .875rem; line-height: 1.65; }
 .tutorial-toc strong { grid-column: 1 / -1; font-size: 1rem; }
 .tutorial-body { min-width: 0; }
+.tutorial-overview { padding: clamp(20px, 3vw, 32px); margin-bottom: 24px; border: 1px solid var(--line-strong); border-radius: 20px; background: var(--paper-strong); }
+.tutorial-overview > div + div { margin-top: 28px; }
+.tutorial-overview h3 { margin: 0 0 8px; }
+.tutorial-overview p { margin: 8px 0 0; }
+.tutorial-overview a { text-decoration: underline; text-underline-offset: 4px; }
+.tutorial-overview a:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
 .tutorial-body h2 { font-size: clamp(1.6rem, 2.8vw, 2.1rem); line-height: 1.4; margin: 0 0 20px; }
 .tutorial-body h3 { font-size: 1.2rem; line-height: 1.5; }
 .tutorial-body p, .tutorial-body li { font-size: 1.0625rem; line-height: 1.95; color: var(--ink-soft); }

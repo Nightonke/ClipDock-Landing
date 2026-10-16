@@ -123,7 +123,7 @@ export function collectPageSnapshots(reader) {
   for (const article of structure) {
    const raw = tutorialCopy[article.slug];
    if (!raw || !article.screenshotsReady) continue;
-   const copy = pick(raw, ['title', 'description', 'intro', 'steps', 'tips', 'faq']);
+   const copy = pick(raw, ['title', 'description', 'intro', 'steps', 'tips', 'faq', 'overview']);
    const markup = template('src/layouts/TutorialArticle.astro');
    if (markup.includes('article.exampleNote')) copy.exampleNote = raw.exampleNote;
    if (markup.includes('article.verificationNote')) copy.verificationNote = raw.verificationNote;

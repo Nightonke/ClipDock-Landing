@@ -215,9 +215,9 @@ export const copy: Record<string, TutorialCopy> = {
     "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example exported a roughly six-second MP4/H.264 video using Original resolution, Standard quality, Keep Sound, and Auto bitrate."
   },
   "trim-video-iphone": {
-    "title": "How to trim a video’s duration on iPhone and iPad",
-    "description": "Keep just the part of a video you need. Set the start and end points in Trim Video, then save the clip or use it in another tool.",
-    "intro": "Keep just the part of a video you need. Set the start and end points in Trim Video, then save the clip or use it in another tool.",
+    "title": "How to trim a video on iPhone and keep the part you need",
+    "description": "Trim a video in iPhone Photos or ClipDock. Keep a middle segment, understand start and end times, and save a separate clip before further editing.",
+    "intro": "You can shorten a video directly in Photos. Use ClipDock’s Trim Video when the source is in Files or when you want to send the selected segment into another processing tool. Set both ends of the range to keep the middle of a recording.",
     "tips": [
       {
         "title": "This trims time, not the canvas",
@@ -227,7 +227,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "How do I keep a segment from the middle?",
-        "answer": "Move both handles, check the displayed start and end times, then preview and export."
+        "answer": "Move the left handle to the first moment you want and the right handle to the last. For example, 00:10–00:16 retains six seconds. Check the displayed range, then play the export to catch an action or word cut off at either edge."
       },
       {
         "question": "Why does Even Split open VIP?",
@@ -237,7 +237,7 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Trim Video in Process",
-        "text": "Open Process, then tap Trim Video."
+        "text": "In ClipDock, open the Process tab and tap Trim Video. Have the original video ready in Photos or Files."
       },
       {
         "title": "Choose the video to process",
@@ -249,7 +249,7 @@ export const copy: Record<string, TutorialCopy> = {
         "sections": [
           {
             "title": "Select Segment exports the chosen range",
-            "text": "The left handle sets the start and the right sets the end. Times and selected duration appear above, with the export range repeated below. This example keeps 00:00–00:06."
+            "text": "The left handle sets the start and the right sets the end. Times and selected duration appear above, with the export range repeated below. This example keeps 00:00–00:06 and produces a roughly six-second clip. The selected duration is the end time minus the start time."
           },
           {
             "title": "The preview duration is not the trim range",
@@ -276,7 +276,32 @@ export const copy: Record<string, TutorialCopy> = {
         ]
       }
     ],
-    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. Select Segment exported the opening six seconds of a roughly 2:26 video. Even Split opened the VIP page; its export was not tested."
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. Select Segment exported the opening six seconds of a roughly 2:26 video. Even Split opened the VIP page; its export was not tested.",
+    "overview": {
+      "title": "Choose how to trim your video",
+      "sections": [
+        {
+          "title": "Trim a recording in Photos",
+          "text": "Open the video in Photos and tap Edit. Move the two ends of the frame viewer to mark the section to keep, then tap Done. Choose Save Video as New Clip if you want to retain both the full recording and the shorter version.",
+          "link": {
+            "label": "Apple’s guide to trimming and saving a new clip",
+            "href": "https://support.apple.com/guide/iphone/iph1d1344a2d/ios"
+          }
+        },
+        {
+          "title": "Keep one continuous range in ClipDock",
+          "text": "Use Process → Trim Video → Select Segment. The example below exports 00:00–00:06 as a roughly six-second video. To keep a middle section such as 00:10–00:16, move both handles and confirm the six-second selected duration before processing."
+        },
+        {
+          "title": "Removing a section from the middle takes two clips",
+          "text": "Select Segment keeps one continuous range. To remove a middle section and keep both sides, export the portion before it and the portion after it separately, then join those clips in order. Even Split is a different, VIP mode for equal divisions.",
+          "link": {
+            "label": "Join the retained clips",
+            "href": "/articles/join-videos-iphone/"
+          }
+        }
+      ]
+    }
   },
   "join-videos-iphone": {
     "title": "How to join several videos on iPhone and iPad",
@@ -695,9 +720,9 @@ export const copy: Record<string, TutorialCopy> = {
     "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example rotated a roughly six-second clip 90 degrees right; the change appeared in the preview and export."
   },
   "mirror-video-iphone": {
-    "title": "How to mirror or flip videos on iPhone and iPad",
-    "description": "Flip a video horizontally or vertically with Mirror Video. Preview the effect before exporting, especially when the picture contains text or logos.",
-    "intro": "Flip a video horizontally or vertically with Mirror Video. Preview the effect before exporting, especially when the picture contains text or logos.",
+    "title": "How to flip a video on iPhone: horizontal or vertical",
+    "description": "Flip an iPhone video in Photos, or use ClipDock for H Flip and V Flip. Compare the methods and check text, orientation, and the saved result.",
+    "intro": "For a simple left-to-right flip, use the iPhone Photos app. In ClipDock, H Flip swaps left and right and V Flip swaps top and bottom. Both change the picture; neither makes the action play backward.",
     "tips": [
       {
         "title": "Text may reverse as well",
@@ -707,7 +732,7 @@ export const copy: Record<string, TutorialCopy> = {
     "faq": [
       {
         "question": "Which mode swaps left and right?",
-        "answer": "Try H Flip and confirm the positions of text or landmarks."
+        "answer": "H Flip swaps left and right; V Flip swaps top and bottom. Use an object at the left edge as a reference: after H Flip it should appear at the right edge. A 180-degree rotation changes both directions."
       },
       {
         "question": "Does mirroring play the action backward?",
@@ -717,7 +742,7 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Mirror Video in Process",
-        "text": "Open Process, then tap Mirror Video."
+        "text": "In ClipDock, open the Process tab and tap Mirror Video. Follow these steps when you want to select a flip mode or continue with another ClipDock tool afterward."
       },
       {
         "title": "Choose the video to process",
@@ -756,7 +781,32 @@ export const copy: Record<string, TutorialCopy> = {
         ]
       }
     ],
-    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example exported H Flip. Paid symmetry entries were inspected, but their exports were not tested."
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example exported H Flip. Paid symmetry entries were inspected, but their exports were not tested.",
+    "overview": {
+      "title": "Choose the flip you need",
+      "sections": [
+        {
+          "title": "Horizontal flip in Photos",
+          "text": "Open your video in Photos, enter Edit, choose Crop, then tap the Flip icon and save with Done. This is enough for a left-right mirror effect without installing another app.",
+          "link": {
+            "label": "Apple’s guide to flipping photos and videos",
+            "href": "https://support.apple.com/guide/iphone/iph0f3ebb1dd/ios"
+          }
+        },
+        {
+          "title": "Horizontal or vertical flip in ClipDock",
+          "text": "Open Process → Mirror Video, import a video, and choose H Flip or V Flip under Mirror Mode. The screenshots below show H Flip and the resulting left-right reversal. Use a recognizable object near an edge to check the direction before saving."
+        },
+        {
+          "title": "Check lettering before you export",
+          "text": "A flip affects the whole frame, including signs, logos, and burned-in subtitles. If the video is sideways, rotate it instead; a mirror effect will not correct a 90-degree orientation problem.",
+          "link": {
+            "label": "Rotate a sideways video",
+            "href": "/articles/rotate-video-iphone/"
+          }
+        }
+      ]
+    }
   },
   "reverse-video-iphone": {
     "title": "How to reverse a video on iPhone and iPad",
@@ -1189,13 +1239,13 @@ export const copy: Record<string, TutorialCopy> = {
     "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example reached the output page with a new _md5.mp4 file. Input and output MD5 hashes were not compared."
   },
   "merge-audio-video-iphone": {
-    "title": "How to merge audio and video on iPhone and iPad",
-    "description": "Combine a video with audio from another file using Merge Audio and Video. Select the video first, choose an audio source, then check the sound and sync after exporting.",
-    "intro": "Combine a video with audio from another file using Merge Audio and Video. Select the video first, choose an audio source, then check the sound and sync after exporting.",
+    "title": "How to combine a video with an audio file on iPhone",
+    "description": "Combine video with a sound file or audio from another Photos video in ClipDock. Prepare source lengths and check synchronization before saving.",
+    "intro": "In ClipDock, open Process → Merge Audio and Video, select the video for the picture, then select a separate sound source. You can choose an audio file or take audio directly from another video in Photos.",
     "tips": [
       {
         "title": "Sound is out of sync or the ending is wrong",
-        "text": "Check source lengths and start positions. This page has no timing-offset or looping controls. Prepare the source media separately if needed, then merge again."
+        "text": "If the wrong sound plays, reopen Audio Source and check the selected filename. If the sound starts at the wrong moment or ends too soon, prepare the source media separately and merge again: this screen has no timing-offset, looping, or audio-trim controls. Check the export before saving it."
       }
     ],
     "faq": [
@@ -1211,7 +1261,7 @@ export const copy: Record<string, TutorialCopy> = {
     "steps": [
       {
         "title": "Open Merge Audio and Video in Process",
-        "text": "Open Process, then tap Merge Audio and Video."
+        "text": "In ClipDock, open the Process tab and tap Merge Audio and Video. Start with the video whose picture you want to keep; choose the sound source afterward."
       },
       {
         "title": "Choose the video to process",
@@ -1266,6 +1316,27 @@ export const copy: Record<string, TutorialCopy> = {
         ]
       }
     ],
-    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example generated a roughly six-second video using audio from another Photos video. The merged track was not listened through segment by segment."
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example generated a roughly six-second video using audio from another Photos video. The merged track was not listened through segment by segment.",
+    "overview": {
+      "title": "Prepare the picture and sound",
+      "sections": [
+        {
+          "title": "Two inputs, one video result",
+          "text": "Have your picture source ready in Photos or Files, plus either an audio file in Files or a second video in Photos that supplies the sound. Selecting the first video does not also select the second source. The example below uses audio from another Photos video and produces a roughly six-second video."
+        },
+        {
+          "title": "Decide whether you need a timeline editor",
+          "text": "This tool selects a sound source but has no controls for track balance, a delayed start, looping, or trimming the audio. If you need narration over music or a sound that begins several seconds into the video, prepare that soundtrack separately before importing it."
+        },
+        {
+          "title": "Check the beginning and the ending",
+          "text": "Prepare source lengths for the section you need. Do not assume that a short soundtrack will loop or that longer audio will extend the picture. Play the exported video to check the selected sound, synchronization, volume, and the final seconds before saving.",
+          "link": {
+            "label": "Trim the video to the intended duration",
+            "href": "/articles/trim-video-iphone/"
+          }
+        }
+      ]
+    }
   }
 };
