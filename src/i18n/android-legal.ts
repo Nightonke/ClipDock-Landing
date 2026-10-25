@@ -31,13 +31,15 @@ This policy applies to **ClipDock: Web Video Downloader for Android**, package *
 
 ClipDock processes some media locally and sends some information to its services to sign you in, enforce download allowances, verify purchases, resolve links, and understand download failures.
 
-## 2. Google sign-in and download allowance
+## 2. Account sign-in and download allowance
 
 You can open ClipDock, browse websites, and manage local files without a ClipDock account. Using the free download allowance requires Google sign-in. A verified Google Play membership can provide paid access without signing in to a ClipDock account.
 
 When you choose Google sign-in, Google provides a sign-in token containing account identity information, which may include your email and profile information. Our server verifies that token. It stores a hashed Google account identifier, remaining free-download balance, download allowance transactions, account timestamps, and sign-in session records. The account database does not retain the raw Google token or your Google profile. Your email is displayed and stored locally in the app. We do not receive your Google password.
 
 The identifier links your allowance across installations. It is pseudonymous, not fully anonymous. A session is valid for up to 30 days unless ended or invalidated earlier. Google handles its services under its [Privacy Policy](https://policies.google.com/privacy).
+
+**Provisioned demo accounts:** if we provide you with a demo username and password, the app sends them over HTTPS to our account service for verification. The service retains a salted password hash, a pseudonymous demo account identifier, and session and download-allowance records; it does not retain the plaintext password. The app stores the session securely and does not save the password. Demo accounts can include full Premium access without Google sign-in or a purchase. Demo access can be disabled or its credentials rotated; it uses the same app functionality. These accounts may be shared by the authorized review team. Deleting a demo profile removes its sessions and account-linked history for all users of that profile; the provisioned login remains available to create a fresh profile. Contact support to request permanent removal of the provisioned credentials.
 
 ## 3. Links, websites, and downloaded media
 
@@ -152,7 +154,7 @@ This page is for **ClipDock: Web Video Downloader for Android** (com.nightonke.a
 
 ## Delete your account in the app
 
-1. Open ClipDock and go to **Me → Google account**.
+1. Open ClipDock and go to **Me → Account** (called **Google account** in older versions).
 2. Choose **Delete ClipDock account** and read the deletion notice.
 3. Finish or cancel pending downloads on your devices and allow the balance to sync, then confirm deletion. If a network error occurs, reconnect and use **Retry account deletion**.
 
@@ -194,13 +196,15 @@ The [Android Privacy Policy](/android/privacy/) explains the information process
 
 部分媒体处理在设备上完成；登录、下载额度管理、购买验证、链接解析和下载故障分析需要向服务端传输信息。
 
-## 2. Google 登录与下载额度
+## 2. 账号登录与下载额度
 
 打开应用、浏览网页和管理本地文件不要求 ClipDock 账号。使用免费下载额度需要 Google 登录。经过验证的 Google Play 会员可在未登录 ClipDock 账号时使用付费权益。
 
 选择 Google 登录后，Google 提供包含账号身份信息的登录令牌，其中可能包括电子邮箱和个人资料。服务端验证令牌，并保存经哈希处理的 Google 账号标识、剩余免费下载额度、额度交易记录、账号时间信息和登录会话。账号数据库不保留原始 Google 令牌或 Google 个人资料；邮箱用于应用内显示并保存在本地。我们不会获得 Google 密码。
 
 账号标识用于跨安装保留额度，它属于假名化信息，并非完全匿名数据。会话有效期最长为 30 天，也可能因退出或失效提前结束。Google 服务适用其[隐私政策](https://policies.google.com/privacy)。
+
+**预先配置的演示账号：**如果我们向您提供演示用户名和密码，应用会通过 HTTPS 将其发送给账号服务验证。服务端保存加盐密码哈希、假名化演示账号标识、会话及下载额度记录，不保存明文密码；应用安全保存会话，不保存密码。演示账号可无需 Google 登录或购买而使用完整 Premium 权益，使用与其他账号相同的应用功能。我们可以停用演示权限或更换凭据。演示账号可能由获准的审核团队共同使用；删除演示资料会移除该资料在所有设备上的会话和账号关联历史，但已配置的登录仍可创建新资料。若需永久移除已配置凭据，请联系支持。
 
 ## 3. 链接、网页与媒体
 
@@ -315,7 +319,7 @@ ClipDock 提供链接提取、网页视频识别、下载、本地媒体管理�
 
 ## 在应用中删除账号
 
-1. 打开 ClipDock，进入 **我的 → Google 账号**。
+1. 打开 ClipDock，进入 **我的 → 账号**（旧版本中显示为 **Google 账号**）。
 2. 选择 **删除 ClipDock 账号**，阅读删除提示。
 3. 完成或取消各设备上未完成的下载，联网同步额度后确认。若遇到网络错误，请重新联网并选择 **重试删除账号**。
 
