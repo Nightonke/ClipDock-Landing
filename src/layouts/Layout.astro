@@ -20,6 +20,7 @@ interface Props extends LayoutWithAppDataProps {
 	ogImageAlt?: string;
 	structuredData?: Record<string, unknown> | Array<Record<string, unknown>>;
 	noindex?: boolean;
+	storeHref?: string;
 }
 
 const {
@@ -36,6 +37,7 @@ const {
 	ogImageAlt,
 	structuredData,
 	noindex = false,
+	storeHref,
 } = Astro.props;
 
 const activeLocale =
@@ -133,7 +135,7 @@ const jsonLd = structuredData
 			name={navTitle}
 			logo={navData.logo}
 			homeHref={homeHref}
-			storeHref={navData.storeLinks.apple}
+			storeHref={storeHref ?? navData.storeLinks.apple}
 			languageLinks={alternates}
 			nav={ui.nav}
 		/>
@@ -148,7 +150,7 @@ const jsonLd = structuredData
 			homeHref={homeHref}
 			privacyHref={privacyHref}
 			termsHref={termsHref}
-			storeHref={navData.storeLinks.apple}
+			storeHref={storeHref ?? navData.storeLinks.apple}
 			privacyLabel={labels.privacy}
 			termsLabel={labels.terms}
 			getAppLabel={ui.nav.getApp}

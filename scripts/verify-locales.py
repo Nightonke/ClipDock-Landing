@@ -30,6 +30,7 @@ class Page(HTMLParser):
         self.skip = False
         self.text = []
         self.links = []
+        self.link_languages = {}
         self.h1 = 0
         self.step_ids = []
         self.screenshots = 0
@@ -55,7 +56,10 @@ class Page(HTMLParser):
         if tag == 'meta' and attrs.get('name') == 'description': self.metadata.append(attrs.get('content', ''))
         if self.main:
             self.text.extend(attrs.get(key, '') for key in ('alt', 'aria-label', 'data-failed', 'data-title', 'data-description'))
-            if tag == 'a': self.links.append(attrs.get('href', ''))
+            if tag == 'a':
+                self.links.append(attrs.get('href', ''))
+                if attrs.get('hreflang'):
+                    self.link_languages[attrs.get('href', '')] = attrs['hreflang']
 
     def handle_endtag(self, tag):
         if tag == 'main': self.main = False
@@ -118,7 +122,13 @@ for locale in PUBLISHED:
         for link in page.links:
             target = pages.get(urlparse(link).path)
             if target and target.lang and target.lang != page.lang:
-                errors.append(f'{route}: cross-language content link: {link}')
+                # Android legal documents are explicitly offered in English or
+                # Simplified Chinese. Their labels identify that language; a
+                # matching hreflang distinguishes them from untranslated links.
+                declared = page.link_languages.get(link)
+                declared_html = next((meta['htmlLang'] for meta in META.values() if meta['hrefLang'] == declared), None)
+                if '/android/' not in urlparse(link).path or declared_html != target.lang:
+                    errors.append(f'{route}: cross-language content link: {link}')
         if locale == 'zh-Hant' and any(re.search(r'[这为与从个们来时载链视频图选择开关设网页]', text) for text in page.text + page.metadata):
             errors.append(f'{route}: Simplified Chinese residue in Traditional Chinese copy')
         if locale == 'ja' and any(re.search(r'点击|粘贴|下载完成|保存到相册|已加载|选择视频|本例使用|截图展示', text) for text in page.text + page.metadata):
@@ -147,6 +157,21 @@ for path in ROOT.glob('sitemap-*.xml'):
     sitemap_urls.update(urlparse(node.text).path for node in tree.findall('.//{*}url/{*}loc'))
 if not sitemap_urls:
     errors.append('Sitemap contains no page URLs')
+for locale in ['en-US', 'zh-Hans']:
+    for document in ['privacy', 'terms', 'delete-account']:
+        route = localized(locale, 'android/' + document)
+        page = pages.get(route)
+        if not page or page.redirect or page.lang != META[locale]['htmlLang']:
+            errors.append(f'{route}: Android legal document missing or incorrect language')
+            continue
+        expected = {META[item]['hrefLang']: localized(item, 'android/' + document) for item in ['en-US', 'zh-Hans']}
+        expected['x-default'] = localized('en-US', 'android/' + document)
+        if {lang: urlparse(href).path for lang, href in page.alternates.items()} != expected:
+            errors.append(f'{route}: Android legal language switch leaves the document')
+        if route not in sitemap_urls or urlparse(page.canonical).path != route:
+            errors.append(f'{route}: Android legal canonical/sitemap mismatch')
+        if sum(len(text.strip()) for text in page.text) < 500:
+            errors.append(f'{route}: Android legal document is incomplete')
 for locale in PUBLISHED:
     for legal in ['privacy', 'terms']:
         if localized(locale, legal) not in sitemap_urls:

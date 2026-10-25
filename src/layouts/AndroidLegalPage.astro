@@ -1,0 +1,54 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { commonCopy } from "@/i18n/common";
+import { landingContent } from "@/i18n/content";
+import { androidLegalContent, androidLegalLocales, androidLegalPath, type AndroidLegalLocale, type AndroidLegalPage } from "@/i18n/android-legal";
+import { localizedPath, localeMeta } from "@/i18n/locales";
+import { parseMarkdown } from "@/utils/parseMarkdown";
+
+interface Props { locale: AndroidLegalLocale; page: AndroidLegalPage }
+const { locale, page } = Astro.props;
+const app = landingContent[locale];
+const copy = androidLegalContent[locale];
+const document = copy[page];
+const html = await parseMarkdown(document.content);
+const alternates = androidLegalLocales.map(item => ({
+	locale: item, label: localeMeta[item].label, href: androidLegalPath(item, page),
+	hrefLang: localeMeta[item].hrefLang, isActive: item === locale,
+}));
+---
+<Layout title={`${document.title} | ClipDock`} description={document.description}
+	lang={localeMeta[locale].htmlLang} appData={app} alternates={alternates}
+	storeHref="https://play.google.com/store/apps/details?id=com.nightonke.android.clipdock"
+	homeHref={localizedPath(locale)} labels={app.labels}
+	privacyHref={androidLegalPath(locale, "privacy")} termsHref={androidLegalPath(locale, "terms")}>
+	<main id="main-content" class="legal-shell">
+		<nav class="detail-breadcrumb" aria-label={commonCopy[locale].breadcrumb}>
+			<a href={localizedPath(locale)}>{commonCopy[locale].home}</a>
+			<span aria-current="page">{document.title}</span>
+		</nav>
+		<p class="platform-label">{copy.label}</p>
+		<nav class="document-links" aria-label={copy.label}>
+			{(["privacy", "terms", "delete-account"] as const).map(key => (
+				<a href={androidLegalPath(locale, key)} aria-current={page === key ? "page" : undefined}>{copy[key].title}</a>
+			))}
+		</nav>
+		<article class="prose">
+			<h1>{document.title}</h1>
+			<p class="legal-date">{copy.effectiveDateLabel} <time datetime="2026-10-25">{copy.effectiveDateText}</time></p>
+			<Fragment set:html={html} />
+		</article>
+	</main>
+</Layout>
+<style>
+	.legal-shell { max-width: 880px; }
+	.detail-breadcrumb { margin: 0 0 1.25rem; }
+	.platform-label { color: var(--brand-primary, #2563eb); font-weight: 700; }
+	.document-links { display: flex; flex-wrap: wrap; gap: .65rem 1.25rem; margin: 1rem 0 2rem; }
+	.document-links a { text-decoration: underline; text-underline-offset: .2em; }
+	.document-links a[aria-current="page"] { font-weight: 700; }
+	.prose { max-width: none; overflow-wrap: anywhere; }
+	.prose :global(h1) { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.15; }
+	.prose :global(h2), .prose :global(h3) { line-height: 1.35; }
+	.legal-date { font-size: .9rem; }
+</style>

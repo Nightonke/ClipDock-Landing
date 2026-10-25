@@ -1,0 +1,9 @@
+---
+import AndroidLegalPage from "@layouts/AndroidLegalPage.astro";
+import type { AndroidLegalPage as Page } from "@/i18n/android-legal";
+export function getStaticPaths() {
+	return ["privacy", "terms", "delete-account"].map(page => ({ params: { page } }));
+}
+const { page } = Astro.params;
+---
+<AndroidLegalPage locale="en-US" page={page as Page} />
