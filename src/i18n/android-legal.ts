@@ -43,6 +43,8 @@ The identifier links your allowance across installations. It is pseudonymous, no
 
 ClipDock uses links you enter, paste, share, or select in the browser to identify downloadable resources. Depending on the source and extraction route, links and related request information are sent to our cloud services and media-link resolution providers, including MeowLoad and SnapAny. Source websites and media hosts receive the network requests needed to open pages and download the content you select, including your IP address and applicable request headers. Browser pages may use cookies and local storage. Where needed to access your selected content, the app may use the source site's cookies or referer information for the media request.
 
+**Optional website-login retry:** if an eligible YouTube link requires website sign-in, the app explains that tapping **Done Logging In** sends the necessary YouTube cookies and selected page URL to ClipDock's cloud retry service and its supporting cookie-extraction service. These cookies can represent a signed-in website session. After a successful retry, the app can reuse that locally stored session for later eligible retries until it is cleared or becomes invalid. The account/extraction proxy handles the cookie material for the request without logging or caching it. This website session is separate from Google sign-in for your ClipDock allowance. You can decline the retry or clear website data.
+
 Downloaded or imported videos, audio, thumbnails, local task records, and editing results are stored on your device. The local editing tools do not upload your media files to us merely to trim, convert, or otherwise process them. This does not mean that links or download diagnostics remain only on your device. Files you explicitly share, export, or save to a gallery are also handled by the destination you choose.
 
 ## 4. Download diagnostics and service security
@@ -74,7 +76,7 @@ You can change available permissions and optional clipboard features, clear brow
 
 ## 7. Recipients, security, and international processing
 
-Information is handled by us and service providers as needed for the functions above: Google for identity, billing, and integrity; Tencent Cloud/CloudBase for cloud processing and storage; Country.is for IP-based country lookup; link-resolution services for selected links; and website, CDN, and email providers for delivery and support. Source websites and destinations you independently use have their own policies. Information may be processed outside your country, including Hong Kong and mainland China.
+Information is handled by us and service providers as needed for the functions above: Google for identity, billing, and integrity; Tencent Cloud/CloudBase for cloud processing and storage; Country.is for IP-based country lookup; link-resolution services for selected links; and website, CDN, and email providers for delivery and support. Source websites and destinations you independently use have their own policies. Information may be processed outside your country, including Hong Kong, mainland China, and the United States.
 
 Our account, purchase-verification, and diagnostic endpoints use HTTPS. Credentials stored by the app use Android Keystore-backed protection where implemented. Source websites may offer unencrypted HTTP content; their transport is controlled by the source. No security measure is absolute. We do not sell personal information. We may disclose information when required by law, to address abuse and protect rights, or at your direction.
 
@@ -204,6 +206,8 @@ The [Android Privacy Policy](/android/privacy/) explains the information process
 
 ClipDock 使用您输入、粘贴、分享或在浏览器中选择的链接识别可下载资源。依来源和解析路径，链接及相关请求信息会发送到我们的云服务和媒体链接解析服务商，包括 MeowLoad、SnapAny。打开网页和下载所选内容时，来源网站及媒体主机会收到相应网络请求，包括 IP 地址和适用的请求头。网页可能使用 Cookie 和本地存储；为访问您选择的内容，媒体请求可能需要该网站的 Cookie 或来源页面信息。
 
+**可选的网站登录重试：**符合条件的 YouTube 链接需要网站登录时，应用会说明：点击 **Done Logging In（已完成登录）**将把必要的 YouTube Cookie 和所选网页 URL 发送至 ClipDock 云端重试服务及其配套 Cookie 解析服务。Cookie 可能代表已登录的网站会话。成功重试后，应用可在后续符合条件的重试中复用本地会话，直至网站数据被清除或会话失效。账号／解析代理仅按请求处理 Cookie，不记录或缓存其内容。此网站会话与 ClipDock 免费额度使用的 Google 登录相互独立。您可以放弃重试或清除网站数据。
+
 下载或导入的视频、音频、缩略图、本地任务和编辑结果保存在设备上。本地编辑工具不会仅因裁剪、转换等处理而将媒体文件上传给我们。这不代表链接和下载诊断也只保存在本地。您主动分享、导出或保存到相册的文件，也会由所选目标处理。
 
 ## 4. 下载诊断与服务安全
@@ -235,7 +239,7 @@ Google Play 处理付款。ClipDock 及服务端使用购买令牌、商品与�
 
 ## 7. 接收方、安全与跨境处理
 
-我们及服务提供方按上述目的处理信息：Google 提供身份、付款和完整性服务；腾讯云／CloudBase 提供云计算与存储；Country.is 提供基于 IP 的国家查询；链接解析服务处理您选择的链接；网站托管、CDN 和邮件服务提供内容分发与支持。您自行使用的来源网站及分享目标有各自政策。信息可能在您所在国家以外处理，包括香港及中国大陆。
+我们及服务提供方按上述目的处理信息：Google 提供身份、付款和完整性服务；腾讯云／CloudBase 提供云计算与存储；Country.is 提供基于 IP 的国家查询；链接解析服务处理您选择的链接；网站托管、CDN 和邮件服务提供内容分发与支持。您自行使用的来源网站及分享目标有各自政策。信息可能在您所在国家以外处理，包括香港、中国大陆及美国。
 
 账号、购买验证及诊断接口使用 HTTPS。应用中相应凭据采用 Android Keystore 支持的保护措施。来源网站可能提供未加密的 HTTP 内容，其传输方式由来源决定。任何安全措施都不能保证绝对安全。我们不出售个人信息；可能按法律要求、为处理滥用和保护权利，或按您的指示披露信息。
 
