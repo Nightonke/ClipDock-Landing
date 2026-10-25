@@ -31,6 +31,7 @@ The public wording must be updated when collection, processors, retention, delet
 ## Validation
 
 - `npm run check:i18n`: 13 tests passed.
-- `npm run build:production`: 412 pages; 411 sitemap entries; 28,897 local references; no site/localization errors (before final copy-only wording adjustment; deployment CI reruns).
+- `npm run build:production`: 412 pages; 411 sitemap entries; 28,897 local references; no site/localization errors before merging the latest upstream tutorial changes; deployment CI reruns.
 - Six Android routes checked for language, canonical URL, alternate-language links and sitemap membership.
 - Desktop Chrome preview checked for readable policy layout and correct Android document/store links.
+- The upstream content-based sitemap date generator includes the new Android documents, with a regression check that editing Android privacy does not change unrelated document dates.

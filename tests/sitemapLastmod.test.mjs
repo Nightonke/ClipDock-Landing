@@ -97,6 +97,20 @@ test('changing privacy prose keeps the terms date intact', t => {
  assert.equal(dates.get('/terms/'), first);
 });
 
+test('Android legal pages receive dates and keep separate document histories', t => {
+ const root = fixture(t);
+ write(root, 'src/i18n/android-legal.ts', "export const androidLegalLocales=['en-US']; export const androidLegalContent={'en-US':{label:'Android',privacy:{title:'Android Privacy',content:'Android privacy text'},terms:{title:'Android Terms',content:'Android terms text'},'delete-account':{title:'Delete account',content:'Deletion steps'}}};");
+ commit(root, first);
+ replace(root, 'src/i18n/android-legal.ts', 'Android privacy text', 'Updated Android privacy text');
+ commit(root, second);
+ const dates = buildLastmodMap({ root });
+ assert.equal(dates.get('/android/privacy/'), second);
+ assert.equal(dates.get('/android/terms/'), first);
+ assert.equal(dates.get('/android/delete-account/'), first);
+ assert.equal(dates.get('/privacy/'), first);
+ assert.equal(dates.get('/'), first);
+});
+
 test('a translated tutorial change does not refresh other languages', t => {
  const root = fixture(t);
  cpSync(path.join(root, 'src/i18n/en-US'), path.join(root, 'src/i18n/zh-Hans'), { recursive: true });

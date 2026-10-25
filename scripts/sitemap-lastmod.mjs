@@ -86,6 +86,8 @@ export function collectPageSnapshots(reader) {
  const homeTemplates = ['src/layouts/Layout.astro', 'src/layouts/ClipDockLanding.astro', 'src/components/HeroDemos.astro', 'src/components/SubtitleCarousel.astro'];
  const indexTemplates = ['src/layouts/TutorialLayout.astro', 'src/layouts/TutorialIndex.astro'];
  const legalTemplates = ['src/layouts/Layout.astro', 'src/layouts/LegalPage.astro'];
+ const androidTemplates = ['src/layouts/Layout.astro', 'src/layouts/AndroidLegalPage.astro'];
+ const android = reader.has('src/i18n/android-legal.ts') ? reader.load('src/i18n/android-legal.ts') : undefined;
  const templates = files => files.map(template);
  const usedUI = (ui, files) => pick(ui, [...new Set(files.flatMap(file => [...template(file).matchAll(/\bui\.(\w+)/g)].map(match => match[1])))]);
  const media = value => [...new Set((stable(value).match(/\/assets\/[^"\s]+\.(?:webp|png|jpg|mp4)/g) ?? []))].map(src => [src, reader.asset(src)]);
@@ -137,8 +139,19 @@ export function collectPageSnapshots(reader) {
   if (reader.has(`${directory}/legal.ts`)) {
    const { legal } = reader.load(`${directory}/legal.ts`);
    for (const page of ['privacy', 'terms']) add(page, { shared, templates: templates(legalTemplates), ui: usedUI(ui, legalTemplates),
+    platformNotice: template('src/layouts/LegalPage.astro').includes('platformNotices') ? android?.platformNotices?.[locale] : undefined,
     document: legal[page], navigation: [legal.privacy.title, legal.terms.title],
     date: pick(legal, ['navigationLabel', 'effectiveDateLabel', 'effectiveDate', 'effectiveDateText']) });
+  }
+  const androidCopy = android?.androidLegalContent?.[locale];
+  if (androidCopy) {
+   const pages = ['privacy', 'terms', 'delete-account'];
+   for (const page of pages) add(`android/${page}`, {
+    shared: { ...shared, languages: languages.filter(([language]) => android.androidLegalLocales.includes(language)) },
+    templates: templates(androidTemplates), document: androidCopy[page],
+    navigation: pages.map(key => androidCopy[key].title),
+    date: pick(androidCopy, ['label', 'effectiveDateLabel', 'effectiveDateText']),
+   });
   }
  }
  return result;
