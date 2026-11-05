@@ -519,7 +519,8 @@ export const copy: Record<string, TutorialCopy> = {
         ]
       }
     ],
-    "exampleNote": "本篇沿用 TikTok 配圖，圖中的帳號、連結和數量並非抖音實測記錄。截圖展示佇列執行狀態，未展示全部下載完成或相簿儲存成功。「資源管理」的總數包含其他任務，不能作為這一批的結果統計；帳號限制和媒體數量均為範例。"
+    "exampleNote": "本篇沿用 TikTok 配圖，圖中的帳號、連結和數量並非抖音實測記錄。截圖展示佇列執行狀態，未展示全部下載完成或相簿儲存成功。「資源管理」的總數包含其他任務，不能作為這一批的結果統計；帳號限制和媒體數量均為範例。",
+    "screenshotNotice": "截圖以 TikTok 範例說明共用操作，圖中的帳號與數量並非抖音結果。"
   },
   "batch-download-weibo-profile-iphone": {
     "title": "如何批次下載微博個人頁面影片？",

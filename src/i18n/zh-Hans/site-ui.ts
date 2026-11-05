@@ -66,6 +66,6 @@ export const ui: SiteUI = {
   "indexTitle": "视频下载、字幕提取与处理教程｜iPhone / iPad｜ClipDock 影随存",
   "indexDescription": "在 iPhone 和 iPad 上下载视频、使用复制即下载、批量保存主页与播放列表，提取 YouTube 字幕，以及提取音频、制作实况照片和拼接视频。",
   "indexHeading": "下载、保存与处理\n一步步学会",
-  "indexIntro": "在 iPhone 和 iPad 上下载视频、批量保存作品、提取 YouTube 字幕，再把素材处理成你需要的样子。",
+  "indexIntro": "先判断你手里是单条视频链接、主页或合集链接，还是相册里的视频。下面按任务给出入口，再用截图核对设置与结果。批量列表不代表全部作品，下载完成与保存到相册也需要分别确认。",
   "categories": "教程分类",
 };

@@ -3,7 +3,8 @@ import HeadingText from "@/components/HeadingText.astro";
 import TutorialLayout from "@layouts/TutorialLayout.astro";
 import TutorialScreenshot from "@/components/TutorialScreenshot.astro";
 import type { Tutorial } from "@/content/tutorials";
-import { getTutorials, getCategories, getPlatformNote } from "@/content/localized-tutorials";
+import { getPublishedTutorials, getCategories, getPlatformNote } from "@/content/localized-tutorials";
+import { isPublishedTutorial } from "@/content/publication";
 import { localizedPath, localeMeta, type Locale } from "@/i18n/locales";
 import { siteUI } from "@/i18n/site-ui";
 import { landingContent } from "@/i18n/content";
@@ -11,7 +12,7 @@ interface Props { article: Tutorial; locale: Locale }
 const { article, locale } = Astro.props;
 const ui = siteUI(locale);
 const content = landingContent[locale];
-const tutorials = getTutorials(locale);
+const tutorials = getPublishedTutorials(locale);
 const categories = getCategories(locale);
 const articleHref = (slug: string) => localizedPath(locale, `articles/${slug}`);
 const homeHref = localizedPath(locale);
@@ -31,12 +32,13 @@ const structuredData = [
 	] },
 ];
 ---
-<TutorialLayout locale={locale} slug={article.slug} title={`${article.title} | ${content.shortName}`} description={article.description} structuredData={structuredData} noindex={!article.screenshotsReady}>
+<TutorialLayout locale={locale} slug={article.slug} title={`${article.title} | ${content.shortName}`} description={article.description} structuredData={structuredData} noindex={!isPublishedTutorial(article)}>
 	<main id="main-content" class="tutorial-page site-shell">
 		<nav class="tutorial-breadcrumb" aria-label={ui.breadcrumb}><a href={homeHref}>{ui.home}</a><span aria-hidden="true">/</span><a href={indexHref}>{ui.tutorials}</a><span aria-hidden="true">/</span><a href={`${indexHref}#${category.id}`}>{category.name}</a></nav>
 		<header class="tutorial-hero">
 			<p class="eyebrow">{category.name}</p><h1><HeadingText text={article.title} locale={locale} /></h1>
 			<p class="tutorial-lead">{article.intro}</p>
+			{article.screenshotNotice && <p class="tutorial-screenshot-notice">{article.screenshotNotice}</p>}
 		</header>
 		<div class="tutorial-body-grid">
 			<aside class="tutorial-toc"><nav aria-label={ui.contents}><strong>{ui.contents}</strong>{article.overview && <a href="#overview">{article.overview.title}</a>}{article.steps.map((step, index) => <a href={`#step-${index + 1}`}>{String(index + 1).padStart(2, "0")} · {step.title}</a>)}<a href="#troubleshooting">{ui.troubleshooting}</a><a href="#questions">{ui.questions}</a></nav></aside>
@@ -55,7 +57,7 @@ const structuredData = [
 							{step.exampleUrl && <p class="tutorial-example-url"><a href={step.exampleUrl} target="_blank" rel="noopener noreferrer">{step.exampleUrl}</a></p>}
 							{step.sections?.map(section => <div class="tutorial-step-detail"><h3><HeadingText text={section.title} locale={locale} /></h3><p>{section.text}</p></div>)}
 						</div>
-						{step.image && <TutorialScreenshot id={step.image} locale={locale} />}
+						{step.image && <TutorialScreenshot id={step.image} locale={locale} notice={article.screenshotNotice} />}
 					</section>
 				))}
 				<section id="troubleshooting" class="tutorial-troubleshooting"><h2>{ui.troubleshooting}</h2>{article.tips.map(tip => <div><h3><HeadingText text={tip.title} locale={locale} /></h3><p>{tip.text}</p></div>)}</section>

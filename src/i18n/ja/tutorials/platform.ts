@@ -78,7 +78,8 @@ export const copy: Record<string, TutorialCopy> = {
         "text": "「リソース管理」の「完了」（Done）一覧から動画を開き、映像と音声を確認します。自動保存されていない場合は「写真に保存」（Save to Photos）をタップし、写真へのアクセスを許可してから「写真」アプリでコピーを確認してください。"
       }
     ],
-    "exampleNote": "TikTokの画像はアプリ操作の説明用です。画像内のプラットフォーム、リンク、素材、件数はDouyinの結果を示すものではありません。写真への保存ボタンは示していますが、保存成功の画面は含みません。"
+    "exampleNote": "TikTokの画像はアプリ操作の説明用です。画像内のプラットフォーム、リンク、素材、件数はDouyinの結果を示すものではありません。写真への保存ボタンは示していますが、保存成功の画面は含みません。",
+    "screenshotNotice": "画像はTikTokを使った共通操作の例です。表示されたアカウントや件数はDouyinの結果ではありません。"
   },
   "download-facebook-video-iphone": {
     "title": "Facebookの動画・リールをダウンロードする",

@@ -17,6 +17,7 @@ export const copy: Record<string, TutorialCopy> = {
     steps: [{ title: 'Copier le lien de partage', text: 'Ouvrez la vidéo dans TikTok et choisissez « Partager » (Share), puis « Copier le lien » (Copy link). Copiez le lien de la publication, pas celui du profil.' }, paste('TikTok'), progress, save], exampleNote: example('TikTok')
   },
   'download-douyin-video-iphone': {
+    screenshotNotice: "Exemple TikTok illustrant les commandes communes. Le compte et les quantités affichés ne sont pas des résultats Douyin.",
     title: 'Télécharger une vidéo Douyin dans Photos', description: description('Douyin'), intro: "Copiez le lien de partage de la vidéo Douyin à enregistrer, collez-le dans ClipDock et choisissez les médias disponibles à télécharger.",
     tips: [noResult], faq: [saveFAQ, { question: 'Pourquoi les captures ne montrent-elles pas Douyin ?', answer: "Les images montrent les commandes de l’application avec un lien TikTok. Pour télécharger depuis Douyin, collez le lien de partage de votre vidéo Douyin et vérifiez les médias renvoyés par l’extraction." }],
     steps: [{ title: 'Copier le lien de partage', text: 'Ouvrez la vidéo dans Douyin et copiez son lien depuis le menu de partage. Utilisez le lien de la publication, pas celui du profil.' }, paste('Douyin'), progress, save],

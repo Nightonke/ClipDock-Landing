@@ -8,6 +8,7 @@ import Layout from "./Layout.astro";
 import VideoRecovery from "@/components/VideoRecovery.astro";
 import HeroDemos from "@/components/HeroDemos.astro";
 import DownloadGuides from "@/components/DownloadGuides.astro";
+import TaskGuides from "@/components/TaskGuides.astro";
 import { downloadGuideCopy } from "@/i18n/download-guides";
 import SubtitleCarousel from "@/components/SubtitleCarousel.astro";
 import { captionAt } from "@config/demoCaptions";
@@ -116,7 +117,7 @@ const structuredData = [
 			</div>
 		</div>
 
-		<div class="site-shell"><DownloadGuides locale={content.locale} showAll /></div>
+		<div class="site-shell"><TaskGuides locale={content.locale} /><DownloadGuides locale={content.locale} showAll /></div>
 
 		<div id="features" class="cd-feature-list">
 			{featureSections.map((feature) => (

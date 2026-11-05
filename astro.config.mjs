@@ -2,11 +2,12 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
 import { tutorialStructure } from "./src/content/tutorial-structure";
+import { isPublishedTutorial } from "./src/content/publication";
 import { localizedPath, publishedLocales } from "./src/i18n/locales";
 import { fileURLToPath } from "node:url";
 import { sitemapLastmod } from "./scripts/sitemap-lastmod.mjs";
 
-const draftPaths = new Set(publishedLocales.flatMap(locale => tutorialStructure.filter(article => !article.screenshotsReady).map(article => localizedPath(locale, `articles/${article.slug}`))));
+const draftPaths = new Set(publishedLocales.flatMap(locale => tutorialStructure.filter(article => !isPublishedTutorial(article)).map(article => localizedPath(locale, `articles/${article.slug}`))));
 const lastmod = sitemapLastmod(fileURLToPath(new URL('.', import.meta.url)));
 
 export default defineConfig({

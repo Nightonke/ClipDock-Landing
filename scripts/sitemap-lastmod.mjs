@@ -111,21 +111,26 @@ export function collectPageSnapshots(reader) {
    const copy = reader.load('src/i18n/download-guides.ts').downloadGuideCopy[locale];
    return { copy, templates: templates(guideFiles), guides: downloadGuideSlugs.map(slug => ({ slug, ...pick(tutorialCopy[slug], ['title']) })) };
   };
+  const tasksFor = files => {
+   if (!files.some(file => template(file).includes('<TaskGuides '))) return undefined;
+   const copy = reader.load('src/i18n/task-guides.ts').taskGuideCopy[locale];
+   return copy ? { copy, template: template('src/components/TaskGuides.astro'), published: structure.filter(article => article.screenshotsReady).map(article => article.slug) } : undefined;
+  };
   const add = (page, content) => result.set(route(locale, page), digest(stable(content)));
   const home = reader.load(`${directory}/home.ts`);
   const homeCopy = { ...home, ui: usedUI(home.ui, ['src/layouts/ClipDockLanding.astro']) };
   const captions = reader.load(`${directory}/demo-captions.ts`).captions;
   const homeMedia = [...media([homeCopy, templates(homeTemplates)]), ...home.featureSections.filter(feature => feature.video).flatMap(feature =>
    ['mp4', 'jpg'].map(extension => { const src = `/assets/demos/${feature.video}.${extension}`; return [src, reader.asset(src)]; }))];
-  add('', { shared, templates: templates(homeTemplates), home: homeCopy, captions, guides: guidesFor(homeTemplates),
+  add('', { shared, templates: templates(homeTemplates), home: homeCopy, captions, guides: guidesFor(homeTemplates), tasks: tasksFor(homeTemplates),
    app: pick(landing, ['seoTitle', 'metaDescription', 'description', 'version', 'rating']),
    ui: usedUI(ui, homeTemplates), media: homeMedia });
   add('articles', { shared, templates: templates(indexTemplates), ui: usedUI(ui, indexTemplates), categories,
-   guides: guidesFor(indexTemplates), articles: structure.map(article => ({ ...pick(article, ['slug', 'category', 'screenshotsReady']), ...pick(tutorialCopy[article.slug], ['title', 'description']) })) });
+   guides: guidesFor(indexTemplates), tasks: tasksFor(indexTemplates), articles: structure.map(article => ({ ...pick(article, ['slug', 'category', 'screenshotsReady']), ...pick(tutorialCopy[article.slug], ['title', 'description']) })) });
   for (const article of structure) {
    const raw = tutorialCopy[article.slug];
    if (!raw || !article.screenshotsReady) continue;
-   const copy = pick(raw, ['title', 'description', 'intro', 'steps', 'tips', 'faq', 'overview']);
+   const copy = pick(raw, ['title', 'description', 'intro', 'steps', 'tips', 'faq', 'overview', 'screenshotNotice']);
    const markup = template('src/layouts/TutorialArticle.astro');
    if (markup.includes('article.exampleNote')) copy.exampleNote = raw.exampleNote;
    if (markup.includes('article.verificationNote')) copy.verificationNote = raw.verificationNote;

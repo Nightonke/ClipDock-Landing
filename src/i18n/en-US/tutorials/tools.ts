@@ -583,8 +583,8 @@ export const copy: Record<string, TutorialCopy> = {
   },
   "resize-video-iphone": {
     "title": "How to change video aspect ratio and canvas on iPhone and iPad",
-    "description": "Change a video’s aspect ratio with Resize / Canvas. Choose a canvas shape, then use Fit to keep the whole picture or Fill to cover the canvas.",
-    "intro": "Change a video’s aspect ratio with Resize / Canvas. Choose a canvas shape, then use Fit to keep the whole picture or Fill to cover the canvas.",
+    "description": "Change a video’s aspect ratio on iPhone or iPad. Compare Fit and Fill, keep the full picture with borders, and distinguish canvas size from pixel resolution.",
+    "intro": "To change the shape of a video, choose a canvas ratio and decide whether to keep the whole picture or crop its edges. ClipDock’s Resize / Canvas tool accepts videos from Photos or Files. You do not need to download them through ClipDock first.",
     "tips": [
       {
         "title": "Decide whether edge cropping is acceptable",
@@ -657,7 +657,36 @@ export const copy: Record<string, TutorialCopy> = {
         ]
       }
     ],
-    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example exported a 1:1 canvas using Fit and a black background. Paid blur and multi-panel modes were not export-tested."
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. The example exported a 1:1 canvas using Fit and a black background. Paid blur and multi-panel modes were not export-tested.",
+    "overview": {
+      "title": "Choose the canvas before you export",
+      "sections": [
+        {
+          "title": "Aspect ratio and resolution answer different questions",
+          "text": "A 9:16 canvas is taller than it is wide; 16:9 is wider than it is tall. Neither ratio specifies the number of pixels. Use Resize / Canvas for the shape and layout. If your goal is a smaller file, another format, or a different output resolution, start with Transcode Video.",
+          "link": {
+            "label": "Change format, resolution, or file size",
+            "href": "/articles/transcode-video-iphone/"
+          }
+        },
+        {
+          "title": "Fit preserves the picture; Fill prioritizes coverage",
+          "text": "For a landscape recording on a portrait canvas, Fit keeps the full frame and leaves background above and below it. Fill covers the portrait canvas by cropping the sides. Check a frame with faces or captions near the edges before choosing; a full canvas does not mean the full original picture is visible."
+        },
+        {
+          "title": "What the illustrated result shows",
+          "text": "The example below uses a six-second landscape clip, a 1:1 canvas, Fit, and the default black background. The result preview shows the landscape picture surrounded by background rather than stretched into a square. This is the illustrated output; it is not a before-and-after demonstration of every available layout."
+        },
+        {
+          "title": "Decide which change you actually need",
+          "text": "If the video is sideways, rotating it may solve the problem without adding a new canvas. Resize changes the surrounding shape; rotation changes the picture’s orientation. Check the result again before saving to Photos.",
+          "link": {
+            "label": "Rotate a sideways video",
+            "href": "/articles/rotate-video-iphone/"
+          }
+        }
+      ]
+    }
   },
   "rotate-video-iphone": {
     "title": "How to rotate videos on iPhone and iPad",
@@ -810,8 +839,8 @@ export const copy: Record<string, TutorialCopy> = {
   },
   "reverse-video-iphone": {
     "title": "How to reverse a video on iPhone and iPad",
-    "description": "Make a video play backward with Reverse Video. Choose whether to mute, keep, or reverse the audio, then preview the result.",
-    "intro": "Make a video play backward with Reverse Video. Choose whether to mute, keep, or reverse the audio, then preview the result.",
+    "description": "Reverse a video on iPhone or iPad with ClipDock. Trim the action first, choose how to handle audio, and check the first and last frames before saving.",
+    "intro": "Reverse Video changes the order of the frames so an action runs backward. Import a clip from Photos or Files, choose a sound mode, and preview the output. Reversing is different from turning a sideways picture or flipping it left to right.",
     "tips": [
       {
         "title": "Trim first, then reverse",
@@ -866,7 +895,36 @@ export const copy: Record<string, TutorialCopy> = {
         ]
       }
     ],
-    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. Only Mute mode was tested. The result began at the end of the original clip; Keep Audio and Reverse Audio were not verified."
+    "exampleNote": "Screenshots use the English app interface on an iPhone 17 Pro Max simulator running iOS 26.0. Example settings and access limits refer to that version. Only Mute mode was tested. The result began at the end of the original clip; Keep Audio and Reverse Audio were not verified.",
+    "overview": {
+      "title": "Prepare a short, recognizable action",
+      "sections": [
+        {
+          "title": "Trim the part you want to reverse",
+          "text": "A short action makes the change easier to judge: compare its beginning and ending after processing. Trim first if the source has a long introduction or ending you do not need.",
+          "link": {
+            "label": "Trim the clip before reversing it",
+            "href": "/articles/trim-video-iphone/"
+          }
+        },
+        {
+          "title": "Choose sound separately from backward motion",
+          "text": "Mute removes the soundtrack; Keep Audio is the option for retaining its original order; Reverse Audio is the option for reversing the sound too. The illustrated run uses Mute. The screenshots do not establish how the other modes sound: listen to an exported sample before using them for dialogue or music."
+        },
+        {
+          "title": "Compare the first and last frames",
+          "text": "In the six-second example, the source begins with a sea view and ends with people outdoors. The reversed preview begins with the outdoor scene, and its thumbnail strip runs toward the sea view. This gives you two visible points to check without mistaking a rotated picture for a reversed timeline."
+        },
+        {
+          "title": "For a sideways picture, use rotation",
+          "text": "If the action should keep running forward and only the orientation is wrong, choose Rotate Video instead. Reverse changes time order, not the direction the camera is facing.",
+          "link": {
+            "label": "Change video orientation with Rotate Video",
+            "href": "/articles/rotate-video-iphone/"
+          }
+        }
+      ]
+    }
   },
   "change-video-speed-iphone": {
     "title": "How to speed up or slow down videos on iPhone and iPad",

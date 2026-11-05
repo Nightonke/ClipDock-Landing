@@ -78,7 +78,8 @@ export const copy: Record<string, TutorialCopy> = {
         "text": "‘리소스 관리’의 ‘완료됨’(Done) 목록에서 동영상을 열어 화면과 소리를 확인하세요. 자동 저장되지 않았다면 ‘사진에 저장’(Save to Photos)을 누르고 요청에 따라 사진 접근을 허용한 뒤 사진 앱에서 사본을 확인하세요."
       }
     ],
-    "exampleNote": "TikTok 이미지는 앱 조작 방법을 설명하기 위한 것입니다. 이미지 속 플랫폼, 링크, 미디어, 개수는 Douyin 다운로드 결과를 나타내지 않습니다. 저장 버튼까지 보여주며 사진 앱에 저장된 결과는 확인하지 않았습니다."
+    "exampleNote": "TikTok 이미지는 앱 조작 방법을 설명하기 위한 것입니다. 이미지 속 플랫폼, 링크, 미디어, 개수는 Douyin 다운로드 결과를 나타내지 않습니다. 저장 버튼까지 보여주며 사진 앱에 저장된 결과는 확인하지 않았습니다.",
+    "screenshotNotice": "공통 조작을 설명하는 TikTok 예시입니다. 화면의 계정과 개수는 Douyin 결과가 아닙니다."
   },
   "download-facebook-video-iphone": {
     "title": "Facebook 동영상과 릴스를 다운로드하는 방법",

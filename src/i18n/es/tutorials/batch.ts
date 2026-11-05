@@ -519,7 +519,8 @@ export const copy: Record<string, TutorialCopy> = {
         ]
       }
     ],
-    "exampleNote": "Se reutilizan capturas de TikTok: la cuenta, el enlace y las cantidades no proceden de una prueba de Douyin. Muestran la cola en ejecución, pero no todas las descargas terminadas ni el guardado en Fotos. Los totales de «Gestión» incluyen otras tareas y no representan los resultados de este lote. Los límites y las cantidades son los del ejemplo."
+    "exampleNote": "Se reutilizan capturas de TikTok: la cuenta, el enlace y las cantidades no proceden de una prueba de Douyin. Muestran la cola en ejecución, pero no todas las descargas terminadas ni el guardado en Fotos. Los totales de «Gestión» incluyen otras tareas y no representan los resultados de este lote. Los límites y las cantidades son los del ejemplo.",
+    "screenshotNotice": "Ejemplo de TikTok para explicar los controles compartidos. La cuenta y las cantidades mostradas no son resultados de Douyin."
   },
   "batch-download-weibo-profile-iphone": {
     "title": "Descarga vídeos de un perfil de Weibo",

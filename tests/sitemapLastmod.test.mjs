@@ -89,6 +89,30 @@ test('image bytes update only the page that uses the image', t => {
  assert.equal(createRevisionReader(root).asset('/assets/a.png'), createRevisionReader(root, head).asset('/assets/a.png'));
 });
 
+test('reader-facing screenshot context changes the article date but internal evidence does not', t => {
+ const root = fixture(t); commit(root, first);
+ replace(root, catalog, "intro:'Copy a link'", "intro:'Copy a link',screenshotNotice:'Shared controls example'");
+ commit(root, second);
+ const dates = buildLastmodMap({ root });
+ assert.equal(dates.get('/articles/alpha/'), second);
+ assert.equal(dates.get('/articles/beta/'), first);
+});
+
+test('task guidance copy updates its home and index without refreshing articles', t => {
+ const root = fixture(t);
+ write(root, 'src/i18n/task-guides.ts', "export const taskGuideCopy={'en-US':{heading:'Choose a task'}};");
+ write(root, 'src/components/TaskGuides.astro', '<section>{copy.heading}</section>');
+ write(root, 'src/layouts/ClipDockLanding.astro', '<main><TaskGuides locale="en-US" /></main>');
+ write(root, 'src/layouts/TutorialIndex.astro', '<main><TaskGuides locale="en-US" /></main>');
+ commit(root, first);
+ replace(root, 'src/i18n/task-guides.ts', 'Choose a task', 'Start with your source');
+ commit(root, second);
+ const dates = buildLastmodMap({ root });
+ assert.equal(dates.get('/'), second);
+ assert.equal(dates.get('/articles/'), second);
+ assert.equal(dates.get('/articles/alpha/'), first);
+});
+
 test('changing privacy prose keeps the terms date intact', t => {
  const root = fixture(t); commit(root, first);
  replace(root, 'src/i18n/en-US/legal.ts', 'Privacy text', 'Updated privacy text'); commit(root, second);

@@ -108,6 +108,7 @@ export const copy: Record<string, TutorialCopy> = {
     ], exampleNote
   },
   'batch-download-douyin-profile-iphone': {
+    screenshotNotice: "Exemple TikTok illustrant les commandes communes. Le compte et les quantités affichés ne sont pas des résultats Douyin.",
     title: 'Télécharger les vidéos d’un profil Douyin', description: profileIntro('Douyin'), intro: profileIntro('Douyin'), tips: [profileTip], faq: profileFAQ,
     steps: [
       { title: 'Copier le lien du profil Douyin', text: 'Ouvrez le profil du créateur dans Douyin et copiez son lien depuis le menu de partage du profil.' }, profilePaste('Douyin'), load,

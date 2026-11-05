@@ -3,6 +3,7 @@ import { getLanguageLinks, publishedLocales, type Locale } from '../i18n/locales
 import { getCatalog } from '../i18n/catalog';
 import type { TutorialCopy } from '../i18n/types';
 import { tutorialStructure, screenshotAssets } from './tutorial-structure';
+import { isPublishedTutorial } from './publication';
 
 export interface Tutorial extends Omit<TutorialCopy, 'steps' | 'exampleNote' | 'verificationNote'> {
  slug: string; category: string; screenshotsReady?: boolean; related: string[];
@@ -16,6 +17,7 @@ export function assembleTutorials(locale: string): Tutorial[] {
   const copy = tutorialCopy[source.slug];
   const fail = (field: string) => { throw new Error(`Incomplete ${locale}/${source.slug}: ${field}`); };
   if (!copy) return fail('copy');
+  if (copy.screenshotNotice !== undefined) validateCopy('required', copy.screenshotNotice, `${locale}/${source.slug}/screenshot notice`);
   if (copy.overview) {
    validateCopy({ title: 'required', sections: [{ title: 'required', text: 'required' }] }, copy.overview, `${locale}/${source.slug}/overview`);
    copy.overview.sections.forEach(section => {
@@ -44,6 +46,7 @@ export function assembleTutorials(locale: string): Tutorial[] {
 }
 const articles = new Map<string, Tutorial[]>(publishedLocales.map(locale => [locale, assembleTutorials(locale)]));
 export const getTutorials = (locale: Locale) => articles.get(locale) ?? [];
+export const getPublishedTutorials = (locale: Locale) => getTutorials(locale).filter(isPublishedTutorial);
 export const getCategories = (locale: Locale) => getCatalog(locale).categories;
 export const getPlatformNote = (locale: Locale, category: string) => getCatalog(locale).platformNotes[category];
 export const getScreenshot = (locale: string, id: string) => {
@@ -53,8 +56,8 @@ export const getScreenshot = (locale: string, id: string) => {
  // Production captions use the title; briefs describe asset production internally.
  return { ...asset, title: copy.title };
 };
-export const hasTutorial = (locale: Locale, slug: string) => getTutorials(locale).some(article => article.slug === slug);
-export const tutorialLanguageLinks = (locale: Locale, slug?: string) => getLanguageLinks(locale, slug ? `articles/${slug}` : 'articles').filter(link => slug ? hasTutorial(link.locale, slug) : getTutorials(link.locale).length > 0);
+export const hasTutorial = (locale: Locale, slug: string) => getPublishedTutorials(locale).some(article => article.slug === slug);
+export const tutorialLanguageLinks = (locale: Locale, slug?: string) => getLanguageLinks(locale, slug ? `articles/${slug}` : 'articles').filter(link => slug ? hasTutorial(link.locale, slug) : getPublishedTutorials(link.locale).length > 0);
 // Compatibility for tooling that still consumes the original Chinese collection.
 export const tutorials = getTutorials('zh-Hans');
 export const categories = getCategories('zh-Hans');

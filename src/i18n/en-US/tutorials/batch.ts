@@ -43,7 +43,36 @@ export const copy: Record<string, TutorialCopy> = {
         "text": "Open Manager to follow your downloads. Active contains queued and running tasks, Done contains completed files, and Failed contains tasks that need attention. Open a task to check its status."
       }
     ],
-    "exampleNote": "The screenshots show a running queue, not completion of every download or a successful Photos save. Manager totals include other tasks and are not the result count for this batch. The shown account limits and media counts are examples."
+    "exampleNote": "The screenshots show a running queue, not completion of every download or a successful Photos save. Manager totals include other tasks and are not the result count for this batch. The shown account limits and media counts are examples.",
+    "overview": {
+      "title": "Match the collection before selecting episodes",
+      "sections": [
+        {
+          "title": "A collection is a selected series, not an entire creator page",
+          "text": "Open the collection panel for the series you want and share from there. For the creator’s wider set of uploads, use the profile workflow. Both may use a short share address, so the short domain alone cannot tell you which source you copied.",
+          "link": {
+            "label": "Download from a Bilibili creator profile",
+            "href": "/articles/batch-download-bilibili-profile-iphone/"
+          }
+        },
+        {
+          "title": "What the 62-item example establishes",
+          "text": "The supplied collection screenshot shows 62 episodes. ClipDock’s selection screen shows one loaded page, 62 posts, 62 items and 62 selected. This demonstrates the list that was returned for that example. The later queue image does not establish that all 62 downloads or Photos saves completed."
+        },
+        {
+          "title": "Use a single-video link to check one episode",
+          "text": "If you only need an episode, or want to check its available media separately, use its own share link. For a collection, compare the returned series name, thumbnails and episode count before adding the queue.",
+          "link": {
+            "label": "Save one Bilibili video",
+            "href": "/articles/download-bilibili-video-iphone/"
+          }
+        },
+        {
+          "title": "Confirm the loaded range and the saved result",
+          "text": "The free version loads the first two pages; more pages require VIP. A collection may return fewer resources than its displayed episode count. After downloading, preview a completed episode and confirm it appears in Photos if that is your intended destination."
+        }
+      ]
+    }
   },
   "batch-download-tiktok-hashtag-iphone": {
     "title": "How to batch download TikTok hashtag videos on iPhone and iPad in 2026",
@@ -371,12 +400,12 @@ export const copy: Record<string, TutorialCopy> = {
   },
   "batch-download-tiktok-profile-iphone": {
     "title": "How to batch download TikTok profile videos on iPhone and iPad",
-    "description": "Download several posts from one TikTok creator. Copy the profile link, load it in Batch, and choose the media you want to save.",
-    "intro": "Download several posts from one TikTok creator. Copy the profile link, load it in Batch, and choose the media you want to save.",
+    "description": "Select videos and images from a TikTok creator profile on iPhone or iPad. Understand loaded posts versus media items and verify completed downloads separately.",
+    "intro": "Use a TikTok creator’s profile link when you need several of their posts. ClipDock loads a selectable list first; you then choose media and add it to the queue. A loaded list is not a complete archive, and an item in the queue is not yet a saved video.",
     "tips": [
       {
-        "title": "Choose the posts you actually need",
-        "text": "A profile batch suits several posts from one creator. A single-video link is easier to verify for one item. Before submitting the profile again, check what has already downloaded to avoid duplicates."
+        "title": "A profile list looks incomplete",
+        "text": "First confirm the creator name, loaded page count and your account’s loading limit. Check whether the missing item is publicly accessible on TikTok. Repeating the same profile submission does not guarantee that unavailable or unreturned posts will appear, and can create duplicate tasks."
       }
     ],
     "faq": [
@@ -443,83 +472,142 @@ export const copy: Record<string, TutorialCopy> = {
         ]
       }
     ],
-    "exampleNote": "The screenshots show a running queue, not completion of every download or a successful Photos save. Manager totals include other tasks and are not the result count for this batch. The shown account limits and media counts are examples."
+    "exampleNote": "The screenshots show a running queue, not completion of every download or a successful Photos save. Manager totals include other tasks and are not the result count for this batch. The shown account limits and media counts are examples.",
+    "overview": {
+      "title": "Check the profile, the list, and the saved files",
+      "sections": [
+        {
+          "title": "Start with the creator, not an individual post",
+          "text": "Copy the link from the TikTok profile’s share menu. After loading, compare the displayed creator name with the one you intended. For a single post, the video-link workflow avoids having to locate it in a profile list.",
+          "link": {
+            "label": "Save one TikTok video instead",
+            "href": "/articles/download-tiktok-video-iphone/"
+          }
+        },
+        {
+          "title": "Why the example has 33 posts but 42 items",
+          "text": "The selection screenshot shows one loaded page with 33 posts and 42 media items. One post can contain multiple media files, so these counts describe different things. Use Video or Image to inspect the media types, then check the selected total on Add to queue. Those numbers belong to this screenshot, not to every TikTok profile."
+        },
+        {
+          "title": "Loading limits and completion are separate",
+          "text": "The free version loads up to the first two pages; more pages require VIP. Select loaded applies to the current list, not all of a creator’s history. The queue screenshot shows waiting and active tasks, not proof that all 42 items completed. Preview individual files in Done and confirm Photos saving separately."
+        },
+        {
+          "title": "For links from different creators",
+          "text": "A profile batch groups one creator’s posts. If you are browsing different creators and copying individual links, use the clipboard workflow instead. Its background mode has its own setup requirements.",
+          "link": {
+            "label": "Download copied TikTok links while browsing",
+            "href": "/articles/copy-tiktok-links-background/"
+          }
+        }
+      ]
+    }
   },
   "batch-download-douyin-profile-iphone": {
     "title": "How to batch download Douyin profile videos on iPhone and iPad",
-    "description": "Download several posts from one Douyin creator. Copy the profile link, load it in Batch, and choose the media you want to save.",
-    "intro": "Save several posts from one Douyin creator. Copy the profile link, load it in Batch, and choose the media you want to download.",
+    "description": "Use a Douyin creator profile in ClipDock Batch on iPhone or iPad. Choose the right share link, check returned media, and handle missing posts without duplicating the queue.",
+    "intro": "For several works by the same Douyin creator, start from that creator’s profile share link. A video share link identifies one work; a profile link identifies the creator. Keep those inputs separate and check the returned source before adding downloads.",
     "tips": [
       {
-        "title": "Choose the posts you actually need",
-        "text": "A profile batch suits several posts from one creator. A single-video link is easier to verify for one item. Before submitting the profile again, check what has already downloaded to avoid duplicates."
+        "title": "The source name or returned works look wrong",
+        "text": "Stop before adding the queue. Reopen the intended creator in Douyin, copy the profile’s share link, and use Change link. If the expected work still does not appear, try its individual video link when available instead of assuming the profile list is a complete archive."
       }
     ],
     "faq": [
       {
-        "question": "Does loading a profile start downloading?",
-        "answer": "No. Select resources, check quality and count, then tap Add to queue."
+        "question": "Can I use a TikTok profile link for the same creator?",
+        "answer": "Use the link copied from Douyin. The two platforms have separate addresses and returned resources; a similar creator name does not make a TikTok link a Douyin input."
       },
       {
-        "question": "Will every post on the profile appear?",
-        "answer": "Not necessarily. Use the resources actually returned; do not treat the list as a complete backup of all historical or restricted content."
+        "question": "Why did the loaded list omit a work?",
+        "answer": "Check the source, loaded page count, account limit and whether the work is accessible. The returned list can be incomplete. A missing item does not establish that the download queue failed, because the item may never have been added."
       },
       {
-        "question": "Why are some items simply called Resource?",
-        "answer": "Some items have a generic title. Use the thumbnail, media type, and date to identify them, then preview the downloaded file."
+        "question": "Do the illustrations show a completed Douyin batch?",
+        "answer": "No. They show the shared controls using a TikTok example. Check the source name, media list and completed files from your own Douyin link; the pictured account, counts and queue are not Douyin output."
       }
     ],
     "steps": [
       {
-        "title": "Copy the creator’s profile link",
-        "text": "Open the creator’s Douyin profile and copy its link from the profile sharing menu."
+        "title": "Copy a link from the Douyin creator’s profile",
+        "text": "Open the intended creator’s profile in Douyin and use its sharing menu to copy the link. If you arrived from a video, open the author’s profile before sharing. Keep the original copied address instead of constructing a URL from a display name."
       },
       {
-        "title": "Paste the profile URL in Batch",
-        "text": "Open Extract → Batch in ClipDock, tap Paste, and check that the link points to the Douyin profile you want."
+        "title": "Use the profile as the Batch input",
+        "text": "In ClipDock, open Extract → Batch, tap Paste, and inspect the pasted address. If the source is an individual work, return to Douyin and copy from the profile, or use the single-video guide for that work."
       },
       {
-        "title": "Load the list and wait for results",
-        "text": "Tap Load list and wait for Loading list to finish. This only retrieves selectable resources; it does not start downloading. You still need to select items and tap Add to queue."
+        "title": "Load and confirm the source",
+        "text": "Tap Load list. When loading finishes, read the source name and inspect the returned thumbnails. If they do not match the intended creator, use Change link before selecting anything. Loading alone does not submit a download."
       },
       {
-        "title": "Choose resources and quality, then add to queue",
-        "text": "Check the source and select the videos or images you want. Use the type filters and Select loaded as needed. Choose Batch quality, confirm the selected count, then tap Add to queue.",
+        "title": "Select the Douyin media you can identify",
+        "text": "Start with a few recognizable works from the returned list. Choose the required media type and inspect the selected total before using Add to queue. Use the numbers in your own result, not the TikTok example shown beside these shared controls.",
         "sections": [
           {
-            "title": "Filter and select media",
-            "text": "All shows every media type, Video filters videos, and Image filters images. Blue checkmarks show selected items. Adjust them as needed and check the total selection and Add to queue count before submitting, even when using the Video filter."
+            "title": "A work may contain more than one file",
+            "text": "Posts counts works, while items counts media files. A photo-based work can contribute multiple items. Check whether you want its images, a video, or both rather than treating every selected item as one video."
           },
           {
-            "title": "Select loaded and the loaded range",
-            "text": "Select loaded selects items already loaded. Posts and items are different counts because one post can contain several media items. The current list is not necessarily the creator’s entire history. Use Change link to switch to another creator."
+            "title": "Select loaded has a limited scope",
+            "text": "The command selects resources already returned in this session. It does not promise to select every work on the Douyin profile. Compare loaded pages with the account limit before deciding whether to continue."
           },
           {
-            "title": "Batch quality",
-            "text": "Follow download settings uses your saved quality preference. Tap Batch quality to see available options, then confirm your selection before adding the items to the queue."
+            "title": "Quality comes from the returned resource",
+            "text": "Check Batch quality and your download settings before submission. Choose from the options actually offered for your links; the settings shown in another platform’s screenshot do not guarantee a Douyin resolution or format."
           },
           {
-            "title": "Check counts and account limits",
-            "text": "Check the selected count and your account’s available downloads before submitting. Posts counts posts; items counts media files, so the totals may differ. Use Change link to switch sources."
+            "title": "Confirm this selection before adding it",
+            "text": "Read the count on Add to queue and check your available downloads. A smaller first batch makes it easier to identify incorrect sources or unsupported files before adding more works."
           }
         ]
       },
       {
-        "title": "Check download progress and failures",
-        "text": "Open Manager to follow your downloads. Active contains queued and running tasks, Done contains completed files, and Failed contains tasks that need attention. Open a task to check its status.",
+        "title": "Verify files before submitting the profile again",
+        "text": "In Manager, locate the tasks from this selection. Waiting or active tasks are still in progress. Open completed files to check that they belong to the intended Douyin creator.",
         "sections": [
           {
-            "title": "Queued, downloading, and completed",
-            "text": "Queued means waiting. Open completed files in Done to preview them, and check individual errors in Failed. If a file was not saved automatically, use Save to Photos to keep a copy in Photos."
+            "title": "Download completion is not Photos confirmation",
+            "text": "Preview a completed file’s picture and sound. If it was not automatically saved, use Save to Photos and check the copy there. A queue count or thumbnail alone does not confirm a usable saved file."
           },
           {
-            "title": "Check failed tasks individually",
-            "text": "Open the failed task and read its error. Check the source link and your connection, then retry if appropriate. A total failure count alone does not identify the cause."
+            "title": "Investigate a failed work on its own",
+            "text": "Read that task’s error and check whether the source work still opens in Douyin. Review the link and connection before retrying. Avoid re-adding the whole creator profile just to retry one failed work."
           }
         ]
       }
     ],
-    "exampleNote": "This guide reuses TikTok images; the account, URL, and counts do not represent a recorded Douyin test. The screenshots show a running queue, not completion of every download or a successful Photos save. Manager totals include other tasks and are not the result count for this batch. The shown account limits and media counts are examples."
+    "exampleNote": "This guide reuses TikTok images; the account, URL, and counts do not represent a recorded Douyin test. The screenshots show a running queue, not completion of every download or a successful Photos save. Manager totals include other tasks and are not the result count for this batch. The shown account limits and media counts are examples.",
+    "overview": {
+      "title": "Choose the Douyin source you intend to save",
+      "sections": [
+        {
+          "title": "One work or a creator’s profile?",
+          "text": "If you only need one work, copy that work’s share link and use Extract → Video. Use Extract → Batch for a creator’s profile. Do not assume that a link copied while watching a video points to its author’s full profile.",
+          "link": {
+            "label": "Download a single Douyin video",
+            "href": "/articles/download-douyin-video-iphone/"
+          }
+        },
+        {
+          "title": "Douyin and TikTok links are not interchangeable",
+          "text": "Copy the original address from Douyin’s own share menu. Changing the hostname of a TikTok link does not identify the corresponding Douyin creator. After loading, check the source name and the actual returned list; the TikTok account and counts in the control illustrations are not Douyin results."
+        },
+        {
+          "title": "The returned list defines this batch",
+          "text": "The free version can load the first two pages; additional pages require VIP. Even with more pages available, a loaded list is not a guarantee of all historical works. Start with a small selection you can recognize and check the result before submitting a larger set."
+        },
+        {
+          "title": "Keep the source file when further editing is needed",
+          "text": "After downloading and checking a file, you can convert its format or resolution for the next app. A successful download and a successful save to Photos are separate checks.",
+          "link": {
+            "label": "Convert a downloaded video for another app",
+            "href": "/articles/transcode-video-iphone/"
+          }
+        }
+      ]
+    },
+    "screenshotNotice": "TikTok example of shared controls. The pictured account and counts are not Douyin results."
   },
   "batch-download-weibo-profile-iphone": {
     "title": "How to batch download Weibo profile videos on iPhone and iPad",

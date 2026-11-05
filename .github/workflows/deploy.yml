@@ -42,6 +42,9 @@ jobs:
       - name: 验证 sitemap 更新时间
         run: node --test tests/sitemapLastmod.test.mjs
 
+      - name: 验证收录检查能阻止错误配置
+        run: python3 -m unittest discover -s tests -p 'test_seo_verification.py'
+
       - name: 验证视频故障恢复
         run: node --test tests/videoRecovery.test.mjs
 

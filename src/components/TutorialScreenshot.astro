@@ -5,8 +5,8 @@ import { getScreenshot } from "@/content/localized-tutorials";
 import OrangePhoneFrame from "./OrangePhoneFrame.astro";
 import { siteUI } from "@/i18n/site-ui";
 import type { Locale } from "@/i18n/locales";
-interface Props { id: string; locale?: Locale }
-const { id, locale = "zh-Hans" } = Astro.props;
+interface Props { id: string; locale?: Locale; notice?: string }
+const { id, locale = "zh-Hans", notice } = Astro.props;
 const ui = siteUI(locale);
 const shot = getScreenshot(locale, id);
 const mark = shot.highlight;
@@ -40,11 +40,12 @@ const arrowPath = mark && (mark.x > 800
 			<small>{ui.missingScreenshot}</small>
 		</div>
 	)}
-	<figcaption>{shot.title}</figcaption>
+	<figcaption>{shot.title}{notice && <span class="tutorial-shot-notice">{notice}</span>}</figcaption>
 </figure>
 
 <style>
 	.tutorial-shot-full { position: relative; }
+	.tutorial-shot-notice { display: block; margin-top: 8px; font-size: .8125rem; }
 	.tutorial-shot-annotation { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; filter: drop-shadow(0 2px 3px #000); }
 	.tutorial-video-card { width: min(100%, 240px); margin-inline: auto; padding: 16px 16px calc(var(--radius-lg) - 3px); border: 2px solid var(--ink); border-radius: var(--radius-lg); background: var(--blue-soft); box-shadow: 10px 10px 0 var(--ink); }
 	.tutorial-shot-video { display: block; width: 100%; aspect-ratio: 6 / 13; border: 2px solid var(--ink); border-radius: calc(var(--radius-lg) - 18px); background: #111; object-fit: cover; }

@@ -519,7 +519,8 @@ export const copy: Record<string, TutorialCopy> = {
         ]
       }
     ],
-    "exampleNote": "Este tutorial reutiliza capturas do TikTok. As contas, os links e as quantidades mostrados não são resultados de um teste no Douyin. As imagens mostram a fila em andamento, sem confirmar o término de todos os downloads ou o salvamento em Fotos. Os totais de “Gerenciamento” incluem outras tarefas e não representam o resultado deste lote. Os limites da conta e as quantidades de mídia pertencem ao exemplo."
+    "exampleNote": "Este tutorial reutiliza capturas do TikTok. As contas, os links e as quantidades mostrados não são resultados de um teste no Douyin. As imagens mostram a fila em andamento, sem confirmar o término de todos os downloads ou o salvamento em Fotos. Os totais de “Gerenciamento” incluem outras tarefas e não representam o resultado deste lote. Os limites da conta e as quantidades de mídia pertencem ao exemplo.",
+    "screenshotNotice": "Exemplo do TikTok para explicar os controles em comum. A conta e as quantidades exibidas não são resultados do Douyin."
   },
   "batch-download-weibo-profile-iphone": {
     "title": "Como baixar vídeos de um perfil do Weibo em lote?",

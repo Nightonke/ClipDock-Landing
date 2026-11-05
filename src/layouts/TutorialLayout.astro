@@ -22,7 +22,7 @@ const ui = siteUI(locale);
 const homeHref = localizedPath(locale);
 const content = landingContent[locale];
 const canonical = new URL(Astro.url.pathname, Astro.site ?? "https://clipdock.video").href;
-const languageLinks = tutorialLanguageLinks(locale, Astro.props.slug);
+const languageLinks = noindex ? [] : tutorialLanguageLinks(locale, Astro.props.slug);
 const xDefault = languageLinks.find(link => link.locale === defaultLocale) ?? languageLinks[0];
 ---
 <!doctype html>
@@ -35,7 +35,7 @@ const xDefault = languageLinks.find(link => link.locale === defaultLocale) ?? la
 		<meta name="robots" content={noindex ? "noindex, follow" : "index, follow, max-image-preview:large"} />
 		<link rel="canonical" href={canonical} />
         {languageLinks.map(link => <link rel="alternate" hreflang={link.hrefLang} href={new URL(link.href, Astro.site ?? "https://clipdock.video").href} />)}
-        <link rel="alternate" hreflang="x-default" href={new URL(xDefault.href, Astro.site ?? "https://clipdock.video").href} />
+        {xDefault && <link rel="alternate" hreflang="x-default" href={new URL(xDefault.href, Astro.site ?? "https://clipdock.video").href} />}
 		<meta property="og:type" content={!Astro.props.slug ? "website" : "article"} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />

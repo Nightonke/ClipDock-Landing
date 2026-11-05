@@ -32,7 +32,7 @@
 		"preview": "astro preview",
 		"toolbar:disable": "astro preferences disable devToolbar",
 		"toolbar:enable": "astro preferences enable devToolbar",
-		"images:optimize": "node scripts/optimize-images.mjs",
+		"images:optimize": "node scripts/optimize-images.mjs && node scripts/generate-favicon.mjs",
 		"predev": "npm run images:optimize",
 		"prestart": "npm run images:optimize",
 		"prebuild": "npm run images:optimize",

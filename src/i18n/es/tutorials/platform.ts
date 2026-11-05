@@ -78,7 +78,8 @@ export const copy: Record<string, TutorialCopy> = {
         "text": "Abre el vídeo en «Gestión» → «Completadas» (Done) y revisa la imagen y el sonido. Si no se guardó automáticamente, toca «Guardar en Fotos» (Save to Photos), concede el permiso solicitado y comprueba la copia en la app Fotos."
       }
     ],
-    "exampleNote": "Las capturas de TikTok solo ilustran las acciones de la app. Su plataforma, enlaces, archivos y cantidades no representan resultados de Douyin. Muestran el acceso para guardar, pero no un guardado completado en Fotos."
+    "exampleNote": "Las capturas de TikTok solo ilustran las acciones de la app. Su plataforma, enlaces, archivos y cantidades no representan resultados de Douyin. Muestran el acceso para guardar, pero no un guardado completado en Fotos.",
+    "screenshotNotice": "Ejemplo de TikTok para explicar los controles compartidos. La cuenta y las cantidades mostradas no son resultados de Douyin."
   },
   "download-facebook-video-iphone": {
     "title": "Descarga vídeos y Reels de Facebook",

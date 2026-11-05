@@ -78,7 +78,8 @@ export const copy: Record<string, TutorialCopy> = {
         "text": "Öffne das Video unter „Verwaltung“ → „Abgeschlossen“ (Done im Screenshot) und prüfe Bild und Ton. Wurde es nicht automatisch gespeichert, tippe auf „In Fotos speichern“ (Save to Photos), erlaube den Fotozugriff und prüfe die Kopie in der Fotos-App."
       }
     ],
-    "exampleNote": "Die TikTok-Screenshots dienen nur zur Erklärung der App-Bedienung. Plattform, Links, Medien und Mengen darin belegen keine Douyin-Download-Ergebnisse. Sie zeigen die Speicherfunktion, keinen erfolgreichen Speichervorgang in Fotos."
+    "exampleNote": "Die TikTok-Screenshots dienen nur zur Erklärung der App-Bedienung. Plattform, Links, Medien und Mengen darin belegen keine Douyin-Download-Ergebnisse. Sie zeigen die Speicherfunktion, keinen erfolgreichen Speichervorgang in Fotos.",
+    "screenshotNotice": "TikTok-Beispiel zur Erklärung der gemeinsamen Bedienelemente. Das gezeigte Konto und die Zahlen sind keine Douyin-Ergebnisse."
   },
   "download-facebook-video-iphone": {
     "title": "Facebook-Videos und Reels herunterladen",

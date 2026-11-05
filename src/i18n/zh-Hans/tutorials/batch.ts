@@ -519,7 +519,8 @@ export const copy: Record<string, TutorialCopy> = {
         ]
       }
     ],
-    "exampleNote": "本篇复用 TikTok 配图，图中的账号、链接和数量并非抖音实测记录。截图展示队列运行状态，未展示全部下载完成或相册保存成功。“资源管理”的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。"
+    "exampleNote": "本篇复用 TikTok 配图，图中的账号、链接和数量并非抖音实测记录。截图展示队列运行状态，未展示全部下载完成或相册保存成功。“资源管理”的总数包含其他任务，不能作为这一批的结果统计；账号限制和媒体数量均为示例。",
+    "screenshotNotice": "截图用 TikTok 示例说明共用操作，图中的账号和数量不代表抖音结果。"
   },
   "batch-download-weibo-profile-iphone": {
     "title": "如何批量下载微博主页视频？",

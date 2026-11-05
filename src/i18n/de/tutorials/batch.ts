@@ -519,7 +519,8 @@ export const copy: Record<string, TutorialCopy> = {
         ]
       }
     ],
-    "exampleNote": "Die TikTok-Screenshots dienen zur Veranschaulichung; Konten, Links und Zahlen belegen keinen Douyin-Test. Gezeigt wird die laufende Warteschlange, kein vollständiger Abschluss oder erfolgreicher Speichervorgang in Fotos. Die Gesamtzahlen in „Verwaltung“ enthalten andere Aufgaben und sind keine Bilanz dieser Auswahl. Kontolimits und Medienzahlen gehören zum Beispiel."
+    "exampleNote": "Die TikTok-Screenshots dienen zur Veranschaulichung; Konten, Links und Zahlen belegen keinen Douyin-Test. Gezeigt wird die laufende Warteschlange, kein vollständiger Abschluss oder erfolgreicher Speichervorgang in Fotos. Die Gesamtzahlen in „Verwaltung“ enthalten andere Aufgaben und sind keine Bilanz dieser Auswahl. Kontolimits und Medienzahlen gehören zum Beispiel.",
+    "screenshotNotice": "TikTok-Beispiel zur Erklärung der gemeinsamen Bedienelemente. Das gezeigte Konto und die Zahlen sind keine Douyin-Ergebnisse."
   },
   "batch-download-weibo-profile-iphone": {
     "title": "Mehrere Videos eines Weibo-Profils herunterladen",

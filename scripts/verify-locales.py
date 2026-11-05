@@ -36,6 +36,7 @@ class Page(HTMLParser):
         self.screenshots = 0
         self.metadata = []
         self.redirect = False
+        self.noindex = False
         self.feed(path.read_text())
 
     def handle_starttag(self, tag, pairs):
@@ -45,6 +46,7 @@ class Page(HTMLParser):
             self.direction = attrs.get('dir', '')
         if tag == 'meta' and attrs.get('property') == 'og:locale': self.og_locale = attrs.get('content', '')
         if tag == 'meta' and attrs.get('http-equiv', '').lower() == 'refresh': self.redirect = True
+        if tag == 'meta' and attrs.get('name', '').lower() in ('robots', 'googlebot') and 'noindex' in attrs.get('content', '').lower(): self.noindex = True
         if tag == 'link' and attrs.get('rel') == 'canonical': self.canonical = attrs['href']
         if tag == 'link' and attrs.get('rel') == 'alternate' and 'hreflang' in attrs:
             self.alternates[attrs['hreflang']] = attrs['href']
@@ -110,8 +112,12 @@ for locale in PUBLISHED:
             errors.append(f'{route}: incorrect lang, dir or OG locale')
         if urlparse(page.canonical).path != route or not page.canonical.startswith('https://'):
             errors.append(f'{route}: canonical must point to itself with an absolute URL')
-        expected_alternates = {META[other]['hrefLang']: localized(other, suffix) for other in PUBLISHED}
-        expected_alternates['x-default'] = localized(DEFAULT, suffix)
+        article = next((item for item in REGISTRY['articles'] if suffix == 'articles/' + item['slug']), None)
+        draft = article is not None and not article['screenshotsReady']
+        if page.noindex != draft:
+            errors.append(f'{route}: robots does not match publication status')
+        expected_alternates = {} if draft else {META[other]['hrefLang']: localized(other, suffix) for other in PUBLISHED}
+        if not draft: expected_alternates['x-default'] = localized(DEFAULT, suffix)
         if {lang: urlparse(href).path for lang, href in page.alternates.items()} != expected_alternates:
             errors.append(f'{route}: incomplete or incorrect hreflang set')
         if any(not href.startswith('https://') for href in page.alternates.values()):

@@ -78,7 +78,8 @@ export const copy: Record<string, TutorialCopy> = {
         "text": "在“资源管理”的“已完成”（Done）列表打开视频，检查画面和声音。若未自动保存，点击“保存到相册”（Save to Photos），按提示允许相册访问，再到照片 App 查看副本。"
       }
     ],
-    "exampleNote": "TikTok 配图仅用于说明 App 操作，其中的平台、链接、素材和数量不代表抖音下载结果。截图展示保存入口，未展示相册保存成功。"
+    "exampleNote": "TikTok 配图仅用于说明 App 操作，其中的平台、链接、素材和数量不代表抖音下载结果。截图展示保存入口，未展示相册保存成功。",
+    "screenshotNotice": "截图用 TikTok 示例说明共用操作，图中的账号和数量不代表抖音结果。"
   },
   "download-facebook-video-iphone": {
     "title": "如何下载 Facebook 视频与 Reels？",

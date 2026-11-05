@@ -78,7 +78,8 @@ export const copy: Record<string, TutorialCopy> = {
         "text": "Abra o vídeo em “Gerenciamento” → “Concluídas” (Done na captura) e confira a imagem e o som. Se ele não tiver sido salvo automaticamente, toque em “Salvar em Fotos” (Save to Photos), permita o acesso solicitado e confira a cópia no app Fotos."
       }
     ],
-    "exampleNote": "As capturas do TikTok apenas ilustram as ações no app. A plataforma, os links, o conteúdo e as quantidades mostrados não representam resultados de downloads do Douyin. As imagens mostram a opção de salvar, sem confirmar que o arquivo foi salvo em Fotos."
+    "exampleNote": "As capturas do TikTok apenas ilustram as ações no app. A plataforma, os links, o conteúdo e as quantidades mostrados não representam resultados de downloads do Douyin. As imagens mostram a opção de salvar, sem confirmar que o arquivo foi salvo em Fotos.",
+    "screenshotNotice": "Exemplo do TikTok para explicar os controles em comum. A conta e as quantidades exibidas não são resultados do Douyin."
   },
   "download-facebook-video-iphone": {
     "title": "Como baixar vídeos e Reels do Facebook?",

@@ -49,6 +49,8 @@ categories: string;
 export type Section = { title: string; text: string };
 export interface TutorialCopy {
  title: string; description: string; intro: string;
+ /** Reader-facing context when a screenshot illustrates shared controls. */
+ screenshotNotice?: string;
  overview?: {
   title: string;
   sections: Array<Section & { link?: { label: string; href: string } }>;

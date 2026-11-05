@@ -126,9 +126,9 @@ export const faqs = [
 export const ui = {
   "ogAlt": "ClipDock 影随存——适用于 iPhone 与 iPad 的网页视频下载器",
   "eyebrow": "支持多种平台 · iPhone + iPad",
-  "heroLine1": "链接交给影随存",
-  "heroLine2": "视频图片轻松存",
-  "heroDescription": "用 ClipDock 影随存保存支持的分享链接和网页中的视频、图片或音频。开启复制即下载，或从列表中批量选择作品，减少重复操作。可用画质、格式和水印情况取决于来源资源。",
+  "heroLine1": "视频下载与批量保存",
+  "heroLine2": "从链接到可用素材",
+  "heroDescription": "在 iPhone 和 iPad 上，用 ClipDock 影随存从支持的分享链接保存视频、图片或音频，也能提取 YouTube 已有字幕。已有视频可直接从相册或文件导入，继续裁剪、转码和调整比例。下载后可保存到相册或分享；可用画质、格式和水印情况以来源为准。",
   "freeDownload": "免费下载",
   "qrLabel": "使用 iPhone 扫码下载 ClipDock 影随存",
   "qrAlt": "ClipDock 影随存下载二维码",

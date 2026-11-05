@@ -19,6 +19,21 @@ const { homeContent } = require('../src/i18n/home/index.ts');
 const { publishedLocales, localeMeta, getLanguageLinks } = require('../src/i18n/locales.ts');
 const { headingParts } = require('../src/lib/heading-parts.ts');
 const { legalContent } = require('../src/i18n/legal.ts');
+const { getTutorials, getPublishedTutorials, hasTutorial, tutorialLanguageLinks } = require('../src/content/localized-tutorials.ts');
+
+test('withdrawing a tutorial removes download entrances and language alternates', () => {
+ const slug = downloadGuideSlugs[0];
+ const article = getTutorials('en-US').find(article => article.slug === slug);
+ const original = article.screenshotsReady;
+ try {
+  article.screenshotsReady = false;
+  assert.ok(!getPublishedTutorials('en-US').some(article => article.slug === slug));
+  assert.ok(!getDownloadGuides('en-US').some(article => article.slug === slug));
+  assert.equal(hasTutorial('en-US', slug), false);
+  assert.ok(!tutorialLanguageLinks('zh-Hans', slug).some(link => link.locale === 'en-US'));
+  assert.ok(getTutorials('en-US').some(article => article.slug === slug), 'draft remains available to the noindex route');
+ } finally { article.screenshotsReady = original; }
+});
 
 test('every published catalog covers the same tutorials and uses its own screenshot titles', () => {
  for (const [locale, catalog] of Object.entries(catalogs)) {

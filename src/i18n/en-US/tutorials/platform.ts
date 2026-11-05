@@ -78,7 +78,8 @@ export const copy: Record<string, TutorialCopy> = {
         "text": "Open the video in Manager’s Done list and check its picture and sound. If it has not been saved automatically, tap Save to Photos and allow access if prompted. Open Photos to check the saved copy."
       }
     ],
-    "exampleNote": "The TikTok screenshots illustrate the app controls only. Their platform, URLs, media, and counts do not represent a Douyin download. They show the save action, not a completed Photos save."
+    "exampleNote": "The TikTok screenshots illustrate the app controls only. Their platform, URLs, media, and counts do not represent a Douyin download. They show the save action, not a completed Photos save.",
+    "screenshotNotice": "TikTok example of shared controls. The pictured account and counts are not Douyin results."
   },
   "download-facebook-video-iphone": {
     "title": "How to download Facebook videos and Reels on iPhone and iPad",
