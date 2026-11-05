@@ -5,6 +5,7 @@ import { landingContent } from "@/i18n/content";
 import { androidLegalContent, androidLegalLocales, androidLegalPath, type AndroidLegalLocale, type AndroidLegalPage } from "@/i18n/android-legal";
 import { localizedPath, localeMeta } from "@/i18n/locales";
 import { parseMarkdown } from "@/utils/parseMarkdown";
+import { appPlatforms } from '../config/platforms';
 
 interface Props { locale: AndroidLegalLocale; page: AndroidLegalPage }
 const { locale, page } = Astro.props;
@@ -19,7 +20,7 @@ const alternates = androidLegalLocales.map(item => ({
 ---
 <Layout title={`${document.title} | ClipDock`} description={document.description}
 	lang={localeMeta[locale].htmlLang} appData={app} alternates={alternates}
-	storeHref="https://play.google.com/store/apps/details?id=com.nightonke.android.clipdock"
+	storeHref={appPlatforms.android.storeUrl}
 	homeHref={localizedPath(locale)} labels={app.labels}
 	privacyHref={androidLegalPath(locale, "privacy")} termsHref={androidLegalPath(locale, "terms")}>
 	<main id="main-content" class="legal-shell">

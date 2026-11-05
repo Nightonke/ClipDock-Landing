@@ -10,6 +10,7 @@ import type {
 } from "./content";
 export interface StoreLinks {
 	apple: string;
+	google: string;
 }
 
 export interface AppHero {

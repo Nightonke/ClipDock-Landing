@@ -238,24 +238,23 @@ export const faqs = [
   }
 ];
 export const ui = {
-  "ogAlt": "ClipDock — iPhone과 iPad용 웹 동영상 다운로더",
-  "eyebrow": "다양한 플랫폼 지원 · iPhone + iPad",
+  "ogAlt": "ClipDock｜iPhone, iPad 및 Android용 동영상 다운로더",
+  "eyebrow": "iPhone · iPad · Android",
   "heroLine1": "링크 하나로",
   "heroLine2": "동영상을 내 손에",
-  "heroDescription": "ClipDock으로 지원되는 공유 링크와 웹페이지의 동영상, 이미지, 오디오를 저장하세요. 복사 후 자동 다운로드를 켜거나 목록에서 여러 게시물을 골라 반복 작업을 줄일 수 있습니다. 화질, 형식, 워터마크 유무는 원본 리소스에 따라 달라집니다.",
+  "heroDescription": "지원되는 링크에서 동영상, 이미지 및 오디오를 저장하세요. iPhone, iPad 및 Android에서 파일을 관리하고 기기의 동영상을 자르거나 변환하고 크기를 조절하세요. 기능과 지원 소스는 플랫폼마다 다릅니다.",
   "freeDownload": "무료 다운로드",
-  "qrLabel": "iPhone으로 QR 코드를 스캔해 ClipDock 다운로드",
-  "qrAlt": "ClipDock 다운로드 QR 코드",
-  "scan": "iPhone으로 스캔",
+  "qrLabel": "스캔하여 iPhone, iPad 또는 Android 버전 선택",
+  "qrAlt": "스캔하여 iPhone, iPad 또는 Android 버전 선택",
+  "scan": "휴대폰으로 스캔",
   "getApp": "앱 다운로드",
   "productInfo": "제품 정보",
   "ratings": "개의 평가",
-  "privacyProof": "앱 데이터 수집 안 함",
+  "privacyProof": "iOS App Store: 데이터 수집 없음",
   "capabilities": "ClipDock 주요 기능",
   "subtitleLink": "자막 추출 방법 보기",
   "demoSuffix": " 사용 예시",
   "progress": "동영상 재생 진행률",
-
   "toolsKicker": "다운로드 다음 단계",
   "toolsTitle": "손안의 동영상 도구함",
   "toolsDescription": "저장은 시작일 뿐입니다. 자르기, 변환, 이어 붙이기, 공유에 필요한 기능도 ClipDock에서 사용하세요.",
@@ -267,7 +266,7 @@ export const ui = {
   "trustLabel1": "앱 데이터",
   "trustText1": "현재 App Store 개인정보 보호 표시에 따르면 개발자는 이 앱을 통해 데이터를 수집하지 않습니다.",
   "trustLabel2": "iPhone과 iPad",
-  "trustText2": "iOS 15 이상 iPhone과 iPadOS 15 이상 iPad를 지원합니다.",
+  "trustText2": "App Store 버전은 iOS 15 / iPadOS 15 이상, Google Play 버전은 Android 8.0 이상이 필요합니다.",
   "trustValue3": "올바른 사용",
   "trustLabel3": "사용 권한이 있는 콘텐츠 저장",
   "trustText3": "DRM, 유료 콘텐츠, 접근 제어, 플랫폼 제한을 우회하지 않습니다.",
@@ -275,7 +274,7 @@ export const ui = {
   "faqTitle": "다운로드 전에\n궁금한 점을 확인하세요",
   "closingKicker": "다음 링크도 저장해 볼까요?",
   "closingTitle": "동영상을 언제나 가까이",
-  "closingDescription": "ClipDock은 iPhone과 iPad에서 무료로 다운로드할 수 있으며 앱 내 구입을 포함합니다.",
+  "closingDescription": "App Store와 Google Play에서 무료로 다운로드할 수 있으며 앱 내 구매가 포함됩니다. 무료 이용 한도와 기능은 플랫폼마다 다릅니다.",
   "storeDownload": "App Store에서 다운로드",
-  "closingQr": "스캔하여 ClipDock 다운로드"
+  "closingQr": "스캔하여 iPhone, iPad 또는 Android 버전 선택"
 };

@@ -1,0 +1,49 @@
+---
+import Layout from './Layout.astro';
+import StoreButtons from '../components/StoreButtons.astro';
+import { androidProductCopy } from '../i18n/android-product';
+import { platformCopy } from '../i18n/platforms';
+import { appPlatforms, androidLocales, androidPath, type AndroidLocale } from '../config/platforms';
+import { landingContent } from '../i18n/content';
+import { localizedPath, localeMeta } from '../i18n/locales';
+interface Props { locale: AndroidLocale }
+const { locale } = Astro.props;
+const copy = androidProductCopy[locale];
+const app = landingContent[locale];
+const labels = platformCopy[locale];
+const alternates = androidLocales.map(item => ({ locale: item, label: localeMeta[item].label, href: androidPath(item), hrefLang: localeMeta[item].hrefLang, isActive: item === locale }));
+const structuredData = {
+ '@context': 'https://schema.org', '@type': 'MobileApplication', '@id': 'https://clipdock.video/android/#app',
+ name: 'ClipDock for Android', description: copy.description, operatingSystem: appPlatforms.android.operatingSystem,
+ url: new URL(androidPath(locale), Astro.site).href, downloadUrl: appPlatforms.android.storeUrl,
+ applicationCategory: 'MultimediaApplication', offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' },
+};
+---
+<Layout title={copy.title} description={copy.description} lang={localeMeta[locale].htmlLang} appData={app} alternates={alternates} homeHref={localizedPath(locale)} labels={app.labels} storeHref={appPlatforms.android.storeUrl} structuredData={structuredData}>
+ <main id="main-content" class="android-page site-shell">
+  <header><p class="eyebrow">ClipDock · Android</p><h1>{copy.heading}</h1><p class="lead">{copy.intro}</p><p>{copy.requirements}</p><StoreButtons platform="android" /><a href={localizedPath(locale, 'download')}>{copy.other}</a></header>
+  <section aria-labelledby="android-features"><h2 id="android-features">{copy.featuresTitle}</h2><div class="android-grid">{copy.features.map(feature => <article><h3>{feature.title}</h3><p>{feature.text}</p></article>)}</div></section>
+  <section class="android-panel"><h2>{copy.accountsTitle}</h2><p>{copy.accounts}</p><p>{copy.purchases}</p><a href={androidPath(locale, 'terms')}>{app.labels.terms} · Android</a></section>
+  <section class="android-panel"><h2>{copy.privacyTitle}</h2><p>{copy.privacy}</p><nav><a href={androidPath(locale, 'privacy')}>{app.labels.privacy} · Android</a><a href={androidPath(locale, 'delete-account')}>{labels.deletion}</a></nav></section>
+  <section><h2>{copy.faqTitle}</h2>{copy.faq.map(item => <details><summary>{item.question}</summary><p>{item.answer}</p></details>)}</section>
+  <p class="rights">{copy.rights}</p><StoreButtons platform="android" />
+ </main>
+</Layout>
+<style>
+ .android-page { padding-block: 64px; }
+ header { max-width: 850px; margin-bottom: 64px; }
+ h1 { font-family: var(--display); font-size: clamp(2.3rem, 6vw, 4.8rem); line-height: 1.1; letter-spacing: -.03em; margin-block: 18px; }
+ h2 { font-family: var(--display); font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.25; margin-bottom: 24px; }
+ h3 { font-size: 1.3rem; line-height: 1.5; margin-top: 0; }
+ p { line-height: 1.8; color: var(--ink-soft); }
+ .lead { font-size: 1.15rem; }
+ section { margin-block: 44px; }
+ .android-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+ article, .android-panel { background: var(--paper-strong); padding: clamp(24px, 4vw, 40px); border: 1px solid var(--line-strong); border-radius: 24px; }
+ a { text-decoration: underline; text-underline-offset: 4px; line-height: 1.8; }
+ nav { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+ details { border-bottom: 1px solid var(--line-strong); padding: 20px 0; }
+ summary { font-weight: 700; cursor: pointer; line-height: 1.6; }
+ .rights { margin-top: 44px; }
+ @media(max-width: 680px) { .android-grid { grid-template-columns: 1fr; } }
+</style>

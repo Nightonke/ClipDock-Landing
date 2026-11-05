@@ -14,7 +14,7 @@ export interface LayoutWithAppDataProps extends LayoutProps {
 		shortName?: string;
 		logo: string;
 		description: string;
-		storeLinks: { apple: string };
+		storeLinks: StoreData['storeLinks'];
 	};
 	homeHref?: string;
 	privacyHref?: string;

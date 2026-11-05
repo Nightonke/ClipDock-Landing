@@ -43,6 +43,28 @@ const catalog = 'src/i18n/en-US/tutorials/index.ts';
 const first = '2020-01-01T00:00:00.000Z';
 const second = '2020-02-01T00:00:00.000Z';
 
+test('Android product and download guidance keep independent content dates', t => {
+ const root = fixture(t);
+ write(root, 'src/config/platforms.ts', "export const appPlatforms={android:{operatingSystem:'Android 8+'}}; export const androidLocales=['en-US'];");
+ write(root, 'src/i18n/platforms.ts', "export const platformCopy={'en-US':{downloadIntro:'Choose your device',androidDetails:'Android',deletion:'Delete account'}};");
+ write(root, 'src/i18n/android-product.ts', "export const androidProductCopy={'en-US':{intro:'Save supported links'}};");
+ write(root, 'src/layouts/AndroidLanding.astro', '<main>{copy.intro}</main>');
+ write(root, 'src/layouts/DownloadPage.astro', '<main>{copy.downloadIntro}</main>');
+ commit(root, first);
+ replace(root, 'src/i18n/android-product.ts', 'Save supported links', 'Save links and edit local files');
+ commit(root, second);
+ let dates = buildLastmodMap({ root });
+ assert.equal(dates.get('/android/'), second);
+ assert.equal(dates.get('/download/'), first);
+ assert.equal(dates.get('/'), first);
+ replace(root, 'src/i18n/platforms.ts', 'Choose your device', 'Choose iPhone, iPad, or Android');
+ commit(root, '2020-03-01T00:00:00.000Z');
+ dates = buildLastmodMap({ root });
+ assert.equal(dates.get('/download/'), '2020-03-01T00:00:00.000Z');
+ assert.equal(dates.get('/android/'), second);
+ assert.equal(dates.get('/'), first);
+});
+
 test('a change to one tutorial in a shared file updates that tutorial and its directory only', t => {
  const root = fixture(t); commit(root, first);
  replace(root, catalog, 'Alpha guide', 'Updated Alpha guide'); commit(root, second);

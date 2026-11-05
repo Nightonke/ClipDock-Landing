@@ -71,8 +71,8 @@ const ui = siteUI(locale);
 			<a
 				class="button button-dark button-small"
 				href={storeHref}
-				target="_blank"
-				rel="noopener noreferrer"
+				target={storeHref.startsWith('https:') ? '_blank' : undefined}
+				rel={storeHref.startsWith('https:') ? 'noopener noreferrer' : undefined}
 			>
 				{nav.getApp}
 			</a>
@@ -84,7 +84,7 @@ const ui = siteUI(locale);
 					<a href={homeAnchor("#use-cases")}>{nav.useCases}</a>
 					<a href={homeAnchor("#faq")}>{nav.faq}</a>
 					<a href={localizedPath(locale, "articles")}>{ui.tutorials}</a>
-					<a href={storeHref} target="_blank" rel="noopener noreferrer">{nav.getApp}</a>
+					<a href={storeHref} target={storeHref.startsWith('https:') ? '_blank' : undefined} rel={storeHref.startsWith('https:') ? 'noopener noreferrer' : undefined}>{nav.getApp}</a>
 				</nav>
 			</details>
 		</div>

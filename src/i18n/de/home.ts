@@ -238,19 +238,19 @@ export const faqs = [
   }
 ];
 export const ui = {
-  "ogAlt": "ClipDock – Webvideos herunterladen auf iPhone und iPad",
-  "eyebrow": "Viele Plattformen · iPhone + iPad",
+  "ogAlt": "ClipDock: Video-Downloader für iPhone, iPad und Android",
+  "eyebrow": "iPhone · iPad · Android",
   "heroLine1": "Link kopieren.",
   "heroLine2": "Video behalten.",
-  "heroDescription": "Speichere mit ClipDock Videos, Bilder oder Audio aus unterstützten Links und Webseiten. Starte Downloads durch Kopieren oder wähle mehrere Beiträge aus einer Liste aus. Verfügbare Qualität, Formate und Wasserzeichen hängen von der Quelle ab.",
+  "heroDescription": "Speichere Videos, Bilder und Audio von unterstützten Links. Verwalte Dateien und schneide, konvertiere oder skaliere lokale Videos auf iPhone, iPad und Android. Funktionen und unterstützte Quellen unterscheiden sich je nach Plattform.",
   "freeDownload": "Kostenlos laden",
-  "qrLabel": "Mit dem iPhone scannen, um ClipDock zu laden",
-  "qrAlt": "QR-Code zum Download von ClipDock",
-  "scan": "Mit dem iPhone scannen",
+  "qrLabel": "Scannen und ClipDock für iPhone, iPad oder Android wählen",
+  "qrAlt": "Scannen und ClipDock für iPhone, iPad oder Android wählen",
+  "scan": "Mit dem Smartphone scannen",
   "getApp": "App laden",
   "productInfo": "Produktinformationen",
   "ratings": "Bewertungen",
-  "privacyProof": "Keine App-Daten erfasst",
+  "privacyProof": "iOS App Store: keine Datenerhebung",
   "capabilities": "Die wichtigsten Funktionen von ClipDock",
   "subtitleLink": "Anleitung für Untertitel lesen",
   "demoSuffix": "Demo",
@@ -267,7 +267,7 @@ export const ui = {
   "trustLabel1": "von App-Daten",
   "trustText1": "Laut aktueller Datenschutzangabe im App Store erfasst der Entwickler über diese App keine Daten.",
   "trustLabel2": "iPhone und iPad",
-  "trustText2": "Für iPhones mit iOS 15 oder neuer und iPads mit iPadOS 15 oder neuer.",
+  "trustText2": "Die App-Store-Version erfordert iOS 15 / iPadOS 15 oder neuer, die Google-Play-Version Android 8.0 oder neuer.",
   "trustValue3": "Rechte achten",
   "trustLabel3": "Nur erlaubte Inhalte speichern",
   "trustText3": "Keine Umgehung von DRM, Bezahlschranken, Zugriffskontrollen oder Plattformbeschränkungen.",
@@ -275,7 +275,7 @@ export const ui = {
   "faqTitle": "Gut informiert zum nächsten Download.",
   "closingKicker": "Bereit für den nächsten Link?",
   "closingTitle": "Deine Videos immer griffbereit.",
-  "closingDescription": "ClipDock ist für iPhone und iPad kostenlos erhältlich und bietet In-App-Käufe.",
+  "closingDescription": "Kostenlos im App Store und bei Google Play erhältlich, mit In-App-Käufen. Kostenlose Kontingente und Funktionen unterscheiden sich je nach Plattform.",
   "storeDownload": "Im App Store laden",
-  "closingQr": "Scannen und ClipDock laden"
+  "closingQr": "Scannen und ClipDock für iPhone, iPad oder Android wählen"
 };

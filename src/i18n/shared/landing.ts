@@ -1,5 +1,6 @@
 import type { FAQ, Feature, Review, StoreData, UiLabels } from "@/types/content";
 import type { Locale } from "../locales";
+import * as storeLinks from '../../config/store-links.json';
 
 export interface LocalizedLandingContent extends StoreData {
 	locale: Locale;
@@ -12,12 +13,12 @@ export interface LocalizedLandingContent extends StoreData {
 	reviews: Review[];
 	labels: UiLabels;
 }
-export const appleStoreUrl =
-	"https://apps.apple.com/us/app/clipdock-web-video-downloader/id6769265797?uo=4";
+export const appleStoreUrl = storeLinks.apple;
 export const sharedStoreData = {
 	logo: "/assets/clipdock-app-icon.png",
 	storeLinks: {
 		apple: appleStoreUrl,
+		google: storeLinks.google,
 	},
 	rating: {
 		score: 4.7,

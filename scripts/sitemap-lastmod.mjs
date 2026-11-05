@@ -18,7 +18,7 @@ const git = (root, args) => execFileSync('git', args, { cwd: root, encoding: 'ut
 export function createRevisionReader(root, revision, cache = { sources: new Map(), compiled: new Map() }) {
  const working = revision === undefined;
  const files = new Map();
- if (!working) for (const record of git(root, ['ls-tree', '-r', '-z', revision, '--', 'src', 'public/assets']).split('\0')) {
+ if (!working) for (const record of git(root, ['ls-tree', '-r', '-z', revision, '--', 'src', 'public']).split('\0')) {
   if (!record) continue;
   const [metadata, name] = record.split('\t');
   files.set(name, metadata.split(' ')[2]);
@@ -83,11 +83,14 @@ export function collectPageSnapshots(reader) {
  const template = filename => reader.has(filename) ? publicTemplate(reader.read(filename)) : '';
  const sharedTemplates = ['src/components/sections/SiteHeader.astro', 'src/components/sections/SiteFooter.astro'];
  const articleTemplates = ['src/layouts/TutorialLayout.astro', 'src/layouts/TutorialArticle.astro', 'src/components/TutorialScreenshot.astro', 'src/components/OrangePhoneFrame.astro'];
- const homeTemplates = ['src/layouts/Layout.astro', 'src/layouts/ClipDockLanding.astro', 'src/components/HeroDemos.astro', 'src/components/SubtitleCarousel.astro'];
+ const homeTemplates = ['src/layouts/Layout.astro', 'src/layouts/ClipDockLanding.astro', 'src/components/HeroDemos.astro', 'src/components/SubtitleCarousel.astro', 'src/components/StoreButtons.astro'];
  const indexTemplates = ['src/layouts/TutorialLayout.astro', 'src/layouts/TutorialIndex.astro'];
  const legalTemplates = ['src/layouts/Layout.astro', 'src/layouts/LegalPage.astro'];
  const androidTemplates = ['src/layouts/Layout.astro', 'src/layouts/AndroidLegalPage.astro'];
  const android = reader.has('src/i18n/android-legal.ts') ? reader.load('src/i18n/android-legal.ts') : undefined;
+ const platforms = reader.has('src/config/platforms.ts') ? reader.load('src/config/platforms.ts') : undefined;
+ const platformCopy = reader.has('src/i18n/platforms.ts') ? reader.load('src/i18n/platforms.ts').platformCopy : undefined;
+ const androidProduct = reader.has('src/i18n/android-product.ts') ? reader.load('src/i18n/android-product.ts').androidProductCopy : undefined;
  const templates = files => files.map(template);
  const usedUI = (ui, files) => pick(ui, [...new Set(files.flatMap(file => [...template(file).matchAll(/\bui\.(\w+)/g)].map(match => match[1])))]);
  const media = value => [...new Set((stable(value).match(/\/assets\/[^"\s]+\.(?:webp|png|jpg|mp4)/g) ?? []))].map(src => [src, reader.asset(src)]);
@@ -103,7 +106,8 @@ export function collectPageSnapshots(reader) {
   const meta = reader.load(`${directory}/meta.ts`).meta;
   const shared = { templates: templates(sharedTemplates), ui: usedUI(ui, sharedTemplates),
    app: pick(landing, ['name', 'shortName', 'logo', 'storeLinks']), labels: pick(landing.labels, ['privacy', 'terms']),
-   common: pick(common, ['home', 'breadcrumb', 'language']), meta, languages };
+   common: pick(common, ['home', 'breadcrumb', 'language']), meta, languages,
+   platformLinks: platformCopy ? pick(platformCopy[locale], ['androidDetails', 'androidLanguage', 'deletion']) : undefined };
   const guideFiles = ['src/components/DownloadGuides.astro'];
   const guidesFor = files => {
    if (!files.some(file => template(file).includes('<DownloadGuides '))) return undefined;
@@ -123,8 +127,19 @@ export function collectPageSnapshots(reader) {
   const homeMedia = [...media([homeCopy, templates(homeTemplates)]), ...home.featureSections.filter(feature => feature.video).flatMap(feature =>
    ['mp4', 'jpg'].map(extension => { const src = `/assets/demos/${feature.video}.${extension}`; return [src, reader.asset(src)]; }))];
   add('', { shared, templates: templates(homeTemplates), home: homeCopy, captions, guides: guidesFor(homeTemplates), tasks: tasksFor(homeTemplates),
+   platforms: platforms?.appPlatforms, platformCopy: platformCopy ? pick(platformCopy[locale], ['androidDetails', 'androidSummary', 'androidAllowance', 'iosSummary', 'iosScope', 'privacyTitle', 'privacyText', 'androidLanguage']) : undefined,
+   downloadQr: reader.has('public/download-qr.svg') ? reader.asset('/download-qr.svg') : undefined,
    app: pick(landing, ['seoTitle', 'metaDescription', 'description', 'version', 'rating']),
    ui: usedUI(ui, homeTemplates), media: homeMedia });
+  if (platformCopy?.[locale] && reader.has('src/layouts/DownloadPage.astro')) add('download', {
+   shared, copy: platformCopy[locale], platforms: platforms?.appPlatforms,
+   templates: templates(['src/layouts/Layout.astro', 'src/layouts/DownloadPage.astro', 'src/components/StoreButtons.astro']),
+  });
+  if (androidProduct?.[locale] && reader.has('src/layouts/AndroidLanding.astro')) add('android', {
+   shared: { ...shared, languages: languages.filter(([language]) => platforms.androidLocales.includes(language)) },
+   copy: androidProduct[locale], platformCopy: pick(platformCopy[locale], ['deletion']), platforms: platforms.appPlatforms.android,
+   templates: templates(['src/layouts/Layout.astro', 'src/layouts/AndroidLanding.astro', 'src/components/StoreButtons.astro']),
+  });
   add('articles', { shared, templates: templates(indexTemplates), ui: usedUI(ui, indexTemplates), categories,
    guides: guidesFor(indexTemplates), tasks: tasksFor(indexTemplates), articles: structure.map(article => ({ ...pick(article, ['slug', 'category', 'screenshotsReady']), ...pick(tutorialCopy[article.slug], ['title', 'description']) })) });
   for (const article of structure) {
@@ -174,8 +189,8 @@ export function buildLastmodMap({ root, collect = collectPageSnapshots }) {
  const dates = new Map();
  const previous = new Map();
  const changedFiles = [...new Set([
-  ...git(root, ['diff', 'HEAD', '--name-only', '-z', '--', 'src', 'public/assets']).split('\0'),
-  ...git(root, ['ls-files', '-o', '-z', '--exclude-standard', '--', 'src', 'public/assets']).split('\0'),
+  ...git(root, ['diff', 'HEAD', '--name-only', '-z', '--', 'src', 'public']).split('\0'),
+  ...git(root, ['ls-files', '-o', '-z', '--exclude-standard', '--', 'src', 'public']).split('\0'),
  ].filter(Boolean))];
  const existing = changedFiles.filter(file => existsSync(path.join(root, file)));
  // Only local previews use file times. Committed builds use the content-changing

@@ -52,9 +52,9 @@ const xDefault = languageLinks.find(link => link.locale === defaultLocale) ?? la
 	</head>
 	<body>
 		<a class="skip-link" href="#main-content">{ui.skip}</a>
-        <SiteHeader locale={locale} name={content.shortName} logo={content.logo} homeHref={homeHref} storeHref={content.storeLinks.apple} languageLinks={languageLinks} nav={ui.nav} />
+        <SiteHeader locale={locale} name={content.shortName} logo={content.logo} homeHref={homeHref} storeHref={localizedPath(locale, "download")} languageLinks={languageLinks} nav={ui.nav} />
         <slot />
-        <SiteFooter locale={locale} name={content.shortName} logo={content.logo} tagline={ui.tagline} homeHref={homeHref} privacyHref={localizedPath(locale, "privacy")} termsHref={localizedPath(locale, "terms")} storeHref={content.storeLinks.apple} privacyLabel={content.labels.privacy} termsLabel={content.labels.terms} getAppLabel={ui.nav.getApp} languageLinks={languageLinks} />
+        <SiteFooter locale={locale} name={content.shortName} logo={content.logo} tagline={ui.tagline} homeHref={homeHref} privacyHref={localizedPath(locale, "privacy")} termsHref={localizedPath(locale, "terms")} storeHref={localizedPath(locale, "download")} privacyLabel={content.labels.privacy} termsLabel={content.labels.terms} getAppLabel={ui.nav.getApp} languageLinks={languageLinks} />
 
 	</body>
 </html>

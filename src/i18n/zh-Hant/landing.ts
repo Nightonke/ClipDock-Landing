@@ -35,9 +35,9 @@ export const landing: LocalizedLandingContent = {
 		shortName: "ClipDock 影隨存",
 		description:
 			"從支援的分享連結中提取、背景下載、儲存和整理影片，並使用實用工具處理影片檔案。",
-		seoTitle: "ClipDock 影隨存｜iPhone 與 iPad 網頁影片下載器",
+		seoTitle: "ClipDock 影隨存｜iPhone、iPad 與 Android 影片下載工具",
 		metaDescription:
-			"使用 ClipDock 影隨存從支援的網址和分享連結提取、下載、儲存、整理並處理影片，支援 iPhone 與 iPad。",
+			"從支援的連結儲存影片、圖片或音訊，管理檔案，並裁剪、轉碼或調整本機影片比例。支援 iPhone、iPad 和 Android；功能與可用來源依平台而異。",
 		keywords: [
 			"ClipDock",
 			"影隨存",

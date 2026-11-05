@@ -238,24 +238,23 @@ export const faqs = [
   }
 ];
 export const ui = {
-  "ogAlt": "ClipDock — iPhone・iPad向けWeb動画ダウンローダー",
-  "eyebrow": "多彩なプラットフォームに対応 · iPhone + iPad",
+  "ogAlt": "ClipDock｜iPhone・iPad・Android 向け動画ダウンローダー",
+  "eyebrow": "iPhone · iPad · Android",
   "heroLine1": "リンクひとつで",
   "heroLine2": "動画を手元に。",
-  "heroDescription": "対応する共有リンクやWebページから、動画・画像・音声を保存。コピーによる自動ダウンロードやリストからの一括選択で、繰り返しの操作を減らせます。画質、形式、透かしの有無は配信元のリソースによって異なります。",
+  "heroDescription": "対応リンクから動画、画像、音声を保存。iPhone、iPad、Android でファイルを管理し、端末内の動画をトリミング、変換、リサイズできます。機能と対応する取得元はプラットフォームによって異なります。",
   "freeDownload": "無料ダウンロード",
-  "qrLabel": "iPhoneでコードを読み取ってClipDockをダウンロード",
-  "qrAlt": "ClipDockダウンロード用QRコード",
-  "scan": "iPhoneで読み取る",
+  "qrLabel": "スキャンして iPhone、iPad、Android 版を選択",
+  "qrAlt": "スキャンして iPhone、iPad、Android 版を選択",
+  "scan": "スマートフォンでスキャン",
   "getApp": "アプリを入手",
   "productInfo": "製品情報",
   "ratings": "件の評価",
-  "privacyProof": "アプリのデータ収集なし",
+  "privacyProof": "iOS App Store：データ収集なし",
   "capabilities": "ClipDockの主な機能",
   "subtitleLink": "字幕抽出の使い方を見る",
   "demoSuffix": "操作デモ",
   "progress": "動画の再生位置",
-
   "toolsKicker": "保存した、その先も",
   "toolsTitle": "動画ツールを、\n手元に。",
   "toolsDescription": "トリミング、変換、結合、共有まで。保存した素材に必要な操作を、ClipDockで続けられます。",
@@ -267,7 +266,7 @@ export const ui = {
   "trustLabel1": "アプリのデータ",
   "trustText1": "現在のApp Storeのプライバシー表示では、開発者がこのアプリからデータを収集することはありません。",
   "trustLabel2": "iPhone・iPad",
-  "trustText2": "iOS 15以降のiPhone、およびiPadOS 15以降のiPadに対応しています。",
+  "trustText2": "App Store 版は iOS 15 / iPadOS 15 以降、Google Play 版は Android 8.0 以降が必要です。",
   "trustValue3": "適切な利用",
   "trustLabel3": "権利のあるコンテンツを保存",
   "trustText3": "DRM、有料コンテンツ、アクセス制御、プラットフォームの制限を回避しません。",
@@ -275,7 +274,7 @@ export const ui = {
   "faqTitle": "使い始める前に。",
   "closingKicker": "次のリンクを、保存しませんか？",
   "closingTitle": "動画を、\nいつも手元に。",
-  "closingDescription": "ClipDockはiPhoneとiPadで無料ダウンロードできます。アプリ内課金があります。",
+  "closingDescription": "App Store と Google Play で無料ダウンロード。アプリ内購入があります。無料枠と機能はプラットフォームによって異なります。",
   "storeDownload": "App Storeからダウンロード",
-  "closingQr": "コードを読み取ってClipDockをダウンロード"
+  "closingQr": "スキャンして iPhone、iPad、Android 版を選択"
 };

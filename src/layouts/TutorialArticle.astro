@@ -36,7 +36,7 @@ const structuredData = [
 	<main id="main-content" class="tutorial-page site-shell">
 		<nav class="tutorial-breadcrumb" aria-label={ui.breadcrumb}><a href={homeHref}>{ui.home}</a><span aria-hidden="true">/</span><a href={indexHref}>{ui.tutorials}</a><span aria-hidden="true">/</span><a href={`${indexHref}#${category.id}`}>{category.name}</a></nav>
 		<header class="tutorial-hero">
-			<p class="eyebrow">{category.name}</p><h1><HeadingText text={article.title} locale={locale} /></h1>
+			<p class="eyebrow">iPhone / iPad · {category.name}</p><h1><HeadingText text={article.title} locale={locale} /></h1>
 			<p class="tutorial-lead">{article.intro}</p>
 			{article.screenshotNotice && <p class="tutorial-screenshot-notice">{article.screenshotNotice}</p>}
 		</header>

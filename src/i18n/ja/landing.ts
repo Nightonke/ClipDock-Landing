@@ -11,8 +11,8 @@ const labels: UiLabels = {
 export const landing: LocalizedLandingContent = {
  locale: "ja", htmlLang: "ja", name: "ClipDock", shortName: "ClipDock",
  description: "対応する共有リンクから動画を抽出し、バックグラウンドでダウンロード。保存・整理から動画の加工まで。",
- seoTitle: "ClipDock｜iPhone・iPad向けWeb動画ダウンローダー",
- metaDescription: "ClipDockで対応するURLや共有リンクから動画を抽出・ダウンロード。保存、整理、加工をiPhoneとiPadで。",
+ seoTitle: "ClipDock｜iPhone・iPad・Android 向け動画ダウンローダー",
+ metaDescription: "対応リンクから動画、画像、音声を保存。iPhone、iPad、Android でファイルを管理し、端末内の動画をトリミング、変換、リサイズできます。機能と対応する取得元はプラットフォームによって異なります。",
  keywords: ["ClipDock", "Web動画ダウンロード", "動画リンク保存", "バックグラウンドダウンロード", "動画保存", "動画加工", "写真に保存"],
  ...sharedStoreData,
  features: [], faqs: [], reviews: [], labels,

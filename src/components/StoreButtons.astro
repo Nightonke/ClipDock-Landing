@@ -1,0 +1,15 @@
+---
+import { appPlatforms } from '../config/platforms';
+interface Props { platform?: 'both' | 'ios' | 'android' }
+const { platform = 'both' } = Astro.props;
+---
+<div class="store-buttons">
+ {platform !== 'android' && <a class="button button-dark" href={appPlatforms.ios.storeUrl} target="_blank" rel="noopener noreferrer" data-store="ios"><span>App Store</span><small>iPhone / iPad</small></a>}
+ {platform !== 'ios' && <a class="button button-dark" href={appPlatforms.android.storeUrl} target="_blank" rel="noopener noreferrer" data-store="android"><span>Google Play</span><small>Android</small></a>}
+</div>
+<style>
+ .store-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-block: 20px; }
+ .store-buttons a { display: flex; flex-direction: column; gap: 5px; min-width: 160px; padding: 14px 22px; line-height: 1.3; }
+ small { font-size: .72rem; font-weight: 500; opacity: .8; }
+ @media(max-width: 420px) { .store-buttons { flex-direction: column; } .store-buttons a { width: 100%; } }
+</style>

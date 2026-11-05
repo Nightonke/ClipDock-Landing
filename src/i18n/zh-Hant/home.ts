@@ -124,24 +124,23 @@ export const faqs = [
 
 
 export const ui = {
-  "ogAlt": "ClipDock 影隨存——適用於 iPhone 與 iPad 的網頁影片下載器",
-  "eyebrow": "支援多種平台 · iPhone + iPad",
+  "ogAlt": "ClipDock 影隨存｜iPhone、iPad 與 Android 影片下載工具",
+  "eyebrow": "iPhone · iPad · Android",
   "heroLine1": "連結交給影隨存",
   "heroLine2": "影片圖片輕鬆存",
-  "heroDescription": "用 ClipDock 影隨存儲存支援的分享連結和網頁中的影片、圖片或音訊。開啟複製即下載，或從清單中批次選擇作品，減少重複操作。可用畫質、格式和浮水印情況取決於來源資源。",
+  "heroDescription": "從支援的連結儲存影片、圖片或音訊，管理檔案，並裁剪、轉碼或調整本機影片比例。支援 iPhone、iPad 和 Android；功能與可用來源依平台而異。",
   "freeDownload": "免費下載",
-  "qrLabel": "使用 iPhone 掃描 QR Code 下載 ClipDock 影隨存",
-  "qrAlt": "ClipDock 影隨存下載 QR Code",
-  "scan": "使用 iPhone 掃描",
+  "qrLabel": "掃碼選擇 iPhone、iPad 或 Android 版本",
+  "qrAlt": "掃碼選擇 iPhone、iPad 或 Android 版本",
+  "scan": "用手機掃碼",
   "getApp": "下載 App",
   "productInfo": "產品資訊",
   "ratings": "個評分",
-  "privacyProof": "不收集 App 資料",
+  "privacyProof": "iOS App Store：不收集資料",
   "capabilities": "ClipDock 影隨存核心能力",
   "subtitleLink": "檢視字幕提取教學",
   "demoSuffix": "操作示範",
   "progress": "影片播放進度",
-
   "toolsKicker": "下載之後",
   "toolsTitle": "隨身影片工具箱",
   "toolsDescription": "下載之後，還能繼續創作。用影隨存裁切、轉換、拼接影片，再分享你的作品。",
@@ -153,7 +152,7 @@ export const ui = {
   "trustLabel1": "App 資料",
   "trustText1": "目前 App Store 隱私標籤顯示，開發者不會透過此 App 收集資料。",
   "trustLabel2": "iPhone 與 iPad",
-  "trustText2": "支援 iOS 15 及以上版本的 iPhone，以及 iPadOS 15 及以上版本的 iPad。",
+  "trustText2": "App Store 版本需要 iOS 15 / iPadOS 15 或以上；Google Play 版本需要 Android 8.0 或以上。",
   "trustValue3": "合法使用",
   "trustLabel3": "儲存有權使用的內容",
   "trustText3": "不繞過 DRM、付費內容、存取控制或平台限制。",
@@ -161,7 +160,7 @@ export const ui = {
   "faqTitle": "下載前，你可能想知道",
   "closingKicker": "準備好儲存下一個連結了嗎？",
   "closingTitle": "讓影片真正留在手邊。",
-  "closingDescription": "影隨存可在 iPhone 和 iPad 上免費下載，包含 App 內購買。",
+  "closingDescription": "可從 App Store 或 Google Play 免費下載，包含 App 內購買。兩個平台的免費額度與功能有所不同。",
   "storeDownload": "在 App Store 下載",
-  "closingQr": "掃描 QR Code 下載 ClipDock 影隨存"
+  "closingQr": "掃碼選擇 iPhone、iPad 或 Android 版本"
 };

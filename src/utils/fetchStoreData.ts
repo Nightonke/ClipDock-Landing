@@ -1,4 +1,4 @@
-import { storeDataConfig } from "@config/site";
+import { storeDataConfig, siteConfig } from "@config/site";
 import type { StoreData } from "@/types/content";
 
 async function getAppleApp(appId: number, country = "us") {
@@ -64,6 +64,7 @@ export async function fetchStoreData(): Promise<Partial<StoreData>> {
 			},
             storeLinks: {
                 apple: data.trackViewUrl,
+                google: siteConfig.storeLinks.google,
             },
         };
     } catch (error) {

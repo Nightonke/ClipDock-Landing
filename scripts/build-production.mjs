@@ -57,3 +57,4 @@ execFileSync('npm', ['run', 'build'], { stdio: 'inherit', env: { ...process.env,
 execFileSync('python3', ['scripts/verify-site.py'], { stdio: 'inherit' });
 
 execFileSync('python3', ['scripts/verify-locales.py'], { stdio: 'inherit' });
+execFileSync('python3', ['scripts/verify-platforms.py'], { stdio: 'inherit' });

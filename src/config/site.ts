@@ -1,5 +1,6 @@
 import { siteDefaults } from "../i18n/en-US/site-defaults";
 import { socialLinks } from "./socialLinks";
+import * as storeLinks from './store-links.json';
 
 export const storeDataConfig = {
 	fetchRealData: false, // Set to true to fetch real data from App Store
@@ -14,7 +15,8 @@ export const siteConfig = {
 
 	/** App store download links */
 	storeLinks: {
-		apple: "https://apps.apple.com/app/id6769265797",
+		apple: storeLinks.apple,
+		google: storeLinks.google,
 	},
 
 	/** App rating and reviews */

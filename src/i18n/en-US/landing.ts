@@ -36,9 +36,9 @@ export const landing: LocalizedLandingContent = {
 		description:
 			"Extract videos from supported shared links, download them in the background, organize them, and process them with practical video tools.",
 		seoTitle:
-			"ClipDock: Web Video Downloader for iPhone & iPad",
+			"ClipDock: Web Video Downloader for iPhone, iPad & Android",
 		metaDescription:
-			"Extract, download, save, organize, and process videos from supported URLs and shared links with ClipDock for iPhone and iPad.",
+			"Save videos, images, and audio from supported links. Organize your files and trim, convert, or resize local videos on iPhone, iPad, and Android. Features and available sources vary by platform.",
 		keywords: [
 			"ClipDock",
 			"web video downloader",

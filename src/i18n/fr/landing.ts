@@ -9,8 +9,8 @@ const labels: UiLabels = {
 export const landing: LocalizedLandingContent = {
   locale: "fr", htmlLang: "fr", name: "ClipDock : téléchargement de vidéos", shortName: "ClipDock",
   description: "Extrayez, téléchargez en arrière-plan, enregistrez et organisez les vidéos issues de liens compatibles, puis retouchez-les avec les outils intégrés.",
-  seoTitle: "ClipDock : téléchargez des vidéos sur iPhone et iPad",
-  metaDescription: "Avec ClipDock sur iPhone et iPad, extrayez, téléchargez, enregistrez, organisez et retouchez des vidéos à partir d’URL et de liens de partage compatibles.",
+  seoTitle: "ClipDock : téléchargeur vidéo pour iPhone, iPad et Android",
+  metaDescription: "Enregistrez vidéos, images et audio depuis des liens compatibles. Organisez vos fichiers et découpez, convertissez ou redimensionnez des vidéos locales sur iPhone, iPad et Android. Fonctions et sources disponibles varient selon la plateforme.",
   keywords: ["ClipDock", "télécharger une vidéo", "téléchargement vidéo iPhone", "téléchargement vidéo iPad", "vidéo depuis un lien", "téléchargement en arrière-plan", "outils vidéo", "enregistrer dans Photos"],
   ...sharedStoreData, features: [], faqs: [], reviews: [], labels,
   appPreview: { ...sharedStoreData.appPreview, ariaLabel: "Vidéo de présentation de ClipDock sur iPhone" }, screenshots: { iphone: [], ipad: [] }

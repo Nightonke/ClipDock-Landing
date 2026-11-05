@@ -135,7 +135,7 @@ const jsonLd = structuredData
 			name={navTitle}
 			logo={navData.logo}
 			homeHref={homeHref}
-			storeHref={storeHref ?? navData.storeLinks.apple}
+			storeHref={storeHref ?? localizedPath(activeLocale, 'download')}
 			languageLinks={alternates}
 			nav={ui.nav}
 		/>
@@ -150,7 +150,7 @@ const jsonLd = structuredData
 			homeHref={homeHref}
 			privacyHref={privacyHref}
 			termsHref={termsHref}
-			storeHref={storeHref ?? navData.storeLinks.apple}
+			storeHref={storeHref ?? localizedPath(activeLocale, 'download')}
 			privacyLabel={labels.privacy}
 			termsLabel={labels.terms}
 			getAppLabel={ui.nav.getApp}

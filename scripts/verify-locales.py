@@ -102,7 +102,7 @@ for locale in PUBLISHED:
     expected_articles = {article['slug'] + '/' for article in REGISTRY['articles']}
     if articles.keys() != expected_articles:
         errors.append(f'{locale}: tutorial route set differs from registry')
-    for suffix in ['', 'articles', 'privacy', 'terms'] + ['articles/' + article['slug'] for article in REGISTRY['articles']]:
+    for suffix in ['', 'download', 'articles', 'privacy', 'terms'] + ['articles/' + article['slug'] for article in REGISTRY['articles']]:
         route = localized(locale, suffix)
         page = pages.get(route)
         if page is None:
@@ -164,14 +164,14 @@ for path in ROOT.glob('sitemap-*.xml'):
 if not sitemap_urls:
     errors.append('Sitemap contains no page URLs')
 for locale in ['en-US', 'zh-Hans']:
-    for document in ['privacy', 'terms', 'delete-account']:
-        route = localized(locale, 'android/' + document)
+    for document in ['', 'privacy', 'terms', 'delete-account']:
+        route = localized(locale, 'android' + ('/' + document if document else ''))
         page = pages.get(route)
         if not page or page.redirect or page.lang != META[locale]['htmlLang']:
             errors.append(f'{route}: Android legal document missing or incorrect language')
             continue
-        expected = {META[item]['hrefLang']: localized(item, 'android/' + document) for item in ['en-US', 'zh-Hans']}
-        expected['x-default'] = localized('en-US', 'android/' + document)
+        expected = {META[item]['hrefLang']: localized(item, 'android' + ('/' + document if document else '')) for item in ['en-US', 'zh-Hans']}
+        expected['x-default'] = localized('en-US', 'android' + ('/' + document if document else ''))
         if {lang: urlparse(href).path for lang, href in page.alternates.items()} != expected:
             errors.append(f'{route}: Android legal language switch leaves the document')
         if route not in sitemap_urls or urlparse(page.canonical).path != route:

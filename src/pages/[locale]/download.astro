@@ -1,0 +1,7 @@
+---
+import DownloadPage from '../../layouts/DownloadPage.astro';
+import { publishedLocales, defaultLocale, type Locale } from '../../i18n/locales';
+export const getStaticPaths = () => publishedLocales.filter(locale => locale !== defaultLocale).map(locale => ({ params: { locale } }));
+const { locale } = Astro.params as { locale: Locale };
+---
+<DownloadPage locale={locale} />

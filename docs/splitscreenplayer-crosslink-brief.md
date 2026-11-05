@@ -2,6 +2,8 @@
 
 以下内容可以直接复制给负责 `splitscreenplayer.com` 的对话。
 
+更新于 2026-11-05：ClipDock 已增加 Android 产品入口；使用下方双平台文案替代早先仅介绍 iPhone/iPad 的版本。
+
 ---
 
 请在 SplitScreenPlayer 网站增加对同一开发者另一款应用 ClipDock 影随存的自然推荐，帮助需要准备视频素材的用户找到对应工具。请直接修改该项目并完成构建和链接检查。
@@ -18,7 +20,7 @@
 
 标题：先准备视频，再开始多画面比较
 
-正文：ClipDock 影随存可在 iPhone 和 iPad 上从支持的链接保存视频、提取 YouTube 已有字幕，并裁剪、转码和调整本地视频的画面比例。整理好素材后，再导入分屏播放器进行播放与比较。
+正文：ClipDock 影随存支持 iPhone、iPad 和 Android，可从支持的链接保存视频，并裁剪、转码和调整本地视频的画面比例。整理好素材后，再导入分屏播放器进行播放与比较。具体功能与可用来源因平台而异。
 
 按钮：了解 ClipDock 影随存
 
@@ -30,7 +32,7 @@ Label: Another app from the same developer
 
 Title: Prepare your videos for side-by-side viewing
 
-Body: ClipDock helps you save videos from supported links, extract existing YouTube subtitles, and trim, convert, or resize local videos on iPhone and iPad. Prepare your files, then import them into Split Screen Player to play and compare.
+Body: ClipDock helps you save videos from supported links and trim, convert, or resize local videos on iPhone, iPad, and Android. Prepare your files, then import them into Split Screen Player to play and compare. Features and available sources vary by platform.
 
 Button: Explore ClipDock
 
@@ -44,12 +46,18 @@ URL: `https://clipdock.video/`
 | 需要预先处理画面比例 | 调整视频比例和画布 | `https://clipdock.video/zh-Hans/articles/resize-video-iphone/` | Adjust video aspect ratio and canvas / `https://clipdock.video/articles/resize-video-iphone/` |
 | 需要单独保存已有字幕 | 提取 YouTube 已有字幕 | `https://clipdock.video/zh-Hans/articles/extract-youtube-subtitles-iphone/` | Extract existing YouTube subtitles / `https://clipdock.video/articles/extract-youtube-subtitles-iphone/` |
 
-字幕链接仅用于文章确实讨论字幕文件的情境，不暗示 Split Screen Player 当前支持某种尚未验证的字幕工作流。ClipDock 目前网站公开推广的是 iPhone/iPad 版本，不将其描述为 Android 应用。
+以上三个教程链接均展示 **iPhone/iPad** 流程，推荐时明确平台。字幕链接仅用于文章确实讨论字幕文件的情境，不暗示 Split Screen Player 当前支持某种尚未验证的字幕工作流，也不将 YouTube 字幕提取写成 ClipDock 两端共有功能。
+
+Android 场景推荐链接：简体中文 `https://clipdock.video/zh-Hans/android/`，英文 `https://clipdock.video/android/`。可用锚文本为“了解 ClipDock 安卓版”或“Explore ClipDock for Android”。Android 页面解释链接下载、悬浮粘贴、资源管理、视频工具、Google 登录及免费额度。
+
+如果需要“下载 ClipDock”按钮，链接到 `https://clipdock.video/zh-Hans/download/`（简体中文）或 `https://clipdock.video/download/`（英文），让用户选择 App Store 或 Google Play；产品介绍卡片的“了解”按钮仍链接品牌首页。
 
 ## 实现要求
 
 - 按钮使用真实 `<a href="https://clipdock.video/.../">`，可按站点风格表现为按钮；服务端输出完整链接，不依赖点击事件跳转。
 - 同语言链接到 ClipDock 对应语言页面。支持的路径：英文 `/`，简体中文 `/zh-Hans/`、繁体中文 `/zh-Hant/`、日文 `/ja/`、韩文 `/ko/`、西班牙文 `/es/`、巴西葡萄牙文 `/pt-BR/`、德文 `/de/`、法文 `/fr/`。其他语言链接英文首页，不生成不存在的路径。
+- 下载选择页在上述九种语言路径下均提供 `/download/`。Android 独立产品页目前仅提供英文和简体中文；其他语言的 Android 专用链接使用英文 `/android/`，并标明目标内容为英文。
+- 不将 iOS 的“不收集数据”、App Store 评分或购买权益用于 Android。Android 有独立的免费下载额度、登录要求和数据处理说明；不要承诺两端购买互通。
 - 这是自然的自有产品推荐，使用普通链接，无需添加 `nofollow`。若另开标签页，使用 `target="_blank" rel="noopener"`。
 - 推荐文字自然介绍用途，不堆砌“免费、最佳、无水印”等关键词，不承诺所有来源都可下载或格式转换一定解决播放问题。
 - 检查桌面和移动端布局、键盘焦点、链接目标和目标页状态；保持该站现有 canonical 与 sitemap 规则。

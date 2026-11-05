@@ -1,0 +1,40 @@
+---
+import Layout from './Layout.astro';
+import StoreButtons from '../components/StoreButtons.astro';
+import { landingContent } from '../i18n/content';
+import { platformCopy } from '../i18n/platforms';
+import { siteUI } from '../i18n/site-ui';
+import { getLanguageLinks, localizedPath, localeMeta, type Locale } from '../i18n/locales';
+import { androidPath, androidLocale } from '../config/platforms';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const app = landingContent[locale];
+const copy = platformCopy[locale];
+---
+<Layout title={`${copy.downloadTitle} | ClipDock`} description={copy.downloadIntro} lang={localeMeta[locale].htmlLang} appData={app} alternates={getLanguageLinks(locale, 'download')} homeHref={localizedPath(locale)} labels={app.labels}>
+ <main id="main-content" class="platform-page site-shell">
+  <header><p class="eyebrow">App Store · Google Play</p><h1>{copy.downloadTitle}</h1><p>{copy.downloadIntro}</p></header>
+  <div class="platform-grid">
+   <section><h2>iPhone / iPad</h2><p>iOS 15+ · iPadOS 15+</p><p>{copy.iosSummary}</p><StoreButtons platform="ios" /><a href={localizedPath(locale, 'articles')}>{siteUI(locale).tutorials} · iPhone / iPad</a></section>
+   <section><h2>Android</h2><p>Android 8.0+</p><p>{copy.androidSummary}</p><StoreButtons platform="android" /><a href={androidPath(locale)} hreflang={localeMeta[androidLocale(locale)].hrefLang}>{copy.androidDetails}</a><p>{copy.androidAllowance}</p></section>
+  </div>
+  <section class="privacy-summary"><h2>{copy.privacyTitle}</h2><p>{copy.privacyText}</p><nav>
+   <a href={localizedPath(locale, 'privacy')}>iOS · {app.labels.privacy}</a>
+   <a href={androidPath(locale, 'privacy')} hreflang={localeMeta[androidLocale(locale)].hrefLang}>Android · {app.labels.privacy}{copy.androidLanguage}</a>
+   <a href={androidPath(locale, 'delete-account')} hreflang={localeMeta[androidLocale(locale)].hrefLang}>{copy.deletion}{copy.androidLanguage}</a>
+  </nav></section>
+ </main>
+</Layout>
+<style>
+ .platform-page { padding-block: 64px; }
+ header { max-width: 800px; margin-bottom: 32px; }
+ h1 { font-family: var(--display); font-size: clamp(2rem, 5vw, 4rem); line-height: 1.15; margin-block: 16px; }
+ h2 { font-family: var(--display); font-size: 1.8rem; line-height: 1.3; }
+ p { line-height: 1.8; color: var(--ink-soft); }
+ .platform-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+ section { padding: clamp(22px, 4vw, 40px); border: 1px solid var(--line-strong); border-radius: 24px; background: var(--paper-strong); }
+ .privacy-summary { margin-top: 24px; }
+ a { text-decoration: underline; text-underline-offset: 4px; line-height: 1.8; }
+ nav { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+ @media(max-width: 680px) { .platform-grid { grid-template-columns: 1fr; } }
+</style>

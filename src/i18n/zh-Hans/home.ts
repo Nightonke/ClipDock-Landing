@@ -124,24 +124,23 @@ export const faqs = [
 
 
 export const ui = {
-  "ogAlt": "ClipDock 影随存——适用于 iPhone 与 iPad 的网页视频下载器",
-  "eyebrow": "支持多种平台 · iPhone + iPad",
-  "heroLine1": "视频下载与批量保存",
+  "ogAlt": "ClipDock 影随存｜iPhone、iPad 与安卓视频下载工具",
+  "eyebrow": "iPhone · iPad · Android",
+  "heroLine1": "视频下载与处理",
   "heroLine2": "从链接到可用素材",
-  "heroDescription": "在 iPhone 和 iPad 上，用 ClipDock 影随存从支持的分享链接保存视频、图片或音频，也能提取 YouTube 已有字幕。已有视频可直接从相册或文件导入，继续裁剪、转码和调整比例。下载后可保存到相册或分享；可用画质、格式和水印情况以来源为准。",
+  "heroDescription": "从支持的链接保存视频、图片或音频，管理文件，并裁剪、转码或调整本地视频的画面比例。支持 iPhone、iPad 和 Android；具体功能与可用来源因平台而异。",
   "freeDownload": "免费下载",
-  "qrLabel": "使用 iPhone 扫码下载 ClipDock 影随存",
-  "qrAlt": "ClipDock 影随存下载二维码",
-  "scan": "使用 iPhone 扫描",
+  "qrLabel": "扫码选择 iPhone、iPad 或 Android 版本",
+  "qrAlt": "扫码选择 iPhone、iPad 或 Android 版本",
+  "scan": "用手机扫码",
   "getApp": "下载 App",
   "productInfo": "产品信息",
   "ratings": "个评分",
-  "privacyProof": "不收集 App 数据",
+  "privacyProof": "iOS App Store：不收集数据",
   "capabilities": "ClipDock 影随存核心能力",
   "subtitleLink": "查看字幕提取教程",
   "demoSuffix": "操作演示",
   "progress": "视频播放进度",
-
   "toolsKicker": "下载之后",
   "toolsTitle": "随身视频工具箱",
   "toolsDescription": "保存只是第一步。裁剪、转换、拼接和分享所需的常用能力，也放在影随存里。",
@@ -153,7 +152,7 @@ export const ui = {
   "trustLabel1": "App 数据",
   "trustText1": "当前 App Store 隐私标签显示，开发者不会通过此 App 收集数据。",
   "trustLabel2": "iPhone 与 iPad",
-  "trustText2": "支持 iOS 15 及以上版本的 iPhone，以及 iPadOS 15 及以上版本的 iPad。",
+  "trustText2": "App Store 版本需要 iOS 15 / iPadOS 15 及以上；Google Play 版本需要 Android 8.0 及以上。",
   "trustValue3": "合法使用",
   "trustLabel3": "保存有权使用的内容",
   "trustText3": "不绕过 DRM、付费内容、访问控制或平台限制。",
@@ -161,7 +160,7 @@ export const ui = {
   "faqTitle": "下载之前，先把问题说清楚。",
   "closingKicker": "准备好保存下一条链接了吗？",
   "closingTitle": "让视频真正留在手边。",
-  "closingDescription": "影随存可在 iPhone 和 iPad 上免费下载，包含 App 内购买。",
+  "closingDescription": "可从 App Store 或 Google Play 免费下载，包含 App 内购买。两端的免费额度和功能有所不同。",
   "storeDownload": "在 App Store 下载",
-  "closingQr": "扫码下载 ClipDock 影随存"
+  "closingQr": "扫码选择 iPhone、iPad 或 Android 版本"
 };
