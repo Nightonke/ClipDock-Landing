@@ -1,0 +1,13 @@
+---
+import { createElement } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
+import { FaApple, FaCheck, FaChevronDown, FaGooglePlay, FaQrcode, FaSearch, FaStar, FaTimes } from 'react-icons/fa';
+import { FiArrowUpRight } from 'react-icons/fi';
+
+const icons = { FaApple, FaCheck, FaChevronDown, FaGooglePlay, FaQrcode, FaSearch, FaStar, FaTimes, FiArrowUpRight };
+interface Props { name: keyof typeof icons; class?: string }
+const { name, class: className, ...attributes } = Astro.props;
+// Render the sibling site's icons to plain SVG at build time, without hydration.
+const svg = renderToStaticMarkup(createElement(icons[name], { ...attributes, className, 'aria-hidden': true, focusable: 'false' }));
+---
+<Fragment set:html={svg} />

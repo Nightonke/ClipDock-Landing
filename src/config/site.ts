@@ -1,6 +1,7 @@
 import { siteDefaults } from "../i18n/en-US/site-defaults";
 import { socialLinks } from "./socialLinks";
 import * as storeLinks from './store-links.json';
+import { appStoreRating } from './app-facts';
 
 export const storeDataConfig = {
 	fetchRealData: false, // Set to true to fetch real data from App Store
@@ -20,10 +21,7 @@ export const siteConfig = {
 	},
 
 	/** App rating and reviews */
-	rating: {
-		score: 4.7,
-		count: "14",
-	},
+	rating: appStoreRating,
 
 	/** Age rating (e.g., 4+, 12+, 17+) */
 	ageRating: "4+",

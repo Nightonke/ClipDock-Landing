@@ -1,4 +1,5 @@
 ---
+import Icon from '../components/Icon.astro';
 import HeadingText from "@/components/HeadingText.astro";
 import { mediaUrl } from "@config/media";
 import type { LanguageLink } from "@/types/content";
@@ -100,15 +101,11 @@ const structuredData = [
 						{ui.heroDescription}
 					</p>
 					<div class="cd-hero-actions">
-						<StoreButtons />
-						<a class="hero-qr cd-hero-qr" href={downloadHref} aria-label={ui.qrLabel}>
-							<img src="/download-qr.svg" width="62" height="62" alt={ui.qrAlt} />
-							<span><strong>{ui.scan}</strong><small>{ui.getApp}</small></span>
-						</a>
+						<StoreButtons locale={content.locale} />
 					</div>
 					<p class="hero-proof" aria-label={ui.productInfo}>
-						<span>App Store · {content.rating.score} ★ · {content.rating.count} {ui.ratings}</span>
-						<span>{ui.privacyProof}</span>
+						<span class="hero-proof-item"><span>App Store · {content.rating.score} <Icon name="FaStar" class="hero-rating-star" aria-hidden="true" /> · {content.rating.count} {ui.ratings}</span></span>
+						<span class="hero-proof-item">{ui.privacyProof}</span>
 					</p>
 					<a class="text-link cd-download-guides-jump" href="#download-guides">{downloadGuideCopy[content.locale].jump} <span aria-hidden="true">↓</span></a>
 				</div>
@@ -246,7 +243,7 @@ const structuredData = [
 					<p class="eyebrow">{ui.closingKicker}</p>
 					<h2 class="section-title"><HeadingText text={ui.closingTitle} locale={content.locale} /></h2>
 					<p class="section-lede">{ui.closingDescription}</p>
-					<StoreButtons />
+					<StoreButtons locale={content.locale} />
 				</div>
 				<a class="cd-download-qr" href={downloadHref} aria-label={ui.qrLabel}>
 					<img src="/download-qr.svg" alt={ui.closingQr} width="400" height="400" loading="lazy" decoding="async" />
@@ -329,7 +326,7 @@ const structuredData = [
 </script>
 
 <style>
- .cd-hero-actions :global(.store-buttons) { margin: 0; }
+ .cd-hero-actions :global(.platform-downloads) { margin: 0; }
  .platform-scope { font-weight: 700; line-height: 1.6; margin-block: 16px; }
  .platform-intro { display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; padding-block: 32px 52px; }
  .platform-intro > div { padding: 28px; background: var(--paper-strong); border: 1px solid var(--line-strong); border-radius: 24px; }

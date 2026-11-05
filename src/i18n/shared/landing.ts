@@ -1,6 +1,7 @@
 import type { FAQ, Feature, Review, StoreData, UiLabels } from "@/types/content";
 import type { Locale } from "../locales";
 import * as storeLinks from '../../config/store-links.json';
+import { appStoreRating } from '../../config/app-facts';
 
 export interface LocalizedLandingContent extends StoreData {
 	locale: Locale;
@@ -20,10 +21,7 @@ export const sharedStoreData = {
 		apple: appleStoreUrl,
 		google: storeLinks.google,
 	},
-	rating: {
-		score: 4.7,
-		count: "14",
-	},
+	rating: appStoreRating,
 	ageRating: "4+",
 	version: "1.0.10",
 	minimumOS: "15.0",

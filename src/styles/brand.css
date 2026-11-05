@@ -525,19 +525,28 @@ a {
 	font-weight: 800;
 }
 
-.hero-proof span {
+.hero-proof-item {
 	display: inline-flex;
 	align-items: center;
 	gap: 7px;
 }
 
-.hero-proof span::before {
+.hero-proof-item::before {
+	flex: none;
 	width: 7px;
 	height: 7px;
 	border: 1px solid var(--ink);
 	border-radius: 50%;
 	background: var(--blue);
 	content: "";
+}
+
+.hero-rating-star {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: -3px;
+	color: #a86408;
 }
 
 .hero-qr {

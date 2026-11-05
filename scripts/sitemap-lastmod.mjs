@@ -81,7 +81,7 @@ export function collectPageSnapshots(reader) {
  const registry = reader.load('src/i18n/locales.ts');
  const languages = (registry.publishedLocales ?? locales).map(locale => [locale, registry.localeMeta?.[locale]]);
  const template = filename => reader.has(filename) ? publicTemplate(reader.read(filename)) : '';
- const sharedTemplates = ['src/components/sections/SiteHeader.astro', 'src/components/sections/SiteFooter.astro'];
+ const sharedTemplates = ['src/components/sections/SiteHeader.astro', 'src/components/sections/SiteFooter.astro', 'src/components/LanguagePicker.astro'];
  const articleTemplates = ['src/layouts/TutorialLayout.astro', 'src/layouts/TutorialArticle.astro', 'src/components/TutorialScreenshot.astro', 'src/components/OrangePhoneFrame.astro'];
  const homeTemplates = ['src/layouts/Layout.astro', 'src/layouts/ClipDockLanding.astro', 'src/components/HeroDemos.astro', 'src/components/SubtitleCarousel.astro', 'src/components/StoreButtons.astro'];
  const indexTemplates = ['src/layouts/TutorialLayout.astro', 'src/layouts/TutorialIndex.astro'];
@@ -91,6 +91,8 @@ export function collectPageSnapshots(reader) {
  const platforms = reader.has('src/config/platforms.ts') ? reader.load('src/config/platforms.ts') : undefined;
  const platformCopy = reader.has('src/i18n/platforms.ts') ? reader.load('src/i18n/platforms.ts').platformCopy : undefined;
  const androidProduct = reader.has('src/i18n/android-product.ts') ? reader.load('src/i18n/android-product.ts').androidProductCopy : undefined;
+ const languagePicker = reader.has('src/i18n/languagePicker.ts') ? reader.load('src/i18n/languagePicker.ts') : undefined;
+ const downloads = reader.has('src/i18n/downloadCopy.ts') ? reader.load('src/i18n/downloadCopy.ts') : undefined;
  const templates = files => files.map(template);
  const usedUI = (ui, files) => pick(ui, [...new Set(files.flatMap(file => [...template(file).matchAll(/\bui\.(\w+)/g)].map(match => match[1])))]);
  const media = value => [...new Set((stable(value).match(/\/assets\/[^"\s]+\.(?:webp|png|jpg|mp4)/g) ?? []))].map(src => [src, reader.asset(src)]);
@@ -107,7 +109,10 @@ export function collectPageSnapshots(reader) {
   const shared = { templates: templates(sharedTemplates), ui: usedUI(ui, sharedTemplates),
    app: pick(landing, ['name', 'shortName', 'logo', 'storeLinks']), labels: pick(landing.labels, ['privacy', 'terms']),
    common: pick(common, ['home', 'breadcrumb', 'language']), meta, languages,
-   platformLinks: platformCopy ? pick(platformCopy[locale], ['androidDetails', 'androidLanguage', 'deletion']) : undefined };
+   platformLinks: platformCopy ? pick(platformCopy[locale], ['androidDetails', 'androidLanguage', 'deletion']) : undefined,
+   languagePicker: languagePicker ? { copy: languagePicker.getLanguagePickerCopy(locale), meta: languagePicker.languagePickerMeta } : undefined };
+  const storeDownloads = downloads ? { copy: downloads.getDownloadCopy(locale),
+   qr: ['app-store-qr.svg', 'google-play-qr.svg'].map(file => reader.has(`public/${file}`) ? reader.asset(`/${file}`) : undefined) } : undefined;
   const guideFiles = ['src/components/DownloadGuides.astro'];
   const guidesFor = files => {
    if (!files.some(file => template(file).includes('<DownloadGuides '))) return undefined;
@@ -126,18 +131,18 @@ export function collectPageSnapshots(reader) {
   const captions = reader.load(`${directory}/demo-captions.ts`).captions;
   const homeMedia = [...media([homeCopy, templates(homeTemplates)]), ...home.featureSections.filter(feature => feature.video).flatMap(feature =>
    ['mp4', 'jpg'].map(extension => { const src = `/assets/demos/${feature.video}.${extension}`; return [src, reader.asset(src)]; }))];
-  add('', { shared, templates: templates(homeTemplates), home: homeCopy, captions, guides: guidesFor(homeTemplates), tasks: tasksFor(homeTemplates),
+  add('', { shared, storeDownloads, templates: templates(homeTemplates), home: homeCopy, captions, guides: guidesFor(homeTemplates), tasks: tasksFor(homeTemplates),
    platforms: platforms?.appPlatforms, platformCopy: platformCopy ? pick(platformCopy[locale], ['androidDetails', 'androidSummary', 'androidAllowance', 'iosSummary', 'iosScope', 'privacyTitle', 'privacyText', 'androidLanguage']) : undefined,
    downloadQr: reader.has('public/download-qr.svg') ? reader.asset('/download-qr.svg') : undefined,
    app: pick(landing, ['seoTitle', 'metaDescription', 'description', 'version', 'rating']),
    ui: usedUI(ui, homeTemplates), media: homeMedia });
   if (platformCopy?.[locale] && reader.has('src/layouts/DownloadPage.astro')) add('download', {
-   shared, copy: platformCopy[locale], platforms: platforms?.appPlatforms,
+   shared, storeDownloads, copy: platformCopy[locale], platforms: platforms?.appPlatforms,
    templates: templates(['src/layouts/Layout.astro', 'src/layouts/DownloadPage.astro', 'src/components/StoreButtons.astro']),
   });
   if (androidProduct?.[locale] && reader.has('src/layouts/AndroidLanding.astro')) add('android', {
    shared: { ...shared, languages: languages.filter(([language]) => platforms.androidLocales.includes(language)) },
-   copy: androidProduct[locale], platformCopy: pick(platformCopy[locale], ['deletion']), platforms: platforms.appPlatforms.android,
+   storeDownloads, copy: androidProduct[locale], platformCopy: pick(platformCopy[locale], ['deletion']), platforms: platforms.appPlatforms.android,
    templates: templates(['src/layouts/Layout.astro', 'src/layouts/AndroidLanding.astro', 'src/components/StoreButtons.astro']),
   });
   add('articles', { shared, templates: templates(indexTemplates), ui: usedUI(ui, indexTemplates), categories,

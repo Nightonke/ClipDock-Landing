@@ -3,6 +3,7 @@ import { appPlatforms, androidPath, androidLocale } from '../../config/platforms
 import { platformCopy } from '../../i18n/platforms';
 import { siteUI } from "@/i18n/site-ui";
 import { localizedPath, localeMeta, type Locale } from "@/i18n/locales";
+import LanguagePicker from "../LanguagePicker.astro";
 import type { LanguageLink } from "@/types/content";
 
 interface Props {
@@ -61,17 +62,9 @@ const platform = platformCopy[locale];
                 <a href={androidPath(locale, 'privacy')} hreflang={localeMeta[androidLocale(locale)].hrefLang}>Android · {privacyLabel}{platform.androidLanguage}</a>
                 <a href={androidPath(locale, 'terms')} hreflang={localeMeta[androidLocale(locale)].hrefLang}>Android · {termsLabel}{platform.androidLanguage}</a>
                 <a href={androidPath(locale, 'delete-account')} hreflang={localeMeta[androidLocale(locale)].hrefLang}>{platform.deletion}{platform.androidLanguage}</a>
-				{languageLinks.map((link) => (
-					<a
-						href={link.href}
-						hreflang={link.hrefLang}
-						data-locale-choice={link.locale}
-						aria-current={link.isActive ? "page" : undefined}
-					>
-						{link.label}
-					</a>
-				))}
+
 			</nav>
+			<LanguagePicker languageLinks={languageLinks} placement="footer" />
 			<div class="footer-copyright">© 2025–{year} Smith Night</div>
 		</div>
 	</div>

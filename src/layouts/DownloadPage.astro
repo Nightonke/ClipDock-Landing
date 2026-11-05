@@ -15,8 +15,8 @@ const copy = platformCopy[locale];
  <main id="main-content" class="platform-page site-shell">
   <header><p class="eyebrow">App Store · Google Play</p><h1>{copy.downloadTitle}</h1><p>{copy.downloadIntro}</p></header>
   <div class="platform-grid">
-   <section><h2>iPhone / iPad</h2><p>iOS 15+ · iPadOS 15+</p><p>{copy.iosSummary}</p><StoreButtons platform="ios" /><a href={localizedPath(locale, 'articles')}>{siteUI(locale).tutorials} · iPhone / iPad</a></section>
-   <section><h2>Android</h2><p>Android 8.0+</p><p>{copy.androidSummary}</p><StoreButtons platform="android" /><a href={androidPath(locale)} hreflang={localeMeta[androidLocale(locale)].hrefLang}>{copy.androidDetails}</a><p>{copy.androidAllowance}</p></section>
+   <section><h2>iPhone / iPad</h2><p>iOS 15+ · iPadOS 15+</p><p>{copy.iosSummary}</p><StoreButtons locale={locale} platform="ios" /><a href={localizedPath(locale, 'articles')}>{siteUI(locale).tutorials} · iPhone / iPad</a></section>
+   <section><h2>Android</h2><p>Android 8.0+</p><p>{copy.androidSummary}</p><StoreButtons locale={locale} platform="android" /><a href={androidPath(locale)} hreflang={localeMeta[androidLocale(locale)].hrefLang}>{copy.androidDetails}</a><p>{copy.androidAllowance}</p></section>
   </div>
   <section class="privacy-summary"><h2>{copy.privacyTitle}</h2><p>{copy.privacyText}</p><nav>
    <a href={localizedPath(locale, 'privacy')}>iOS · {app.labels.privacy}</a>

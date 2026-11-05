@@ -21,12 +21,12 @@ const structuredData = {
 ---
 <Layout title={copy.title} description={copy.description} lang={localeMeta[locale].htmlLang} appData={app} alternates={alternates} homeHref={localizedPath(locale)} labels={app.labels} storeHref={appPlatforms.android.storeUrl} structuredData={structuredData}>
  <main id="main-content" class="android-page site-shell">
-  <header><p class="eyebrow">ClipDock · Android</p><h1>{copy.heading}</h1><p class="lead">{copy.intro}</p><p>{copy.requirements}</p><StoreButtons platform="android" /><a href={localizedPath(locale, 'download')}>{copy.other}</a></header>
+  <header><p class="eyebrow">ClipDock · Android</p><h1>{copy.heading}</h1><p class="lead">{copy.intro}</p><p>{copy.requirements}</p><StoreButtons locale={locale} platform="android" /><a href={localizedPath(locale, 'download')}>{copy.other}</a></header>
   <section aria-labelledby="android-features"><h2 id="android-features">{copy.featuresTitle}</h2><div class="android-grid">{copy.features.map(feature => <article><h3>{feature.title}</h3><p>{feature.text}</p></article>)}</div></section>
   <section class="android-panel"><h2>{copy.accountsTitle}</h2><p>{copy.accounts}</p><p>{copy.purchases}</p><a href={androidPath(locale, 'terms')}>{app.labels.terms} · Android</a></section>
   <section class="android-panel"><h2>{copy.privacyTitle}</h2><p>{copy.privacy}</p><nav><a href={androidPath(locale, 'privacy')}>{app.labels.privacy} · Android</a><a href={androidPath(locale, 'delete-account')}>{labels.deletion}</a></nav></section>
   <section><h2>{copy.faqTitle}</h2>{copy.faq.map(item => <details><summary>{item.question}</summary><p>{item.answer}</p></details>)}</section>
-  <p class="rights">{copy.rights}</p><StoreButtons platform="android" />
+  <p class="rights">{copy.rights}</p><StoreButtons locale={locale} platform="android" />
  </main>
 </Layout>
 <style>

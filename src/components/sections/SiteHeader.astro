@@ -1,6 +1,6 @@
 ---
 import { siteUI } from "@/i18n/site-ui";
-import { commonCopy } from "@/i18n/common";
+import LanguagePicker from "../LanguagePicker.astro";
 import { localizedPath, type Locale } from "@/i18n/locales";
 import type { LanguageLink } from "@/types/content";
 
@@ -21,8 +21,6 @@ interface Props {
 }
 
 const { name, logo, homeHref, storeHref, languageLinks, nav } = Astro.props;
-const currentLanguage =
-	languageLinks.find((link) => link.isActive)?.label ?? languageLinks[0]?.label;
 const homeAnchor = (anchor: string) =>
 	homeHref === "/" ? `/${anchor}` : `${homeHref}${anchor}`;
 const locale = Astro.props.locale ?? (homeHref === "/" ? "en-US" : "zh-Hans");
@@ -45,28 +43,7 @@ const ui = siteUI(locale);
 		</nav>
 
 		<div class="header-actions">
-			<details class="language-menu">
-				<summary aria-label={`${commonCopy[locale].language}: ${currentLanguage}`} title={currentLanguage}>
-					<svg class="language-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false">
-						<circle cx="12" cy="12" r="9" />
-						<ellipse cx="12" cy="12" rx="4" ry="9" />
-						<path d="M3 12h18" />
-					</svg>
-					<span class="language-label">{currentLanguage}</span>
-				</summary>
-				<div class="language-popover">
-					{languageLinks.map((link) => (
-						<a
-							href={link.href}
-							hreflang={link.hrefLang}
-							data-locale-choice={link.locale}
-							aria-current={link.isActive ? "page" : undefined}
-						>
-							{link.label}
-						</a>
-					))}
-				</div>
-			</details>
+			<LanguagePicker languageLinks={languageLinks} />
 
 			<a
 				class="button button-dark button-small"
@@ -77,7 +54,7 @@ const ui = siteUI(locale);
 				{nav.getApp}
 			</a>
 
-			<details class="mobile-menu">
+			<details class="mobile-menu" name="mobile-header-menu">
 				<summary>{nav.menu}</summary>
 				<nav class="mobile-popover" aria-label={ui.mobileNav}>
 					<a href={homeAnchor("#features")}>{nav.features}</a>
