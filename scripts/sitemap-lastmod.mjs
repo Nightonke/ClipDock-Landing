@@ -142,7 +142,7 @@ export function collectPageSnapshots(reader) {
   });
   if (androidProduct?.[locale] && reader.has('src/layouts/AndroidLanding.astro')) add('android', {
    shared: { ...shared, languages: languages.filter(([language]) => platforms.androidLocales.includes(language)) },
-   storeDownloads, copy: androidProduct[locale], platformCopy: pick(platformCopy[locale], ['deletion']), platforms: platforms.appPlatforms.android,
+   storeDownloads, copy: androidProduct[locale], platformCopy: pick(platformCopy[locale], ['deletion', 'androidLanguage']), platforms: platforms.appPlatforms.android,
    templates: templates(['src/layouts/Layout.astro', 'src/layouts/AndroidLanding.astro', 'src/components/StoreButtons.astro']),
   });
   add('articles', { shared, templates: templates(indexTemplates), ui: usedUI(ui, indexTemplates), categories,

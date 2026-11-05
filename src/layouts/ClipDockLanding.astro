@@ -11,7 +11,7 @@ import HeroDemos from "@/components/HeroDemos.astro";
 import DownloadGuides from "@/components/DownloadGuides.astro";
 import StoreButtons from "@/components/StoreButtons.astro";
 import { platformCopy } from "@/i18n/platforms";
-import { appPlatforms, androidPath, androidLocale } from "@config/platforms";
+import { appPlatforms, androidPath, androidLegalLocale } from "@config/platforms";
 import TaskGuides from "@/components/TaskGuides.astro";
 import { downloadGuideCopy } from "@/i18n/download-guides";
 import SubtitleCarousel from "@/components/SubtitleCarousel.astro";
@@ -113,7 +113,7 @@ const structuredData = [
 			</div>
 		</section>
 
-		<section class="site-shell platform-intro"><div><p class="eyebrow">Android · Google Play</p><h2>{platform.androidDetails}</h2><p>{platform.androidSummary}</p><p>{platform.androidAllowance}</p><a class="text-link" href={androidPath(content.locale)} hreflang={localeMeta[androidLocale(content.locale)].hrefLang}>{platform.androidDetails} →</a></div><div><h2>{platform.privacyTitle}</h2><p>{platform.privacyText}</p><a href={localizedPath(content.locale, "privacy")}>iOS · {content.labels.privacy}</a><a href={androidPath(content.locale, "privacy")} hreflang={localeMeta[androidLocale(content.locale)].hrefLang}>Android · {content.labels.privacy}{platform.androidLanguage}</a></div></section>
+		<section class="site-shell platform-intro"><div><p class="eyebrow">Android · Google Play</p><h2>{platform.androidDetails}</h2><p>{platform.androidSummary}</p><p>{platform.androidAllowance}</p><a class="text-link" href={androidPath(content.locale)} hreflang={localeMeta[content.locale].hrefLang}>{platform.androidDetails} →</a></div><div><h2>{platform.privacyTitle}</h2><p>{platform.privacyText}</p><a href={localizedPath(content.locale, "privacy")}>iOS · {content.labels.privacy}</a><a href={androidPath(content.locale, "privacy")} hreflang={localeMeta[androidLegalLocale(content.locale)].hrefLang}>Android · {content.labels.privacy}{platform.androidLanguage}</a></div></section>
 		<p class="site-shell platform-scope">{platform.iosScope}</p>
 		<div class="cd-capability-strip" aria-label={ui.capabilities}>
 			<div class="cd-capability-track">

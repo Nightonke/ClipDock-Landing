@@ -3,7 +3,7 @@ import Layout from './Layout.astro';
 import StoreButtons from '../components/StoreButtons.astro';
 import { androidProductCopy } from '../i18n/android-product';
 import { platformCopy } from '../i18n/platforms';
-import { appPlatforms, androidLocales, androidPath, type AndroidLocale } from '../config/platforms';
+import { appPlatforms, androidLocales, androidPath, androidLegalLocale, type AndroidLocale } from '../config/platforms';
 import { landingContent } from '../i18n/content';
 import { localizedPath, localeMeta } from '../i18n/locales';
 interface Props { locale: AndroidLocale }
@@ -11,6 +11,7 @@ const { locale } = Astro.props;
 const copy = androidProductCopy[locale];
 const app = landingContent[locale];
 const labels = platformCopy[locale];
+const legalLanguage = localeMeta[androidLegalLocale(locale)].hrefLang;
 const alternates = androidLocales.map(item => ({ locale: item, label: localeMeta[item].label, href: androidPath(item), hrefLang: localeMeta[item].hrefLang, isActive: item === locale }));
 const structuredData = {
  '@context': 'https://schema.org', '@type': 'MobileApplication', '@id': 'https://clipdock.video/android/#app',
@@ -23,8 +24,8 @@ const structuredData = {
  <main id="main-content" class="android-page site-shell">
   <header><p class="eyebrow">ClipDock · Android</p><h1>{copy.heading}</h1><p class="lead">{copy.intro}</p><p>{copy.requirements}</p><StoreButtons locale={locale} platform="android" /><a href={localizedPath(locale, 'download')}>{copy.other}</a></header>
   <section aria-labelledby="android-features"><h2 id="android-features">{copy.featuresTitle}</h2><div class="android-grid">{copy.features.map(feature => <article><h3>{feature.title}</h3><p>{feature.text}</p></article>)}</div></section>
-  <section class="android-panel"><h2>{copy.accountsTitle}</h2><p>{copy.accounts}</p><p>{copy.purchases}</p><a href={androidPath(locale, 'terms')}>{app.labels.terms} · Android</a></section>
-  <section class="android-panel"><h2>{copy.privacyTitle}</h2><p>{copy.privacy}</p><nav><a href={androidPath(locale, 'privacy')}>{app.labels.privacy} · Android</a><a href={androidPath(locale, 'delete-account')}>{labels.deletion}</a></nav></section>
+  <section class="android-panel"><h2>{copy.accountsTitle}</h2><p>{copy.accounts}</p><p>{copy.purchases}</p><a href={androidPath(locale, 'terms')} hreflang={legalLanguage}>{app.labels.terms} · Android{labels.androidLanguage}</a></section>
+  <section class="android-panel"><h2>{copy.privacyTitle}</h2><p>{copy.privacy}</p><nav><a href={androidPath(locale, 'privacy')} hreflang={legalLanguage}>{app.labels.privacy} · Android{labels.androidLanguage}</a><a href={androidPath(locale, 'delete-account')} hreflang={legalLanguage}>{labels.deletion}{labels.androidLanguage}</a></nav></section>
   <section><h2>{copy.faqTitle}</h2>{copy.faq.map(item => <details><summary>{item.question}</summary><p>{item.answer}</p></details>)}</section>
   <p class="rights">{copy.rights}</p><StoreButtons locale={locale} platform="android" />
  </main>

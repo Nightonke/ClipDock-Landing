@@ -56,7 +56,7 @@ Android 场景推荐链接：简体中文 `https://clipdock.video/zh-Hans/androi
 
 - 按钮使用真实 `<a href="https://clipdock.video/.../">`，可按站点风格表现为按钮；服务端输出完整链接，不依赖点击事件跳转。
 - 同语言链接到 ClipDock 对应语言页面。支持的路径：英文 `/`，简体中文 `/zh-Hans/`、繁体中文 `/zh-Hant/`、日文 `/ja/`、韩文 `/ko/`、西班牙文 `/es/`、巴西葡萄牙文 `/pt-BR/`、德文 `/de/`、法文 `/fr/`。其他语言链接英文首页，不生成不存在的路径。
-- 下载选择页在上述九种语言路径下均提供 `/download/`。Android 独立产品页目前仅提供英文和简体中文；其他语言的 Android 专用链接使用英文 `/android/`，并标明目标内容为英文。
+- 下载选择页和 Android 产品介绍页在上述九种语言路径下均提供 `/download/` 与 `/android/`，请链接对应语言。例如日文产品介绍为 `https://clipdock.video/ja/android/`，法文为 `https://clipdock.video/fr/android/`。Android 隐私政策、条款和账号删除说明仍仅有英文与简体中文，其他语言的政策入口明确标注英文。
 - 不将 iOS 的“不收集数据”、App Store 评分或购买权益用于 Android。Android 有独立的免费下载额度、登录要求和数据处理说明；不要承诺两端购买互通。
 - 这是自然的自有产品推荐，使用普通链接，无需添加 `nofollow`。若另开标签页，使用 `target="_blank" rel="noopener"`。
 - 推荐文字自然介绍用途，不堆砌“免费、最佳、无水印”等关键词，不承诺所有来源都可下载或格式转换一定解决播放问题。

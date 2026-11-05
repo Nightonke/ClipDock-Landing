@@ -1,6 +1,21 @@
 import type { AndroidLocale } from '../config/platforms';
+import { androidProduct as zhHant } from './zh-Hant/android-product';
+import { androidProduct as ja } from './ja/android-product';
+import { androidProduct as ko } from './ko/android-product';
+import { androidProduct as es } from './es/android-product';
+import { androidProduct as ptBR } from './pt-BR/android-product';
+import { androidProduct as de } from './de/android-product';
+import { androidProduct as fr } from './fr/android-product';
+
+export type AndroidProductCopy = {
+ title: string; description: string; heading: string; intro: string; requirements: string;
+ featuresTitle: string; features: { title: string; text: string }[];
+ accountsTitle: string; accounts: string; purchases: string; privacyTitle: string; privacy: string;
+ faqTitle: string; faq: { question: string; answer: string }[]; rights: string; other: string;
+};
 
 export const androidProductCopy = {
+ 'zh-Hant': zhHant, ja, ko, es, 'pt-BR': ptBR, de, fr,
  'en-US': {
   title: 'ClipDock for Android | Web Video Downloader & Video Tools',
   description: 'Save supported web videos on Android, download with a floating paste button, organize files, and trim or convert local media. Learn about free downloads and Premium.',
@@ -57,9 +72,4 @@ export const androidProductCopy = {
   rights: '请仅保存和处理自己拥有或获准使用的内容，并遵守来源限制和访问控制。',
   other: '选择其他平台',
  },
-} satisfies Record<AndroidLocale, {
- title: string; description: string; heading: string; intro: string; requirements: string;
- featuresTitle: string; features: { title: string; text: string }[];
- accountsTitle: string; accounts: string; purchases: string; privacyTitle: string; privacy: string;
- faqTitle: string; faq: { question: string; answer: string }[]; rights: string; other: string;
-}>;
+} satisfies Record<AndroidLocale, AndroidProductCopy>;

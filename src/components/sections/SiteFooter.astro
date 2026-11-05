@@ -1,5 +1,5 @@
 ---
-import { appPlatforms, androidPath, androidLocale } from '../../config/platforms';
+import { appPlatforms, androidPath, androidLegalLocale } from '../../config/platforms';
 import { platformCopy } from '../../i18n/platforms';
 import { siteUI } from "@/i18n/site-ui";
 import { localizedPath, localeMeta, type Locale } from "@/i18n/locales";
@@ -56,12 +56,12 @@ const platform = platformCopy[locale];
 				<a href={localizedPath(locale, 'download')}>{getAppLabel}</a>
                 <a href={appPlatforms.ios.storeUrl} target="_blank" rel="noopener noreferrer">App Store</a>
                 <a href={appPlatforms.android.storeUrl} target="_blank" rel="noopener noreferrer">Google Play</a>
-                <a href={androidPath(locale)} hreflang={localeMeta[androidLocale(locale)].hrefLang}>{platform.androidDetails}</a>
+                <a href={androidPath(locale)} hreflang={localeMeta[locale].hrefLang}>{platform.androidDetails}</a>
                 <a href={localizedPath(locale, 'privacy')}>iOS · {privacyLabel}</a>
                 <a href={localizedPath(locale, 'terms')}>iOS · {termsLabel}</a>
-                <a href={androidPath(locale, 'privacy')} hreflang={localeMeta[androidLocale(locale)].hrefLang}>Android · {privacyLabel}{platform.androidLanguage}</a>
-                <a href={androidPath(locale, 'terms')} hreflang={localeMeta[androidLocale(locale)].hrefLang}>Android · {termsLabel}{platform.androidLanguage}</a>
-                <a href={androidPath(locale, 'delete-account')} hreflang={localeMeta[androidLocale(locale)].hrefLang}>{platform.deletion}{platform.androidLanguage}</a>
+                <a href={androidPath(locale, 'privacy')} hreflang={localeMeta[androidLegalLocale(locale)].hrefLang}>Android · {privacyLabel}{platform.androidLanguage}</a>
+                <a href={androidPath(locale, 'terms')} hreflang={localeMeta[androidLegalLocale(locale)].hrefLang}>Android · {termsLabel}{platform.androidLanguage}</a>
+                <a href={androidPath(locale, 'delete-account')} hreflang={localeMeta[androidLegalLocale(locale)].hrefLang}>{platform.deletion}{platform.androidLanguage}</a>
 
 			</nav>
 			<LanguagePicker languageLinks={languageLinks} placement="footer" />

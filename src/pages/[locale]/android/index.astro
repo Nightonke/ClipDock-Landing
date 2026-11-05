@@ -1,0 +1,11 @@
+---
+import AndroidLanding from '../../../layouts/AndroidLanding.astro';
+import { androidLocales, type AndroidLocale } from '../../../config/platforms';
+
+// English and Simplified Chinese retain their existing static routes.
+export const getStaticPaths = () => androidLocales
+ .filter(locale => locale !== 'en-US' && locale !== 'zh-Hans')
+ .map(locale => ({ params: { locale } }));
+const { locale } = Astro.params as { locale: AndroidLocale };
+---
+<AndroidLanding locale={locale} />

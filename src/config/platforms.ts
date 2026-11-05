@@ -1,4 +1,4 @@
-import { localizedPath, type Locale } from '../i18n/locales';
+import { localizedPath, publishedLocales, type Locale } from '../i18n/locales';
 import * as storeLinks from './store-links.json';
 
 export const appPlatforms = {
@@ -12,8 +12,9 @@ export const appPlatforms = {
  },
 } as const;
 
-export const androidLocales = ['en-US', 'zh-Hans'] as const;
+export const androidLocales = publishedLocales;
 export type AndroidLocale = typeof androidLocales[number];
-export const androidLocale = (locale: Locale): AndroidLocale => locale === 'zh-Hans' ? 'zh-Hans' : 'en-US';
-export const androidPath = (locale: Locale, page = '') => localizedPath(androidLocale(locale), `android${page ? '/' + page : ''}`);
+export const androidLegalLocale = (locale: Locale) => locale === 'zh-Hans' ? 'zh-Hans' : 'en-US';
+export const androidPath = (locale: Locale, page: '' | 'privacy' | 'terms' | 'delete-account' = '') =>
+ localizedPath(page ? androidLegalLocale(locale) : locale, `android${page ? '/' + page : ''}`);
 export const downloadQrUrl = storeLinks.download;

@@ -5,7 +5,7 @@ import { landingContent } from '../i18n/content';
 import { platformCopy } from '../i18n/platforms';
 import { siteUI } from '../i18n/site-ui';
 import { getLanguageLinks, localizedPath, localeMeta, type Locale } from '../i18n/locales';
-import { androidPath, androidLocale } from '../config/platforms';
+import { androidPath, androidLegalLocale } from '../config/platforms';
 interface Props { locale: Locale }
 const { locale } = Astro.props;
 const app = landingContent[locale];
@@ -16,12 +16,12 @@ const copy = platformCopy[locale];
   <header><p class="eyebrow">App Store · Google Play</p><h1>{copy.downloadTitle}</h1><p>{copy.downloadIntro}</p></header>
   <div class="platform-grid">
    <section><h2>iPhone / iPad</h2><p>iOS 15+ · iPadOS 15+</p><p>{copy.iosSummary}</p><StoreButtons locale={locale} platform="ios" /><a href={localizedPath(locale, 'articles')}>{siteUI(locale).tutorials} · iPhone / iPad</a></section>
-   <section><h2>Android</h2><p>Android 8.0+</p><p>{copy.androidSummary}</p><StoreButtons locale={locale} platform="android" /><a href={androidPath(locale)} hreflang={localeMeta[androidLocale(locale)].hrefLang}>{copy.androidDetails}</a><p>{copy.androidAllowance}</p></section>
+   <section><h2>Android</h2><p>Android 8.0+</p><p>{copy.androidSummary}</p><StoreButtons locale={locale} platform="android" /><a href={androidPath(locale)} hreflang={localeMeta[locale].hrefLang}>{copy.androidDetails}</a><p>{copy.androidAllowance}</p></section>
   </div>
   <section class="privacy-summary"><h2>{copy.privacyTitle}</h2><p>{copy.privacyText}</p><nav>
    <a href={localizedPath(locale, 'privacy')}>iOS · {app.labels.privacy}</a>
-   <a href={androidPath(locale, 'privacy')} hreflang={localeMeta[androidLocale(locale)].hrefLang}>Android · {app.labels.privacy}{copy.androidLanguage}</a>
-   <a href={androidPath(locale, 'delete-account')} hreflang={localeMeta[androidLocale(locale)].hrefLang}>{copy.deletion}{copy.androidLanguage}</a>
+   <a href={androidPath(locale, 'privacy')} hreflang={localeMeta[androidLegalLocale(locale)].hrefLang}>Android · {app.labels.privacy}{copy.androidLanguage}</a>
+   <a href={androidPath(locale, 'delete-account')} hreflang={localeMeta[androidLegalLocale(locale)].hrefLang}>{copy.deletion}{copy.androidLanguage}</a>
   </nav></section>
  </main>
 </Layout>

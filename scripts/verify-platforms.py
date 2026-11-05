@@ -50,7 +50,7 @@ for locale in LOCALES:
     folder = DIST / locale
     home = Page(folder / 'index.html')
     download = Page(folder / 'download/index.html')
-    android_path = '/zh-Hans/android/' if locale == 'zh-Hans' else '/android/'
+    android_path = f'{prefix}/android/'
     for label, page in [('home', home), ('download', download)]:
         for store in ['apple', 'google']:
             require(STORES[store] in page.main_links, f'{prefix}/{label}: missing main {store} download')
@@ -68,16 +68,17 @@ for locale in LOCALES:
     require(STORES['apple'] in guide.main_links and STORES['google'] not in guide.main_links,
             f'{prefix}: iPhone instructions must retain the iOS primary download')
 
-for locale in ['', 'zh-Hans']:
+for locale in LOCALES:
     prefix = f'/{locale}' if locale else ''
     page = Page(DIST / locale / 'android/index.html')
     require(len(page.apps) == 1, f'{prefix}/android: expected one Android app')
     app = page.apps[0]
     require(app.get('downloadUrl') == STORES['google'] and 'Android' in app.get('operatingSystem', ''), 'Invalid Android identity')
     require('aggregateRating' not in app and 'softwareVersion' not in app, 'Unverified Android store facts')
+    legal_prefix = '/zh-Hans' if locale == 'zh-Hans' else ''
     for suffix in ['privacy', 'terms', 'delete-account']:
-        require(f'{prefix}/android/{suffix}/' in page.main_links, f'{prefix}/android: missing {suffix}')
+        require(f'{legal_prefix}/android/{suffix}/' in page.main_links, f'{prefix}/android: missing {suffix}')
 
 require(STORES['download'] == 'https://clipdock.video/download/', 'QR must lead to the first-party choice page')
 require((DIST / 'download-qr.svg').is_file(), 'Download QR missing')
-print('Platform verification passed: 9 homepages, 9 download pages, 2 Android pages, 9 iOS tutorial CTAs.')
+print('Platform verification passed: 9 homepages, 9 download pages, 9 Android pages, 9 iOS tutorial CTAs.')
