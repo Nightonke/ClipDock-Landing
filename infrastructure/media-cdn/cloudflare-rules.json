@@ -20,5 +20,11 @@
   "bulkRedirects": {
     "list": "clipdock_current_asset_migration",
     "csv": "legacy-redirects.csv"
+  },
+  "cache": {
+    "id": "68224091092c4f34ac2732d98a48241a",
+    "expression": "(http.host eq \"assets.clipdock.video\" and starts_with(http.request.uri.path, \"/releases/\"))",
+    "eligible": true,
+    "ttl": "Respect origin Cache-Control"
   }
 }

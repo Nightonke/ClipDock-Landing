@@ -143,3 +143,5 @@ Cloudflare Single Redirect 仅匹配素材域名的 `/releases/`。地区为 `CN
 - Vercel 生产部署 `dpl_ErcG7fE7KvPNS6vz7uuUU9KVFJsk` 同时包含新版本和旧版本 `5061412bf9a8eadd`；腾讯云也保留旧版本。
 - `deployment.json` 已切换到新版本。正式构建通过：136 个页面、135 个 sitemap URL、7657 处本地引用；三种语言各 41 篇教程，包含繁中首页、教程和法律页。
 - 7 项语言完整性、4 项视频恢复和 2 项素材分流测试通过。推送本次配置后，由 GitHub Actions 发布主站。
+
+Cloudflare 的 `Cache public R2 media` 规则只匹配上述公开素材域名和目录，将资源设为 Eligible for cache，并遵循对象的 Cache-Control。缓存后的完整视频和 206 分段响应需同时通过 SHA-256 与 CORS 检查。
