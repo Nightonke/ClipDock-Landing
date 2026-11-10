@@ -1,5 +1,12 @@
 # ClipDock 正式部署
 
+## 2026-11-10 R2 迁移
+
+- 当前素材版本为 `8a6f5e8619a1cdbc`，527 个对象（含清单），55,826,150 字节。图片已按免费额度优化；R2 与腾讯云香港镜像均逐文件校验 SHA-256。
+- `assets.clipdock.video` 使用 R2；Cloudflare 负责大陆地区分流、527 条原当前版本地址跳转和 `www` 跳转。主站继续使用 GitHub Pages。
+- 历史版本已离线备份，不迁入 R2。旧云资源暂留以兼容 DNS 缓存和回退，清理后仅保留离线历史；Vercel Pro 尚未取消。Vercel 临时兼容部署为 `dpl_BiBbbY1bcmc2njzMzpLKbqfpifPi`，包含切换前后两个当前版本。
+- 真实 Chrome 已验证新旧地址、CORS、206 Range、视频拖动及播放；两端 HTTPS 正常。未进行中国大陆实际网络测速。
+
 ## 2026-09-10 法语上线
 
 - 实现提交 [`073fa29`](https://github.com/Nightonke/ClipDock-Landing/commit/073fa297178b44e7a949d462fca13a786e024a72) 已推送 `main`；[Actions #22](https://github.com/Nightonke/ClipDock-Landing/actions/runs/34437271063) 构建与 GitHub Pages 部署成功。
@@ -79,7 +86,7 @@ Cloudflare Single Redirect 仅匹配素材域名的 `/releases/`。地区为 `CN
 
 ## 回退
 
-腾讯云出现异常时，停用 Cloudflare 的大陆地区跳转规则，所有地区暂时使用 R2。历史版本仅存离线备份；回退到旧素材版本前，先恢复对应资源并校验，再发布页面。紧急时使用本地素材构建并发布 GitHub Pages。旧 Vercel 配置仅保留作迁移回退参考，已不承担正式资源服务。
+腾讯云出现异常时，停用 Cloudflare 的大陆地区跳转规则，所有地区暂时使用 R2。历史版本以已校验的离线备份为长期保留方式；清理旧云资源后，回退到旧素材版本前，先恢复对应资源并校验，再发布页面。紧急时使用本地素材构建并发布 GitHub Pages。旧 Vercel 部署在 DNS 缓存过渡期间继续兼容旧解析；新解析使用 Cloudflare。确认缓存过渡结束后再清理旧云部署及评估取消 Pro。
 
 ## 维护事项
 

@@ -41,7 +41,7 @@ const token = process.env.CLOUDFLARE_API_TOKEN || JSON.parse(execFileSync('npx',
 if (!token) throw new Error('Authenticate with Wrangler before publishing.');
 const base = `https://api.cloudflare.com/client/v4/accounts/${config.accountId}/r2/buckets/${config.bucket}`;
 const types = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp',
-  '.mp4': 'video/mp4', '.json': 'application/json', '.svg': 'image/svg+xml', '.vtt': 'text/vtt', '.ico': 'image/x-icon' };
+  '.mp4': 'video/mp4', '.m4v': 'video/x-m4v', '.json': 'application/json', '.svg': 'image/svg+xml', '.vtt': 'text/vtt', '.ico': 'image/x-icon' };
 async function request(method, url, body, headers = {}) {
   for (let attempt = 0; attempt < 4; attempt++) {
     try {
