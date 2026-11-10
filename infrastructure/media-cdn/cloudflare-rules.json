@@ -1,0 +1,24 @@
+{
+  "chinaRedirect": {
+    "expression": "(http.host eq \"assets.clipdock.video\" and starts_with(http.request.uri.path, \"/releases/\") and not starts_with(http.request.uri.path, \"/releases/146bf303502befb6/\") and ip.src.country eq \"CN\")",
+    "targetExpression": "concat(\"https://assets-cn.clipdock.video\", http.request.uri.path)",
+    "statusCode": 307,
+    "preserveQueryString": true
+  },
+  "wwwRedirect": {
+    "expression": "http.host eq \"www.clipdock.video\"",
+    "targetExpression": "concat(\"https://clipdock.video\", http.request.uri.path)",
+    "statusCode": 308,
+    "preserveQueryString": true
+  },
+  "responseHeaders": {
+    "expression": "(http.host eq \"assets.clipdock.video\" and starts_with(http.request.uri.path, \"/releases/\"))",
+    "set": {
+      "Access-Control-Allow-Origin": "*"
+    }
+  },
+  "bulkRedirects": {
+    "list": "clipdock_current_asset_migration",
+    "csv": "legacy-redirects.csv"
+  }
+}

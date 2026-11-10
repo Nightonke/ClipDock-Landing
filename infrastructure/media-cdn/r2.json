@@ -1,0 +1,6 @@
+{
+  "accountId": "70ad819df5f969ba3d602c0cd5db021e",
+  "bucket": "clipdock-assets",
+  "keyPattern": "^releases/[a-f0-9]{16}/(assets/.+|manifest\\.json)$",
+  "immutable": true
+}

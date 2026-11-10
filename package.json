@@ -38,7 +38,8 @@
 		"prebuild": "npm run images:optimize",
 		"media:prepare": "npm run images:optimize && node scripts/prepare-media.mjs",
 		"build:production": "node scripts/build-production.mjs",
-		"check:i18n": "node --test tests/localization.test.cjs"
+		"check:i18n": "node --test tests/localization.test.cjs",
+		"media:publish:r2": "node scripts/publish-r2.mjs"
 	},
 	"dependencies": {
 		"@astrojs/react": "^4.4.2",

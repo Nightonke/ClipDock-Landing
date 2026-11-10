@@ -43,9 +43,9 @@
 ## 架构与域名
 
 - `clipdock.video`：GitHub Pages；英文首页 `/`、教程 `/articles/`；简体中文首页 `/zh-Hans/`、教程 `/zh-Hans/articles/`；繁体中文首页 `/zh-Hant/`、教程 `/zh-Hant/articles/`。
-- `www.clipdock.video`：Vercel 提供 HTTPS 308 跳转到主域名，保留路径与查询参数。
-- `assets.clipdock.video`：Vercel 项目 `clipdock-assets`。
-- `assets-cn.clipdock.video`：腾讯云香港 COS + 中国境外 CDN。已配置 Vercel 生产环境的 `TENCENT_CDN_ORIGIN`，中国大陆素材请求转到此域名，其他地区由 Vercel 提供。
+- `www.clipdock.video`：Cloudflare Redirect Rules 提供 HTTPS 308 跳转到主域名，保留路径与查询参数。
+- `assets.clipdock.video`：Cloudflare R2 存储桶 `clipdock-assets` 的自定义域名。
+- `assets-cn.clipdock.video`：腾讯云香港 COS + 中国境外 CDN。Cloudflare 按访客地区分流，中国大陆素材请求转到此域名，其他地区由 R2 提供。
 - Search Console 使用 `sc-domain:clipdock.video`，保留 DNS 中的 Google TXT 验证记录。
 
 主站和素材是独立的发布目标。腾讯云只镜像官网公开素材，不能上传 `references/`、源码、环境变量或凭据。
@@ -53,20 +53,20 @@
 ## 素材版本与发布顺序
 
 1. 在仓库根目录运行 `npm run media:prepare`。它生成响应式图片、素材清单和 `infrastructure/media-cdn/public/releases/<内容哈希>/`。
-2. 将该版本完整上传至腾讯云，并保留相同的 `releases/<版本>/assets/...` 路径及 `manifest.json`。保留先前版本，以支持页面回退。
-3. 在 `infrastructure/media-cdn/` 运行 `npm ci`、`npm test`、`npm run build`；确认 `.vercel/project.json` 链接到 `clipdock-assets` 后，用 Vercel CLI 发布。`media:prepare` 会重建本地暂存目录，因此部署 Vercel 前还须恢复并校验上一版本到 `public/releases/`，让旧页面与回退版本继续可用。不要上传整个仓库或 `references/`。
-4. 确认 Vercel 与腾讯云的清单和文件一致，图片正常、视频返回正确 MIME 且支持 Range。更新 `deployment.json` 的 `mediaBaseUrl`；腾讯云就绪后填入 `tencentOrigin`。
+2. 将该版本完整上传至腾讯云，并保留相同的 `releases/<版本>/assets/...` 路径及 `manifest.json`。历史版本先做经过 SHA-256 校验的离线备份；本次迁移不向 R2 上传历史版本。
+3. 运行 `npm run media:publish:r2 -- --dry-run` 核对待发布范围，再运行 `npm run media:publish:r2`。脚本只上传生成目录中的一个当前版本，设置 MIME 与不可变缓存，并下载每个对象验证 SHA-256。使用已授权的 Wrangler OAuth（系统凭据存储），或显式传入 `CLOUDFLARE_API_TOKEN`；不在仓库保存凭据。`--verify-only` 只检查已上传对象。
+4. 确认 R2 正式域名与腾讯云的清单和文件一致，图片正常、视频返回正确 MIME、CORS 及 206 Range 响应。更新 `deployment.json` 的 `mediaBaseUrl`；腾讯云就绪后填入 `tencentOrigin`。更新素材路径时，应先为仍在使用的旧页面配置对应地址跳转，包含响应式图片改名映射。
 5. 运行 `npm run build:production`。检查通过后提交并推送 `main`，由 GitHub Actions 发布页面。
 
-普通文案更新不改变素材版本，推送后可直接自动部署。素材更新必须先完成镜像同步，否则流水线会明确失败。当前仓库不保存 COS 或 Vercel 密钥，也不创建长期云访问凭据。
+普通文案更新不改变素材版本，推送后可直接自动部署。素材更新必须先完成镜像同步，否则流水线会明确失败。当前仓库不保存 COS 或 Cloudflare 密钥，也不创建长期云访问凭据。
 
 正式构建会核对原始素材哈希，并下载、校验已发布的响应式图片后再构建。这样 Mac 与 Linux 使用完全相同的压缩图，避免图片编码器的平台差异引起版本变化。
 
 ## 分流与缓存
 
-Vercel middleware 仅匹配 `/releases/`。地区为 `CN` 且已配置 `TENCENT_CDN_ORIGIN` 时，以 307 跳转到香港 CDN，保留路径和查询参数，继续支持视频 Range 请求。其他地区使用 Vercel 静态副本。
+Cloudflare Single Redirect 仅匹配素材域名的 `/releases/`。地区为 `CN` 时，以 307 跳转到香港 CDN，保留路径和查询参数。迁移前的当前版本 `146bf303502befb6` 先经 Bulk Redirect 映射到优化后的 `8a6f5e8619a1cdbc`，避免旧页面引用失效；该旧前缀因此从地区规则中排除。其他地区使用 R2。规则定义及 527 条地址映射保存在 `infrastructure/media-cdn/`。
 
-不可变素材版本可长期缓存；按地区生成的跳转响应使用 `private, no-store`，避免被共享缓存错误复用。主站保留本地素材副本；紧急时使用 `npm run build` 可构建不依赖素材子域名的版本。
+不可变素材版本使用 `public, max-age=31536000, immutable`；地区跳转使用 307，不设置缓存时长。Cloudflare 响应头规则为素材及跳转设置 `Access-Control-Allow-Origin: *`，R2 和腾讯云 CDN 也配置此跨域头，以支持视频跨域续传。主站保留本地素材副本；紧急时使用 `npm run build` 可构建不依赖素材子域名的版本。
 
 ## 上线检查
 
@@ -79,7 +79,7 @@ Vercel middleware 仅匹配 `/releases/`。地区为 `CN` 且已配置 `TENCENT_
 
 ## 回退
 
-页面可以重新部署上一个成功的 GitHub Actions 提交；不可变素材版本要保留。Vercel 可使用此前的成功部署回退。腾讯云出现异常时，取消 `TENCENT_CDN_ORIGIN` 并重新部署素材项目，所有地区暂时使用 Vercel。
+腾讯云出现异常时，停用 Cloudflare 的大陆地区跳转规则，所有地区暂时使用 R2。历史版本仅存离线备份；回退到旧素材版本前，先恢复对应资源并校验，再发布页面。紧急时使用本地素材构建并发布 GitHub Pages。旧 Vercel 配置仅保留作迁移回退参考，已不承担正式资源服务。
 
 ## 维护事项
 
