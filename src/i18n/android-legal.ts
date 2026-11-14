@@ -20,7 +20,7 @@ export const androidLegalContent: Record<AndroidLegalLocale, AndroidLegalCopy> =
 	"en-US": {
 		label: "ClipDock for Android · Google Play",
 		effectiveDateLabel: "Last updated:",
-		effectiveDateText: "October 25, 2026",
+		effectiveDateText: "November 14, 2026",
 		privacy: {
 			title: "Android Privacy Policy",
 			description: "How ClipDock for Android handles Google sign-in, download links and diagnostics, purchases, permissions, retention, and deletion requests.",
@@ -33,7 +33,11 @@ ClipDock processes some media locally and sends some information to its services
 
 ## 2. Account sign-in and download allowance
 
-You can open ClipDock, browse websites, and manage local files without a ClipDock account. Using the free download allowance requires Google sign-in. A verified Google Play membership can provide paid access without signing in to a ClipDock account.
+You can open ClipDock, browse websites, and manage local files without Google sign-in. Eligible new users can use five guest downloads; signing in with an eligible new Google account adds five more. Existing account balances remain in effect, and the app displays your available allowance. A verified Google Play membership can provide paid access without signing in to a ClipDock account.
+
+**Guest allowance and device record:** when the app initializes or refreshes your free allowance, it reads Android's ANDROID_ID, an identifier scoped by Android to the device, user, and app signing key. The app hashes this identifier with an app-specific prefix before sending the hash over HTTPS with a session token and Play Integrity verification. It does not send the raw ANDROID_ID. The server hashes the supplied value again to maintain a guest/device record containing the remaining allowance, reservations and completed-download transactions, timestamps, and session/security state. This record helps restore the remaining guest allowance after reinstalling and limit repeated claims or excessive requests. These identifiers are pseudonymous, not fully anonymous.
+
+If you subsequently sign in with Google, we link the guest/device record to the hashed Google account identifier and transfer the eligible remaining guest balance according to the allowance rules. The device binding prevents repeated guest claims; deleting files, reinstalling, signing out, or deleting an account does not reset the allowance. The app keeps account and guest sessions in encrypted local storage. Guest/device anti-abuse records are separate from the randomly generated installation identifiers used in download diagnostics.
 
 When you choose Google sign-in, Google provides a sign-in token containing account identity information, which may include your email and profile information. Our server verifies that token. It stores a hashed Google account identifier, remaining free-download balance, download allowance transactions, account timestamps, and sign-in session records. The account database does not retain the raw Google token or your Google profile. Your email is displayed and stored locally in the app. We do not receive your Google password.
 
@@ -86,7 +90,7 @@ Our account, purchase-verification, and diagnostic endpoints use HTTPS. Credenti
 
 - **Local media:** remains until you delete it or the relevant app data. Gallery, exported, shared, and backup copies are separate.
 - **Active account records:** retained to maintain your sign-in and download allowance. Session validity is limited as described above; ending a session invalidates access.
-- **Account deletion:** deletes cloud sign-in sessions and account-linked download allowance history and invalidates old sessions. A restricted record of your hashed account identifier, remaining allowance, and necessary deletion/security state is retained to prevent repeated free allowances and unsafe deletion retries. This is retained pseudonymous information, not anonymization. There is no fixed automatic expiry for the anti-abuse balance record; it is retained while needed to enforce that allowance, subject to applicable deletion rights.
+- **Account deletion:** deletes cloud sign-in sessions and account-linked download allowance history and invalidates old sessions. A restricted record of hashed account and guest/device identifiers, remaining allowances, their account/device binding, and necessary deletion/security state is retained to prevent repeated free allowances and unsafe deletion retries. This is retained pseudonymous information, not anonymization. There is no fixed automatic expiry for the anti-abuse balance record; it is retained while needed to enforce that allowance, subject to applicable deletion rights.
 - **Download diagnostics:** held separately from Google account records and associated with an installation identifier. This version does not automatically erase them when you delete a video or ClipDock account, and no fixed automatic deletion interval is currently applied. You can request deletion; we may need limited information to identify the installation or reports concerned. We explain any information that must be retained for security or legal reasons.
 - **Support and infrastructure records:** kept as needed to respond, resolve issues, secure services, or meet applicable obligations. Provider-managed logs and backups may have separate retention cycles.
 
@@ -117,7 +121,7 @@ Keep backups and check exported results before deleting originals. You remain re
 
 ## 3. Free allowance and accounts
 
-Basic app access is free. Free downloads use an account-based introductory allowance displayed in the app. Deleting a file does not restore a used download. Deleting and recreating a ClipDock account does not grant a new introductory allowance. Sign-in, account deletion, and the limited anti-abuse record are explained in the privacy policy. A verified Google Play membership can grant paid access without a ClipDock Google sign-in.
+Basic app access is free. Eligible new users can use five guest downloads; signing in with an eligible new Google account adds five more. Existing accounts keep their remaining balance; the app displays the available allowance. Deleting a file does not restore a used download. Reinstalling or deleting and recreating a ClipDock account does not grant a new introductory allowance. Sign-in, account deletion, and the limited anti-abuse record are explained in the privacy policy. A verified Google Play membership can grant paid access without a ClipDock Google sign-in.
 
 ## 4. Google Play purchases and subscriptions
 
@@ -166,14 +170,14 @@ You can initiate an account or data deletion request by email even if you have u
 
 **[Email a deletion request](mailto:daysinyear@foxmail.com?subject=ClipDock%20Android%20account%20and%20data%20deletion%20request)**
 
-Or write to **daysinyear@foxmail.com** with the subject **“ClipDock Android account and data deletion request”**. Tell us whether you want to delete your ClipDock account and associated data, download diagnostic records, or other information you supplied. Include the Google email used to sign in and, if known, the app version and approximate dates relevant to diagnostic records. You may request deletion of diagnostics without deleting the account.
+Or write to **daysinyear@foxmail.com** with the subject **“ClipDock Android account and data deletion request”**. Tell us whether you want to delete your ClipDock account and associated data, guest/device records, download diagnostic records, or other information you supplied. If you signed in, include the Google email used. For guest data, say that you used guest access and provide the app version and approximate dates of use. For diagnostics, include the app version and approximate relevant dates if known. We may ask for the minimum additional information needed to locate your records. You may request deletion of guest data or diagnostics without a Google account.
 
 The link opens your email app; nothing is sent until you send the message. We will follow up to verify ownership and locate the relevant data, using only necessary information. **Do not send your password, Google sign-in token, payment card details, or private videos.** Sending a request does not immediately delete data; we confirm the result after verification and processing. You do not need to reinstall ClipDock to initiate the request.
 
 ## What is deleted, retained, or unaffected
 
 - **Deleted on account deletion:** cloud sign-in sessions and account-linked download allowance transaction history; old account sessions stop working.
-- **Retained for abuse prevention:** a hashed Google account identifier, remaining download allowance, and necessary deletion/security state. These prevent repeated introductory allowances and unsafe deletion retries. They are pseudonymous records, not fully anonymous data. No fixed automatic expiry currently applies to the balance record; it is retained while needed to enforce the allowance, subject to applicable deletion rights. Re-registering preserves the remaining balance.
+- **Retained for abuse prevention:** hashed Google account and guest/device identifiers, remaining download allowances, their account/device binding, and necessary deletion/security state. These prevent repeated introductory allowances and unsafe deletion retries. They are pseudonymous records, not fully anonymous data. No fixed automatic expiry currently applies to the balance record; it is retained while needed to enforce the allowance, subject to applicable deletion rights. Re-registering preserves the remaining balance.
 - **Separate diagnostic records:** download reports are linked to an installation, not automatically erased by account deletion, and currently have no fixed automatic deletion interval. Ask us to delete them as part of your request. We may need additional information to locate them and will explain any security or legal retention exception.
 - **Local files and external copies:** your downloaded videos, gallery files, exports, shared copies, and backups are not remotely deleted. Manage these on your device or with the destination provider.
 - **Google account and purchases:** your Google account and Google Play purchase history are unaffected. **Account deletion does not cancel a subscription.** Cancel separately in [Google Play Subscriptions](https://play.google.com/store/account/subscriptions).
@@ -185,7 +189,7 @@ The [Android Privacy Policy](/android/privacy/) explains the information process
 	"zh-Hans": {
 		label: "ClipDock Android 版 · Google Play",
 		effectiveDateLabel: "最后更新：",
-		effectiveDateText: "2026 年 10 月 25 日",
+		effectiveDateText: "2026 年 11 月 14 日",
 		privacy: {
 			title: "Android 隐私政策",
 			description: "说明 ClipDock Android 版的 Google 登录、下载链接与诊断、购买、权限、数据保留和删除申请。",
@@ -198,7 +202,11 @@ The [Android Privacy Policy](/android/privacy/) explains the information process
 
 ## 2. 账号登录与下载额度
 
-打开应用、浏览网页和管理本地文件不要求 ClipDock 账号。使用免费下载额度需要 Google 登录。经过验证的 Google Play 会员可在未登录 ClipDock 账号时使用付费权益。
+打开应用、浏览网页和管理本地文件不要求 Google 登录。符合条件的新用户可先使用 5 次游客下载；登录符合条件的新 Google 账号可再增加 5 次。已有账号沿用剩余额度，以应用显示的可用次数为准。经过验证的 Google Play 会员可在未登录 ClipDock 账号时使用付费权益。
+
+**游客额度与设备记录：**应用初始化或刷新免费额度时，会读取 Android 提供的 ANDROID_ID。该标识由 Android 按设备、用户和应用签名密钥限定范围。应用先加上应用专用前缀并进行哈希处理，再通过 HTTPS 将哈希值、会话令牌和 Play Integrity 验证信息发送至服务端，不发送原始 ANDROID_ID。服务端再次哈希该值，维护游客／设备记录，包括剩余额度、下载预留与完成交易、时间信息、会话及安全状态，用于重装后恢复剩余游客额度、防止反复领取和限制过量请求。这些标识属于假名化信息，并非完全匿名数据。
+
+之后选择 Google 登录时，我们会将游客／设备记录与经哈希处理的 Google 账号标识关联，按额度规则转移符合条件的剩余游客次数。设备绑定用于防止反复领取游客额度；删除文件、重新安装、退出登录或删除账号不会重置额度。应用将账号及游客会话加密保存在本地。游客／设备防滥用记录与下载诊断使用的随机安装标识是不同的记录。
 
 选择 Google 登录后，Google 提供包含账号身份信息的登录令牌，其中可能包括电子邮箱和个人资料。服务端验证令牌，并保存经哈希处理的 Google 账号标识、剩余免费下载额度、额度交易记录、账号时间信息和登录会话。账号数据库不保留原始 Google 令牌或 Google 个人资料；邮箱用于应用内显示并保存在本地。我们不会获得 Google 密码。
 
@@ -251,7 +259,7 @@ Google Play 处理付款。ClipDock 及服务端使用购买令牌、商品与�
 
 - **本地媒体：**保留至您删除文件或相关应用数据；相册、导出、分享和备份中的副本单独管理。
 - **使用中的账号记录：**用于维持登录和额度。会话有效期如上所述，退出或撤销后不可再用于访问。
-- **删除账号：**删除云端登录会话及与账号关联的下载额度交易历史，使旧会话失效。为避免重复领取免费额度及不安全的删除重试，会受限保留经哈希处理的账号标识、剩余额度及必要的删除／安全状态。这是假名化保留数据，不是匿名化。防滥用额度记录目前没有固定的自动过期时间，在执行该额度规则所需期间保留，并受适用删除权利约束。
+- **删除账号：**删除云端登录会话及与账号关联的下载额度交易历史，使旧会话失效。为避免重复领取免费额度及不安全的删除重试，会受限保留经哈希处理的账号与游客／设备标识、剩余额度、账号与设备绑定关系及必要的删除／安全状态。这是假名化保留数据，不是匿名化。防滥用额度记录目前没有固定的自动过期时间，在执行该额度规则所需期间保留，并受适用删除权利约束。
 - **下载诊断：**独立于 Google 账号记录，按安装标识关联。当前版本不会在删除视频或 ClipDock 账号时自动删除诊断记录，也未设置固定自动删除周期。您可以申请删除；我们可能需要必要信息定位安装或相关记录，并会说明因安全或法律原因必须保留的部分。
 - **支持与基础设施记录：**按回复、排障、保护服务或履行适用义务所需保留；服务商日志和备份可能有单独周期。
 
@@ -282,7 +290,7 @@ ClipDock 提供链接提取、网页视频识别、下载、本地媒体管理�
 
 ## 3. 免费额度与账号
 
-应用提供基础免费功能。免费下载使用应用显示的账号初始额度。删除文件不会恢复已使用次数，删除并重新创建账号也不会重新获得初始额度。登录、删除及防滥用保留记录见隐私政策。经验证的 Google Play 会员可在未登录 ClipDock Google 账号时使用付费权益。
+应用提供基础免费功能。符合条件的新用户可使用 5 次游客下载，登录符合条件的新 Google 账号可再增加 5 次；已有账号沿用剩余额度，以应用显示的可用次数为准。删除文件不会恢复已使用次数，重新安装或删除并重新创建账号也不会重新获得初始额度。登录、删除及防滥用保留记录见隐私政策。经验证的 Google Play 会员可在未登录 ClipDock Google 账号时使用付费权益。
 
 ## 4. Google Play 购买与订阅
 
@@ -331,14 +339,14 @@ ClipDock 提供链接提取、网页视频识别、下载、本地媒体管理�
 
 **[发送删除申请邮件](mailto:daysinyear@foxmail.com?subject=ClipDock%20Android%20account%20and%20data%20deletion%20request)**
 
-也可直接写信至 **daysinyear@foxmail.com**，主题为 **“ClipDock Android 账号与数据删除申请”**。请说明要删除账号及相关数据、下载诊断记录，或其他曾提供的信息。注明登录时使用的 Google 邮箱；若申请删除诊断记录，可补充已知的应用版本及大致发生日期。可以单独申请删除诊断记录而不删除账号。
+也可直接写信至 **daysinyear@foxmail.com**，主题为 **“ClipDock Android 账号与数据删除申请”**。请说明要删除账号及相关数据、游客／设备记录、下载诊断记录，或其他曾提供的信息。如已登录，请注明使用的 Google 邮箱；游客数据申请请说明使用过游客功能，并提供应用版本及大致使用日期。若申请删除诊断记录，可补充已知的应用版本及大致发生日期。我们可能要求最少必要的补充信息以定位记录。无需 Google 账号也可申请删除游客数据或诊断记录。
 
 链接会打开邮件应用，只有您发送邮件后才会提交。我们会跟进验证所有权并用必要信息定位数据。**请勿发送密码、Google 登录令牌、银行卡信息或私人视频。** 发出申请不会立即删除数据；验证并处理完成后，我们会确认结果。无需重新安装 ClipDock 即可发起申请。
 
 ## 删除、保留和不受影响的信息
 
 - **账号删除会移除：**云端登录会话、与账号关联的下载额度交易历史；旧账号会话将无法使用。
-- **防滥用保留：**经哈希处理的 Google 账号标识、剩余下载额度及必要删除／安全状态，防止重复领取初始额度及不安全的删除重试。它们是假名化记录，并非完全匿名数据。额度记录当前没有固定自动过期时间，在执行该规则所需期间保留，并受适用删除权利约束。重新注册会沿用剩余额度。
+- **防滥用保留：**经哈希处理的 Google 账号与游客／设备标识、剩余下载额度、账号与设备绑定关系及必要删除／安全状态，防止重复领取初始额度及不安全的删除重试。它们是假名化记录，并非完全匿名数据。额度记录当前没有固定自动过期时间，在执行该规则所需期间保留，并受适用删除权利约束。重新注册会沿用剩余额度。
 - **独立诊断记录：**报告按安装关联，账号删除不会自动删除，当前也没有固定自动删除周期。可在请求中要求删除；我们可能需要补充信息定位记录，并会说明安全或法律保留例外。
 - **本地与外部副本：**下载的视频、相册文件、导出、分享及备份不会被远程删除，请在设备或对应服务中管理。
 - **Google 账号及购买：**不会删除 Google 账号或 Google Play 购买记录。**删除账号不等于取消订阅。** 请在 [Google Play 订阅页面](https://play.google.com/store/account/subscriptions)单独取消。
